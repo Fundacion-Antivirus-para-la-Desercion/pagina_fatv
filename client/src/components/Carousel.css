@@ -1,0 +1,13 @@
+.thumbnails-swiper {
+  padding: 5px;
+  background: rgba(34, 45, 86, 0.7);
+  border-radius: 8px;
+}
+
+.thumbnails-swiper .swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.thumbnails-swiper .swiper-slide:hover {
+  opacity: 0.8 !important;
+}

@@ -6,43 +6,15 @@
   font-style: normal;
 }
 
-.carousel-text {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  z-index: 99999;
-}
 
 .carousel-text h1 {
-  display: flex;
-  width: 100%;
-  font-size: 4rem;
   font-family: "Anton", sans-serif;
   color: #f8b732;
-  letter-spacing: -0.02em;
-  justify-content: center;
-  line-height: 100.75%;
 }
 
 .carousel-text p {
-  font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  display: block;
-  position: relative;
-  width: 90%;
-  margin: 3px;
-  justify-content: center;
-  letter-spacing: 0.24em;
-  font-weight: 400;
-  text-align: center;
 }
 
 .containerImg {
