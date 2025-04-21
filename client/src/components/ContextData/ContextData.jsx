@@ -13,7 +13,10 @@ import ComputerImage from "../../assets/images/views/home/computer.webp";
 const ContextData = () => (
   <div className="context-data-container">
     <h1 className="mb-32 context-data-title text-5xl text-white font-extrabold text-center">
-      Nuestro aporte en Colombia
+      <span className="bg-[#f6a623] text-[#222d56] px-2">
+        Nuestro aporte
+      </span>{" "}
+       en Colombia
     </h1>
     <div className="context-data-statistics">
       <div className="statistic">
@@ -35,7 +38,7 @@ const ContextData = () => (
           src={OrientacionImage}
           alt="Orientación"
         />
-        <h2 className="statistic-number">
+        <h2 className="statistic-number2">
           <CounterNumeric countNumber={19641} />
         </h2>
         <p className="statistic-description text-center">
@@ -48,7 +51,7 @@ const ContextData = () => (
           src={GrupoImage}
           alt="Grupo de estudio"
         />
-        <h2 className="statistic-number">
+        <h2 className="statistic-number3">
           <CounterNumeric countNumber={715} />
         </h2>
         <p className="statistic-description text-center">Talleres grupales</p>
@@ -62,7 +65,7 @@ const ContextData = () => (
       </div>
       <div className="statistic">
         <img className="m-auto d-block w-20" src={TutorImage} alt="Tutor" />
-        <h2 className="statistic-number">
+        <h2 className="statistic-number2">
           <CounterNumeric countNumber={441} />
         </h2>
         <p className="statistic-description text-center">
@@ -75,7 +78,7 @@ const ContextData = () => (
           src={PsicologiaImage}
           alt="Orientación Psicológica"
         />
-        <h2 className="statistic-number">
+        <h2 className="statistic-number3">
           <CounterNumeric countNumber={565} />
         </h2>
         <p className="statistic-description text-center">
@@ -101,7 +104,7 @@ const ContextData = () => (
           src={ComputerImage}
           alt="computador"
         />
-        <h2 className="statistic-number">
+        <h2 className="statistic-number2">
           <CounterNumeric countNumber={221} />
         </h2>
         <p className="statistic-description text-center">
@@ -114,7 +117,7 @@ const ContextData = () => (
           src={EstudioImage}
           alt="Gripos de estudio"
         />
-        <h2 className="statistic-number">
+        <h2 className="statistic-number3">
           <CounterNumeric countNumber={129} />
         </h2>
         <p className="statistic-description text-center">Grupos de estudio</p>
