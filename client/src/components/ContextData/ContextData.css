@@ -37,13 +37,12 @@
 }
 
 .statistic-description {
-    color: rgba(255, 255, 255, 0.70);
-    font-weight: 300;
+    color: #F8B732;
+    font-weight: 600;
     font-style: italic;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     margin-top: 0.5rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 

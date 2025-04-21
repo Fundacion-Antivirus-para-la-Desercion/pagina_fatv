@@ -13,7 +13,7 @@ import banner1 from "../assets/Banner/banner1c.jpeg";
 import banner3 from "../assets/Banner/banner3c.jpeg";
 import banner5 from "../assets/Banner/banner5c.jpeg";
 import banner6 from "../assets/Banner/banner6c.jpeg";
-import banner7 from "../assets/Banner/banner7c.jpeg";
+import banner7 from "../assets/Banner/banner1.webp";
 import banner8 from "../assets/Banner/banner8c.jpeg";
 
 function Carousel() {
@@ -100,7 +100,7 @@ function Carousel() {
                             </div>
                             <div>
                                 <img
-                                    className="h-[90vh] object-cover object-[50%_33%] w-full"
+                                    className="h-[80vh] object-cover object-[50%_33%] w-full"
                                     src={slide.image}
                                     alt={`Slide ${index + 1}`}
                                 />

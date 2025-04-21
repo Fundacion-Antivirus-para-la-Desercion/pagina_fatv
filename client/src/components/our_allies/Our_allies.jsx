@@ -33,16 +33,16 @@ function OurAllies() {
                 }}
                 loop={true}
                 breakpoints={{
-                    0: {
-                        slidesPerView: 3,
+                    640: {
+                        slidesPerView: 2,
                         spaceBetween: 8
                     },
                     768: {
-                        slidesPerView: 5,
+                        slidesPerView: 4,
                         spaceBetween: 16
                     },
                     1024: {
-                        slidesPerView: 7,
+                        slidesPerView: 6,
                         spaceBetween: 20
                     }
                 }}
