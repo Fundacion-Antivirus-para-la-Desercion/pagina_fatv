@@ -6,21 +6,22 @@ function OurAllies() {
   const logos = [
     "/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png",
     "/logos_alianzas/mision-tic.png",
-    "/logos_alianzas/elede-fundacion.png",
     "/logos_alianzas/Logo Aurelio Llano_Mesa de trabajo 1.png",
     "/logos_alianzas/udea.webp",
     "/logos_alianzas/Logo-codigo-C13_Mesa de trabajo 1.png",
     "/logos_alianzas/logo-sofia-perez-de-soto-fundacion.webp",
-    "/logos_alianzas/logo_Beca Tech Negro.png",
     "/logos_alianzas/fundacion-universidad-antioquia.png",
     "/logos_alianzas/Logo-fundacion-nutresa.webp",
     "/logos_alianzas/logo-fidelity-charitable.webp",
     "/logos_alianzas/unnamed.png",
+    "/logos_alianzas/logo_Beca Tech Negro.png",
     "/logos_alianzas/fundacion-rodrigo-arroyave.jpeg",
-    "/logos_alianzas/golondrinas.png",
     "/logos_alianzas/globan.png",
-    "/logos_alianzas/Logo-Autorizado-gente-unida.png",
     "/logos_alianzas/web3foru.png",
+    "/logos_alianzas/Logo-Autorizado-gente-unida.png",
+    "/logos_alianzas/elede-fundacion.png",
+    "/logos_alianzas/golondrinas.png",
+    "/logos_alianzas/Auteco_logo.png",
   ];
 
   return (

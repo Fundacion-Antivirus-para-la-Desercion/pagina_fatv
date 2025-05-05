@@ -10,10 +10,11 @@ import "swiper/css/thumbs";
 import "./Carousel.css";
 
 import banner1 from "../assets/Banner/banner1c.jpeg";
+import banner2 from "../../public/projects/Becarios/becarios-itagui.webp";
 import banner3 from "../assets/Banner/banner3c.jpeg";
 import banner5 from "../assets/Banner/banner5c.jpeg";
 import banner6 from "../assets/Banner/banner6c.jpeg";
-import banner7 from "../assets/Banner/banner1.webp";
+import banner7 from "../assets/Banner/banner7c.jpeg";
 import banner8 from "../assets/Banner/banner8c.jpeg";
 
 function Carousel() {
@@ -29,17 +30,22 @@ function Carousel() {
             description: "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos."
         },
         {
-            image: banner3,
-            title: "FOMENTAMOS LA PERMANENCIA ESTUDIANTIL",
+            image: banner2,
+            title: "CONSULTORÍA DE PERMANENCIA",
             description: "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos."
         },
         {
             image: banner5,
-            title: "FOMENTAMOS LA PERMANENCIA ESTUDIANTIL",
+            title: "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
             description: "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos."
         },
         {
             image: banner6,
+            title: "FOMENTAMOS LA PERMANENCIA ESTUDIANTIL",
+            description: "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos."
+        },
+        {
+            image: banner3,
             title: "FOMENTAMOS LA PERMANENCIA ESTUDIANTIL",
             description: "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos."
         },
@@ -110,7 +116,7 @@ function Carousel() {
                 ))}
             </Swiper>
 
-            <div className="flex absolute bottom-5 left-[11%] w-full z-10">
+            <div className="flex absolute bottom-2 left-[11%] w-full z-10">
                 <div
                     className="swiper-button-prev-custom mx-2 cursor-pointer text-white text-2xl bg-[#f8b732] rounded-full py-2 px-3">
                     &lt;
