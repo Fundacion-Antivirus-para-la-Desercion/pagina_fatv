@@ -7,7 +7,7 @@ import ServicesATV from "../components/Services_ATV/Services_ATV";
 import Carousel from "../components/Carousel";
 function Home() {
   return (
-    <div>
+    <div className="lg:pt-[128px]">
       <Carousel />
       <AboutUs />
       <ContextData />
