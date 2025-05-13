@@ -12,8 +12,7 @@ import "./Carousel.css";
 import banner1 from "../assets/Banner/banner1c.jpeg";
 import banner2 from "../../public/projects/Becarios/becarios-itagui.webp";
 import banner3 from "../assets/Banner/banner5c.jpeg";
-import banner4 from "../assets/Banner/banner9c.jpeg";
-import banner5 from "../assets/Banner/banner10c.jpeg";
+import banner4 from "../assets/Banner/banner10c.jpeg";
 
 function Carousel() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -37,20 +36,13 @@ function Carousel() {
     },
     {
       image: banner3,
-      title: "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
-      description:
-        "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos.",
+      title: "MÁS DE 11.000 ESTUDIANTES ACOMPAÑADOS Y CONTANDO",
+      description: "¡Únete a nuestra comunidad de agentes del cambio!",
     },
     {
       image: banner4,
-      title: "MÁS DE 11.000 ESTUDIANTES ACOMPAÑADOS Y CONTANDO",
-      description:
-        "A través del apoyo sociopedagógico, las comunicaciones y la analítica de datos.",
-    },
-    {
-      image: banner5,
-      title: "MÁS DE 11.000 ESTUDIANTES ACOMPAÑADOS Y CONTANDO",
-      description: "¡Únete a nuestra comunidad de agentes del cambio!",
+      title: "¡DESCUBRE NUESTRAS ESTRATEGIAS DE ACOMPAÑAMIENTO! ",
+      description: "¡Tu futuro está a un clic de distancia!",
     },
   ];
 
@@ -83,7 +75,7 @@ function Carousel() {
             <section className="relative lg:grid grid-cols-[40%_60%] bg-[#222D56]">
               <div className="relative z-50 carousel-text flex items-center p-5">
                 <section>
-                  <h1 className="mb-4 text-5xl leading-normal">
+                  <h1 className="mb-4 text-[43px] leading-normal">
                     {slide.title}
                   </h1>
                   <p className="text-xl w-3/4 mb-2">{slide.description}</p>

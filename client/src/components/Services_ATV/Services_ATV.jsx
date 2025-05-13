@@ -55,8 +55,18 @@ const ServicesATV = () => {
             </div>
             <div>
               <div className="AAA">
-                <h1 className="AA AO">APOYO</h1>
-                <h1 className="AA">ACADÉMICO</h1>
+                <h1 className="AA AO">
+                  APOYO <br />
+                  ACADÉMICO
+                </h1>
+
+                <button className="p-2 bg-btn-back rounded-full hover:bg-[#6a65a3]">
+                  <img
+                    src=" ../src/assets/Icons/more.svg"
+                    alt="Ver más"
+                    className="w-9 h-9 p-2"
+                  />
+                </button>
               </div>
               <p className="ose">
                 Ofrecemos servicios especializados que tienen como objetivo
@@ -82,7 +92,7 @@ const ServicesATV = () => {
                 }`}
               >
                 <div
-                className="relative"
+                  className="relative"
                   style={{ width: "100%", height: "100%", overflow: "hidden" }}
                 >
                   <img
@@ -92,7 +102,7 @@ const ServicesATV = () => {
                     style={{ width: "100%", height: "90%", objectFit: "cover" }}
                   />
                   <span className="absolute top-4 left-4 text-white text-7xl font-bold">
-                    {index+1}
+                    {index + 1}
                   </span>
                 </div>
               </div>
