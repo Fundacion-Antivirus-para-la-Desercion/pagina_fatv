@@ -30,7 +30,7 @@ const ServicesATV = () => {
   };
 
   return (
-    <div className="services">
+    <div className="services" id="redirection-services">
       <div className="contTop">
         <div className="contLeft">
           <div className="ApA">
@@ -54,7 +54,7 @@ const ServicesATV = () => {
               </div>
             </div>
             <div>
-              <div className="AAA">
+              <div className="AAA flex items-center">
                 <h1 className="AA AO">
                   APOYO <br />
                   ACADÉMICO

@@ -85,12 +85,12 @@ function Carousel() {
                   >
                     CONTÁCTENOS
                   </Link>
-                  <Link
-                    to="/DonationPay"
+                  <a
                     className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold text-lg mr-5"
+                    href="#redirection-services"
                   >
-                    Donar
-                  </Link>
+                    Ver más
+                  </a>
                 </section>
               </div>
               <div>
