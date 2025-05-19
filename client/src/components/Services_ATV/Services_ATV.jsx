@@ -125,7 +125,7 @@ const ServicesATV = () => {
                 </p>
               </div>
 
-              <div className="flex justify-evenly items-center w-full">
+              <div className="flex justify-evenly items-center">
                 <button className="arrowLeft ml-20" onClick={handleClickPrev}>
                   <box-icon name="left-arrow-alt" color="#6f6d6d"></box-icon>
                 </button>
