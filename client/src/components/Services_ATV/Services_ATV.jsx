@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Services_ATV.css";
 import "boxicons";
 
@@ -11,13 +11,26 @@ const ServicesATV = () => {
     "/img_services/services3.webp",
   ];
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setStartIndex((prevIndex) => (prevIndex + 1) % imgs.length);
-    }, 4000);
-
-    return () => clearInterval(intervalId);
-  }, [imgs.length, startIndex]);
+  const descriptions = [
+    {
+      title: "GESTIONAMOS LA PERMANENCIA",
+      subTitle: "En: Programas de Becarios - Bootcamps - Universidades",
+      description:
+        "Desarrollamos un proceso integral diseñado a partir de líneas y estrategias de intervención especializadas.",
+    },
+    {
+      title: "CONSULTORIA DE PERMANENCIA",
+      subTitle: "",
+      description:
+        "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa.",
+    },
+    {
+      title: "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
+      subTitle: "",
+      description:
+        "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
+    },
+  ];
 
   const handleClickPrev = () => {
     setStartIndex((prevIndex) =>
@@ -30,110 +43,101 @@ const ServicesATV = () => {
   };
 
   return (
-    <div className="services" id="redirection-services">
-      <div className="contTop">
-        <div className="contLeft">
-          <div className="ApA">
-            <div className="leftIcon">
-              <div className="icon">
-                <box-icon
-                  name="folder-open"
-                  type="solid"
-                  color="#fffafa"
-                  style={{ width: "46px", height: "50px" }}
-                ></box-icon>
-              </div>
-              <div className="">
-                <div className="">
-                  <div className="pl">
-                    <p className="p m">Presentamos</p>
-                    <p className="p">los</p>
-                  </div>
-                  <p className="p">siguientes servicios</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="AAA flex items-center">
-                <h1 className="AA AO">
-                  APOYO <br />
-                  ACADÉMICO
-                </h1>
-
-                <button className="p-2 bg-btn-back rounded-full hover:bg-[#6a65a3]">
-                  <img
-                    src=" ../src/assets/Icons/more.svg"
-                    alt="Ver más"
-                    className="w-9 h-9 p-2"
+    <section className="services mb-96" id="redirection-services">
+      <div className="content-description flex justify-center bg-[#232e55] ">
+        <section className="flex justify-center items-center">
+          <div className="flex flex-wrap w-full p-24">
+            <section className="mb-20">
+              <div className="text-xl">
+                <p className="flex justify-center items-center font-light text-justify">
+                  <box-icon
+                    name="folder-open"
+                    type="solid"
+                    color="#fffafa"
+                    style={{ width: "60px", height: "60px" }}
                   />
+                  PRESTAMOS LOS SIGUIENTES SERVICIOS
+                </p>
+              </div>
+            </section>
+
+            <section className="flex justify-center w-full">
+              {descriptions.map((content, index) => (
+                <div
+                  key={index}
+                  className={`flex items-center  text-left flex-wrap ${
+                    index === startIndex ? "" : "hidden"
+                  }`}
+                >
+                  <h1 className="service-title font-extrabold text-[5rem] tracking-tighter mb-4">
+                    {content.title}
+                  </h1>
+                  <p className="text-xl font-bold font-roboto text-left mb-10">
+                    {content.subTitle}
+                  </p>
+                  <p className="text-xl  tracking-tighter  font-roboto text-left">
+                    {content.description}
+                  </p>
+                </div>
+              ))}
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div className="Imgs flex flex-wrap">
+        <section
+          className="flex gap-16 items-end justify-center"
+          style={{ width: "100%", height: "100%" }}
+        >
+          {imgs.map((logo, index) => (
+            <div
+              key={index}
+              className={`w-full h-full ${
+                index === startIndex ? "" : "hidden"
+              }`}
+            >
+              <section
+                className="relative"
+                style={{ width: "100%", height: "100%", overflow: "hidden" }}
+              >
+                <img
+                  className="hover:grayscale transition duration-700"
+                  src={logo}
+                  alt={`Logo ${index}`}
+                  style={{ width: "100%", height: "90%", objectFit: "cover" }}
+                />
+                <span className="absolute top-4 left-4 text-white text-7xl font-bold">
+                  {index + 1}
+                </span>
+              </section>
+            </div>
+          ))}
+        </section>
+        <section className=" w-full">
+          <div className="contArrows">
+            <section className="flex flex-wrap">
+              <div className="contRight contSabemos p-14 text-xl">
+                <p>
+                  Sabemos cómo ayudarte <br />
+                  Conoce nuestros
+                  servicios
+                </p>
+              </div>
+
+              <div className="flex justify-evenly items-center w-full">
+                <button className="arrowLeft ml-20" onClick={handleClickPrev}>
+                  <box-icon name="left-arrow-alt" color="#6f6d6d"></box-icon>
+                </button>
+                <button className="arrowRight ml-20" onClick={handleClickNext}>
+                  <box-icon name="right-arrow-alt" color="#6f6d6d"></box-icon>
                 </button>
               </div>
-              <p className="ose">
-                Ofrecemos servicios especializados que tienen como objetivo
-                implementar:
-              </p>
-              <p className="tng">
-                Tutorías / Nivélate con Antivirus / Grupos de Estudio
-              </p>
-            </div>
+            </section>
           </div>
-        </div>
-
-        <div className="Imgs">
-          <div
-            className="flex gap-16 items-end justify-center"
-            style={{ width: "100%", height: "100%" }}
-          >
-            {imgs.map((logo, index) => (
-              <div
-                key={index}
-                className={`w-full h-full ${
-                  index === startIndex ? "" : "hidden"
-                }`}
-              >
-                <div
-                  className="relative"
-                  style={{ width: "100%", height: "100%", overflow: "hidden" }}
-                >
-                  <img
-                    className="hover:grayscale transition duration-700"
-                    src={logo}
-                    alt={`Logo ${index}`}
-                    style={{ width: "100%", height: "90%", objectFit: "cover" }}
-                  />
-                  <span className="absolute top-4 left-4 text-white text-7xl font-bold">
-                    {index + 1}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        </section>
       </div>
-
-      <div className="contArrows">
-        <div className="contRight">
-          <div className="contSabemos">
-            <div>
-              <p>Sabemos cómo ayudarte</p>
-            </div>
-            <p className="cn">Conoce nuestros</p>
-            <p className="cn">servicios</p>
-          </div>
-        </div>
-
-        <div className="Arrows">
-          <div className="arrowIcon">
-            <button className="arrowLeft" onClick={handleClickPrev}>
-              <box-icon name="left-arrow-alt" color="#6f6d6d"></box-icon>
-            </button>
-            <button className="arrowRight" onClick={handleClickNext}>
-              <box-icon name="right-arrow-alt" color="#6f6d6d"></box-icon>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

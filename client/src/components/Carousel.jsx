@@ -50,6 +50,8 @@ function Carousel() {
     setActiveIndex(swiper.realIndex);
   };
 
+  const whatsAppNumber = "573173831481";
+
   return (
     <section className="relative overflow-hidden">
       <Swiper
@@ -79,12 +81,15 @@ function Carousel() {
                     {slide.title}
                   </h1>
                   <p className="text-xl w-3/4 mb-2">{slide.description}</p>
-                  <Link
-                    to="/ContactUs"
+
+                  <a
                     className="px-4 py-2 bg-[#fff] text-[#222D56] border-2 font-bold text-lg mr-5"
+                    href={`https://wa.me/${whatsAppNumber}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     CONTÁCTENOS
-                  </Link>
+                  </a>
                   <a
                     className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold text-lg mr-5"
                     href="#redirection-services"
