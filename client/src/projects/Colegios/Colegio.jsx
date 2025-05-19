@@ -13,7 +13,7 @@ function Colegio() {
   ]);
 
   return (
-    <div>
+    <div className="relative top-[145px]">
       <BannerView title={"COLEGIOS"} />
       <div className="m-8 sm:m-20">
         {colegios.map((item, key) => (

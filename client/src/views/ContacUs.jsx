@@ -83,7 +83,7 @@ function ContactUs() {
   };
 
   return (
-    <div>
+    <div className="relative top-[145px]">
       <BannerView title="Contactanos" />
       <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
         <div className="relative">

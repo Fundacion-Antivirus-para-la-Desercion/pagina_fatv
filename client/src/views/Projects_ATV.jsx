@@ -2,7 +2,7 @@ import Proyects from "../components/Projects_ATV/Projects";
 
 function Projects_ATV() {
   return (
-    <div className="Proyects">
+    <div className="Proyects relative top-[145px]">
       <Proyects />
     </div>
   );

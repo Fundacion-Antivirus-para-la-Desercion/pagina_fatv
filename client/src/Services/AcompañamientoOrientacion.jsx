@@ -5,7 +5,7 @@ import foto2 from "../../public/services_imgs/foto2-0000.jpg";
 
 function AcompañamientoOrientacion() {
   return (
-    <div>
+    <div className="relative top-[145px]">
       <div className="relative w-full h-60 sm:h-80 md:h-96">
         <img
           src={imgBanner}

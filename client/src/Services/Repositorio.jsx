@@ -5,7 +5,7 @@ import foto4 from "../../public/services_imgs/foto3.jpg";
 
 function Repositorio() {
   return (
-    <div>
+    <div className="relative top-[145px]">
       <div className="relative w-full h-72 sm:h-80 md:h-96">
         <img
           src={imgBanner}

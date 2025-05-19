@@ -20,7 +20,7 @@ function Bootcamps() {
   ]);
 
   return (
-    <div>
+    <div className="relative top-[145px]">
       <BannerView title={"BOOTCAMPS"} />
       <div className="m-8 sm:m-20">
         {img.map((item, key) => (

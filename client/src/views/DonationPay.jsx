@@ -62,7 +62,7 @@ function DonationPay() {
     };
 
     return (
-        <div>
+        <div className='relative top-[145px]'>
             <div className='flex rounded-xl mt-14 ml-20 mr-20 shadow-2xl justify-center'>
                 <div className='w-2/5 flex flex-col gap-6 mb-14 mt-14 border-r'>
                     <p className='font-normal'>Pago a</p>

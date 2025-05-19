@@ -5,7 +5,7 @@ import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp"
 
 function ApoyoAcademico() {
   return (
-    <div>
+    <div className="relative top-[145px]">
       <div className="relative w-full h-60 sm:h-80 md:h-96">
         <img
           src={imgBanner}

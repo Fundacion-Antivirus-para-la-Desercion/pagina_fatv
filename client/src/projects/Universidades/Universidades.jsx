@@ -20,7 +20,7 @@ function Universidades() {
   ]);
 
   return (
-    <div>
+    <div className="relative top-[145px]">
       <Header />
       <BannerView title={"UNIVERSIDADES"} />
       <div className="m-8 sm:m-20">
