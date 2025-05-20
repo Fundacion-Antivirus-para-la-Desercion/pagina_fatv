@@ -65,7 +65,7 @@ function Header() {
     { id: 2, text: "FUNDACION", link: "/Fundacion" },
     { id: 3, text: "QUE HACEMOS" },
     { id: 4, text: "SERVICIOS" },
-    { id: 5, text: "PROYECTOS", link: "/Proyectos" },
+    { id: 5, text: "NOTICIAS", link: "/News" },
     { id: 6, text: "CONTACTANOS", link: "/ContactUs" },
   ];
 
@@ -154,11 +154,11 @@ function Header() {
 
         <div className="Links-right flex gap-3 items-center">
           <Link
-            to="/Proyectos"
+            to="/News"
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            Proyectos
+            NOTICIAS
           </Link>
           <span className="text-title mx-1">|</span>
           <Link
@@ -338,6 +338,13 @@ function Header() {
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS
+            </Link>
+
+            <Link
+              to="/Provocacion"
+              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
+              PRO-VOCACIÓN
             </Link>
           </ul>
         </div>

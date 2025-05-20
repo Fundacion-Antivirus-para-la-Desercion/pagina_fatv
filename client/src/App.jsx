@@ -20,6 +20,8 @@ import Colegio from "./projects/Colegios/Colegio";
 import Becarios from "./projects/Becarios/Becarios";
 import NotFound from "./views/NotFound";
 import Layout from "./components/layout/Layout";
+import ProVocacion from "./views/ProVocacion";
+import News from "./components/News/News";
 
 function App() {
   return (
@@ -35,7 +37,7 @@ function App() {
           <Route path="/dataAnalyctis" element={<DataAnalytics />} />
           <Route path="/Comunicaciones" element={<Communications_ATV />} />
           <Route path="/fundacion" element={<Foundation />} />
-          <Route path="/Proyectos" element={<Projects_ATV />} />
+          <Route path="/News" element={<News />} />
           <Route path="/ContactUs" element={<ContacUs />} />
           <Route path="/ApoyoAcademico" element={<ApoyoAcademico />} />
           <Route
@@ -48,6 +50,7 @@ function App() {
           <Route path="/Bootcamps" element={<Bootcamps />} />
           <Route path="/Becarios" element={<Becarios />} />
           <Route path="/Colegios" element={<Colegio />} />
+          <Route path="/Provocacion" element={<ProVocacion />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />

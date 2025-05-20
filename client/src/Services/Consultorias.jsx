@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 function Consultorias() {
   return (
-    <div className="relative top-[145px]">
+    <div className="lg:pt-[145px]">
       <div className="flex flex-col items-center justify-center">
         <div className="relative w-full h-60 sm:h-80 md:h-96">
           <img
