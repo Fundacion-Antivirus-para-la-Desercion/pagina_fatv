@@ -110,13 +110,10 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202025-05-12%20at%2010.07.13%20AM.jpeg"
+            src="../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img
-              className="mr-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/date.svg"
-            />
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
@@ -127,32 +124,7 @@ function News() {
             Leer más
             <img
               className="ml-3 relative top-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg"
-            />
-          </a>
-        </div>
-        
-        <div>
-          <img
-            className="mb-3 aspect-ratio"
-            src="https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202025-05-12%20at%2010.07.13%20AM.jpeg"
-          />
-          <p className="flex tracking-[0.3rem] font-light">
-            <img
-              className="mr-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/date.svg"
-            />
-            NOTICIAS
-          </p>
-          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
-            2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN
-          </p>
-          <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
-            Leer más
-            <img
-              className="ml-3 relative top-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg"
+              src="../../../src/assets/Icons/arrow.svg"
             />
           </a>
         </div>
@@ -160,24 +132,21 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202025-05-12%20at%2010.07.13%20AM.jpeg"
+            src="../../../src/assets/images/views/imagesNews/RUT.jpg"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img
-              className="mr-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/date.svg"
-            />
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
-            2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN
+            RENOVACIÓN DEL RÉGIMEN ESPECIAL POR LA TRANSPARENCIA
           </p>
           <hr className="mb-3" />
           <a className="flex items-center text-2xl  text-[#7c78b3]">
             Leer más
             <img
               className="ml-3 relative top-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg"
+              src="../../../src/assets/Icons/arrow.svg"
             />
           </a>
         </div>
@@ -185,24 +154,21 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202025-05-12%20at%2010.07.13%20AM.jpeg"
+            src="../../../src/assets/images/views/imagesNews/desercion-universitaria.gif"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img
-              className="mr-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/date.svg"
-            />
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
-            2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN
+            LA DESERCIÓN UNIVERSITARIA
           </p>
           <hr className="mb-3" />
           <a className="flex items-center text-2xl  text-[#7c78b3]">
             Leer más
             <img
               className="ml-3 relative top-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg"
+              src="../../../src/assets/Icons/arrow.svg"
             />
           </a>
         </div>
@@ -210,24 +176,21 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202025-05-12%20at%2010.07.13%20AM.jpeg"
+            src="../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img
-              className="mr-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/date.svg"
-            />
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
-            2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN
+            CONVERSATORIO EN UNIVERSIDAD DE ENVIADO
           </p>
           <hr className="mb-3" />
           <a className="flex items-center text-2xl  text-[#7c78b3]">
             Leer más
             <img
               className="ml-3 relative top-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg"
+              src="../../../src/assets/Icons/arrow.svg"
             />
           </a>
         </div>
@@ -235,24 +198,242 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202025-05-12%20at%2010.07.13%20AM.jpeg"
+            src="../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img
-              className="mr-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/date.svg"
-            />
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
-            2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN
+            PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN
+            EDUCACIÓN SUPERIOR
           </p>
           <hr className="mb-3" />
           <a className="flex items-center text-2xl  text-[#7c78b3]">
             Leer más
             <img
               className="ml-3 relative top-1"
-              src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/medellín-valle-del-software-MVS.jpg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            MEDELLÍN VALLE DEL SOFTWARE-MVS
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/mención-honorífica.jpg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            RECIBIMOS MENCIÓN HONORÍFICA
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            ENCUENTRO CON COLABORADORES FATV
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/vision-compartida.jpeg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            VISIÓN COMPARTIDA
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/estado-de-la-educación-en-antioquia.jpeg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            ESTADO DE LA EDUCACIÓN EN ANTIOQUIA
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/nuestro-diseño-interior.jpeg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            ¡NUESTRO DISEÑO INTERIOR!
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            NUESTRA INVESTIGACIÓN DE MERCADOS
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            LLEVANDO LA EDUCACIÓN A NUEVOS HORIZONTES EN COLOMBIA
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
+            />
+          </a>
+        </div>
+
+        <div>
+          <img
+            className="mb-3 aspect-ratio"
+            src="../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg"
+          />
+          <p className="flex tracking-[0.3rem] font-light">
+            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            NOTICIAS
+          </p>
+          <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
+            LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN
+          </p>
+          <hr className="mb-3" />
+          <a className="flex items-center text-2xl  text-[#7c78b3]">
+            Leer más
+            <img
+              className="ml-3 relative top-1"
+              src="../../../src/assets/Icons/arrow.svg"
             />
           </a>
         </div>
