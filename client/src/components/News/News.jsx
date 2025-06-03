@@ -2,6 +2,22 @@ import React from "react";
 import "./News.css";
 import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
 import { useState, useEffect } from "react";
+import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
+import Renovacion from "../../../src/assets/images/views/imagesNews/RUT.jpg";
+import Desercion from "../../../src/assets/images/views/imagesNews/desercion-universitaria.gif";
+import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg";
+import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
+import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
+import ValleDelSofware from "../../../src/assets/images/views/imagesNews/medellín-valle-del-software-MVS.jpg";
+import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
+import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
+import VisionCompartida from "../../../src/assets/images/views/imagesNews/vision-compartida.jpeg";
+import EstadoEducacion from "../../../src/assets/images/views/imagesNews/estado-de-la-educación-en-antioquia.jpeg";
+import DiseñoInterior from "../../../src/assets/images/views/imagesNews/nuestro-diseño-interior.jpeg";
+import NuestraInvestigacion from "../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp";
+import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
+import Date from "../../../src/assets/Icons/date.svg";
+import Arrow from "../../../src/assets/Icons/arrow.svg";
 
 function News() {
   const [socialMedia, setSocialMedia] = useState([
@@ -110,21 +126,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg"
+            src={Movimiento}
+            alt="2024: Un año de movimiento, retos y transformación"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -132,21 +150,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/RUT.jpg"
+            src={Renovacion}
+            alt="Renovación del régimen especial por la transparencia"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             RENOVACIÓN DEL RÉGIMEN ESPECIAL POR LA TRANSPARENCIA
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -154,21 +174,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/desercion-universitaria.gif"
+            src={Desercion}
+            alt="La deserción universitaria"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             LA DESERCIÓN UNIVERSITARIA
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -176,21 +198,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg"
+            src={Conversatorio}
+            alt="Conversatorio en universidad de Envigado"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             CONVERSATORIO EN UNIVERSIDAD DE ENVIADO
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -198,10 +222,11 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg"
+            src={Participacion}
+            alt="Participación en el XI congreso latino americano sobre el abandono en educación superior"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
@@ -209,11 +234,12 @@ function News() {
             EDUCACIÓN SUPERIOR
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -221,21 +247,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg"
+            src={Ponencia}
+            alt="Ponencia en congreso internacional de comunicaciones"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -243,21 +271,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/medellín-valle-del-software-MVS.jpg"
+            src={ValleDelSofware}
+            alt="Medellín valle del software"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             MEDELLÍN VALLE DEL SOFTWARE-MVS
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -265,21 +295,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/mención-honorífica.jpg"
+            src={Mencion}
+            alt="Recibimos mención honorífica"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             RECIBIMOS MENCIÓN HONORÍFICA
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -287,21 +319,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg"
+            src={EncuentroColaboradores}
+            alt="Encuentro con colaboradores FATV"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             ENCUENTRO CON COLABORADORES FATV
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -309,21 +343,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/vision-compartida.jpeg"
+            src={VisionCompartida}
+            alt="Visión compartida"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             VISIÓN COMPARTIDA
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -331,21 +367,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/estado-de-la-educación-en-antioquia.jpeg"
+            src={EstadoEducacion}
+            alt="Estado de la educación en Antioquia"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             ESTADO DE LA EDUCACIÓN EN ANTIOQUIA
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -353,21 +391,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/nuestro-diseño-interior.jpeg"
+            src={DiseñoInterior}
+            alt="Nuestro diseño interior"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             ¡NUESTRO DISEÑO INTERIOR!
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -375,21 +415,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp"
+            src={NuestraInvestigacion}
+            alt="Nuestra investigación de mercados"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             NUESTRA INVESTIGACIÓN DE MERCADOS
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -397,21 +439,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp"
+            src={LlevandoEducacion}
+            alt="Llevando la educación a nuevos horizontes en Colombia"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             LLEVANDO LA EDUCACIÓN A NUEVOS HORIZONTES EN COLOMBIA
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>
@@ -419,21 +463,23 @@ function News() {
         <div>
           <img
             className="mb-3 aspect-ratio"
-            src="../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg"
+            src={EncuentroColaboradores}
+            alt="La importacia de los datos para acabar con la deserción"
           />
           <p className="flex tracking-[0.3rem] font-light">
-            <img className="mr-1" src="../../../src/assets/Icons/date.svg" />
+            <img className="mr-1" src={Date} />
             NOTICIAS
           </p>
           <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
             LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN
           </p>
           <hr className="mb-3" />
-          <a className="flex items-center text-2xl  text-[#7c78b3]">
+          <a className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer">
             Leer más
             <img
-              className="ml-3 relative top-1"
-              src="../../../src/assets/Icons/arrow.svg"
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
             />
           </a>
         </div>

@@ -22,6 +22,7 @@ import NotFound from "./views/NotFound";
 import Layout from "./components/layout/Layout";
 import ProVocacion from "./views/ProVocacion";
 import News from "./components/News/News";
+import NewsDetail from "./views/NewsDetail.jsx";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/Becarios" element={<Becarios />} />
           <Route path="/Colegios" element={<Colegio />} />
           <Route path="/Provocacion" element={<ProVocacion />} />
+          <Route path="/news/detail" element={<NewsDetail />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
