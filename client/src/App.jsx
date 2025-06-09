@@ -25,6 +25,7 @@ import News from "./components/News/News";
 import NewsDetail from "./views/NewsDetail.jsx";
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -52,7 +53,7 @@ function App() {
           <Route path="/Becarios" element={<Becarios />} />
           <Route path="/Colegios" element={<Colegio />} />
           <Route path="/Provocacion" element={<ProVocacion />} />
-          <Route path="/news/detail" element={<NewsDetail />} />
+          <Route path="/news/detail" element={<NewsDetail  />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
