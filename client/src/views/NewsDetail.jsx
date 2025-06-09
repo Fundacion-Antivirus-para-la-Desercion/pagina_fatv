@@ -107,7 +107,7 @@ function NewsDetail() {
                   key={index}
                   src={content.value}
                   alt=""
-                  className="w-[600px] h-auto mx-auto object-cover rounded-lg shadow-md mb-2"
+                  className="w-[600px] h-[400px] mx-auto object-contain rounded-lg mb-2"
                 />
               );
             } else {
