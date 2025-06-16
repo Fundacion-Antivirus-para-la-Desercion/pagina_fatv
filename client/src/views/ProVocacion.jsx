@@ -1,5 +1,5 @@
 import React from "react";
-import imgBannerATV from "../../public/img_DataAnalytics/banner-DataAnalytics.webp";
+import Provocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.jpg";
 import { useState, useEffect } from "react";
 
 function ProVocacion() {
@@ -41,14 +41,12 @@ function ProVocacion() {
       <div className="flex flex-col items-center justify-center">
         <div className="relative w-full h-60 sm:h-80 md:h-96">
           <img
-            src={imgBannerATV}
+            src={Provocacion}
             alt="Banner"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-            PRO-VOCACIÓN
-          </h1>
+
           <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
             {socialMedia.map((social, index) => (
               <a

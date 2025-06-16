@@ -116,21 +116,35 @@ function NewsDetail() {
           })}
         </div>
 
-        <OtherNews />
+        <OtherNews newId={news.id} />
 
         <section>
-          <div>
+          <div className="flex items-center">
             <Link
               to="/News"
-              className="group flex items-center text-2xl text-[#7c78b3] cursor-pointer font-semibold"
+              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold mr-7 font-roboto"
             >
               <img
-                className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:-translate-x-1"
+                className="ml-3 relative transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
                 src={Back}
                 alt="Atras"
               />
               Regresar a noticias
             </Link>
+
+            <a
+              href={
+                "http://www.facebook.com/share.php?u=" + window.location.href
+              }
+              target="_blank"
+              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold font-roboto"
+            >
+              <img
+                className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1  mr-1"
+                src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/share.svg"
+              />
+              Share
+            </a>
           </div>
         </section>
       </section>
