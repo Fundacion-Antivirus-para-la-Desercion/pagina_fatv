@@ -124,7 +124,7 @@ function ContactUs() {
         </div>
       </div>
       <div className="w-full  h-full  mb bg-white">
-        <h3 className="font-anton  text-5xl  text-title text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
+        <h3 className="font-anton  text-5xl  text-[#F6A623] text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
           ESCRÍBENOS AQUÍ
         </h3>
 
