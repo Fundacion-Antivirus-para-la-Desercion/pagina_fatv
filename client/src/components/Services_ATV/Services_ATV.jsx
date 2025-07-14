@@ -80,7 +80,7 @@ const ServicesATV = () => {
               {descriptions.map((content, index) => (
                 <div
                   key={index}
-                  className={`flex items-center  text-left flex-wrap ${
+                  className={`flex items-center text-left flex-wrap ${
                     index === startIndex ? "" : "hidden"
                   }`}
                 >

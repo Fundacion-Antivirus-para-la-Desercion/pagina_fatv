@@ -4,7 +4,7 @@ import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics
 
 function Commun() {
   return (
-    <div>
+    <div id="communications">
       <div className="flex flex-col items-center justify-center">
         <div className="relative w-full">
           <img

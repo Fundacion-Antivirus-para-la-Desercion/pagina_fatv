@@ -79,7 +79,7 @@ function News() {
         </div>
       </div>
 
-      <section className="noticias-content p-24">
+      <section className="noticias-content grid gap-12 p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {newsArray.map((news, idx) => (
           <div key={idx}>
             <img className="mb-3 aspect-ratio" src={news.img} alt={news.alt} />

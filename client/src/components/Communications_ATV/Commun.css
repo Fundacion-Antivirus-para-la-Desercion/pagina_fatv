@@ -38,7 +38,7 @@
     margin-left: 5%;
 }
 
-p, li {
+#communications p, #communications li {
     line-height: 1.5; 
     text-align: justify;
     letter-spacing: -0.9px;

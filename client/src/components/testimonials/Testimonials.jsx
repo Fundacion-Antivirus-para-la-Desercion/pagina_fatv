@@ -5,6 +5,8 @@ import Testimonial3 from "../../assets/images/views/proVocacion/testimonials/tes
 import Testimonial4 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-04.jpg";
 import Testimonial5 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-05.jpg";
 import Comilla from "../../assets/images/views/proVocacion/testimonials/comilla.png";
+import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
+
 import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Thumbs } from "swiper/modules";
@@ -106,14 +108,15 @@ function Testimonials() {
         </Swiper>
 
         <section className="flex justify-end">
-          <div>
+          <div className="flex gap-4 items-center">
             <a
-              className="px-4 py-2 bg-white text-[#222D56] border-2 font-bold text-lg mr-5"
+              className="flex items-cente px-4 py-2 bg-white text-[#222D56] border-2 font-bold text-lg "
               href={`https://wa.me/${whatsAppNumber}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              CONTÁCTENOS
+              Lo quiero
+              <img src={Focus} alt="icono" className="w-7 h-7" />
             </a>
             <a
               className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold text-lg mr-5"

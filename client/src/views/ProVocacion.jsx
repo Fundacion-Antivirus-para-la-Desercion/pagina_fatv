@@ -169,18 +169,17 @@ function ProVocacion() {
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center mb-5">
         <div>
           <h1
-            className={`mb-5 text-5xl text-title font-extrabold max-md:text-3xl  ${styles.title}`}
+            className={`mb-5 text-5xl text-title leading-tight font-extrabold max-md:text-3xl  ${styles.title}`}
           >
             OBJETIVO DEL ACOMPAÑAMIENTO
           </h1>
           <p
             className={`text-xl tracking-tighter text-justify max-w-prose mx-auto ${styles.text}`}
           >
-            Potenciar el proyecto de vida de los
-            <strong> jóvenes entre los 14 y 20 años,</strong> a través de
-            procesos de autoconocimiento, acercamiento a la educación superior y
-            al mundo laboral que les permitan tener herramientas para construir
-            su proyecto de vida auténtico.
+            Potenciar el proyecto de vida de los <strong>jóvenes </strong>a
+            través de procesos de autoconocimiento, acercamiento a la educación
+            superior y al mundo laboral que les permitan tener herramientas para
+            construir su proyecto de vida auténtico.
           </p>
         </div>
         <div>
