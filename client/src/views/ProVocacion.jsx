@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ProVocacion.module.css";
 import Provocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.jpg";
 import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.jpg";
-import Becarios from "../../public/projects/Becarios/becarios-itagui.webp";
+import Acompañamiento from "../../src/assets/images/views/proVocacion/Collage_PROVocacion.jpg";
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
 import MundoFormativo from "../assets/images/views/proVocacion/componentes/mundo-formativo.webp";
 import MundoLaboral from "../assets/images/views/proVocacion/componentes/mundo-laboral.webp";
@@ -184,9 +184,9 @@ function ProVocacion() {
         </div>
         <div>
           <img
-            src={Becarios}
+            src={Acompañamiento}
             alt="Acompañamiento"
-            className="w-full max-w-[600px] h-auto object-cover rounded-xl p-4 mx-auto shadow-lg transition-transform duration-500 hover:rotate-3"
+            className="w-[400px] max-w-[600px] h-auto object-cover rounded-xl p-4 mx-auto shadow-lg transition-transform duration-500 hover:rotate-3"
           />
         </div>
       </section>
