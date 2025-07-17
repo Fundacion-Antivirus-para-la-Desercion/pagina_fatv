@@ -110,16 +110,16 @@ function Testimonials() {
         <section className="flex justify-end">
           <div className="flex gap-4 items-center">
             <a
-              className="flex items-cente px-4 py-2 bg-white text-[#222D56] border-2 font-bold text-lg "
+              className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
               href={`https://wa.me/${whatsAppNumber}`}
               target="_blank"
               rel="noopener noreferrer"
             >
               Lo quiero
-              <img src={Focus} alt="icono" className="w-7 h-7" />
+              <img src={Focus} alt="icono" className="w-10 h-10" />
             </a>
             <a
-              className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold text-lg mr-5"
+              className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5  transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
               href="#form-contac-us"
             >
               Más información

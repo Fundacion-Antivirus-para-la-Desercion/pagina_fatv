@@ -166,7 +166,7 @@ function ProVocacion() {
         </div>
       </section>
 
-      <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center mb-5">
+      <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center">
         <div>
           <h1
             className={`mb-5 text-5xl text-title leading-tight font-extrabold max-md:text-3xl  ${styles.title}`}
