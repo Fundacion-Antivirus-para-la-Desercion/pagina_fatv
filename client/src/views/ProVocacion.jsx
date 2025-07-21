@@ -8,6 +8,7 @@ import MundoFormativo from "../assets/images/views/proVocacion/componentes/mundo
 import MundoLaboral from "../assets/images/views/proVocacion/componentes/mundo-laboral.webp";
 import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
+import Focus from "../assets/images/views/proVocacion/information/focus.svg";
 import { useState } from "react";
 
 function ProVocacion() {
@@ -163,6 +164,16 @@ function ProVocacion() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group">
+          <button className="w-auto  transition-all  duration-1000 flex items-center rounded-full bg-white p-2 shadow-lg relative group ">
+            <img src={Focus} alt="Botón fijo" className="w-10 h-10" />
+
+            <span className="hidden group-hover:block transition-all  duration-1000">
+              Déjate provocar
+            </span>
+          </button>
         </div>
       </section>
 

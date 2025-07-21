@@ -121,6 +121,7 @@ function Header() {
           <span className="text-blue-links mx-1">|</span>
           <Link
             to="/Fundacion"
+            onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
@@ -155,6 +156,7 @@ function Header() {
         <div className="Links-right flex gap-3 items-center">
           <Link
             to="/News"
+            onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
@@ -163,6 +165,7 @@ function Header() {
           <span className="text-title mx-1">|</span>
           <Link
             to="/ContactUs"
+            onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
@@ -301,18 +304,21 @@ function Header() {
           <ul className="flex items-center justify-center gap-20 p-10">
             <Link
               to="/dataAnalyctis"
+              onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               ANALÍTICA DE DATOS
             </Link>
             <Link
               to="/intervencion/fortalecimiento-academico"
+              onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               INTERVENCIÓN SOCIO-EMOCIONAL
             </Link>
             <Link
               to="/comunicaciones"
+              onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               COMUNICACIONES
@@ -335,13 +341,14 @@ function Header() {
             </li>
             <Link
               to="/Consultorias"
+              onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS
             </Link>
-
             <Link
               to="/Provocacion"
+              onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               PRO-VOCACIÓN
@@ -374,12 +381,14 @@ function Header() {
           <ul className="flex items-center justify-center gap-12 p-10 ">
             <Link
               to="/ApoyoAcademico"
+              onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
               <span className="font-bold">01.</span> Apoyo Académico
             </Link>
             <Link
               to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
+              onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
               <span className="font-bold">02. </span> Banco de Oportunidades
@@ -387,6 +396,7 @@ function Header() {
             </Link>
             <Link
               to="/AcompañamientoOrientacion"
+              onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
               <span className="font-bold">03. </span> Acompañamiento y
@@ -394,6 +404,7 @@ function Header() {
             </Link>
             <Link
               to="/Repositorio"
+              onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
               <span className="font-bold">04. </span> Repositorio fundación

@@ -1,128 +1,126 @@
 .data_analytics {
-    width: 100%;
-    position: relative;
-    padding: 5em 0; 
-    display: flex;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
+  width: 100%;
+  position: relative;
+  padding: 5em 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .data_analytics--cnt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .data_analytics--content {
-    width: 80%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .data_analytics--text {
-    width: 45%; 
-    color: #33526d;
+  width: 45%;
+  color: #33526d;
 }
 
 .data_analytics--text p {
-    margin-bottom: 1em; 
-    font-weight: lighter;
-    font-size: 0.9em; 
-    letter-spacing: 0.01em; 
+  margin-bottom: 1em;
+  font-weight: lighter;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
 }
 
 .data_analytics--image {
-    width: 55%; 
-    max-width: 100%;
-    margin-left: 5%;
+  width: 55%;
+  max-width: 100%;
+  margin-left: 5%;
 }
 
-#communications p, #communications li {
-    line-height: 1.5; 
-    text-align: justify;
-    letter-spacing: -0.9px;
+#communications p,
+#communications li {
+  line-height: 1.5;
+  text-align: justify;
+  letter-spacing: -0.9px;
 }
 
 .data_analytics--cnt .data_analytics--content .data_analytics--text small {
-    width: 100%;
-    position: relative;
-    display: block;
-    font-size: 0.9em; 
-    line-height: 1.5; 
-    letter-spacing: 0.03em; 
+  width: 100%;
+  position: relative;
+  display: block;
+  font-size: 0.9em;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 .data_analytics--cnt .data_analytics--content .data_analytics--text h4,
 .data_analytics--cnt .data_analytics--content .data_analytics--text h1 {
-    width: 100%;
-    position: relative;
-    display: block;
-    font-size: 3em; 
-    line-height: 0.92; 
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    font-weight: bold;
-    letter-spacing: -4px;
+  width: 100%;
+  position: relative;
+  display: block;
+  font-size: 3em;
+  line-height: 0.92;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: -4px;
 }
-
 
 @media screen and (max-width: 820px) {
-    .data_analytics--content {
-        flex-direction: column; 
-        align-items: center; 
-    }
+  .data_analytics--content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .data_analytics--text,
-    .data_analytics--image {
-        width: 100%;
-        margin-left: 0;
-    }
+  .data_analytics--text,
+  .data_analytics--image {
+    width: 100%;
+    margin-left: 0;
+  }
 
-    .data_analytics--text p {
-        font-size: 0.8em; 
-    }
+  .data_analytics--text p {
+    font-size: 0.8em;
+  }
 
-    .data_analytics--image {
-        margin-top: 1em; 
-    }
+  .data_analytics--image {
+    margin-top: 1em;
+  }
 
-    .data_analytics--text h4,
-    .data_analytics--text h1 {
-        font-size: 2em; 
-        line-height: 1.2; 
-        letter-spacing: -2px; 
-    }
+  .data_analytics--text h4,
+  .data_analytics--text h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    letter-spacing: -2px;
+  }
 
-    .data_analytics--text small {
-        font-size: 0.7em; 
-    }
+  .data_analytics--text small {
+    font-size: 0.7em;
+  }
 }
 
-
 @media screen and (max-width: 480px) {
-    .data_analytics--text h4 {
-        font-size: 1.2em; 
-        line-height: 1.1; 
-        letter-spacing: -0.5px; 
-    }
+  .data_analytics--text h4 {
+    font-size: 1.2em;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
 }
 
 @media screen and (max-width: 393px) {
-    .data_analytics--text h4,
-    .data_analytics--text h1 {
-        font-size: 1.5em; 
-        line-height: 1.2; 
-        letter-spacing: -1px; 
-    }
+  .data_analytics--text h4,
+  .data_analytics--text h1 {
+    font-size: 1.5em;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
 }
 
-
 @media screen and (min-width: 821px) and (max-width: 1180px) {
-    .data_analytics--text h4,
-    .data_analytics--text h1 {
-        font-size: 2.5em; 
-        line-height: 1.2; 
-        letter-spacing: -3px; 
-    }
+  .data_analytics--text h4,
+  .data_analytics--text h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    letter-spacing: -3px;
+  }
 }

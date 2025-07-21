@@ -82,20 +82,22 @@ function Carousel() {
                   </h1>
                   <p className="text-xl w-3/4 mb-2">{slide.description}</p>
 
-                  <a
-                    className="px-4 py-2 bg-[#fff] text-[#222D56] border-2 rounded-xl font-bold text-lg mr-5"
-                    href={`https://wa.me/${whatsAppNumber}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    CONTÁCTENOS
-                  </a>
-                  <a
-                    className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-lg mr-5"
-                    href="#redirection-services"
-                  >
-                    Ver más
-                  </a>
+                  <div className="flex mt-8">
+                    <a
+                      className="px-4 py-2 bg-[#fff] text-[#222D56] border-2 rounded-xl font-bold text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                      href={`https://wa.me/${whatsAppNumber}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      CONTÁCTENOS
+                    </a>
+                    <a
+                      className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                      href="#redirection-services"
+                    >
+                      Ver más
+                    </a>
+                  </div>
                 </section>
               </div>
               <div>
@@ -109,15 +111,6 @@ function Carousel() {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <div className="flex absolute bottom-2 left-[11%] w-full z-10">
-        <div className="swiper-button-prev-custom mx-2 cursor-pointer text-white text-2xl bg-[#f8b732] rounded-full py-2 px-3">
-          &lt;
-        </div>
-        <div className="swiper-button-next-custom mx-2 cursor-pointer text-white text-2xl bg-[#f8b732] rounded-full py-2 px-3">
-          &gt;
-        </div>
-      </div>
 
       <div className="absolute bottom-5 right-[2%] z-10 w-[35%]">
         <Swiper

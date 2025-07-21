@@ -149,7 +149,7 @@ function Information() {
 
                 <section className="w-full flex justify-end items-end">
                   <a
-                    className="flex px-8 py-2 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                    className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
                     href={`https://wa.me/${whatsAppNumber}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -282,15 +282,15 @@ function Information() {
                 </div>
 
                 <section className="w-full flex justify-end">
-                   <a
-                             className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                             href={`https://wa.me/${whatsAppNumber}`}
-                             target="_blank"
-                             rel="noopener noreferrer"
-                           >
-                             Lo quiero
-                             <img src={Focus} alt="icono" className="w-10 h-10" />
-                           </a>
+                  <a
+                    className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                    href={`https://wa.me/${whatsAppNumber}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Lo quiero
+                    <img src={Focus} alt="icono" className="w-10 h-10" />
+                  </a>
                 </section>
               </div>
             </section>
