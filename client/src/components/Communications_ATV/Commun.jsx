@@ -77,38 +77,29 @@ function Commun() {
         <div className="data_analytics--cnt">
           <div className="data_analytics--content">
             <div className="data_analytics--text">
-              <p>
-                <small>NUESTRO MODELO</small>
-              </p>
-              <h4>COMUNICACIONES</h4>
-              <p>
-                <span>
-                  Esta área está conformada por comunicadores sociales y
-                  diseñadores gráficos.
-                </span>
-              </p>
-              <p>
-                <span>
-                  Este equipo crea y promueve acciones comunicativas, ajustadas
-                  a la caracterización y construidas a través de las necesidades
-                  y segmentación de los estudiantes.
-                </span>
-              </p>
-              <p>
-                <span>
-                  Esta área se encarga de difundir información y elaborar
-                  contenidos audiovisuales y utilizar medios tecnológicos,
-                  plataformas y otros recursos de interacción e información.
-                </span>
-              </p>
-              <p>
-                <span>
-                  El área de Comunicación y Marketing también se encarga del
-                  marketing digital y marketing por correo electrónico a las
-                  partes interesadas del proyecto, como directores, profesores,
-                  estudiantes, empresas interesadas en los servicios prestados
-                  por FATV.
-                </span>
+              <p className="">NUESTRO MODELO</p>
+              <h4 className="subtitle">COMUNICACIONES</h4>
+
+              <p className="text-justify">
+                Esta área está conformada por comunicadores sociales y
+                diseñadores gráficos.
+                <br />
+                <br />
+                Este equipo crea y promueve acciones comunicativas, ajustadas a
+                la caracterización y construidas a través de las necesidades y
+                segmentación de los estudiantes.
+                <br />
+                <br />
+                Esta área se encarga de difundir información y elaborar
+                contenidos audiovisuales y utilizar medios tecnológicos,
+                plataformas y otros recursos de interacción e información.
+                <br />
+                <br />
+                El área de Comunicación y Marketing también se encarga del
+                marketing digital y marketing por correo electrónico a las
+                partes interesadas del proyecto, como directores, profesores,
+                estudiantes, empresas interesadas en los servicios prestados por
+                FATV.
               </p>
             </div>
             <div className="data_analytics--image">

@@ -134,6 +134,8 @@ function ProVocacion() {
     setSelectedImage(null);
   };
 
+  const whatsAppNumber = "573173831481";
+
   return (
     <>
       <section className="lg:pt-[145px]">
@@ -167,13 +169,15 @@ function ProVocacion() {
         </div>
 
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group">
-          <button className="w-auto  transition-all  duration-1000 flex items-center rounded-full bg-white p-2 shadow-lg relative group ">
+          <a
+            className={`flex items-center rounded-full bg-white p-2 shadow-lg ${styles.btnProvocation}`}
+            href={`https://wa.me/${whatsAppNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Focus} alt="Botón fijo" className="w-10 h-10" />
-
-            <span className="hidden group-hover:block transition-all  duration-1000">
-              Déjate provocar
-            </span>
-          </button>
+            <span className="text-title font-bold">Déjate provocar</span>
+          </a>
         </div>
       </section>
 
@@ -224,6 +228,7 @@ function ProVocacion() {
           <img
             src={Autoconocimiento}
             alt="Autoconocimiento"
+            title="Ampliar imagen"
             onClick={() => openImageModal(Autoconocimiento)}
             className="w-full h-full object-cover rounded-lg"
           />
@@ -232,6 +237,7 @@ function ProVocacion() {
           <img
             src={MundoFormativo}
             alt="Mundo Formativo"
+            title="Ampliar imagen"
             onClick={() => openImageModal(MundoFormativo)}
             className="w-full h-full object-cover rounded-lg"
           />
@@ -240,6 +246,7 @@ function ProVocacion() {
           <img
             src={MundoLaboral}
             alt="Mundo Laboral"
+            title="Ampliar imagen"
             onClick={() => openImageModal(MundoLaboral)}
             className="w-full h-full object-cover rounded-lg"
           />
@@ -323,7 +330,9 @@ function ProVocacion() {
               <div>
                 <select
                   id="motivo"
-                  name="motivo"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 >
                   <option value="">Selecciona una opción</option>
