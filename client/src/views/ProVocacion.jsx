@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ProVocacion.module.css";
 import Provocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.jpg";
 import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.jpg";
@@ -10,6 +9,8 @@ import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
 import Focus from "../assets/images/views/proVocacion/information/focus.svg";
 import { useState } from "react";
+import Modal from "../components/modal/Modal";
+import emailjs from "emailjs-com";
 
 function ProVocacion() {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ function ProVocacion() {
     tempErrors.message = formData.message ? "" : " Mensaje es requerido.";
     tempErrors.terms = formData.terms
       ? ""
-      : " Debe aceptar los términos y condiciones.";
+      : " Debes aceptar los términos y condiciones.";
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === "");
   };
@@ -54,6 +55,7 @@ function ProVocacion() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
+      setOpen(true);
       setIsSending(true); // Cambiar el estado a enviando
       const emailParams = {
         from_name: formData.fullName,
@@ -66,7 +68,7 @@ function ProVocacion() {
 
       emailjs
         .send(
-          "service_2bvz6wb", //  service ID de EmailJS
+          "service_ciqn2wp", //  service ID de EmailJS
           "template_oacf6ns", //  template ID de EmailJS
           emailParams,
           "06in3EAhhtx15iDoZ" //  public key de EmailJS
@@ -86,6 +88,11 @@ function ProVocacion() {
         .catch((err) => {
           console.error("FAILED...", err);
           setIsSending(false); // Restablecer el estado de envío incluso en caso de error
+        })
+        .finally(() => {
+          setTimeout(() => {
+            setOpen(false);
+          }, 3000);
         });
     }
   };
@@ -135,9 +142,60 @@ function ProVocacion() {
   };
 
   const whatsAppNumber = "573173831481";
+  const [open, setOpen] = useState(false);
+
+  // Limpia el formulario y errores
+  const limpiarFormulario = () => {
+    setFormData({
+      fullName: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+      terms: false,
+    });
+    setErrors({});
+  };
+
+  const cerrarModal = () => {
+    setOpen(false);
+    limpiarFormulario();
+  };
+
+  const validatePhoneNumber = (e) => {
+    const { name, value } = e.target;
+
+    if (name === "phone") {
+      const numericValue = value.replace(/\D/g, "");
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: numericValue,
+      }));
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
+  };
 
   return (
     <>
+      <Modal
+        isOpen={open}
+        onClose={() => cerrarModal()}
+        title="Mensaje enviado"
+      >
+        <div className="flex flex-col items-center text-center">
+          <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" />
+
+          <h2 className="text-2xl font-bold mb-2 text-center text-title">
+            ¡Mensaje enviado correctamente!
+          </h2>
+
+          <p className="text-gray-700">Gracias por comunicarte con nosotros.</p>
+        </div>
+      </Modal>
       <section className="lg:pt-[145px]">
         <div className="flex flex-col items-center justify-center">
           <div className="relative w-full h-60 sm:h-80 md:h-96">
@@ -201,7 +259,7 @@ function ProVocacion() {
           <img
             src={Acompañamiento}
             alt="Acompañamiento"
-            className="w-[400px] max-w-[600px] h-auto object-cover rounded-xl p-4 mx-auto shadow-lg transition-transform duration-500 hover:rotate-3"
+            className="w-auto max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[500px] object-cover rounded-xl p-4 mx-auto shadow-lg transition-transform duration-500 hover:rotate-3"
           />
         </div>
       </section>
@@ -302,7 +360,7 @@ function ProVocacion() {
                   onChange={handleChange}
                 />
                 {errors.fullName && (
-                  <p className="text-red-500">{errors.fullName}</p>
+                  <p className="text-[#F6A623]">{errors.fullName}</p>
                 )}
               </div>
               <div>
@@ -314,7 +372,9 @@ function ProVocacion() {
                   value={formData.email}
                   onChange={handleChange}
                 />
-                {errors.email && <p className="text-red-500">{errors.email}</p>}
+                {errors.email && (
+                  <p className="text-[#F6A623]">{errors.email}</p>
+                )}
               </div>
               <div>
                 <input
@@ -323,9 +383,12 @@ function ProVocacion() {
                   className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="phone"
                   value={formData.phone}
-                  onChange={handleChange}
+                  onChange={validatePhoneNumber}
                 />
-                {errors.phone && <p className="text-red-500">{errors.phone}</p>}
+
+                {errors.phone && (
+                  <p className="text-[#F6A623]">{errors.phone}</p>
+                )}
               </div>
               <div>
                 <select
@@ -364,7 +427,7 @@ function ProVocacion() {
                   onChange={handleChange}
                 />*/}
                 {errors.subject && (
-                  <p className="text-red-500">{errors.subject}</p>
+                  <p className="text-[#F6A623]">{errors.subject}</p>
                 )}
               </div>
             </div>
@@ -378,11 +441,12 @@ function ProVocacion() {
                 onChange={handleChange}
               ></textarea>
               {errors.message && (
-                <p className="text-red-500">{errors.message}</p>
+                <p className="text-[#F6A623]">{errors.message}</p>
               )}
             </div>
-            <div className="mt-4 flex items-center">
+            <div className="mt-4 flex items-center flex-wrap">
               <input
+                id="terms"
                 type="checkbox"
                 className="mr-2"
                 name="terms"
@@ -392,17 +456,18 @@ function ProVocacion() {
               <label htmlFor="terms" className="text-white">
                 Acepto los términos y condiciones
               </label>
-              {errors.terms && <p className="text-red-500">{errors.terms}</p>}
+              {errors.terms && (
+                <p className="w-full text-[#F6A623]">{errors.terms}</p>
+              )}
             </div>
             <div className="mt-4 flex justify-center">
               <button
                 type="submit"
-                className={`w-full md:w-1/2 bg-white text-[#222D56] font-bold py-2 px-4 focus:outline-none focus:shadow-outline ${
+                className={`w-full md:w-1/2 bg-white text-[#222D56] font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
                   isSending ? "cursor-not-allowed" : ""
                 }`}
-                disabled={isSending}
               >
-                {isSending ? "Enviando..." : "Enviar"}
+                Enviar
               </button>
             </div>
           </form>
