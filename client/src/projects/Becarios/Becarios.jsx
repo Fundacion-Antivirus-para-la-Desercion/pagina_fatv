@@ -20,7 +20,7 @@ function Becarios() {
   ]);
 
   return (
-    <div className="lg:pt-[145px]">
+    <div className="relative top-[145px]">
       <BannerView title={"BECARIOS"} />
       <div className="m-8 sm:m-20">
         {becarios.map((item, key) => (

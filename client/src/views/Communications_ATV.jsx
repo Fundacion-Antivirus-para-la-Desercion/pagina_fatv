@@ -2,7 +2,7 @@ import Commun from "../components/Communications_ATV/Commun";
 
 function Communications() {
   return (
-    <div className="Communications lg:pt-[145px]">
+    <div className="Communications relative top-[145px]">
       <Commun />
     </div>
   );
