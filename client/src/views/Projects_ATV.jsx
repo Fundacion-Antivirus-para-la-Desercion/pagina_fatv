@@ -1,4 +1,4 @@
-import Proyects from "../components/Projects_ATV/Projects";
+import Proyects from "../components/News/News";
 
 function Projects_ATV() {
   return (

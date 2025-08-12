@@ -39,7 +39,11 @@ const ServicesATV = () => {
   };
 
   const handleClickNext = () => {
-    setStartIndex((prevIndex) => (prevIndex + 1) % imgs.length);
+    setAnimateTitle(false);
+    setTimeout(() => {
+      setStartIndex((prevIndex) => (prevIndex + 1) % imgs.length);
+      setAnimateTitle(true);
+    }, 10);
   };
 
   return (
