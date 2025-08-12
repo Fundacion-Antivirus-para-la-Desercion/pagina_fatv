@@ -1,50 +1,79 @@
-import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 function OurAllies() {
-  const [startIndex, setStartIndex] = useState(0);
-
   const logos = [
-    '/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png',
-    '/logos_alianzas/DiseтФЬтЦТo sin tтФЬ╨╜tulo (1).png',
-    '/logos_alianzas/DiseтФЬтЦТo sin tтФЬ╨╜tulo (3).png',
-    '/logos_alianzas/Logo Aurelio Llano_Mesa de trabajo 1.png',
-    '/logos_alianzas/Imagen_de_WhatsApp_2024-02-20_a_las_17.20.00_75cbf97c-removebg-preview.png',
-    '/logos_alianzas/Logo CтФЬтФВdigo C13_Mesa de trabajo 1.png',
-    '/logos_alianzas/logo_Beca Tech Negro.png',
-    '/logos_alianzas/unnamed.png',
-    '/logos_alianzas/WhatsApp Image 2023-10-23 at 11.22.39 AM (2) (1).jpeg',
-    '/logos_alianzas/WhatsApp Image 2023-10-24 at 11.04.44 AM.jpeg',
-    '/logos_alianzas/golondrinas.png',
-    '/logos_alianzas/globan.png'
+    "/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png",
+    "/logos_alianzas/mision-tic.png",
+    "/logos_alianzas/Logo Aurelio Llano_Mesa de trabajo 1.png",
+    "/logos_alianzas/logo_EAFIT.png",
+    "/logos_alianzas/nodoa.png",
+    "/logos_alianzas/Logo-codigo-C13_Mesa de trabajo 1.png",
+    "logos_alianzas/THT_Logo.png",
+    "/logos_alianzas/logo-sofia-perez-de-soto-fundacion.webp",
+    "logos_alianzas/celerix.png",
+    "/logos_alianzas/udea.webp",
+    "/logos_alianzas/fundacion-universidad-antioquia.png",
+    "/logos_alianzas/Logo-fundacion-nutresa.webp",
+    "/logos_alianzas/logo-fidelity-charitable.webp",
+    "/logos_alianzas/unnamed.png",
+    "/logos_alianzas/Logo_velezreyes.jpg",
+    "/logos_alianzas/UNAL_Aplicación_Medellín.svg",
+    "/logos_alianzas/logo_Beca Tech Negro.png",
+    "/logos_alianzas/fundacion-rodrigo-arroyave.jpeg",
+    "/logos_alianzas/globan.png",
+    "/logos_alianzas/web3foru.png",
+    "/logos_alianzas/Logo-Autorizado-gente-unida.png",
+    "/logos_alianzas/elede-fundacion.png",
+    "/logos_alianzas/golondrinas.png",
+    "/logos_alianzas/logo_sura.png",
+    "/logos_alianzas/Isa_InterColombia_logo.png",
+    "/logos_alianzas/Auteco_logo.png",
   ];
 
-  const handleNext = () => {
-    setStartIndex((prevIndex) => prevIndex + 3);
-  };
-
-  const handlePrev = () => {
-    setStartIndex((prevIndex) => prevIndex - 3);
-  };
-
   return (
-    <>
-    <h1 className='mt-14 text-center text-2xl text-title font-extrabold'>NUESTROS ALIADOS</h1>
-    <div className='mb-12 flex gap-16 items-center justify-center max-md:gap-4 max-lg:gap-3'>
-      <button onClick={handlePrev} disabled={startIndex === 0} className='mr-8'>
-        <svg className='ml-1 text-blue-300 w-3 h-3' viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.00152 0C4.33112 0.329809 4.659 0.657903 4.9817 0.980827C3.98426 1.97472 2.97715 2.9779 1.9697 3.98143C3.002 5.00696 4.0098 6.00808 5 6.992C4.64278 7.34829 4.31145 7.6781 3.98875 8C2.67516 6.68352 1.33154 5.33712 4.7683e-07 4.00241C1.31597 2.6873 2.65752 1.34537 4.00152 0Z"/>
-        </svg>
-      </button>
-      {logos.slice(startIndex, startIndex + 3).map((logo, index) => (
-        <img className='w-32 max-md:w-20' key={index} src={logo} alt={`Logo ${index}`} />
-      ))}
-      <button onClick={handleNext} disabled={startIndex + 3 >= logos.length} className='ml-8'>
-        <svg className='ml-1 text-blue-300 w-3 h-3' viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"/>
-        </svg>
-      </button>
-    </div>
-    </>
+    <section className="p-28 relative">
+      <h1 className="mb-20 text-center text-5xl text-title font-extrabold max-md:text-3xl">
+        NUESTROS ALIADOS
+      </h1>
+
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        }}
+      >
+        {logos.map((logo, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex justify-center items-start transition-transform duration-500 hover:scale-125">
+              <img
+                className="w-auto h-52 object-contain"
+                src={logo}
+                alt={`Logo aliado ${index}`}
+                loading="lazy"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 }
 

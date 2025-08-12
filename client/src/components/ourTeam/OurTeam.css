@@ -5,38 +5,28 @@
   background-color: #fff;
   width: 100%;
   position: relative;
-  padding: 5.2941176471em 0;
   align-items: center; 
   margin: 150px 0 0 0;
 }
 
 .OurTeam-block-title {
   text-rendering: optimizeLegibility;
-  font-size: 7.7647058824em;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1em;
   line-height: 92%;
-  font: 50px;
-  letter-spacing: -0.09em;
   font-family: "Oswald", sans-serif;
-  color: #33526d;
   font-weight: bold;
   position: absolute;
   margin: 10px auto;
-  top: -50px;
-
-}
-.OurTeam-block-title h3{
-  line-height: 92%;
+  top: -45px;
 }
 
 .OurTeam {
   background-color: #ffb732;
   padding: 1rem;
+  padding-bottom: 100px;
   width: 100%;
-  height: 650px;
-  
 }
 
 
@@ -103,10 +93,7 @@
     .cards {
       max-width: 900px;
     }
-    .OurTeam-block-title {
-      top: -40px;
-      bottom: 10px;
-    }
+    
     .card{
       margin: 10px;
     }
@@ -119,11 +106,7 @@
     .card{
       margin: 30px;
     }
-    .OurTeam-block-title {
-      font-size: 6em;
-      top: 15px;
-      bottom: 10px;
-    }
+    
   }
   
   @media (max-width: 768px) {
@@ -134,20 +117,11 @@
     .card {
       margin-right: 10px;
     }
-    .OurTeam-block-title {
-      font-size: 4.7em;
-      top: 20px;
-      bottom: 10px;
-    }
+    
   }
   @media (max-width: 586px) {
     .cards {
       max-width: 300px;
-    }
-
-    .OurTeam-block-title {
-      font-size: 4em;
-      top: 20px;
     }
   }
   
@@ -156,10 +130,6 @@
       max-width: 300px;
     }
 
-    .OurTeam-block-title {
-      font-size: 4em;
-      top: 20px;
-    }
   }
   
   @media (max-width: 480px) {
@@ -167,10 +137,6 @@
       max-width: 250px;
     }
   
-    .OurTeam-block-title {
-      font-size: 3.5em;
-      top: 30px;
-    }
   
     .card {
       flex: 1 1 200px;

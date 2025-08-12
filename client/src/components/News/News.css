@@ -1,0 +1,22 @@
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  margin: 70px;
+}
+
+.noticias-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  gap: 50px;
+}
+
+.noticias-content > div {
+  align-content: space-between;
+  font-family: "Oswald", sans-serif;
+}
+
+.aspect-ratio {
+   aspect-ratio: 1;
+   object-fit: cover;
+}

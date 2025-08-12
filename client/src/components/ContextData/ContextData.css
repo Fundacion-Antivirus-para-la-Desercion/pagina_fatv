@@ -1,74 +1,69 @@
-
 .context-data-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+  background-size: cover;
+  background-color: #222d56;
+  background-attachment: fixed;
+  padding: 130px 20px;
+  border-radius: 8px;
 }
 
 .context-data-title {
-    
-    color: #1a1a1a;
-    margin-bottom: 1rem; 
-    font-family: 'Roboto', sans-serif; 
-    font-size: 24px;
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-
 .context-data-statistics {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr)); 
-    gap: 30px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 450px));
+  gap: 30px;
+  row-gap: 100px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .statistic {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: box-shadow 0.3s ease; 
+  text-align: center;
 }
-
-
-
 
 .statistic-number {
-    color: #232e55; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 50px;
-    font-weight: bold; 
-    text-shadow: 0 0 5px rgba(35, 46, 85, 0.7);
-    animation: scaleAnimation 0.5s ease-out forwards;
+  color: #ffb732;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  animation: scaleAnimation 0.5s ease-out forwards;
 }
 
-
-.statistic:hover{
-    background-color: #b3b1b1c9;
-    transition: 2s;
-    cursor: pointer;
+.statistic-number2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  animation: scaleAnimation 0.5s ease-out forwards;
 }
 
+.statistic-number3 {
+  color: #7c78b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  animation: scaleAnimation 0.5s ease-out forwards;
+}
 
 .statistic-description {
-    color: #333; 
-    font-weight: bold;
-    font-style: italic; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 20px; 
-    margin-top: 0.5rem; 
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
 }
-
-
 
 @media screen and (max-width: 768px) {
-    .context-data-statistics {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    }
+  .context-data-statistics {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
-
-
