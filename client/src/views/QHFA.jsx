@@ -7,7 +7,7 @@ import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp"
 function QHFA() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center relative top-[145px]">
+      <div className="flex flex-col items-center justify-center lg:pt-[145px]">
         <div className="relative w-full">
           <img
             src={imgBanner}

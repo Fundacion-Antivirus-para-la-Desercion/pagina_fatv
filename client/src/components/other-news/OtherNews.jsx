@@ -37,7 +37,7 @@ function OtherNews({ newId }) {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-1">{news.title}</h4>
+                    <h4 className="text-base font-semibold mb-1 leading-5">{news.title}</h4>
                     <a
                       href={news.link}
                       className="text-blue-600 hover:text-blue-800 text-sm"

@@ -2,7 +2,7 @@ import FoundationATV from "../components/Foundation/FoundationATV";
 
 function Foundation() {
   return (
-    <div className="Foundation-container relative top-[145px]">
+    <div className="Foundation-container lg:pt-[145px]">
       <FoundationATV />
     </div>
   );

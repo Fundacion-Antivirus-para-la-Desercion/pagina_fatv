@@ -43,19 +43,14 @@ function OurTeam() {
       image: "/img_OurTeam/VictorValencia.jpeg",
     },
     {
-      name: "jazmín alzate",
-      role: "Coordinadora Alianzas y Cooperación",
-      image: "/img_OurTeam/JazminAlzate.jpeg",
-    },
-    {
       name: "david santiago botero",
       role: "Coordinador Área Legal",
       image: "/img_OurTeam/DavidBotero.webp",
     },
     {
-      name: "daniela correa",
+      name: "Manuela Correa Quintero",
       role: "Coordinadora Área Comunicaciones",
-      image: "/img_OurTeam/DanielaCorrea.webp",
+      image: "/img_OurTeam/ManuelaCorreaQuintero.webp",
     },
     {
       name: "luis fernando gonzález",

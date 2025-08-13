@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Services_ATV.css";
 import "boxicons";
+import WriteEffect from "../writeEffect/WriteEffect";
 
 const ServicesATV = () => {
   const [startIndex, setStartIndex] = useState(0);
+  const [animateTitle, setAnimateTitle] = useState(true); // Nuevo estado
+
+  useEffect(() => {
+    setAnimateTitle(true); // Reinicia la animación al cambiar de servicio
+    // O podrías usar un setTimeout para un pequeño delay si es necesario
+  }, [startIndex]);
 
   const imgs = [
     "/img_services/services1.webp",
@@ -33,9 +40,13 @@ const ServicesATV = () => {
   ];
 
   const handleClickPrev = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === 0 ? imgs.length - 1 : prevIndex - 1
-    );
+    setAnimateTitle(false);
+    setTimeout(() => {
+      setStartIndex((prevIndex) =>
+        prevIndex === 0 ? imgs.length - 1 : prevIndex - 1
+      );
+      setAnimateTitle(true);
+    }, 10);
   };
 
   const handleClickNext = () => {
@@ -69,13 +80,18 @@ const ServicesATV = () => {
               {descriptions.map((content, index) => (
                 <div
                   key={index}
-                  className={`flex items-center  text-left flex-wrap ${
+                  className={`flex items-center text-left flex-wrap ${
                     index === startIndex ? "" : "hidden"
                   }`}
                 >
-                  <h1 className="service-title font-extrabold text-[5rem] tracking-tighter mb-4">
-                    {content.title}
-                  </h1>
+                  <div className="w-full">
+                    <WriteEffect
+                      key={content.title}
+                      texto={content.title}
+                      velocidad={100}
+                      shouldAnimate={animateTitle}
+                    />
+                  </div>
                   <p className="text-xl font-bold font-roboto text-left mb-10">
                     {content.subTitle}
                   </p>
@@ -124,8 +140,7 @@ const ServicesATV = () => {
               <div className="contRight contSabemos p-14 text-xl">
                 <p>
                   Sabemos cómo ayudarte <br />
-                  Conoce nuestros
-                  servicios
+                  Conoce nuestros servicios
                 </p>
               </div>
 
