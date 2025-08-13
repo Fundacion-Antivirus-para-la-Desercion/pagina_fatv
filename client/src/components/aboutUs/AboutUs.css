@@ -1,7 +1,7 @@
 .aboutUs {
-    padding: 5.2941176471em 0;
     color: #33526d;
     margin: 0px 100px;
+    padding: 100px 0;
   }
   
   .aboutUs-content {
@@ -9,10 +9,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 70px 40px;
-    padding: 5.2941176471em 0;
     align-items: flex-end;
-
-    
   }
   
   .left-content {

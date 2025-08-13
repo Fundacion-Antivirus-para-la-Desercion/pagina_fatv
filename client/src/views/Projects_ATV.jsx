@@ -1,8 +1,8 @@
-import Proyects from "../components/Projects_ATV/Projects";
+import Proyects from "../components/News/News";
 
 function Projects_ATV() {
   return (
-    <div className="Proyects">
+    <div className="Proyects lg:pt-[145px]">
       <Proyects />
     </div>
   );

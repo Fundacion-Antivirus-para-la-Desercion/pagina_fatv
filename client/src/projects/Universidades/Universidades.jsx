@@ -20,7 +20,7 @@ function Universidades() {
   ]);
 
   return (
-    <div>
+    <div className="lg:pt-[145px]">
       <Header />
       <BannerView title={"UNIVERSIDADES"} />
       <div className="m-8 sm:m-20">
