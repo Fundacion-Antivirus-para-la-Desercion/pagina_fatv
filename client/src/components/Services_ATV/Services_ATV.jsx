@@ -58,10 +58,10 @@ const ServicesATV = () => {
   };
 
   return (
-    <section className="services mb-96" id="redirection-services">
+    <section className="grid grid-cols-1 lg:grid-cols-2 mb-32 lg:mb-96 text-white" id="redirection-services">
       <div className="content-description flex justify-center bg-[#232e55] ">
         <section className="flex justify-center items-center">
-          <div className="flex flex-wrap w-full p-24">
+          <div className="flex flex-wrap w-full p-4 lg:p-24">
             <section className="mb-20">
               <div className="text-xl">
                 <p className="flex justify-center items-center font-light text-justify">
@@ -136,8 +136,8 @@ const ServicesATV = () => {
         </section>
         <section className=" w-full">
           <div className="contArrows">
-            <section className="flex flex-wrap">
-              <div className="contRight contSabemos p-14 text-xl">
+            <section className="flex flex-wrap ">
+              <div className="contRight contSabemos p-4 lg:p-14 text-xl bg-[#232e55]">
                 <p>
                   Sabemos cómo ayudarte <br />
                   Conoce nuestros servicios
