@@ -62,20 +62,20 @@ function DonationPay() {
     };
 
     return (
-        <div className='lg:pt-[145px]'>
-            <div className='flex rounded-xl mt-14 ml-20 mr-20 shadow-2xl justify-center'>
-                <div className='w-2/5 flex flex-col gap-6 mb-14 mt-14 border-r'>
+        <div className='lg:pt-[145px] flex justify-center flex-wrap'>
+            <div className='w-[95%] grid grid-cols-1 lg:grid-cols-2 rounded-xl mt-4 shadow-2xl justify-center p-4'>
+                <div className='flex flex-col flex-wrap gap-6 mb-14 mt-14 lg:border-r'>
                     <p className='font-normal'>Pago a</p>
                     <h1 className='text-4xl font-bold leading-tight'>
                         Fundación<br />
                         Antivirus para la<br />
                         Deserción
                     </h1>
-                    <p className='font-bold text-lg mb-48 opacity-85'>DONACIÓN ANTIVIRUS PARA LA <br /> DESERCIÓN</p>
-                    <p className='text-lg opacity-85 w-80'>EN LA FUNDACIÓN ANTIVIRUS PARA LA DESERCIÓN SOMOS UNA ORGANIZACIÓN SIN ÁNIMO DE LUCRO QUE BUSCA DISMINUIR LOS NIVELES DE DESERCIÓN ESTUDIANTIL EN COLOMBIA, MEJORAR LOS NIVELES DE PERMANENCIA Y DE GRADUACIÓN, SIENDO ESTA NUESTRA MANERA DE APORTAR AL LOGRO DE UN PAÍS CON MÁS EDUCACIÓN Y CONSECUENTEMENTE CON MÁS DESARROLLO.</p>
+                    <p className='font-bold text-lg lg:mb-48 opacity-85'>DONACIÓN ANTIVIRUS PARA LA <br /> DESERCIÓN</p>
+                    <p className='text-lg opacity-85'>EN LA FUNDACIÓN ANTIVIRUS PARA LA DESERCIÓN SOMOS UNA ORGANIZACIÓN SIN ÁNIMO DE LUCRO QUE BUSCA DISMINUIR LOS NIVELES DE DESERCIÓN ESTUDIANTIL EN COLOMBIA, MEJORAR LOS NIVELES DE PERMANENCIA Y DE GRADUACIÓN, SIENDO ESTA NUESTRA MANERA DE APORTAR AL LOGRO DE UN PAÍS CON MÁS EDUCACIÓN Y CONSECUENTEMENTE CON MÁS DESARROLLO.</p>
                 </div>
 
-                <div className='flex flex-col gap-6 mt-14 pl-10'>
+                <div className='flex flex-col gap-6 mt-14 lg:pl-10'>
                     <b>Concepto de Fundación Antivirus para la Deserción</b>
                     <div className='flex flex-col'>
                         <select>
@@ -109,7 +109,7 @@ function DonationPay() {
                     </button>
                 </div>
             </div>
-            <p className='ml-20'>PAGOS SEGUROS POR 
+            <p className='lg:ml-20'>PAGOS SEGUROS POR 
                 <span className='font-bold'> Wompi</span></p>
         </div>
     );

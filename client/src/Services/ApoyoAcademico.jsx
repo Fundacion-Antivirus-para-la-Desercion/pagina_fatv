@@ -118,14 +118,14 @@ function ApoyoAcademico() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 relative">
+          <div className="w-full md:w-1/2 relative mb-4 h-fit">
             <img
               src={emocional3}
               alt="emocional 1"
               className="w-full h-auto object-cover"
             />
 
-            <div className="absolute bottom-1 left-0-0 bg-blue-links px-16 py-12">
+            <div className="lg:absolute bottom-0 left-0-0 bg-blue-links px-16 py-12">
               <b className="text-xl text-white ">Evento becados Itaguí</b>
               <p className="text-white text-xl">
                 Una alianza creada para a compañarte
@@ -142,7 +142,7 @@ function ApoyoAcademico() {
               alt="emocional 2"
             />
 
-            <div className="absolute bottom-0 left-0-0 bg-blue-links px-16 py-12">
+            <div className="lg:absolute bottom-0 left-0-0 bg-blue-links px-16 py-12">
               <b className="text-xl text-white ">Colegios Itaguí</b>
               <p className="text-white text-xl">
                 Charlas pedagógicas sobre el acompañamiento

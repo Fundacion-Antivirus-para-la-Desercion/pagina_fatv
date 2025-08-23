@@ -82,7 +82,7 @@ function Carousel() {
                   </h1>
                   <p className="text-xl w-3/4 mb-2">{slide.description}</p>
 
-                  <div className="flex flex-col sm:flex-row mt-8 gap-4 sm:gap-5">
+                  <div className="flex flex-wrap mt-8 gap-4">
                     <a
                       className="px-4 py-2 bg-white text-[#222D56] border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
                       href={`https://wa.me/${whatsAppNumber}`}
