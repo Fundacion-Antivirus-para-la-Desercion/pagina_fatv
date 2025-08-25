@@ -1,6 +1,7 @@
 import React from "react";
 import "./Commun.css";
 import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
+import ImgComunications from "../../../public/img_Communications/comunications_1.webp";
 
 function Commun() {
   return (
@@ -105,7 +106,7 @@ function Commun() {
             <div className="data_analytics--image">
               <picture>
                 <img
-                  src="../../../public/img_Communications/comunications_1.webp"
+                  src={ImgComunications}
                   alt=""
                 />
               </picture>
