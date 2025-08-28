@@ -62,9 +62,9 @@ const ServicesATV = () => {
       <div className="content-description flex justify-center bg-[#232e55] ">
         <section className="flex justify-center items-center">
           <div className="flex flex-wrap w-full p-4 lg:p-24">
-            <section className="mb-20">
+            <section className="mb-10 lg:mb-20">
               <div className="text-xl">
-                <p className="flex justify-center items-center font-light text-justify">
+                <p className="flex justify-center items-center font-light text-left">
                   <box-icon
                     name="folder-open"
                     type="solid"
@@ -92,10 +92,10 @@ const ServicesATV = () => {
                       shouldAnimate={animateTitle}
                     />
                   </div>
-                  <p className="text-xl font-bold font-roboto text-left mb-10">
+                  <p className="text-xl font-bold font-roboto text-justify mb-10">
                     {content.subTitle}
                   </p>
-                  <p className="text-xl  tracking-tighter  font-roboto text-left">
+                  <p className="text-xl  tracking-tighter  font-roboto text-justify">
                     {content.description}
                   </p>
                 </div>

@@ -1,4 +1,6 @@
 import "./AboutUs.css";
+import { Link } from "react-router-dom";
+import Arrow from "../../../src/assets/Icons/arrow.svg";
 
 function AboutUs() {
   return (
@@ -22,9 +24,17 @@ function AboutUs() {
               través de un ecosistema de estrategias
             </strong>
           </p>
-          <a className="right-content-link" href="/AboutUs.jsx">
-            Conoce más aquí<img src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg" alt=""/>
-          </a>
+          <Link
+            className="group flex font-bold items-center text-base text-[#7c78b3] cursor-pointer"
+            to="/fundacion"
+          >
+            Conoce más aquí
+            <img
+              className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
+              src={Arrow}
+              alt="Ver más"
+            />
+          </Link>
         </div>
       </div>
     </div>
