@@ -14,6 +14,7 @@ import Pay from "../../src/assets/images/views/donationPay/pay.png";
 function DonationPay() {
   const [donationAmount, setDonationAmount] = useState(100);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -68,8 +69,9 @@ function DonationPay() {
     setDonationAmount(e.target.value);
   };
 
-  const handleCheckboxChange = (e) => {
-    setAcceptedTerms(e.target.checked);
+  const handleDonationTypeChange = (type) => {
+    setDonationType(type);
+    setAcceptedTerms(true);
   };
 
   return (
@@ -163,19 +165,24 @@ function DonationPay() {
           />
 
           <div className="flex flex-wrap justify-center gap-2">
-            <button className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#7C78B3] hover:text-white transition-colors duration-200">
+            <button onClick={() => setDonationAmount(5000)}
+             className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#7C78B3] hover:text-white transition-colors duration-200">
               $5.000
             </button>
-            <button className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#f8b732] hover:text-white transition-colors duration-200">
+            <button onClick={() => setDonationAmount(10000)}
+             className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#f8b732] hover:text-white transition-colors duration-200">
               $10.000
             </button>
-            <button className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#7C78B3] hover:text-white transition-colors duration-200">
+            <button onClick={() => setDonationAmount(20000)}
+             className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#7C78B3] hover:text-white transition-colors duration-200">
               $20.000
             </button>
-            <button className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#f8b732] hover:text-white transition-colors duration-200">
+            <button onClick={() => setDonationAmount(50000)}
+             className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#f8b732] hover:text-white transition-colors duration-200">
               $50.000
             </button>
-            <button className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#7C78B3] hover:text-white transition-colors duration-200">
+            <button onClick={() => setDonationAmount(100000)}
+             className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#7C78B3] hover:text-white transition-colors duration-200">
               $100.000
             </button>
           </div>
@@ -194,8 +201,10 @@ function DonationPay() {
             <input
               type="radio"
               id="monthlyDonation"
+              name="donationType"
               className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
-              onChange={handleCheckboxChange}
+              onChange={() => handleDonationTypeChange("monthly")}
+              checked={donationType === "monthly"}
             />
             <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">
               Permitir que el pago sea mensual según el monto mencionado
@@ -205,11 +214,13 @@ function DonationPay() {
           <div className="flex items-center mb-10">
             <input
               type="radio"
-              id="monthlyDonation"
+              id="oneTimeDonation"
+              name="donationType"
               className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
-              onChange={handleCheckboxChange}
+              onChange={() => handleDonationTypeChange("oneTime")}
+              checked={donationType === "oneTime"}
             />
-            <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">
+            <label htmlFor="oneTimeDonation" className="ml-2 text-gray-700">
               Contribución única
             </label>
           </div>
@@ -217,13 +228,11 @@ function DonationPay() {
 
           <button
             className={`bg-[#222D56] text-white font-semibold rounded-2xl py-4 px-8 ${
-              (!acceptedTerms || Number.isNaN(parseFloat(donationAmount))) &&
+              (!donationType || Number.isNaN(parseFloat(donationAmount))) &&
               "opacity-50 cursor-not-allowed"
             }`}
             onClick={handleClick}
-            disabled={
-              !acceptedTerms || Number.isNaN(parseFloat(donationAmount))
-            }
+            disabled={!donationType || Number.isNaN(parseFloat(donationAmount))}
           >
             Continuar
           </button>
