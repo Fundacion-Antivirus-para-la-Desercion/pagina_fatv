@@ -89,8 +89,6 @@ function OurTeam() {
 
   return (
     <>
-      <section></section>
-
       <div className="OurTeam-block">
         <div className="OurTeam-block-title">
           <h3 className="text-5xl font-extrabold  text-title">

@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import "boxicons";
 import BannerDA from "../components/dataAnalystics/BannerDA";
 import ContentDA from "../components/dataAnalystics/contentDA/ContentDA";

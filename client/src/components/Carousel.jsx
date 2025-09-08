@@ -82,9 +82,9 @@ function Carousel() {
                   </h1>
                   <p className="text-xl w-3/4 mb-2">{slide.description}</p>
 
-                  <div className="flex mt-8">
+                  <div className="flex flex-wrap mt-8 gap-4">
                     <a
-                      className="px-4 py-2 bg-[#fff] text-[#222D56] border-2 rounded-xl font-bold text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                      className="px-4 py-2 bg-white text-[#222D56] border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
                       href={`https://wa.me/${whatsAppNumber}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -92,7 +92,7 @@ function Carousel() {
                       CONTÁCTENOS
                     </a>
                     <a
-                      className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                      className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
                       href="#redirection-services"
                     >
                       Ver más
@@ -122,6 +122,17 @@ function Carousel() {
           watchSlidesProgress={true}
           modules={[Thumbs]}
           className="thumbnails-swiper"
+          breakpoints={{
+            320: {
+              slidesPerView: 1, // Para pantallas pequeñas (mayores a 320px)
+            },
+            768: {
+              slidesPerView: 2, // Para pantallas pequeñas (mayores a 768px)
+            },
+            1024: {
+              slidesPerView: 3, // Para pantallas grandes (mayores o iguales a 1024px)
+            },
+          }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide

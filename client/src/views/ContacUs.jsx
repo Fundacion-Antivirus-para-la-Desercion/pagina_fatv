@@ -175,7 +175,7 @@ function ContactUs() {
             <p className="text-cc">Cl 79 S 50-69 La Estrella </p>
             <p className="text-cc">Medellín - Antioquia - Colombia</p>
             <p className="text-blue-links font-bold">Correo electrónico</p>
-            <p className="text-cc">
+            <p className="text-cc overflow-hidden whitespace-nowrap text-ellipsis">
               contactenos@fundacionantivirusparaladesercion.org
             </p>
 
