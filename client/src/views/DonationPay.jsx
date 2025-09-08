@@ -93,7 +93,7 @@ function DonationPay() {
                 shadowScale: 0.94,
               }}
               modules={[EffectCube, Autoplay]}
-              className="mySwiper w-60 h-60"
+              className="mySwiper w-32 h-32 lg:w-60 lg:h-60 rounded-xl"
               autoplay={{
                 delay: 3500,
                 disableOnInteraction: false,
@@ -103,42 +103,42 @@ function DonationPay() {
                 <img
                   src={Acompañamiento1}
                   alt="Acompañamiento a estudiantes"
-                  className="block w-full h-full object-cover"
+                  className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento2}
                   alt="Acompañamiento a estudiantes"
-                  className="block w-full h-full object-cover"
+                  className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento3}
                   alt="Acompañamiento a estudiantes"
-                  className="block w-full h-full object-cover"
+                  className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento4}
                   alt="Acompañamiento a estudiantes"
-                  className="block w-full h-full object-cover"
+                  className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento5}
                   alt="Acompañamiento a estudiantes"
-                  className="block w-full h-full object-cover"
+                  className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
             </Swiper>
           </div>
 
           <p className="text-lg text-title opacity-85 text-justify m-5">
-            En la fundación antivirus para la deserción somos una organización
+            En la Fundación Antivirus para la Deserción, somos una organización
             sin ánimo de lucro que busca disminuir los niveles de deserción
             estudiantil en Colombia, mejorar los niveles de permanencia y de
             graduación, siendo esta nuestra manera de aportar al logro de un
@@ -150,7 +150,7 @@ function DonationPay() {
           <div className="flex items-center justify-center mb-5">
             <img className="w-10 h-10" src={Pay} alt="" />
             <h1 className="m-2 font-bold text-3xl text-[#f8b732]">
-              Dona ahora
+              Sé parte de la solución
             </h1>
           </div>
 
@@ -215,19 +215,29 @@ function DonationPay() {
             >
               $100.000
             </button>
+            <button
+              onClick={() => setDonationAmount(0)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 0
+                  ? "bg-[#f8b732] text-white"
+                  : "hover:bg-[#f8b732] hover:text-white"
+              }`}
+            >
+              Otro valor
+            </button>
           </div>
 
-          <div className="flex flex-col gap-12  border-gray-300">
+          <div className="flex flex-col gap-5  border-gray-300">
             <p className=" text-base text-[#222D56] font-bold">
               Comentarios adicionales
             </p>
             <textarea
-              className="w-full h-16 rounded-xl border border-gray-300 hover:border-blue-300 mb-8"
+              className="w-full h-16 rounded-xl p-2 border border-gray-300 hover:border-blue-300"
               placeholder="Escribe tus comentarios aquí"
             />
           </div>
 
-          <div className="flex items-center mb-10">
+          <div className="flex items-center">
             <input
               type="radio"
               id="monthlyDonation"
@@ -241,7 +251,7 @@ function DonationPay() {
             </label>
           </div>
 
-          <div className="flex items-center mb-10">
+          <div className="flex items-center">
             <input
               type="radio"
               id="oneTimeDonation"

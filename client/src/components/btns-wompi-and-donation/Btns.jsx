@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./Btns.module.css";
-import JaviFeliz from "../../../public/contactUs/Javi cabezas_feliz.svg";
+import IconDonation from "../../../src/assets/images/views/donationPay/coin.png";
 
 function Btns() {
   const location = useLocation();
@@ -9,7 +9,7 @@ function Btns() {
 
   useEffect(() => {
     const sessionStorageValue =
-      location.pathname === "/Provocacion" ? false : true;
+      location.pathname === "/provocacion" || location.pathname === "/Provocacion" ? false : true;
 
     setShowDonationPay(sessionStorageValue);
   }, [location.pathname]);
@@ -24,9 +24,13 @@ function Btns() {
       <div
         className={`flex items-center rounded-full p-2 shadow-lg bg-btn-back ${styles.btnDonate}`}
       >
-        <img src={JaviFeliz} alt="icono de Javi feliz" className="w-10 h-10" />
+        <img
+          src={IconDonation}
+          alt="icono de Javi feliz"
+          className="w-10 h-10"
+        />
 
-        <p className="text-white font-bold">Donar</p>
+        <p className="text-white text-lg font-bold">Donar</p>
       </div>
     </Link>
   );
