@@ -1,0 +1,14 @@
+{
+  "homepage": {
+    "title": "Fundación Antivirus para la Deserción",
+    "description": "En la fundación antivirus para la deserción somos una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo."
+  },
+  "navbar": {
+    "about": "Acerca de",
+    "donate": "Donar"
+  },
+  "buttons": {
+    "donate_now": "Dona ahora",
+    "more_info": "Más información"
+  }
+}

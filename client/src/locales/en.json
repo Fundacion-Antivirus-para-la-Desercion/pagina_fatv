@@ -1,0 +1,14 @@
+{
+  "homepage": {
+    "title": "Antivirus Foundation for Dropout Prevention",
+    "description": "At the Antivirus Foundation for Dropout Prevention, we are a non-profit organization that seeks to reduce dropout rates in Colombia, improve retention and graduation rates, as this is our way of contributing to the achievement of a country with more education and consequently more development."
+  },
+  "navbar": {
+    "about": "About",
+    "donate": "Donate"
+  },
+  "buttons": {
+    "donate_now": "Donate now",
+    "more_info": "More information"
+  }
+}
