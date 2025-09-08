@@ -1,0 +1,27 @@
+.btnDonate {
+  overflow: hidden;
+  width: fit-content;
+  max-width: 56px;
+  transition: max-width 0.5s ease-in-out;
+}
+
+.btnDonate p {
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 0;
+  transition: opacity 0.4s ease-in-out, max-width 0.4s ease-in-out,
+    margin-left 0.4s ease-in-out;
+}
+
+.btnDonate:hover {
+  max-width: 300px;
+}
+
+.btnDonate:hover p {
+  opacity: 1;
+  max-width: 200px;
+  margin-left: 2px;
+}

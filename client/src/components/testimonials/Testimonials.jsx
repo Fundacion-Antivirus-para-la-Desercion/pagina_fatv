@@ -108,7 +108,7 @@ function Testimonials() {
         </Swiper>
 
         <section className="flex justify-end">
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 flex-wrap items-center">
             <a
               className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
               href={`https://wa.me/${whatsAppNumber}`}

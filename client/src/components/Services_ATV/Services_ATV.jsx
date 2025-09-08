@@ -92,10 +92,10 @@ const ServicesATV = () => {
                       shouldAnimate={animateTitle}
                     />
                   </div>
-                  <p className="text-xl font-bold font-roboto text-justify mb-10">
+                  <p className="text-xl font-bold font-roboto text-ju mb-10">
                     {content.subTitle}
                   </p>
-                  <p className="text-xl  tracking-tighter  font-roboto text-justify">
+                  <p className="text-lg tracking-tighter font-roboto text-left">
                     {content.description}
                   </p>
                 </div>

@@ -347,7 +347,7 @@ function Header() {
               CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS
             </Link>
             <Link
-              to="/Provocacion"
+              to="/provocacion"
               onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
