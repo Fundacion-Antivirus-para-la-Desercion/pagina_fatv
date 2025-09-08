@@ -342,7 +342,7 @@ function FoundationATV() {
       <div className="flex justify-center mt-10 mb-10">
         <div className="w-4/5 grid grid-cols-1 lg:grid-cols-2 gap-10 gap-y-14 text-justify">
           <div>
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="font-oswald tracking-tighter text-left text-4xl font-bold text-[#33526d] mb-4">
               TEORÍA DEL CAMBIO
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
