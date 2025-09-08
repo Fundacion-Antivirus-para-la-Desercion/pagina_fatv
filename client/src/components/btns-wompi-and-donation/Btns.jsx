@@ -9,7 +9,7 @@ function Btns() {
 
   useEffect(() => {
     const sessionStorageValue =
-      location.pathname === "/provocacion" || location.pathname === "/Provocacion" ? false : true;
+      location.pathname.toLowerCase() === "/provocacion" ? false : true;
 
     setShowDonationPay(sessionStorageValue);
   }, [location.pathname]);
