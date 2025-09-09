@@ -1,4 +1,79 @@
 {
+  "home": {
+    "carousel": {
+      "slides": {
+        "slide1": {
+          "title": "FOMENTAMOS LA PERMANENCIA ESTUDIANTIL",
+          "description": "Acompañamos a los estudiantes para poder lograr sus sueños."
+        },
+        "slide2": {
+          "title": "UNIMOS FUERZAS PARA EVITAR LA DESERCIÓN",
+          "description": "Nuestras áreas son: Intervención social, Comunicaciones, Tecnología y Datos."
+        },
+        "slide3": {
+          "title": "MÁS DE 11.000 ESTUDIANTES ACOMPAÑADOS Y CONTANDO",
+          "description": "¡Únete a nuestra comunidad de agentes del cambio!"
+        },
+        "slide4": {
+          "title": "¡DESCUBRE NUESTRAS ESTRATEGIAS DE ACOMPAÑAMIENTO! ",
+          "description": "¡Tu futuro está a un clic de distancia!"
+        }
+      },
+      "buttons": {
+        "contact": "CONTÁCTENOS",
+        "more": "Ver más"
+      }
+    },
+    "aboutUs": {
+      "title": "acerca de nosotros",
+      "subtitle": "Buscamos disminuir los niveles de deserción estudiantil en Colombia",
+      "paragraph1": "Siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+      "paragraph2_start": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a ",
+      "paragraph2_strong": "través de un ecosistema de estrategias",
+      "button": "Conoce más aquí",
+      "alt_arrow": "Ver más"
+    },
+    "contextData": {
+      "title_part1": "Nuestro aporte",
+      "title_part2": "en Colombia",
+      "statistic1": {
+        "description": "Estudiantes acompañados por la Fundación",
+        "alt_image": "Acompañamiento"
+      },
+      "statistic2": {
+        "description": "Asesorías de orientación sociopedagógica y sociovocacional (ASP Y ASV)",
+        "alt_image": "Orientación"
+      },
+      "statistic3": {
+        "description": "Talleres grupales",
+        "alt_image": "Grupo de estudio"
+      },
+      "statistic4": {
+        "description": "Tutorías académicas",
+        "alt_image": "Tutoria"
+      },
+      "statistic5": {
+        "description": "Tutores voluntarios vinculados",
+        "alt_image": "Tutor"
+      },
+      "statistic6": {
+        "description": "Espacios de orientación Psicológica",
+        "alt_image": "Orientación Psicológica"
+      },
+      "statistic7": {
+        "description": "Talleres de Nivélate",
+        "alt_image": "Taller"
+      },
+      "statistic8": {
+        "description": "Estudiantes que reciben computador en préstamo o donación",
+        "alt_image": "computador"
+      },
+      "statistic9": {
+        "description": "Grupos de estudio",
+        "alt_image": "Grupos de estudio"
+      }
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIOS",

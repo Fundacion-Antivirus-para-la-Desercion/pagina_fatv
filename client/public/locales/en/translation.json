@@ -1,4 +1,79 @@
 {
+  "home": {
+    "carousel": {
+      "slides": {
+        "slide1": {
+          "title": "WE PROMOTE STUDENT RETENTION",
+          "description": "We accompany students so they can achieve their dreams."
+        },
+        "slide2": {
+          "title": "WE JOIN FORCES TO PREVENT DROPOUT",
+          "description": "Our areas are: Social Intervention, Communications, Technology, and Data."
+        },
+        "slide3": {
+          "title": "MORE THAN 11,000 STUDENTS ACCOMPANIED AND COUNTING",
+          "description": "Join our community of change agents!"
+        },
+        "slide4": {
+          "title": "DISCOVER OUR ACCOMPANIMENT STRATEGIES!",
+          "description": "Your future is just a click away!"
+        }
+      },
+      "buttons": {
+        "contact": "CONTACT US",
+        "more": "See more"
+      }
+    },
+    "aboutUs": {
+      "title": "about us",
+      "subtitle": "We seek to reduce student dropout rates in Colombia",
+      "paragraph1": "This is our way of contributing to a country with more education and consequently more development.",
+      "paragraph2_start": "Identify students with vulnerabilities and provide them with comprehensive support, through ",
+      "paragraph2_strong": "an ecosystem of strategies",
+      "button": "Learn more here",
+      "alt_arrow": "See more"
+    },
+    "contextData": {
+      "title_part1": "Our contribution",
+      "title_part2": "in Colombia",
+      "statistic1": {
+        "description": "Students accompanied by the Foundation",
+        "alt_image": "Accompaniment"
+      },
+      "statistic2": {
+        "description": "Socio-pedagogical and socio-vocational guidance counseling (ASP Y ASV)",
+        "alt_image": "Guidance"
+      },
+      "statistic3": {
+        "description": "Group workshops",
+        "alt_image": "Study group"
+      },
+      "statistic4": {
+        "description": "Academic tutoring",
+        "alt_image": "Tutoring"
+      },
+      "statistic5": {
+        "description": "Volunteer tutors involved",
+        "alt_image": "Tutor"
+      },
+      "statistic6": {
+        "description": "Psychological guidance spaces",
+        "alt_image": "Psychological guidance"
+      },
+      "statistic7": {
+        "description": "Level Up workshops",
+        "alt_image": "Workshop"
+      },
+      "statistic8": {
+        "description": "Students who receive a computer on loan or as a donation",
+        "alt_image": "computer"
+      },
+      "statistic9": {
+        "description": "Study groups",
+        "alt_image": "Study groups"
+      }
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIALS",
