@@ -33,6 +33,10 @@
       "button": "Conoce más aquí",
       "alt_arrow": "Ver más"
     },
+    "ourAllies": {
+      "title": "NUESTROS ALIADOS",
+      "logo_alt_text": "Logo aliado {index}"
+    },
     "contextData": {
       "title_part1": "Nuestro aporte",
       "title_part2": "en Colombia",
@@ -74,6 +78,21 @@
       }
     }
   },
+  "BannerDA": {
+    "banner": {
+      "title": "lo que hacemos",
+      "alt_banner": "Banner con el título 'lo que hacemos'"
+    }
+  },
+  "ContentDA": {
+    "content": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIOS",
@@ -102,5 +121,10 @@
         }
       ]
     }
+  },
+  "NotFound": {
+    "title": "Oops!",
+    "message": "Lo sentimos, página no encontrada",
+    "button": "Volver al Inicio"
   }
 }

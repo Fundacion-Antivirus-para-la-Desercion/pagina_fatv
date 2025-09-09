@@ -31,7 +31,48 @@
       "paragraph2_start": "Identify students with vulnerabilities and provide them with comprehensive support, through ",
       "paragraph2_strong": "an ecosystem of strategies",
       "button": "Learn more here",
-      "alt_arrow": "See more"
+      "alt_arrow": "See more",
+      "team": {
+        "title": "about our <br /> team",
+        "members": {
+          "member1": {
+            "name": "Carlos vásquez restrepo",
+            "role": "President"
+          },
+          "member2": {
+            "name": "astrid franco gonzalez",
+            "role": "Social Intervention Area Coordinator"
+          },
+          "member3": {
+            "name": "luis fernando sánchez hurtado",
+            "role": "Executive Director"
+          },
+          "member4": {
+            "name": "karen gonzález alarcón",
+            "role": "Technology and Data Area Coordinator"
+          },
+          "member5": {
+            "name": "Víctor Manuel Valencia martínez",
+            "role": "Deputy Director"
+          },
+          "member6": {
+            "name": "david santiago botero",
+            "role": "Legal Area Coordinator"
+          },
+          "member7": {
+            "name": "Manuela Correa Quintero",
+            "role": "Communications Area Coordinator"
+          },
+          "member8": {
+            "name": "luis fernando gonzález",
+            "role": "Administrative and Financial Area Coordinator"
+          }
+        }
+      }
+    },
+    "ourAllies": {
+      "title": "OUR ALLIES",
+      "logo_alt_text": "Ally logo {index}"
     },
     "contextData": {
       "title_part1": "Our contribution",
@@ -74,6 +115,21 @@
       }
     }
   },
+  "BannerDA": {
+    "banner": {
+      "title": "what we do",
+      "alt_banner": "Banner with the title 'what we do'"
+    }
+  },
+  "ContentDA": {
+    "content": {
+      "title": "Our Model",
+      "subtitle": "Data Analytics",
+      "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
+      "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
+      "alt_image": "Data analytics chart"
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIALS",
@@ -101,6 +157,33 @@
           "author": "- Matías González"
         }
       ]
+    }
+  },
+  "NotFound": {
+    "title": "Oops!",
+    "message": "Sorry, page not found",
+    "button": "Back to Home"
+  },
+  "*": {
+    "title": "Oops!",
+    "message": "Sorry, page not found",
+    "button": "Back to Home"
+  },
+  "communications": {
+    "title": "what we do",
+    "alt_banner": "Banner with the title 'what we do'",
+    "model_title": "OUR MODEL",
+    "subtitle": "COMMUNICATIONS",
+    "paragraph_1": "This area is made up of social communicators and graphic designers.",
+    "paragraph_2": "This team creates and promotes communication actions, adapted to the characterization and built based on the needs and segmentation of the students.",
+    "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological media, platforms, and other interaction and information resources.",
+    "paragraph_4": "The Communication and Marketing area is also responsible for digital marketing and email marketing to project stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
+    "alt_team_image": "Communications Team"
+  },
+  "dataAnalytics": {
+    "banner": {
+      "title": "what we do",
+      "alt_banner": "Banner with the title 'what we do'"
     }
   },
   "testimonials": {

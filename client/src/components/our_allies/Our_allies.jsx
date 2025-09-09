@@ -1,8 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useTranslation } from "react-i18next";
 
 function OurAllies() {
+  const { t } = useTranslation();
+
   const logos = [
     "/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png",
     "/logos_alianzas/mision-tic.png",
@@ -35,7 +38,7 @@ function OurAllies() {
   return (
     <section className="p-4 lg:p-28 relative">
       <h1 className="mb-10 text-center text-5xl text-title font-extrabold max-md:text-3xl">
-        NUESTROS ALIADOS
+        {t("home.ourAllies.title")}
       </h1>
 
       <Swiper
@@ -66,7 +69,7 @@ function OurAllies() {
               <img
                 className="w-auto h-52 object-contain"
                 src={logo}
-                alt={`Logo aliado ${index}`}
+                alt={t("home.ourAllies.logo_alt_text", { index: index + 1 })}
                 loading="lazy"
               />
             </div>

@@ -31,7 +31,48 @@
       "paragraph2_start": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a ",
       "paragraph2_strong": "través de un ecosistema de estrategias",
       "button": "Conoce más aquí",
-      "alt_arrow": "Ver más"
+      "alt_arrow": "Ver más",
+      "team": {
+        "title": "sobre nuestro <br /> equipo",
+        "members": {
+          "member1": {
+            "name": "Carlos vásquez restrepo",
+            "role": "Presidente"
+          },
+          "member2": {
+            "name": "astrid franco gonzalez",
+            "role": "Coordinadora Área de intervención Social"
+          },
+          "member3": {
+            "name": "luis fernando sánchez hurtado",
+            "role": "Director Ejecutivo"
+          },
+          "member4": {
+            "name": "karen gonzález alarcón",
+            "role": "Coordinadora Área de Tecnología y Datos"
+          },
+          "member5": {
+            "name": "Víctor Manuel Valencia martínez",
+            "role": "Subdirector"
+          },
+          "member6": {
+            "name": "david santiago botero",
+            "role": "Coordinador Área Legal"
+          },
+          "member7": {
+            "name": "Manuela Correa Quintero",
+            "role": "Coordinadora Área Comunicaciones"
+          },
+          "member8": {
+            "name": "luis fernando gonzález",
+            "role": "Coordinador Área Administrativa y Financiera"
+          }
+        }
+      }
+    },
+    "ourAllies": {
+      "title": "NUESTROS ALIADOS",
+      "logo_alt_text": "Logo aliado {index}"
     },
     "contextData": {
       "title_part1": "Nuestro aporte",
@@ -72,6 +113,41 @@
         "description": "Grupos de estudio",
         "alt_image": "Grupos de estudio"
       }
+    },
+    "services": {
+      "title": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
+      "know_us_title": "Sabemos cómo ayudarte",
+      "know_us_subtitle": "Conoce nuestros servicios",
+      "service1": {
+        "title": "GESTIONAMOS LA PERMANENCIA",
+        "subtitle": "En: Programas de Becarios - Bootcamps - Universidades",
+        "description": "Desarrollamos un proceso integral diseñado a partir de líneas y estrategias de intervención especializadas."
+      },
+      "service2": {
+        "title": "CONSULTORIA DE PERMANENCIA",
+        "subtitle": "",
+        "description": "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa."
+      },
+      "service3": {
+        "title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
+        "subtitle": "",
+        "description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral."
+      }
+    }
+  },
+  "BannerDA": {
+    "banner": {
+      "title": "lo que hacemos",
+      "alt_banner": "Banner con el título 'lo que hacemos'"
+    }
+  },
+  "ContentDA": {
+    "content": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
     }
   },
   "provocacion": {
@@ -101,6 +177,33 @@
           "author": "- Matías González"
         }
       ]
+    }
+  },
+  "NotFound": {
+    "title": "Oops!",
+    "message": "Lo sentimos, página no encontrada",
+    "button": "Volver al Inicio"
+  },
+  "*": {
+    "title": "Oops!",
+    "message": "Lo sentimos, página no encontrada",
+    "button": "Volver al Inicio"
+  },
+  "communications": {
+    "title": "lo que hacemos",
+    "alt_banner": "Banner con el título 'lo que hacemos'",
+    "model_title": "NUESTRO MODELO",
+    "subtitle": "COMUNICACIONES",
+    "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+    "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+    "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+    "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+    "alt_team_image": "Equipo de Comunicaciones"
+  },
+  "dataAnalytics": {
+    "banner": {
+      "title": "lo que hacemos",
+      "alt_banner": "Banner con el título 'lo que hacemos'"
     }
   },
   "testimonials": {

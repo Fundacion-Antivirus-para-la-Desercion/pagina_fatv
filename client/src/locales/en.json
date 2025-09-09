@@ -33,6 +33,10 @@
       "button": "Learn more here",
       "alt_arrow": "See more"
     },
+    "ourAllies": {
+      "title": "OUR ALLIES",
+      "logo_alt_text": "Ally logo {index}"
+    },
     "contextData": {
       "title_part1": "Our contribution",
       "title_part2": "in Colombia",
@@ -74,6 +78,21 @@
       }
     }
   },
+  "BannerDA": {
+    "banner": {
+      "title": "what we do",
+      "alt_banner": "Banner with the title 'what we do'"
+    }
+  },
+  "ContentDA": {
+    "content": {
+      "title": "Our Model",
+      "subtitle": "Data Analytics",
+      "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
+      "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
+      "alt_image": "Data analytics chart"
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIALS",
@@ -102,5 +121,10 @@
         }
       ]
     }
+  },
+  "NotFound": {
+    "title": "Oops!",
+    "message": "Sorry, page not found",
+    "button": "Back to Home"
   }
 }
