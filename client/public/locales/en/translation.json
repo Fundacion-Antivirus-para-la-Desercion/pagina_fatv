@@ -1,0 +1,58 @@
+{
+  "provocacion": {
+    "testimonials": {
+      "title": "TESTIMONIALS",
+      "button1": "I want it",
+      "button2": "More information",
+      "content": [
+        {
+          "description": "The accompaniment and the people who do it are very important because you feel confident and feel that you are learning something... The fact that they come with questions that do not force but encourage you to give an answer has made me better prepared for my future or at least have a better idea of what I am doing today for my future.",
+          "author": "- Samuel Durango Baena"
+        },
+        {
+          "description": "We have learned to know each other quite well. It has been personal growth, I have learned to love myself, to know myself more deeply, to look at what I want for my life in a few years and to know that I have made great progress in myself. That I have to be consistent with what I want to achieve and that I have to have fixed purposes. In the future, I imagine myself as a great professional, having my own company or brand or being independent.",
+          "author": "- Salomé Arango"
+        },
+        {
+          "description": "Honestly, before Antivirus arrived, I was very insecure about what I was going to study or what I was going to do with my life because no one knows what will happen in the future because it is uncertain. But Antivirus arrived and little by little has been able to give us security, has taught us that everything in life has a solution and our problems can become capacities for ourselves.",
+          "author": "- Estiwar Espinal "
+        },
+        {
+          "description": "Antivirus has done a wonderful job, thanks to Antivirus I have tried to let go of that fear of the future, it has calmed things down a lot, we as 11th-grade students carry several responsibilities and we are very concerned about what will happen after school, what will I do? And Antivirus has helped us to know ourselves a little more and to know what I can dedicate myself to or which path to take.",
+          "author": "- Antonia Aristizábal "
+        },
+        {
+          "description": "The accompaniment seemed very pleasant to me, my greatest learning was in decision-making, understanding my emotions better, thinking before acting. You managed to make me more confident about the decisions I want to make in my life. What I liked the most were the talks, the methodology, and the theme, that enlightened us.",
+          "author": "- Matías González"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "TESTIMONIALS",
+    "button1": "I want it",
+    "button2": "More information",
+    "content": [
+      {
+        "description": "The accompaniment and the people who do it are very important because you feel confident and feel that you are learning something... The fact that they come with questions that do not force but encourage you to give an answer has made me better prepared for my future or at least have a better idea of what I am doing today for my future.",
+        "author": "- Samuel Durango Baena"
+      },
+      {
+        "description": "We have learned to know each other quite well. It has been personal growth, I have learned to love myself, to know myself more deeply, to look at what I want for my life in a few years and to know that I have made great progress in myself. That I have to be consistent with what I want to achieve and that I have to have fixed purposes. In the future, I imagine myself as a great professional, having my own company or brand or being independent.",
+        "author": "- Salomé Arango"
+      },
+      {
+        "description": "Honestly, before Antivirus arrived, I was very insecure about what I was going to study or what I was going to do with my life because no one knows what will happen in the future because it is uncertain. But Antivirus arrived and little by little has been able to give us security, has taught us that everything in life has a solution and our problems can become capacities for ourselves.",
+        "author": "- Estiwar Espinal "
+      },
+      {
+        "description": "Antivirus has done a wonderful job, thanks to Antivirus I have tried to let go of that fear of the future, it has calmed things down a lot, we as 11th-grade students carry several responsibilities and we are very concerned about what will happen after school, what will I do? And Antivirus has helped us to know ourselves a little more and to know what I can dedicate myself to or which path to take.",
+        "author": "- Antonia Aristizábal "
+      },
+      {
+        "description": "The accompaniment seemed very pleasant to me, my greatest learning was in decision-making, understanding my emotions better, thinking before acting. You managed to make me more confident about the decisions I want to make in my life. What I liked the most were the talks, the methodology, and the theme, that enlightened us.",
+        "author": "- Matías González"
+      }
+    ]
+  }
+}

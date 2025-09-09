@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Header/Header.css";
+import { useTranslation } from "react-i18next";
 
 function Header() {
   const [isHidden, setIsHidden] = useState(false);
@@ -12,6 +13,8 @@ function Header() {
   const [students, setStudents] = useState(false);
   const [popupPosition, setPopupPosition] = useState("9rem");
   const [popupPositionStudents, setPopupPositionStudents] = useState("17rem");
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.resolvedLanguage || i18n.language || "es";
 
   const handleNav = () => {
     setNav(!nav);
@@ -286,10 +289,22 @@ function Header() {
 
         {idioma && (
           <ul className="pl-4">
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+            <li
+              onClick={() => {
+                i18n.changeLanguage("en");
+                localStorage.setItem("i18nextLng", "en");
+              }}
+              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+            >
               INGLÉS
             </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+            <li
+              onClick={() => {
+                i18n.changeLanguage("es");
+                localStorage.setItem("i18nextLng", "es");
+              }}
+              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+            >
               ESPAÑOL
             </li>
           </ul>
@@ -363,10 +378,22 @@ function Header() {
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
-            <li className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer">
+            <li
+              onClick={() => {
+                i18n.changeLanguage("en");
+                localStorage.setItem("i18nextLng", "en");
+              }}
+              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
               INGLÉS
             </li>
-            <li className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer">
+            <li
+              onClick={() => {
+                i18n.changeLanguage("es");
+                localStorage.setItem("i18nextLng", "es");
+              }}
+              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
               ESPAÑOL
             </li>
           </ul>

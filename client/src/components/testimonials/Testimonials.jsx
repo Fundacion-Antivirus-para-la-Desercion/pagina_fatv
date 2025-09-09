@@ -15,8 +15,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
+import { useTranslation } from "react-i18next";
 
 function Testimonials() {
+  const { t } = useTranslation();
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const mainSwiperRef = useRef(null);
@@ -64,7 +67,7 @@ function Testimonials() {
     <>
       <section className="relative px-6 py-10 mb-2 shadow-lg bg-[#222D56]">
         <h1 className="p-3 text-5xl text-center text-white font-extrabold max-md:text-3xl">
-          TESTIMONIOS
+          {t("provocacion.testimonials.title")}
         </h1>
 
         <Swiper
@@ -115,14 +118,14 @@ function Testimonials() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Lo quiero
+              {t("provocacion.testimonials.button1")}
               <img src={Focus} alt="icono" className="w-10 h-10" />
             </a>
             <a
               className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5  transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
               href="#form-contac-us"
             >
-              Más información
+              {t("provocacion.testimonials.button2")}
             </a>
           </div>
         </section>
