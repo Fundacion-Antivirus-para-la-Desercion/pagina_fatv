@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,6 +13,7 @@ import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
 import Pay from "../../src/assets/images/views/donationPay/pay.png";
 
 function DonationPay() {
+  const { t } = useTranslation();
   const [donationAmount, setDonationAmount] = useState(100);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
@@ -79,7 +81,7 @@ function DonationPay() {
       <div className="w-[80%] grid grid-cols-1 rounded-3xl lg:grid-cols-2 shadow-2xl justify-center">
         <div className="flex flex-col flex-wrap gap-6 p-10 rounded-l-3xl bg-[#EDEFF8] lg:border-r">
           <h1 className="lg:text-2xl sm:text-xl text-title font-bold mb-5 leading-tight">
-            Fundación Antivirus para la Deserción
+            {t("donation.foundation_name")}
           </h1>
 
           <div>
@@ -102,35 +104,35 @@ function DonationPay() {
               <SwiperSlide>
                 <img
                   src={Acompañamiento1}
-                  alt="Acompañamiento a estudiantes"
+                  alt={t("donation.alt_text")}
                   className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento2}
-                  alt="Acompañamiento a estudiantes"
+                  alt={t("donation.alt_text")}
                   className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento3}
-                  alt="Acompañamiento a estudiantes"
+                  alt={t("donation.alt_text")}
                   className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento4}
-                  alt="Acompañamiento a estudiantes"
+                  alt={t("donation.alt_text")}
                   className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={Acompañamiento5}
-                  alt="Acompañamiento a estudiantes"
+                  alt={t("donation.alt_text")}
                   className="block w-full h-full object-cover rounded-xl"
                 />
               </SwiperSlide>
@@ -138,11 +140,7 @@ function DonationPay() {
           </div>
 
           <p className="text-lg text-title opacity-85 text-justify m-5">
-            En la Fundación Antivirus para la Deserción, somos una organización
-            sin ánimo de lucro que busca disminuir los niveles de deserción
-            estudiantil en Colombia, mejorar los niveles de permanencia y de
-            graduación, siendo esta nuestra manera de aportar al logro de un
-            país con más educación y consecuentemente con más desarrollo.
+            {t("donation.description")}
           </p>
         </div>
 
@@ -150,11 +148,13 @@ function DonationPay() {
           <div className="flex items-center justify-center mb-5">
             <img className="w-10 h-10" src={Pay} alt="" />
             <h1 className="m-2 font-bold text-3xl text-[#f8b732]">
-              Sé parte de la solución
+              {t("donation.be_part_solution")}
             </h1>
           </div>
 
-          <p className="text-base font-bold text-[#222D56]">Monto a donar</p>
+          <p className="text-base font-bold text-[#222D56]">
+            {t("donation.amount_to_donate")}
+          </p>
           <input
             className="w-full h-10 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-5"
             type="number"
@@ -223,17 +223,17 @@ function DonationPay() {
                   : "hover:bg-[#f8b732] hover:text-white"
               }`}
             >
-              Otro valor
+              {t("donation.other_amount")}
             </button>
           </div>
 
           <div className="flex flex-col gap-5  border-gray-300">
             <p className=" text-base text-[#222D56] font-bold">
-              Comentarios adicionales
+              {t("donation.additional_comments")}
             </p>
             <textarea
               className="w-full h-16 rounded-xl p-2 border border-gray-300 hover:border-blue-300"
-              placeholder="Escribe tus comentarios aquí"
+              placeholder={t("donation.comments_placeholder")}
             />
           </div>
 
@@ -247,7 +247,7 @@ function DonationPay() {
               checked={donationType === "monthly"}
             />
             <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">
-              Permitir que el pago sea mensual según el monto mencionado
+              {t("donation.monthly_payment")}
             </label>
           </div>
 
@@ -261,7 +261,7 @@ function DonationPay() {
               checked={donationType === "oneTime"}
             />
             <label htmlFor="oneTimeDonation" className="ml-2 text-gray-700">
-              Contribución única
+              {t("donation.one_time_contribution")}
             </label>
           </div>
 
@@ -273,12 +273,12 @@ function DonationPay() {
             onClick={handleClick}
             disabled={!donationType || Number.isNaN(parseFloat(donationAmount))}
           >
-            Continuar
+            {t("donation.continue")}
           </button>
         </div>
       </div>
       <p className="lg:ml-20">
-        PAGOS SEGUROS POR
+        {t("donation.secure_payments")}
         <span className="font-bold"> Wompi</span>
       </p>
     </div>

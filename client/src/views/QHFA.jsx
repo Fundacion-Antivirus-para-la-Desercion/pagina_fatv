@@ -1,22 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import imgBanner from "../../public/img_viewQHav/slider-servicios.webp";
 import emocinal1 from "../../public/img_viewQHav/sociopedagogical-image-1.jpg";
 import emocinal2 from "../../public/img_viewQHav/sociopedagogical-image-2.webp";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
 
 function QHFA() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex flex-col items-center justify-center lg:pt-[145px]">
         <div className="relative w-full">
           <img
             src={imgBanner}
-            alt="Banner"
+            alt={t("qhfa.alt_text.banner")}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
           <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-            lo que hacemos
+            {t("qhfa.page_title")}
           </h1>
           <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
             <a
@@ -77,27 +80,20 @@ function QHFA() {
         <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 pr-7">
-              <h1 className="tracking-nm text-blue-links">NUESTRO MODELO</h1>
+              <h1 className="tracking-nm text-blue-links">
+                {t("qhfa.our_model")}
+              </h1>
               <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
-                INTERVENCION SOCIO-EMOCIONAL
+                {t("qhfa.socio_emotional_intervention")}
               </h1>
               <p className="text-blue-links">
-                Es el campo de acción de la fundación que pretende identificar y
-                comprender las particularidades del contexto sociocultural y
-                socioemocional de los estudiantes, para influir, transformar e
-                impactar significativamente en sus condiciones y su proceso
-                formativo, a través de herramientas y alternativas de
-                acompañamiento socio pedagógico. El equipo social está compuesto
-                por trabajadores sociales y psicólogos encargados de diseñar y
-                ejecutar estrategias de fortalecimiento académico, apoyo
-                psicoemocional y sociopedagógico. Esta área cuenta con las
-                siguientes líneas de Intervención social:
+                {t("qhfa.intervention_description")}
               </p>
             </div>
             <div className="w-full md:w-1/2">
               <img
                 src={emocinal1}
-                alt="emocional 1"
+                alt={t("qhfa.alt_text.emotional_1")}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -114,7 +110,7 @@ function QHFA() {
                   <img
                     className="w-full h-auto object-cover"
                     src={emocinal2}
-                    alt="emocional 2"
+                    alt={t("qhfa.alt_text.emotional_2")}
                   />
                   <div className="absolute inset-0 bg-blue-links opacity-80"></div>
                   <div className="absolute inset-0 flex justify-center items-center">
@@ -141,15 +137,10 @@ function QHFA() {
 
             <div className="w-full md:w-1/2 pl-7">
               <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
-                FORTALECIMIENTO ACADEMICO:
+                {t("qhfa.academic_strengthening")}
               </h1>
               <p className="text-blue-links">
-                Búsqueda de tutores y mentores dispuestos recibir un módico
-                estipendio por hora y ofrecer otra hora voluntaria. En este
-                sentido, una vez encontrados los tutores, esta área es
-                responsable de crear las citas para la tutoría uno a uno y
-                talleres temáticos para un repaso complementario de clases y
-                grupos de estudio.
+                {t("qhfa.academic_description")}
               </p>
             </div>
           </div>
@@ -157,24 +148,21 @@ function QHFA() {
           <div className="flex flex-col md:flex-row relative ">
             <div className="w-full md:w-1/2 pr-7">
               <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
-                Acompañamiento psicoemocional y sociopedagógico:
+                {t("qhfa.psycho_emotional_support")}
               </h1>
-              <p>Esta área está encargada de:</p>
+              <p>{t("qhfa.support_intro")}</p>
               <ul>
                 <li className="list-disc text-blue-links">
-                  Supervisar, orientar y atender a los estudiantes con problemas
-                  en su estado mental y salud emocional.
+                  {t("qhfa.support_list.mental_health")}
                 </li>
                 <li className="list-disc text-blue-links">
-                  Dar orientación a situaciones vocacionales o familiares,
+                  {t("qhfa.support_list.vocational_guidance")}
                 </li>
                 <li className="list-disc text-blue-links">
-                  Ayudar a fortalecer las habilidades socioemocionales y la
-                  autoestima de los estudiantes.
+                  {t("qhfa.support_list.strengthen_skills")}
                 </li>
                 <li className="list-disc text-blue-links">
-                  Organizar talleres, encuentros y grupos focales para
-                  fortalecer las habilidades socioemocionales y vocacionales.
+                  {t("qhfa.support_list.organize_workshops")}
                 </li>
               </ul>
             </div>
@@ -183,7 +171,7 @@ function QHFA() {
               <img
                 className="w-full h-auto object-cover"
                 src={emocional3}
-                alt="emocional 3"
+                alt={t("qhfa.alt_text.emotional_3")}
               />
             </div>
           </div>

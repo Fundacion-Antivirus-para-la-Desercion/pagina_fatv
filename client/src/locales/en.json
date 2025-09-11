@@ -1,4 +1,18 @@
 {
+  "Layout": {
+    "Footer": {
+      "visitanosTitle": "Visit us",
+      "address1": "79th South Street # 50-165",
+      "address2": "Offices 301 and 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactanosTitle": "Call or write us",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialTitle": "Our social networks",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Data protection policy"
+    }
+  },
   "home": {
     "carousel": {
       "slides": {
@@ -93,6 +107,42 @@
       "alt_image": "Data analytics chart"
     }
   },
+  "donation": {
+    "foundation_name": "Foundation Antivirus for Dropout Prevention",
+    "description": "At the Foundation Antivirus for Dropout Prevention, we are a non-profit organization that seeks to reduce student dropout levels in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
+    "be_part_solution": "Be part of the solution",
+    "amount_to_donate": "Amount to donate",
+    "additional_comments": "Additional comments",
+    "comments_placeholder": "Write your comments here",
+    "monthly_payment": "Allow the payment to be monthly according to the mentioned amount",
+    "one_time_contribution": "One-time contribution",
+    "continue": "Continue",
+    "secure_payments": "SECURE PAYMENTS BY",
+    "other_amount": "Other amount",
+    "alt_text": "Student support"
+  },
+  "qhfa": {
+    "page_title": "what we do",
+    "our_model": "OUR MODEL",
+    "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
+    "intervention_description": "This is the foundation's field of action that aims to identify and understand the particularities of the sociocultural and socio-emotional context of students, to influence, transform and significantly impact their conditions and educational process, through tools and alternatives for socio-pedagogical support. The social team is composed of social workers and psychologists responsible for designing and implementing academic strengthening strategies, psycho-emotional and socio-pedagogical support. This area has the following social intervention lines:",
+    "academic_strengthening": "ACADEMIC STRENGTHENING:",
+    "academic_description": "Search for tutors and mentors willing to receive a modest hourly stipend and offer another voluntary hour. In this sense, once tutors are found, this area is responsible for creating appointments for one-on-one tutoring and thematic workshops for complementary class review and study groups.",
+    "psycho_emotional_support": "Psycho-emotional and socio-pedagogical support:",
+    "support_intro": "This area is responsible for:",
+    "support_list": {
+      "mental_health": "Supervising, guiding and attending to students with problems in their mental state and emotional health.",
+      "vocational_guidance": "Providing guidance on vocational or family situations,",
+      "strengthen_skills": "Helping to strengthen students' socio-emotional skills and self-esteem.",
+      "organize_workshops": "Organizing workshops, meetings and focus groups to strengthen socio-emotional and vocational skills."
+    },
+    "alt_text": {
+      "banner": "Banner",
+      "emotional_1": "emotional 1",
+      "emotional_2": "emotional 2",
+      "emotional_3": "emotional 3"
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIALS",
@@ -121,6 +171,10 @@
         }
       ]
     }
+  },
+  "Btns": {
+    "donate": "Donate",
+    "alt_donation_icon": "happy Javi icon"
   },
   "NotFound": {
     "title": "Oops!",

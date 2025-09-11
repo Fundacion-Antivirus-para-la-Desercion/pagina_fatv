@@ -1,4 +1,18 @@
 {
+  "Layout": {
+    "Footer": {
+      "visitanosTitle": "Visítanos",
+      "address1": "Calle 79 sur # 50-165",
+      "address2": "Oficinas 301 y 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactanosTitle": "Llámanos o escríbenos",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialTitle": "Nuestras redes sociales",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Política de protección de datos"
+    }
+  },
   "home": {
     "carousel": {
       "slides": {
@@ -114,6 +128,10 @@
         "alt_image": "Grupos de estudio"
       }
     },
+    "Btns": {
+      "donate": "Donar",
+      "alt_donation_icon": "icono de Javi feliz"
+    },
     "services": {
       "title": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
       "know_us_title": "Sabemos cómo ayudarte",
@@ -150,6 +168,42 @@
       "alt_image": "Gráfico de análisis de datos"
     }
   },
+  "donation": {
+    "foundation_name": "Fundación Antivirus para la Deserción",
+    "description": "En la Fundación Antivirus para la Deserción, somos una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+    "be_part_solution": "Sé parte de la solución",
+    "amount_to_donate": "Monto a donar",
+    "additional_comments": "Comentarios adicionales",
+    "comments_placeholder": "Escribe tus comentarios aquí",
+    "monthly_payment": "Permitir que el pago sea mensual según el monto mencionado",
+    "one_time_contribution": "Contribución única",
+    "continue": "Continuar",
+    "secure_payments": "PAGOS SEGUROS POR",
+    "other_amount": "Otro valor",
+    "alt_text": "Acompañamiento a estudiantes"
+  },
+  "qhfa": {
+    "page_title": "lo que hacemos",
+    "our_model": "NUESTRO MODELO",
+    "socio_emotional_intervention": "INTERVENCION SOCIO-EMOCIONAL",
+    "intervention_description": "Es el campo de acción de la fundación que pretende identificar y comprender las particularidades del contexto sociocultural y socioemocional de los estudiantes, para influir, transformar e impactar significativamente en sus condiciones y su proceso formativo, a través de herramientas y alternativas de acompañamiento socio pedagógico. El equipo social está compuesto por trabajadores sociales y psicólogos encargados de diseñar y ejecutar estrategias de fortalecimiento académico, apoyo psicoemocional y sociopedagógico. Esta área cuenta con las siguientes líneas de Intervención social:",
+    "academic_strengthening": "FORTALECIMIENTO ACADEMICO:",
+    "academic_description": "Búsqueda de tutores y mentores dispuestos recibir un módico estipendio por hora y ofrecer otra hora voluntaria. En este sentido, una vez encontrados los tutores, esta área es responsable de crear las citas para la tutoría uno a uno y talleres temáticos para un repaso complementario de clases y grupos de estudio.",
+    "psycho_emotional_support": "Acompañamiento psicoemocional y sociopedagógico:",
+    "support_intro": "Esta área está encargada de:",
+    "support_list": {
+      "mental_health": "Supervisar, orientar y atender a los estudiantes con problemas en su estado mental y salud emocional.",
+      "vocational_guidance": "Dar orientación a situaciones vocacionales o familiares,",
+      "strengthen_skills": "Ayudar a fortalecer las habilidades socioemocionales y la autoestima de los estudiantes.",
+      "organize_workshops": "Organizar talleres, encuentros y grupos focales para fortalecer las habilidades socioemocionales y vocacionales."
+    },
+    "alt_text": {
+      "banner": "Banner",
+      "emotional_1": "emocional 1",
+      "emotional_2": "emocional 2",
+      "emotional_3": "emocional 3"
+    }
+  },
   "provocacion": {
     "testimonials": {
       "title": "TESTIMONIOS",
@@ -179,10 +233,52 @@
       ]
     }
   },
+  "Btns": {
+    "donate": "Donar",
+    "alt_donation_icon": "icono de Javi feliz"
+  },
   "NotFound": {
     "title": "Oops!",
     "message": "Lo sentimos, página no encontrada",
     "button": "Volver al Inicio"
+  },
+  "Footer": {
+    "visitanosTitle": "Visítanos",
+    "address1": "Calle 79 sur # 50-165",
+    "address2": "Oficinas 301 y 401 La Estrella",
+    "address3": "Antioquia - Colombia",
+    "contactanosTitle": "Llámanos o escríbenos",
+    "email": "contactenos@fundacionantivirusparaladesercion.org",
+    "whatsapp": "WhatsApp: +57 3173831481",
+    "socialTitle": "Nuestras redes sociales",
+    "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+    "dataPolicy": "Política de protección de datos"
+  },
+  "layout": {
+    "Footer": {
+      "visitanosTitle": "Visítanos",
+      "address1": "Calle 79 sur # 50-165",
+      "address2": "Oficinas 301 y 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactanosTitle": "Llámanos o escríbenos",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialTitle": "Nuestras redes sociales",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Política de protección de datos"
+    },
+    "footer": {
+      "visitanosTitle": "Visítanos",
+      "address1": "Calle 79 sur # 50-165",
+      "address2": "Oficinas 301 y 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactanosTitle": "Llámanos o escríbenos",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialTitle": "Nuestras redes sociales",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Política de protección de datos"
+    }
   },
   "*": {
     "title": "Oops!",
