@@ -25,43 +25,26 @@ function Testimonials() {
   const mainSwiperRef = useRef(null);
   const thumbsSwiperRef = useRef(null);
 
-  const contentTestimonials = [
-    {
-      image: Testimonial1,
-      description:
-        "Muy importante el acompañamiento y las personas que lo hacen, porque uno se siente en confianza y siente que uno está aprendiendo algo... El hecho de que lleguen con preguntas que no obliguen pero que incentiven a darle una respuesta ha hecho que tenga una mejor preparación para mi futuro o al menos tenga más planteado lo que estoy haciendo hoy para mi futuro.",
-      author: "- Samuel Durango Baena",
-    },
-    {
-      image: Testimonial2,
-      description:
-        "Hemos aprendido a conocernos bastante bien. Ha sido un crecimiento personal he aprendido a quererme, a conocerme más a fondo, mirar lo que quiero para mi vida en unos años y a saber que tengo un gran avance en mí. Que tengo que ser constante con lo que quiero lograr y que tengo que tener propósitos fijos. A futuro me imagino como una gran profesional, teniendo mi propia empresa o marca o siendo independiente.",
-      author: "- Salomé Arango",
-    },
-    {
-      image: Testimonial3,
-      description:
-        "Sinceramente, antes de que Antivirus llegara tenía mucha inseguridad de qué iba a estudiar o qué iba a hacer con mi vida, porque nadie sabe que va a pasar con el futuro porque es incierto. Pero Antivirus llegó y poco a poco nos ha podido dar seguridad, nos ha enseñado que todo en la vida tiene una solución y nuestros problemas se pueden volver en capacidades para nosotros mismos.",
-      author: "- Estiwar Espinal ",
-    },
-    {
-      image: Testimonial4,
-      description:
-        "Antivirus ha hecho un trabajo maravilloso, gracias a Antivirus he intentado soltarle ese miedo al futuro, ha tranquilizado mucho las cosas, nosotras como estudiantes de 11 cargamos con varias responsabilidades y nos preocupa mucho qué pasará después del colegio ¿qué haré? Y Antivirus nos ha ayudado a conocernos un poquito más y saber a qué me puedo dedicar o por qué camino coger.",
-      author: "- Antonia Aristizábal ",
-    },
-    {
-      image: Testimonial5,
-      description:
-        "El acompañamiento me pareció muy agradable, mi mayor aprendizaje fue en la toma decisiones, entender mejor mis emociones, pensar antes de actuar. Ustedes lograron en mí que yo fuera más seguro como de las decisiones que quiera tomar en mi vida. Lo que más me gusto fueron las charlas, la metodología y la temática, eso nos iluminó.",
-      author: "- Matías González",
-    },
+  const testimonialsImages = [
+    Testimonial1,
+    Testimonial2,
+    Testimonial3,
+    Testimonial4,
+    Testimonial5,
   ];
+
   const handleSlideChange = (swiper) => {
     setActiveIndex(swiper.realIndex);
   };
 
   const whatsAppNumber = "573173831481";
+
+  const contentTestimonials = t(
+    "provocacion.testimonials.testimonials_content",
+    {
+      returnObjects: true,
+    }
+  );
 
   return (
     <>
@@ -88,21 +71,27 @@ function Testimonials() {
           thumbs={{ swiper: thumbsSwiper }}
           onSlideChange={handleSlideChange}
         >
-          {contentTestimonials.map((slide, index) => (
+          {contentTestimonials.map((testimonial, index) => (
             <SwiperSlide key={`main-${index}`}>
               <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-6xl mx-auto">
                 <div>
                   <img
                     className={`rounded-full min-h-80 w-80 object-cover shadow-sm border-[12px] border-[#F6A623] ${styles.borderImage}`}
-                    src={slide.image}
-                    alt={`Slide ${index + 1}`}
+                    src={testimonialsImages[index]}
+                    alt={`${t(
+                      "provocacion.testimonials.alt_testimonial_img"
+                    )} ${index + 1}`}
                   />
                 </div>
                 <div className=" text-lg space-y-4 text-justify max-w-xl">
-                  <img className="w-8 mx-auto" src={Comilla} alt="Testimonio" />
-                  <p className={`${styles.text}`}> {slide.description}</p>
+                  <img
+                    className="w-8 mx-auto"
+                    src={Comilla}
+                    alt={t("provocacion.testimonials.alt_comilla")}
+                  />
+                  <p className={`${styles.text}`}> {testimonial.description}</p>
                   <p className="font-semibold text-right text-xl text-[#F6A623]">
-                    {slide.author}
+                    {testimonial.author}
                   </p>
                 </div>
               </section>
@@ -119,10 +108,14 @@ function Testimonials() {
               rel="noopener noreferrer"
             >
               {t("provocacion.testimonials.button1")}
-              <img src={Focus} alt="icono" className="w-10 h-10" />
+              <img
+                src={Focus}
+                alt={t("provocacion.testimonials.alt_focus")}
+                className="w-10 h-10"
+              />
             </a>
             <a
-              className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5  transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+              className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
               href="#form-contac-us"
             >
               {t("provocacion.testimonials.button2")}

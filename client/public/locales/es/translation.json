@@ -1,18 +1,4 @@
 {
-  "Layout": {
-    "Footer": {
-      "visitanosTitle": "Visítanos",
-      "address1": "Calle 79 sur # 50-165",
-      "address2": "Oficinas 301 y 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Llámanos o escríbenos",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Nuestras redes sociales",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Política de protección de datos"
-    }
-  },
   "home": {
     "carousel": {
       "slides": {
@@ -153,20 +139,9 @@
       }
     }
   },
-  "BannerDA": {
-    "banner": {
-      "title": "lo que hacemos",
-      "alt_banner": "Banner con el título 'lo que hacemos'"
-    }
-  },
-  "ContentDA": {
-    "content": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
-    }
+  "btns": {
+    "donate": "Donar",
+    "alt_donation_icon": "icono de Javi feliz"
   },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
@@ -181,6 +156,37 @@
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",
     "alt_text": "Acompañamiento a estudiantes"
+  },
+  "dataAnalytics": {
+    "bannerDA": {
+      "banner": {
+        "title": "lo que hacemos",
+        "alt_banner": "Banner con el título 'lo que hacemos'"
+      }
+    },
+    "contentDA": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
+    },
+    "banner": {
+      "title": "lo que hacemos",
+      "alt_banner": "Banner con el título 'lo que hacemos'"
+    }
+  },
+  "communications_ATV": {
+    "commun": {
+      "title_banner": "lo que hacemos",
+      "our_model": "NUESTRO MODELO",
+      "subtitle": "COMUNICACIONES",
+      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+      "alt_image": "Equipo de Comunicaciones"
+    }
   },
   "qhfa": {
     "page_title": "lo que hacemos",
@@ -204,11 +210,84 @@
       "emotional_3": "emocional 3"
     }
   },
+  "apoyoAcademico": {
+    "title": "Servicios",
+    "section1": {
+      "subtitle1": "PRESTAMOS LOS SIGUIENTES SERVICIOS:",
+      "subtitle2": "A LOS ESTUDIANTES",
+      "subtitle3": "APOYO ACADÉMICO:",
+      "tutoring": {
+        "title": "Tutorías / Mentorías",
+        "description": "Las tutorías académicas son un espacio de repaso personalizado de aquellas materias que representan mayor dificultad."
+      },
+      "levelUp": {
+        "title": "Nivélate con Antivirus",
+        "description": "Es una estrategia que busca acompañar abiertamente a todos los estudiantes que se encuentran en estado de vulnerabilidad académica y buscan aprobar los cursos."
+      },
+      "studyGroups": {
+        "title": "Grupos de Estudio",
+        "description": "Es un espacio de encuentro para grupos pequeños de estudiantes enfocado en el repaso de materias específicas."
+      }
+    },
+    "imageSection1": {
+      "title": "Evento becados Itaguí",
+      "description": "Una alianza creada para acompañarte"
+    },
+    "imageSection2": {
+      "title": "Colegios Itaguí",
+      "description": "Charlas pedagógicas sobre el acompañamiento"
+    }
+  },
+  "repositorio": {
+    "title": "Servicios",
+    "academic_repository": {
+      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
+    },
+    "youtube_channel": {
+      "title": "Link / Canal youtube",
+      "description": "Es un espacio digital académico, de diferentes materias, disponibles para la consulta en Youtube."
+    }
+  },
+  "consultorias": {
+    "title": "Servicios",
+    "services_title": "Prestamos los siguientes servicios:",
+    "main_consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA PERMANENCIA EN:",
+    "universities": "Universidades",
+    "bootcamps": "Bootcamps",
+    "schools": "Colegios",
+    "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
+    "description": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares."
+  },
   "provocacion": {
     "testimonials": {
-      "title": "TESTIMONIOS",
-      "button1": "Lo quiero",
-      "button2": "Más información",
+      "title": "Testimonios",
+      "button1": "Habla con nosotros",
+      "button2": "Contáctanos",
+      "alt_comilla": "comillas",
+      "alt_focus": "icono",
+      "alt_testimonial_img": "Testimonio",
+      "testimonials_content": [
+        {
+          "description": "Muy importante el acompañamiento y las personas que lo hacen, porque uno se siente en confianza y siente que uno está aprendiendo algo... El hecho de que lleguen con preguntas que no obliguen pero que incentiven a darle una respuesta ha hecho que tenga una mejor preparación para mi futuro o al menos tenga más planteado lo que estoy haciendo hoy para mi futuro.",
+          "author": "- Samuel Durango Baena"
+        },
+        {
+          "description": "Hemos aprendido a conocernos bastante bien. Ha sido un crecimiento personal he aprendido a quererme, a conocerme más a fondo, mirar lo que quiero para mi vida en unos años y a saber que tengo un gran avance en mí. Que tengo que ser constante con lo que quiero lograr y que tengo que tener propósitos fijos. A futuro me imagino como una gran profesional, teniendo mi propia empresa o marca o siendo independiente.",
+          "author": "- Salomé Arango"
+        },
+        {
+          "description": "Sinceramente, antes de que Antivirus llegara tenía mucha inseguridad de qué iba a estudiar o qué iba a hacer con mi vida, porque nadie sabe que va a pasar con el futuro porque es incierto. Pero Antivirus llegó y poco a poco nos ha podido dar seguridad, nos ha enseñado que todo en la vida tiene una solución y nuestros problemas se pueden volver en capacidades para nosotros mismos.",
+          "author": "- Estiwar Espinal"
+        },
+        {
+          "description": "Antivirus ha hecho un trabajo maravilloso, gracias a Antivirus he intentado soltarle ese miedo al futuro, ha tranquilizado mucho las cosas, nosotras como estudiantes de 11 cargamos con varias responsabilidades y nos preocupa mucho qué pasará después del colegio ¿qué haré? Y Antivirus nos ha ayudado a conocernos un poquito más y saber a qué me puedo dedicar o por qué camino coger.",
+          "author": "- Antonia Aristizábal"
+        },
+        {
+          "description": "El acompañamiento me pareció muy agradable, mi mayor aprendizaje fue en la toma decisiones, entender mejor mis emociones, pensar antes de actuar. Ustedes lograron en mí que yo fuera más seguro como de las decisiones que quiera tomar en mi vida. Lo que más me gusto fueron las charlas, la metodología y la temática, eso nos iluminó.",
+          "author": "- Matías González"
+        }
+      ],
       "content": [
         {
           "description": "Muy importante el acompañamiento y las personas que lo hacen, porque uno se siente en confianza y siente que uno está aprendiendo algo... El hecho de que lleguen con preguntas que no obliguen pero que incentiven a darle una respuesta ha hecho que tenga una mejor preparación para mi futuro o al menos tenga más planteado lo que estoy haciendo hoy para mi futuro.",
@@ -233,6 +312,240 @@
       ]
     }
   },
+  "contactUs": {
+    "title": "Contactanos",
+    "startConversation": "COMENCEMOS",
+    "conversationTitle": "UNA CONVERSACIÓN ¿TIENES ALGUNA PREGUNTA? ¡TENEMOS LA RESPUESTA!",
+    "mainHeadquarters": "Sede principal",
+    "address": "Cl 79 S 50-69 La Estrella",
+    "city": "Medellín - Antioquia - Colombia",
+    "email": "Correo electrónico",
+    "emailAddress": "contactenos@fundacionantivirusparaladesercion.org",
+    "whatsapp": "WhatsApp",
+    "whatsappNumber": "3206417053",
+    "writeToUs": "ESCRÍBENOS AQUÍ",
+    "googleMaps": "Google Maps",
+    "findUsHere": "Encuéntranos aquí",
+    "form": {
+      "fullName": "NOMBRE COMPLETO",
+      "email": "CORREO ELECTRÓNICO",
+      "phone": "TELÉFONO",
+      "subject": "ASUNTO",
+      "message": "MENSAJE",
+      "termsConditions": "Acepto los términos y condiciones",
+      "sendButton": "Enviar"
+    },
+    "validation": {
+      "fullNameRequired": " Nombre completo es requerido.",
+      "emailInvalid": " Correo electrónico es inválido.",
+      "phoneRequired": " Teléfono es requerido.",
+      "subjectRequired": " Asunto es requerido.",
+      "messageRequired": " Mensaje es requerido.",
+      "termsRequired": " Debes aceptar los términos y condiciones."
+    },
+    "modal": {
+      "title": "Mensaje enviado",
+      "successTitle": "¡Mensaje enviado correctamente!",
+      "thankYou": "Gracias por comunicarte con nosotros.",
+      "termsAccepted": "Acepto",
+      "termsNotAccepted": "No acepto"
+    }
+  },
+  "footer": {
+    "visitUs": "Visítanos",
+    "address1": "Calle 79 sur # 50-165",
+    "address2": "Oficinas 301 y 401 La Estrella",
+    "address3": "Antioquia - Colombia",
+    "contact": "Llámanos o escríbenos",
+    "contactEmail": "contactenos@fundacionantivirusparaladesercion.org",
+    "contactWhatsapp": "WhatsApp: +57 3173831481",
+    "socialNetworks": "Nuestras redes sociales",
+    "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+    "dataProtection": "Política de protección de datos",
+    "visitUsTitle": "Visítanos",
+    "contactTitle": "Llámanos o escríbenos",
+    "email": "contactenos@fundacionantivirusparaladesercion.org",
+    "whatsapp": "WhatsApp: +57 3173831481",
+    "socialMediaTitle": "Nuestras redes sociales",
+    "dataPolicy": "Política de protección de datos"
+  },
+  "notFound": {
+    "title": "Oops!",
+    "message": "Lo sentimos, página no encontrada",
+    "button": "Volver al Inicio"
+  },
+  "acompañamientoOrientacion": {
+    "title": "Servicios",
+    "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN:",
+    "socio_pedagogical": {
+      "title": "Asesorías Socio-pedagógicas",
+      "description": "Las asesorías socio-educativas son espacios de encuentro, escucha y apoyo a los estudiantes en estado de vulnerabilidad."
+    },
+    "plan_padrino": {
+      "title": "Plan Padrino",
+      "description": "Es una estrategia que busca establecer un contacto entre los estudiantes que recién ingresan y sus compañeros de semestres superiores y egresados, con el objetivo de que estos los acompañen de acuerdo a su experiencia recorrida en la universidad."
+    },
+    "occupational_support": {
+      "title": "Acompañamiento Ocupacional",
+      "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
+    }
+  },
+  "Communications_ATV": {
+    "commun": {
+      "title_banner": "lo que hacemos",
+      "our_model": "NUESTRO MODELO",
+      "subtitle": "COMUNICACIONES",
+      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+      "alt_image": "Equipo de Comunicaciones"
+    },
+    "Commun": {
+      "communications": {
+        "title_banner": "lo que hacemos",
+        "our_model": "NUESTRO MODELO",
+        "subtitle": "COMUNICACIONES",
+        "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+        "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+        "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+        "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+        "alt_image": "Equipo de Comunicaciones",
+        "p1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+        "p2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+        "p3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+        "p4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV."
+      },
+      "title": {
+        "main": "lo que hacemos"
+      },
+      "our_model": {
+        "title": "NUESTRO MODELO"
+      },
+      "image_alt": {
+        "banner": "Banner",
+        "communications_team": "Equipo de Comunicaciones"
+      }
+    }
+  },
+  "DataAnalytics": {
+    "bannerDA": {
+      "banner": {
+        "title": "lo que hacemos",
+        "alt_banner": "Banner con el título 'lo que hacemos'"
+      }
+    },
+    "content": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
+    }
+  },
+  "bannerDA": {
+    "banner": {
+      "title": "lo que hacemos",
+      "alt_banner": "Banner con el título 'lo que hacemos'"
+    }
+  },
+  "contentDA": {
+    "content": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
+    }
+  },
+  "foundation": {
+    "whatWeDo": "lo que hacemos",
+    "aboutUsTitle": "¿Quiénes Somos?",
+    "aboutUsSubtitle": "Somos una organización sin ánimo de lucro que",
+    "aboutUsParagraph": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+    "our": "NUESTROS",
+    "founders": "FUNDADORES",
+    "board": "JUNTA DIRECTIVA",
+    "fiscalReviewer": "REVISOR FISCAL",
+    "accountant": "CONTADORA",
+    "theoryOfChange": "TEORÍA DEL CAMBIO",
+    "theoryOfChangeParagraph": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia.",
+    "values": "VALORES",
+    "valuesParagraph": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio.",
+    "mission": "MISIÓN",
+    "missionParagraph": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción.",
+    "targetAudience": "PÚBLICO OBJETIVO",
+    "targetAudienceParagraph": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción.",
+    "vision": "VISIÓN",
+    "visionParagraph": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente.",
+    "priorities": "PRIORIDADES",
+    "prioritiesList": [
+      "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+      "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+      "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+      "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+    ],
+    "purpose": "PROPÓSITO",
+    "purposeParagraph": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+  },
+  "layout": {
+    "footer": {
+      "visitUsTitle": "Visítanos",
+      "address1": "Calle 79 sur # 50-165",
+      "address2": "Oficinas 301 y 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactTitle": "Llámanos o escríbenos",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialMediaTitle": "Nuestras redes sociales",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Política de protección de datos",
+      "visitanosTitle": "Visítanos",
+      "contactanosTitle": "Llámanos o escríbenos",
+      "socialTitle": "Nuestras redes sociales"
+    },
+    "Footer": {
+      "visitanosTitle": "Visítanos",
+      "address1": "Calle 79 sur # 50-165",
+      "address2": "Oficinas 301 y 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactanosTitle": "Llámanos o escríbenos",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialTitle": "Nuestras redes sociales",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Política de protección de datos"
+    }
+  },
+  "Layout": {
+    "Footer": {
+      "visitanosTitle": "Visítanos",
+      "address1": "Calle 79 sur # 50-165",
+      "address2": "Oficinas 301 y 401 La Estrella",
+      "address3": "Antioquia - Colombia",
+      "contactanosTitle": "Llámanos o escríbenos",
+      "email": "contactenos@fundacionantivirusparaladesercion.org",
+      "whatsapp": "WhatsApp: +57 3173831481",
+      "socialTitle": "Nuestras redes sociales",
+      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+      "dataPolicy": "Política de protección de datos"
+    }
+  },
+  "BannerDA": {
+    "banner": {
+      "title": "lo que hacemos",
+      "alt_banner": "Banner con el título 'lo que hacemos'"
+    }
+  },
+  "ContentDA": {
+    "content": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
+    }
+  },
   "Btns": {
     "donate": "Donar",
     "alt_donation_icon": "icono de Javi feliz"
@@ -254,32 +567,6 @@
     "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
     "dataPolicy": "Política de protección de datos"
   },
-  "layout": {
-    "Footer": {
-      "visitanosTitle": "Visítanos",
-      "address1": "Calle 79 sur # 50-165",
-      "address2": "Oficinas 301 y 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Llámanos o escríbenos",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Nuestras redes sociales",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Política de protección de datos"
-    },
-    "footer": {
-      "visitanosTitle": "Visítanos",
-      "address1": "Calle 79 sur # 50-165",
-      "address2": "Oficinas 301 y 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Llámanos o escríbenos",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Nuestras redes sociales",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Política de protección de datos"
-    }
-  },
   "*": {
     "title": "Oops!",
     "message": "Lo sentimos, página no encontrada",
@@ -295,12 +582,6 @@
     "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
     "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
     "alt_team_image": "Equipo de Comunicaciones"
-  },
-  "dataAnalytics": {
-    "banner": {
-      "title": "lo que hacemos",
-      "alt_banner": "Banner con el título 'lo que hacemos'"
-    }
   },
   "testimonials": {
     "title": "TESTIMONIOS",

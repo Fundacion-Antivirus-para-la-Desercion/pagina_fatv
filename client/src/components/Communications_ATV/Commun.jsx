@@ -1,9 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Commun.css";
 import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
 import CommunicationsTeam from "../../../public/img_Communications/communicationsTeam.webp";
 
 function Commun() {
+  const { t } = useTranslation();
+
   return (
     <div id="communications">
       <div className="flex flex-col items-center justify-center">
@@ -15,7 +18,7 @@ function Commun() {
           />
           <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
           <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-            lo que hacemos
+            {t("communications_ATV.commun.title_banner")}
           </h1>
           <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
             <a
@@ -78,37 +81,25 @@ function Commun() {
         <div className="data_analytics--cnt">
           <div className="data_analytics--content">
             <div className="data_analytics--text">
-              <p className="">NUESTRO MODELO</p>
-              <h4 className="subtitle">COMUNICACIONES</h4>
+              <p className="">{t("communications_ATV.commun.our_model")}</p>
+              <h4 className="subtitle">{t("communications_ATV.commun.subtitle")}</h4>
 
               <p className="text-justify">
-                Esta área está conformada por comunicadores sociales y
-                diseñadores gráficos.
+                {t("communications_ATV.commun.paragraph_1")}
                 <br />
                 <br />
-                Este equipo crea y promueve acciones comunicativas, ajustadas a
-                la caracterización y construidas a través de las necesidades y
-                segmentación de los estudiantes.
+                {t("communications_ATV.commun.paragraph_2")}
                 <br />
                 <br />
-                Esta área se encarga de difundir información y elaborar
-                contenidos audiovisuales y utilizar medios tecnológicos,
-                plataformas y otros recursos de interacción e información.
+                {t("communications_ATV.commun.paragraph_3")}
                 <br />
                 <br />
-                El área de Comunicación y Marketing también se encarga del
-                marketing digital y marketing por correo electrónico a las
-                partes interesadas del proyecto, como directores, profesores,
-                estudiantes, empresas interesadas en los servicios prestados por
-                FATV.
+                {t("communications_ATV.commun.paragraph_4")}
               </p>
             </div>
             <div className="data_analytics--image">
               <picture>
-                <img
-                  src={CommunicationsTeam}
-                  alt="Equipo de Comunicaciones"
-                />
+                <img src={CommunicationsTeam} alt={t("communications_ATV.commun.alt_image")} />
               </picture>
             </div>
           </div>

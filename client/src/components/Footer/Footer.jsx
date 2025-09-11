@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 import logo from "../../../public/logo.png";
 
 function Footer() {
+  const { t } = useTranslation("translation");
+
   return (
     <div className="footer-container">
       <footer>
@@ -12,24 +15,21 @@ function Footer() {
           </div>
           <div className="footer-info">
             <div className="footer-visitanos">
-              <h2>Visítanos</h2>
-              <p>Calle 79 sur # 50-165</p>
-              <p>Oficinas 301 y 401 La Estrella</p>
-              <p>Antioquia - Colombia</p>
+              <h2>{t("footer.visitUs")}</h2>
+              <p>{t("footer.address1")}</p>
+              <p>{t("footer.address2")}</p>
+              <p>{t("footer.address3")}</p>
             </div>
             <div className="footer-contacto">
-              <h2>Llámanos o escríbenos</h2>
+              <h2>{t("footer.contact")}</h2>
               <div className="email">
-                <p>contactenos@</p>
-                <p>fundacionantivirusparaladesercion</p>
-                <p>.org</p>
+                <p>{t("footer.contactEmail")}</p>
               </div>
               <br />
-              <p>WhatsApp: +57</p>
-              <p>3173831481</p>
+              <p>{t("footer.contactWhatsapp")}</p>
             </div>
             <div className="footer-redes">
-              <h2>Nuestras redes sociales</h2>
+              <h2>{t("footer.socialNetworks")}</h2>
               <div className="bxicon">
                 <a
                   href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
@@ -91,16 +91,14 @@ function Footer() {
           </div>
         </div>
         <div className="footer-copy">
-          <p>Antivirus para la Deserción © 2024 all rights reserved</p>
-          <p>Política de protección de datos</p>
+          <p>{t("footer.copyright")}</p>
+          <p>{t("footer.dataProtection")}</p>
         </div>
         <div className="footer-redirecion">
-          {" "}
-          {/* Movemos el div del botón de redirección aquí */}
           <button>
             <svg
               className="svg"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} // Cambia el evento aquí
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="63"
