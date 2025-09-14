@@ -123,6 +123,23 @@
       "alt_image": "Equipo de Comunicaciones"
     }
   },
+  "foundation": {
+    "foundationATV": {}
+  },
+  "ourTeam": {
+    "title_part1": "sobre nuestro",
+    "title_part2": "equipo",
+    "roles": {
+      "president": "Presidente",
+      "social_intervention_coordinator": "Coordinadora Área de intervención Social",
+      "executive_director": "Director Ejecutivo",
+      "technology_and_data_coordinator": "Coordinadora Área de Tecnología y Datos",
+      "deputy_director": "Subdirector",
+      "legal_area_coordinator": "Coordinador Área Legal",
+      "communications_coordinator": "Coordinadora Área Comunicaciones",
+      "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
+    }
+  },
   "qhfa": {
     "page_title": "lo que hacemos",
     "our_model": "NUESTRO MODELO",
@@ -171,6 +188,22 @@
     "imageSection2": {
       "title": "Colegios Itaguí",
       "description": "Charlas pedagógicas sobre el acompañamiento"
+    }
+  },
+  "acompañamientoOrientacion": {
+    "title": "Servicios",
+    "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN:",
+    "socio_pedagogical": {
+      "title": "Asesorías Socio-pedagógicas",
+      "description": "Las asesorías socio-educativas son espacios de encuentro, escucha y apoyo a los estudiantes en estado de vulnerabilidad."
+    },
+    "plan_padrino": {
+      "title": "Plan Padrino",
+      "description": "Es una estrategia que busca establecer un contacto entre los estudiantes que recién ingresan y sus compañeros de semestres superiores y egresados, con el objetivo de que estos los acompañen de acuerdo a su experiencia recorrida en la universidad."
+    },
+    "occupational_support": {
+      "title": "Acompañamiento Ocupacional",
+      "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
     }
   },
   "repositorio": {

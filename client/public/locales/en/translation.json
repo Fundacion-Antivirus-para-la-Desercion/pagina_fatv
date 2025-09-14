@@ -124,8 +124,8 @@
     "alt_donation_icon": "happy Javi icon"
   },
   "donation": {
-    "foundation_name": "Foundation Antivirus for Dropout Prevention",
-    "description": "At the Foundation Antivirus for Dropout Prevention, we are a non-profit organization that seeks to reduce student dropout levels in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
+    "foundation_name": "Fundación Antivirus para la Deserción",
+    "description": "At the Fundación Antivirus para la Deserción, we are a non-profit organization that seeks to reduce student dropout levels in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
     "be_part_solution": "Be part of the solution",
     "amount_to_donate": "Amount to donate",
     "additional_comments": "Additional comments",
@@ -178,6 +178,161 @@
       }
     }
   },
+  "foundation": {
+    "foundationATV": {
+      "title": "antivirus foundation",
+      "about_us": {
+        "title": "Who Are We?",
+        "subtitle": "We are a non-profit organization that",
+        "paragraph": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, as our way of contributing to the achievement of a country with more education and, consequently, more development."
+      },
+      "founders": {
+        "title_small": "OUR",
+        "title_large": "FOUNDERS",
+        "founder1": {
+          "name": "Carlos",
+          "last_name": "Vásquez Restrepo"
+        },
+        "founder2": {
+          "name": "Paulina",
+          "last_name": "Tamayo Mejía"
+        },
+        "founder3": {
+          "name": "Víctor Manuel",
+          "last_name": "Valencia Martínez"
+        },
+        "founder4": {
+          "name": "Luis Fernando",
+          "last_name": "González Urán"
+        },
+        "founder5": {
+          "name": "Andrea",
+          "last_name": "Jaramillo Ramírez"
+        },
+        "founder6": {
+          "name": "Laura",
+          "last_name": "Calle Escobar"
+        },
+        "founder7": {
+          "name": "León Felipe",
+          "last_name": "Hernández López"
+        },
+        "founder8": {
+          "name": "Aida",
+          "last_name": "Orduz Quijano"
+        }
+      },
+      "board_of_directors": {
+        "title_small": "OUR",
+        "title_large": "BOARD OF DIRECTORS",
+        "member1": {
+          "name": "Carlos Vásquez Restrepo",
+          "role": "President and Legal Representative"
+        },
+        "member2": {
+          "name": "Luis Fernando Sánchez Hurtado",
+          "role": "Vice President / Director and First Alternate Legal Representative"
+        },
+        "member3": {
+          "name": "David Santiago Botero Rodríguez",
+          "role": "Second Alternate Legal Representative / Legal Coordinator"
+        },
+        "member4": {
+          "name": "Víctor Manuel Valencia Martínez",
+          "role": "Deputy Director / Third Alternate Legal Representative"
+        },
+        "member5": {
+          "name": "Luis Fernando González Urán",
+          "role": "Third Alternate Legal Representative"
+        }
+      },
+      "auditor": {
+        "title_small": "OUR",
+        "title_large": "STATUTORY AUDITOR",
+        "name": "Orlando",
+        "last_name": "Gaviria Flórez"
+      },
+      "accountant": {
+        "title_small": "OUR",
+        "title_large": "ACCOUNTANT",
+        "name": "María Verónica",
+        "last_name": "Ortiz Rodríguez"
+      },
+      "theory_of_change": {
+        "title": "THEORY OF CHANGE",
+        "paragraph": "Identify students with vulnerabilities and provide them with comprehensive support through an ecosystem of strategies focused on academic, economic, and socio-emotional aspects for retention."
+      },
+      "values": {
+        "title": "VALUES",
+        "paragraph": "At the Antivirus for Dropout Foundation, we work collaboratively, with passion, integrity, autonomy, empathy, commitment, and camaraderie. We are supportive and innovative and have a great vocation for service."
+      },
+      "mission": {
+        "title": "MISSION",
+        "paragraph": "To increase the graduation rates of students in technology-related fields and programs through strategies to promote retention and prevent dropout."
+      },
+      "target_audience": {
+        "title": "TARGET AUDIENCE",
+        "paragraph": "We work with students in high school and post-secondary IT programs and careers. We focus our intervention on students vulnerable to dropout."
+      },
+      "vision": {
+        "title": "VISION",
+        "paragraph": "In 5 years, we will have a national presence in the top 10 universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50% to 40%). Additionally, we will be replicating a model that is a benchmark, and its success can be measured qualitatively and quantitatively."
+      },
+      "priorities": {
+        "title": "PRIORITIES",
+        "list_item1": "Consolidate a model with processes for identifying vulnerabilities, intervention, and results indicators.",
+        "list_item2": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
+        "list_item3": "Connect with and involve other stakeholders in the work for retention (Rectors, Deans, MEN, Companies, among others).",
+        "list_item4": "Help reduce dropout in other universities and programs to refine our model and generate revenue that contributes to the sustainability of the Antivirus Foundation."
+      },
+      "purpose": {
+        "title": "PURPOSE",
+        "paragraph": "To build a prosperous, peaceful, harmonious, technological, and competitive country, where all young people have access to education and are good human beings, with goals and empowered to live their lives. Thanks to this, we will overcome poverty and become a benchmark for development."
+      }
+    },
+    "whatWeDo": "what we do",
+    "aboutUsTitle": "Who are we?",
+    "aboutUsSubtitle": "We are a non-profit organization that",
+    "aboutUsParagraph": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to the achievement of a country with more education and consequently more development.",
+    "our": "OUR",
+    "founders": "FOUNDERS",
+    "board": "BOARD OF DIRECTORS",
+    "fiscalReviewer": "FISCAL REVIEWER",
+    "accountant": "ACCOUNTANT",
+    "theoryOfChange": "THEORY OF CHANGE",
+    "theoryOfChangeParagraph": "Identify students with vulnerabilities and provide them with comprehensive support through an ecosystem of strategies focused on academic, economic, and socio-emotional aspects for retention.",
+    "values": "VALUES",
+    "valuesParagraph": "At the Antivirus for Dropout Foundation, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment, and camaraderie. We are supportive and innovative and have a great vocation for service.",
+    "mission": "MISSION",
+    "missionParagraph": "To increase the graduation rates of students in technology careers and programs, through strategies for promoting retention and preventing dropout.",
+    "targetAudience": "TARGET AUDIENCE",
+    "targetAudienceParagraph": "We work with students in IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout.",
+    "vision": "VISION",
+    "visionParagraph": "In 5 years we will have a national presence in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50% to 40%). In addition, we will be replicating a model that is a benchmark, whose success can be measured qualitatively and quantitatively.",
+    "priorities": "PRIORITIES",
+    "prioritiesList": [
+      "Consolidate a model with processes for identifying vulnerabilities, intervention, and results indicators.",
+      "Explore intervention models from schools to help reduce higher education dropout.",
+      "Get to know and involve other actors in the work for permanence (Rectors, Deans, MEN, Companies, among others).",
+      "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
+    ],
+    "purpose": "PURPOSE",
+    "purposeParagraph": "To build a prosperous, peaceful, harmonious, technological, and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a benchmark for development."
+  },
+  "ourTeam": {
+    "title_part1": "about our",
+    "title_part2": "team",
+    "roles": {
+      "president": "President",
+      "social_intervention_coordinator": "Social Intervention Area Coordinator",
+      "executive_director": "Executive Director",
+      "technology_and_data_coordinator": "Technology and Data Area Coordinator",
+      "deputy_director": "Deputy Director",
+      "legal_area_coordinator": "Legal Area Coordinator",
+      "communications_coordinator": "Communications Area Coordinator",
+      "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator"
+    }
+  },
   "qhfa": {
     "page_title": "what we do",
     "our_model": "OUR MODEL",
@@ -226,6 +381,22 @@
     "imageSection2": {
       "title": "Itagüí Schools",
       "description": "Pedagogical talks about support"
+    }
+  },
+  "acompañamientoOrientacion": {
+    "title": "Services",
+    "main_title": "ACCOMPANIMENT AND GUIDANCE:",
+    "socio_pedagogical": {
+      "title": "Socio-pedagogical Advising",
+      "description": "Socio-educational advising sessions are spaces for meeting, listening, and providing support to students in a state of vulnerability."
+    },
+    "plan_padrino": {
+      "title": "Sponsor Plan",
+      "description": "This is a strategy that seeks to establish contact between newly enrolled students and their peers from higher semesters and graduates, with the goal of having them accompany the new students based on their own university experience."
+    },
+    "occupational_support": {
+      "title": "Occupational Support",
+      "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
     }
   },
   "repositorio": {
@@ -364,22 +535,6 @@
     "message": "Sorry, page not found",
     "button": "Back to Home"
   },
-  "acompañamientoOrientacion": {
-    "title": "Services",
-    "main_title": "ACCOMPANIMENT AND GUIDANCE:",
-    "socio_pedagogical": {
-      "title": "Socio-pedagogical Advising",
-      "description": "Socio-educational advising sessions are spaces for meeting, listening, and providing support to students in a state of vulnerability."
-    },
-    "plan_padrino": {
-      "title": "Sponsor Plan",
-      "description": "This is a strategy that seeks to establish contact between newly enrolled students and their peers from higher semesters and graduates, with the goal of having them accompany the new students based on their own university experience."
-    },
-    "occupational_support": {
-      "title": "Occupational Support",
-      "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
-    }
-  },
   "Communications_ATV": {
     "commun": {
       "title": {
@@ -436,36 +591,6 @@
       "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
       "alt_image": "Gráfico de análisis de datos"
     }
-  },
-  "foundation": {
-    "whatWeDo": "what we do",
-    "aboutUsTitle": "Who are we?",
-    "aboutUsSubtitle": "We are a non-profit organization that",
-    "aboutUsParagraph": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to the achievement of a country with more education and consequently more development.",
-    "our": "OUR",
-    "founders": "FOUNDERS",
-    "board": "BOARD OF DIRECTORS",
-    "fiscalReviewer": "FISCAL REVIEWER",
-    "accountant": "ACCOUNTANT",
-    "theoryOfChange": "THEORY OF CHANGE",
-    "theoryOfChangeParagraph": "Identify students with vulnerabilities and provide them with comprehensive support through an ecosystem of strategies focused on academic, economic, and socio-emotional aspects for retention.",
-    "values": "VALUES",
-    "valuesParagraph": "At the Antivirus for Dropout Foundation, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment, and camaraderie. We are supportive and innovative and have a great vocation for service.",
-    "mission": "MISSION",
-    "missionParagraph": "To increase the graduation rates of students in technology careers and programs, through strategies for promoting retention and preventing dropout.",
-    "targetAudience": "TARGET AUDIENCE",
-    "targetAudienceParagraph": "We work with students in IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout.",
-    "vision": "VISION",
-    "visionParagraph": "In 5 years we will have a national presence in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50% to 40%). In addition, we will be replicating a model that is a benchmark, whose success can be measured qualitatively and quantitatively.",
-    "priorities": "PRIORITIES",
-    "prioritiesList": [
-      "Consolidate a model with processes for identifying vulnerabilities, intervention, and results indicators.",
-      "Explore intervention models from schools to help reduce higher education dropout.",
-      "Get to know and involve other actors in the work for permanence (Rectors, Deans, MEN, Companies, among others).",
-      "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
-    ],
-    "purpose": "PURPOSE",
-    "purposeParagraph": "To build a prosperous, peaceful, harmonious, technological, and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a benchmark for development."
   },
   "layout": {
     "footer": {

@@ -83,8 +83,8 @@
     "alt_donation_icon": "happy Javi icon"
   },
   "donation": {
-    "foundation_name": "Foundation Antivirus for Dropout Prevention",
-    "description": "At the Foundation Antivirus for Dropout Prevention, we are a non-profit organization that seeks to reduce student dropout levels in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
+    "foundation_name": "Fundación Antivirus para la Deserción",
+    "description": "At the Fundación Antivirus para la Deserción, we are a non-profit organization that seeks to reduce student dropout levels in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
     "be_part_solution": "Be part of the solution",
     "amount_to_donate": "Amount to donate",
     "additional_comments": "Additional comments",
@@ -121,6 +121,23 @@
       "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
       "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
       "alt_image": "Communications Team"
+    }
+  },
+  "foundation": {
+    "foundationATV": {}
+  },
+  "ourTeam": {
+    "title_part1": "about our",
+    "title_part2": "team",
+    "roles": {
+      "president": "President",
+      "social_intervention_coordinator": "Social Intervention Area Coordinator",
+      "executive_director": "Executive Director",
+      "technology_and_data_coordinator": "Technology and Data Area Coordinator",
+      "deputy_director": "Deputy Director",
+      "legal_area_coordinator": "Legal Area Coordinator",
+      "communications_coordinator": "Communications Area Coordinator",
+      "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator"
     }
   },
   "qhfa": {
@@ -171,6 +188,22 @@
     "imageSection2": {
       "title": "Itagüí Schools",
       "description": "Pedagogical talks about support"
+    }
+  },
+  "acompañamientoOrientacion": {
+    "title": "Services",
+    "main_title": "ACCOMPANIMENT AND GUIDANCE:",
+    "socio_pedagogical": {
+      "title": "Socio-pedagogical Advising",
+      "description": "Socio-educational advising sessions are spaces for meeting, listening, and providing support to students in a state of vulnerability."
+    },
+    "plan_padrino": {
+      "title": "Sponsor Plan",
+      "description": "This is a strategy that seeks to establish contact between newly enrolled students and their peers from higher semesters and graduates, with the goal of having them accompany the new students based on their own university experience."
+    },
+    "occupational_support": {
+      "title": "Occupational Support",
+      "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
     }
   },
   "repositorio": {

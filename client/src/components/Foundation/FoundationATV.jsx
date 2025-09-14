@@ -4,8 +4,10 @@ import imgFB from "../../../public/img_Foundation/imgF.webp";
 import imgF2 from "../../../public/img_Foundation/imgF2.webp";
 import imgF3 from "../../../public/img_Foundation/imgF3.webp";
 import OurTeam from "../ourTeam/OurTeam";
+import { useTranslation } from "react-i18next";
 
 function FoundationATV() {
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const openPopup = () => {

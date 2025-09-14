@@ -188,6 +188,161 @@
       "alt_image": "Equipo de Comunicaciones"
     }
   },
+  "foundation": {
+    "foundationATV": {
+      "title": "fundación antivirus",
+      "about_us": {
+        "title": "¿Quiénes Somos?",
+        "subtitle": "Somos una organización sin ánimo de lucro que",
+        "paragraph": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo."
+      },
+      "founders": {
+        "title_small": "NUESTROS",
+        "title_large": "FUNDADORES",
+        "founder1": {
+          "name": "Carlos",
+          "last_name": "Vásquez Restrepo"
+        },
+        "founder2": {
+          "name": "Paulina",
+          "last_name": "Tamayo Mejía"
+        },
+        "founder3": {
+          "name": "Víctor Manuel",
+          "last_name": "Valencia Martínez"
+        },
+        "founder4": {
+          "name": "Luis Fernando",
+          "last_name": "González Urán"
+        },
+        "founder5": {
+          "name": "Andrea",
+          "last_name": "Jaramillo Ramírez"
+        },
+        "founder6": {
+          "name": "Laura",
+          "last_name": "Calle Escobar"
+        },
+        "founder7": {
+          "name": "León Felipe",
+          "last_name": "Hernández López"
+        },
+        "founder8": {
+          "name": "Aida",
+          "last_name": "Orduz Quijano"
+        }
+      },
+      "board_of_directors": {
+        "title_small": "NUESTRA",
+        "title_large": "JUNTA DIRECTIVA",
+        "member1": {
+          "name": "Carlos Vásquez Restrepo",
+          "role": "Presidente Y Representante Legal Titular"
+        },
+        "member2": {
+          "name": "Luis Fernando Sánchez Hurtado",
+          "role": "Vicepresidente / Director y Primer Representante Legal Suplente"
+        },
+        "member3": {
+          "name": "David Santiago Botero Rodríguez",
+          "role": "Segundo Representante Legal Suplente / Coordinador Legal"
+        },
+        "member4": {
+          "name": "Víctor Manuel Valencia Martínez",
+          "role": "Subdirector / Tercer Representante Legal Suplente"
+        },
+        "member5": {
+          "name": "Luis Fernando González Urán",
+          "role": "Tercer Representante Legal Suplente"
+        }
+      },
+      "auditor": {
+        "title_small": "NUESTRO",
+        "title_large": "REVISOR FISCAL",
+        "name": "Orlando",
+        "last_name": "Gaviria Flórez"
+      },
+      "accountant": {
+        "title_small": "NUESTRA",
+        "title_large": "CONTADORA",
+        "name": "María Verónica",
+        "last_name": "Ortiz Rodríguez"
+      },
+      "theory_of_change": {
+        "title": "TEORÍA DEL CAMBIO",
+        "paragraph": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia."
+      },
+      "values": {
+        "title": "VALORES",
+        "paragraph": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio."
+      },
+      "mission": {
+        "title": "MISIÓN",
+        "paragraph": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción."
+      },
+      "target_audience": {
+        "title": "PÚBLICO OBJETIVO",
+        "paragraph": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción."
+      },
+      "vision": {
+        "title": "VISIÓN",
+        "paragraph": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente."
+      },
+      "priorities": {
+        "title": "PRIORIDADES",
+        "list_item1": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+        "list_item2": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+        "list_item3": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+        "list_item4": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+      },
+      "purpose": {
+        "title": "PROPÓSITO",
+        "paragraph": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+      }
+    },
+    "whatWeDo": "lo que hacemos",
+    "aboutUsTitle": "¿Quiénes Somos?",
+    "aboutUsSubtitle": "Somos una organización sin ánimo de lucro que",
+    "aboutUsParagraph": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+    "our": "NUESTROS",
+    "founders": "FUNDADORES",
+    "board": "JUNTA DIRECTIVA",
+    "fiscalReviewer": "REVISOR FISCAL",
+    "accountant": "CONTADORA",
+    "theoryOfChange": "TEORÍA DEL CAMBIO",
+    "theoryOfChangeParagraph": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia.",
+    "values": "VALORES",
+    "valuesParagraph": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio.",
+    "mission": "MISIÓN",
+    "missionParagraph": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción.",
+    "targetAudience": "PÚBLICO OBJETIVO",
+    "targetAudienceParagraph": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción.",
+    "vision": "VISIÓN",
+    "visionParagraph": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente.",
+    "priorities": "PRIORIDADES",
+    "prioritiesList": [
+      "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+      "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+      "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+      "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+    ],
+    "purpose": "PROPÓSITO",
+    "purposeParagraph": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+  },
+  "ourTeam": {
+    "title_part1": "sobre nuestro",
+    "title_part2": "equipo",
+    "roles": {
+      "president": "Presidente",
+      "social_intervention_coordinator": "Coordinadora Área de intervención Social",
+      "executive_director": "Director Ejecutivo",
+      "technology_and_data_coordinator": "Coordinadora Área de Tecnología y Datos",
+      "deputy_director": "Subdirector",
+      "legal_area_coordinator": "Coordinador Área Legal",
+      "communications_coordinator": "Coordinadora Área Comunicaciones",
+      "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
+    }
+  },
   "qhfa": {
     "page_title": "lo que hacemos",
     "our_model": "NUESTRO MODELO",
@@ -236,6 +391,22 @@
     "imageSection2": {
       "title": "Colegios Itaguí",
       "description": "Charlas pedagógicas sobre el acompañamiento"
+    }
+  },
+  "acompañamientoOrientacion": {
+    "title": "Servicios",
+    "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN:",
+    "socio_pedagogical": {
+      "title": "Asesorías Socio-pedagógicas",
+      "description": "Las asesorías socio-educativas son espacios de encuentro, escucha y apoyo a los estudiantes en estado de vulnerabilidad."
+    },
+    "plan_padrino": {
+      "title": "Plan Padrino",
+      "description": "Es una estrategia que busca establecer un contacto entre los estudiantes que recién ingresan y sus compañeros de semestres superiores y egresados, con el objetivo de que estos los acompañen de acuerdo a su experiencia recorrida en la universidad."
+    },
+    "occupational_support": {
+      "title": "Acompañamiento Ocupacional",
+      "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
     }
   },
   "repositorio": {
@@ -374,22 +545,6 @@
     "message": "Lo sentimos, página no encontrada",
     "button": "Volver al Inicio"
   },
-  "acompañamientoOrientacion": {
-    "title": "Servicios",
-    "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN:",
-    "socio_pedagogical": {
-      "title": "Asesorías Socio-pedagógicas",
-      "description": "Las asesorías socio-educativas son espacios de encuentro, escucha y apoyo a los estudiantes en estado de vulnerabilidad."
-    },
-    "plan_padrino": {
-      "title": "Plan Padrino",
-      "description": "Es una estrategia que busca establecer un contacto entre los estudiantes que recién ingresan y sus compañeros de semestres superiores y egresados, con el objetivo de que estos los acompañen de acuerdo a su experiencia recorrida en la universidad."
-    },
-    "occupational_support": {
-      "title": "Acompañamiento Ocupacional",
-      "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
-    }
-  },
   "Communications_ATV": {
     "commun": {
       "title_banner": "lo que hacemos",
@@ -457,36 +612,6 @@
       "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
       "alt_image": "Gráfico de análisis de datos"
     }
-  },
-  "foundation": {
-    "whatWeDo": "lo que hacemos",
-    "aboutUsTitle": "¿Quiénes Somos?",
-    "aboutUsSubtitle": "Somos una organización sin ánimo de lucro que",
-    "aboutUsParagraph": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
-    "our": "NUESTROS",
-    "founders": "FUNDADORES",
-    "board": "JUNTA DIRECTIVA",
-    "fiscalReviewer": "REVISOR FISCAL",
-    "accountant": "CONTADORA",
-    "theoryOfChange": "TEORÍA DEL CAMBIO",
-    "theoryOfChangeParagraph": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia.",
-    "values": "VALORES",
-    "valuesParagraph": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio.",
-    "mission": "MISIÓN",
-    "missionParagraph": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción.",
-    "targetAudience": "PÚBLICO OBJETIVO",
-    "targetAudienceParagraph": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción.",
-    "vision": "VISIÓN",
-    "visionParagraph": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente.",
-    "priorities": "PRIORIDADES",
-    "prioritiesList": [
-      "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
-      "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
-      "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
-      "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
-    ],
-    "purpose": "PROPÓSITO",
-    "purposeParagraph": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
   },
   "layout": {
     "footer": {
