@@ -19,6 +19,7 @@ import EstudiantesDieciseis from "../../assets/images/views/proVocacion/informat
 
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,6 +29,8 @@ import { Navigation } from "swiper/modules";
 const whatsAppNumber = "573173831481";
 
 function Information() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="h-auto shadow-lg mb-5 bg-[#222D56]  text-white">
@@ -107,42 +110,41 @@ function Information() {
                 <h3
                   className={`mb-1 text-4xl text-[#F8B732] font-bold ${styles.title}`}
                 >
-                  DIRIGIDO A :
+                  {t("provocacion.information.directed_to")}
                 </h3>
 
                 <div className="mb-1">
                   <p className="text-lg font-bold text-center mb-2">
-                    ¿A quién está dirigido?
+                    {t("provocacion.information.who_is_it_for")}
                   </p>
                   <p className="text-lg text-center w-3/4 mx-auto">
                     <strong>
-                      Jóvenes que están próximos a tomar decisiones importantes
-                      sobre su vida,
+                      {t("provocacion.information.young_people_description")}
                     </strong>{" "}
-                    especialmente en relación con su proyecto de vida.
-                    Estudiantes de últimos años escolares, egresados del
-                    bachillerato o jóvenes en transición.
+                    {t("provocacion.information.students_description")}
                   </p>
                 </div>
 
                 <div className="mb-1">
                   <p className="text-lg font-bold text-center mb-2">
-                    ¿En qué momento?
+                    {t("provocacion.information.when_moment")}
                   </p>
                   <p className="text-lg text-center">
-                    Cuando necesitan tomar decisiones sobre su
-                    <strong> futuro académico y profesional.</strong>
+                    {t("provocacion.information.decision_time")}
+                    <strong>
+                      {" "}
+                      {t("provocacion.information.academic_future")}
+                    </strong>
                   </p>
                 </div>
 
                 <div>
                   <p className="text-lg font-bold text-center mb-2">
-                    ¿Qué están viviendo?
+                    {t("provocacion.information.what_are_they_living")}
                   </p>
                   <p className="text-lg text-center">
                     <strong>
-                      Sentimientos de desorientación, confusión o inseguridad
-                      frente al futuro.
+                      {t("provocacion.information.feelings_description")}
                     </strong>
                   </p>
                 </div>
@@ -154,7 +156,7 @@ function Information() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Lo quiero
+                    {t("provocacion.information.i_want_it")}
                     <img src={Focus} alt="icono" className="w-10 h-10" />
                   </a>
                 </section>
@@ -231,53 +233,50 @@ function Information() {
                 <h3
                   className={`mb-1 text-4xl text-[#F8B732] font-semibold  ${styles.title}`}
                 >
-                  CAPACIDADES INSTALADAS
+                  {t("provocacion.information.installed_capacities")}
                 </h3>
 
                 <div className="mb-1">
                   <p className="text-lg font-semibold text-center mb-4 w-3/4 mx-auto">
-                    Promovemos el desarrollo de habilidades personales y
-                    emocionales que permiten a los jóvenes conocerse, valorarse
-                    y proyectarse.
+                    {t("provocacion.information.skills_promotion")}
                   </p>
                   <h3
                     className={`mb-1 text-4xl text-[#F8B732] font-semibold text-center  ${styles.title}`}
                   >
-                    ENFOQUE EN LOS AUTOS
+                    {t("provocacion.information.focus_on_autos")}
                   </h3>
                 </div>
                 <div className="mb-1">
                   <p className="text-base font-semibold text-center">
-                    🧠 Autopercepción: Reconocer quién soy y cómo me veo.
+                    {t("provocacion.information.self_perception")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    👁️ Autobservación: Identificar mis emociones y
-                    comportamientos.
+                    {t("provocacion.information.self_observation")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    ❤️ Autoestima: Valorarme y reconocer mi propio valor.
+                    {t("provocacion.provocacion.information.self_esteem")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    🔍 Autoconcepto: Comprender cómo me defino.
+                    {t("provocacion.information.self_concept")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    🧭 Autonomía: Tomar decisiones conscientes y responsables.
+                    {t("provocacion.information.autonomy")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    💪 Autoconfianza: Creer en mis habilidades y potencial.
+                    {t("provocacion.information.self_confidence")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    🔥 Automotivación: Impulsarme desde adentro.
+                    {t("provocacion.information.self_motivation")}
                   </p>
 
                   <p className="text-base font-semibold text-center">
-                    📊 Autoevaluación: Aprender de mis acciones y experiencias.{" "}
+                    {t("provocacion.information.self_evaluation")}
                   </p>
                 </div>
 
@@ -288,7 +287,7 @@ function Information() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Lo quiero
+                    {t("provocacion.information.i_want_it")}
                     <img src={Focus} alt="icono" className="w-10 h-10" />
                   </a>
                 </section>
@@ -365,36 +364,41 @@ function Information() {
                 <h3
                   className={`mb-1 text-4xl text-[#F8B732] font-semibold ${styles.title}`}
                 >
-                  ¿QUÉ INCLUYE EL SERVICIO?
+                  {t("provocacion.information.what_includes_service")}
                 </h3>
 
                 <div className="mb-1">
                   <p className="text-base text-center ">
-                    <strong> - 5 sesiones grupales y/o individuales</strong>
-                  </p>
-
-                  <p className="text-base text-center">
                     <strong>
-                      - 1 asesoría sociovocacional individual (a demanda)
+                      {t("provocacion.information.five_sessions")}
                     </strong>
                   </p>
 
                   <p className="text-base text-center">
-                    - Herramientas digitales y guías prácticas para cada sesión
-                  </p>
-
-                  <p className="text-base text-center w-3/4 mx-auto">
-                    <strong> - Actividades experienciales</strong> (Una de las
-                    sesiones incluye intercambio de experiencias, ya sea en una
-                    universidad o con un profesional del área de interés.)
+                    <strong>
+                      {t("provocacion.information.one_counseling")}
+                    </strong>
                   </p>
 
                   <p className="text-base text-center">
-                    - Grupo de WhatsApp de apoyo o resolución de dudas
+                    {t("provocacion.information.digital_tools")}
+                  </p>
+
+                  <p className="text-base text-center w-3/4 mx-auto">
+                    <strong>
+                      {t("provocacion.information.experiential_activities")}
+                    </strong>{" "}
+                    {t("provocacion.information.experience_exchange")}
+                  </p>
+
+                  <p className="text-base text-center">
+                    {t("provocacion.information.whatsapp_support")}
                   </p>
 
                   <p className="text-base text-center mb-1">
-                    <strong>- Certificado de participación</strong>
+                    <strong>
+                      {t("provocacion.information.participation_certificate")}
+                    </strong>
                   </p>
 
                   <section className="flex  justify-center gap-10  mt-4">
@@ -403,20 +407,20 @@ function Information() {
                         <h3
                           className={`mb-1 text-3xl text-[#F8B732] font-semibold text-center  ${styles.title}`}
                         >
-                          MEDIOS DE PAGO
+                          {t("provocacion.information.payment_methods")}
                         </h3>
                       </div>
                       <div className="mb-1">
                         <p className="text-lg font-bold text-center mb-1">
-                          - Transferencia bancaria
+                          {t("provocacion.information.bank_transfer")}
                         </p>
 
                         <p className="text-lg font-bold  text-center mb-1">
-                          - Tarjeta débito
+                          {t("provocacion.information.debit_card")}
                         </p>
 
                         <p className="text-lg font-bold  text-center mb-1">
-                          - Tarjeta crédito
+                          {t("provocacion.information.credit_card")}
                         </p>
                       </div>
                     </div>
@@ -426,16 +430,16 @@ function Information() {
                         <h3
                           className={`mb-1 text-3xl text-[#F8B732] font-semibold text-center  ${styles.title}`}
                         >
-                          COSTO
+                          {t("provocacion.information.cost")}
                         </h3>
                       </div>
                       <div className="mb-1">
                         <p className="text-lg font-bold  text-center mb-1">
-                          450.000 + IVA
+                          {t("provocacion.information.base_price")}
                         </p>
 
                         <p className="text-lg font-bold  text-center mb-1">
-                          535.500
+                          {t("provocacion.information.final_price")}
                         </p>
                       </div>
                     </div>
@@ -448,7 +452,7 @@ function Information() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Lo quiero
+                    {t("provocacion.information.i_want_it")}
                     <img src={Focus} alt="icono" className="w-10 h-10" />
                   </a>
                 </section>

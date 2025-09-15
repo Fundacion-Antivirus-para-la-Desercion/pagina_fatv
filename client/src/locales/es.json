@@ -313,9 +313,16 @@
           ]
         }
       }
-  }
+    }
   },
-
+  "newsDetail": {
+    "no_info": "No hay información de la noticia.",
+    "title": "NOTICIAS",
+    "news_label": "NOTICIAS",
+    "alt_back": "Atras",
+    "return_to_news": "Regresar a noticias",
+    "share": "Compartir"
+  },
   "ourTeam": {
     "title_part1": "sobre nuestro",
     "title_part2": "equipo",
@@ -417,6 +424,64 @@
     "description": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares."
   },
   "provocacion": {
+    "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",
+    "description": "Potenciar el proyecto de vida de los jóvenes a través de procesos de autoconocimiento, acercamiento a la educación superior y al mundo laboral que les permitan tener herramientas para construir su proyecto de vida auténtico.",
+    "title_future": "TU FUTURO, PASO A PASO: CONOCE CADA ETAPA",
+    "let_yourself_be_provoked": "Déjate provocar",
+    "title": "ESCRÍBENOS AQUÍ",
+    "full_name_placeholder": "NOMBRE COMPLETO",
+    "email_placeholder": "CORREO ELECTRÓNICO",
+    "phone_placeholder": "TELÉFONO",
+    "subject_placeholder": "Selecciona una opción",
+    "subject_options": {
+      "family_info": "Quiero saber más información para un familiar",
+      "need_guidance": "Me siento desorientado/a y quiero orientación.",
+      "higher_education": "Quiero conocer más sobre educación superior.",
+      "vocational_support": "Estoy interesado/a en el acompañamiento vocacional para alguien cercano.",
+      "share_story": "Quiero contar mi historia.",
+      "other": "Otro (especificar en el mensaje)."
+    },
+    "message_placeholder": "MENSAJE",
+    "terms_label": "Acepto los términos y condiciones",
+    "submit_button": "Enviar",
+    "information": {
+      "directed_to": "DIRIGIDO A :",
+      "who_is_it_for": "¿A quién está dirigido?",
+      "young_people_description": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida,",
+      "students_description": "especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
+      "when_moment": "¿En qué momento?",
+      "decision_time": "Cuando necesitan tomar decisiones sobre su",
+      "academic_future": "futuro académico y profesional.",
+      "what_are_they_living": "¿Qué están viviendo?",
+      "feelings_description": "Sentimientos de desorientación, confusión o inseguridad frente al futuro.",
+      "i_want_it": "Lo quiero",
+      "installed_capacities": "CAPACIDADES INSTALADAS",
+      "skills_promotion": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
+      "focus_on_autos": "ENFOQUE EN LOS AUTOS",
+      "self_perception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
+      "self_observation": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
+      "self_esteem": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
+      "self_concept": "🔍 Autoconcepto: Comprender cómo me defino.",
+      "autonomy": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
+      "self_confidence": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
+      "self_motivation": "🔥 Automotivación: Impulsarme desde adentro.",
+      "self_evaluation": "📊 Autoevaluación: Aprender de mis acciones y experiencias.",
+      "what_includes_service": "¿QUÉ INCLUYE EL SERVICIO?",
+      "five_sessions": "- 5 sesiones grupales y/o individuales",
+      "one_counseling": "- 1 asesoría sociovocacional individual (a demanda)",
+      "digital_tools": "- Herramientas digitales y guías prácticas para cada sesión",
+      "experiential_activities": "- Actividades experienciales",
+      "experience_exchange": "(Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.)",
+      "whatsapp_support": "- Grupo de WhatsApp de apoyo o resolución de dudas",
+      "participation_certificate": "- Certificado de participación",
+      "payment_methods": "MEDIOS DE PAGO",
+      "bank_transfer": "- Transferencia bancaria",
+      "debit_card": "- Tarjeta débito",
+      "credit_card": "- Tarjeta crédito",
+      "cost": "COSTO",
+      "base_price": "450.000 + IVA",
+      "final_price": "535.500"
+    },
     "testimonials": {
       "title": "Testimonios",
       "button1": "Habla con nosotros",
