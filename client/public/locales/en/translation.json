@@ -634,6 +634,14 @@
       "share_story": "I want to share my story.",
       "other": "Other (specify in the message)."
     },
+    "validation": {
+      "full_name_required": " Full name is required.",
+      "email_invalid": " Email address is invalid.",
+      "phone_required": " Phone is required.",
+      "subject_required": " Subject is required.",
+      "message_required": " Message is required.",
+      "terms_required": " You must accept the terms and conditions."
+    },
     "message_placeholder": "MESSAGE",
     "terms_label": "I accept the terms and conditions",
     "submit_button": "Submit",

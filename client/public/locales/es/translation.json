@@ -644,6 +644,14 @@
       "share_story": "Quiero contar mi historia.",
       "other": "Otro (especificar en el mensaje)."
     },
+    "validation": {
+      "full_name_required": " Nombre completo es requerido.",
+      "email_invalid": " Correo electrónico es inválido.",
+      "phone_required": " Teléfono es requerido.",
+      "subject_required": " Asunto es requerido.",
+      "message_required": " Mensaje es requerido.",
+      "terms_required": " Debes aceptar los términos y condiciones."
+    },
     "message_placeholder": "MENSAJE",
     "terms_label": "Acepto los términos y condiciones",
     "submit_button": "Enviar",

@@ -32,16 +32,22 @@ function ProVocacion() {
     let tempErrors = {};
     tempErrors.fullName = formData.fullName
       ? ""
-      : " Nombre completo es requerido.";
+      : t("provocacion.validation.full_name_required");
     tempErrors.email = /\S+@\S+\.\S+/.test(formData.email)
       ? ""
-      : " Correo electrónico es inválido.";
-    tempErrors.phone = formData.phone ? "" : " Teléfono es requerido.";
-    tempErrors.subject = formData.subject ? "" : " Asunto es requerido.";
-    tempErrors.message = formData.message ? "" : " Mensaje es requerido.";
+      : t("provocacion.validation.email_invalid");
+    tempErrors.phone = formData.phone
+      ? ""
+      : t("provocacion.validation.phone_required");
+    tempErrors.subject = formData.subject
+      ? ""
+      : t("provocacion.validation.subject_required");
+    tempErrors.message = formData.message
+      ? ""
+      : t("provocacion.validation.message_required");
     tempErrors.terms = formData.terms
       ? ""
-      : " Debes aceptar los términos y condiciones.";
+      : t("provocacion.validation.terms_required");
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === "");
   };
@@ -192,11 +198,11 @@ function ProVocacion() {
           <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" />
 
           <h2 className="text-2xl font-bold mb-2 text-center text-title">
-            {t("provocacion.success_message.title")}
+            {t("provocacion.modal.title")}
           </h2>
 
           <p className="text-gray-700">
-            {t("provocacion.success_message.description")}
+            {t("provocacion.modal.description")}
           </p>
         </div>
       </Modal>
