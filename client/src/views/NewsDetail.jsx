@@ -1,15 +1,30 @@
 import "./NewsDetail.css";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Slider from "../../public/img_DataAnalytics/banner-DataAnalytics.webp";
 import Date from "../assets/Icons/date.svg";
 
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import buildNewsArray from "../components/News/newsArray";
 
 function NewsDetail() {
   const location = useLocation();
-  const news = location.state?.news;
+  const initialNews = location.state?.news;
+  const { t } = useTranslation();
+
+  // Recompute the news object from the translation-aware factory so
+  // the strings update when the language changes. Use the id from the
+  // location state (or fall back to the id property on the object).
+  const news = useMemo(() => {
+    const id = initialNews?.id ?? initialNews?.newsId ?? null;
+    if (id === null || id === undefined) return initialNews;
+    const arr = buildNewsArray(t);
+    // buildNewsArray typically uses numeric indexes as ids in other components
+    // but sometimes `news.id` was set to idx. Try numeric and string keys.
+    return arr.find((n) => n.id === id || String(n.id) === String(id)) || initialNews;
+  }, [initialNews, t]);
 
   if (!news) {
     return (
