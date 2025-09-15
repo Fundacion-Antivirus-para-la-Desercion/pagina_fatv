@@ -1,13 +1,15 @@
-import newsArray from "../News/newsArray.js";
+import buildNewsArray from "../News/newsArray.js";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function OtherNews({ newId }) {
   const navigate = useNavigate(); // <-- Hook para navegar
 
+  const { t } = useTranslation();
+
   const getRelatedNews = () => {
-    return newsArray
-      .filter((news) => news.id !== newId) // Excluir la noticia actual
-      .slice(0, 4);
+    const arr = buildNewsArray(t);
+    return arr.filter((news) => news.id !== newId).slice(0, 4);
   };
 
   const relatedNews = getRelatedNews();
