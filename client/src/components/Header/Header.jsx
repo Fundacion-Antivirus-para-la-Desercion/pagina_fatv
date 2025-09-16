@@ -381,7 +381,7 @@ function Header() {
       <ul
         className={
           nav
-            ? "fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 p-7"
+            ? "fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 p-7 overflow-auto"
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
         style={{ zIndex: 30 }}
@@ -403,11 +403,130 @@ function Header() {
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link onClick={handleClikPopupQH}>{t("header.what_we_do")}</Link>
+          <Link onClick={handleClikPopupQH} className="flex items-center">
+            {t("header.what_we_do")}{" "}
+            <svg
+              className="ml-1 text-blue-300 w-3 h-3"
+              viewBox="0 0 5 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
+            </svg>
+          </Link>
+
+          {queHacemos && (
+            <ul className="pl-4">
+              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link to="/dataAnalyctis" onClick={handleNav}>
+                  {t("header.sub_header.data_analytics")}
+                </Link>
+              </li>
+              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link
+                  to="/intervencion/fortalecimiento-academico"
+                  onClick={handleNav}
+                >
+                  {t("header.sub_header.socio_emotional_intervention")}
+                </Link>
+              </li>
+              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link
+                  to="/comunicaciones"
+                  onClick={handleNav}
+                  className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+                >
+                  {t("header.sub_header.communications")}
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link onClick={handleClikPopupServices}>{t("header.services")}</Link>
+          <Link onClick={handleClikPopupServices} className="flex items-center">
+            {t("header.services")}{" "}
+            <svg
+              className="ml-1 text-blue-300 w-3 h-3"
+              viewBox="0 0 5 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
+            </svg>
+          </Link>
+
+          {servicios && (
+            <ul className="pl-4">
+              <li
+                onMouseEnter={handleMouseEnter}
+                className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+              >
+                {t("header.sub_header.for_students")}
+
+                {students && (
+                  <ul className="pl-4">
+                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                      <Link
+                        to="/ApoyoAcademico"
+                        onClick={handleNav}
+                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                      >
+                        <span className="font-bold">01.</span>{" "}
+                        {t("header.sub_header.academic_support")}
+                      </Link>
+                    </li>
+                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                      <Link
+                        to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
+                        onClick={handleNav}
+                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                      >
+                        <span className="font-bold">02. </span>{" "}
+                        {t("header.sub_header.boe")}
+                      </Link>
+                    </li>
+                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                      <Link
+                        to="/AcompañamientoOrientacion"
+                        onClick={handleNav}
+                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                      >
+                        <span className="font-bold">03. </span>
+                        {t("header.sub_header.accompaniment_and_guidance")}
+                      </Link>
+                    </li>
+                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                      <Link
+                        to="/Repositorio"
+                        onClick={handleNav}
+                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                      >
+                        <span className="font-bold">04. </span>{" "}
+                        {t("header.sub_header.repository")}
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link
+                  to="/Consultorias"
+                  onClick={handleNav}
+                  className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+                >
+                  {t("header.sub_header.consulting")}
+                </Link>
+              </li>
+              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link
+                  to="/provocacion"
+                  onClick={handleNav}
+                  className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+                >
+                  {t("header.sub_header.pro_vocation")}
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
@@ -419,7 +538,39 @@ function Header() {
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link onClick={handleClikPopupIdioma}>{t("header.language")}</Link>
+          <Link onClick={handleClikPopupIdioma} className="flex items-center">
+            {t("header.language")}{" "}
+            <svg
+              className="ml-1 text-blue-300 w-3 h-3"
+              viewBox="0 0 5 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
+            </svg>
+          </Link>
+
+          {idioma && (
+            <ul className="pl-4">
+              <li
+                onClick={() => {
+                  i18n.changeLanguage("en");
+                  localStorage.setItem("i18nextLng", "en");
+                }}
+                className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+              >
+                {t("header.options_english")}
+              </li>
+              <li
+                onClick={() => {
+                  i18n.changeLanguage("es");
+                  localStorage.setItem("i18nextLng", "es");
+                }}
+                className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+              >
+                {t("header.options_espanish")}
+              </li>
+            </ul>
+          )}
         </li>
         <button className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3">
           <div className="flex items-center">
@@ -427,85 +578,6 @@ function Header() {
             <box-icon name="gift" color="#eae9e9"></box-icon>
           </div>
         </button>
-
-        {queHacemos && (
-          <ul className="pl-4">
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link to="/dataAnalyctis" onClick={handleNav}>
-                {t("header.sub_header.data_analytics")}
-              </Link>
-            </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link
-                to="/intervencion/fortalecimiento-academico"
-                onClick={handleNav}
-              >
-                {t("header.sub_header.socio_emotional_intervention")}
-              </Link>
-            </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link
-                to="/comunicaciones"
-                onClick={handleNav}
-                className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
-              >
-                {t("header.sub_header.communications")}
-              </Link>
-            </li>
-          </ul>
-        )}
-
-        {servicios && (
-          <ul className="pl-4">
-            <li
-              onMouseEnter={handleMouseEnter}
-              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-            >
-              {t("header.sub_header.for_students")}
-            </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link
-                to="/Consultorias"
-                onClick={handleNav}
-                className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
-              >
-                {t("header.sub_header.consulting")}
-              </Link>
-            </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link
-                to="/provocacion"
-                onClick={handleNav}
-                className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
-              >
-                {t("header.sub_header.pro_vocation")}
-              </Link>
-            </li>
-          </ul>
-        )}
-
-        {idioma && (
-          <ul className="pl-4">
-            <li
-              onClick={() => {
-                i18n.changeLanguage("en");
-                localStorage.setItem("i18nextLng", "en");
-              }}
-              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-            >
-              {t("header.options_english")}
-            </li>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("es");
-                localStorage.setItem("i18nextLng", "es");
-              }}
-              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-            >
-              {t("header.options_espanish")}
-            </li>
-          </ul>
-        )}
       </ul>
     </>
   );
