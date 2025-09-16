@@ -18,7 +18,7 @@ function OtherNews({ newId }) {
     <div id="sidebar" className="lg:col-start-2">
       <div className="shadow-xl rounded-2xl sticky top-4 border border-[#222D56] p-4">
         <h3 className="news-detail mb-4 text-left text-3xl text-title font-extrabold max-md:text-2xl leading-8">
-          OTROS ARTÍCULOS QUE TE PUEDEN INTERESAR
+          {t("otherNews.title")}
         </h3>
         <ul className="p-4">
           {relatedNews.map((news) => (
@@ -39,12 +39,14 @@ function OtherNews({ newId }) {
                     />
                   </div>
                   <div>
-                    <h4 className="text-base font-semibold mb-1 leading-5">{news.title}</h4>
+                    <h4 className="text-base font-semibold mb-1 leading-5">
+                      {news.title}
+                    </h4>
                     <a
                       href={news.link}
                       className="text-blue-600 hover:text-blue-800 text-sm"
                     >
-                      Leer más
+                      {t("otherNews.read_more")}
                     </a>
                   </div>
                 </section>

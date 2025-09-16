@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import "./Services_ATV.css";
 import "boxicons";
 import WriteEffect from "../writeEffect/WriteEffect";
+import { useTranslation } from "react-i18next";
 
 const ServicesATV = () => {
+  const { t } = useTranslation();
   const [startIndex, setStartIndex] = useState(0);
   const [animateTitle, setAnimateTitle] = useState(true); // Nuevo estado
 
@@ -20,22 +22,23 @@ const ServicesATV = () => {
 
   const descriptions = [
     {
-      title: "GESTIONAMOS LA PERMANENCIA",
-      subTitle: "En: Programas de Becarios - Bootcamps - Universidades",
-      description:
-        "Desarrollamos un proceso integral diseñado a partir de líneas y estrategias de intervención especializadas.",
+      title: t("home.servicesATV.services.permanence_title"),
+      subTitle: t("home.servicesATV.services.permanence_subtitle"),
+      description: t("home.servicesATV.services.permanence_description"),
     },
     {
-      title: "CONSULTORIA DE PERMANENCIA",
+      title: t("home.servicesATV.services.persistence_consulting_title"),
       subTitle: "",
-      description:
-        "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa.",
+      description: t(
+        "home.servicesATV.services.persistence_consulting_description"
+      ),
     },
     {
-      title: "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
+      title: t("home.servicesATV.services.socio_vocational_guidance_title"),
       subTitle: "",
-      description:
-        "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
+      description: t(
+        "home.servicesATV.services.socio_vocational_guidance_description"
+      ),
     },
   ];
 
@@ -58,7 +61,10 @@ const ServicesATV = () => {
   };
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 mb-32 lg:mb-96 text-white" id="redirection-services">
+    <section
+      className="grid grid-cols-1 lg:grid-cols-2 mb-32 lg:mb-96 text-white"
+      id="redirection-services"
+    >
       <div className="content-description flex justify-center bg-[#232e55] ">
         <section className="flex justify-center items-center">
           <div className="flex flex-wrap w-full p-4 lg:p-24">
@@ -71,7 +77,7 @@ const ServicesATV = () => {
                     color="#fffafa"
                     style={{ width: "60px", height: "60px" }}
                   />
-                  PRESTAMOS LOS SIGUIENTES SERVICIOS
+                  {t("home.servicesATV.following_services")}
                 </p>
               </div>
             </section>
@@ -139,8 +145,8 @@ const ServicesATV = () => {
             <section className="flex flex-wrap ">
               <div className="contRight contSabemos p-4 lg:p-14 text-xl bg-[#232e55]">
                 <p>
-                  Sabemos cómo ayudarte <br />
-                  Conoce nuestros servicios
+                  {t("home.servicesATV.help_text")} <br />
+                  {t("home.servicesATV.services_text")}
                 </p>
               </div>
 

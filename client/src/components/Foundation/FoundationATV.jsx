@@ -7,7 +7,7 @@ import OurTeam from "../ourTeam/OurTeam";
 import { useTranslation } from "react-i18next";
 
 function FoundationATV() {
-  
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const openPopup = () => {
@@ -28,7 +28,7 @@ function FoundationATV() {
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
         <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-          lo que hacemos
+          {t("foundation.foundationATV.header")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
           <a
@@ -89,17 +89,14 @@ function FoundationATV() {
       <div className="aboutUs">
         <div className="aboutUs-content">
           <div className="left-content">
-            <p className="title">¿Quiénes Somos?</p>
+            <p className="title">{t("foundation.foundationATV.title")}</p>
             <h4 className="subtitle">
-              Somos una organización sin ánimo de lucro que
+              {t("foundation.foundationATV.subtitle")}
             </h4>
           </div>
           <div className="right-content">
             <p className="right-paragraph">
-              Busca disminuir los niveles de deserción estudiantil en Colombia,
-              mejorar los niveles de permanencia y de graduación, siendo esta
-              nuestra manera de aportar al logro de un país con más educación y
-              consecuentemente con más desarrollo.
+              {t("foundation.foundationATV.description")}
             </p>
           </div>
         </div>
@@ -112,11 +109,11 @@ function FoundationATV() {
               <div className="_title">
                 <p>
                   <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    NUESTROS
+                    {t("foundation.foundationATV.founders.subtitle")}
                   </small>
                 </p>
                 <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
-                  FUNDADORES
+                  {t("foundation.foundationATV.founders.title")}
                 </h5>
               </div>
               <div className="lg:columns-2 gap-[15px] break-inside-avoid">
@@ -167,37 +164,44 @@ function FoundationATV() {
               <div className="_title">
                 <p>
                   <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    NUESTRA
+                    {t("foundation.foundationATV.board_directors.subtitle")}
                   </small>
                 </p>
                 <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
-                  JUNTA DIRECTIVA
+                  {t("foundation.foundationATV.board_directors.title")}
                 </h5>
               </div>
               <div className="lg:columns-2 gap-[15px] break-inside-avoid">
                 <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
                   Carlos Vásquez Restrepo
                   <strong className="text-inherit block">
-                    Presidente Y Representante Legal Titular
+                    {t(
+                      "foundation.foundationATV.board_directors.positions.president"
+                    )}
                   </strong>
                 </p>
                 <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
                   Luis Fernando Sánchez Hurtado
                   <strong className="text-inherit block">
-                    Vicepresidente / Director y Primer Representante Legal
-                    Suplente
+                    {t(
+                      "foundation.foundationATV.board_directors.positions.vicepresident"
+                    )}
                   </strong>
                 </p>
                 <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
                   David Santiago Botero Rodríguez
                   <strong className="text-inherit block">
-                    Segundo Representante Legal Suplente / Coordinador Legal
+                    {t(
+                      "foundation.foundationATV.board_directors.positions.second_representative"
+                    )}
                   </strong>
                 </p>
                 <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
                   Víctor Manuel Valencia Martínez
                   <strong className="text-inherit block">
-                    Subdirector / Tercer Representante Legal Suplente
+                    {t(
+                      "foundation.foundationATV.board_directors.positions.subdirector"
+                    )}
                   </strong>
                 </p>
                 <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
@@ -211,17 +215,17 @@ function FoundationATV() {
               <div className="_title">
                 <p>
                   <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    NUESTRO
+                    {t("foundation.foundationATV.fiscal_reviewer.subtitle")}
                   </small>
                 </p>
                 <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
-                  REVISOR FISCAL
+                  {t("foundation.foundationATV.fiscal_reviewer.title")}
                 </h5>
               </div>
               <div className="columns-2 gap-[15px] break-inside-avoid">
                 <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
                   Orlando
-                  <strong>Gaviria Flórez</strong>
+                  <strong> Gaviria Flórez</strong>
                 </p>
               </div>
             </div>
@@ -230,11 +234,11 @@ function FoundationATV() {
               <div className="_title">
                 <p>
                   <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    NUESTRA
+                    {t("foundation.foundationATV.accountant.subtitle")}
                   </small>
                 </p>
                 <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
-                  CONTADORA
+                  {t("foundation.foundationATV.accountant.title")}
                 </h5>
               </div>
               <div className="lg:columns-2 gap-[15px] break-inside-avoid">
@@ -345,97 +349,99 @@ function FoundationATV() {
         <div className="w-4/5 grid grid-cols-1 lg:grid-cols-2 gap-10 gap-y-14 text-justify">
           <div>
             <h5 className="font-oswald tracking-tighter text-left text-4xl font-bold text-[#33526d] mb-4">
-              TEORÍA DEL CAMBIO
+              {t(
+                "foundation.foundationATV.organization_info.change_theory.title"
+              )}
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
-              Identificar estudiantes con vulnerabilidades y acompañarlos
-              integralmente, a través de un ecosistema de estrategias centrado
-              en lo académico, económico y socioemocional para la permanencia.
+              {t(
+                "foundation.foundationATV.organization_info.change_theory.description"
+              )}
             </p>
           </div>
 
           <div>
             <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
-              VALORES
+              {t("foundation.foundationATV.organization_info.values.title")}
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
-              En la Fundación Antivirus para la Deserción hacemos nuestro
-              trabajo de forma colaborativa, con pasión, integridad, autonomía,
-              empatía, compromiso y compañerismo. Somos solidarios e innovadores
-              y tenemos una gran vocación de servicio.
+              {t(
+                "foundation.foundationATV.organization_info.values.description"
+              )}
             </p>
           </div>
 
           <div>
             <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
-              MISIÓN
+              {t("foundation.foundationATV.organization_info.mission.title")}
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
-              Aumentar las tasas de graduación de estudiantes de carreras y
-              programas en áreas de tecnología, a través de estrategias de
-              promoción de la permanencia y prevención de la deserción.
+              {t(
+                "foundation.foundationATV.organization_info.mission.description"
+              )}
             </p>
           </div>
 
           <div>
             <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
-              PÚBLICO OBJETIVO
+              {t(
+                "foundation.foundationATV.organization_info.target_audience.title"
+              )}
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
-              Trabajamos con estudiantes de carreras y programas TI de Educación
-              Media y Postsecundaria. Enfocamos nuestra intervención en
-              estudiantes vulnerables a la deserción.
+              {t(
+                "foundation.foundationATV.organization_info.target_audience.description"
+              )}
             </p>
           </div>
 
           <div>
             <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
-              VISIÓN
+              {t("foundation.foundationATV.organization_info.vision.title")}
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
-              En 5 años vamos a tener presencia a nivel nacional, en las 10
-              mejores universidades del país, donde habremos disminuido la tasa
-              de deserción en 10 puntos porcentuales (del 50 al 40%). Además,
-              vamos a estar replicando un modelo que es referente, cuyo éxito se
-              puede medir cualitativa y cuantitativamente.
+              {t(
+                "foundation.foundationATV.organization_info.vision.description"
+              )}
             </p>
           </div>
 
           <div>
             <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
-              PRIORIDADES
+              {t("foundation.foundationATV.organization_info.priorities.title")}
             </h5>
             <ul className="font-oswald text-base text-[#33526d] list-disc pl-5">
               <li className="mb-2">
-                Consolidar un modelo con procesos de identificación de
-                vulnerabilidades, intervención e indicadores de resultados.
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
+                )}
               </li>
               <li className="mb-2">
-                Explorar modelos de intervención desde los colegios para aportar
-                a reducir la deserción en educación superior.
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
+                )}
               </li>
               <li className="mb-2">
-                Conocer e involucrar a otros actores en el trabajo por la
-                permanencia (Rectores, Decanos, MEN, Empresas, entre otros).
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.involve_actors"
+                )}
               </li>
               <li className="mb-2">
-                Ayudar a reducir la deserción en otras universidades y programas
-                para afinar nuestro modelo y generar ingresos que aporten a la
-                sostenibilidad de la Fundación Antivirus.
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
+                )}
               </li>
             </ul>
           </div>
 
           <div className="lg:relative lg:bottom-32">
             <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
-              PROPÓSITO
+              {t("foundation.foundationATV.organization_info.purpose.title")}
             </h5>
             <p className="font-oswald text-base text-[#33526d]">
-              Construir un país próspero, pacífico, armonioso, tecnológico y
-              competitivo, en el cual todos los jóvenes tienen acceso a la
-              educación y son buenos seres humanos, con metas y empoderados de
-              sus vidas. Gracias a esto, lograremos superar la pobreza y nos
-              convertiremos en un referente de desarrollo.
+              {t(
+                "foundation.foundationATV.organization_info.purpose.description"
+              )}
             </p>
           </div>
         </div>

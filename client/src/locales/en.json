@@ -1,4 +1,26 @@
 {
+  "header": {
+    "home": "HOME",
+    "foundation": "FOUNDATION",
+    "what_we_do": "WHAT WE DO",
+    "services": "SERVICES",
+    "news": "NEWS",
+    "contact_us": "CONTACT US",
+    "button_support_us": "SUPPORT US",
+    "language": "ENG",
+    "sub_header": {
+      "data_analytics": "DATA ANALYTICS",
+      "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
+      "communications": "COMMUNICATIONS",
+      "for_students": "FOR STUDENTS",
+      "consulting": " PROJECT CONSULTING AND IMPLEMENTATION",
+      "pro_vocation": "PRO-VOCATION",
+      "academic_support": "Academic Support",
+      "boe": "Student Opportunity Bank",
+      "accompaniment_and_guidance": "Accompaniment and Guidance",
+      "repository": "Antivirus Foundation Repository"
+    }
+  },
   "home": {
     "carousel": {
       "slides": {
@@ -76,6 +98,21 @@
         "description": "Study groups",
         "alt_image": "Study groups"
       }
+    },
+    "servicesATV": {
+      "following_services": "WE PROVIDE THE FOLLOWING SERVICES",
+      "help_text": "We know how to help you",
+      "services_text": "Discover our services",
+      "services": {
+        "permanence_title": "WE MANAGE EDUCATIONAL PERSISTENCE",
+        "permanence_subtitle": "In: Scholarship Programs - Bootcamps - Universities",
+        "permanence_description": "We develop a comprehensive process designed from specialized intervention lines and strategies.",
+        "persistence_consulting_title": "PERSISTENCE CONSULTING",
+        "persistence_consulting_description": "From which the Foundation is consolidated as a strategic ally for the implementation of actions focused on ensuring educational persistence.",
+        "socio_vocational_guidance_title": "PROVOCATION: SOCIO-VOCATIONAL GUIDANCE",
+        "socio_vocational_guidance_description": "Aware of the importance of the life project in young people, the foundation strengthens conscious and informed decision-making through self-knowledge, and approaching the educational and labor worlds.",
+        "image_alt_text": "Service image {{index}}"
+      }
     }
   },
   "btns": {
@@ -124,7 +161,69 @@
     }
   },
   "foundation": {
-    "foundationATV": {}
+    "foundationATV": {
+      "header": "what we do",
+      "title": "Who Are We?",
+      "subtitle": "We are a non-profit organization that",
+      "description": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
+      "founders": {
+        "subtitle": "OUR",
+        "title": "FOUNDERS"
+      },
+      "board_directors": {
+        "subtitle": "OUR",
+        "title": "BOARD OF DIRECTORS",
+        "positions": {
+          "president": "President and Primary Legal Representative",
+          "vicepresident": "Vice President / Director and First Alternate Legal Representative",
+          "second_representative": "Second Alternate Legal Representative / Legal Coordinator",
+          "subdirector": "Deputy Director / Third Alternate Legal Representative"
+        }
+      },
+      "fiscal_reviewer": {
+        "subtitle": "OUR",
+        "title": "FISCAL REVIEWER"
+      },
+      "accountant": {
+        "subtitle": "OUR",
+        "title": "ACCOUNTANT"
+      },
+      "organization_info": {
+        "change_theory": {
+          "title": "THEORY OF CHANGE",
+          "description": "Identify students with vulnerabilities and provide comprehensive support through an ecosystem of strategies focused on academic, economic and socio-emotional aspects for retention."
+        },
+        "values": {
+          "title": "VALUES",
+          "description": "At the Antivirus Foundation for Dropout Prevention, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment and camaraderie. We are supportive and innovative and have a great vocation for service."
+        },
+        "mission": {
+          "title": "MISSION",
+          "description": "Increase graduation rates of students in technology careers and programs, through strategies to promote retention and prevent dropout."
+        },
+        "target_audience": {
+          "title": "TARGET AUDIENCE",
+          "description": "We work with students from IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout."
+        },
+        "vision": {
+          "title": "VISION",
+          "description": "In 5 years we will have a national presence, in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50 to 40%). Additionally, we will be replicating a reference model, whose success can be measured qualitatively and quantitatively."
+        },
+        "priorities": {
+          "title": "PRIORITIES",
+          "items": {
+            "consolidate_model": "Consolidate a model with processes for identifying vulnerabilities, intervention and result indicators.",
+            "explore_interventions": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
+            "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
+            "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
+          }
+        },
+        "purpose": {
+          "title": "PURPOSE",
+          "description": "Build a prosperous, peaceful, harmonious, technological and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a reference for development."
+        }
+      }
+    }
   },
   "news": {
     "title": "NEWS",
@@ -322,6 +421,10 @@
     "alt_back": "Back",
     "return_to_news": "Return to news",
     "share": "Share"
+  },
+  "otherNews": {
+    "title": "OTHER ARTICLES THAT MAY INTEREST YOU",
+    "read_more": "Read more"
   },
   "ourTeam": {
     "title_part1": "about our",

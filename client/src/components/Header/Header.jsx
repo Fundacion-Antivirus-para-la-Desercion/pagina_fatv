@@ -119,7 +119,7 @@ function Header() {
             className="text-lg text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            Inicio
+            {t("header.home")}
           </Link>
           <span className="text-blue-links mx-1">|</span>
           <Link
@@ -128,7 +128,7 @@ function Header() {
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            FUNDACIÓN
+            {t("header.foundation")}
           </Link>
           <span className="text-title mx-1">|</span>
           <button
@@ -136,7 +136,7 @@ function Header() {
             className="flex items-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            QUÉ HACEMOS
+            {t("header.what_we_do")}
           </button>
           <span className="text-title mx-1">|</span>
           <button
@@ -144,7 +144,7 @@ function Header() {
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            SERVICIOS
+            {t("header.services")}
           </button>
         </div>
 
@@ -163,7 +163,7 @@ function Header() {
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            NOTICIAS
+            {t("header.news")}
           </Link>
           <span className="text-title mx-1">|</span>
           <Link
@@ -172,7 +172,7 @@ function Header() {
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            CONTÁCTENOS
+            {t("header.contact_us")}
           </Link>
           <span className="text-title mx-1">|</span>
           <button
@@ -180,7 +180,7 @@ function Header() {
             className="flex items-center justify-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
-            ESP
+            {t("header.language")}
             <svg
               className="ml-1 text-blue-300 w-3 h-3"
               viewBox="0 0 5 8"
@@ -191,11 +191,11 @@ function Header() {
           </button>
 
           <button
-            className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3"
+            className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
             style={{ fontFamily: "Acumin2" }}
           >
             <div className="flex items-center">
-              Apóyanos
+              {t("header.button_support_us")}
               <box-icon name="gift" color="#eae9e9"></box-icon>
             </div>
           </button>
@@ -270,7 +270,7 @@ function Header() {
           <ul className="pl-4">
             <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
               <Link to="/dataAnalyctis" onClick={handleNav}>
-                ANALÍTICA DE DATOS
+                {t("header.sub_header.data_analytics")}
               </Link>
             </li>
             <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
@@ -278,11 +278,11 @@ function Header() {
                 to="/intervencion/fortalecimiento-academico"
                 onClick={handleNav}
               >
-                INTERVENCIÓN SOCIO-EMOCIONAL
+                {t("header.sub_header.socio_emotional_intervention")}
               </Link>
             </li>
             <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              COMUNICACIONES
+              {t("header.sub_header.communications")}
             </li>
           </ul>
         )}
@@ -322,21 +322,21 @@ function Header() {
               onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              ANALÍTICA DE DATOS
+              {t("header.sub_header.data_analytics")}
             </Link>
             <Link
               to="/intervencion/fortalecimiento-academico"
               onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              INTERVENCIÓN SOCIO-EMOCIONAL
+              {t("header.sub_header.socio_emotional_intervention")}
             </Link>
             <Link
               to="/comunicaciones"
               onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              COMUNICACIONES
+              {t("header.sub_header.communications")}
             </Link>
           </ul>
         </div>
@@ -352,21 +352,21 @@ function Header() {
               onMouseEnter={handleMouseEnter}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              A LOS ESTUDIANTES
+              {t("header.sub_header.for_students")}
             </li>
             <Link
               to="/Consultorias"
               onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS
+              {t("header.sub_header.consulting")}
             </Link>
             <Link
               to="/provocacion"
               onClick={handleNav}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              PRO-VOCACIÓN
+              {t("header.sub_header.pro_vocation")}
             </Link>
           </ul>
         </div>
@@ -411,31 +411,31 @@ function Header() {
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">01.</span> Apoyo Académico
+              <span className="font-bold">01.</span>{" "}
+              {t("header.sub_header.academic_support")}
             </Link>
             <Link
               to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">02. </span> Banco de Oportunidades
-              Estudiantiles
+              <span className="font-bold">02. </span>{" "}
+              {t("header.sub_header.boe")}
             </Link>
             <Link
               to="/AcompañamientoOrientacion"
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">03. </span> Acompañamiento y
-              orientación
+              <span className="font-bold">03. </span>
+              {t("header.sub_header.accompaniment_and_guidance")}
             </Link>
             <Link
               to="/Repositorio"
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">04. </span> Repositorio fundación
-              antivirus
+              <span className="font-bold">04. </span> {t("header.sub_header.repository")}
             </Link>
           </ul>
         </div>
