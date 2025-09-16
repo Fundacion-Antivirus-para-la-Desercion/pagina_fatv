@@ -328,7 +328,7 @@ function Header() {
               }}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              INGLÉS
+              {t("header.options_english")}
             </li>
             <li
               onClick={() => {
@@ -337,7 +337,7 @@ function Header() {
               }}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              ESPAÑOL
+              {t("header.options_espanish")}
             </li>
           </ul>
         </div>
@@ -493,7 +493,7 @@ function Header() {
               }}
               className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
             >
-              INGLÉS
+              {t("header.options_espanish")}
             </li>
             <li
               onClick={() => {
@@ -502,7 +502,7 @@ function Header() {
               }}
               className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
             >
-              ESPAÑOL
+              {t("header.options_english")}
             </li>
           </ul>
         )}

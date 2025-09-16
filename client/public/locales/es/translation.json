@@ -8,6 +8,8 @@
     "contact_us": "CONTÁCTENOS",
     "button_support_us": "APÓYANOS",
     "language": "ESP",
+    "options_espanish": "ESPAÑOL",
+    "options_english": "INGLÉS",
     "sub_header": {
       "data_analytics": "ANALÍTICA DE DATOS",
       "socio_emotional_intervention": "INTERVENCIÓN SOCIO-EMOCIONAL",
@@ -19,6 +21,10 @@
       "boe": "BAanco de Oportunidades Estudiantiles",
       "mentoring_and_guidance": "Acompañamiento y orientación",
       "repository": "Repositorio Fundación Antivirus"
+    },
+    "options_language": {
+      "spanish": "ESPAÑOL",
+      "english": "INGLÉS"
     }
   },
   "home": {

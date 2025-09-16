@@ -8,6 +8,8 @@
     "contact_us": "CONTACT US",
     "button_support_us": "SUPPORT US",
     "language": "ENG",
+    "options_espanish": "SPANISH",
+    "options_english": "ENGLISH",
     "sub_header": {
       "data_analytics": "DATA ANALYTICS",
       "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
@@ -20,6 +22,10 @@
       "accompaniment_and_guidance": "Accompaniment and Guidance",
       "repository": "Antivirus Foundation Repository",
       "mentoring_and_guidance": "Mentoring and Guidance"
+    },
+    "options_lenguage": {
+      "spanish": "SPANISH",
+      "english": "ENGLISH"
     }
   },
   "home": {
