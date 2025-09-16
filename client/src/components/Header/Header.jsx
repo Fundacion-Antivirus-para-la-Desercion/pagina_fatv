@@ -493,7 +493,7 @@ function Header() {
               }}
               className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
             >
-              {t("header.options_espanish")}
+              {t("header.options_english")}
             </li>
             <li
               onClick={() => {
@@ -502,7 +502,7 @@ function Header() {
               }}
               className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
             >
-              {t("header.options_english")}
+              {t("header.options_espanish")}
             </li>
           </ul>
         )}
