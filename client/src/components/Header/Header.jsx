@@ -63,15 +63,6 @@ function Header() {
     setStudents(false);
   };
 
-  const navItems = [
-    { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "FUNDACION", link: "/Fundacion" },
-    { id: 3, text: "QUE HACEMOS" },
-    { id: 4, text: "SERVICIOS" },
-    { id: 5, text: "NOTICIAS", link: "/News" },
-    { id: 6, text: "CONTACTANOS", link: "/ContactUs" },
-  ];
-
   useEffect(() => {
     let lastScrollTop = 0;
 
@@ -105,7 +96,7 @@ function Header() {
   }, []);
 
   return (
-    <div>
+    <>
       <header
         onMouseLeave={handleMouseLeave}
         className={`hidden z-50 lg:flex justify-between items-center py-3 px-16 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${
@@ -137,23 +128,42 @@ function Header() {
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.what_we_do")}
+
+            <svg
+              className="ml-1 text-blue-300 w-3 h-3"
+              viewBox="0 0 5 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
+            </svg>
+
+            <span className="text-title mx-1">|</span>
           </button>
-          <span className="text-title mx-1">|</span>
           <button
             onClick={handleClikPopupServices}
-            className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="flex items-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
             style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.services")}
+
+            <svg
+              className="ml-1 text-blue-300 w-3 h-3"
+              viewBox="0 0 5 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
+            </svg>
           </button>
         </div>
 
         <div className="logo">
-          <img
-            className="h-28 object-contain max-xl:h-24 max-lg:h-14"
-            src="/logo.png"
-            alt="logo"
-          />
+          <Link to="/" onClick={() => closePopups()}>
+            <img
+              className="h-28 object-contain max-xl:h-24 max-lg:h-14"
+              src="/logo.png"
+              alt="logo"
+            />
+          </Link>
         </div>
 
         <div className="Links-right flex gap-3 items-center">
@@ -201,119 +211,10 @@ function Header() {
           </button>
         </div>
       </header>
-      <div
-        className={`flex justify-between bg-white items-center px-6 py-2 lg:hidden`}
-      >
-        <div className="logo-responsive-menu">
-          <img
-            className="h-28 object-contain max-sm:h-16"
-            src="/logo.png"
-            alt="logo"
-          />
-        </div>
-
-        <div onClick={handleNav} className=" block lg:hidden">
-          {nav ? (
-            <AiOutlineClose size={40} />
-          ) : (
-            <AiOutlineMenu className="hover:cursor-pointer" size={30} />
-          )}
-        </div>
-      </div>
-
-      <div
-        onClick={handleNav}
-        class={`
-          ${
-            nav
-              ? "fixed inset-0 h-screen p-0 bg-[rgba(0,0,0,0.4117647059)] backdrop-blur-[4px] transition-all duration-400 ease-in-out z-30"
-              : "hidden"
-          }
-            lg:hidden
-        `}
-      ></div>
-
-      <ul
-        className={
-          nav
-            ? "fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 p-7"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
-        }
-        style={{ zIndex: 30 }}
-      >
-        <div className="header-navbar-responsive flex justify-between items-center">
-          <AiOutlineClose
-            onClick={handleNav}
-            size={30}
-            className="hover:cursor-pointer absolute right-0 pr-2 text-blue-600"
-          />
-        </div>
-
-        {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-          >
-            <Link to={item.link} onClick={handleNav}>
-              {item.text}
-            </Link>
-          </li>
-        ))}
-        <button className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3">
-          <div className="flex items-center">
-            Apóyanos
-            <box-icon name="gift" color="#eae9e9"></box-icon>
-          </div>
-        </button>
-
-        {queHacemos && (
-          <ul className="pl-4">
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link to="/dataAnalyctis" onClick={handleNav}>
-                {t("header.sub_header.data_analytics")}
-              </Link>
-            </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              <Link
-                to="/intervencion/fortalecimiento-academico"
-                onClick={handleNav}
-              >
-                {t("header.sub_header.socio_emotional_intervention")}
-              </Link>
-            </li>
-            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-              {t("header.sub_header.communications")}
-            </li>
-          </ul>
-        )}
-
-        {idioma && (
-          <ul className="pl-4">
-            <li
-              onClick={() => {
-                i18n.changeLanguage("en");
-                localStorage.setItem("i18nextLng", "en");
-              }}
-              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-            >
-              INGLÉS
-            </li>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("es");
-                localStorage.setItem("i18nextLng", "es");
-              }}
-              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-            >
-              ESPAÑOL
-            </li>
-          </ul>
-        )}
-      </ul>
 
       {queHacemos && (
         <div
-          className="fixed left-0 right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
+          className="hidden lg:block fixed left-0 right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -344,7 +245,7 @@ function Header() {
 
       {servicios && (
         <div
-          className="fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
+          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -372,37 +273,9 @@ function Header() {
         </div>
       )}
 
-      {idioma && (
-        <div
-          className="fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
-          style={{ top: popupPosition }}
-        >
-          <ul className="flex items-center justify-center gap-20 p-10">
-            <li
-              onClick={() => {
-                i18n.changeLanguage("en");
-                localStorage.setItem("i18nextLng", "en");
-              }}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
-            >
-              INGLÉS
-            </li>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("es");
-                localStorage.setItem("i18nextLng", "es");
-              }}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
-            >
-              ESPAÑOL
-            </li>
-          </ul>
-        </div>
-      )}
-
       {students && (
         <div
-          className="fixed left-0 items-center right-0  bg-btn-back text-white z-50 popup-animation text-lg"
+          className="hidden lg:block fixed left-0 top-0 items-center right-0  bg-btn-back text-white z-50 popup-animation text-lg"
           style={{ top: popupPositionStudents }}
         >
           <ul className="flex items-center justify-center gap-12 p-10 ">
@@ -435,12 +308,206 @@ function Header() {
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">04. </span> {t("header.sub_header.repository")}
+              <span className="font-bold">04. </span>{" "}
+              {t("header.sub_header.repository")}
             </Link>
           </ul>
         </div>
       )}
-    </div>
+
+      {idioma && (
+        <div
+          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
+          style={{ top: popupPosition }}
+        >
+          <ul className="flex items-center justify-center gap-20 p-10">
+            <li
+              onClick={() => {
+                i18n.changeLanguage("en");
+                localStorage.setItem("i18nextLng", "en");
+              }}
+              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
+              INGLÉS
+            </li>
+            <li
+              onClick={() => {
+                i18n.changeLanguage("es");
+                localStorage.setItem("i18nextLng", "es");
+              }}
+              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
+              ESPAÑOL
+            </li>
+          </ul>
+        </div>
+      )}
+
+      <div
+        id="responsive-menu"
+        className={`flex justify-between bg-white items-center px-6 py-2 lg:hidden`}
+      >
+        <div className="logo-responsive-menu">
+          <Link to="/" onClick={() => closePopups()}>
+            <img
+              className="h-28 object-contain max-sm:h-16"
+              src="/logo.png"
+              alt="logo"
+            />
+          </Link>
+        </div>
+
+        <button onClick={handleNav} className=" block lg:hidden">
+          {nav ? (
+            <AiOutlineClose size={40} />
+          ) : (
+            <AiOutlineMenu className="hover:cursor-pointer" size={30} />
+          )}
+        </button>
+      </div>
+
+      <div
+        onClick={handleNav}
+        class={`
+          ${
+            nav
+              ? "fixed inset-0 h-screen p-0 bg-[rgba(0,0,0,0.4117647059)] backdrop-blur-[4px] transition-all duration-400 ease-in-out z-30"
+              : "hidden"
+          }
+            lg:hidden
+        `}
+      ></div>
+
+      <ul
+        className={
+          nav
+            ? "fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 p-7"
+            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
+        }
+        style={{ zIndex: 30 }}
+      >
+        <div className="header-navbar-responsive flex justify-between items-center">
+          <AiOutlineClose
+            onClick={handleNav}
+            size={30}
+            className="hover:cursor-pointer absolute right-0 pr-2 text-blue-600"
+          />
+        </div>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link to="/">{t("header.home")}</Link>
+        </li>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link to="/Fundacion">{t("header.foundation")}</Link>
+        </li>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link onClick={handleClikPopupQH}>{t("header.what_we_do")}</Link>
+        </li>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link onClick={handleClikPopupServices}>{t("header.services")}</Link>
+        </li>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link to="/News">{t("header.news")}</Link>
+        </li>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link to="/ContactUs">{t("header.contact_us")}</Link>
+        </li>
+
+        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+          <Link onClick={handleClikPopupIdioma}>{t("header.language")}</Link>
+        </li>
+        <button className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3">
+          <div className="flex items-center">
+            {t("header.button_support_us")}
+            <box-icon name="gift" color="#eae9e9"></box-icon>
+          </div>
+        </button>
+
+        {queHacemos && (
+          <ul className="pl-4">
+            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <Link to="/dataAnalyctis" onClick={handleNav}>
+                {t("header.sub_header.data_analytics")}
+              </Link>
+            </li>
+            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <Link
+                to="/intervencion/fortalecimiento-academico"
+                onClick={handleNav}
+              >
+                {t("header.sub_header.socio_emotional_intervention")}
+              </Link>
+            </li>
+            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <Link
+                to="/comunicaciones"
+                onClick={handleNav}
+                className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              >
+                {t("header.sub_header.communications")}
+              </Link>
+            </li>
+          </ul>
+        )}
+
+        {servicios && (
+          <ul className="pl-4">
+            <li
+              onMouseEnter={handleMouseEnter}
+              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+            >
+              {t("header.sub_header.for_students")}
+            </li>
+            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <Link
+                to="/Consultorias"
+                onClick={handleNav}
+                className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              >
+                {t("header.sub_header.consulting")}
+              </Link>
+            </li>
+            <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <Link
+                to="/provocacion"
+                onClick={handleNav}
+                className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              >
+                {t("header.sub_header.pro_vocation")}
+              </Link>
+            </li>
+          </ul>
+        )}
+
+        {idioma && (
+          <ul className="pl-4">
+            <li
+              onClick={() => {
+                i18n.changeLanguage("en");
+                localStorage.setItem("i18nextLng", "en");
+              }}
+              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+            >
+              INGLÉS
+            </li>
+            <li
+              onClick={() => {
+                i18n.changeLanguage("es");
+                localStorage.setItem("i18nextLng", "es");
+              }}
+              className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+            >
+              ESPAÑOL
+            </li>
+          </ul>
+        )}
+      </ul>
+    </>
   );
 }
 
