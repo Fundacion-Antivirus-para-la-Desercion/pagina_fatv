@@ -79,7 +79,7 @@ function DonationPay() {
   return (
     <div className="lg:pt-[145px] flex  justify-center flex-wrap">
       <div className="w-[80%] grid grid-cols-1 rounded-3xl lg:grid-cols-2 shadow-2xl justify-center">
-        <div className="flex flex-col flex-wrap gap-6 p-10 rounded-l-3xl bg-[#EDEFF8] lg:border-r">
+        <div className="flex flex-col flex-wrap gap-6 p-5 lg:p-10 rounded-l-3xl bg-[#EDEFF8] lg:border-r">
           <h1 className="lg:text-2xl sm:text-xl text-title font-bold mb-5 leading-tight">
             {t("donation.foundation_name")}
           </h1>
@@ -139,7 +139,7 @@ function DonationPay() {
             </Swiper>
           </div>
 
-          <p className="text-lg text-title opacity-85 text-justify m-5">
+          <p className="text-sm md:text-base lg:text-lg text-title opacity-85 text-justify m-3 md:m-5 leading-relaxed md:leading-normal">
             {t("donation.description")}
           </p>
         </div>
@@ -225,6 +225,9 @@ function DonationPay() {
             >
               {t("donation.other_amount")}
             </button>
+            <p className="text-xs lg:text-sm m-2 font-semibold text-[#222D56] text-center">
+              {t("donation.cop")}
+            </p>
           </div>
 
           <div className="flex flex-col gap-5  border-gray-300">

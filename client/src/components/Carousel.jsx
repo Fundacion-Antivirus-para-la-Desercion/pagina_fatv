@@ -79,9 +79,8 @@ function Carousel() {
                   <h1 className="mb-4 text-[43px] leading-normal">
                     {t(slide.titleKey)} {/* Usamos t() para el título */}
                   </h1>
-                  <p className="text-xl w-3/4 mb-2">
+                  <p className="lg:text-xl w-3/4 mb-2">
                     {t(slide.descriptionKey)}{" "}
-                    {/* Usamos t() para la descripción */}
                   </p>
 
                   <div className="flex flex-wrap mt-8 gap-4">
