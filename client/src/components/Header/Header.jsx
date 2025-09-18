@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Header/Header.css";
 import { useTranslation } from "react-i18next";
+import { FaHandSparkles } from "react-icons/fa";
 
 function Header() {
   const [isHidden, setIsHidden] = useState(false);
@@ -201,12 +202,19 @@ function Header() {
           </button>
 
           <button
+            onClick={() =>
+              window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
+            }
             className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
             style={{ fontFamily: "Acumin2" }}
           >
             <div className="flex items-center">
-              {t("header.button_support_us")}
-              <box-icon name="gift" color="#eae9e9"></box-icon>
+              {t("header.button_volunteer")}
+              <FaHandSparkles
+                size={20}
+                name="gift"
+                color="#eae9e9"
+              ></FaHandSparkles>
             </div>
           </button>
         </div>
@@ -585,10 +593,20 @@ function Header() {
             </ul>
           )}
         </li>
-        <button className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3">
+        <button
+          onClick={() =>
+            window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
+          }
+          className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
+          style={{ fontFamily: "Acumin2" }}
+        >
           <div className="flex items-center">
-            {t("header.button_support_us")}
-            <box-icon name="gift" color="#eae9e9"></box-icon>
+            {t("header.button_volunteer")}
+            <FaHandSparkles
+              size={20}
+              name="gift"
+              color="#eae9e9"
+            ></FaHandSparkles>
           </div>
         </button>
       </ul>

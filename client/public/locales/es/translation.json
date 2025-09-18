@@ -6,7 +6,7 @@
     "services": "SERVICIOS",
     "news": "NOTICIAS",
     "contact_us": "CONTÁCTENOS",
-    "button_support_us": "APÓYANOS",
+    "button_volunteer": "Voluntariado",
     "language": "ESP",
     "options_spanish": "ESPAÑOL",
     "options_english": "INGLÉS",
@@ -23,6 +23,8 @@
       "accompaniment_and_guidance": "Acompañamiento y orientación",
       "repository": "Repositorio Fundación Antivirus"
     },
+    "button_volunteering": "Voluntariado",
+    "button_support_us": "APÓYANOS",
     "options_espanish": "ESPAÑOL",
     "options_language": {
       "spanish": "ESPAÑOL",
