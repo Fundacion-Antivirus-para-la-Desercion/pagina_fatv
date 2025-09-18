@@ -1,9 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import imgBanner from "../../public/services_imgs/banner-services.jpg";
 import foto3 from "../../public/services_imgs/foto4.jpg";
 import foto4 from "../../public/services_imgs/foto3.jpg";
 
 function Repositorio() {
+  const { t } = useTranslation();
   return (
     <div className="lg:pt-[145px]">
       <div className="relative w-full h-72 sm:h-80 md:h-96">
@@ -14,7 +16,7 @@ function Repositorio() {
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
         <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-          Servicios
+          {t("repositorio.title")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
           <a
@@ -82,11 +84,10 @@ function Repositorio() {
             <div className="flex flex-col gap-8">
               <div>
                 <h2 className="font-anton text-cc text-xl">
-                  Link / Canal youtube
+                  {t("repositorio.youtube_channel.title")}{" "}
                 </h2>
                 <p className="text-blue-links text-lg">
-                  Es un espacio digital académico, de diferentes materias,
-                  disponibles para la consulta en Youtube.
+                  {t("repositorio.youtube_channel.description")}
                 </p>
               </div>
             </div>

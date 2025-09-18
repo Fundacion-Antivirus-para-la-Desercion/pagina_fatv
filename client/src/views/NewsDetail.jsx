@@ -1,20 +1,35 @@
 import "./NewsDetail.css";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Slider from "../../public/img_DataAnalytics/banner-DataAnalytics.webp";
 import Date from "../assets/Icons/date.svg";
 
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import buildNewsArray from "../components/News/newsArray";
 
 function NewsDetail() {
   const location = useLocation();
-  const news = location.state?.news;
+  const initialNews = location.state?.news;
+  const { t } = useTranslation();
+
+  // Recompute the news object from the translation-aware factory so
+  // the strings update when the language changes. Use the id from the
+  // location state (or fall back to the id property on the object).
+  const news = useMemo(() => {
+    const id = initialNews?.id ?? initialNews?.newsId ?? null;
+    if (id === null || id === undefined) return initialNews;
+    const arr = buildNewsArray(t);
+    // buildNewsArray typically uses numeric indexes as ids in other components
+    // but sometimes `news.id` was set to idx. Try numeric and string keys.
+    return (
+      arr.find((n) => n.id === id || String(n.id) === String(id)) || initialNews
+    );
+  }, [initialNews, t]);
 
   if (!news) {
-    return (
-      <div className="p-10 text-2xl">No hay información de la noticia.</div>
-    );
+    return <div className="p-10 text-2xl">{t("newsDetail.no_info")}</div>;
   }
 
   const [socialMedia, setSocialMedia] = useState([
@@ -62,7 +77,7 @@ function NewsDetail() {
             />
             <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
             <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-              NOTICIAS
+              {t("newsDetail.title")}
             </h1>
             <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
               {socialMedia.map((social, index) => (
@@ -89,7 +104,7 @@ function NewsDetail() {
         <div id="content" className="p-4 border border-[#222D56] rounded-2xl">
           <p className="flex tracking-[0.3rem] font-light m-2 text-[#33526d]">
             <img className="mr-1" src={Date} />
-            NOTICIAS
+            {t("newsDetail.news_label")}
           </p>
           <h1 className="news-detail mb-4 text-left text-[3rem] text-title font-extrabold max-md:text-3xl leading-10">
             {news.newDetailContent.title}
@@ -127,9 +142,9 @@ function NewsDetail() {
               <img
                 className="ml-3 relative transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
                 src={Back}
-                alt="Atras"
+                alt={t("newsDetail.alt_back")}
               />
-              Regresar a noticias
+              {t("newsDetail.return_to_news")}
             </Link>
 
             <a
@@ -140,10 +155,10 @@ function NewsDetail() {
               className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold font-roboto"
             >
               <img
-                className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1  mr-1"
+                className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
                 src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/share.svg"
               />
-              Share
+              {t("newsDetail.share")}
             </a>
           </div>
         </section>

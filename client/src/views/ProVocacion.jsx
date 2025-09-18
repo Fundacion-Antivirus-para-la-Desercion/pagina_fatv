@@ -11,8 +11,10 @@ import Focus from "../assets/images/views/proVocacion/information/focus.svg";
 import { useState } from "react";
 import Modal from "../components/modal/Modal";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 function ProVocacion() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -30,16 +32,22 @@ function ProVocacion() {
     let tempErrors = {};
     tempErrors.fullName = formData.fullName
       ? ""
-      : " Nombre completo es requerido.";
+      : t("provocacion.validation.full_name_required");
     tempErrors.email = /\S+@\S+\.\S+/.test(formData.email)
       ? ""
-      : " Correo electrónico es inválido.";
-    tempErrors.phone = formData.phone ? "" : " Teléfono es requerido.";
-    tempErrors.subject = formData.subject ? "" : " Asunto es requerido.";
-    tempErrors.message = formData.message ? "" : " Mensaje es requerido.";
+      : t("provocacion.validation.email_invalid");
+    tempErrors.phone = formData.phone
+      ? ""
+      : t("provocacion.validation.phone_required");
+    tempErrors.subject = formData.subject
+      ? ""
+      : t("provocacion.validation.subject_required");
+    tempErrors.message = formData.message
+      ? ""
+      : t("provocacion.validation.message_required");
     tempErrors.terms = formData.terms
       ? ""
-      : " Debes aceptar los términos y condiciones.";
+      : t("provocacion.validation.terms_required");
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === "");
   };
@@ -184,16 +192,18 @@ function ProVocacion() {
       <Modal
         isOpen={open}
         onClose={() => cerrarModal()}
-        title="Mensaje enviado"
+        title={t("provocacion.modal.title")}
       >
         <div className="flex flex-col items-center text-center">
           <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" />
 
           <h2 className="text-2xl font-bold mb-2 text-center text-title">
-            ¡Mensaje enviado correctamente!
+            {t("provocacion.modal.title")}
           </h2>
 
-          <p className="text-gray-700">Gracias por comunicarte con nosotros.</p>
+          <p className="text-gray-700">
+            {t("provocacion.modal.description")}
+          </p>
         </div>
       </Modal>
       <section className="lg:pt-[145px]">
@@ -234,7 +244,9 @@ function ProVocacion() {
             rel="noopener noreferrer"
           >
             <img src={Focus} alt="Botón fijo" className="w-10 h-10" />
-            <span className="text-title font-bold">Déjate provocar</span>
+            <span className="text-title font-bold">
+              {t("provocacion.let_yourself_be_provoked")}
+            </span>
           </a>
         </div>
       </section>
@@ -244,15 +256,12 @@ function ProVocacion() {
           <h1
             className={`mb-5 text-5xl text-title leading-tight font-extrabold max-md:text-3xl  ${styles.title}`}
           >
-            OBJETIVO DEL ACOMPAÑAMIENTO
+            {t("provocacion.title_initial")}
           </h1>
           <p
             className={`text-xl tracking-tighter text-justify max-w-prose mx-auto ${styles.text}`}
           >
-            Potenciar el proyecto de vida de los <strong>jóvenes </strong>a
-            través de procesos de autoconocimiento, acercamiento a la educación
-            superior y al mundo laboral que les permitan tener herramientas para
-            construir su proyecto de vida auténtico.
+            {t("provocacion.description")}
           </p>
         </div>
         <div>
@@ -278,7 +287,7 @@ function ProVocacion() {
         <h2
           className={`text-5xl text-title font-extrabold max-md:text-3xl text-center ${styles.title}`}
         >
-          TU FUTURO, PASO A PASO: CONOCE CADA ETAPA
+          {t("provocacion.title_future")}
         </h2>
       </section>
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-4">
@@ -336,12 +345,12 @@ function ProVocacion() {
 
       <Testimonials />
 
-      <div className="w-full  h-full bg-white mt-40 relative">
+      <div className="w-full h-full bg-white mt-40 relative">
         <h3
           id="form-contac-us"
-          className="font-anton  text-5xl  text-[#F6A623] text-center absolute top-[-30px] leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
+          className="font-anton text-5xl text-[#F6A623] text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
         >
-          ESCRÍBENOS AQUÍ
+          {t("provocacion.title")}
         </h3>
 
         <div className="bg-blue-links w-full h-90 mb-20 flex items-center justify-center">
@@ -353,7 +362,7 @@ function ProVocacion() {
               <div>
                 <input
                   type="text"
-                  placeholder="NOMBRE COMPLETO"
+                  placeholder={t("provocacion.full_name_placeholder")}
                   className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="fullName"
                   value={formData.fullName}
@@ -366,7 +375,7 @@ function ProVocacion() {
               <div>
                 <input
                   type="email"
-                  placeholder="CORREO ELECTRÓNICO"
+                  placeholder={t("provocacion.email_placeholder")}
                   className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="email"
                   value={formData.email}
@@ -379,13 +388,12 @@ function ProVocacion() {
               <div>
                 <input
                   type="text"
-                  placeholder="TELÉFONO"
+                  placeholder={t("provocacion.phone_placeholder")}
                   className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="phone"
                   value={formData.phone}
                   onChange={validatePhoneNumber}
                 />
-
                 {errors.phone && (
                   <p className="text-[#F6A623]">{errors.phone}</p>
                 )}
@@ -398,23 +406,26 @@ function ProVocacion() {
                   onChange={handleChange}
                   className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 >
-                  <option value="">Selecciona una opción</option>
+                  <option value="">
+                    {t("provocacion.subject_placeholder")}
+                  </option>
                   <option value="familiar">
-                    Quiero saber más información para un familiar
+                    {t("provocacion.subject_options.family_info")}
                   </option>
                   <option value="desorientado">
-                    Me siento desorientado/a y quiero orientación.
+                    {t("provocacion.subject_options.need_guidance")}
                   </option>
                   <option value="educacion">
-                    Quiero conocer más sobre educación superior.
+                    {t("provocacion.subject_options.higher_education")}
                   </option>
                   <option value="acompanamiento">
-                    Estoy interesado/a en el acompañamiento vocacional para
-                    alguien cercano.
+                    {t("provocacion.subject_options.vocational_support")}
                   </option>
-                  <option value="historia">Quiero contar mi historia.</option>
+                  <option value="historia">
+                    {t("provocacion.subject_options.share_story")}
+                  </option>
                   <option value="otro">
-                    Otro (especificar en el mensaje).
+                    {t("provocacion.subject_options.other")}
                   </option>
                 </select>
 
@@ -433,7 +444,7 @@ function ProVocacion() {
             </div>
             <div className="mt-4">
               <textarea
-                placeholder="MENSAJE"
+                placeholder={t("provocacion.message_placeholder")}
                 className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 rows="1"
                 name="message"
@@ -454,7 +465,7 @@ function ProVocacion() {
                 onChange={handleChange}
               />
               <label htmlFor="terms" className="text-white">
-                Acepto los términos y condiciones
+                {t("provocacion.terms_label")}
               </label>
               {errors.terms && (
                 <p className="w-full text-[#F6A623]">{errors.terms}</p>
@@ -467,7 +478,7 @@ function ProVocacion() {
                   isSending ? "cursor-not-allowed" : ""
                 }`}
               >
-                Enviar
+                {t("provocacion.submit_button")}
               </button>
             </div>
           </form>

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./OurTeam.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 import { useRef, useEffect } from "react";
 // Import Swiper styles
@@ -13,48 +14,49 @@ import "swiper/css/pagination";
 // import required modules
 
 function OurTeam() {
+  const { t } = useTranslation();
   const swiperRef = useRef(null);
   const containerRef = useRef(null);
 
   const cards = [
     {
       name: "Carlos vásquez restrepo",
-      role: "Presidente",
+      role: t("ourTeam.roles.president"),
       image: "/img_OurTeam/CarlosVasquez.jpeg",
     },
     {
       name: "astrid franco gonzalez",
-      role: "Coordinadora Área  de intervención Social",
+      role: t("ourTeam.roles.social_intervention_coordinator"),
       image: "/img_OurTeam/AstridFranco.webp",
     },
     {
       name: "luis fernando sánchez hurtado",
-      role: "Director Ejecutivo",
+      role: t("ourTeam.roles.executive_director"),
       image: "/img_OurTeam/LuisSanchez.webp",
     },
     {
       name: "karen gonzález alarcón",
-      role: "Coordinadora Área de Tecnología y Datos",
+      role: t("ourTeam.roles.technology_and_data_coordinator"),
       image: "/img_OurTeam/KarenGonzales.jpg",
     },
     {
       name: "Víctor Manuel Valencia martínez",
-      role: "Subdirector",
+      role: t("ourTeam.roles.deputy_director"),
       image: "/img_OurTeam/VictorValencia.jpeg",
     },
     {
       name: "david santiago botero",
-      role: "Coordinador Área Legal",
+      role: t("ourTeam.roles.legal_area_coordinator"),
       image: "/img_OurTeam/DavidBotero.webp",
     },
     {
       name: "Manuela Correa Quintero",
-      role: "Coordinadora Área Comunicaciones",
+      role: t("ourTeam.roles.communications_coordinator"),
       image: "/img_OurTeam/ManuelaCorreaQuintero.webp",
     },
     {
       name: "luis fernando gonzález",
-      role: "Coordinador Área Administrativa y Financiera",
+      role: t("ourTeam.roles.administrative_and_financial_coordinator"),
       image: "/img_OurTeam/LuisGonzales.webp",
     },
   ];
@@ -91,9 +93,9 @@ function OurTeam() {
     <>
       <div className="OurTeam-block">
         <div className="OurTeam-block-title">
-          <h3 className="text-5xl font-extrabold  text-title">
-            sobre nuestro <br />
-            equipo
+          <h3 className="text-5xl font-extrabold text-title">
+            {t("ourTeam.title_part1")} <br />
+            {t("ourTeam.title_part2")}
           </h3>
         </div>
         <div className="OurTeam">
@@ -132,7 +134,7 @@ function OurTeam() {
               className="mySwiper"
             >
               {cards.map((card, index) => (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <img
                     src={card.image}
                     alt={card.name}

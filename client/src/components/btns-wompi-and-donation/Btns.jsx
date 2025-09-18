@@ -2,8 +2,10 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./Btns.module.css";
 import IconDonation from "../../../src/assets/images/views/donationPay/coin.png";
+import { useTranslation } from "react-i18next";
 
 function Btns() {
+  const { t } = useTranslation();
   const location = useLocation();
   const [showDonationPay, setShowDonationPay] = useState(false);
 
@@ -26,11 +28,10 @@ function Btns() {
       >
         <img
           src={IconDonation}
-          alt="icono de Javi feliz"
+          alt={t("Btns.alt_donation_icon")}
           className="w-10 h-10"
         />
-
-        <p className="text-white text-lg font-bold">Donar</p>
+        <p className="text-white text-lg font-bold">{t("Btns.donate")}</p>
       </div>
     </Link>
   );

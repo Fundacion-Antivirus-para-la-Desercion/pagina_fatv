@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./News.css";
 import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
-
 import Date from "../../../src/assets/Icons/date.svg";
 import Arrow from "../../../src/assets/Icons/arrow.svg";
-
 import { useNavigate } from "react-router-dom";
-import newsArray from "./newsArray";
+import buildNewsArray from "./newsArray";
+
+import { useTranslation } from "react-i18next";
 
 function News() {
-  const navigate = useNavigate(); // <-- Hook para navegar
+  const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const [socialMedia] = useState([
     {
@@ -56,7 +57,7 @@ function News() {
             />
             <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
             <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-              NOTICIAS
+              {t("news.title")}
             </h1>
             <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
               {socialMedia.map((social, index) => (
@@ -80,12 +81,12 @@ function News() {
       </div>
 
       <section className="noticias-content grid gap-12 p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {newsArray.map((news, idx) => (
+        {buildNewsArray(t).map((news, idx) => (
           <div key={idx}>
             <img className="mb-3 aspect-ratio" src={news.img} alt={news.alt} />
             <p className="flex tracking-[0.3rem] font-light text-[#33526d]">
               <img className="mr-1" src={Date} />
-              NOTICIAS
+              {t("news.category")}
             </p>
             <p className="mb-4 text-left text-[2.5rem] text-title font-extrabold max-md:text-3xl leading-9">
               {news.title}
@@ -98,11 +99,11 @@ function News() {
                 navigate("/news/detail", { state: { news } });
               }}
             >
-              Leer más
+              {t("news.read_more")}
               <img
                 className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
                 src={Arrow}
-                alt="Ver más"
+                alt={t("news.see_more_alt")}
               />
             </a>
           </div>

@@ -1,0 +1,691 @@
+{
+  "header": {
+    "home": "INICIO",
+    "foundation": "FUNDACIÓN",
+    "what_we_do": "QUÉ HACEMOS",
+    "services": "SERVICIOS",
+    "news": "NOTICIAS",
+    "contact_us": "CONTÁCTENOS",
+    "button_support_us": "APÓYANOS",
+    "language": "ESP",
+    "options_spanish": "ESPAÑOL",
+    "options_english": "INGLÉS",
+    "sub_header": {
+      "data_analytics": "ANALÍTICA DE DATOS",
+      "socio_emotional_intervention": "INTERVENCIÓN SOCIO-EMOCIONAL",
+      "communications": "COMUNICACIONES",
+      "for_students": "A LOS ESTUDIANTES",
+      "consulting": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS",
+      "pro_vocation": "PRO-VOCACIÓN",
+      "academic_support": "Apoyo Académico",
+      "boe": "BAanco de Oportunidades Estudiantiles",
+      "mentoring_and_guidance": "Acompañamiento y orientación",
+      "accompaniment_and_guidance": "Acompañamiento y orientación",
+      "repository": "Repositorio Fundación Antivirus"
+    }
+  },
+  "home": {
+    "carousel": {
+      "slides": {
+        "slide1": {
+          "title": "FOMENTAMOS LA PERMANENCIA ESTUDIANTIL",
+          "description": "Acompañamos a los estudiantes para poder lograr sus sueños."
+        },
+        "slide2": {
+          "title": "UNIMOS FUERZAS PARA EVITAR LA DESERCIÓN",
+          "description": "Nuestras áreas son: Intervención social, Comunicaciones, Tecnología y Datos."
+        },
+        "slide3": {
+          "title": "MÁS DE 11.000 ESTUDIANTES ACOMPAÑADOS Y CONTANDO",
+          "description": "¡Únete a nuestra comunidad de agentes del cambio!"
+        },
+        "slide4": {
+          "title": "¡DESCUBRE NUESTRAS ESTRATEGIAS DE ACOMPAÑAMIENTO! ",
+          "description": "¡Tu futuro está a un clic de distancia!"
+        }
+      },
+      "buttons": {
+        "contact": "CONTÁCTENOS",
+        "more": "Ver más"
+      }
+    },
+    "aboutUs": {
+      "title": "acerca de nosotros",
+      "subtitle": "Buscamos disminuir los niveles de deserción estudiantil en Colombia",
+      "paragraph1": "Siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+      "paragraph2_start": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a ",
+      "paragraph2_strong": "través de un ecosistema de estrategias",
+      "button": "Conoce más aquí",
+      "alt_arrow": "Ver más"
+    },
+    "ourAllies": {
+      "title": "NUESTROS ALIADOS",
+      "logo_alt_text": "Logo aliado {index}"
+    },
+    "contextData": {
+      "title_part1": "Nuestro aporte",
+      "title_part2": "en Colombia",
+      "statistic1": {
+        "description": "Estudiantes acompañados por la Fundación",
+        "alt_image": "Acompañamiento"
+      },
+      "statistic2": {
+        "description": "Asesorías de orientación sociopedagógica y sociovocacional (ASP Y ASV)",
+        "alt_image": "Orientación"
+      },
+      "statistic3": {
+        "description": "Talleres grupales",
+        "alt_image": "Grupo de estudio"
+      },
+      "statistic4": {
+        "description": "Tutorías académicas",
+        "alt_image": "Tutoria"
+      },
+      "statistic5": {
+        "description": "Tutores voluntarios vinculados",
+        "alt_image": "Tutor"
+      },
+      "statistic6": {
+        "description": "Espacios de orientación Psicológica",
+        "alt_image": "Orientación Psicológica"
+      },
+      "statistic7": {
+        "description": "Talleres de Nivélate",
+        "alt_image": "Taller"
+      },
+      "statistic8": {
+        "description": "Estudiantes que reciben computador en préstamo o donación",
+        "alt_image": "computador"
+      },
+      "statistic9": {
+        "description": "Grupos de estudio",
+        "alt_image": "Grupos de estudio"
+      }
+    },
+    "servicesATV": {
+      "following_services": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
+      "help_text": "Sabemos cómo ayudarte",
+      "services_text": "Conoce nuestros servicios",
+      "services": {
+        "permanence_title": "GESTIONAMOS LA PERMANENCIA",
+        "permanence_subtitle": "En: Programas de Becarios - Bootcamps - Universidades",
+        "permanence_description": "Desarrollamos un proceso integral diseñado a partir de líneas y estrategias de intervención especializadas.",
+        "persistence_consulting_title": "CONSULTORIA DE PERMANENCIA",
+        "persistence_consulting_description": "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa.",
+        "socio_vocational_guidance_title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
+        "socio_vocational_guidance_description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
+        "image_alt_text": "Imagen de servicio {{index}}"
+      }
+    }
+  },
+  "btns": {
+    "donate": "Donar",
+    "alt_donation_icon": "icono de Javi feliz"
+  },
+  "donation": {
+    "foundation_name": "Fundación Antivirus para la Deserción",
+    "description": "En la Fundación Antivirus para la Deserción, somos una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+    "be_part_solution": "Sé parte de la solución",
+    "amount_to_donate": "Monto a donar",
+    "cop": "Todas las donaciones se procesan en pesos colombianos",
+    "additional_comments": "Comentarios adicionales",
+    "comments_placeholder": "Escribe tus comentarios aquí",
+    "monthly_payment": "Permitir que el pago sea mensual según el monto mencionado",
+    "one_time_contribution": "Contribución única",
+    "continue": "Continuar",
+    "secure_payments": "PAGOS SEGUROS POR",
+    "other_amount": "Otro valor",
+    "alt_text": "Acompañamiento a estudiantes"
+  },
+  "dataAnalytics": {
+    "bannerDA": {
+      "banner": {
+        "title": "lo que hacemos",
+        "alt_banner": "Banner con el título 'lo que hacemos'"
+      }
+    },
+    "contentDA": {
+      "title": "Nuestro Modelo",
+      "subtitle": "Analítica de Datos",
+      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
+      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
+      "alt_image": "Gráfico de análisis de datos"
+    }
+  },
+  "communications_ATV": {
+    "commun": {
+      "title_banner": "lo que hacemos",
+      "our_model": "NUESTRO MODELO",
+      "subtitle": "COMUNICACIONES",
+      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+      "alt_image": "Equipo de Comunicaciones"
+    }
+  },
+  "foundation": {
+    "foundationATV": {
+      "header": "lo que hacemos",
+      "title": "¿Quiénes Somos?",
+      "subtitle": "Somos una organización sin ánimo de lucro que",
+      "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+      "founders": {
+        "subtitle": "NUESTROS",
+        "title": "FUNDADORES"
+      },
+      "board_directors": {
+        "subtitle": "NUESTRA",
+        "title": "JUNTA DIRECTIVA",
+        "positions": {
+          "president": "Presidente Y Representante Legal Titular",
+          "vicepresident": "Vicepresidente / Director y Primer Representante Legal Suplente",
+          "second_representative": "Segundo Representante Legal Suplente / Coordinador Legal",
+          "subdirector": "Subdirector / Tercer Representante Legal Suplente"
+        }
+      },
+      "fiscal_reviewer": {
+        "subtitle": "NUESTRO",
+        "title": "REVISOR FISCAL"
+      },
+      "accountant": {
+        "subtitle": "NUESTRA",
+        "title": "CONTADORA"
+      },
+      "organization_info": {
+        "change_theory": {
+          "title": "TEORÍA DEL CAMBIO",
+          "description": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia."
+        },
+        "values": {
+          "title": "VALORES",
+          "description": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio."
+        },
+        "mission": {
+          "title": "MISIÓN",
+          "description": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción."
+        },
+        "target_audience": {
+          "title": "PÚBLICO OBJETIVO",
+          "description": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción."
+        },
+        "vision": {
+          "title": "VISIÓN",
+          "description": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente."
+        },
+        "priorities": {
+          "title": "PRIORIDADES",
+          "items": {
+            "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+            "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+            "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+            "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+          }
+        },
+        "purpose": {
+          "title": "PROPÓSITO",
+          "description": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+        }
+      }
+    }
+  },
+  "news": {
+    "title": "NOTICIAS",
+    "category": "NOTICIAS",
+    "read_more": "Leer más",
+    "see_more_alt": "Ver más",
+    "items": {
+      "0": {
+        "alt": "2024: Un año de movimiento, retos y transformación",
+        "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
+        "detail": {
+          "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
+          "content": [
+            "El 2024 fue un año de retos, preguntas, movimiento y gestión para la Fundación Antivirus para la Deserción, un año que nos invitó a repensar el camino y las formas en las que, como organización social, aportamos a la sociedad. En medio de un entorno desafiante reafirmamos nuestro compromiso por la educación y el acompañamiento a de miles de jóvenes en el país.",
+            "En el informe de gestión se refleja la constancia, el amor, la innovación y la pasión, que movieron cada una de nuestras acciones para cumplir nuestro propósito misional. Movilizamos conversaciones, campañas y alianzas visibilizando las necesidades de los jóvenes para no desertar, invitamos a estudiantes, tutores, docentes, instituciones y aliados a ser parte de una red que abraza, escucha y camina con ellos.",
+            "Durante este período, reflexionamos sobre la problemática, pero, sobre todo, nos pusimos en acción, realizando gestión de la permanencia en la Universidad de Antioquia y la Universidad Nacional en la carrera de Ingeniería de sistemas. Acompañamos los estudiantes becados de la Fundación Aurelio Llano Posada, Fundación Nutresa, la plataforma filantrópica Ver+ Beca Tech y del municipio de Itagüí; con el cual, también tuvimos un proceso de orientación sociovocacional con los jóvenes del grado 10° en 12 de sus Instituciones educativas públicas. Tramitamos la permanencia en los Bootcamps Nodo EAFIT y Código C13. Finalmente, acompañamos y empoderamos a las estudiantes Linieras del proceso formativo de la Corporación Tener Futuro.",
+            "Este informe es un reflejo del camino recorrido, del apoyo realizado y el trayecto que nos falta; es la muestra fehaciente de que cuando se suman esfuerzos se construye país y se cambian historias. Cada estudiante que logramos acompañar y cada joven que se gradúa, es una promesa cumplida. Así como cada aliado que se suma, hace parte de una educación más justa, cercana y sostenible. En el 2024, no hablamos solo de deserción, hablamos de permanencia, de esperanza, de futuro y de transformación social.",
+            "Agradecemos a todos nuestros aliados, quienes de forma directa o indirecta apoyaron nuestro trabajo para construir un país más próspero, pacífico y armonioso, en donde los sueños cuentan y los triunfos se trabajan. A los estudiantes que creen en nuestro acompañamiento y nos permiten transitar el camino juntos. A nuestros colaboradores que día a día hacen posible un cambio y entregan su cinco por ciento para una sociedad más consciente; gracias por creer en la Fundación Antivirus para la Deserción y por creer que juntos podemos lograrlo.",
+            "Continuaremos en acción, con la convicción de que podemos seguir construyendo redes de apoyo que hacen posible los sueños de muchos jóvenes.",
+            "Léelo aquí: ReporteAnual2024_final"
+          ]
+        }
+      },
+      "1": {
+        "alt": "Renovación del régimen especial por la transparencia",
+        "title": "RENOVACIÓN DEL RÉGIMEN ESPECIAL POR LA TRANSPARENCIA",
+        "detail": {
+          "title": "RENOVACIÓN DEL RÉGIMEN ESPECIAL POR LA TRANSPARENCIA",
+          "content": [
+            "Se verificó la presentación oportuna de la solicitud de actualización de reconocimiento como ESAL para gozar de la exención del impuesto de renta ante la DIAN de acuerdo a requisitos; quedando pendiente la publicación en la página web de la Fundación."
+          ]
+        }
+      },
+      "2": {
+        "alt": "La deserción universitaria",
+        "title": "LA DESERCIÓN UNIVERSITARIA",
+        "detail": {
+          "title": "LA DESERCIÓN UNIVERSITARIA",
+          "content": [
+            "Tengo una visión para mi país: un lugar próspero, pacífico, armonioso, tecnológico y competitivo, donde todos tengan acceso a la educación y sean buenos seres humanos con propósito y empoderados. Para lograrlo, me enfoco en abordar la escasez de talento en el desarrollo de software y la alta deserción universitaria, particularmente en la Facultad de Ingeniería de la Universidad de Antioquia.",
+            "El sector privado ha experimentado un déficit de ingenieros y programadores de software, mientras que las universidades no satisfacen la demanda. Actualmente, graduamos solo alrededor de 7,000 ingenieros/programadores por año, lo que nos deja con un déficit de talento de entre 90,000 y 240,000 profesionales. Esto nos aleja del desarrollo y la economía del conocimiento.",
+            "La deserción universitaria, especialmente en Ingeniería de Sistemas, es un problema nacional. La Universidad de Antioquia enfrenta una alta tasa de deserción, lo cual tiene un costo social devastador. Propongo un programa de mentoría donde estudiantes avanzados ayuden a los de primeros semestres, lo que ha demostrado reducir la deserción en un 20%. Además, se puede establecer un sistema en el que las empresas apoyen económicamente a los estudiantes a cambio de un porcentaje de sus salarios una vez que se gradúen.",
+            "También es importante abordar las dificultades económicas de los estudiantes y la presión familiar. Aquí, el sector privado puede contribuir mediante donaciones de computadoras, apoyo en la estructuración de instrumentos de financiación y la participación de sus colaboradores en voluntariados.",
+            "En resumen, se necesita un enfoque conjunto para lograr una visión compartida de desarrollo en el país. Con programas de mentoría, apoyo económico de las empresas y la participación activa del sector privado, podemos reducir la escasez de talento y la deserción universitaria, allanando el camino hacia un futuro próspero y tecnológico."
+          ]
+        }
+      },
+      "3": {
+        "alt": "Conversatorio en universidad de Envigado",
+        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+        "detail": {
+          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+          "content": [
+            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
+            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
+          ]
+        }
+      },
+      "4": {
+        "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
+        "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
+        "detail": {
+          "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
+          "content": [
+            "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
+          ]
+        }
+      },
+      "5": {
+        "alt": "Ponencia en congreso internacional de comunicaciones",
+        "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
+        "detail": {
+          "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
+          "content": [
+            "El pasado 2 de noviembre la Fundación Antivirus para la Deserción fue invitada al Congreso Internacional de Comunicaciones en la Universidad de Medellín, donde Daniela Correa, coordinadora de comunicaciones, estuvo a cargo de la ponencia de ‘La comunicación en emprendimientos sociales”. Este representó un logro para la Fundación y sus colaboradores, pues fue una oportunidad para dar a conocer el modelo transversal de las comunicaciones en un proyecto social y, a su vez, promocionar el propósito de aumentar los índices de permanencia."
+          ]
+        }
+      },
+      "6": {
+        "alt": "Medellín valle del software",
+        "title": "MEDELLÍN VALLE DEL SOFTWARE-MVS",
+        "detail": {
+          "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
+          "content": [
+            "La primera versión de MVS se vivió en simultáneo al TechFest 2022, reuniendo expertos, empresarios, docentes, estudiantes y ciudadanos interesados en la tecnología. Este espacio lleno de talleres, experiencias interactivas y entretenimiento fue realizado por la Alcaldía de Medellín.",
+            "La Fundación Antivirus para la Deserción tuvo la oportunidad de participar durante los cuatro días del festival, dando a conocer la problemática de la deserción que se erige como una pandemia educativa en las carreras STEM; a la vez que su modelo de intervención, impulsando a más jóvenes a estudiar estas áreas."
+          ]
+        }
+      },
+      "7": {
+        "alt": "Recibimos mención honorífica",
+        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+        "detail": {
+          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+          "content": [
+            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
+          ]
+        }
+      },
+      "8": {
+        "alt": "Encuentro con colaboradores FATV",
+        "title": "ENCUENTRO CON COLABORADORES FATV",
+        "detail": {
+          "title": "ENCUENTRO CON COLABORADORES FATV",
+          "content": [
+            "¡Inspiración en cada mirada! Conoce a nuestro talentoso equipo de colaboradores, quienes con pasión y experiencia llevan a nuestra Fundación hacia la consecución de sus objetivos. ¡Juntos, enfrentaremos los retos del 2023!"
+          ]
+        }
+      },
+      "9": {
+        "alt": "Visión compartida",
+        "title": "VISIÓN COMPARTIDA",
+        "detail": {
+          "title": "VISIÓN COMPARTIDA",
+          "content": [
+            "¡El poder de una visión compartida no tiene precio! Gracias a nuestros amigos de Vélez reyes más por caminar con nosotros en la búsqueda de mejores alternativas para hacer de Colombia un país con una educación de calidad, con menores tasas de deserción, mejores niveles de permanencia y graduación."
+          ]
+        }
+      },
+      "10": {
+        "alt": "Estado de la educación en Antioquia",
+        "title": "ESTADO DE LA EDUCACIÓN EN ANTIOQUIA",
+        "detail": {
+          "title": "ESTADO DE LA EDUCACIÓN EN ANTIOQUIA",
+          "content": [
+            "En ProAntioquia hemos aportado con nuestra participación acerca del estado de la educación en Antioquia. Encuentro Temático Educación - Plataforma de Jóvenes y Empresarios. Proantioquia y Fundacion Antivirus para la Desercion unidas en pro de la calidad de la Educación."
+          ]
+        }
+      },
+      "11": {
+        "alt": "Nuestro diseño interior",
+        "title": "¡NUESTRO DISEÑO INTERIOR!",
+        "detail": {
+          "title": "¡NUESTRO DISEÑO INTERIOR!",
+          "content": [
+            "La Fundación Antivirus para la Deserción y su equipo de comunicaciones unen fuerzas para transformar el diseño interior de la oficina en el municipio de La Estrella. Ambas organizaciones colaboraron estrechamente para crear un ambiente inspirador y funcional que promueva la creatividad y el trabajo en equipo.",
+            "En Comunicaciones, se aportó el talento y conocimiento de los diseñadores y comunicadores para crear un espacio acogedor y estimulante. Se enfocaron en utilizar colores vibrantes y diseños familiares, así como el uso de Javi, con el objetivo de mejorar la productividad y el bienestar de los colaboradores en FATV.",
+            "El resultado es una oficina moderna y funcional, donde los miembros de la Fundación Antivirus para la Deserción pueden trabajar en un entorno inspirador y colaborativo. El nuevo diseño interior refleja la misión y los valores de la organización, creando un espacio acorde con su compromiso de brindar oportunidades de educación y desarrollo a jóvenes en situación de riesgo de deserción.",
+            "Todos estamos entusiasmados con el resultado de la construcción e instalación del visual interno de la oficina y esperamos que el nuevo diseño interior de la oficina en La Estrella inspire a los colaboradores y fortalezca aún más su labor en la comunidad. ¡El equipo de la Fundación Antivirus para la Deserción celebra el éxito del logro de esté objetivo y estamos emocionados por el futuro trabajo conjunto en proyectos que promuevan el bienestar y el desarrollo de la comunidad!"
+          ]
+        }
+      },
+      "12": {
+        "alt": "Nuestra investigación de mercados",
+        "title": "NUESTRA INVESTIGACIÓN DE MERCADOS",
+        "detail": {
+          "title": "NUESTRA INVESTIGACIÓN DE MERCADOS",
+          "content": [
+            "La Fundación Antivirus para la Deserción está comprometida con su misión de brindar oportunidades educativas a jóvenes en situación de riesgo. En ese sentido, el equipo de Comunicaciones ha iniciado una emocionante investigación de mercado para mejorar sus procesos comunicativos y lograr de manera efectiva la misión, visión y propósito de la organización.",
+            "El objetivo principal de esta investigación es comprender mejor las necesidades y preferencias de los diferentes públicos con los que se relaciona la fundación, tanto internos como externos. Mediante el análisis de datos y la contextualización del entorno, el equipo de Comunicaciones busca obtener información valiosa que les permita desarrollar estrategias de comunicación más efectivas y personalizadas.",
+            "Esta iniciativa demuestra el compromiso de la Fundación Antivirus para la Deserción de adaptarse a las necesidades cambiantes de su entorno y optimizar sus canales de comunicación. Al comprender a fondo a su audiencia, la organización podrá transmitir de manera clara y relevante su mensaje, generando un impacto positivo en la comunidad y acercando a más jóvenes a las oportunidades educativas.",
+            "El proceso de investigación de mercado involucra la participación activa de todo el equipo de Comunicaciones, quienes trabajan arduamente para recopilar, analizar y aplicar los datos obtenidos. Se espera que los resultados de esta investigación permitan identificar nuevas estrategias de comunicación, así como fortalecer las existentes, para alcanzar una mayor eficacia en la difusión de la labor y los programas de la fundación.",
+            "La Fundación Antivirus para la Deserción está emocionada por los avances de esta investigación de mercado y el impacto positivo que tendrá en su labor. A través de una comunicación más efectiva, la organización busca llegar a un mayor número de jóvenes en situación de riesgo y brindarles las oportunidades que merecen para un futuro mejor.",
+            "¡El equipo de Comunicaciones de la Fundación Antivirus para la Deserción continúa trabajando arduamente para llevar a cabo esta investigación y está ansioso por implementar las mejoras que surgirán de ella. Juntos, lograremos una comunicación más impactante y acercaremos aún más nuestra misión a aquellos que más lo necesitan!"
+          ]
+        }
+      },
+      "13": {
+        "alt": "Llevando la educación a nuevos horizontes en Colombia",
+        "title": "LLEVANDO LA EDUCACIÓN A NUEVOS HORIZONTES EN COLOMBIA",
+        "detail": {
+          "title": "LLEVANDO LA EDUCACIÓN A NUEVOS HORIZONTES EN COLOMBIA",
+          "content": [
+            "En un país donde la educación superior a menudo es un sueño esquivo para muchas personas, la Fundación Antivirus para la Deserción se embarca en un proyecto valiente y apasionante en colaboración con la Fundación Aurelio Llano Posada. Su misión es clara y poderosa: reducir la deserción estudiantil en Colombia, donde las cifras muestran un desafío del 50%.",
+            "Este proyecto busca no solo cambiar la realidad de la deserción, sino también mejorar la calidad de la permanencia educativa y mantener indicadores de graduación que inspiren a los demás. ¿El enfoque? Estrategias disruptivas que abarcan desde acompañamientos psicosociales hasta herramientas de la cuarta revolución industrial.",
+            "Más de 500 estudiantes campesinos, beneficiarios de las becas otorgadas por la Fundación Aurelio Llano Posada, se ven directamente impactados por este esfuerzo. Estos estudiantes se distribuyen en más de 27 instituciones de educación superior en todo Colombia.",
+            "El proyecto se despliega en dos líneas de acompañamiento igualmente poderosas. La primera, el Acompañamiento Socio-pedagógico, es guiada por trabajadores sociales que se sumergen en las realidades de estos estudiantes. Juntos, identifican obstáculos y trazan rutas de apoyo, conectando a los estudiantes con los servicios de Bienestar Universitario y otras estrategias del programa. Asesorías socio pedagógicas ofrecen espacios de escucha y conversación, creando puentes para abordar vulnerabilidades y desafíos.",
+            "La segunda línea, Acompañamiento Académico, está diseñada para fortalecer el conocimiento de los estudiantes en áreas críticas. Las mentorías académicas, sesiones individuales de repaso académico, son lideradas por estudiantes con un historial académico destacado, conocidos como mentores. Estos mentores brindan asesorías sobre temas específicos que a menudo presentan dificultades.",
+            "Los Talleres \"Nivélate con Antivirus\" son espacios colectivos donde se afianzan conocimientos en diversas asignaturas. Estos talleres están diseñados para asegurar que los estudiantes no solo comprendan los contenidos, sino que también aprueben sus materias. Son liderados por estudiantes con sólido desempeño académico y un dominio claro de las asignaturas.",
+            "\"Repasa Online\" es una iniciativa que ofrece talleres virtuales creados por la Fundación Antivirus para la Deserción. Estos talleres se centran en asignaturas con altas tasas de repitencia y cancelaciones. Los videos se comparten en la plataforma YouTube, lo que los convierte en un recurso valioso y accesible para todos los estudiantes de la Fundación Aurelio Llano Posada.",
+            "El impacto esperado es profundo y significativo: la reducción de los niveles de deserción y una mejora palpable en la calidad de la permanencia de estos jóvenes valientes. Este proyecto es un testimonio del compromiso inquebrantable de estas fundaciones con la educación superior en Colombia. En un país donde la educación superior sigue siendo un faro de esperanza para muchos, estas dos fundaciones trabajan incansablemente para transformar esos sueños en una realidad brillante y alcanzable para todos.",
+            "Un llamado a la acción se hace eco en cada paso de este proyecto, invitando a la comunidad y a posibles colaboradores a unirse a esta noble causa. El cierre de esta historia es el comienzo de un viaje, uno que promete un futuro educativo más brillante y accesible en Colombia."
+          ]
+        }
+      },
+      "14": {
+        "alt": "La importacia de los datos para acabar con la deserción",
+        "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
+        "detail": {
+          "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
+          "content": [
+            "Los datos pueden ayudar a enriquecer historias y pueden proporcionar información valiosa sobre las cosas que vivimos cada día, proporcionando una fuente de sabiduría práctica y dándonos orientación sobre los asuntos humanos. Sabemos que hablar sobre algoritmos para tratar con vidas humanas puede parecer una yuxtaposición, ya que para muchas personas la palabra algoritmo evoca maquinarias arcanas y registrables de las grandes empresas. Pero, un algoritmo es simplemente una secuencia finita de pasos que se utilizan para resolver un problema, en el cual los datos proporcionan información valiosa para forjar cada paso dado.",
+            "Existe una idea reciente llamada: “diseño de algoritmos humanos”. Esta busca encontrar mejores soluciones a los desafíos que las personas enfrentan todos los días, ya sea para realizar un seguimiento del cambio climático en el mundo, agilizar los resultados de búsqueda de un apartamento o para acabar con la deserción universitaria. Si bien ahondaremos en lo último con más detalle, porque este es nuestro propósito, queremos mostrar primero como, hasta los problemas más mundanos, pueden resolverse con datos. Así las cosas, pensemos en el caso donde Pepita quiere comprar un apartamento. Cuando se le presentó esta situación Pepita intuyó que requería un equilibrio entre mirar apartamentos y elegir el que quisiera. De esta manera, ella entrevió que debía buscar los suficientes apartamentos para establecer un estándar y, luego de estos 11 días de búsqueda, comprometerse con el primer apartamento que vea que supere su estándar. Esto significa que se necesita un 37% del tiempo que se tiene para poder establecer objetivos. Este tipo de problemas pertenece a la clase de problemas denominados problema de parada óptimos.",
+            "El ejemplo anterior es solo una ilustración de la capacidad que tienen los datos y la estadística. La vida está llena de problemas que son, sencillamente, muy difíciles. Un ejemplo de esto es la alta tasa de deserción que tenemos en Colombia (50% en promedio en cualquier facultad y 70% en las facultades de ingeniería). Esta cifra tan escalofriante dice más de las dificultades intrínsecas de este problema que sobre la falibilidad del cerebro humano. Para resolver este problema necesitamos entender su estructura fundamental y para esto necesitamos datos. No obstante, el valor clave de los datos es la capacidad de aprovecharlos al máximo: encontrar asociaciones relevantes dentro de los datos, manipularlos en conjuntos manejables y luego crear aplicaciones para representar mejor lo que se descubre. Esto lo aprendió el “Campeón de la tasa de graduación” (Graduation Rate Champion) de la Universidad de Texas, cuando se le puso el desafío de aumentar la tasa de graduados de 51% en el 2021 al 70% en el 2016.",
+            "Para lograr su objetivo, el Campeón de la tasa de graduación reclutó un equipo de científicos de datos en la oficina de investigación institucional de la universidad, que estaba especializado en analítica predictiva. Al deconstruir los registros de decenas de miles de estudiantes recientes de esta Universidad, pudieron desarrollar una estadística modelo que combinó catorce variables separadas. Desde el ingreso familiar hasta el puntaje del SAT, el rango de la clase del colegio y el historial educativo de los padres, en un solo algoritmo que podría predecir de manera confiable la probabilidad de que un estudiante admitido se graduara. Este quipo llamó a esta nueva herramienta el Panel de índice de graduación de cuatro años. (Taugh, 2019) La ganancia que implica para una universidad aumentar el número de graduados se refleja en una tasa de movilidad social muy alta. El paso por una universidad forja el proceso de formación de la identidad de los adolescentes y realmente tiene un impacto positivo en la forma como resultan las vidas de las personas; cuan felices serán y que también van a negociar los desafíos del trabajo, la familia, la amistad y la comunidad."
+          ]
+        }
+      }
+    }
+  },
+  "newsDetail": {
+    "no_info": "No hay información de la noticia.",
+    "title": "NOTICIAS",
+    "news_label": "NOTICIAS",
+    "alt_back": "Atras",
+    "return_to_news": "Regresar a noticias",
+    "share": "Compartir"
+  },
+  "otherNews": {
+    "title": "OTROS ARTÍCULOS QUE TE PUEDEN INTERESAR",
+    "read_more": "Leer más"
+  },
+  "ourTeam": {
+    "title_part1": "sobre nuestro",
+    "title_part2": "equipo",
+    "roles": {
+      "president": "Presidente",
+      "social_intervention_coordinator": "Coordinadora Área de intervención Social",
+      "executive_director": "Director Ejecutivo",
+      "technology_and_data_coordinator": "Coordinadora Área de Tecnología y Datos",
+      "deputy_director": "Subdirector",
+      "legal_area_coordinator": "Coordinador Área Legal",
+      "communications_coordinator": "Coordinadora Área Comunicaciones",
+      "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
+    }
+  },
+  "qhfa": {
+    "page_title": "lo que hacemos",
+    "our_model": "NUESTRO MODELO",
+    "socio_emotional_intervention": "INTERVENCION SOCIO-EMOCIONAL",
+    "intervention_description": "Es el campo de acción de la fundación que pretende identificar y comprender las particularidades del contexto sociocultural y socioemocional de los estudiantes, para influir, transformar e impactar significativamente en sus condiciones y su proceso formativo, a través de herramientas y alternativas de acompañamiento socio pedagógico. El equipo social está compuesto por trabajadores sociales y psicólogos encargados de diseñar y ejecutar estrategias de fortalecimiento académico, apoyo psicoemocional y sociopedagógico. Esta área cuenta con las siguientes líneas de Intervención social:",
+    "academic_strengthening": "FORTALECIMIENTO ACADEMICO:",
+    "academic_description": "Búsqueda de tutores y mentores dispuestos recibir un módico estipendio por hora y ofrecer otra hora voluntaria. En este sentido, una vez encontrados los tutores, esta área es responsable de crear las citas para la tutoría uno a uno y talleres temáticos para un repaso complementario de clases y grupos de estudio.",
+    "psycho_emotional_support": "Acompañamiento psicoemocional y sociopedagógico:",
+    "support_intro": "Esta área está encargada de:",
+    "support_list": {
+      "mental_health": "Supervisar, orientar y atender a los estudiantes con problemas en su estado mental y salud emocional.",
+      "vocational_guidance": "Dar orientación a situaciones vocacionales o familiares,",
+      "strengthen_skills": "Ayudar a fortalecer las habilidades socioemocionales y la autoestima de los estudiantes.",
+      "organize_workshops": "Organizar talleres, encuentros y grupos focales para fortalecer las habilidades socioemocionales y vocacionales."
+    },
+    "alt_text": {
+      "banner": "Banner",
+      "emotional_1": "emocional 1",
+      "emotional_2": "emocional 2",
+      "emotional_3": "emocional 3"
+    }
+  },
+  "apoyoAcademico": {
+    "title": "Servicios",
+    "section1": {
+      "subtitle1": "PRESTAMOS LOS SIGUIENTES SERVICIOS:",
+      "subtitle2": "A LOS ESTUDIANTES",
+      "subtitle3": "APOYO ACADÉMICO:",
+      "tutoring": {
+        "title": "Tutorías / Mentorías",
+        "description": "Las tutorías académicas son un espacio de repaso personalizado de aquellas materias que representan mayor dificultad."
+      },
+      "levelUp": {
+        "title": "Nivélate con Antivirus",
+        "description": "Es una estrategia que busca acompañar abiertamente a todos los estudiantes que se encuentran en estado de vulnerabilidad académica y buscan aprobar los cursos."
+      },
+      "studyGroups": {
+        "title": "Grupos de Estudio",
+        "description": "Es un espacio de encuentro para grupos pequeños de estudiantes enfocado en el repaso de materias específicas."
+      }
+    },
+    "imageSection1": {
+      "title": "Evento becados Itaguí",
+      "description": "Una alianza creada para acompañarte"
+    },
+    "imageSection2": {
+      "title": "Colegios Itaguí",
+      "description": "Charlas pedagógicas sobre el acompañamiento"
+    }
+  },
+  "acompañamientoOrientacion": {
+    "title": "Servicios",
+    "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN:",
+    "socio_pedagogical": {
+      "title": "Asesorías Socio-pedagógicas",
+      "description": "Las asesorías socio-educativas son espacios de encuentro, escucha y apoyo a los estudiantes en estado de vulnerabilidad."
+    },
+    "plan_padrino": {
+      "title": "Plan Padrino",
+      "description": "Es una estrategia que busca establecer un contacto entre los estudiantes que recién ingresan y sus compañeros de semestres superiores y egresados, con el objetivo de que estos los acompañen de acuerdo a su experiencia recorrida en la universidad."
+    },
+    "occupational_support": {
+      "title": "Acompañamiento Ocupacional",
+      "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
+    }
+  },
+  "repositorio": {
+    "title": "Servicios",
+    "academic_repository": {
+      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
+    },
+    "youtube_channel": {
+      "title": "Link / Canal youtube",
+      "description": "Es un espacio digital académico, de diferentes materias, disponibles para la consulta en Youtube."
+    }
+  },
+  "consultorias": {
+    "title": "Servicios",
+    "services_title": "Prestamos los siguientes servicios:",
+    "main_consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA PERMANENCIA EN:",
+    "universities": "Universidades",
+    "bootcamps": "Bootcamps",
+    "schools": "Colegios",
+    "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
+    "description": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares."
+  },
+  "provocacion": {
+    "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",
+    "description": "Potenciar el proyecto de vida de los jóvenes a través de procesos de autoconocimiento, acercamiento a la educación superior y al mundo laboral que les permitan tener herramientas para construir su proyecto de vida auténtico.",
+    "title_future": "TU FUTURO, PASO A PASO: CONOCE CADA ETAPA",
+    "let_yourself_be_provoked": "Déjate provocar",
+    "title": "ESCRÍBENOS AQUÍ",
+    "full_name_placeholder": "NOMBRE COMPLETO",
+    "email_placeholder": "CORREO ELECTRÓNICO",
+    "phone_placeholder": "TELÉFONO",
+    "subject_placeholder": "Selecciona una opción",
+    "subject_options": {
+      "family_info": "Quiero saber más información para un familiar",
+      "need_guidance": "Me siento desorientado/a y quiero orientación.",
+      "higher_education": "Quiero conocer más sobre educación superior.",
+      "vocational_support": "Estoy interesado/a en el acompañamiento vocacional para alguien cercano.",
+      "share_story": "Quiero contar mi historia.",
+      "other": "Otro (especificar en el mensaje)."
+    },
+    "validation": {
+      "full_name_required": " Nombre completo es requerido.",
+      "email_invalid": " Correo electrónico es inválido.",
+      "phone_required": " Teléfono es requerido.",
+      "subject_required": " Asunto es requerido.",
+      "message_required": " Mensaje es requerido.",
+      "terms_required": " Debes aceptar los términos y condiciones."
+    },
+    "message_placeholder": "MENSAJE",
+    "terms_label": "Acepto los términos y condiciones",
+    "submit_button": "Enviar",
+    "modal": {
+      "title": "¡Mensaje enviado correctamente!",
+      "description": "Gracias por comunicarte con nosotros."
+    },
+    "information": {
+      "directed_to": "DIRIGIDO A :",
+      "who_is_it_for": "¿A quién está dirigido?",
+      "young_people_description": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida,",
+      "students_description": "especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
+      "when_moment": "¿En qué momento?",
+      "decision_time": "Cuando necesitan tomar decisiones sobre su",
+      "academic_future": "futuro académico y profesional.",
+      "what_are_they_living": "¿Qué están viviendo?",
+      "feelings_description": "Sentimientos de desorientación, confusión o inseguridad frente al futuro.",
+      "i_want_it": "Lo quiero",
+      "installed_capacities": "CAPACIDADES INSTALADAS",
+      "skills_promotion": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
+      "focus_on_autos": "ENFOQUE EN LOS AUTOS",
+      "self_perception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
+      "self_observation": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
+      "self_esteem": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
+      "self_concept": "🔍 Autoconcepto: Comprender cómo me defino.",
+      "autonomy": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
+      "self_confidence": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
+      "self_motivation": "🔥 Automotivación: Impulsarme desde adentro.",
+      "self_evaluation": "📊 Autoevaluación: Aprender de mis acciones y experiencias.",
+      "what_includes_service": "¿QUÉ INCLUYE EL SERVICIO?",
+      "five_sessions": "- 5 sesiones grupales y/o individuales",
+      "one_counseling": "- 1 asesoría sociovocacional individual (a demanda)",
+      "digital_tools": "- Herramientas digitales y guías prácticas para cada sesión",
+      "experiential_activities": "- Actividades experienciales",
+      "experience_exchange": "(Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.)",
+      "whatsapp_support": "- Grupo de WhatsApp de apoyo o resolución de dudas",
+      "participation_certificate": "- Certificado de participación",
+      "payment_methods": "MEDIOS DE PAGO",
+      "bank_transfer": "- Transferencia bancaria",
+      "debit_card": "- Tarjeta débito",
+      "credit_card": "- Tarjeta crédito",
+      "cost": "COSTO",
+      "base_price": "450.000 + IVA",
+      "final_price": "535.500"
+    },
+    "testimonials": {
+      "title": "Testimonios",
+      "button1": "Habla con nosotros",
+      "button2": "Contáctanos",
+      "alt_comilla": "comillas",
+      "alt_focus": "icono",
+      "alt_testimonial_img": "Testimonio",
+      "testimonials_content": [
+        {
+          "description": "Muy importante el acompañamiento y las personas que lo hacen, porque uno se siente en confianza y siente que uno está aprendiendo algo... El hecho de que lleguen con preguntas que no obliguen pero que incentiven a darle una respuesta ha hecho que tenga una mejor preparación para mi futuro o al menos tenga más planteado lo que estoy haciendo hoy para mi futuro.",
+          "author": "- Samuel Durango Baena"
+        },
+        {
+          "description": "Hemos aprendido a conocernos bastante bien. Ha sido un crecimiento personal he aprendido a quererme, a conocerme más a fondo, mirar lo que quiero para mi vida en unos años y a saber que tengo un gran avance en mí. Que tengo que ser constante con lo que quiero lograr y que tengo que tener propósitos fijos. A futuro me imagino como una gran profesional, teniendo mi propia empresa o marca o siendo independiente.",
+          "author": "- Salomé Arango"
+        },
+        {
+          "description": "Sinceramente, antes de que Antivirus llegara tenía mucha inseguridad de qué iba a estudiar o qué iba a hacer con mi vida, porque nadie sabe que va a pasar con el futuro porque es incierto. Pero Antivirus llegó y poco a poco nos ha podido dar seguridad, nos ha enseñado que todo en la vida tiene una solución y nuestros problemas se pueden volver en capacidades para nosotros mismos.",
+          "author": "- Estiwar Espinal"
+        },
+        {
+          "description": "Antivirus ha hecho un trabajo maravilloso, gracias a Antivirus he intentado soltarle ese miedo al futuro, ha tranquilizado mucho las cosas, nosotras como estudiantes de 11 cargamos con varias responsabilidades y nos preocupa mucho qué pasará después del colegio ¿qué haré? Y Antivirus nos ha ayudado a conocernos un poquito más y saber a qué me puedo dedicar o por qué camino coger.",
+          "author": "- Antonia Aristizábal"
+        },
+        {
+          "description": "El acompañamiento me pareció muy agradable, mi mayor aprendizaje fue en la toma decisiones, entender mejor mis emociones, pensar antes de actuar. Ustedes lograron en mí que yo fuera más seguro como de las decisiones que quiera tomar en mi vida. Lo que más me gusto fueron las charlas, la metodología y la temática, eso nos iluminó.",
+          "author": "- Matías González"
+        }
+      ]
+    }
+  },
+  "contactUs": {
+    "title": "Contactanos",
+    "startConversation": "COMENCEMOS",
+    "conversationTitle": "UNA CONVERSACIÓN ¿TIENES ALGUNA PREGUNTA? ¡TENEMOS LA RESPUESTA!",
+    "mainHeadquarters": "Sede principal",
+    "address": "Cl 79 S 50-69 La Estrella",
+    "city": "Medellín - Antioquia - Colombia",
+    "email": "Correo electrónico",
+    "emailAddress": "contactenos@fundacionantivirusparaladesercion.org",
+    "whatsapp": "WhatsApp",
+    "whatsappNumber": "3206417053",
+    "writeToUs": "ESCRÍBENOS AQUÍ",
+    "googleMaps": "Google Maps",
+    "findUsHere": "Encuéntranos aquí",
+    "form": {
+      "fullName": "NOMBRE COMPLETO",
+      "email": "CORREO ELECTRÓNICO",
+      "phone": "TELÉFONO",
+      "subject": "ASUNTO",
+      "message": "MENSAJE",
+      "termsConditions": "Acepto los términos y condiciones",
+      "sendButton": "Enviar"
+    },
+    "validation": {
+      "fullNameRequired": " Nombre completo es requerido.",
+      "emailInvalid": " Correo electrónico es inválido.",
+      "phoneRequired": " Teléfono es requerido.",
+      "subjectRequired": " Asunto es requerido.",
+      "messageRequired": " Mensaje es requerido.",
+      "termsRequired": " Debes aceptar los términos y condiciones."
+    },
+    "modal": {
+      "title": "Mensaje enviado",
+      "successTitle": "¡Mensaje enviado correctamente!",
+      "thankYou": "Gracias por comunicarte con nosotros.",
+      "termsAccepted": "Acepto",
+      "termsNotAccepted": "No acepto"
+    }
+  },
+  "footer": {
+    "visitUs": "Visítanos",
+    "address1": "Calle 79 sur # 50-165",
+    "address2": "Oficinas 301 y 401 La Estrella",
+    "address3": "Antioquia - Colombia",
+    "contact": "Llámanos o escríbenos",
+    "contactEmail": "contactenos@fundacionantivirusparaladesercion.org",
+    "contactWhatsapp": "WhatsApp: +57 3173831481",
+    "socialNetworks": "Nuestras redes sociales",
+    "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
+    "dataProtection": "Política de protección de datos"
+  },
+  "notFound": {
+    "title": "Oops!",
+    "message": "Lo sentimos, página no encontrada",
+    "button": "Volver al Inicio"
+  }
+}

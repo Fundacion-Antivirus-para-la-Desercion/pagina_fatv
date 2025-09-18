@@ -1,9 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import imgBanner from "../../public/services_imgs/banner-services.jpg";
 import imgServices2 from "../../public/services_imgs/services-img2.jpg";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
 
 function ApoyoAcademico() {
+  const { t } = useTranslation();
+
   return (
     <div className="lg:pt-[145px]">
       <div className="relative w-full h-60 sm:h-80 md:h-96">
@@ -14,7 +17,7 @@ function ApoyoAcademico() {
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
         <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-          Servicios
+          {t("apoyoAcademico.title")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
           <a
@@ -76,44 +79,39 @@ function ApoyoAcademico() {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-7">
             <h1 className="tracking-nm text-cc">
-              PRESTAMOS LOS SIGUIENTES SERVICIOS:
+              {t("apoyoAcademico.section1.subtitle1")}
             </h1>
             <h1 className="font-anton text-cc text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
-              A LOS ESTUDIANTES
+              {t("apoyoAcademico.section1.subtitle2")}
             </h1>
             <h1 className="font-anton text-cc text-2xl mb-10">
-              APOYO ACADÉMICO:
+              {t("apoyoAcademico.section1.subtitle3")}
             </h1>
-
             <div className="flex flex-col gap-8">
               <div>
                 <h2 className="font-anton text-cc text-xl">
-                  Tutorías / Mentorías
+                  {t("apoyoAcademico.section1.tutoring.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
-                  Las tutorías académicas son un espacio de repaso personalizado
-                  de aquellas materias que representan mayor dificultad.
+                  {t("apoyoAcademico.section1.tutoring.description")}
                 </p>
               </div>
 
               <div>
                 <h2 className="font-anton text-cc text-xl">
-                  Nivélate con Antivirus
+                  {t("apoyoAcademico.section1.levelUp.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
-                  Es una estrategia que busca acompañar abiertamente a todos los
-                  estudiantes que se encuentran en estado de vulnerabilidad
-                  académica y buscan aprobar los cursos.
+                  {t("apoyoAcademico.section1.levelUp.description")}
                 </p>
               </div>
 
               <div>
                 <h2 className="font-anton text-cc text-xl">
-                  Grupos de Estudio
+                  {t("apoyoAcademico.section1.studyGroups.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
-                  Es un espacio de encuentro para grupos pequeños de estudiantes
-                  enfocado en el repaso de materias específicas
+                  {t("apoyoAcademico.section1.studyGroups.description")}
                 </p>
               </div>
             </div>
@@ -124,16 +122,16 @@ function ApoyoAcademico() {
               alt="emocional 1"
               className="w-full h-auto object-cover"
             />
-
             <div className="lg:absolute bottom-0 left-0-0 bg-blue-links px-16 py-12">
-              <b className="text-xl text-white ">Evento becados Itaguí</b>
+              <b className="text-xl text-white ">
+                {t("apoyoAcademico.imageSection1.title")}
+              </b>
               <p className="text-white text-xl">
-                Una alianza creada para a compañarte
+                {t("apoyoAcademico.imageSection1.description")}
               </p>
             </div>
           </div>
         </div>
-
         <div className="flex flex-col md:flex-row relative">
           <div className="w-full md:w-1/2 relative ">
             <img
@@ -141,14 +139,14 @@ function ApoyoAcademico() {
               src={imgServices2}
               alt="emocional 2"
             />
-
             <div className="lg:absolute bottom-0 left-0-0 bg-blue-links px-16 py-12">
-              <b className="text-xl text-white ">Colegios Itaguí</b>
+              <b className="text-xl text-white ">
+                {t("apoyoAcademico.imageSection2.title")}
+              </b>
               <p className="text-white text-xl">
-                Charlas pedagógicas sobre el acompañamiento
+                {t("apoyoAcademico.imageSection2.description")}
               </p>
             </div>
-
             <div></div>
           </div>
         </div>
