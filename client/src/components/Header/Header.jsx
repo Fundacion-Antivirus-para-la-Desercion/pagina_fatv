@@ -325,6 +325,7 @@ function Header() {
               onClick={() => {
                 i18n.changeLanguage("en");
                 localStorage.setItem("i18nextLng", "en");
+                handleNav();
               }}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
@@ -334,10 +335,12 @@ function Header() {
               onClick={() => {
                 i18n.changeLanguage("es");
                 localStorage.setItem("i18nextLng", "es");
+                handleNav();
               }}
               className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
-              {t("header.options_espanish")}
+              {" "}
+              {t("header.options_espanish")}{" "}
             </li>
           </ul>
         </div>
@@ -555,6 +558,7 @@ function Header() {
                 onClick={() => {
                   i18n.changeLanguage("en");
                   localStorage.setItem("i18nextLng", "en");
+                  handleNav();
                 }}
                 className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
@@ -564,6 +568,7 @@ function Header() {
                 onClick={() => {
                   i18n.changeLanguage("es");
                   localStorage.setItem("i18nextLng", "es");
+                  handleNav();
                 }}
                 className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
