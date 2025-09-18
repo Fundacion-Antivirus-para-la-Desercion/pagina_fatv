@@ -398,11 +398,15 @@ function Header() {
         </div>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link to="/">{t("header.home")}</Link>
+          <Link to="/" onClick={handleNav}>
+            {t("header.home")}
+          </Link>
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link to="/Fundacion">{t("header.foundation")}</Link>
+          <Link to="/Fundacion" onClick={handleNav}>
+            {t("header.foundation")}
+          </Link>
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
@@ -533,11 +537,15 @@ function Header() {
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link to="/News">{t("header.news")}</Link>
+          <Link to="/News" onClick={handleNav}>
+            {t("header.news")}
+          </Link>
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <Link to="/ContactUs">{t("header.contact_us")}</Link>
+          <Link to="/ContactUs" onClick={handleNav}>
+            {t("header.contact_us")}
+          </Link>
         </li>
 
         <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
