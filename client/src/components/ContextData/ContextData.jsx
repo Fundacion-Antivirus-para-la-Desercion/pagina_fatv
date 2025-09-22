@@ -15,7 +15,7 @@ const ContextData = () => {
   const { t } = useTranslation();
   return (
     <div className="context-data-container">
-      <h1 className="mb-32 context-data-title text-5xl text-white font-extrabold text-center">
+      <h1 className="mb-32 context-data-title text-3xl lg:text-5xl text-white font-extrabold text-center">
         <span className="bg-[#f6a623] text-[#222d56] px-2">
           {t("home.contextData.title_part1")}
         </span>{" "}
