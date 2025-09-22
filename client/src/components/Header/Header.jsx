@@ -295,20 +295,20 @@ function Header() {
               <span className="font-bold">01.</span>{" "}
               {t("header.sub_header.academic_support")}
             </Link>
-            <Link
+            {/* <Link
               to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
               <span className="font-bold">02. </span>{" "}
               {t("header.sub_header.boe")}
-            </Link>
+            </Link>*/}
             <Link
               to="/AcompañamientoOrientacion"
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">03. </span>
+              <span className="font-bold">02. </span>
               {t("header.sub_header.accompaniment_and_guidance")}
             </Link>
             <Link
@@ -316,7 +316,7 @@ function Header() {
               onClick={handleNav}
               className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
             >
-              <span className="font-bold">04. </span>{" "}
+              <span className="font-bold">03. </span>{" "}
               {t("header.sub_header.repository")}
             </Link>
           </ul>
@@ -489,7 +489,7 @@ function Header() {
                         {t("header.sub_header.academic_support")}
                       </Link>
                     </li>
-                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                    {/*<li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
                         onClick={handleNav}
@@ -498,14 +498,14 @@ function Header() {
                         <span className="font-bold">02. </span>{" "}
                         {t("header.sub_header.boe")}
                       </Link>
-                    </li>
+                    </li> */}
                     <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="/AcompañamientoOrientacion"
                         onClick={handleNav}
                         className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
                       >
-                        <span className="font-bold">03. </span>
+                        <span className="font-bold">02. </span>
                         {t("header.sub_header.accompaniment_and_guidance")}
                       </Link>
                     </li>
@@ -515,7 +515,7 @@ function Header() {
                         onClick={handleNav}
                         className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
                       >
-                        <span className="font-bold">04. </span>{" "}
+                        <span className="font-bold">03. </span>{" "}
                         {t("header.sub_header.repository")}
                       </Link>
                     </li>

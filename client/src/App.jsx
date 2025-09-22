@@ -25,7 +25,6 @@ import News from "./components/News/News";
 import NewsDetail from "./views/NewsDetail.jsx";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -48,12 +47,12 @@ function App() {
           />
           <Route path="/Repositorio" element={<Repositorio />} />
           <Route path="/Consultorias" element={<Consultorias />} />
-          <Route path="/Universidades" element={<Universidades />} />
-          <Route path="/Bootcamps" element={<Bootcamps />} />
-          <Route path="/Becarios" element={<Becarios />} />
-          <Route path="/Colegios" element={<Colegio />} />
+          {/* <Route path="/Universidades" element={<Universidades />} /> */}
+          {/* <Route path="/Bootcamps" element={<Bootcamps />} /> */}
+          {/*   <Route path="/Becarios" element={<Becarios />} /> */}
+          {/* <Route path="/Colegios" element={<Colegio />} /> */}
           <Route path="/provocacion" element={<ProVocacion />} />
-          <Route path="/news/detail" element={<NewsDetail  />} />
+          <Route path="/news/detail" element={<NewsDetail />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
