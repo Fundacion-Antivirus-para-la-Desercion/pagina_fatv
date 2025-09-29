@@ -109,7 +109,6 @@ function Header() {
             to="/"
             onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.home")}
           </Link>
@@ -118,7 +117,6 @@ function Header() {
             to="/Fundacion"
             onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.foundation")}
           </Link>
@@ -126,7 +124,6 @@ function Header() {
           <button
             onClick={handleClikPopupQH}
             className="flex items-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.what_we_do")}
 
@@ -143,7 +140,6 @@ function Header() {
           <button
             onClick={handleClikPopupServices}
             className="flex items-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.services")}
 
@@ -172,7 +168,6 @@ function Header() {
             to="/News"
             onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.news")}
           </Link>
@@ -181,7 +176,6 @@ function Header() {
             to="/ContactUs"
             onClick={handleNav}
             className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.contact_us")}
           </Link>
@@ -189,7 +183,6 @@ function Header() {
           <button
             onClick={handleClikPopupIdioma}
             className="flex items-center justify-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out"
-            style={{ letterSpacing: "-1px", fontFamily: "Acumin2" }}
           >
             {t("header.language")}
             <svg
@@ -206,7 +199,6 @@ function Header() {
               window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
             }
             className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
-            style={{ fontFamily: "Acumin2" }}
           >
             <div className="flex items-center">
               {t("header.button_volunteer")}
@@ -222,7 +214,7 @@ function Header() {
 
       {queHacemos && (
         <div
-          className="hidden lg:block fixed left-0 right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
+          className="hidden lg:block fixed left-0 right-0 bg-blue-links text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -253,7 +245,7 @@ function Header() {
 
       {servicios && (
         <div
-          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
+          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -325,7 +317,7 @@ function Header() {
 
       {idioma && (
         <div
-          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton"
+          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -598,7 +590,6 @@ function Header() {
             window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
           }
           className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
-          style={{ fontFamily: "Acumin2" }}
         >
           <div className="flex items-center">
             {t("header.button_volunteer")}

@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-
-.rammetto-one-regular {
-  font-family: "Rammetto One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .carousel-text {
   position: absolute;
   bottom: 2%;
@@ -24,7 +16,6 @@
   display: flex;
   width: 100%;
   font-size: 4rem;
-  font-family: "Anton", sans-serif;
   color: #f8b732;
   letter-spacing: -0.02em;
   justify-content: center;
@@ -33,7 +24,6 @@
 
 .carousel-text p {
   font-size: 0.8rem;
-  font-family: "Roboto", sans-serif;
   color: #fff;
   display: block;
   position: relative;

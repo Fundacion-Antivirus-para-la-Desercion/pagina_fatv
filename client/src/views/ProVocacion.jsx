@@ -348,7 +348,7 @@ function ProVocacion() {
       <div className="w-full h-full bg-white mt-40 relative">
         <h3
           id="form-contac-us"
-          className="font-anton text-5xl text-[#F6A623] text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
+          className="text-5xl text-[#F6A623] text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
         >
           {t("provocacion.title")}
         </h3>

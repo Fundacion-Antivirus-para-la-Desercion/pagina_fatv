@@ -14,7 +14,6 @@
   text-transform: uppercase;
   margin-bottom: 1em;
   line-height: 92%;
-  font-family: "Oswald", sans-serif;
   font-weight: bold;
   position: absolute;
   margin: 10px auto;
@@ -66,7 +65,6 @@
   font-size: 34px;
   line-height: 90.6666666667%;
   margin-bottom: 10px;
-  font-family: "Oswald", sans-serif;
   letter-spacing: -0.06em;
   font-weight: bold;
 }
@@ -75,7 +73,6 @@
   text-rendering: optimizeLegibility;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1200px) {

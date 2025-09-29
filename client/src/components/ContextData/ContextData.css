@@ -8,7 +8,6 @@
 
 .context-data-title {
   margin-bottom: 1rem;
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -30,7 +29,6 @@
 
 .statistic-number {
   color: #ffb732;
-  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   font-weight: 600;
   animation: scaleAnimation 0.5s ease-out forwards;
@@ -38,7 +36,6 @@
 
 .statistic-number2 {
   color: white;
-  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   font-weight: 600;
   animation: scaleAnimation 0.5s ease-out forwards;
@@ -46,7 +43,6 @@
 
 .statistic-number3 {
   color: #7c78b3;
-  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   font-weight: 600;
   animation: scaleAnimation 0.5s ease-out forwards;
@@ -56,7 +52,6 @@
   color: white;
   font-weight: 600;
   font-style: italic;
-  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   margin-top: 0.5rem;
   letter-spacing: 1px;

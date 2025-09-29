@@ -76,7 +76,7 @@ function NewsDetail() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-            <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+            <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
               {t("newsDetail.title")}
             </h1>
             <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -137,7 +137,7 @@ function NewsDetail() {
           <div className="flex items-center">
             <Link
               to="/News"
-              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold mr-7 font-roboto"
+              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold mr-7"
             >
               <img
                 className="ml-3 relative transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
@@ -152,7 +152,7 @@ function NewsDetail() {
                 "http://www.facebook.com/share.php?u=" + window.location.href
               }
               target="_blank"
-              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold font-roboto"
+              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold"
             >
               <img
                 className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"

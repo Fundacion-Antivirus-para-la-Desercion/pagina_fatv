@@ -4,7 +4,6 @@
   padding: 5em 0;
   display: flex;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
 }
 
 .data_analytics--cnt {
@@ -40,7 +39,6 @@
   font-size: 2.94em;
   line-height: 0.92;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
   letter-spacing: -0.06em;
   font-weight: bold;
 }
