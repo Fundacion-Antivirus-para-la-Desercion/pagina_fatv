@@ -15,7 +15,9 @@ export default {
         btn: "#7c78b3",
       },
       fontFamily: {
-        empresa: ["impact", "renogare", "myriad-pro"],
+        impact: ["impact"],
+        renogare: ["renogare"],
+        myriadPro: ["myriad-pro"],
       },
       letterSpacing: {
         nm: "0.3em",

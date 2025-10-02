@@ -37,7 +37,7 @@ function OurAllies() {
 
   return (
     <section className="p-4 lg:p-28 relative">
-      <h1 className="mb-10 text-center text-5xl text-title font-extrabold max-md:text-3xl">
+      <h1 className="mb-10 text-center text-5xl font-impact text-title  max-md:text-3xl">
         {t("home.ourAllies.title")}
       </h1>
 

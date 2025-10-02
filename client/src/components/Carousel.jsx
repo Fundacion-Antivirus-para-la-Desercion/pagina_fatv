@@ -76,7 +76,7 @@ function Carousel() {
             <section className="relative lg:grid grid-cols-[40%_60%] bg-[#222D56]">
               <div className="relative z-50 carousel-text flex items-center p-5">
                 <section>
-                  <h1 className="mb-4 text-[43px] leading-normal">
+                  <h1 className="mb-4 text-[43px] font-impact leading-normal">
                     {t(slide.titleKey)} {/* Usamos t() para el título */}
                   </h1>
                   <p className="lg:text-xl w-3/4 mb-2">

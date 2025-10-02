@@ -11,7 +11,7 @@ function AboutUs() {
       <div className="aboutUs-content">
         <div className="left-content">
           <p className="title">{t("home.aboutUs.title")}</p>
-          <h4 className="subtitle">{t("home.aboutUs.subtitle")}</h4>
+          <h4 className="subtitle font-renogare font-extrabold ">{t("home.aboutUs.subtitle")}</h4>
           <p className="paragraph">{t("home.aboutUs.paragraph1")}</p>
         </div>
         <div className="right-content">

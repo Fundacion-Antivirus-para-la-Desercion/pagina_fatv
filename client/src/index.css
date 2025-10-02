@@ -22,3 +22,9 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@layer base {
+  body {
+    font-family: "myriad-pro";
+  }
+}

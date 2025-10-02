@@ -93,7 +93,7 @@ function OurTeam() {
     <>
       <div className="OurTeam-block">
         <div className="OurTeam-block-title">
-          <h3 className="text-5xl font-extrabold text-title">
+          <h3 className="text-5xl font-impact text-title">
             {t("ourTeam.title_part1")} <br />
             {t("ourTeam.title_part2")}
           </h3>
@@ -142,7 +142,7 @@ function OurTeam() {
                   />
                   <div className="OurTeam-content rounded-r-3xl rounded-t-none">
                     <div className="OurTeam-content-info">
-                      <h5 className="content-info-name">{card.name}</h5>
+                      <h5 className="content-info-name font-impact">{card.name}</h5>
                       <p className="content-info-role">{card.role}</p>
                     </div>
                   </div>
