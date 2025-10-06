@@ -147,7 +147,7 @@ function ContactUs() {
         <div className="flex flex-col items-center text-center">
           <img src={Javi} alt="Confirmación" className="w-32 h-32 mb-4" />
 
-          <h2 className="text-2xl font-bold mb-2 text-center text-title">
+          <h2 className="text-2xl font-bold  mb-2 text-center text-title">
             {t("contactUs.modal.successTitle")}
           </h2>
 
@@ -178,32 +178,32 @@ function ContactUs() {
           </div>
 
           <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 max-sm:text-center">
-            <p className="tracking-nm text-blue-links">
+            <p className="text-blueBase tracking-nm text-blue-links">
               {t("contactUs.startConversation")}
             </p>
 
-            <h1 className="font-anton text-blue-links text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+            <h1 className="lineSubtitle text-blueBase font-impact text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
               {t("contactUs.conversationTitle")}
             </h1>
 
             <p className="text-blue-links font-bold">
               {t("contactUs.mainHeadquarters")}
             </p>
-            <p className="text-cc">{t("contactUs.address")} </p>
-            <p className="text-cc">{t("contactUs.city")}</p>
+            <p className="text-blueBase">{t("contactUs.address")} </p>
+            <p className="text-blueBase">{t("contactUs.city")}</p>
             <p className="text-blue-links font-bold">{t("contactUs.email")}</p>
-            <p className="text-cc overflow-hidden whitespace-nowrap text-ellipsis">
+            <p className="text-blueBase overflow-hidden whitespace-nowrap text-ellipsis">
               {t("contactUs.emailAddress")}
             </p>
 
             <p className="text-blue-links font-bold">
               {t("contactUs.whatsapp")}
             </p>
-            <p className="text-cc">{t("contactUs.whatsappNumber")}</p>
+            <p className="text-blueBase">{t("contactUs.whatsappNumber")}</p>
           </div>
         </div>
         <div className="w-full  h-full  mb bg-white">
-          <h3 className="font-anton  text-5xl  text-[#F6A623] text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
+          <h3 className="text-5xl font-impact text-[#F6A623] text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
             {t("contactUs.writeToUs")}
           </h3>
 

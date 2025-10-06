@@ -15,7 +15,7 @@ function Repositorio() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+        <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
           {t("repositorio.title")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -77,13 +77,13 @@ function Repositorio() {
       <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-7">
-            <h1 className="font-anton text-xl text-cc mb-8 truncate">
+            <h1 className="text-xl text-blueBase mb-8 truncate">
               https://www.youtube.com/@AntivirusparalaDesercion/videos
             </h1>
 
             <div className="flex flex-col gap-8">
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase text-xl">
                   {t("repositorio.youtube_channel.title")}{" "}
                 </h2>
                 <p className="text-blue-links text-lg">

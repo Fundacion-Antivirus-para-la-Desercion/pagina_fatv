@@ -76,7 +76,7 @@ function NewsDetail() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-            <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
+            <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
               {t("newsDetail.title")}
             </h1>
             <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -106,7 +106,7 @@ function NewsDetail() {
             <img className="mr-1" src={Date} />
             {t("newsDetail.news_label")}
           </p>
-          <h1 className="news-detail mb-4 text-left text-[3rem] text-title font-extrabold max-md:text-3xl leading-10">
+          <h1 className="news-detail mb-4 text-left text-[3rem] text-title  font-impact max-md:text-3xl leading-10">
             {news.newDetailContent.title}
           </h1>
           {news.newDetailContent.content.map((content, index) => {

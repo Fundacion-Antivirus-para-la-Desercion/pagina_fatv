@@ -18,7 +18,7 @@ function QHFA() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+          <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
             {t("qhfa.page_title")}
           </h1>
           <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -80,13 +80,13 @@ function QHFA() {
         <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 pr-7">
-              <h1 className="tracking-nm text-blue-links">
+              <h1 className="tracking-nm text-blueBase">
                 {t("qhfa.our_model")}
               </h1>
-              <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+              <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em] sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
                 {t("qhfa.socio_emotional_intervention")}
               </h1>
-              <p className="text-blue-links">
+              <p className="text-blueBase">
                 {t("qhfa.intervention_description")}
               </p>
             </div>
@@ -112,7 +112,7 @@ function QHFA() {
                     src={emocinal2}
                     alt={t("qhfa.alt_text.emotional_2")}
                   />
-                  <div className="absolute inset-0 bg-blue-links opacity-80"></div>
+                  <div className="absolute inset-0 text-blueBase opacity-80"></div>
                   <div className="absolute inset-0 flex justify-center items-center">
                     <svg
                       width="117"
@@ -136,10 +136,10 @@ function QHFA() {
             </div>
 
             <div className="w-full md:w-1/2 pl-7">
-              <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
+              <h1 className="text-blueBase font-impact text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
                 {t("qhfa.academic_strengthening")}
               </h1>
-              <p className="text-blue-links">
+              <p className="text-blueBase">
                 {t("qhfa.academic_description")}
               </p>
             </div>
@@ -147,10 +147,10 @@ function QHFA() {
 
           <div className="flex flex-col md:flex-row relative ">
             <div className="w-full md:w-1/2 pr-7">
-              <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
+              <h1 className="text-blueBase font-impact text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
                 {t("qhfa.psycho_emotional_support")}
               </h1>
-              <p>{t("qhfa.support_intro")}</p>
+              <p className="text-blueBase" >{t("qhfa.support_intro")}</p>
               <ul>
                 <li className="list-disc text-blue-links">
                   {t("qhfa.support_list.mental_health")}

@@ -17,7 +17,7 @@ function Consultorias() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+          <h1 className="absolute inset-0 flex items-center justify-center font-impact uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
             {t("consultorias.title")}
           </h1>
           <div className="absolute bottom-4 left-20 flex space-x-2 sm:space-x-4">
@@ -79,19 +79,19 @@ function Consultorias() {
 
       <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
         <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 max-sm:text-center">
-          <p className="tracking-nm text-cc">
+          <p className="tracking-nm text-blueBase">
             {t("consultorias.services_title")}
           </p>
-          <h1 className="font-anton text-cc text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+          <h1 className="lineSubtitle text-blueBase font-impact text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
             {t("consultorias.main_consulting_title")}
           </h1>
-          <ul className="text-cc list-disc text-xl mb-10">
+          <ul className="text-blueBase list-disc text-xl mb-10">
             <li>{t("consultorias.universities")}</li>
             <li>{t("consultorias.bootcamps")}</li>
             <li>{t("consultorias.schools")}</li>
             <li>{t("consultorias.scholarship_programs")}</li>
           </ul>
-          <p className="text-cc text-xl">{t("consultorias.description")}</p>
+          <p className="text-blueBase text-xl">{t("consultorias.description")}</p>
         </div>
         <div className="relative">
           <img src={services} className="w-full lg:w-auto" />

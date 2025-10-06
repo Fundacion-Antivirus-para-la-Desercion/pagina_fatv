@@ -16,7 +16,7 @@ function AcompañamientoOrientacion() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+        <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
           {t("acompañamientoOrientacion.title")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -78,13 +78,13 @@ function AcompañamientoOrientacion() {
       <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-7">
-            <h1 className="font-anton text-2xl text-cc mb-8">
+            <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em] sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2 mb-5">
               {t("acompañamientoOrientacion.main_title")}
             </h1>
 
             <div className="flex flex-col gap-8">
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase font-impact text-xl mb-2">
                   {t("acompañamientoOrientacion.socio_pedagogical.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
@@ -93,7 +93,7 @@ function AcompañamientoOrientacion() {
               </div>
 
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase font-impact text-xl mb-2">
                   {t("acompañamientoOrientacion.plan_padrino.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
@@ -102,7 +102,7 @@ function AcompañamientoOrientacion() {
               </div>
 
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase font-impact text-xl mb-2">
                   {t("acompañamientoOrientacion.occupational_support.title")}
                 </h2>
                 <p className="text-blue-links text-lg">

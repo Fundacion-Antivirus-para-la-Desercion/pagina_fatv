@@ -254,7 +254,7 @@ function ProVocacion() {
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center">
         <div>
           <h1
-            className={`mb-5 text-5xl text-title leading-tight font-extrabold max-md:text-3xl  ${styles.title}`}
+            className={`lineSubtitle mb-5 text-5xl text-title leading-tight font-impact max-md:text-3xl  ${styles.title}`}
           >
             {t("provocacion.title_initial")}
           </h1>
@@ -285,7 +285,7 @@ function ProVocacion() {
 
       <section className="p-5">
         <h2
-          className={`text-5xl text-title font-extrabold max-md:text-3xl text-center ${styles.title}`}
+          className={`text-5xl text-title font-impact max-md:text-3xl text-center ${styles.title}`}
         >
           {t("provocacion.title_future")}
         </h2>
@@ -348,7 +348,7 @@ function ProVocacion() {
       <div className="w-full h-full bg-white mt-40 relative">
         <h3
           id="form-contac-us"
-          className="text-5xl text-[#F6A623] text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
+          className="text-5xl text-[#F6A623] font-impact text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
         >
           {t("provocacion.title")}
         </h3>

@@ -221,21 +221,21 @@ function Header() {
             <Link
               to="/dataAnalyctis"
               onClick={handleNav}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.data_analytics")}
             </Link>
             <Link
               to="/intervencion/fortalecimiento-academico"
               onClick={handleNav}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.socio_emotional_intervention")}
             </Link>
             <Link
               to="/comunicaciones"
               onClick={handleNav}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.communications")}
             </Link>
@@ -251,21 +251,21 @@ function Header() {
           <ul className="flex items-center justify-center gap-20 p-10">
             <li
               onMouseEnter={handleMouseEnter}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.for_students")}
             </li>
             <Link
               to="/Consultorias"
               onClick={handleNav}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.consulting")}
             </Link>
             <Link
               to="/provocacion"
               onClick={handleNav}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.pro_vocation")}
             </Link>
@@ -327,7 +327,7 @@ function Header() {
                 localStorage.setItem("i18nextLng", "en");
                 handleNav();
               }}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.options_english")}
             </li>
@@ -337,7 +337,7 @@ function Header() {
                 localStorage.setItem("i18nextLng", "es");
                 handleNav();
               }}
-              className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {" "}
               {t("header.options_espanish")}{" "}
