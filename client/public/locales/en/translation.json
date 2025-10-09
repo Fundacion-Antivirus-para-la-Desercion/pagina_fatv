@@ -107,8 +107,7 @@
       "logo_alt_text": "Ally logo {index}"
     },
     "contextData": {
-      "title_part1": "Our contribution",
-      "title_part2": "in Colombia",
+      "title": "Our contribution in Colombia",
       "statistic1": {
         "description": "Students accompanied by the Foundation",
         "alt_image": "Accompaniment"
@@ -144,7 +143,9 @@
       "statistic9": {
         "description": "Study groups",
         "alt_image": "Study groups"
-      }
+      },
+      "title_part1": "Our contribution",
+      "title_part2": "in Colombia"
     },
     "servicesATV": {
       "following_services": "WE PROVIDE THE FOLLOWING SERVICES",

@@ -107,8 +107,7 @@
       "logo_alt_text": "Logo aliado {index}"
     },
     "contextData": {
-      "title_part1": "Nuestro aporte",
-      "title_part2": "en Colombia",
+      "title": "Nuestro aporte en Colombia",
       "statistic1": {
         "description": "Estudiantes acompañados por la Fundación",
         "alt_image": "Acompañamiento"
@@ -144,7 +143,9 @@
       "statistic9": {
         "description": "Grupos de estudio",
         "alt_image": "Grupos de estudio"
-      }
+      },
+      "title_part1": "Nuestro aporte",
+      "title_part2": "en Colombia"
     },
     "servicesATV": {
       "following_services": "PRESTAMOS LOS SIGUIENTES SERVICIOS",

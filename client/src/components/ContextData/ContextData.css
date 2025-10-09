@@ -1,11 +1,3 @@
-.context-data-container {
-  background-size: cover;
-  background-color: #222d56;
-  background-attachment: fixed;
-  padding: 130px 20px;
-  border-radius: 8px;
-}
-
 .context-data-title {
   margin-bottom: 1rem;
   font-size: 24px;
@@ -14,51 +6,21 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.context-data-statistics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 450px));
-  gap: 30px;
-  row-gap: 100px;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .statistic {
   text-align: center;
 }
 
 .statistic-number {
   color: #ffb732;
-  font-size: 50px;
-  font-weight: 600;
   animation: scaleAnimation 0.5s ease-out forwards;
 }
 
 .statistic-number2 {
-  color: white;
-  font-size: 50px;
-  font-weight: 600;
+  color: #222d56;
   animation: scaleAnimation 0.5s ease-out forwards;
 }
 
 .statistic-number3 {
   color: #7c78b3;
-  font-size: 50px;
-  font-weight: 600;
   animation: scaleAnimation 0.5s ease-out forwards;
-}
-
-.statistic-description {
-  color: white;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 15px;
-  margin-top: 0.5rem;
-  letter-spacing: 1px;
-}
-
-@media screen and (max-width: 768px) {
-  .context-data-statistics {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
 }
