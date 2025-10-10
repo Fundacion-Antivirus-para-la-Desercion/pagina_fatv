@@ -149,8 +149,6 @@
     },
     "servicesATV": {
       "following_services": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
-      "help_text": "Sabemos cómo ayudarte",
-      "services_text": "Conoce nuestros servicios",
       "services": {
         "permanence_title": "GESTIONAMOS LA PERMANENCIA",
         "permanence_subtitle": "En: Programas de Becarios - Bootcamps - Universidades",
@@ -160,7 +158,9 @@
         "socio_vocational_guidance_title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
         "socio_vocational_guidance_description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
         "image_alt_text": "Imagen de servicio {{index}}"
-      }
+      },
+      "help_text": "Sabemos cómo ayudarte",
+      "services_text": "Conoce nuestros servicios"
     },
     "Btns": {
       "donate": "Donar",

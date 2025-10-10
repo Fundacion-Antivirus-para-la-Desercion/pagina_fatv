@@ -81,7 +81,7 @@ function ApoyoAcademico() {
             <h1 className="tracking-nm text-blueBase">
               {t("apoyoAcademico.section1.subtitle1")}
             </h1>
-            <h1 className="lineSubtitle  text-blueBase font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em] sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+            <h1 className="lineSubtitle  text-blueBase font-impact text-[3em] leading-[.92] uppercase sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
               {t("apoyoAcademico.section1.subtitle2")}
             </h1>
             <h1 className="text-blueBase font-impact text-2xl mb-10">

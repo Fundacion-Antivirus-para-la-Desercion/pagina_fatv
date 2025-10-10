@@ -149,8 +149,6 @@
     },
     "servicesATV": {
       "following_services": "WE PROVIDE THE FOLLOWING SERVICES",
-      "help_text": "We know how to help you",
-      "services_text": "Discover our services",
       "services": {
         "permanence_title": "WE MANAGE EDUCATIONAL PERSISTENCE",
         "permanence_subtitle": "In: Scholarship Programs - Bootcamps - Universities",
@@ -160,7 +158,9 @@
         "socio_vocational_guidance_title": "PROVOCATION: SOCIO-VOCATIONAL GUIDANCE",
         "socio_vocational_guidance_description": "Aware of the importance of the life project in young people, the foundation strengthens conscious and informed decision-making through self-knowledge, and approaching the educational and labor worlds.",
         "image_alt_text": "Service image {{index}}"
-      }
+      },
+      "help_text": "We know how to help you",
+      "services_text": "Discover our services"
     },
     "Btns": {
       "donate": "Donate",

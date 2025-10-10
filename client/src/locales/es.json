@@ -103,8 +103,7 @@
     },
     "servicesATV": {
       "following_services": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
-      "help_text": "Sabemos cómo ayudarte",
-      "services_text": "Conoce nuestros servicios",
+
       "services": {
         "permanence_title": "GESTIONAMOS LA PERMANENCIA",
         "permanence_subtitle": "En: Programas de Becarios - Bootcamps - Universidades",

@@ -83,7 +83,7 @@ function QHFA() {
               <h1 className="tracking-nm text-blueBase">
                 {t("qhfa.our_model")}
               </h1>
-              <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em] sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+              <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
                 {t("qhfa.socio_emotional_intervention")}
               </h1>
               <p className="text-blueBase">
