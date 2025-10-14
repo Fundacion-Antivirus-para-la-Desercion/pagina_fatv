@@ -16,9 +16,9 @@ const ContextData = () => {
   const { t } = useTranslation();
   return (
     <section className="context-data-container bg-[#222d56]">
-      <div className="grid grid-cols-[40%_60%]  md:grid-cols-[20%_80%] bg-[#f8b732] relative max-h-[100px] mb-10 md:mb-36">
-        <img className="w-64 h-auto ml-2" src={JaviAbajo} alt="Javi feliz" />
-        <h1 className="flex justify-center items-center mb-24 p-2 context-data-title font-impact text-2xl lg:text-5xl text-[#222d56] text-center">
+      <div className="grid grid-cols-[30%_70%] md:grid-cols-1 bg-[#f8b732] relative items-center mb-10 md:mb-32 p-2">
+        <img className="w-28 md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt="Javi feliz" />
+        <h1 className="col-start-2 md:col-start-1 p-2 context-data-title uppercase font-impact text-xl md:text-3xl lg:text-5xl text-[#222d56] text-center">
           {t("home.contextData.title")}
         </h1>
       </div>
