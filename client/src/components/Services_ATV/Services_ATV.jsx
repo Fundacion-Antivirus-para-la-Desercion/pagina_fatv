@@ -62,48 +62,17 @@ const ServicesATV = () => {
 
   return (
     <>
-      <div className="flex justify-center grap m-10">
-        <h1 className="text-3xl md:text-5xl text-title font-impact">
-          NUESTROS SERVICIOS
-        </h1>
+      <div className="flex justify-center m-10">
+        <h1 className="text-3xl md:text-5xl text-title font-impact">NUESTROS SERVICIOS</h1>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 gap-6 p-10 bg-[#7C78B3]">
-        <div className="rounded-md bg-white p-5">
-          <h1 className="m-3 text-title font-impact">GESTIONAMOS LA PERMANENCIA</h1>
-          <button className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-sm text-center">
-            Más
-          </button>{" "}
-        </div>
-        <div className=" rounded-md bg-white p-5">
-          <h1 className="m-3 text-title font-impact">CONSULTORIA DE PERMANENCIA</h1>
-          <button className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-sm text-center">
-            Más
-          </button>{" "}
-        </div>
-        <div className="rounded-md bg-white p-5">
-          <h1 className="m-3 text-title font-impact">
-            PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL
-          </h1>
-          <button className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-sm text-center">
-            Más
-          </button>
-        </div>
-        <div className=" rounded-md bg-white p-5">
-          <h1 className="m-3 text-title font-impact">GESTIONAMOS LA PERMANENCIA</h1>
-          <button className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-sm text-center">
-            Más
-          </button>{" "}
-        </div>
-      </section>
-
-      {/* <section
-        className="grid grid-cols-1 sm:grid-cols-2 mb-32 sm:mb-96 text-white"
+      <section
+        className="grid grid-cols-1 lg:grid-cols-2 mb-32 lg:mb-96 text-white"
         id="redirection-services"
       >
         <div className="content-description flex justify-center bg-[#232e55] ">
           <section className="flex justify-center items-center">
-            <div className="flex flex-wrap w-full p-4 sm:p-24">
-              <section className="mb-10 sm:mb-20">
+            <div className="flex flex-wrap w-full p-4 lg:p-24">
+              <section className="mb-10 lg:mb-20">
                 <div className="text-xl">
                   <p className="flex justify-center items-center font-light text-left">
                     <box-icon
@@ -146,8 +115,61 @@ const ServicesATV = () => {
           </section>
         </div>
 
-       
-      </section>*/}
+        <div className="Imgs flex flex-wrap">
+          <section
+            className="flex gap-16 items-end justify-center"
+            style={{ width: "100%", height: "100%" }}
+          >
+            {imgs.map((logo, index) => (
+              <div
+                key={index}
+                className={`w-full h-full ${
+                  index === startIndex ? "" : "hidden"
+                }`}
+              >
+                <section
+                  className="relative"
+                  style={{ width: "100%", height: "100%", overflow: "hidden" }}
+                >
+                  <img
+                    className="hover:grayscale transition duration-700"
+                    src={logo}
+                    alt={`Logo ${index}`}
+                    style={{ width: "100%", height: "90%", objectFit: "cover" }}
+                  />
+                  <span className="absolute top-4 left-4 text-white text-7xl font-bold">
+                    {index + 1}
+                  </span>
+                </section>
+              </div>
+            ))}
+          </section>
+          <section className=" w-full">
+            <div className="contArrows">
+              <section className="flex flex-wrap ">
+                <div className="contRight contSabemos p-4 lg:p-14 text-xl bg-[#232e55]">
+                  <p>
+                    {t("home.servicesATV.help_text")} <br />
+                    {t("home.servicesATV.services_text")}
+                  </p>
+                </div>
+
+                <div className="flex justify-evenly items-center">
+                  <button className="arrowLeft ml-20" onClick={handleClickPrev}>
+                    <box-icon name="left-arrow-alt" color="#6f6d6d"></box-icon>
+                  </button>
+                  <button
+                    className="arrowRight ml-20"
+                    onClick={handleClickNext}
+                  >
+                    <box-icon name="right-arrow-alt" color="#6f6d6d"></box-icon>
+                  </button>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </section>
     </>
   );
 };
