@@ -157,34 +157,12 @@
         "persistence_consulting_description": "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa.",
         "socio_vocational_guidance_title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
         "socio_vocational_guidance_description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
-        "image_alt_text": "Imagen de servicio {{index}}"
+        "image_alt_text": "Imagen de servicio {{index}}",
+        "atvconnect_title": "ATV CONECTA",
+        "atvconnect_description": "Un servicio personalizado e innovador que combina acompañamiento académico, tecnología y bienestar integral para cerrar brechas de aprendizaje y fortalecer la permanencia estudiantil",
+        "more_info": "Ver más"
       },
-      "help_text": "Sabemos cómo ayudarte",
-      "services_text": "Conoce nuestros servicios"
-    },
-    "Btns": {
-      "donate": "Donar",
-      "alt_donation_icon": "icono de Javi feliz"
-    },
-    "services": {
-      "title": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
-      "know_us_title": "Sabemos cómo ayudarte",
-      "know_us_subtitle": "Conoce nuestros servicios",
-      "service1": {
-        "title": "GESTIONAMOS LA PERMANENCIA",
-        "subtitle": "En: Programas de Becarios - Bootcamps - Universidades",
-        "description": "Desarrollamos un proceso integral diseñado a partir de líneas y estrategias de intervención especializadas."
-      },
-      "service2": {
-        "title": "CONSULTORIA DE PERMANENCIA",
-        "subtitle": "",
-        "description": "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa."
-      },
-      "service3": {
-        "title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
-        "subtitle": "",
-        "description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral."
-      }
+      "title": "NUESTROS SERVICIOS"
     }
   },
   "btns": {

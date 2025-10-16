@@ -157,14 +157,12 @@
         "persistence_consulting_description": "From which the Foundation is consolidated as a strategic ally for the implementation of actions focused on ensuring educational persistence.",
         "socio_vocational_guidance_title": "PROVOCATION: SOCIO-VOCATIONAL GUIDANCE",
         "socio_vocational_guidance_description": "Aware of the importance of the life project in young people, the foundation strengthens conscious and informed decision-making through self-knowledge, and approaching the educational and labor worlds.",
-        "image_alt_text": "Service image {{index}}"
+        "image_alt_text": "Service image {{index}}",
+        "atvconnect_title": "ATV CONNECT",
+        "atvconnect_description": "A personalized and innovative service that combines academic support, technology, and comprehensive well-being to close learning gaps and strengthen student retention.",
+        "more_info": "See more"
       },
-      "help_text": "We know how to help you",
-      "services_text": "Discover our services"
-    },
-    "Btns": {
-      "donate": "Donate",
-      "alt_donation_icon": "happy Javi icon"
+      "title": "OUR SERVICES"
     }
   },
   "btns": {
