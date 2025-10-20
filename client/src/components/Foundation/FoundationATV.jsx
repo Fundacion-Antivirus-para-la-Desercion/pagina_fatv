@@ -3,12 +3,16 @@ import "boxicons";
 import imgFB from "../../../public/img_Foundation/imgF.webp";
 import imgF2 from "../../../public/img_Foundation/imgF2.webp";
 import imgF3 from "../../../public/img_Foundation/imgF3.webp";
-import OurTeam from "../ourTeam/OurTeam";
+import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
+import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
+import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
+
 import { useTranslation } from "react-i18next";
 
 function FoundationATV() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const openPopup = () => {
     setIsOpen(true);
@@ -16,6 +20,12 @@ function FoundationATV() {
 
   const closePopup = () => {
     setIsOpen(false);
+  };
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+    // For YouTube iframe, enable autoplay by adding the autoplay parameter to the src
+    // We update state and let the iframe src react to isPlaying below
   };
 
   return (
@@ -254,97 +264,74 @@ function FoundationATV() {
         </div>
       </div>
 
-      <div className="flex justify-end">
-        <div className="contVideoF flex flex-row ">
-          <div className="relative flex mr-6 ">
-            <picture style={{ height: "100%" }}>
-              <img
-                src={imgF2}
-                alt="img2"
-                style={{ objectFit: "cover", height: "100%" }}
-              />
-              <div className="iconGrande absolute inset-0 flex items-center justify-center">
-                <button
-                  onClick={openPopup}
-                  style={{
-                    border: "none",
-                    background: "none",
-                    cursor: "pointer",
-                  }}
-                >
-                  <box-icon
-                    name="play-circle"
-                    color="white"
-                    style={{ fontSize: "5rem", width: "5rem", height: "5rem" }}
-                  ></box-icon>
-                </button>
-              </div>
-            </picture>
-          </div>
-          <div
-            className="relative w-auto h-1/2 overflow-hidden"
-            style={{ height: "100%" }}
-          >
-            <img
-              src={imgF3}
-              alt="img3"
-              className="w-full h-full img3"
-              style={{ clipPath: "inset(0 25% 0 0)", objectFit: "cover" }}
-            />
-          </div>
-          {isOpen && (
-            <div
-              className="popup-overlay"
-              style={{
-                position: "fixed",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                background: "rgba(0, 0, 0, 0.5)",
-                zIndex: 9999,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                className="popup-content"
-                style={{
-                  position: "relative",
-                  maxWidth: "90%",
-                  maxHeight: "90%",
-                }}
-              >
-                <button
-                  onClick={closePopup}
-                  className="buttonF"
-                  style={{
-                    position: "absolute",
-                    top: "-40px",
-                    right: "0%",
-                    background: "none",
-                    border: "none",
-                    fontSize: "24px",
-                    color: "white",
-                    cursor: "pointer",
-                    zIndex: 10000,
-                  }}
-                >
-                  &times;
-                </button>
-                <iframe
-                  title="YouTube Video"
-                  src="https://www.youtube.com/embed/gzePCxLy8Ak"
-                  style={{ width: "800px", height: "450px", border: "none" }}
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          )}
+      <section className="md:grid md:grid-cols-[25%_50%_25%] p-5 items-stretch">
+        <div className="hidden md:block relative left-10">
+          <img className="w-full object-cover" src={Foundation1} alt="" />
         </div>
-      </div>
-      <OurTeam />
+        <div className="relative flex justify-center items-center">
+          <img
+            className={
+              isPlaying
+                ? `hidden`
+                : `absolute inset-0 w-full h-full object-cover shadow-2xl`
+            }
+            src={FotoVideo}
+            alt=""
+          />
+          {isPlaying ? null : (
+            <button
+              id="play-button"
+              onClick={handlePlayClick}
+              className={
+                isPlaying
+                  ? `hidden`
+                  : `absolute inset-0 flex justify-center items-center w-full h-full`
+              }
+            >
+              <box-icon
+                name="play-circle"
+                color="#ff0033"
+                style={{
+                  fontSize: "5rem",
+                  width: "5rem",
+                  height: "5rem",
+                  position: "absolute",
+                  cursor: "pointer",
+                  top: "0",
+                  bottom: "0",
+                  left: "0",
+                  right: "0",
+                  margin: "auto",
+                }}
+              ></box-icon>
+            </button>
+          )}
+
+          <iframe
+            id="foundation-video"
+            className="shadow-2xl"
+            width="100%"
+            height="100%"
+            src={
+              isPlaying
+                ? "https://www.youtube.com/embed/XhpGyJ02Guc?autoplay=1&mute=0"
+                : "https://www.youtube.com/embed/XhpGyJ02Guc"
+            }
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div className="hidden md:block">
+          {" "}
+          <img
+            className="w-full object-cover relative  right-10"
+            src={Foundation2}
+            alt=""
+          />
+        </div>
+      </section>
+
       <div className="flex justify-center mt-10 mb-10">
         <div className="w-4/5 grid grid-cols-1 lg:grid-cols-2 gap-10 gap-y-14 text-justify">
           <div>
