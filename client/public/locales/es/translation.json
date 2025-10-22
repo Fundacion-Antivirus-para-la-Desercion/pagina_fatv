@@ -22,13 +22,6 @@
       "mentoring_and_guidance": "Acompañamiento y orientación",
       "accompaniment_and_guidance": "Acompañamiento y orientación",
       "repository": "Repositorio Fundación Antivirus"
-    },
-    "button_volunteering": "Voluntariado",
-    "button_support_us": "APÓYANOS",
-    "options_espanish": "ESPAÑOL",
-    "options_language": {
-      "spanish": "ESPAÑOL",
-      "english": "INGLÉS"
     }
   },
   "home": {
@@ -63,44 +56,7 @@
       "paragraph2_start": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a ",
       "paragraph2_strong": "través de un ecosistema de estrategias",
       "button": "Conoce más aquí",
-      "alt_arrow": "Ver más",
-      "team": {
-        "title": "sobre nuestro <br /> equipo",
-        "members": {
-          "member1": {
-            "name": "Carlos vásquez restrepo",
-            "role": "Presidente"
-          },
-          "member2": {
-            "name": "astrid franco gonzalez",
-            "role": "Coordinadora Área de intervención Social"
-          },
-          "member3": {
-            "name": "luis fernando sánchez hurtado",
-            "role": "Director Ejecutivo"
-          },
-          "member4": {
-            "name": "karen gonzález alarcón",
-            "role": "Coordinadora Área de Tecnología y Datos"
-          },
-          "member5": {
-            "name": "Víctor Manuel Valencia martínez",
-            "role": "Subdirector"
-          },
-          "member6": {
-            "name": "david santiago botero",
-            "role": "Coordinador Área Legal"
-          },
-          "member7": {
-            "name": "Manuela Correa Quintero",
-            "role": "Coordinadora Área Comunicaciones"
-          },
-          "member8": {
-            "name": "luis fernando gonzález",
-            "role": "Coordinador Área Administrativa y Financiera"
-          }
-        }
-      }
+      "alt_arrow": "Ver más"
     },
     "ourAllies": {
       "title": "NUESTROS ALIADOS",
@@ -143,26 +99,23 @@
       "statistic9": {
         "description": "Grupos de estudio",
         "alt_image": "Grupos de estudio"
-      },
-      "title_part1": "Nuestro aporte",
-      "title_part2": "en Colombia"
+      }
     },
     "servicesATV": {
-      "following_services": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
+      "title": "NUESTROS SERVICIOS",
       "services": {
         "permanence_title": "GESTIONAMOS LA PERMANENCIA ESTUDIANTIL",
         "permanence_description": "Acompañamos a programas de becarios, bootcamps y universidades a través de un proceso integral de intervención, diseñado con líneas y estrategias especializadas que fortalecen la trayectoria y el bienestar de sus estudiantes.",
-        "persistence_consulting_title": "CONSULTORIA DE PERMANENCIA",
+        "persistence_consulting_title": "CONSULTORIA DE PERMANENCIA ESTUDIANTIL",
         "persistence_consulting_description": "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa.",
         "socio_vocational_guidance_title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
         "socio_vocational_guidance_description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
         "image_alt_text": "Imagen de servicio {{index}}",
-        "permanence_subtitle": "En: Programas de Becarios - Bootcamps - Universidades",
-        "atvconnect_title": "ATVCONECTA",
+        "atvconnect_title": "ATVCONECTA:",
+        "atvconnect_title_two": "TUTORÍAS ACADÉMICAS",
         "atvconnect_description": "Un servicio personalizado e innovador que combina acompañamiento académico, tecnología y bienestar integral para cerrar brechas de aprendizaje y fortalecer la permanencia estudiantil",
         "more_info": "Ver más"
-      },
-      "title": "NUESTROS SERVICIOS"
+      }
     }
   },
   "btns": {
@@ -197,10 +150,6 @@
       "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
       "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
       "alt_image": "Gráfico de análisis de datos"
-    },
-    "banner": {
-      "title": "lo que hacemos",
-      "alt_banner": "Banner con el título 'lo que hacemos'"
     }
   },
   "communications_ATV": {
@@ -223,41 +172,7 @@
       "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
       "founders": {
         "subtitle": "NUESTROS",
-        "title": "FUNDADORES",
-        "title_small": "NUESTROS",
-        "title_large": "FUNDADORES",
-        "founder1": {
-          "name": "Carlos",
-          "last_name": "Vásquez Restrepo"
-        },
-        "founder2": {
-          "name": "Paulina",
-          "last_name": "Tamayo Mejía"
-        },
-        "founder3": {
-          "name": "Víctor Manuel",
-          "last_name": "Valencia Martínez"
-        },
-        "founder4": {
-          "name": "Luis Fernando",
-          "last_name": "González Urán"
-        },
-        "founder5": {
-          "name": "Andrea",
-          "last_name": "Jaramillo Ramírez"
-        },
-        "founder6": {
-          "name": "Laura",
-          "last_name": "Calle Escobar"
-        },
-        "founder7": {
-          "name": "León Felipe",
-          "last_name": "Hernández López"
-        },
-        "founder8": {
-          "name": "Aida",
-          "last_name": "Orduz Quijano"
-        }
+        "title": "FUNDADORES"
       },
       "board_directors": {
         "subtitle": "NUESTRA",
@@ -275,11 +190,7 @@
       },
       "accountant": {
         "subtitle": "NUESTRA",
-        "title": "CONTADORA",
-        "title_small": "NUESTRA",
-        "title_large": "CONTADORA",
-        "name": "María Verónica",
-        "last_name": "Ortiz Rodríguez"
+        "title": "CONTADORA"
       },
       "organization_info": {
         "change_theory": {
@@ -315,102 +226,8 @@
           "title": "PROPÓSITO",
           "description": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
         }
-      },
-      "about_us": {
-        "title": "¿Quiénes Somos?",
-        "subtitle": "Somos una organización sin ánimo de lucro que",
-        "paragraph": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo."
-      },
-      "board_of_directors": {
-        "title_small": "NUESTRA",
-        "title_large": "JUNTA DIRECTIVA",
-        "member1": {
-          "name": "Carlos Vásquez Restrepo",
-          "role": "Presidente Y Representante Legal Titular"
-        },
-        "member2": {
-          "name": "Luis Fernando Sánchez Hurtado",
-          "role": "Vicepresidente / Director y Primer Representante Legal Suplente"
-        },
-        "member3": {
-          "name": "David Santiago Botero Rodríguez",
-          "role": "Segundo Representante Legal Suplente / Coordinador Legal"
-        },
-        "member4": {
-          "name": "Víctor Manuel Valencia Martínez",
-          "role": "Subdirector / Tercer Representante Legal Suplente"
-        },
-        "member5": {
-          "name": "Luis Fernando González Urán",
-          "role": "Tercer Representante Legal Suplente"
-        }
-      },
-      "auditor": {
-        "title_small": "NUESTRO",
-        "title_large": "REVISOR FISCAL",
-        "name": "Orlando",
-        "last_name": "Gaviria Flórez"
-      },
-      "theory_of_change": {
-        "title": "TEORÍA DEL CAMBIO",
-        "paragraph": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia."
-      },
-      "values": {
-        "title": "VALORES",
-        "paragraph": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio."
-      },
-      "mission": {
-        "title": "MISIÓN",
-        "paragraph": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción."
-      },
-      "target_audience": {
-        "title": "PÚBLICO OBJETIVO",
-        "paragraph": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción."
-      },
-      "vision": {
-        "title": "VISIÓN",
-        "paragraph": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente."
-      },
-      "priorities": {
-        "title": "PRIORIDADES",
-        "list_item1": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
-        "list_item2": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
-        "list_item3": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
-        "list_item4": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
-      },
-      "purpose": {
-        "title": "PROPÓSITO",
-        "paragraph": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
       }
-    },
-    "whatWeDo": "lo que hacemos",
-    "aboutUsTitle": "¿Quiénes Somos?",
-    "aboutUsSubtitle": "Somos una organización sin ánimo de lucro que",
-    "aboutUsParagraph": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
-    "our": "NUESTROS",
-    "founders": "FUNDADORES",
-    "board": "JUNTA DIRECTIVA",
-    "fiscalReviewer": "REVISOR FISCAL",
-    "accountant": "CONTADORA",
-    "theoryOfChange": "TEORÍA DEL CAMBIO",
-    "theoryOfChangeParagraph": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia.",
-    "values": "VALORES",
-    "valuesParagraph": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio.",
-    "mission": "MISIÓN",
-    "missionParagraph": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción.",
-    "targetAudience": "PÚBLICO OBJETIVO",
-    "targetAudienceParagraph": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción.",
-    "vision": "VISIÓN",
-    "visionParagraph": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente.",
-    "priorities": "PRIORIDADES",
-    "prioritiesList": [
-      "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
-      "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
-      "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
-      "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
-    ],
-    "purpose": "PROPÓSITO",
-    "purposeParagraph": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+    }
   },
   "news": {
     "title": "NOTICIAS",
@@ -782,33 +599,7 @@
       "credit_card": "- Tarjeta crédito",
       "cost": "COSTO",
       "base_price": "450.000 + IVA",
-      "final_price": "535.500",
-      "header": "Orientación vocacional para estudiantes",
-      "what_is_question": "¿Qué es la orientación vocacional?",
-      "what_is_bold": "Taller práctico y personalizado",
-      "what_is_text": "Diseñado para estudiantes que desean descubrir sus intereses y fortalezas para tomar decisiones informadas sobre su futuro académico y profesional.",
-      "who_is_it_for_question": "¿Para quién es?",
-      "who_is_it_for_bold": "Estudiantes de secundaria y jóvenes",
-      "who_is_it_for_text": "Estudiantes que buscan claridad sobre su camino profesional y apoyo en la toma de decisiones.",
-      "how_to_proceed_question": "¿Cómo funciona?",
-      "how_to_proceed_bold": "Ofrecemos sesiones individuales y grupales con evaluaciones y orientación.",
-      "contact_button": "Contáctanos por WhatsApp",
-      "skills_intro": "Explora tus habilidades, valores e intereses para orientar tu elección profesional.",
-      "offer_title": "Lo que incluye el programa",
-      "includes_bullet1_bold": "Sesiones de evaluación personalizadas",
-      "includes_bullet2_bold": "Talleres de orientación vocacional",
-      "includes_bullet3": "Ejercicios guiados y recursos",
-      "includes_bullet4_bold": "Acompañamiento posterior",
-      "includes_bullet4_subtext": "Incluye dos seguimientos después del taller.",
-      "includes_bullet5": "Acceso a materiales y guías",
-      "includes_bullet6_bold": "Certificado de participación",
-      "payment_title": "Métodos de pago",
-      "payment_method_cash": "Pago en efectivo",
-      "payment_method_transfer": "Transferencia bancaria",
-      "payment_method_card": "Tarjeta de crédito/débito",
-      "price_title": "Costo",
-      "price_option_individual": "Sesión individual: COP 50.000",
-      "price_option_group": "Sesión grupal: COP 30.000 por persona"
+      "final_price": "535.500"
     },
     "testimonials": {
       "title": "Testimonios",
@@ -833,28 +624,6 @@
         {
           "description": "Antivirus ha hecho un trabajo maravilloso, gracias a Antivirus he intentado soltarle ese miedo al futuro, ha tranquilizado mucho las cosas, nosotras como estudiantes de 11 cargamos con varias responsabilidades y nos preocupa mucho qué pasará después del colegio ¿qué haré? Y Antivirus nos ha ayudado a conocernos un poquito más y saber a qué me puedo dedicar o por qué camino coger.",
           "author": "- Antonia Aristizábal"
-        },
-        {
-          "description": "El acompañamiento me pareció muy agradable, mi mayor aprendizaje fue en la toma decisiones, entender mejor mis emociones, pensar antes de actuar. Ustedes lograron en mí que yo fuera más seguro como de las decisiones que quiera tomar en mi vida. Lo que más me gusto fueron las charlas, la metodología y la temática, eso nos iluminó.",
-          "author": "- Matías González"
-        }
-      ],
-      "content": [
-        {
-          "description": "Muy importante el acompañamiento y las personas que lo hacen, porque uno se siente en confianza y siente que uno está aprendiendo algo... El hecho de que lleguen con preguntas que no obliguen pero que incentiven a darle una respuesta ha hecho que tenga una mejor preparación para mi futuro o al menos tenga más planteado lo que estoy haciendo hoy para mi futuro.",
-          "author": "- Samuel Durango Baena"
-        },
-        {
-          "description": "Hemos aprendido a conocernos bastante bien. Ha sido un crecimiento personal he aprendido a quererme, a conocerme más a fondo, mirar lo que quiero para mi vida en unos años y a saber que tengo un gran avance en mí. Que tengo que ser constante con lo que quiero lograr y que tengo que tener propósitos fijos. A futuro me imagino como una gran profesional, teniendo mi propia empresa o marca o siendo independiente.",
-          "author": "- Salomé Arango"
-        },
-        {
-          "description": "Sinceramente, antes de que Antivirus llegara tenía mucha inseguridad de qué iba a estudiar o qué iba a hacer con mi vida, porque nadie sabe que va a pasar con el futuro porque es incierto. Pero Antivirus llegó y poco a poco nos ha podido dar seguridad, nos ha enseñado que todo en la vida tiene una solución y nuestros problemas se pueden volver en capacidades para nosotros mismos.",
-          "author": "- Estiwar Espinal "
-        },
-        {
-          "description": "Antivirus ha hecho un trabajo maravilloso, gracias a Antivirus he intentado soltarle ese miedo al futuro, ha tranquilizado mucho las cosas, nosotras como estudiantes de 11 cargamos con varias responsabilidades y nos preocupa mucho qué pasará después del colegio ¿qué haré? Y Antivirus nos ha ayudado a conocernos un poquito más y saber a qué me puedo dedicar o por qué camino coger.",
-          "author": "- Antonia Aristizábal "
         },
         {
           "description": "El acompañamiento me pareció muy agradable, mi mayor aprendizaje fue en la toma decisiones, entender mejor mis emociones, pensar antes de actuar. Ustedes lograron en mí que yo fuera más seguro como de las decisiones que quiera tomar en mi vida. Lo que más me gusto fueron las charlas, la metodología y la temática, eso nos iluminó.",
@@ -912,207 +681,11 @@
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Nuestras redes sociales",
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
-    "dataProtection": "Política de protección de datos",
-    "visitUsTitle": "Visítanos",
-    "contactTitle": "Llámanos o escríbenos",
-    "email": "contactenos@fundacionantivirusparaladesercion.org",
-    "whatsapp": "WhatsApp: +57 3173831481",
-    "socialMediaTitle": "Nuestras redes sociales",
-    "dataPolicy": "Política de protección de datos"
+    "dataProtection": "Política de protección de datos"
   },
   "notFound": {
     "title": "Oops!",
     "message": "Lo sentimos, página no encontrada",
     "button": "Volver al Inicio"
-  },
-  "Communications_ATV": {
-    "commun": {
-      "title_banner": "lo que hacemos",
-      "our_model": "NUESTRO MODELO",
-      "subtitle": "COMUNICACIONES",
-      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-      "alt_image": "Equipo de Comunicaciones"
-    },
-    "Commun": {
-      "communications": {
-        "title_banner": "lo que hacemos",
-        "our_model": "NUESTRO MODELO",
-        "subtitle": "COMUNICACIONES",
-        "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-        "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-        "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-        "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-        "alt_image": "Equipo de Comunicaciones",
-        "p1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-        "p2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-        "p3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-        "p4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV."
-      },
-      "title": {
-        "main": "lo que hacemos"
-      },
-      "our_model": {
-        "title": "NUESTRO MODELO"
-      },
-      "image_alt": {
-        "banner": "Banner",
-        "communications_team": "Equipo de Comunicaciones"
-      }
-    }
-  },
-  "DataAnalytics": {
-    "bannerDA": {
-      "banner": {
-        "title": "lo que hacemos",
-        "alt_banner": "Banner con el título 'lo que hacemos'"
-      }
-    },
-    "content": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
-    }
-  },
-  "bannerDA": {
-    "banner": {
-      "title": "lo que hacemos",
-      "alt_banner": "Banner con el título 'lo que hacemos'"
-    }
-  },
-  "contentDA": {
-    "content": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
-    }
-  },
-  "layout": {
-    "footer": {
-      "visitUsTitle": "Visítanos",
-      "address1": "Calle 79 sur # 50-165",
-      "address2": "Oficinas 301 y 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactTitle": "Llámanos o escríbenos",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialMediaTitle": "Nuestras redes sociales",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Política de protección de datos",
-      "visitanosTitle": "Visítanos",
-      "contactanosTitle": "Llámanos o escríbenos",
-      "socialTitle": "Nuestras redes sociales"
-    },
-    "Footer": {
-      "visitanosTitle": "Visítanos",
-      "address1": "Calle 79 sur # 50-165",
-      "address2": "Oficinas 301 y 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Llámanos o escríbenos",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Nuestras redes sociales",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Política de protección de datos"
-    }
-  },
-  "Layout": {
-    "Footer": {
-      "visitanosTitle": "Visítanos",
-      "address1": "Calle 79 sur # 50-165",
-      "address2": "Oficinas 301 y 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Llámanos o escríbenos",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Nuestras redes sociales",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Política de protección de datos"
-    }
-  },
-  "BannerDA": {
-    "banner": {
-      "title": "lo que hacemos",
-      "alt_banner": "Banner con el título 'lo que hacemos'"
-    }
-  },
-  "ContentDA": {
-    "content": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
-    }
-  },
-  "Btns": {
-    "donate": "Donar",
-    "alt_donation_icon": "icono de Javi feliz"
-  },
-  "NotFound": {
-    "title": "Oops!",
-    "message": "Lo sentimos, página no encontrada",
-    "button": "Volver al Inicio"
-  },
-  "Footer": {
-    "visitanosTitle": "Visítanos",
-    "address1": "Calle 79 sur # 50-165",
-    "address2": "Oficinas 301 y 401 La Estrella",
-    "address3": "Antioquia - Colombia",
-    "contactanosTitle": "Llámanos o escríbenos",
-    "email": "contactenos@fundacionantivirusparaladesercion.org",
-    "whatsapp": "WhatsApp: +57 3173831481",
-    "socialTitle": "Nuestras redes sociales",
-    "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-    "dataPolicy": "Política de protección de datos"
-  },
-  "*": {
-    "title": "Oops!",
-    "message": "Lo sentimos, página no encontrada",
-    "button": "Volver al Inicio"
-  },
-  "communications": {
-    "title": "lo que hacemos",
-    "alt_banner": "Banner con el título 'lo que hacemos'",
-    "model_title": "NUESTRO MODELO",
-    "subtitle": "COMUNICACIONES",
-    "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-    "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-    "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-    "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-    "alt_team_image": "Equipo de Comunicaciones"
-  },
-  "testimonials": {
-    "title": "TESTIMONIOS",
-    "button1": "Lo quiero",
-    "button2": "Más información",
-    "content": [
-      {
-        "description": "Muy importante el acompañamiento y las personas que lo hacen, porque uno se siente en confianza y siente que uno está aprendiendo algo... El hecho de que lleguen con preguntas que no obliguen pero que incentiven a darle una respuesta ha hecho que tenga una mejor preparación para mi futuro o al menos tenga más planteado lo que estoy haciendo hoy para mi futuro.",
-        "author": "- Samuel Durango Baena"
-      },
-      {
-        "description": "Hemos aprendido a conocernos bastante bien. Ha sido un crecimiento personal he aprendido a quererme, a conocerme más a fondo, mirar lo que quiero para mi vida en unos años y a saber que tengo un gran avance en mí. Que tengo que ser constante con lo que quiero lograr y que tengo que tener propósitos fijos. A futuro me imagino como una gran profesional, teniendo mi propia empresa o marca o siendo independiente.",
-        "author": "- Salomé Arango"
-      },
-      {
-        "description": "Sinceramente, antes de que Antivirus llegara tenía mucha inseguridad de qué iba a estudiar o qué iba a hacer con mi vida, porque nadie sabe que va a pasar con el futuro porque es incierto. Pero Antivirus llegó y poco a poco nos ha podido dar seguridad, nos ha enseñado que todo en la vida tiene una solución y nuestros problemas se pueden volver en capacidades para nosotros mismos.",
-        "author": "- Estiwar Espinal "
-      },
-      {
-        "description": "Antivirus ha hecho un trabajo maravilloso, gracias a Antivirus he intentado soltarle ese miedo al futuro, ha tranquilizado mucho las cosas, nosotras como estudiantes de 11 cargamos con varias responsabilidades y nos preocupa mucho qué pasará después del colegio ¿qué haré? Y Antivirus nos ha ayudado a conocernos un poquito más y saber a qué me puedo dedicar o por qué camino coger.",
-        "author": "- Antonia Aristizábal "
-      },
-      {
-        "description": "El acompañamiento me pareció muy agradable, mi mayor aprendizaje fue en la toma decisiones, entender mejor mis emociones, pensar antes de actuar. Ustedes lograron en mí que yo fuera más seguro como de las decisiones que quiera tomar en mi vida. Lo que más me gusto fueron las charlas, la metodología y la temática, eso nos iluminó.",
-        "author": "- Matías González"
-      }
-    ]
   }
 }

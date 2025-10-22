@@ -135,7 +135,9 @@ const ServicesATV = () => {
                 <div className="">
                   <h3 className="mb-5 md:mb-10 text-blueBase text-lg text-center font-bold">
                     {t("home.servicesATV.services.atvconnect_title")}
+                    {t("home.servicesATV.services.atvconnect_title_two")}
                   </h3>
+
                   <p className="mb-5 md:mb-8 text-justify">
                     {t("home.servicesATV.services.atvconnect_description")}
                   </p>
