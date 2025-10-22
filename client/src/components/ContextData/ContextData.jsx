@@ -15,10 +15,10 @@ import JaviAbajo from "../../assets/images/views/home/javi-abajo.webp";
 const ContextData = () => {
   const { t } = useTranslation();
   return (
-    <section className="context-data-container bg-[#222d56]">
+    <section className="context-data-container bg-[#222D56]">
       <div className="md:grid md:grid-cols-1 bg-[#f8b732] relative items-center mb-10 md:mb-32 p-2">
         <img className="hidden md:block md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt="Javi feliz" />
-        <h1 className="col-start-2 md:col-start-1 p-2 context-data-title uppercase font-impact text-xl md:text-3xl lg:text-5xl text-[#222d56] text-center">
+        <h1 className="col-start-2 md:col-start-1 p-2 context-data-title uppercase font-impact text-xl md:text-3xl lg:text-5xl text-[#222D56] text-center">
           {t("home.contextData.title")}
         </h1>
       </div>
@@ -40,7 +40,7 @@ const ContextData = () => {
           </div>
           <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
             <img
-              className="m-auto w-24 rounded-full bg-[#222d56] p-2 object-cover mb-3"
+              className="m-auto w-24 rounded-full bg-[#222D56] p-2 object-cover mb-3"
               src={OrientacionImage}
               alt={t("home.contextData.statistic2.alt_image")}
             />
@@ -79,7 +79,7 @@ const ContextData = () => {
           </div>
           <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
             <img
-              className="m-auto w-24 rounded-full bg-[#222d56] p-2 object-cover mb-3"
+              className="m-auto w-24 rounded-full bg-[#222D56] p-2 object-cover mb-3"
               src={TutorImage}
               alt={t("home.contextData.statistic5.alt_image")}
             />
@@ -118,7 +118,7 @@ const ContextData = () => {
           </div>
           <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
             <img
-              className="m-auto w-24 rounded-full bg-[#222d56] p-2 object-cover mb-3"
+              className="m-auto w-24 rounded-full bg-[#222D56] p-2 object-cover mb-3"
               src={ComputerImage}
               alt={t("home.contextData.statistic8.alt_image")}
             />

@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import "boxicons";
 import imgFB from "../../../public/img_Foundation/imgF.webp";
-import imgF2 from "../../../public/img_Foundation/imgF2.webp";
-import imgF3 from "../../../public/img_Foundation/imgF3.webp";
 import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
-
 import { useTranslation } from "react-i18next";
 
 function FoundationATV() {
@@ -24,8 +21,6 @@ function FoundationATV() {
 
   const handlePlayClick = () => {
     setIsPlaying(true);
-    // For YouTube iframe, enable autoplay by adding the autoplay parameter to the src
-    // We update state and let the iframe src react to isPlaying below
   };
 
   return (
@@ -112,163 +107,11 @@ function FoundationATV() {
         </div>
       </div>
 
-      <div className="foundation_team">
-        <div className="flex justify-center">
-          <div className="w-4/5 mt-10 mb-20 flex flex-wrap items-center content-center text-white">
-            <div className="bg-[#232e55] p-12 mb-1 ml-1 w-full lg:w-fit">
-              <div className="_title">
-                <p>
-                  <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    {t("foundation.foundationATV.founders.subtitle")}
-                  </small>
-                </p>
-                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] mb-[10px]">
-                  {t("foundation.foundationATV.founders.title")}
-                </h5>
-              </div>
-              <div className="lg:columns-2 gap-[15px] break-inside-avoid">
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Carlos
-                  <strong className="text-inherit block">
-                    Vásquez Restrepo
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Paulina
-                  <strong className="text-inherit block">Tamayo Mejía</strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Víctor Manuel
-                  <strong className="text-inherit block">
-                    Valencia Martínez
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Luis Fernando
-                  <strong className="text-inherit block">González Urán</strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Andrea
-                  <strong className="text-inherit block">
-                    Jaramillo Ramírez
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Laura
-                  <strong className="text-inherit block">Calle Escobar</strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  León Felipe
-                  <strong className="text-inherit block">
-                    Hernández López
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Aida
-                  <strong className="text-inherit block">Orduz Quijano</strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#232e55] p-12 mb-1 ml-1 w-full lg:w-fit lg:max-w-[710px]">
-              <div className="_title">
-                <p>
-                  <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    {t("foundation.foundationATV.board_directors.subtitle")}
-                  </small>
-                </p>
-                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] mb-[10px]">
-                  {t("foundation.foundationATV.board_directors.title")}
-                </h5>
-              </div>
-              <div className="lg:columns-2 gap-[15px] break-inside-avoid">
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Carlos Vásquez Restrepo
-                  <strong className="text-inherit block">
-                    {t(
-                      "foundation.foundationATV.board_directors.positions.president"
-                    )}
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Luis Fernando Sánchez Hurtado
-                  <strong className="text-inherit block">
-                    {t(
-                      "foundation.foundationATV.board_directors.positions.vicepresident"
-                    )}
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  David Santiago Botero Rodríguez
-                  <strong className="text-inherit block">
-                    {t(
-                      "foundation.foundationATV.board_directors.positions.second_representative"
-                    )}
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Víctor Manuel Valencia Martínez
-                  <strong className="text-inherit block">
-                    {t(
-                      "foundation.foundationATV.board_directors.positions.subdirector"
-                    )}
-                  </strong>
-                </p>
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Luis Fernando
-                  <strong className="text-inherit block">González Urán</strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#232e55] p-12 mb-1 ml-1 w-full lg:w-[49%]">
-              <div className="_title">
-                <p>
-                  <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    {t("foundation.foundationATV.fiscal_reviewer.subtitle")}
-                  </small>
-                </p>
-                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] mb-[10px]">
-                  {t("foundation.foundationATV.fiscal_reviewer.title")}
-                </h5>
-              </div>
-              <div className="columns-2 gap-[15px] break-inside-avoid">
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  Orlando
-                  <strong> Gaviria Flórez</strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#232e55] p-12 mb-1 ml-1 w-full lg:w-[49%]">
-              <div className="_title">
-                <p>
-                  <small className="text-[#7c78b3] text-[0.882em] leading-[1.533] tracking-[0.3em] uppercase">
-                    {t("foundation.foundationATV.accountant.subtitle")}
-                  </small>
-                </p>
-                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] mb-[10px]">
-                  {t("foundation.foundationATV.accountant.title")}
-                </h5>
-              </div>
-              <div className="lg:columns-2 gap-[15px] break-inside-avoid">
-                <p className="w-full relative block text-white text-left mb-[15px] text-[0.882em] break-inside-avoid">
-                  María Verónica
-                  <strong className="text-inherit block">
-                    Ortiz Rodríguez
-                  </strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <section className="md:grid md:grid-cols-[25%_50%_25%] p-5 items-stretch">
         <div className="hidden md:block relative left-10">
           <img className="w-full object-cover" src={Foundation1} alt="" />
         </div>
-        <div className="relative flex justify-center items-center">
+        <div className="relative z-10 flex justify-center items-center hover:cursor-pointer transform transition-transform duration-300 ease-out hover:scale-105">
           <img
             className={
               isPlaying
@@ -290,7 +133,7 @@ function FoundationATV() {
             >
               <box-icon
                 name="play-circle"
-                color="#ff0033"
+                color="#ffffff"
                 style={{
                   fontSize: "5rem",
                   width: "5rem",
@@ -325,16 +168,16 @@ function FoundationATV() {
         <div className="hidden md:block">
           {" "}
           <img
-            className="w-full object-cover relative  right-10"
+            className="w-full object-cover relative right-10"
             src={Foundation2}
             alt=""
           />
         </div>
       </section>
 
-      <div className="flex justify-center mt-10 mb-10">
+      <div className="flex justify-center mt-28 mb-10">
         <div className="w-4/5 grid grid-cols-1 lg:grid-cols-2 gap-10 gap-y-14 text-justify">
-          <div>
+          <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
             <h5 className="text-left text-4xl font-impact text-[#33526d] mb-4">
               {t(
                 "foundation.foundationATV.organization_info.change_theory.title"
@@ -347,7 +190,7 @@ function FoundationATV() {
             </p>
           </div>
 
-          <div>
+          <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
             <h5 className="text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.values.title")}
             </h5>
@@ -358,7 +201,7 @@ function FoundationATV() {
             </p>
           </div>
 
-          <div>
+          <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
             <h5 className="text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.mission.title")}
             </h5>
@@ -369,7 +212,7 @@ function FoundationATV() {
             </p>
           </div>
 
-          <div>
+          <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
             <h5 className="text-4xl font-impact text-[#33526d] mb-4">
               {t(
                 "foundation.foundationATV.organization_info.target_audience.title"
@@ -382,46 +225,18 @@ function FoundationATV() {
             </p>
           </div>
 
-          <div>
-            <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+          <div className="rounded-lg border border-gray-200 bg-[#32526E] p-8 shadow-xl col-span-full">
+            <h5 className="text-4xl font-impact text-white mb-4">
               {t("foundation.foundationATV.organization_info.vision.title")}
             </h5>
-            <p className="text-base text-[#33526d]">
+            <p className="text-base text-white">
               {t(
                 "foundation.foundationATV.organization_info.vision.description"
               )}
             </p>
           </div>
 
-          <div>
-            <h5 className="text-4xl font-impact text-[#33526d] mb-4">
-              {t("foundation.foundationATV.organization_info.priorities.title")}
-            </h5>
-            <ul className="text-base text-[#33526d] list-disc pl-5">
-              <li className="mb-2">
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
-                )}
-              </li>
-              <li className="mb-2">
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
-                )}
-              </li>
-              <li className="mb-2">
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.involve_actors"
-                )}
-              </li>
-              <li className="mb-2">
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
-                )}
-              </li>
-            </ul>
-          </div>
-
-          <div className="lg:relative lg:bottom-32">
+          <div className="rounded-lg border border-gray-200 p-8 shadow-xl col-span-full">
             <h5 className="text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.purpose.title")}
             </h5>
@@ -430,6 +245,46 @@ function FoundationATV() {
                 "foundation.foundationATV.organization_info.purpose.description"
               )}
             </p>
+          </div>
+
+          <div className="rounded-lg border border-gray-200 p-6 shadow-xl col-span-full">
+            <h5 className="text-4xl font-impact text-[#33526d] mb-8">
+              {t("foundation.foundationATV.organization_info.priorities.title")}
+            </h5>
+            <ul className="text-base text-[#33526d] pl-5 list-none font-sans">
+              <li className="flex items-center mb-6">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                  1
+                </span>
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
+                )}
+              </li>
+              <li className="flex items-center mb-6">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                  2
+                </span>
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
+                )}
+              </li>
+              <li className="flex items-center mb-6">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                  3
+                </span>
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.involve_actors"
+                )}
+              </li>
+              <li className="flex items-center mb-6">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                  4
+                </span>
+                {t(
+                  "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
+                )}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
