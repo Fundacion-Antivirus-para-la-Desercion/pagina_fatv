@@ -38,10 +38,7 @@ const ServicesATV = () => {
                   <h3 className="mb-5 md:mb-10 text-blueBase text-lg text-center font-bold">
                     {t("home.servicesATV.services.permanence_title")}
                   </h3>
-                  <p className="mb-2 md:mb-5 text-justify">
-                    {t("home.servicesATV.services.permanence_subtitle")}
-                  </p>
-                  <p className="mb-5 md:mb-8">
+                  <p className="mb-5 md:mb-8 text-justify">
                     {t("home.servicesATV.services.permanence_description")}
                   </p>
                 </div>
