@@ -5,16 +5,21 @@ import Acompañamiento from "../../src/assets/images/views/proVocacion/Collage_P
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
 import MundoFormativo from "../assets/images/views/proVocacion/componentes/mundo-formativo.webp";
 import MundoLaboral from "../assets/images/views/proVocacion/componentes/mundo-laboral.webp";
+import EnMundoFormativo from "../assets/images/views/proVocacion/componentes/training-world.webp";
+import EnAutoconocimiento from "../assets/images/views/proVocacion/componentes/self-knowledge.webp";
+import EnMundoLaboral from "../assets/images/views/proVocacion/componentes/the-world-of-work.webp";
 import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
 import Focus from "../assets/images/views/proVocacion/information/focus.svg";
+
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Modal from "../components/modal/Modal";
 import emailjs from "emailjs-com";
-import { useTranslation } from "react-i18next";
 
 function ProVocacion() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isEnglish = (i18n && (i18n.resolvedLanguage || i18n.language)) === "en";
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -201,9 +206,7 @@ function ProVocacion() {
             {t("provocacion.modal.title")}
           </h2>
 
-          <p className="text-gray-700">
-            {t("provocacion.modal.description")}
-          </p>
+          <p className="text-gray-700">{t("provocacion.modal.description")}</p>
         </div>
       </Modal>
       <section className="lg:pt-[145px]">
@@ -293,28 +296,34 @@ function ProVocacion() {
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-4">
         <div className="cursor-pointer border-4 border-[#7E96CB] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl">
           <img
-            src={Autoconocimiento}
+            src={isEnglish ? EnAutoconocimiento : Autoconocimiento}
             alt="Autoconocimiento"
             title="Ampliar imagen"
-            onClick={() => openImageModal(Autoconocimiento)}
+            onClick={() =>
+              openImageModal(isEnglish ? EnAutoconocimiento : Autoconocimiento)
+            }
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
         <div className="cursor-pointer border-4 border-[#faa307] rounded-xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
           <img
-            src={MundoFormativo}
+            src={isEnglish ? EnMundoFormativo : MundoFormativo}
             alt="Mundo Formativo"
             title="Ampliar imagen"
-            onClick={() => openImageModal(MundoFormativo)}
+            onClick={() =>
+              openImageModal(isEnglish ? EnMundoFormativo : MundoFormativo)
+            }
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
         <div className="cursor-pointer border-4 border-[#21294F] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-2xl">
           <img
-            src={MundoLaboral}
+            src={isEnglish ? EnMundoLaboral : MundoLaboral}
             alt="Mundo Laboral"
             title="Ampliar imagen"
-            onClick={() => openImageModal(MundoLaboral)}
+            onClick={() =>
+              openImageModal(isEnglish ? EnMundoLaboral : MundoLaboral)
+            }
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
