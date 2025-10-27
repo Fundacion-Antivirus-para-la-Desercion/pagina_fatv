@@ -16,7 +16,7 @@ function ApoyoAcademico() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+        <h1 className="absolute inset-0 flex items-center justify-center font-impact uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
           {t("apoyoAcademico.title")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -78,18 +78,18 @@ function ApoyoAcademico() {
       <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-7">
-            <h1 className="tracking-nm text-cc">
+            <h1 className="tracking-nm text-blueBase">
               {t("apoyoAcademico.section1.subtitle1")}
             </h1>
-            <h1 className="font-anton text-cc text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+            <h1 className="lineSubtitle  text-blueBase font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em] sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
               {t("apoyoAcademico.section1.subtitle2")}
             </h1>
-            <h1 className="font-anton text-cc text-2xl mb-10">
+            <h1 className="text-blueBase font-impact text-2xl mb-10">
               {t("apoyoAcademico.section1.subtitle3")}
             </h1>
             <div className="flex flex-col gap-8">
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase font-impact text-xl">
                   {t("apoyoAcademico.section1.tutoring.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
@@ -98,7 +98,7 @@ function ApoyoAcademico() {
               </div>
 
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase font-impact text-xl">
                   {t("apoyoAcademico.section1.levelUp.title")}
                 </h2>
                 <p className="text-blue-links text-lg">
@@ -107,7 +107,7 @@ function ApoyoAcademico() {
               </div>
 
               <div>
-                <h2 className="font-anton text-cc text-xl">
+                <h2 className="text-blueBase font-impact text-xl">
                   {t("apoyoAcademico.section1.studyGroups.title")}
                 </h2>
                 <p className="text-blue-links text-lg">

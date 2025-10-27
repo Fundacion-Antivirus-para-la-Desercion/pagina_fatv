@@ -12,22 +12,16 @@
   opacity: 0.8 !important;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-
 .rammetto-one-regular {
-  font-family: "Rammetto One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-
 .carousel-text h1 {
-  font-family: "Anton", sans-serif;
   color: #f8b732;
 }
 
 .carousel-text p {
-  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 

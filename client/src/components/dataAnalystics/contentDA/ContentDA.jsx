@@ -7,7 +7,9 @@ function ContentDA() {
     <div className="content">
       <div className="content-info">
         <p className="title">{t("ContentDA.content.title")}</p>
-        <h4 className="subtitle">{t("ContentDA.content.subtitle")}</h4>
+        <h4 className="lineSubtitle font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em]">
+          {t("ContentDA.content.subtitle")}
+        </h4>
         <p className="paragraph">{t("ContentDA.content.paragraph1")}</p>
         <p className="paragraph">{t("ContentDA.content.paragraph2")}</p>
       </div>

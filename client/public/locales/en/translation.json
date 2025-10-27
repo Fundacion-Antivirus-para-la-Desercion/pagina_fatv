@@ -107,8 +107,7 @@
       "logo_alt_text": "Ally logo {index}"
     },
     "contextData": {
-      "title_part1": "Our contribution",
-      "title_part2": "in Colombia",
+      "title": "Our contribution in Colombia",
       "statistic1": {
         "description": "Students accompanied by the Foundation",
         "alt_image": "Accompaniment"
@@ -144,7 +143,9 @@
       "statistic9": {
         "description": "Study groups",
         "alt_image": "Study groups"
-      }
+      },
+      "title_part1": "Our contribution",
+      "title_part2": "in Colombia"
     },
     "servicesATV": {
       "following_services": "WE PROVIDE THE FOLLOWING SERVICES",
@@ -645,7 +646,7 @@
     "intervention_description": "This is the foundation's field of action that aims to identify and understand the particularities of the sociocultural and socio-emotional context of students, to influence, transform and significantly impact their conditions and educational process, through tools and alternatives for socio-pedagogical support. The social team is composed of social workers and psychologists responsible for designing and implementing academic strengthening strategies, psycho-emotional and socio-pedagogical support. This area has the following social intervention lines:",
     "academic_strengthening": "ACADEMIC STRENGTHENING:",
     "academic_description": "Search for tutors and mentors willing to receive a modest hourly stipend and offer another voluntary hour. In this sense, once tutors are found, this area is responsible for creating appointments for one-on-one tutoring and thematic workshops for complementary class review and study groups.",
-    "psycho_emotional_support": "Psycho-emotional and socio-pedagogical support:",
+    "psycho_emotional_support": "PSYCHO-EMOTIONAL AND SOCIO-PEDAGOGICAL SUPPORT:",
     "support_intro": "This area is responsible for:",
     "support_list": {
       "mental_health": "Supervising, guiding and attending to students with problems in their mental state and emotional health.",
@@ -690,7 +691,7 @@
   },
   "acompañamientoOrientacion": {
     "title": "Services",
-    "main_title": "ACCOMPANIMENT AND GUIDANCE:",
+    "main_title": "ACCOMPANIMENT AND GUIDANCE",
     "socio_pedagogical": {
       "title": "Socio-pedagogical Advising",
       "description": "Socio-educational advising sessions are spaces for meeting, listening, and providing support to students in a state of vulnerability."
@@ -716,7 +717,7 @@
   },
   "consultorias": {
     "title": "Services",
-    "services_title": "We provide the following services:",
+    "services_title": "WE PROVIDE THE FOLLOWING SERVICES",
     "main_consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR RETENTION IN:",
     "universities": "Universities",
     "bootcamps": "Bootcamps",

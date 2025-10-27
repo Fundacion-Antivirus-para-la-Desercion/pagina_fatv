@@ -15,13 +15,13 @@ function Footer() {
           </div>
           <div className="footer-info">
             <div className="footer-visitanos">
-              <h2>{t("footer.visitUs")}</h2>
+              <h2 className="font-impact" >{t("footer.visitUs")}</h2>
               <p>{t("footer.address1")}</p>
               <p>{t("footer.address2")}</p>
               <p>{t("footer.address3")}</p>
             </div>
             <div className="footer-contacto">
-              <h2>{t("footer.contact")}</h2>
+              <h2 className="font-impact">{t("footer.contact")}</h2>
               <div className="email">
                 <p>{t("footer.contactEmail")}</p>
               </div>
@@ -29,7 +29,7 @@ function Footer() {
               <p>{t("footer.contactWhatsapp")}</p>
             </div>
             <div className="footer-redes">
-              <h2>{t("footer.socialNetworks")}</h2>
+              <h2 className="font-impact">{t("footer.socialNetworks")}</h2>
               <div className="bxicon">
                 <a
                   href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"

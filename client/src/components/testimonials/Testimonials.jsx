@@ -49,7 +49,7 @@ function Testimonials() {
   return (
     <>
       <section className="relative px-6 py-10 mb-2 shadow-lg bg-[#222D56]">
-        <h1 className="p-3 text-5xl text-center text-white font-extrabold max-md:text-3xl">
+        <h1 className="p-3 text-5xl text-center font-impact text-white max-md:text-3xl">
           {t("provocacion.testimonials.title")}
         </h1>
 

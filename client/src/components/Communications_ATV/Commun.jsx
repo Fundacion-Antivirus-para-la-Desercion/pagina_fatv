@@ -17,7 +17,7 @@ function Commun() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+          <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
             {t("communications_ATV.commun.title_banner")}
           </h1>
           <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -81,8 +81,8 @@ function Commun() {
         <div className="data_analytics--cnt">
           <div className="data_analytics--content">
             <div className="data_analytics--text">
-              <p className="">{t("communications_ATV.commun.our_model")}</p>
-              <h4 className="subtitle">{t("communications_ATV.commun.subtitle")}</h4>
+              <p className="title">{t("communications_ATV.commun.our_model")}</p>
+              <h4 className="lineSubtitle subtitle font-impact">{t("communications_ATV.commun.subtitle")}</h4>
 
               <p className="text-justify">
                 {t("communications_ATV.commun.paragraph_1")}

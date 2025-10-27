@@ -11,11 +11,13 @@ function AboutUs() {
       <div className="aboutUs-content">
         <div className="left-content">
           <p className="title">{t("home.aboutUs.title")}</p>
-          <h4 className="subtitle">{t("home.aboutUs.subtitle")}</h4>
+          <h4 className="lineSubtitle subtitle font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em]">
+            {t("home.aboutUs.subtitle")}
+          </h4>
           <p className="paragraph">{t("home.aboutUs.paragraph1")}</p>
         </div>
         <div className="right-content">
-          <p className="right-paragraph">
+          <p className="right-paragraph text-xl">
             {t("home.aboutUs.paragraph2_start")}
             <strong className="right-content-strong">
               {t("home.aboutUs.paragraph2_strong")}

@@ -1,7 +1,7 @@
 .aboutUs {
   color: #33526d;
   margin: 0px 100px;
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 .aboutUs-content {
@@ -30,34 +30,12 @@
   margin-top: 15px;
 }
 
-.left-content .subtitle::before {
-  content: "";
-  display: inline-block;
-  width: 55px;
-  height: 5px;
-  background: #33526d;
-  vertical-align: middle;
-  margin-bottom: 30px;
-  margin-right: 5px;
-}
-
-.subtitle {
-  font-size: 2.9411764706em;
-  line-height: 92%;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: -0.06em;
-  font-weight: bold;
-  font: 50px;
-}
-
 .right-content {
   width: 40%;
 }
 
 .right-paragraph {
   text-align: left;
-  font-size: 1.3529411765em;
   line-height: 113.0434782609%;
   margin-bottom: 10px;
 }
@@ -71,7 +49,6 @@
 
 .right-content-strong {
   color: #33526d;
-  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 996px) {
@@ -110,9 +87,6 @@
     margin-top: 1rem;
   }
 
-  .subtitle {
-    font-size: 2rem;
-  }
   .right-content {
     font-size: 1rem;
   }

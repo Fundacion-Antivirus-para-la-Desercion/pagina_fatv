@@ -53,11 +53,8 @@ footer {
 .footer-visitanos h2,
 .footer-contacto h2,
 .footer-redes h2 {
-  font-family: "Oswald", sans-serif;
   font-size: 20px;
-  font-weight: bold;
   line-height: 200%;
-  letter-spacing: -2px;
   padding-bottom: 5px;
 }
 
@@ -67,7 +64,7 @@ footer {
 
 .footer-redirecion {
   position: absolute;
-  top: 0;
+  bottom: 20px;
   right: -4.5%;
 }
 

@@ -18,7 +18,7 @@ const WriteEffect = ({ texto, velocidad = 100, shouldAnimate }) => {
   }, [texto, indice, velocidad, shouldAnimate]);
 
   return (
-    <h1 className="service-title font-extrabold text-2xl lg:text-5xl leading-none font-oswald tracking-tighter mb-8">
+    <h1 className="service-title font-extrabold text-2xl lg:text-5xl leading-none tracking-tighter mb-8">
       {textoMostrado}
     </h1>
   );

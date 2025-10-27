@@ -27,7 +27,7 @@ function FoundationATV() {
           className="w-full h-[69vh] object-cover object-[0_33%]"
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
           {t("foundation.foundationATV.header")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -90,12 +90,12 @@ function FoundationATV() {
         <div className="aboutUs-content">
           <div className="left-content">
             <p className="title">{t("foundation.foundationATV.title")}</p>
-            <h4 className="subtitle">
+            <h4 className="lineSubtitle font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em]">
               {t("foundation.foundationATV.subtitle")}
             </h4>
           </div>
           <div className="right-content">
-            <p className="right-paragraph">
+            <p className="text-xl right-paragraph">
               {t("foundation.foundationATV.description")}
             </p>
           </div>
@@ -112,7 +112,7 @@ function FoundationATV() {
                     {t("foundation.foundationATV.founders.subtitle")}
                   </small>
                 </p>
-                <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
+                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] mb-[10px]">
                   {t("foundation.foundationATV.founders.title")}
                 </h5>
               </div>
@@ -167,7 +167,7 @@ function FoundationATV() {
                     {t("foundation.foundationATV.board_directors.subtitle")}
                   </small>
                 </p>
-                <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
+                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] mb-[10px]">
                   {t("foundation.foundationATV.board_directors.title")}
                 </h5>
               </div>
@@ -218,7 +218,7 @@ function FoundationATV() {
                     {t("foundation.foundationATV.fiscal_reviewer.subtitle")}
                   </small>
                 </p>
-                <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
+                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] mb-[10px]">
                   {t("foundation.foundationATV.fiscal_reviewer.title")}
                 </h5>
               </div>
@@ -237,7 +237,7 @@ function FoundationATV() {
                     {t("foundation.foundationATV.accountant.subtitle")}
                   </small>
                 </p>
-                <h5 className="uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] font-bold mb-[10px]">
+                <h5 className="font-impact uppercase text-[2.118em] leading-[0.917] tracking-[-0.06em] mb-[10px]">
                   {t("foundation.foundationATV.accountant.title")}
                 </h5>
               </div>
@@ -348,12 +348,12 @@ function FoundationATV() {
       <div className="flex justify-center mt-10 mb-10">
         <div className="w-4/5 grid grid-cols-1 lg:grid-cols-2 gap-10 gap-y-14 text-justify">
           <div>
-            <h5 className="font-oswald tracking-tighter text-left text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-left text-4xl font-impact text-[#33526d] mb-4">
               {t(
                 "foundation.foundationATV.organization_info.change_theory.title"
               )}
             </h5>
-            <p className="font-oswald text-base text-[#33526d]">
+            <p className="text-base text-[#33526d]">
               {t(
                 "foundation.foundationATV.organization_info.change_theory.description"
               )}
@@ -361,10 +361,10 @@ function FoundationATV() {
           </div>
 
           <div>
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.values.title")}
             </h5>
-            <p className="font-oswald text-base text-[#33526d]">
+            <p className="text-base text-[#33526d]">
               {t(
                 "foundation.foundationATV.organization_info.values.description"
               )}
@@ -372,10 +372,10 @@ function FoundationATV() {
           </div>
 
           <div>
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.mission.title")}
             </h5>
-            <p className="font-oswald text-base text-[#33526d]">
+            <p className="text-base text-[#33526d]">
               {t(
                 "foundation.foundationATV.organization_info.mission.description"
               )}
@@ -383,12 +383,12 @@ function FoundationATV() {
           </div>
 
           <div>
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-4xl font-impact text-[#33526d] mb-4">
               {t(
                 "foundation.foundationATV.organization_info.target_audience.title"
               )}
             </h5>
-            <p className="font-oswald text-base text-[#33526d]">
+            <p className="text-base text-[#33526d]">
               {t(
                 "foundation.foundationATV.organization_info.target_audience.description"
               )}
@@ -396,10 +396,10 @@ function FoundationATV() {
           </div>
 
           <div>
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.vision.title")}
             </h5>
-            <p className="font-oswald text-base text-[#33526d]">
+            <p className="text-base text-[#33526d]">
               {t(
                 "foundation.foundationATV.organization_info.vision.description"
               )}
@@ -407,10 +407,10 @@ function FoundationATV() {
           </div>
 
           <div>
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.priorities.title")}
             </h5>
-            <ul className="font-oswald text-base text-[#33526d] list-disc pl-5">
+            <ul className="text-base text-[#33526d] list-disc pl-5">
               <li className="mb-2">
                 {t(
                   "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
@@ -435,10 +435,10 @@ function FoundationATV() {
           </div>
 
           <div className="lg:relative lg:bottom-32">
-            <h5 className="font-oswald tracking-tighter text-4xl font-bold text-[#33526d] mb-4">
+            <h5 className="tracking-tighter text-4xl font-impact text-[#33526d] mb-4">
               {t("foundation.foundationATV.organization_info.purpose.title")}
             </h5>
-            <p className="font-oswald text-base text-[#33526d]">
+            <p className="text-base text-[#33526d]">
               {t(
                 "foundation.foundationATV.organization_info.purpose.description"
               )}
