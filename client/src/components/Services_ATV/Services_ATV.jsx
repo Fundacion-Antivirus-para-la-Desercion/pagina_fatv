@@ -12,7 +12,7 @@ const ServicesATV = () => {
 
   return (
     <>
-      <section className="relative text-blueBase p-5 py-10 md:py-16 bg-[#222d56ea]">
+      <section id="services" className="relative text-blueBase p-5 py-10 md:py-16 bg-[#222d56ea]">
         <div className="flex flex-col items-center">
           <section>
             <div>

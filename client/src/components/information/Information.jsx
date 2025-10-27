@@ -108,7 +108,7 @@ function Information() {
 
               <div className="flex flex-col h-full items-center justify-between gap-4 p-6 rounded-lg">
                 <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact ${styles.title}`}
+                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
                 >
                   {t("provocacion.information.directed_to")}
                 </h3>
@@ -231,7 +231,7 @@ function Information() {
 
               <div className="flex flex-col h-full  items-center justify-between gap-4 p-6 rounded-lg">
                 <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact ${styles.title}`}
+                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
                 >
                   {t("provocacion.information.installed_capacities")}
                 </h3>
@@ -241,7 +241,7 @@ function Information() {
                     {t("provocacion.information.skills_promotion")}
                   </p>
                   <h3
-                    className={`mb-1 text-4xl text-[#F8B732] font-impact text-center  ${styles.title}`}
+                    className={`mb-1 text-4xl text-[#F8B732] font-impact text-center`}
                   >
                     {t("provocacion.information.focus_on_autos")}
                   </h3>
@@ -362,7 +362,7 @@ function Information() {
 
               <div className="flex flex-col h-full  items-center justify-between gap-4 p-6 rounded-lg">
                 <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact ${styles.title}`}
+                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
                 >
                   {t("provocacion.information.what_includes_service")}
                 </h3>
@@ -405,7 +405,7 @@ function Information() {
                     <div>
                       <div>
                         <h3
-                          className={`mb-1 text-3xl text-[#F8B732] font-impact text-center  ${styles.title}`}
+                          className={`mb-1 text-3xl text-[#F8B732] font-impact text-center`}
                         >
                           {t("provocacion.information.payment_methods")}
                         </h3>
@@ -428,7 +428,7 @@ function Information() {
                     <div>
                       <div>
                         <h3
-                          className={`mb-1 text-3xl text-[#F8B732] font-impact text-center  ${styles.title}`}
+                          className={`mb-1 text-3xl text-[#F8B732] font-impact text-center`}
                         >
                           {t("provocacion.information.cost")}
                         </h3>

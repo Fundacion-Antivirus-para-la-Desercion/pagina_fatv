@@ -95,7 +95,7 @@ function Carousel() {
                     </a>
                     <a
                       className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
-                      href="#redirection-services"
+                      href="#services"
                     >
                       {t("home.carousel.buttons.more")}{" "}
                       {/* Usamos t() para el botón de "Ver más" */}
