@@ -102,18 +102,19 @@
       }
     },
     "servicesATV": {
-      "following_services": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
-      "help_text": "Sabemos cómo ayudarte",
-      "services_text": "Conoce nuestros servicios",
+      "title": "NUESTROS SERVICIOS",
       "services": {
-        "permanence_title": "GESTIONAMOS LA PERMANENCIA",
-        "permanence_subtitle": "En: Programas de Becarios - Bootcamps - Universidades",
-        "permanence_description": "Desarrollamos un proceso integral diseñado a partir de líneas y estrategias de intervención especializadas.",
-        "persistence_consulting_title": "CONSULTORIA DE PERMANENCIA",
+        "permanence_title": "GESTIONAMOS LA PERMANENCIA ESTUDIANTIL",
+        "permanence_description": "Acompañamos a programas de becarios, bootcamps y universidades a través de un proceso integral de intervención, diseñado con líneas y estrategias especializadas que fortalecen la trayectoria y el bienestar de sus estudiantes.",
+        "persistence_consulting_title": "CONSULTORIA DE PERMANENCIA ESTUDIANTIL",
         "persistence_consulting_description": "Desde las que se consolida la Fundación como un aliado estratégico para la implementación de acciones enfocadas en garantizar la permanencia educativa.",
         "socio_vocational_guidance_title": "PROVOCACIÓN: ORIENTACIÓN SOCIOVOCACIONAL",
         "socio_vocational_guidance_description": "Conscientes de la importancia del proyecto de vida en los jóvenes, la fundación fortalece la toma de decisiones conscientes e informadas, mediante el autoconocimiento, abordaje del mundo formativo y el mundo laboral.",
-        "image_alt_text": "Imagen de servicio {{index}}"
+        "image_alt_text": "Imagen de servicio {{index}}",
+        "atvconnect_title": "ATVCONECTA:",
+        "atvconnect_title_two": "TUTORÍAS ACADÉMICAS",
+        "atvconnect_description": "Un servicio personalizado e innovador que combina acompañamiento académico, tecnología y bienestar integral para cerrar brechas de aprendizaje y fortalecer la permanencia estudiantil.",
+        "more_info": "Ver más"
       }
     }
   },

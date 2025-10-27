@@ -78,7 +78,7 @@ function AcompañamientoOrientacion() {
       <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-7">
-            <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase tracking-[-0.06em] sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2 mb-5">
+            <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2 mb-5">
               {t("acompañamientoOrientacion.main_title")}
             </h1>
 

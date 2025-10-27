@@ -20,15 +20,7 @@
       "academic_support": "Academic Support",
       "boe": "Student Opportunity Bank",
       "accompaniment_and_guidance": "Accompaniment and Guidance",
-      "repository": "Antivirus Foundation Repository",
-      "mentoring_and_guidance": "Mentoring and Guidance"
-    },
-    "button_volunteering": "Volunteering",
-    "button_support_us": "SUPPORT US",
-    "options_espanish": "SPANISH",
-    "options_lenguage": {
-      "spanish": "SPANISH",
-      "english": "ENGLISH"
+      "repository": "Antivirus Foundation Repository"
     }
   },
   "home": {
@@ -63,44 +55,7 @@
       "paragraph2_start": "Identify students with vulnerabilities and provide them with comprehensive support, through ",
       "paragraph2_strong": "an ecosystem of strategies",
       "button": "Learn more here",
-      "alt_arrow": "See more",
-      "team": {
-        "title": "about our <br /> team",
-        "members": {
-          "member1": {
-            "name": "Carlos vásquez restrepo",
-            "role": "President"
-          },
-          "member2": {
-            "name": "astrid franco gonzalez",
-            "role": "Social Intervention Area Coordinator"
-          },
-          "member3": {
-            "name": "luis fernando sánchez hurtado",
-            "role": "Executive Director"
-          },
-          "member4": {
-            "name": "karen gonzález alarcón",
-            "role": "Technology and Data Area Coordinator"
-          },
-          "member5": {
-            "name": "Víctor Manuel Valencia martínez",
-            "role": "Deputy Director"
-          },
-          "member6": {
-            "name": "david santiago botero",
-            "role": "Legal Area Coordinator"
-          },
-          "member7": {
-            "name": "Manuela Correa Quintero",
-            "role": "Communications Area Coordinator"
-          },
-          "member8": {
-            "name": "luis fernando gonzález",
-            "role": "Administrative and Financial Area Coordinator"
-          }
-        }
-      }
+      "alt_arrow": "See more"
     },
     "ourAllies": {
       "title": "OUR ALLIES",
@@ -148,23 +103,20 @@
       "title_part2": "in Colombia"
     },
     "servicesATV": {
-      "following_services": "WE PROVIDE THE FOLLOWING SERVICES",
-      "help_text": "We know how to help you",
-      "services_text": "Discover our services",
+      "title": "OUR SERVICES",
       "services": {
         "permanence_title": "WE MANAGE EDUCATIONAL PERSISTENCE",
-        "permanence_subtitle": "In: Scholarship Programs - Bootcamps - Universities",
-        "permanence_description": "We develop a comprehensive process designed from specialized intervention lines and strategies.",
-        "persistence_consulting_title": "PERSISTENCE CONSULTING",
+        "permanence_description": "We accompany scholarship programs, bootcamps, and universities through a comprehensive intervention process developed with specialized approaches to enhance students’ progress and well-being.",
+        "persistence_consulting_title": "STUDENT PERMANENCE CONSULTANCY",
         "persistence_consulting_description": "From which the Foundation is consolidated as a strategic ally for the implementation of actions focused on ensuring educational persistence.",
         "socio_vocational_guidance_title": "PROVOCATION: SOCIO-VOCATIONAL GUIDANCE",
         "socio_vocational_guidance_description": "Aware of the importance of the life project in young people, the foundation strengthens conscious and informed decision-making through self-knowledge, and approaching the educational and labor worlds.",
-        "image_alt_text": "Service image {{index}}"
+        "image_alt_text": "Service image {{index}}",
+        "atvconnect_title": "ATVCONNECT:",
+        "atvconnect_title_two": "ACADEMIC TUTORING",
+        "atvconnect_description": "A personalized and innovative service that combines academic support, technology, and comprehensive well-being to close learning gaps and strengthen student retention.",
+        "more_info": "See more"
       }
-    },
-    "Btns": {
-      "donate": "Donate",
-      "alt_donation_icon": "happy Javi icon"
     }
   },
   "btns": {
@@ -199,10 +151,6 @@
       "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
       "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
       "alt_image": "Data analytics chart"
-    },
-    "banner": {
-      "title": "what we do",
-      "alt_banner": "Banner with the title 'what we do'"
     }
   },
   "communications_ATV": {
@@ -214,17 +162,7 @@
       "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
       "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
       "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-      "alt_image": "Communications Team",
-      "communications": {
-        "title_banner": "what we do",
-        "our_model": "OUR MODEL",
-        "subtitle": "COMMUNICATIONS",
-        "paragraph_1": "This area is made up of social communicators and graphic designers.",
-        "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
-        "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
-        "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-        "alt_image": "Communications Team"
-      }
+      "alt_image": "Communications Team"
     }
   },
   "foundation": {
@@ -235,41 +173,7 @@
       "description": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
       "founders": {
         "subtitle": "OUR",
-        "title": "FOUNDERS",
-        "title_small": "OUR",
-        "title_large": "FOUNDERS",
-        "founder1": {
-          "name": "Carlos",
-          "last_name": "Vásquez Restrepo"
-        },
-        "founder2": {
-          "name": "Paulina",
-          "last_name": "Tamayo Mejía"
-        },
-        "founder3": {
-          "name": "Víctor Manuel",
-          "last_name": "Valencia Martínez"
-        },
-        "founder4": {
-          "name": "Luis Fernando",
-          "last_name": "González Urán"
-        },
-        "founder5": {
-          "name": "Andrea",
-          "last_name": "Jaramillo Ramírez"
-        },
-        "founder6": {
-          "name": "Laura",
-          "last_name": "Calle Escobar"
-        },
-        "founder7": {
-          "name": "León Felipe",
-          "last_name": "Hernández López"
-        },
-        "founder8": {
-          "name": "Aida",
-          "last_name": "Orduz Quijano"
-        }
+        "title": "FOUNDERS"
       },
       "board_directors": {
         "subtitle": "OUR",
@@ -287,11 +191,7 @@
       },
       "accountant": {
         "subtitle": "OUR",
-        "title": "ACCOUNTANT",
-        "title_small": "OUR",
-        "title_large": "ACCOUNTANT",
-        "name": "María Verónica",
-        "last_name": "Ortiz Rodríguez"
+        "title": "ACCOUNTANT"
       },
       "organization_info": {
         "change_theory": {
@@ -327,102 +227,8 @@
           "title": "PURPOSE",
           "description": "Build a prosperous, peaceful, harmonious, technological and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a reference for development."
         }
-      },
-      "about_us": {
-        "title": "Who Are We?",
-        "subtitle": "We are a non-profit organization that",
-        "paragraph": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, as our way of contributing to the achievement of a country with more education and, consequently, more development."
-      },
-      "board_of_directors": {
-        "title_small": "OUR",
-        "title_large": "BOARD OF DIRECTORS",
-        "member1": {
-          "name": "Carlos Vásquez Restrepo",
-          "role": "President and Legal Representative"
-        },
-        "member2": {
-          "name": "Luis Fernando Sánchez Hurtado",
-          "role": "Vice President / Director and First Alternate Legal Representative"
-        },
-        "member3": {
-          "name": "David Santiago Botero Rodríguez",
-          "role": "Second Alternate Legal Representative / Legal Coordinator"
-        },
-        "member4": {
-          "name": "Víctor Manuel Valencia Martínez",
-          "role": "Deputy Director / Third Alternate Legal Representative"
-        },
-        "member5": {
-          "name": "Luis Fernando González Urán",
-          "role": "Third Alternate Legal Representative"
-        }
-      },
-      "auditor": {
-        "title_small": "OUR",
-        "title_large": "STATUTORY AUDITOR",
-        "name": "Orlando",
-        "last_name": "Gaviria Flórez"
-      },
-      "theory_of_change": {
-        "title": "THEORY OF CHANGE",
-        "paragraph": "Identify students with vulnerabilities and provide them with comprehensive support through an ecosystem of strategies focused on academic, economic, and socio-emotional aspects for retention."
-      },
-      "values": {
-        "title": "VALUES",
-        "paragraph": "At the Antivirus for Dropout Foundation, we work collaboratively, with passion, integrity, autonomy, empathy, commitment, and camaraderie. We are supportive and innovative and have a great vocation for service."
-      },
-      "mission": {
-        "title": "MISSION",
-        "paragraph": "To increase the graduation rates of students in technology-related fields and programs through strategies to promote retention and prevent dropout."
-      },
-      "target_audience": {
-        "title": "TARGET AUDIENCE",
-        "paragraph": "We work with students in high school and post-secondary IT programs and careers. We focus our intervention on students vulnerable to dropout."
-      },
-      "vision": {
-        "title": "VISION",
-        "paragraph": "In 5 years, we will have a national presence in the top 10 universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50% to 40%). Additionally, we will be replicating a model that is a benchmark, and its success can be measured qualitatively and quantitatively."
-      },
-      "priorities": {
-        "title": "PRIORITIES",
-        "list_item1": "Consolidate a model with processes for identifying vulnerabilities, intervention, and results indicators.",
-        "list_item2": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
-        "list_item3": "Connect with and involve other stakeholders in the work for retention (Rectors, Deans, MEN, Companies, among others).",
-        "list_item4": "Help reduce dropout in other universities and programs to refine our model and generate revenue that contributes to the sustainability of the Antivirus Foundation."
-      },
-      "purpose": {
-        "title": "PURPOSE",
-        "paragraph": "To build a prosperous, peaceful, harmonious, technological, and competitive country, where all young people have access to education and are good human beings, with goals and empowered to live their lives. Thanks to this, we will overcome poverty and become a benchmark for development."
       }
-    },
-    "whatWeDo": "what we do",
-    "aboutUsTitle": "Who are we?",
-    "aboutUsSubtitle": "We are a non-profit organization that",
-    "aboutUsParagraph": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to the achievement of a country with more education and consequently more development.",
-    "our": "OUR",
-    "founders": "FOUNDERS",
-    "board": "BOARD OF DIRECTORS",
-    "fiscalReviewer": "FISCAL REVIEWER",
-    "accountant": "ACCOUNTANT",
-    "theoryOfChange": "THEORY OF CHANGE",
-    "theoryOfChangeParagraph": "Identify students with vulnerabilities and provide them with comprehensive support through an ecosystem of strategies focused on academic, economic, and socio-emotional aspects for retention.",
-    "values": "VALUES",
-    "valuesParagraph": "At the Antivirus for Dropout Foundation, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment, and camaraderie. We are supportive and innovative and have a great vocation for service.",
-    "mission": "MISSION",
-    "missionParagraph": "To increase the graduation rates of students in technology careers and programs, through strategies for promoting retention and preventing dropout.",
-    "targetAudience": "TARGET AUDIENCE",
-    "targetAudienceParagraph": "We work with students in IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout.",
-    "vision": "VISION",
-    "visionParagraph": "In 5 years we will have a national presence in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50% to 40%). In addition, we will be replicating a model that is a benchmark, whose success can be measured qualitatively and quantitatively.",
-    "priorities": "PRIORITIES",
-    "prioritiesList": [
-      "Consolidate a model with processes for identifying vulnerabilities, intervention, and results indicators.",
-      "Explore intervention models from schools to help reduce higher education dropout.",
-      "Get to know and involve other actors in the work for permanence (Rectors, Deans, MEN, Companies, among others).",
-      "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
-    ],
-    "purpose": "PURPOSE",
-    "purposeParagraph": "To build a prosperous, peaceful, harmonious, technological, and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a benchmark for development."
+    }
   },
   "news": {
     "title": "NEWS",
@@ -794,33 +600,7 @@
       "credit_card": "- Credit card",
       "cost": "COST",
       "base_price": "450,000 + VAT",
-      "final_price": "535,500",
-      "header": "Career guidance for students",
-      "what_is_question": "What is career guidance?",
-      "what_is_bold": "A practical, personalized workshop",
-      "what_is_text": "Designed for students who want to discover their interests and strengths to make informed academic and career choices.",
-      "who_is_it_for_question": "Who is it for?",
-      "who_is_it_for_bold": "Secondary students and young people",
-      "who_is_it_for_text": "Students seeking clarity about their professional path and decision-making support.",
-      "how_to_proceed_question": "How does it work?",
-      "how_to_proceed_bold": "We offer individual and group sessions with assessments and counseling.",
-      "contact_button": "Contact us on WhatsApp",
-      "skills_intro": "Explore your skills, values and interests to guide your career choice.",
-      "offer_title": "What the program includes",
-      "includes_bullet1_bold": "Personalized assessment sessions",
-      "includes_bullet2_bold": "Career orientation workshops",
-      "includes_bullet3": "Guided exercises and resources",
-      "includes_bullet4_bold": "Follow-up support",
-      "includes_bullet4_subtext": "Includes two check-in sessions after the workshop.",
-      "includes_bullet5": "Access to materials and guides",
-      "includes_bullet6_bold": "Certificate of participation",
-      "payment_title": "Payment methods",
-      "payment_method_cash": "Cash payment",
-      "payment_method_transfer": "Bank transfer",
-      "payment_method_card": "Credit/Debit card",
-      "price_title": "Cost",
-      "price_option_individual": "Individual session: COP 50,000",
-      "price_option_group": "Group session: COP 30,000 per person"
+      "final_price": "535,500"
     },
     "testimonials": {
       "title": "Testimonials",
@@ -848,28 +628,6 @@
         },
         {
           "description": "The support seemed very pleasant to me; my biggest learning was in decision-making, understanding my emotions better, and thinking before acting. You helped me become more confident in the decisions I want to make in my life. What I liked the most were the talks, the methodology, and the topics; that enlightened us.",
-          "author": "- Matías González"
-        }
-      ],
-      "content": [
-        {
-          "description": "The accompaniment and the people who do it are very important because you feel confident and feel that you are learning something... The fact that they come with questions that do not force but encourage you to give an answer has made me better prepared for my future or at least have a better idea of what I am doing today for my future.",
-          "author": "- Samuel Durango Baena"
-        },
-        {
-          "description": "We have learned to know each other quite well. It has been personal growth, I have learned to love myself, to know myself more deeply, to look at what I want for my life in a few years and to know that I have made great progress in myself. That I have to be consistent with what I want to achieve and that I have to have fixed purposes. In the future, I imagine myself as a great professional, having my own company or brand or being independent.",
-          "author": "- Salomé Arango"
-        },
-        {
-          "description": "Honestly, before Antivirus arrived, I was very insecure about what I was going to study or what I was going to do with my life because no one knows what will happen in the future because it is uncertain. But Antivirus arrived and little by little has been able to give us security, has taught us that everything in life has a solution and our problems can become capacities for ourselves.",
-          "author": "- Estiwar Espinal "
-        },
-        {
-          "description": "Antivirus has done a wonderful job, thanks to Antivirus I have tried to let go of that fear of the future, it has calmed things down a lot, we as 11th-grade students carry several responsibilities and we are very concerned about what will happen after school, what will I do? And Antivirus has helped us to know ourselves a little more and to know what I can dedicate myself to or which path to take.",
-          "author": "- Antonia Aristizábal "
-        },
-        {
-          "description": "The accompaniment seemed very pleasant to me, my greatest learning was in decision-making, understanding my emotions better, thinking before acting. You managed to make me more confident about the decisions I want to make in my life. What I liked the most were the talks, the methodology, and the theme, that enlightened us.",
           "author": "- Matías González"
         }
       ]
@@ -924,196 +682,11 @@
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Our social networks",
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
-    "dataProtection": "Data protection policy",
-    "visitUsTitle": "Visit us",
-    "contactTitle": "Call or write us",
-    "email": "contactenos@fundacionantivirusparaladesercion.org",
-    "whatsapp": "WhatsApp: +57 3173831481",
-    "socialMediaTitle": "Our social networks",
-    "dataPolicy": "Data protection policy"
+    "dataProtection": "Data protection policy"
   },
   "notFound": {
     "title": "Oops!",
     "message": "Sorry, page not found",
     "button": "Back to Home"
-  },
-  "Communications_ATV": {
-    "commun": {
-      "title": {
-        "main": "what we do"
-      },
-      "our_model": {
-        "title": "OUR MODEL"
-      },
-      "communications": {
-        "subtitle": "COMMUNICATIONS",
-        "p1": "This area is made up of social communicators and graphic designers.",
-        "p2": "This team creates and promotes communicative actions, adjusted to the characterization and built through the needs and segmentation of students.",
-        "p3": "This area is responsible for disseminating information and preparing audiovisual content and using technological means, platforms and other interaction and information resources.",
-        "p4": "The Communication and Marketing area is also responsible for digital marketing and email marketing to project stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV."
-      },
-      "image_alt": {
-        "banner": "Banner",
-        "communications_team": "Communications Team"
-      }
-    }
-  },
-  "contentDA": {
-    "bannerDA": {
-      "banner": {
-        "title": "what we do",
-        "alt_banner": "Banner with the title 'what we do'"
-      }
-    },
-    "content": {
-      "title": "Our Model",
-      "subtitle": "Data Analytics",
-      "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
-      "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
-      "alt_image": "Data analytics chart"
-    }
-  },
-  "bannerDA": {
-    "banner": {
-      "title": "what we do",
-      "alt_banner": "Banner with the title 'what we do'"
-    }
-  },
-  "DataAnalytics": {
-    "bannerDA": {
-      "banner": {
-        "title": "lo que hacemos",
-        "alt_banner": "Banner con el título 'lo que hacemos'"
-      }
-    },
-    "content": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
-    }
-  },
-  "layout": {
-    "footer": {
-      "visitUsTitle": "Visit us",
-      "address1": "79th South Street # 50-165",
-      "address2": "Offices 301 and 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactTitle": "Call or write us",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialMediaTitle": "Our social networks",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Data protection policy",
-      "visitanosTitle": "Visit us",
-      "contactanosTitle": "Call or write us",
-      "socialTitle": "Our social networks"
-    },
-    "Footer": {
-      "visitanosTitle": "Visit us",
-      "address1": "79th South Street # 50-165",
-      "address2": "Offices 301 and 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Call or write us",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Our social networks",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Data protection policy"
-    }
-  },
-  "Layout": {
-    "Footer": {
-      "visitanosTitle": "Visit us",
-      "address1": "79th South Street # 50-165",
-      "address2": "Offices 301 and 401 La Estrella",
-      "address3": "Antioquia - Colombia",
-      "contactanosTitle": "Call or write us",
-      "email": "contactenos@fundacionantivirusparaladesercion.org",
-      "whatsapp": "WhatsApp: +57 3173831481",
-      "socialTitle": "Our social networks",
-      "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-      "dataPolicy": "Data protection policy"
-    }
-  },
-  "BannerDA": {
-    "banner": {
-      "title": "what we do",
-      "alt_banner": "Banner with the title 'what we do'"
-    }
-  },
-  "ContentDA": {
-    "content": {
-      "title": "Our Model",
-      "subtitle": "Data Analytics",
-      "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
-      "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
-      "alt_image": "Data analytics chart"
-    }
-  },
-  "Btns": {
-    "donate": "Donate",
-    "alt_donation_icon": "happy Javi icon"
-  },
-  "NotFound": {
-    "title": "Oops!",
-    "message": "Sorry, page not found",
-    "button": "Back to Home"
-  },
-  "Footer": {
-    "visitanosTitle": "Visit us",
-    "address1": "79th South Street # 50-165",
-    "address2": "Offices 301 and 401 La Estrella",
-    "address3": "Antioquia - Colombia",
-    "contactanosTitle": "Call or write us",
-    "email": "contactenos@fundacionantivirusparaladesercion.org",
-    "whatsapp": "WhatsApp: +57 3173831481",
-    "socialTitle": "Our social networks",
-    "copyright": "Antivirus para la Deserción © 2024 all rights reserved",
-    "dataPolicy": "Data protection policy"
-  },
-  "*": {
-    "title": "Oops!",
-    "message": "Sorry, page not found",
-    "button": "Back to Home"
-  },
-  "communications": {
-    "title": "what we do",
-    "alt_banner": "Banner with the title 'what we do'",
-    "model_title": "OUR MODEL",
-    "subtitle": "COMMUNICATIONS",
-    "paragraph_1": "This area is made up of social communicators and graphic designers.",
-    "paragraph_2": "This team creates and promotes communication actions, adapted to the characterization and built based on the needs and segmentation of the students.",
-    "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological media, platforms, and other interaction and information resources.",
-    "paragraph_4": "The Communication and Marketing area is also responsible for digital marketing and email marketing to project stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-    "alt_team_image": "Communications Team"
-  },
-  "testimonials": {
-    "title": "TESTIMONIALS",
-    "button1": "I want it",
-    "button2": "More information",
-    "content": [
-      {
-        "description": "The accompaniment and the people who do it are very important because you feel confident and feel that you are learning something... The fact that they come with questions that do not force but encourage you to give an answer has made me better prepared for my future or at least have a better idea of what I am doing today for my future.",
-        "author": "- Samuel Durango Baena"
-      },
-      {
-        "description": "We have learned to know each other quite well. It has been personal growth, I have learned to love myself, to know myself more deeply, to look at what I want for my life in a few years and to know that I have made great progress in myself. That I have to be consistent with what I want to achieve and that I have to have fixed purposes. In the future, I imagine myself as a great professional, having my own company or brand or being independent.",
-        "author": "- Salomé Arango"
-      },
-      {
-        "description": "Honestly, before Antivirus arrived, I was very insecure about what I was going to study or what I was going to do with my life because no one knows what will happen in the future because it is uncertain. But Antivirus arrived and little by little has been able to give us security, has taught us that everything in life has a solution and our problems can become capacities for ourselves.",
-        "author": "- Estiwar Espinal "
-      },
-      {
-        "description": "Antivirus has done a wonderful job, thanks to Antivirus I have tried to let go of that fear of the future, it has calmed things down a lot, we as 11th-grade students carry several responsibilities and we are very concerned about what will happen after school, what will I do? And Antivirus has helped us to know ourselves a little more and to know what I can dedicate myself to or which path to take.",
-        "author": "- Antonia Aristizábal "
-      },
-      {
-        "description": "The accompaniment seemed very pleasant to me, my greatest learning was in decision-making, understanding my emotions better, thinking before acting. You managed to make me more confident about the decisions I want to make in my life. What I liked the most were the talks, the methodology, and the theme, that enlightened us.",
-        "author": "- Matías González"
-      }
-    ]
   }
 }

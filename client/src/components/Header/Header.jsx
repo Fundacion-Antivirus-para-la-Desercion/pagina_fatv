@@ -340,7 +340,7 @@ function Header() {
               className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {" "}
-              {t("header.options_espanish")}{" "}
+              {t("header.options_spanish")}{" "}
             </li>
           </ul>
         </div>
@@ -580,7 +580,7 @@ function Header() {
                 }}
                 className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
-                {t("header.options_espanish")}
+                {t("header.options_spanish")}
               </li>
             </ul>
           )}

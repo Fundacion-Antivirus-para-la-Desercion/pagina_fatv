@@ -254,7 +254,7 @@ function ProVocacion() {
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center">
         <div>
           <h1
-            className={`lineSubtitle mb-5 text-5xl text-title leading-tight font-impact max-md:text-3xl  ${styles.title}`}
+            className={`lineSubtitle mb-5 text-4xl text-title leading-tight font-impact max-md:text-3xl  ${styles.title}`}
           >
             {t("provocacion.title_initial")}
           </h1>

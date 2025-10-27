@@ -28,10 +28,10 @@ function Btns() {
       >
         <img
           src={IconDonation}
-          alt={t("Btns.alt_donation_icon")}
+          alt={t("btns.alt_donation_icon")}
           className="w-10 h-10"
         />
-        <p className="text-white text-lg font-bold">{t("Btns.donate")}</p>
+        <p className="text-white text-lg font-bold">{t("btns.donate")}</p>
       </div>
     </Link>
   );
