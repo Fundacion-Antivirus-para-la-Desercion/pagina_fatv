@@ -19,7 +19,7 @@
   height: 92px;
   background-color: #ffba08;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 10;
 }
 
 .puzzlePieceOne::after {
@@ -32,6 +32,7 @@
   height: 90px;
   background-color: white;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .puzzlePieceTwo {
@@ -55,6 +56,7 @@
   height: 92px;
   background-color: #222d56;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .puzzlePieceTwo::after {
@@ -67,6 +69,7 @@
   height: 90px;
   background-color: white;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .puzzlePieceThree {
@@ -90,7 +93,7 @@
   height: 92px;
   background-color: #222d56;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 10;
 }
 
 .puzzlePieceThree::after {
@@ -101,8 +104,9 @@
   transform: translateX(-50%);
   width: 90px;
   height: 90px;
-  background-color: white;
+  background-color: #ffba08;
   border-radius: 50%;
+  z-index: 0;
 }
 
 .puzzlePieceFour {
@@ -126,6 +130,7 @@
   height: 92px;
   background-color: #ffba08;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .puzzlePieceFour::after {
@@ -138,4 +143,5 @@
   height: 90px;
   background-color: white;
   border-radius: 50%;
+  z-index: 0;
 }
