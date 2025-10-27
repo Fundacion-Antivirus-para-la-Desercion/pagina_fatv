@@ -1,16 +1,17 @@
-import  { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import "boxicons";
 import imgFB from "../../../public/img_Foundation/imgF.webp";
 import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
+import BannerImage from "../../assets/images/views/foundation/banners-sobre-nosotros.webp";
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 
 function FoundationATV() {
   const { t } = useTranslation();
   const [isPlaying, setIsPlaying] = useState(false);
-  
+
   // Create refs for sections we want to animate
   const aboutSectionRef = useRef(null);
   const videoSectionRef = useRef(null);
@@ -18,23 +19,29 @@ function FoundationATV() {
   const visionRef = useRef(null);
   const purposeRef = useRef(null);
   const prioritiesRef = useRef(null);
-  
+
   // Set up inView detection for each section
   const isAboutInView = useInView(aboutSectionRef, { once: true, amount: 0.3 });
   const isVideoInView = useInView(videoSectionRef, { once: true, amount: 0.4 });
-  const isCardsInView = useInView(cardsContainerRef, { once: true, amount: 0.2 });
-  const isPrioritiesInView = useInView(prioritiesRef, { once: true, amount: 0.3 });
-  
+  const isCardsInView = useInView(cardsContainerRef, {
+    once: true,
+    amount: 0.2,
+  });
+  const isPrioritiesInView = useInView(prioritiesRef, {
+    once: true,
+    amount: 0.3,
+  });
+
   // Animation variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
-    }
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
-  
+
   // Card container variants for staggered animations
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -42,21 +49,20 @@ function FoundationATV() {
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: 0.1
-      }
-    }
+        delayChildren: 0.1,
+      },
+    },
   };
-  
+
   // List item variants for staggered animations
   const listItemVariants = {
     hidden: { opacity: 0, x: -20 },
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
-
 
   const handlePlayClick = () => {
     setIsPlaying(true);
@@ -66,14 +72,14 @@ function FoundationATV() {
     <div className="relative w-full">
       <div className="relative w-full">
         <img
-          src={imgFB}
+          src={BannerImage}
           alt="Banner"
           className="w-full h-[69vh] object-cover object-[0_33%]"
         />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
+        {/*<h1 className="absolute inset-0 flex items-center justify-center font-impact text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
           {t("foundation.foundationATV.header")}
-        </h1>
+        </h1>*/}
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
           <a
             href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
@@ -153,7 +159,9 @@ function FoundationATV() {
         <motion.div
           className="hidden md:block relative left-10"
           initial={{ opacity: 0, x: -30 }}
-          animate={isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+          animate={
+            isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }
+          }
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img className="w-full object-cover" src={Foundation1} alt="" />
@@ -161,7 +169,11 @@ function FoundationATV() {
         <motion.div
           className="relative z-10 flex justify-center items-center hover:cursor-pointer transform transition-transform duration-300 ease-out hover:scale-105"
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={isVideoInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+          animate={
+            isVideoInView
+              ? { opacity: 1, scale: 1 }
+              : { opacity: 0, scale: 0.9 }
+          }
           transition={{ duration: 0.8 }}
         >
           <img
@@ -337,7 +349,10 @@ function FoundationATV() {
               {t("foundation.foundationATV.organization_info.priorities.title")}
             </h5>
             <ul className="text-base text-[#33526d] pl-5 list-none font-sans">
-              <motion.li variants={listItemVariants} className="flex items-center mb-6">
+              <motion.li
+                variants={listItemVariants}
+                className="flex items-center mb-6"
+              >
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
                   1
                 </span>
@@ -345,7 +360,10 @@ function FoundationATV() {
                   "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
                 )}
               </motion.li>
-              <motion.li variants={listItemVariants} className="flex items-center mb-6">
+              <motion.li
+                variants={listItemVariants}
+                className="flex items-center mb-6"
+              >
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
                   2
                 </span>
@@ -353,7 +371,10 @@ function FoundationATV() {
                   "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
                 )}
               </motion.li>
-              <motion.li variants={listItemVariants} className="flex items-center mb-6">
+              <motion.li
+                variants={listItemVariants}
+                className="flex items-center mb-6"
+              >
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
                   3
                 </span>
@@ -361,7 +382,10 @@ function FoundationATV() {
                   "foundation.foundationATV.organization_info.priorities.items.involve_actors"
                 )}
               </motion.li>
-              <motion.li variants={listItemVariants} className="flex items-center mb-6">
+              <motion.li
+                variants={listItemVariants}
+                className="flex items-center mb-6"
+              >
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
                   4
                 </span>

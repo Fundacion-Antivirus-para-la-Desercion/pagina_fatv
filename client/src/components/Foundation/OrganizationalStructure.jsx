@@ -41,6 +41,15 @@ function OrganizationalStructure() {
     }
   };
   
+    const slideFromDown = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" } // Reduced from 5s to 0.8s for better UX
+    }
+  };
+
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { 
@@ -58,17 +67,13 @@ function OrganizationalStructure() {
         variants={fadeIn}
         className="relative grid grid-cols-[15%,85%] mb-10 mt-20"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isSectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
+        <div>
           <img
             className="hidden md:block md:h-[550px] ml-2 bottom-0 absolute z-10"
             src={JaviSonrie}
             alt="Javi Sonrie"
           />
-        </motion.div>
+        </div>
         <section className="grid grid-cols-1 relative md:grid-cols-2 max-w-[1000px] m-5 mx-auto items-center">
           <motion.div
             ref={puzzleOneRef}
@@ -202,7 +207,7 @@ function OrganizationalStructure() {
 
           <motion.div
             ref={puzzleThreeRef}
-            variants={slideFromLeft}
+            variants={slideFromDown}
             initial="hidden"
             animate={isPuzzleThreeInView ? "visible" : "hidden"}
           >
@@ -226,7 +231,7 @@ function OrganizationalStructure() {
 
           <motion.div
             ref={puzzleFourRef}
-            variants={slideFromRight}
+            variants={slideFromDown}
             initial="hidden"
             animate={isPuzzleFourInView ? "visible" : "hidden"}
           >
