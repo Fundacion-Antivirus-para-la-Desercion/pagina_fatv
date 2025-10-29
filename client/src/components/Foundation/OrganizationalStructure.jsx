@@ -65,7 +65,7 @@ function OrganizationalStructure() {
         initial="hidden"
         animate={isSectionInView ? "visible" : "hidden"}
         variants={fadeIn}
-        className="relative grid grid-cols-[15%,85%] mb-10 mt-20"
+        className="relative grid grid-cols-[15%,85%] mb-10 m-2"
       >
         <div>
           <img
@@ -74,7 +74,7 @@ function OrganizationalStructure() {
             alt="Javi Sonrie"
           />
         </div>
-        <section className="grid grid-cols-1 relative md:grid-cols-2 max-w-[1000px] m-5 mx-auto items-center">
+        <section className="grid grid-cols-1 relative md:grid-cols-2 max-w-[1000px] mx-auto items-center">
           <motion.div
             ref={puzzleOneRef}
             variants={slideFromLeft}

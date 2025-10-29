@@ -5,6 +5,13 @@ import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
 import BannerImage from "../../assets/images/views/foundation/banners-sobre-nosotros.webp";
+import TeoriaCambio from "../../assets/images/views/foundation/entrega-pc.webp";
+import Valores from "../../assets/images/views/foundation/valores.webp";
+import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
+import Publico from "../../assets/images/views/foundation/estudiantes-colegio.webp";
+import Vision from "../../assets/images/views/foundation/estudiantes-universitarios.webp";
+import Proposito from "../../assets/images/views/foundation/foundation-estudiantes.webp";
+
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 
@@ -25,22 +32,12 @@ function FoundationATV() {
   const isVideoInView = useInView(videoSectionRef, { once: true, amount: 0.4 });
   const isCardsInView = useInView(cardsContainerRef, {
     once: true,
-    amount: 0.2,
+    amount: 0.1,
   });
   const isPrioritiesInView = useInView(prioritiesRef, {
     once: true,
     amount: 0.3,
   });
-
-  // Animation variants
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
 
   // Card container variants for staggered animations
   const containerVariants = {
@@ -68,6 +65,20 @@ function FoundationATV() {
     setIsPlaying(true);
   };
 
+  const slideFromRight = {
+    //borraaaaarrrrr
+    initial: { opacity: 0, x: 100 }, // empieza invisible y a la derecha
+    whileInView: { opacity: 1, x: 0 }, // aparece en su posición normal
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.7 }, // solo se anima la primera vez que entra en vista
+  };
+  const slideFromLeft = {
+    initial: { opacity: 0, x: -100 }, // empieza invisible y a la izquierda
+    whileInView: { opacity: 1, x: 0 }, // aparece en su posición normal
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.7 },
+  };
+
   return (
     <div className="relative w-full">
       <div className="relative w-full">
@@ -76,7 +87,7 @@ function FoundationATV() {
           alt="Banner"
           className="w-full h-[69vh] object-cover object-[0_33%]"
         />
-        <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
+        <div className="absolute inset-0 "></div>
         {/*<h1 className="absolute inset-0 flex items-center justify-center font-impact text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
           {t("foundation.foundationATV.header")}
         </h1>*/}
@@ -221,11 +232,11 @@ function FoundationATV() {
             height="100%"
             src={
               isPlaying
-                ? "https://www.youtube.com/embed/XhpGyJ02Guc?autoplay=1&mute=0"
+                ? "https://www.youtube.com/embed/XhpGyJ02Guc?autoplay=1&mute=0&rel=0"
                 : "https://www.youtube.com/embed/XhpGyJ02Guc"
             }
             title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </motion.div>
@@ -244,8 +255,206 @@ function FoundationATV() {
         </motion.div>
       </section>
 
-      <div className="flex justify-center mt-28 mb-10">
+      <section className=" ">
+        <motion.div {...slideFromLeft}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
+            <div className="bg-[#CCEDE8] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={TeoriaCambio}
+                alt="Foto"
+              />
+            </div>
+            <div className="p-6 rounded-lg border bg-[#CCEDE8] border-gray-200 shadow-xl">
+              <h5 className="text-left text-4xl font-impact text-[#33526d] mb-4">
+                {t(
+                  "foundation.foundationATV.organization_info.change_theory.title"
+                )}
+              </h5>
+              <p className="text-base p-1 text-[#33526d] text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.change_theory.description"
+                )}
+              </p>
+            </div>
+          </section>
+        </motion.div>
+
+        <motion.div {...slideFromRight}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
+            <div className="rounded-lg border bg-[#D3C3E3] border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+                {t("foundation.foundationATV.organization_info.values.title")}
+              </h5>
+              <p className="text-base text-[#33526d] text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.values.description"
+                )}
+              </p>
+            </div>
+            <div className="bg-[#D3C3E3] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Valores}
+                alt="Foto"
+              />
+            </div>
+          </section>
+        </motion.div>
+
+        <motion.div {...slideFromLeft}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
+            <div className="bg-[#FFBA08] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Mision}
+                alt="Foto"
+              />
+            </div>
+            <div className="rounded-lg bg-[#FFBA08] border border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+                {t("foundation.foundationATV.organization_info.mission.title")}
+              </h5>
+              <p className="text-base text-[#33526d] text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.mission.description"
+                )}
+              </p>
+            </div>
+          </section>
+        </motion.div>
+
+        <motion.div {...slideFromRight}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
+            <div className="rounded-lg bg-[#CCEDE8] border border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+                {t(
+                  "foundation.foundationATV.organization_info.target_audience.title"
+                )}
+              </h5>
+              <p className="text-base text-[#33526d] text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.target_audience.description"
+                )}
+              </p>
+            </div>
+            <div className="bg-[#CCEDE8] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Publico}
+                alt="Foto"
+              />
+            </div>
+          </section>
+        </motion.div>
+
+        <motion.div {...slideFromLeft}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-2 items-center justify-center">
+            <div className="bg-[#D3C3E3] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Vision}
+                alt="Foto"
+              />
+            </div>
+            <div className="rounded-lg border border-gray-200 bg-[#D3C3E3] p-8 shadow-xl">
+              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+                {t("foundation.foundationATV.organization_info.vision.title")}
+              </h5>
+              <p className="text-base text-[#33526d] text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.vision.description"
+                )}
+              </p>
+            </div>
+          </section>
+        </motion.div>
+
+        <motion.div {...slideFromRight}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-2 items-center justify-center">
+            <div className="rounded-lg border border-gray-200 bg-[#FFBA08] p-8 shadow-xl">
+              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+                {t("foundation.foundationATV.organization_info.purpose.title")}
+              </h5>
+              <p className="text-base text-[#33526d] text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.purpose.description"
+                )}
+              </p>
+            </div>
+
+            <div className="bg-[#FFBA08] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Proposito}
+                alt="Foto"
+              />
+            </div>
+          </section>
+        </motion.div>
+      </section>
+
+      <section className="rounded-lg border flex justify-center mt-28 mb-5 bg-[#222D56] border-gray-200 shadow-xl p-5 mx-10 md:mx-20">
         <motion.div
+          ref={prioritiesRef}
+          initial="hidden"
+          animate={isPrioritiesInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className=""
+        >
+          <h5 className="text-4xl font-impact flex justify-center p-5  text-white mb-8">
+            {t("foundation.foundationATV.organization_info.priorities.title")}
+          </h5>
+          <ul className="text-base text-white pl-5 list-none font-sans">
+            <motion.li
+              variants={listItemVariants}
+              className="flex items-center mb-6"
+            >
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                1
+              </span>
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
+              )}
+            </motion.li>
+            <motion.li
+              variants={listItemVariants}
+              className="flex items-center mb-6"
+            >
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                2
+              </span>
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
+              )}
+            </motion.li>
+            <motion.li
+              variants={listItemVariants}
+              className="flex items-center mb-6"
+            >
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                3
+              </span>
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.involve_actors"
+              )}
+            </motion.li>
+            <motion.li
+              variants={listItemVariants}
+              className="flex items-center mb-6"
+            >
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
+                4
+              </span>
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
+              )}
+            </motion.li>
+          </ul>
+        </motion.div>
+      </section>
+      <div className="flex justify-center mt-28 mb-10">
+        {/* <motion.div
           ref={cardsContainerRef}
           variants={containerVariants}
           initial="hidden"
@@ -338,64 +547,8 @@ function FoundationATV() {
             </p>
           </motion.div>
 
-          <motion.div
-            ref={prioritiesRef}
-            initial="hidden"
-            animate={isPrioritiesInView ? "visible" : "hidden"}
-            variants={containerVariants}
-            className="rounded-lg border border-gray-200 p-6 shadow-xl col-span-full"
-          >
-            <h5 className="text-4xl font-impact text-[#33526d] mb-8">
-              {t("foundation.foundationATV.organization_info.priorities.title")}
-            </h5>
-            <ul className="text-base text-[#33526d] pl-5 list-none font-sans">
-              <motion.li
-                variants={listItemVariants}
-                className="flex items-center mb-6"
-              >
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                  1
-                </span>
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
-                )}
-              </motion.li>
-              <motion.li
-                variants={listItemVariants}
-                className="flex items-center mb-6"
-              >
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                  2
-                </span>
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
-                )}
-              </motion.li>
-              <motion.li
-                variants={listItemVariants}
-                className="flex items-center mb-6"
-              >
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                  3
-                </span>
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.involve_actors"
-                )}
-              </motion.li>
-              <motion.li
-                variants={listItemVariants}
-                className="flex items-center mb-6"
-              >
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                  4
-                </span>
-                {t(
-                  "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
-                )}
-              </motion.li>
-            </ul>
-          </motion.div>
         </motion.div>
+        */}
       </div>
     </div>
   );
