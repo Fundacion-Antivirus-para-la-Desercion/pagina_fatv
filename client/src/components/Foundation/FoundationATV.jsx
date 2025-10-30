@@ -11,6 +11,7 @@ import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
 import Publico from "../../assets/images/views/foundation/estudiantes-colegio.webp";
 import Vision from "../../assets/images/views/foundation/estudiantes-universitarios.webp";
 import Proposito from "../../assets/images/views/foundation/foundation-estudiantes.webp";
+import { Sun } from "../../assets/images/svg/Svg";
 
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
@@ -66,17 +67,23 @@ function FoundationATV() {
   };
 
   const slideFromRight = {
-    //borraaaaarrrrr
-    initial: { opacity: 0, x: 100 }, // empieza invisible y a la derecha
-    whileInView: { opacity: 1, x: 0 }, // aparece en su posición normal
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.7 }, // solo se anima la primera vez que entra en vista
-  };
-  const slideFromLeft = {
-    initial: { opacity: 0, x: -100 }, // empieza invisible y a la izquierda
-    whileInView: { opacity: 1, x: 0 }, // aparece en su posición normal
+    initial: { opacity: 0, x: 100 },
+    whileInView: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
     viewport: { once: true, amount: 0.7 },
+  };
+  const slideFromLeft = {
+    initial: { opacity: 0, x: -100 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.7 },
+  };
+
+  const expandableTransition = {
+    initial: { opacity: 0, scale: 0.5 }, // Comienza pequeña y escondida
+    whileInView: { opacity: 1, scale: 1 }, // Se expande y aparece
+    transition: { duration: 0.8, ease: "easeOut" }, // Suavidad
+    viewport: { once: true }, // Solo se anima una vez al verla
   };
 
   return (
@@ -255,7 +262,7 @@ function FoundationATV() {
         </motion.div>
       </section>
 
-      <section className=" ">
+      <section className="mb-14">
         <motion.div {...slideFromLeft}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
             <div className="bg-[#CCEDE8] rounded-full">
@@ -394,162 +401,62 @@ function FoundationATV() {
         </motion.div>
       </section>
 
-      <section className="rounded-lg border flex justify-center mt-28 mb-5 bg-[#222D56] border-gray-200 shadow-xl p-5 mx-10 md:mx-20">
-        <motion.div
-          ref={prioritiesRef}
-          initial="hidden"
-          animate={isPrioritiesInView ? "visible" : "hidden"}
-          variants={containerVariants}
-          className=""
-        >
-          <h5 className="text-4xl font-impact flex justify-center p-5  text-white mb-8">
-            {t("foundation.foundationATV.organization_info.priorities.title")}
-          </h5>
-          <ul className="text-base text-white pl-5 list-none font-sans">
-            <motion.li
-              variants={listItemVariants}
-              className="flex items-center mb-6"
-            >
-              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                1
-              </span>
+      <section className="grid grid-cols-1 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
+        <h5 className="col-span-1 md:col-span-4 text-4xl font-impact text-center text-[#33526d] mb-8">
+          {t("foundation.foundationATV.organization_info.priorities.title")}
+        </h5>
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              1
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
               )}
-            </motion.li>
-            <motion.li
-              variants={listItemVariants}
-              className="flex items-center mb-6"
-            >
-              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                2
-              </span>
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              2
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
               )}
-            </motion.li>
-            <motion.li
-              variants={listItemVariants}
-              className="flex items-center mb-6"
-            >
-              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                3
-              </span>
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              3
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.involve_actors"
               )}
-            </motion.li>
-            <motion.li
-              variants={listItemVariants}
-              className="flex items-center mb-6"
-            >
-              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFBA08] text-[#32526E] font-bold flex items-center justify-center text-base mr-4">
-                4
-              </span>
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              4
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
               )}
-            </motion.li>
-          </ul>
+            </p>
+          </div>
         </motion.div>
       </section>
-      <div className="flex justify-center mt-28 mb-10">
-        {/* <motion.div
-          ref={cardsContainerRef}
-          variants={containerVariants}
-          initial="hidden"
-          animate={isCardsInView ? "visible" : "hidden"}
-          className="w-4/5 grid grid-cols-1 lg:grid-cols-2 gap-10 gap-y-14 text-justify"
-        >
-          <motion.div variants={fadeInUp}>
-            <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
-              <h5 className="text-left text-4xl font-impact text-[#33526d] mb-4">
-                {t(
-                  "foundation.foundationATV.organization_info.change_theory.title"
-                )}
-              </h5>
-              <p className="text-base text-[#33526d]">
-                {t(
-                  "foundation.foundationATV.organization_info.change_theory.description"
-                )}
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeInUp}>
-            <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
-                {t("foundation.foundationATV.organization_info.values.title")}
-              </h5>
-              <p className="text-base text-[#33526d]">
-                {t(
-                  "foundation.foundationATV.organization_info.values.description"
-                )}
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeInUp}>
-            <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
-                {t("foundation.foundationATV.organization_info.mission.title")}
-              </h5>
-              <p className="text-base text-[#33526d]">
-                {t(
-                  "foundation.foundationATV.organization_info.mission.description"
-                )}
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeInUp}>
-            <div className="rounded-lg border border-gray-200 p-6 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
-                {t(
-                  "foundation.foundationATV.organization_info.target_audience.title"
-                )}
-              </h5>
-              <p className="text-base text-[#33526d]">
-                {t(
-                  "foundation.foundationATV.organization_info.target_audience.description"
-                )}
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            ref={visionRef}
-            variants={fadeInUp}
-            className="rounded-lg border border-gray-200 bg-[#32526E] p-8 shadow-xl col-span-full"
-          >
-            <h5 className="text-4xl font-impact text-white mb-4">
-              {t("foundation.foundationATV.organization_info.vision.title")}
-            </h5>
-            <p className="text-base text-white">
-              {t(
-                "foundation.foundationATV.organization_info.vision.description"
-              )}
-            </p>
-          </motion.div>
-
-          <motion.div
-            ref={purposeRef}
-            variants={fadeInUp}
-            className="rounded-lg border border-gray-200 p-8 shadow-xl col-span-full"
-          >
-            <h5 className="text-4xl font-impact text-[#33526d] mb-4">
-              {t("foundation.foundationATV.organization_info.purpose.title")}
-            </h5>
-            <p className="text-base text-[#33526d]">
-              {t(
-                "foundation.foundationATV.organization_info.purpose.description"
-              )}
-            </p>
-          </motion.div>
-
-        </motion.div>
-        */}
-      </div>
     </div>
   );
 }
