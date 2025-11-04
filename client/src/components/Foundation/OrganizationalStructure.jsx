@@ -65,9 +65,9 @@ function OrganizationalStructure() {
         initial="hidden"
         animate={isSectionInView ? "visible" : "hidden"}
         variants={fadeIn}
-        className="relative grid grid-cols-[15%,85%] mb-10 m-2"
+        className="relative grid grid-cols-1 md:grid-cols-[20%,80%] mb-10 m-2"
       >
-        <div>
+        <div className="hidden md:block">
           <img
             className="hidden md:block md:h-[550px] ml-2 bottom-0 absolute z-10"
             src={JaviSonrie}
