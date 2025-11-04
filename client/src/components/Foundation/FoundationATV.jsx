@@ -172,7 +172,7 @@ function FoundationATV() {
 
       <section
         ref={videoSectionRef}
-        className="md:grid md:grid-cols-[25%_50%_25%] p-5 items-stretch"
+        className="md:grid md:grid-cols-[25%_50%_25%] p-5 md:items-stretch"
       >
         <motion.div
           className="hidden md:block relative left-10"
@@ -234,7 +234,7 @@ function FoundationATV() {
 
           <iframe
             id="foundation-video"
-            className="shadow-2xl"
+            className="shadow-2xl min-h-[400px]"
             width="100%"
             height="100%"
             src={

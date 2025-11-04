@@ -82,7 +82,7 @@ function OrganizationalStructure() {
             animate={isPuzzleOneInView ? "visible" : "hidden"}
           >
             <div className="w-full puzzlePieceOne">
-              <div className="p-10 m-2 relative z-10">
+              <div className="p-10 md:m-2 relative z-10">
                 <p>
                   <small className="text-[#222D56] text-base leading-[1.533] tracking-[0.3em] uppercase">
                     {t("foundation.foundationATV.founders.subtitle")}
@@ -151,7 +151,7 @@ function OrganizationalStructure() {
             animate={isPuzzleTwoInView ? "visible" : "hidden"}
           >
             <div className="w-full puzzlePieceTwo">
-              <div className="p-10 m-2">
+              <div className="p-10 md:m-2">
                 <p>
                   <small className="text-white text-base leading-[1.533] tracking-[0.3em] uppercase">
                     {t("foundation.foundationATV.board_directors.subtitle")}

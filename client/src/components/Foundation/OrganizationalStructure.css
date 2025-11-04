@@ -42,6 +42,32 @@
   border-bottom-right-radius: 20px;
 }
 
+.puzzlePieceOne::before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92px;
+  height: 92px;
+  background-color: #ffba08;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.puzzlePieceFour::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92px;
+  height: 92px;
+  background-color: #ffba08;
+  border-radius: 50%;
+  z-index: 10;
+}
+
 @media (min-width: 768px) {
   .puzzlePieceOne,
   .puzzlePieceTwo {
