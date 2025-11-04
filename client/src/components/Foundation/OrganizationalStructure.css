@@ -76,7 +76,7 @@
     height: 90px;
     background-color: white;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 0;
   }
 
   .puzzlePieceTwo::before {
@@ -102,10 +102,23 @@
     height: 90px;
     background-color: white;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 0;
   }
 
   .puzzlePieceThree::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .puzzlePieceThree::after {
     content: "";
     position: absolute;
     right: -45px;
@@ -118,20 +131,20 @@
     z-index: 10;
   }
 
-  .puzzlePieceThree::after {
+  .puzzlePieceFour::before {
     content: "";
     position: absolute;
-    top: -45px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 90px;
     height: 90px;
-    background-color: #ffba08;
+    background-color: #222d56;
     border-radius: 50%;
     z-index: 0;
   }
 
-  .puzzlePieceFour::before {
+  .puzzlePieceFour::after {
     content: "";
     position: absolute;
     top: -45px;
@@ -141,19 +154,6 @@
     height: 92px;
     background-color: #ffba08;
     border-radius: 50%;
-    z-index: 2;
-  }
-
-  .puzzlePieceFour::after {
-    content: "";
-    position: absolute;
-    left: -45px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 90px;
-    height: 90px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 0;
+    z-index: 10;
   }
 }
