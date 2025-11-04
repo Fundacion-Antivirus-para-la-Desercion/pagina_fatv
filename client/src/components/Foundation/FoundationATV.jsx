@@ -11,7 +11,7 @@ import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
 import Publico from "../../assets/images/views/foundation/estudiantes-colegio.webp";
 import Vision from "../../assets/images/views/foundation/estudiantes-universitarios.webp";
 import Proposito from "../../assets/images/views/foundation/foundation-estudiantes.webp";
-import { Sun } from "../../assets/images/svg/Svg";
+import { Sun, SunBlue } from "../../assets/images/svg/Svg";
 
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
@@ -262,8 +262,9 @@ function FoundationATV() {
         </motion.div>
       </section>
 
-      <section className="mb-14">
+      <section className="relative mb-14">
         <motion.div {...slideFromLeft}>
+          <Sun classNames="hidden md:block" />
           <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
             <div className="bg-[#CCEDE8] rounded-full">
               <img
@@ -285,6 +286,7 @@ function FoundationATV() {
               </p>
             </div>
           </section>
+          <SunBlue classNames="hidden md:block right-0" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
@@ -299,7 +301,7 @@ function FoundationATV() {
                 )}
               </p>
             </div>
-            <div className="bg-[#D3C3E3] rounded-full">
+            <div className="relative bg-[#D3C3E3] rounded-full">
               <img
                 className="rounded-full w-[400px] h-auto p-5 object-cover"
                 src={Valores}
@@ -307,6 +309,7 @@ function FoundationATV() {
               />
             </div>
           </section>
+          <Sun classNames="hidden md:block" />
         </motion.div>
 
         <motion.div {...slideFromLeft}>
@@ -329,6 +332,7 @@ function FoundationATV() {
               </p>
             </div>
           </section>
+          <SunBlue classNames="hidden md:block right-0" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
@@ -353,6 +357,7 @@ function FoundationATV() {
               />
             </div>
           </section>
+          <Sun classNames="hidden md:block" />
         </motion.div>
 
         <motion.div {...slideFromLeft}>
@@ -375,6 +380,7 @@ function FoundationATV() {
               </p>
             </div>
           </section>
+          <SunBlue classNames="hidden md:block right-0" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
@@ -401,7 +407,7 @@ function FoundationATV() {
         </motion.div>
       </section>
 
-      <section className="grid grid-cols-1 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
+      <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
         <h5 className="col-span-1 md:col-span-4 text-4xl font-impact text-center text-[#33526d] mb-8">
           {t("foundation.foundationATV.organization_info.priorities.title")}
         </h5>
