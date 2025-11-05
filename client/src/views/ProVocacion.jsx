@@ -217,7 +217,7 @@ function ProVocacion() {
               alt="Banner"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
+            <div className="absolute inset-0"></div>
 
             <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
               {socialMedia.map((social, index) => (

@@ -15,7 +15,7 @@ function ApoyoAcademico() {
           alt="Banner"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
+        <div className="absolute inset-0"></div>
         <h1 className="absolute inset-0 flex items-center justify-center font-impact uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
           {t("apoyoAcademico.title")}
         </h1>
