@@ -6,17 +6,17 @@ function ContentDA() {
   return (
     <div className="content">
       <div className="content-info">
-        <p className="title">{t("ContentDA.content.title")}</p>
+        <p className="title">{t("dataAnalytics.contentDA.title")}</p>
         <h4 className="lineSubtitle font-impact text-[3em] leading-[.92] uppercase">
-          {t("ContentDA.content.subtitle")}
+          {t("dataAnalytics.contentDA.subtitle")}
         </h4>
-        <p className="paragraph">{t("ContentDA.content.paragraph1")}</p>
-        <p className="paragraph">{t("ContentDA.content.paragraph2")}</p>
+        <p className="paragraph">{t("dataAnalytics.contentDA.paragraph1")}</p>
+        <p className="paragraph">{t("dataAnalytics.contentDA.paragraph2")}</p>
       </div>
       <div className="content-image">
         <img
           src="/img_DataAnalytics/data-analytics-image.webp"
-          alt={t("ContentDA.content.alt_image")}
+          alt={t("dataAnalytics.ContentDA.alt_image")}
         />
       </div>
     </div>

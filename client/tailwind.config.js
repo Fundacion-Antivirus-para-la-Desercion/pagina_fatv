@@ -25,6 +25,9 @@ export default {
       width: {
         450: "28.125rem",
       },
+      animation: {
+        "spin-slower": "spin 25s linear infinite",
+      },
     },
   },
   plugins: [],

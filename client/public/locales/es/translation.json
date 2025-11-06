@@ -115,7 +115,7 @@
         "image_alt_text": "Imagen de servicio {{index}}",
         "atvconnect_title": "ATVCONECTA:",
         "atvconnect_title_two": "TUTORÍAS ACADÉMICAS",
-        "atvconnect_description": "Un servicio personalizado e innovador que combina acompañamiento académico, tecnología y bienestar integral para cerrar brechas de aprendizaje y fortalecer la permanencia estudiantil",
+        "atvconnect_description": "Un servicio personalizado e innovador que combina acompañamiento académico, tecnología y bienestar integral para cerrar brechas de aprendizaje y fortalecer la permanencia estudiantil.",
         "more_info": "Ver más"
       }
     }
@@ -168,7 +168,7 @@
   },
   "foundation": {
     "foundationATV": {
-      "header": "lo que hacemos",
+      "header": "sobre nosotros",
       "title": "¿Quiénes Somos?",
       "subtitle": "Somos una organización sin ánimo de lucro que",
       "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
