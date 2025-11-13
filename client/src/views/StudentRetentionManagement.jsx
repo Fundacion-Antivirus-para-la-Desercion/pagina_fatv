@@ -27,7 +27,7 @@ function StudentRetentionManagement() {
     <section className="lg:pt-[145px]">
       <div className="relative w-full h-72 sm:h-80 md:h-96">
         <div className="absolute inset-0 bg-blue-links"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
+        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-3xl sm:text-5xl md:text-7xl lg:text-9xl text-banner">
           {t("studentRetentionManagement.heading")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -174,51 +174,62 @@ function StudentRetentionManagement() {
         </div>
       </section>
 
-      <section className="bg-[#222D56] transform origin-bottom  p-4 mt-5 mb-20">
-        <div className={styles.orangeBar}></div>
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 items-center justify-center text-center">
-          <div>
-            <h3 className="text-4xl md:text-6xl font-impact text-white mt-10  mb-10 p-5">
-              {t("studentRetentionManagement.success.title")}
-            </h3>
-            <p className="mt-4 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08]">
-              {t("studentRetentionManagement.success.paragraph_one")}{" "}
-              <span className="text-[#FFBA08] font-bold">
-                {t("studentRetentionManagement.success.paragraph_one_span")}
-              </span>{" "}
-            </p>
-            <p className="mt-8 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#28A499]">
-              {t("studentRetentionManagement.success.paragraph_two")}{" "}
-              <span className="text-[#28A499] font-bold">
-                {t("studentRetentionManagement.success.paragraph_two_span")}
-              </span>{" "}
-            </p>
-          </div>
-          <div className="">
-            <div className="relative flex flex-col w-[350px] md:w-[460px] -rotate-2">
-            <img
-              className="w-full border-4 border-white rounded-xl"
-              src={Grupo}
-              alt={t("studentRetentionManagement.success.alt_img_group")}
-            />
+      <section className="">
+        <div className=" transform origin-bottom mt-5 p-[0.05rem] mb-20">
+          <div className={styles.blueBar}></div>
+          <div className={styles.orangeBar}></div>
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
+            <div>
+              <h3 className="text-4xl md:text-8xl font-impact text-white pr-52 text-left p-2">
+                {t("studentRetentionManagement.success.title")}
+              </h3>
 
-            <p className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full text-center rounded-b-xl">
-              {t("studentRetentionManagement.success.message_group")}
-            </p>
-             </div>
-            <div className="relative flex flex-col left-36 w-[300px] md:w-[340px] rotate-6 mt-4">
-              <img
-                className="w-full border-4 border-white rounded-xl"
-                src={Graduado}
-                alt={t("studentRetentionManagement.success.alt_img_graduate")}
-              />
-              <p className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full text-center rounded-b-xl">
-                {t("studentRetentionManagement.success.message_graduate")}
-              </p>
+              <section className="relative">
+                <div className="absolute top-0">
+                  <p className="shadow-lg text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08]">
+                    {t("studentRetentionManagement.success.paragraph_one")}{" "}
+                    <span className="text-[#FFBA08] font-bold">
+                      {t(
+                        "studentRetentionManagement.success.paragraph_one_span"
+                      )}
+                    </span>{" "}
+                  </p>
+                  <p className="shadow-lg mt-4 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#28A499]">
+                    {t("studentRetentionManagement.success.paragraph_two")}{" "}
+                    <span className="text-[#28A499] font-bold">
+                      {t(
+                        "studentRetentionManagement.success.paragraph_two_span"
+                      )}
+                    </span>{" "}
+                  </p>
+                </div>
+              </section>
             </div>
-          </div>
-        </section>
-        {/*<section className="relative grid grid-cols-1 mt-8 md:m-3 md:mt-4 md:grid-cols-2 items-center">
+            <div className="">
+              <div className="relative flex flex-col w-[400px] md:w-[500px] -rotate-3">
+                <img
+                  className="shadow-xl w-full border-4 border-white rounded-xl min-h-[350px] object-cover"
+                  src={Grupo}
+                  alt={t("studentRetentionManagement.success.alt_img_group")}
+                />
+
+                <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
+                  {t("studentRetentionManagement.success.message_group")}
+                </p>
+              </div>
+              <div className="relative flex flex-col left-36 w-[300px] md:w-[400px] rotate-3 mt-4">
+                <img
+                  className="shadow-xl w-full border-4 border-white rounded-xl"
+                  src={Graduado}
+                  alt={t("studentRetentionManagement.success.alt_img_graduate")}
+                />
+                <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
+                  {t("studentRetentionManagement.success.message_graduate")}
+                </p>
+              </div>
+            </div>
+          </section>
+          {/*<section className="relative grid grid-cols-1 mt-8 md:m-3 md:mt-4 md:grid-cols-2 items-center">
           <div className="relative">
             <p className="mt-4 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08]">
               {t("studentRetentionManagement.success.paragraph_one")}{" "}
@@ -246,6 +257,7 @@ function StudentRetentionManagement() {
             </div>
           </div>
         </section>*/}
+        </div>
       </section>
     </section>
   );

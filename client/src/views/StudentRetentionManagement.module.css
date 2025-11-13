@@ -1,16 +1,28 @@
+.blueBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #222D56;
+  border-top-left-radius: 0;
+  z-index: -1;
+}
+
 .orangeBar {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   right: 0;
-  width: 75%;
-  height: 300px; 
-  background-color: #FFBA08; 
+  width: 70%;
+  height: 300px;
+  background-color: #ffba08;
   border-top-left-radius: 0;
-  z-index: 0;
+  z-index: -1;
   clip-path: polygon(
-    0% 40%,     /* Esquina superior izquierda (¡Bajada un 10%!) */
-    100% 0%,    /* Esquina superior derecha (¡En el tope, 0%!) */
-    100% 100%,  /* Esquina inferior derecha (Base recta) */
-    0% 100%     /* Esquina inferior izquierda (Base recta) */
-);
+    0% 33%,
+    /* Esquina superior izquierda (¡Bajada un 10%!) */ 100% 0%,
+    /* Esquina superior derecha (¡En el tope, 0%!) */ 100% 100%,
+    /* Esquina inferior derecha (Base recta) */ 0% 100%
+      /* Esquina inferior izquierda (Base recta) */
+  );
 }
