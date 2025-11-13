@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Javi from "../assets/images/views/javi/javi-feliz.svg";
+import JaviGinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
 import Grupo from "../assets/images/views/studentretentionManagement/manos.jpg";
 import Graduado from "../assets/images/views/studentretentionManagement/graduado.png";
 import { motion, useInView } from "framer-motion";
@@ -22,6 +23,8 @@ function StudentRetentionManagement() {
     transition: { duration: 0.8, ease: "easeOut" },
     viewport: { once: true, amount: 0.7 },
   };
+
+  const whatsAppNumber = "573173831481";
 
   return (
     <section className="lg:pt-[145px]">
@@ -174,8 +177,8 @@ function StudentRetentionManagement() {
         </div>
       </section>
 
-      <section className="">
-        <div className=" transform origin-bottom mt-5 p-[0.05rem] mb-20">
+      <section>
+        <div className=" transform origin-bottom mt-5 p-[0.05rem]">
           <div className={styles.blueBar}></div>
           <div className={styles.orangeBar}></div>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
@@ -185,7 +188,7 @@ function StudentRetentionManagement() {
               </h3>
 
               <section className="relative">
-                <div className="absolute top-0">
+                <div className="absolute md:ml-2 top-32">
                   <p className="shadow-lg text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08]">
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
                     <span className="text-[#FFBA08] font-bold">
@@ -229,34 +232,23 @@ function StudentRetentionManagement() {
               </div>
             </div>
           </section>
-          {/*<section className="relative grid grid-cols-1 mt-8 md:m-3 md:mt-4 md:grid-cols-2 items-center">
-          <div className="relative">
-            <p className="mt-4 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08]">
-              {t("studentRetentionManagement.success.paragraph_one")}{" "}
-              <span className="text-[#FFBA08] font-bold">
-                {t("studentRetentionManagement.success.paragraph_one_span")}
-              </span>{" "}
-            </p>
-            <p className="mt-8 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#28A499]">
-              {t("studentRetentionManagement.success.paragraph_two")}{" "}
-              <span className="text-[#28A499] font-bold">
-                {t("studentRetentionManagement.success.paragraph_two_span")}
-              </span>{" "}
-            </p>
+        </div>
+        <div className="flex items-center md:ml-2">
+          <img
+            className="w-[90px] md:w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+            src={JaviGinandoOjo}
+            alt=""
+          />
+          <div>
+            <a
+              className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-2xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+              href={`https://wa.me/${whatsAppNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ¡Estamos con tigo!💪
+            </a>
           </div>
-          <div className="flex justify-center items-center">
-            <div className="relative w-[300px] md:w-[340px] rotate-6">
-              <img
-                className="w-full border-4 border-white rounded-xl"
-                src={Graduado}
-                alt={t("studentRetentionManagement.success.alt_img_graduate")}
-              />
-              <p className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full text-center rounded-b-xl">
-                {t("studentRetentionManagement.success.message_graduate")}
-              </p>
-            </div>
-          </div>
-        </section>*/}
         </div>
       </section>
     </section>
