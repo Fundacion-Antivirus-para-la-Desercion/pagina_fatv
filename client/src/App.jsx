@@ -23,6 +23,7 @@ import Layout from "./components/layout/Layout";
 import ProVocacion from "./views/ProVocacion";
 import News from "./components/News/News";
 import NewsDetail from "./views/NewsDetail.jsx";
+import StudentRetentionManagement from "./views/StudentRetentionManagement.jsx";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             element={<AcompañamientoOrientacion />}
           />
           <Route path="/Repositorio" element={<Repositorio />} />
+          <Route path="/gestion-de-la-permanencia" element={<StudentRetentionManagement />} />
           <Route path="/Consultorias" element={<Consultorias />} />
           {/* <Route path="/Universidades" element={<Universidades />} /> */}
           {/* <Route path="/Bootcamps" element={<Bootcamps />} /> */}

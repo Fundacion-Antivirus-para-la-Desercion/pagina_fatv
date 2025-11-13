@@ -15,6 +15,7 @@
       "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
       "communications": "COMMUNICATIONS",
       "for_students": "FOR STUDENTS",
+      "permanence": "MANAGEMENT OF STAY",
       "consulting": " PROJECT CONSULTING AND IMPLEMENTATION",
       "pro_vocation": "PRO-VOCATION",
       "academic_support": "Academic Support",
@@ -530,6 +531,66 @@
     "schools": "Schools",
     "scholarship_programs": "Scholarship Programs from /NGOs/Companies",
     "description": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes."
+  },
+  "studentRetentionManagement": {
+    "heading": "RETENTION MANAGEMENT",
+    "title": "OBJECTIVE OF RETENTION MANAGEMENT",
+    "objectiveOne": {
+      "text_one": "🎯Support students throughout their",
+      "span": "academic journey",
+      "text_two": "so they can successfully complete their university degree.",
+      "objective_two": "",
+      "title_success": "YOUR SUCCESS IS OUR SUCCESS"
+    },
+    "objectiveTwo": {
+      "text_one": "🤝 Strengthen the",
+      "span": "support networks",
+      "text_two": "among students, faculty, and the university community"
+    },
+    "objectiveThree": {
+      "text_one": "📈 To reduce the rates of",
+      "span": "student attrition",
+      "text_two": "through comprehensive support strategies"
+    },
+    "cardJavi": {
+      "alt_img_javi": "Javi, the happy institutional character.",
+      "title_part_one": "¡STAYING MEANS",
+      "title_part_two": "ACHIEVING YOUR DREAMS!",
+      "description_one": "Student retention is our priority.",
+      "span": "Together, we work",
+      "description_two": "to ensure you successfully complete your university degree",
+      "students": "Students",
+      "years": "Years",
+      "commitment": "Commitment"
+    },
+    "success": {
+      "title": "YOUR SUCCESS IS OUR SUCCESS",
+      "paragraph_one": "💡Together we build",
+      "paragraph_one_span": "your path to success",
+      "paragraph_two": "🎓 Because staying means",
+      "paragraph_two_span": "growing, learning, and achieving your goals",
+      "alt_img_group": "We learn better together - Students collaborating in groups",
+      "message_group": "✨ We learn better together",
+      "alt_img_graduate": "Smiling graduate, with the text Your achievement inspires us",
+      "message_graduate": "🎉 Your achievement inspires us!",
+      "alt_success_img": "Estudiante exitoso",
+      "see_more": "Ver más historias"
+    },
+    "title_success": "YOUR SUCCESS IS OUR SUCCESS",
+    "objective_one": {
+      "text_one": "🎯To support students throughout their",
+      "span": "academic journey",
+      "text_two": "so they can successfully complete their university degree.",
+      "objective_two": "",
+      "title_success": "YOUR SUCCESS IS OUR SUCCESS"
+    },
+    "Objective_one_text_one": "🎯To support students throughout their",
+    "Objective_one_span": "academic journey",
+    "Objective_one_text_two": "so they can successfully complete their university degree.",
+    "Objective_two": "",
+    "Objective_one": "",
+    "Objective_three": "",
+    "HEADING": "RETENTION MANAGEMENT"
   },
   "provocacion": {
     "title_initial": "SUPPORT OBJECTIVE",
