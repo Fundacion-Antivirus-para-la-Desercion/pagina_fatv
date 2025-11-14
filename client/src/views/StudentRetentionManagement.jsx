@@ -30,7 +30,7 @@ function StudentRetentionManagement() {
     <section className="lg:pt-[145px]">
       <div className="relative w-full h-72 sm:h-80 md:h-96">
         <div className="absolute inset-0 bg-blue-links"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-3xl sm:text-5xl md:text-7xl lg:text-9xl text-banner">
+        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
           {t("studentRetentionManagement.heading")}
         </h1>
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -176,20 +176,30 @@ function StudentRetentionManagement() {
           </div>
         </div>
       </section>
-
       <section>
-        <div className=" transform origin-bottom mt-5 p-[0.05rem]">
-          <div className={styles.blueBar}></div>
+        <div className="transform origin-bottom mt-5 p-[0.05rem]">
+          <div className={styles.blueBar}>
+            <div
+              className="absolute inset-0 z-0"
+              style={{
+                backgroundImage: `
+        linear-gradient(to right, #32526E 1px, transparent 1px),
+        linear-gradient(to bottom, #32526E 1px, transparent 1px)
+      `,
+                backgroundSize: "48px 48px, 48px 48px",
+              }}
+            />
+          </div>
           <div className={styles.orangeBar}></div>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
             <div>
-              <h3 className="text-4xl md:text-8xl font-impact text-white pr-52 text-left p-2">
+              <h3 className="text-4xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
                 {t("studentRetentionManagement.success.title")}
               </h3>
 
               <section className="relative">
-                <div className="absolute md:ml-2 top-32">
-                  <p className="shadow-lg text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08]">
+                <div className="mt-5 md:absolute md:ml-2 md:top-36">
+                  <p className="shadow-lg text-left font-bold text-base sm:text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08] mx-auto md:mx-0">
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
                     <span className="text-[#FFBA08] font-bold">
                       {t(
@@ -197,7 +207,8 @@ function StudentRetentionManagement() {
                       )}
                     </span>{" "}
                   </p>
-                  <p className="shadow-lg mt-4 text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#28A499]">
+
+                  <p className="shadow-lg mt-4 font-bold text-base sm:text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#28A499] mx-auto md:mx-0">
                     {t("studentRetentionManagement.success.paragraph_two")}{" "}
                     <span className="text-[#28A499] font-bold">
                       {t(
@@ -208,10 +219,10 @@ function StudentRetentionManagement() {
                 </div>
               </section>
             </div>
-            <div className="">
-              <div className="relative flex flex-col w-[400px] md:w-[500px] -rotate-3">
+            <div className="content-center flex flex-col items-center md:items-start">
+              <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3">
                 <img
-                  className="shadow-xl w-full border-4 border-white rounded-xl min-h-[350px] object-cover"
+                  className="shadow-xl w-full border-4 border-white rounded-xl md:min-h-[350px] object-cover"
                   src={Grupo}
                   alt={t("studentRetentionManagement.success.alt_img_group")}
                 />
@@ -220,7 +231,7 @@ function StudentRetentionManagement() {
                   {t("studentRetentionManagement.success.message_group")}
                 </p>
               </div>
-              <div className="relative flex flex-col left-36 w-[300px] md:w-[400px] rotate-3 mt-4">
+              <div className="relative flex flex-col md:left-36 w-[300px] md:w-[400px] md:rotate-3 mt-4">
                 <img
                   className="shadow-xl w-full border-4 border-white rounded-xl"
                   src={Graduado}
@@ -233,9 +244,9 @@ function StudentRetentionManagement() {
             </div>
           </section>
         </div>
-        <div className="flex items-center md:ml-2">
+        <div className="flex justify-center mt-10 md:mt-0 md:justify-start items-center md:ml-2">
           <img
-            className="w-[90px] md:w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+            className="w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
             src={JaviGinandoOjo}
             alt=""
           />
