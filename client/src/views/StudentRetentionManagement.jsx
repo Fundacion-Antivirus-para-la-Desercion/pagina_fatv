@@ -1,14 +1,23 @@
 import { useTranslation } from "react-i18next";
 import Javi from "../assets/images/views/javi/javi-feliz.svg";
 import JaviGinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
-import Grupo from "../assets/images/views/studentretentionManagement/manos.jpg";
-import Graduado from "../assets/images/views/studentretentionManagement/graduado.png";
+import BannerRetentionEs from "../assets/images/views/studentretentionManagement/banner-gestion-de-la-permanencia.webp";
+import BannerRetentionEn from "../assets/images/views/studentretentionManagement/banner-student-retetion-managment.webp";
+import Grupo from "../assets/images/views/studentretentionManagement/manos.webp";
+import Graduado from "../assets/images/views/studentretentionManagement/graduado.webp";
 import { motion, useInView } from "framer-motion";
 import CounterNumeric from "../components/ContextData/CounterNumer.jsx";
 import styles from "./StudentRetentionManagement.module.css";
+import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
+import useImageByLanguage from "../hooks/useImageByLanguage.js";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
+
+  const bannerByLanguage = useImageByLanguage({
+    enImage: BannerRetentionEn,
+    esImage: BannerRetentionEs,
+  });
 
   const expandableTransition = {
     initial: { opacity: 0, scale: 0.5 },
@@ -29,10 +38,11 @@ function StudentRetentionManagement() {
   return (
     <section className="lg:pt-[145px]">
       <div className="relative w-full h-72 sm:h-80 md:h-96">
-        <div className="absolute inset-0 bg-blue-links"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center font-impact text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
-          {t("studentRetentionManagement.heading")}
-        </h1>
+        <img
+          src={bannerByLanguage}
+          alt={t("studentRetentionManagement.alt_img_banner")}
+        />
+
         <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
           <a
             href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
@@ -90,9 +100,9 @@ function StudentRetentionManagement() {
       </div>
       <section className="grid grid-cols-1 lg:grid-cols-2 container mx-auto md:my-10">
         <div>
-          <h2 className="lineSubtitle m-5 mt-8 md:m-2 text-4xl text-blueBase md:text-5xl font-impact">
+          <h1 className="lineSubtitle m-5 mt-8 md:m-2 md:mt-16 text-4xl text-blueBase md:text-5xl font-impact">
             {t("studentRetentionManagement.title")}
-          </h2>
+          </h1>
 
           <div className="flex flex-col items-center lg:items-end md:mr-20 ">
             <motion.div {...slideFromLeft}>
@@ -193,9 +203,9 @@ function StudentRetentionManagement() {
           <div className={styles.orangeBar}></div>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
             <div>
-              <h3 className="text-4xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
+              <h2 className="text-4xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
                 {t("studentRetentionManagement.success.title")}
-              </h3>
+              </h2>
 
               <section className="relative">
                 <div className="mt-5 md:absolute md:ml-2 md:top-36">
@@ -268,6 +278,8 @@ function StudentRetentionManagement() {
           </div>
         </div>
       </section>
+
+      <StudentRetentionService />
     </section>
   );
 }
