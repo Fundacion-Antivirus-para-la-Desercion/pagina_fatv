@@ -13,7 +13,7 @@ function StudentRetentionManagement() {
   const expandableTransition = {
     initial: { opacity: 0, scale: 0.5 },
     whileInView: { opacity: 1, scale: 1 },
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 0.9, ease: "easeOut" },
     viewport: { once: true },
   };
 
@@ -149,7 +149,7 @@ function StudentRetentionManagement() {
             {t("studentRetentionManagement.cardJavi.description_two")}
           </p>
 
-          <div className="flex justify-between w-full max-w-[350px] mt-10">
+          <div className="grid grid-cols-3 justify-between w-full max-w-[350px] mt-10">
             <span className="text-2xl font-renogare text-[#FFBA08]">
               +
               <CounterNumeric countNumber={10000} />
@@ -162,7 +162,7 @@ function StudentRetentionManagement() {
               <CounterNumeric countNumber={100} />%
             </span>
           </div>
-          <div className="flex justify-between w-full max-w-[350px] mt-1">
+          <div className="grid grid-cols-3 justify-between w-full max-w-[350px] mt-1">
             <p className="text-sm  text-white">
               {" "}
               {t("studentRetentionManagement.cardJavi.students")}
@@ -220,27 +220,33 @@ function StudentRetentionManagement() {
               </section>
             </div>
             <div className="content-center flex flex-col items-center md:items-start">
-              <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3">
-                <img
-                  className="shadow-xl w-full border-4 border-white rounded-xl md:min-h-[350px] object-cover"
-                  src={Grupo}
-                  alt={t("studentRetentionManagement.success.alt_img_group")}
-                />
+              <motion.div {...expandableTransition}>
+                <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3">
+                  <img
+                    className="shadow-xl w-full border-4 border-white rounded-xl md:min-h-[350px] object-cover"
+                    src={Grupo}
+                    alt={t("studentRetentionManagement.success.alt_img_group")}
+                  />
 
-                <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
-                  {t("studentRetentionManagement.success.message_group")}
-                </p>
-              </div>
-              <div className="relative flex flex-col md:left-36 w-[300px] md:w-[400px] md:rotate-3 mt-4">
-                <img
-                  className="shadow-xl w-full border-4 border-white rounded-xl"
-                  src={Graduado}
-                  alt={t("studentRetentionManagement.success.alt_img_graduate")}
-                />
-                <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
-                  {t("studentRetentionManagement.success.message_graduate")}
-                </p>
-              </div>
+                  <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
+                    {t("studentRetentionManagement.success.message_group")}
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div {...expandableTransition}>
+                <div className="relative flex flex-col md:left-36 w-[300px] md:w-[400px] md:rotate-3 mt-4">
+                  <img
+                    className="shadow-xl w-full border-4 border-white rounded-xl"
+                    src={Graduado}
+                    alt={t(
+                      "studentRetentionManagement.success.alt_img_graduate"
+                    )}
+                  />
+                  <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
+                    {t("studentRetentionManagement.success.message_graduate")}
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </section>
         </div>
@@ -257,7 +263,7 @@ function StudentRetentionManagement() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ¡Estamos con tigo!💪
+              {t("studentRetentionManagement.success.btn_whatsapp")}
             </a>
           </div>
         </div>
