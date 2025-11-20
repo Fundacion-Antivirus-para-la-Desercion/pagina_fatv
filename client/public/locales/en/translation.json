@@ -533,7 +533,7 @@
     "description": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes."
   },
   "studentRetentionManagement": {
-    "heading": "RETENTION MANAGEMENT",
+    "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student",
     "title": "OBJECTIVE OF RETENTION MANAGEMENT",
     "objectiveOne": {
       "text_one": "🎯Support students throughout their",
@@ -577,6 +577,68 @@
       "alt_success_img": "Estudiante exitoso",
       "see_more": "Ver más historias"
     },
+    "studentRetentionService": {
+      "ourServices": "OUR SERVICES",
+      "title": "WE PROVIDE THE FOLLOWING",
+      "titleSpan": "SERVICES:",
+      "description": "Programs designed to strengthen your retention and success in university",
+      "centralTitle": "OUR",
+      "centralTitleSpan": "SERVICES",
+      "centralParagraph": "A student-centered support ecosystem"
+    },
+    "services": {
+      "academic": {
+        "title": "ACADEMIC",
+        "description": "Academic Strengthening Spaces for clarifying doubts and reinforcing knowledge.",
+        "itemOne": "📚 Academic Tutoring",
+        "itemTwo": "🎓 Academic Mentoring",
+        "itemThree": "👨‍👩‍👦 Study Groups",
+        "itemFour": "⚡ Academic Leveling Workshops",
+        "itemFive": "▶️ Institutional Repository"
+      },
+      "socioEmotional": {
+        "title": "SOCIOEMOTIONAL",
+        "description": "Strengthening students' socioemotional skills through guidance and support sessions.",
+        "itemOne": "💬 Sociopedagogical Advising (SPA)",
+        "itemTwo": "🧠 Psychological Counseling",
+        "itemThree": "💚 Mental Health Promotion",
+        "itemFour": "🧰 Support Toolkit",
+        "itemFive": "😊 Socioemotional Workshops"
+      },
+      "socioEconomic": {
+        "title": "SOCIOECONOMIC",
+        "description": "Mitigate the financial difficulties that may put students' retention at risk.",
+        "itemOne": "💻 Equipment Donation",
+        "itemTwo": "💰 Solidarity Grant",
+        "itemThree": "🤝 Alumni Solidarity",
+        "itemFour": "📊 Shared Income Program",
+        "itemFive": ""
+      },
+      "socioVocational": {
+        "title": "SOCIO-VOCATIONAL",
+        "description": "Group and individual accompaniment providing guidance on self-knowledge, the educational world, and the world of work.",
+        "itemOne": "👥 Socio-Vocational Advising",
+        "itemTwo": "🏛️ Educational Field Trips",
+        "itemThree": "🎯 Guidance Workshops"
+      },
+      "socioVocational|": {
+        "title": "SOCIO-VOCATIONAL",
+        "description": "Group and individual accompaniment providing guidance on self-knowledge, the educational world, and the world of work.",
+        "itemOne": "👥 Socio-Vocational Advising",
+        "itemTwo": "🏛️ Educational Field Trips",
+        "itemThree": "🎯 Guidance Workshops"
+      },
+      "socioEconmic": {
+        "title": "SOCIOECONOMIC",
+        "description": "Mitigate the financial difficulties that may put students' retention at risk.",
+        "itemOne": "",
+        "itemTwo": "",
+        "itemThree": "",
+        "itemFour": "",
+        "itemFive": ""
+      }
+    },
+    "heading": "RETENTION MANAGEMENT",
     "title_success": "YOUR SUCCESS IS OUR SUCCESS",
     "objective_one": {
       "text_one": "🎯To support students throughout their",

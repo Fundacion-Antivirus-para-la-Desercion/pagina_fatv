@@ -571,6 +571,50 @@
       "alt_img_graduate": "Smiling graduate, with the text Your achievement inspires us",
       "message_graduate": "🎉 Your achievement inspires us!",
       "btn_whatsapp": "we are with you!💪"
+    },
+    "studentRetentionService": {
+      "ourServices": "OUR SERVICES",
+      "title": "WE PROVIDE THE FOLLOWING",
+      "titleSpan": "SERVICES:",
+      "description": "Programs designed to strengthen your retention and success in university",
+      "centralTitle": "OUR",
+      "centralTitleSpan": "SERVICES",
+      "centralParagraph": "A student-centered support ecosystem"
+    },
+    "services": {
+      "academic": {
+        "title": "ACADEMIC",
+        "description": "Academic Strengthening Spaces for clarifying doubts and reinforcing knowledge.",
+        "itemOne": "📚 Academic Tutoring",
+        "itemTwo": "🎓 Academic Mentoring",
+        "itemThree": "👨‍👩‍👦 Study Groups",
+        "itemFour": "⚡ Academic Leveling Workshops",
+        "itemFive": "▶️ Institutional Repository"
+      },
+      "socioEmotional": {
+        "title": "SOCIOEMOTIONAL",
+        "description": "Strengthening students' socioemotional skills through guidance and support sessions.",
+        "itemOne": "💬 Sociopedagogical Advising (SPA)",
+        "itemTwo": "🧠 Psychological Counseling",
+        "itemThree": "💚 Mental Health Promotion",
+        "itemFour": "🧰 Support Toolkit",
+        "itemFive": "😊 Socioemotional Workshops"
+      },
+      "socioEconomic": {
+        "title": "SOCIOECONOMIC",
+        "description": "Mitigate the financial difficulties that may put students' retention at risk.",
+        "itemOne": "💻 Equipment Donation",
+        "itemTwo": "💰 Solidarity Grant",
+        "itemThree": "🤝 Alumni Solidarity",
+        "itemFour": "📊 Shared Income Program"
+      },
+      "socioVocational": {
+        "title": "SOCIO-VOCATIONAL",
+        "description": "Group and individual accompaniment providing guidance on self-knowledge, the educational world, and the world of work.",
+        "itemOne": "👥 Socio-Vocational Advising",
+        "itemTwo": "🏛️ Educational Field Trips",
+        "itemThree": "🎯 Guidance Workshops"
+      }
     }
   },
   "provocacion": {

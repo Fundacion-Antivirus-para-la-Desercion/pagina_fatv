@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
  * @param {string} imageMap.esImage - La fuente de la imagen para Español.
  * @returns {string} La fuente (URL o path) de la imagen a renderizar.
  */
-export const useImageByLanguage = ({ enImage, esImage }) => {
+const useImageByLanguage = ({ enImage, esImage }) => {
   const { i18n } = useTranslation();
 
   const currentLanguage = i18n.resolvedLanguage || i18n.language;
@@ -21,3 +21,5 @@ export const useImageByLanguage = ({ enImage, esImage }) => {
   currentLanguage === "es";
   return esImage;
 };
+
+export default useImageByLanguage;
