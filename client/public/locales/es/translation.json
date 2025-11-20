@@ -608,7 +608,7 @@
         "itemFive": "😊 Talleres Socioemocionales"
       },
       "socioEconomic": {
-        "title": "SOCIOECONOMIC",
+        "title": "SOCIOECONÓMICO",
         "description": "Mitigar las dificultades económicas que pueden poner en riesgo la permanencia de los estudiantes.",
         "itemOne": "💻 Donación de Equipos",
         "itemTwo": "💰 Bono Solidario",
@@ -632,6 +632,13 @@
         "itemFour": "",
         "itemFive": ""
       }
+    },
+    "studentRetentionCard": {
+      "title": "TU PERMANENCIA",
+      "span": "ES NUESTRA PRIORIDAD",
+      "description": "Un ecosistema completo diseñado para acompañarte en cada paso de tu camino universitario.",
+      "strong": "Juntos construimos tu éxito",
+      "btnStartNow": "¡COMIENZA AHORA!"
     },
     "heading": "GESTIÓN DE LA PERMANENCIA",
     "title_success": "TU ÉXITO ES NUESTRO ÉXITO",

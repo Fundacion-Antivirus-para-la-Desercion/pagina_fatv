@@ -615,6 +615,13 @@
         "itemTwo": "🏛️ Educational Field Trips",
         "itemThree": "🎯 Guidance Workshops"
       }
+    },
+    "studentRetentionCard": {
+      "title": "YOUR RETENTION",
+      "span": "IS OUR PRIORITY",
+      "description": "A comprehensive ecosystem designed to support you throughout every step of your university journey.",
+      "strong":"Together, We Build Your Success",
+      "btnStartNow": "¡START NOW!"
     }
   },
   "provocacion": {

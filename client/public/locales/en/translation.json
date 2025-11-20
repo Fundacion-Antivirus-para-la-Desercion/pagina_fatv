@@ -638,6 +638,13 @@
         "itemFive": ""
       }
     },
+    "studentRetentionCard": {
+      "title": "YOUR RETENTION",
+      "span": "IS OUR PRIORITY",
+      "description": "A comprehensive ecosystem designed to support you throughout every step of your university journey.",
+      "strong": "Together, We Build Your Success",
+      "btnStartNow": "¡START NOW!"
+    },
     "heading": "RETENTION MANAGEMENT",
     "title_success": "YOUR SUCCESS IS OUR SUCCESS",
     "objective_one": {
