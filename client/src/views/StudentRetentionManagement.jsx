@@ -37,7 +37,7 @@ function StudentRetentionManagement() {
 
   return (
     <section className="lg:pt-[145px]">
-      <div className="relative w-full h-72 sm:h-80 md:h-96">
+      <div className="relative w-full">
         <img
           src={bannerByLanguage}
           alt={t("studentRetentionManagement.alt_img_banner")}
@@ -260,7 +260,7 @@ function StudentRetentionManagement() {
             </div>
           </section>
         </div>
-        <div className="flex justify-center mt-10 md:mt-0 md:justify-start items-center md:ml-2">
+        <div className="flex justify-center mt-10 mb-5 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2">
           <img
             className="w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
             src={JaviGinandoOjo}
