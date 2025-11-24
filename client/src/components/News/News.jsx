@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 import "./News.css";
 import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
+import BannerNewsEn from "../../assets/images/views/imagesNews/news.webp"
+import BannerNewsEs from "../../assets/images/views/imagesNews/noticias.webp"
 import Date from "../../../src/assets/Icons/date.svg";
 import Arrow from "../../../src/assets/Icons/arrow.svg";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray from "./newsArray";
+import useImageByLanguage from "../../hooks/useImageByLanguage";
 
 import { useTranslation } from "react-i18next";
 
 function News() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+    const bannerByLanguage = useImageByLanguage({
+    enImage: BannerNewsEn,
+    esImage: BannerNewsEs,
+  });
 
   const [socialMedia] = useState([
     {
@@ -51,14 +59,14 @@ function News() {
         <div className="flex flex-col items-center justify-center">
           <div className="relative w-full h-60 sm:h-80 md:h-96">
             <img
-              src={imgBannerATV}
+              src={bannerByLanguage}
               alt="Banner"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0"></div>
-            <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
+            {/* <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
               {t("news.title")}
-            </h1>
+            </h1> */}
             <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
               {socialMedia.map((social, index) => (
                 <a
@@ -80,7 +88,7 @@ function News() {
         </div>
       </div>
 
-      <section className="noticias-content grid gap-12 p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {buildNewsArray(t).map((news, idx) => (
           <div key={idx}>
             <img className="mb-3 aspect-ratio" src={news.img} alt={news.alt} />

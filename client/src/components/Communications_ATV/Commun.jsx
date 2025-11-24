@@ -1,25 +1,35 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Commun.css";
-import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
+{
+  /*import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp"; */
+}
+import BannerCommunEs from "../../assets/images/views/commun/Comunicaciones.webp";
+import BannerCommunEn from "../../assets/images/views/commun/communications.webp";
 import CommunicationsTeam from "../../../public/img_Communications/communicationsTeam.webp";
+import useImageByLanguage from "../../hooks/useImageByLanguage";
 
 function Commun() {
   const { t } = useTranslation();
+
+  const bannerByLanguage = useImageByLanguage({
+    enImage: BannerCommunEn,
+    esImage: BannerCommunEs,
+  });
 
   return (
     <div id="communications">
       <div className="flex flex-col items-center justify-center">
         <div className="relative w-full">
           <img
-            src={imgBannerATV}
+            src={bannerByLanguage}
             alt="Banner"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
+          {/*<h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
             {t("communications_ATV.commun.title_banner")}
-          </h1>
+          </h1> */}
           <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
             <a
               href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
@@ -81,8 +91,12 @@ function Commun() {
         <div className="data_analytics--cnt">
           <div className="data_analytics--content">
             <div className="data_analytics--text">
-              <p className="title">{t("communications_ATV.commun.our_model")}</p>
-              <h4 className="lineSubtitle subtitle font-impact">{t("communications_ATV.commun.subtitle")}</h4>
+              <p className="title">
+                {t("communications_ATV.commun.our_model")}
+              </p>
+              <h4 className="lineSubtitle subtitle font-impact">
+                {t("communications_ATV.commun.subtitle")}
+              </h4>
 
               <p className="text-justify">
                 {t("communications_ATV.commun.paragraph_1")}
@@ -99,7 +113,10 @@ function Commun() {
             </div>
             <div className="data_analytics--image">
               <picture>
-                <img src={CommunicationsTeam} alt={t("communications_ATV.commun.alt_image")} />
+                <img
+                  src={CommunicationsTeam}
+                  alt={t("communications_ATV.commun.alt_image")}
+                />
               </picture>
             </div>
           </div>
