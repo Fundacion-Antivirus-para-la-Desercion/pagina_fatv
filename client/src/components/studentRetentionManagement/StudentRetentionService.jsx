@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Logo from "../../../public/logo.png";
 import { motion, useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function StudentRetentionService() {
   const { t } = useTranslation();
@@ -218,7 +219,10 @@ function StudentRetentionService() {
                 </strong>
               </p>
               <div className="flex justify-center">
-                <button className="group relative overflow-hidden w-full max-w-[310px] h-[60px] md:h-[75px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-[#FFBA08] to-[#0B8F84]  transform hover:scale-105 transition-all duration-500">
+                <Link
+                  className="group px-16 py-6 relative overflow-hidden w-full max-w-[310px] h-[70px] md:h-[75px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-[#FFBA08] to-[#0B8F84]  transform hover:scale-105 transition-all duration-500"
+                  to="/ContactUs"
+                >
                   <span className="relative">
                     {" "}
                     {t(
@@ -226,7 +230,7 @@ function StudentRetentionService() {
                     )}
                   </span>
                   <div class="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
-                </button>
+                </Link>
               </div>
             </section>
           </div>
