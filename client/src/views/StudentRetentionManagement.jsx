@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Javi from "../assets/images/views/javi/javi-feliz.svg";
-import JaviGinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
+import JaviGuinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
 import BannerRetentionEs from "../assets/images/views/studentretentionManagement/banner-gestion-de-la-permanencia.webp";
 import BannerRetentionEn from "../assets/images/views/studentretentionManagement/banner-student-retetion-managment.webp";
 import Grupo from "../assets/images/views/studentretentionManagement/manos.webp";
@@ -32,6 +32,24 @@ function StudentRetentionManagement() {
     transition: { duration: 0.8, ease: "easeOut" },
     viewport: { once: true, amount: 0.7 },
   };
+
+  const slideFromRight = {
+    initial: { opacity: 0, x: 100 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.7 },
+  };
+
+  const floatSnake = (delay = 0) => ({
+    initial: { y: -10 },
+    animate: { y: [0, -25, 0] },
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "linear",
+      delay,
+    },
+  });
 
   const whatsAppNumber = "573173831481";
 
@@ -98,16 +116,16 @@ function StudentRetentionManagement() {
           </a>
         </div>
       </div>
-      <section className="grid grid-cols-1 lg:grid-cols-2 container mx-auto md:my-10">
+      <section className="grid grid-cols-1 lg:grid-cols-2 container text-center mx-auto md:my-10">
         <div>
           <h1 className="lineSubtitle m-5 mt-8 md:m-2 md:mt-16 text-4xl text-blueBase md:text-5xl font-impact">
             {t("studentRetentionManagement.title")}
           </h1>
 
-          <div className="flex flex-col items-center lg:items-end md:mr-20 ">
+          <div className="flex flex-col items-center lg:items-end md:mr-20">
             <motion.div {...slideFromLeft}>
               {" "}
-              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#FFEBB8] border-l-4 border-[#FFBA08]">
+              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#FFEBB8] border-l-4 border-[#FFBA08] transform hover:scale-105 transition-all duration-500">
                 {t("studentRetentionManagement.objectiveOne.text_one")}{" "}
                 <span className="text-[#FFBA08] font-bold">
                   {t("studentRetentionManagement.objectiveOne.span")}
@@ -116,7 +134,7 @@ function StudentRetentionManagement() {
               </p>
             </motion.div>
             <motion.div {...slideFromLeft}>
-              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#E8FCFB] border-l-4 border-[#28A499]">
+              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#E8FCFB] border-l-4 border-[#28A499] transform hover:scale-105 transition-all duration-500">
                 {t("studentRetentionManagement.objectiveTwo.text_one")}{" "}
                 <span className="text-[#28A499] font-bold">
                   {t("studentRetentionManagement.objectiveTwo.span")}
@@ -125,7 +143,7 @@ function StudentRetentionManagement() {
               </p>
             </motion.div>
             <motion.div {...slideFromLeft}>
-              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#D3C3E3] border-l-4 border-[#7C76B5]">
+              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#D3C3E3] border-l-4 border-[#7C76B5] transform hover:scale-105 transition-all duration-500">
                 {t("studentRetentionManagement.objectiveThree.text_one")}{" "}
                 <span className="text-[#7C76B5] font-bold">
                   {t("studentRetentionManagement.objectiveThree.span")}
@@ -136,21 +154,22 @@ function StudentRetentionManagement() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center bg-[#222D56] rounded-2xl m-3 p-8 text-center max-w-[600px] lg:mx-auto">
-          <img
-            className="w-[130px] h-auto mb-4"
-            src={Javi}
-            alt={t("studentRetentionManagement.cardJavi.alt_img_javi")}
-          />
-
+        <div className="flex flex-col justify-center items-center bg-[#222D56] rounded-3xl m-3 p-8 text-center max-w-[540px] lg:mx-[700]">
+          <motion.div {...floatSnake(0)}>
+            {" "}
+            <img
+              className="w-[150px] h-auto mb-4"
+              src={Javi}
+              alt={t("studentRetentionManagement.cardJavi.alt_img_javi")}
+            />
+          </motion.div>
           <p className="text-white text-2xl font-impact">
             {t("studentRetentionManagement.cardJavi.title_part_one")} <br />{" "}
             <span className="text-[#FFBA08]">
               {t("studentRetentionManagement.cardJavi.title_part_two")}
             </span>
           </p>
-
-          <p className="text-white text-lg w-full md:w-[400px] mt-4 rounded-lg  p-4 bg-[#5e7ea3] border-white">
+          <p className="text-white text-lg w-full md:w-[450px] h-auto mt-4 rounded-2x rounded-2xl border p-4 bg-[#42688dbd] border-white">
             {t("studentRetentionManagement.cardJavi.description_one")} <br />{" "}
             <span className="text-[#FFBA08] font-bold">
               {" "}
@@ -158,7 +177,6 @@ function StudentRetentionManagement() {
             </span>{" "}
             {t("studentRetentionManagement.cardJavi.description_two")}
           </p>
-
           <div className="grid grid-cols-3 justify-between w-full max-w-[350px] mt-10">
             <span className="text-2xl font-renogare text-[#FFBA08]">
               +
@@ -202,14 +220,14 @@ function StudentRetentionManagement() {
           </div>
           <div className={styles.orangeBar}></div>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
-            <div>
-              <h2 className="text-4xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
+            <motion.div {...slideFromLeft}>
+              <h2 className="text-5xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
                 {t("studentRetentionManagement.success.title")}
               </h2>
 
               <section className="relative">
-                <div className="mt-5 md:absolute md:ml-2 md:top-36">
-                  <p className="shadow-lg text-left font-bold text-base sm:text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08] mx-auto md:mx-0">
+                <div className="mt-10 md:mt-5 md:absolute md:ml-4 md:top-20">
+                  <p className="shadow-lg text-center md:text-left font-bold text-lg md:ext-base sm:text-lg text-blueBase w-[340px] h-[90px] md:h-[70px] md:w-[550px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08] mx-auto md:mx-0 transform hover:scale-105 transition-all duration-500">
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
                     <span className="text-[#FFBA08] font-bold">
                       {t(
@@ -218,7 +236,7 @@ function StudentRetentionManagement() {
                     </span>{" "}
                   </p>
 
-                  <p className="shadow-lg mt-4 font-bold text-base sm:text-lg text-blueBase w-[340px] md:w-[500px] p-5 bg-white rounded-xl border-l-4 border-[#28A499] mx-auto md:mx-0">
+                  <p className="shadow-lg text-center md:text-left mt-4 font-bold text-lg md:ext-base  sm:text-lg text-blueBase w-[340px] h-[90px] md:h-[70px] md:w-[550px] p-5 bg-white rounded-xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-all duration-500">
                     {t("studentRetentionManagement.success.paragraph_two")}{" "}
                     <span className="text-[#28A499] font-bold">
                       {t(
@@ -228,12 +246,13 @@ function StudentRetentionManagement() {
                   </p>
                 </div>
               </section>
-            </div>
-            <div className="content-center flex flex-col items-center md:items-start">
-              <motion.div {...expandableTransition}>
-                <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3">
+            </motion.div>
+            <motion.div {...slideFromRight}>
+              {" "}
+              <div className="content-center flex flex-col items-center md:items-start">
+                <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3 transition duration-500 ease-in-out md:hover:rotate-0">
                   <img
-                    className="shadow-xl w-full border-4 border-white rounded-xl md:min-h-[350px] object-cover"
+                    className="shadow-xl w-full border-4 border-white rounded-2xl md:min-h-[350px] object-cover"
                     src={Grupo}
                     alt={t("studentRetentionManagement.success.alt_img_group")}
                   />
@@ -242,33 +261,34 @@ function StudentRetentionManagement() {
                     {t("studentRetentionManagement.success.message_group")}
                   </p>
                 </div>
-              </motion.div>
-              <motion.div {...expandableTransition}>
-                <div className="relative flex flex-col md:left-36 w-[300px] md:w-[400px] md:rotate-3 mt-4">
+
+                <div className="relative flex flex-col md:left-36 w-[300px] md:w-[400px] md:rotate-3 mt-3 transition duration-500 ease-in-out md:hover:rotate-0">
                   <img
-                    className="shadow-xl w-full border-4 border-white rounded-xl"
+                    className="shadow-xl w-full border-4 border-white rounded-2xl"
                     src={Graduado}
                     alt={t(
                       "studentRetentionManagement.success.alt_img_graduate"
                     )}
                   />
-                  <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
+                  <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-xl">
                     {t("studentRetentionManagement.success.message_graduate")}
                   </p>
                 </div>
-              </motion.div>
-            </div>
+              </div>{" "}
+            </motion.div>
           </section>
         </div>
-        <div className="flex justify-center mt-10 mb-5 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2">
-          <img
-            className="w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
-            src={JaviGinandoOjo}
-            alt=""
-          />
+        <div className="flex justify-center mt-10 mb-5 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2 relative md:bottom-20">
+          <motion.div {...floatSnake(0)}>
+            <img
+              className="w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+              src={JaviGuinandoOjo}
+              alt=""
+            />
+          </motion.div>
           <div>
             <a
-              className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-2xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+              className="flex px-4 py-1 bg-white text-[#222D56] border font-bold text-lg rounded-2xl shadow-2xl"
               href={`https://wa.me/${whatsAppNumber}`}
               target="_blank"
               rel="noopener noreferrer"

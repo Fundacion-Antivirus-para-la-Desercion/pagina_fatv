@@ -25,7 +25,7 @@ function StudentRetentionService() {
 
   return (
     <>
-      <section className="text-center mt-10 md:mt-0">
+      <section className="text-center mt-10 md:mt-10">
         <div className="flex items-center justify-center my-6">
           <span className="block w-16 h-[3px] bg-[#FFBA08] mr-4"></span>
           <h2 className="text-[#32526E] font-bold text-sm tracking-[0.3rem]">
@@ -97,7 +97,7 @@ function StudentRetentionService() {
         </div>
 
         <div className="relative flex flex-col items-center border-4 p-5 border-[#2C9BC7] rounded-xl bg-[#CCEDE8] h-[420px] w-[350px]">
-          <div className="absolute -top-6 -right-5 ml-2 bg-[#2C9BC7] p-3 rounded-xl shadow-lg flex items-center justify-center">
+          <div className="absolute -top-6 right-5 ml-2 bg-[#2C9BC7] p-3 rounded-xl shadow-lg flex items-center justify-center">
             <span className="text-3xl">💙</span>
           </div>
           <span className="text-3xl block text-left font-impact m-5 text-[#2C9BC7]">
@@ -156,7 +156,7 @@ function StudentRetentionService() {
         </div>
 
         <div className="relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-xl bg-[#CCEDE8] h-[420px] w-[350px]">
-          <div className="absolute -bottom-6 -right-5 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center">
+          <div className="absolute -bottom-6 right-5 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center">
             <span className="text-3xl">🎯</span>
           </div>
           <span className="text-3xl block text-left font-impact m-5 text-[#0B8F84]">
@@ -184,10 +184,10 @@ function StudentRetentionService() {
       </section>
 
       <motion.div {...expandableTransition}>
-        <section className="flex justify-center items-center min-h-screen mt-10 md:mt-10 mb-2 px-3">
+        <section className="flex justify-center items-center min-h-screen mt-5 md:mt-8 mb-2 px-3">
           <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-[#222D56] via-[#0B8F84] to-[#FFBA08] w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             <section className="bg-white text-center p-8 md:p-10 w-full h-full rounded-[14px] flex flex-col justify-center">
-              <div className="flex justify-center text-4xl md:text-6xl mt-3 md:mt-4">
+              <div className="flex justify-center text-4xl md:text-6xl mt-8 md:mt-4">
                 <motion.span {...floatSnake(0)} className="mx-2">
                   🎯
                 </motion.span>
