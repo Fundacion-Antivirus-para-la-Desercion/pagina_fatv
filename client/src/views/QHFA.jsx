@@ -1,81 +1,26 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import imgBanner from "../../public/img_viewQHav/slider-servicios.webp";
 import emocinal1 from "../../public/img_viewQHav/sociopedagogical-image-1.jpg";
 import emocinal2 from "../../public/img_viewQHav/sociopedagogical-image-2.webp";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
+import BannerQhfaEn from "../assets/images/views/socialIntervention/intervencion-social.webp";
+import BannerQhfaEs from "../assets/images/views/socialIntervention/social-intervention.webp";
+
+import BannerView from "../components/Banner-views/BannerView";
+import { useTranslation } from "react-i18next";
 
 function QHFA() {
   const { t } = useTranslation();
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center lg:pt-[145px]">
-        <div className="relative w-full">
-          <img
-            src={imgBanner}
-            alt={t("qhfa.alt_text.banner")}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
-            {t("qhfa.page_title")}
-          </h1>
-          <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-            <a
-              href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon
-                name="facebook-circle"
-                type="logo"
-                color="#ffffff"
-              ></box-icon>
-            </a>
-            <a
-              href="https://www.instagram.com/somosantivirus/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon
-                name="instagram-alt"
-                type="logo"
-                color="#ffffff"
-              ></box-icon>
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
-            </a>
-            <a
-              href="https://www.tiktok.com/@somosantivirus"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon name="tiktok" type="logo" color="#ffffff"></box-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/antivirus-desercion/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon
-                name="linkedin-square"
-                type="logo"
-                color="#ffffff"
-              ></box-icon>
-            </a>
-          </div>
-        </div>
+      <div className="lg:pt-[145px]">
+        <BannerView
+          imagesBannerMap={{
+            enImage: BannerQhfaEn,
+            esImage: BannerQhfaEs,
+            keyTitle: "",
+          }}
+        />
 
         <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
           <div className="flex flex-col md:flex-row">
@@ -139,9 +84,7 @@ function QHFA() {
               <h1 className="text-blueBase font-impact text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
                 {t("qhfa.academic_strengthening")}
               </h1>
-              <p className="text-blueBase">
-                {t("qhfa.academic_description")}
-              </p>
+              <p className="text-blueBase">{t("qhfa.academic_description")}</p>
             </div>
           </div>
 
@@ -150,7 +93,7 @@ function QHFA() {
               <h1 className="text-blueBase font-impact text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
                 {t("qhfa.psycho_emotional_support")}
               </h1>
-              <p className="text-blueBase" >{t("qhfa.support_intro")}</p>
+              <p className="text-blueBase">{t("qhfa.support_intro")}</p>
               <ul>
                 <li className="list-disc text-blue-links">
                   {t("qhfa.support_list.mental_health")}

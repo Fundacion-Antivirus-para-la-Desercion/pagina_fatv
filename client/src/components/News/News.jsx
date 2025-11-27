@@ -1,91 +1,28 @@
 import React, { useState } from "react";
 import "./News.css";
-import imgBannerATV from "../../../public/img_DataAnalytics/banner-DataAnalytics.webp";
-import BannerNewsEn from "../../assets/images/views/imagesNews/news.webp"
-import BannerNewsEs from "../../assets/images/views/imagesNews/noticias.webp"
+import BannerNewsEn from "../../assets/images/views/imagesNews/news.webp";
+import BannerNewsEs from "../../assets/images/views/imagesNews/noticias.webp";
 import Date from "../../../src/assets/Icons/date.svg";
 import Arrow from "../../../src/assets/Icons/arrow.svg";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray from "./newsArray";
-import useImageByLanguage from "../../hooks/useImageByLanguage";
-
 import { useTranslation } from "react-i18next";
+import BannerView from "../Banner-views/BannerView";
 
 function News() {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-    const bannerByLanguage = useImageByLanguage({
-    enImage: BannerNewsEn,
-    esImage: BannerNewsEs,
-  });
-
-  const [socialMedia] = useState([
-    {
-      href: "https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d",
-      name: "facebook-circle",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.instagram.com/somosantivirus/",
-      name: "instagram-alt",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w",
-      name: "youtube",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.tiktok.com/@somosantivirus",
-      name: "tiktok",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.linkedin.com/company/antivirus-desercion/",
-      name: "linkedin-square",
-      type: "logo",
-      color: "#ffffff",
-    },
-  ]);
-
   return (
     <>
       <div className="lg:pt-[145px]">
-        <div className="flex flex-col items-center justify-center">
-          <div className="relative w-full h-60 sm:h-80 md:h-96">
-            <img
-              src={bannerByLanguage}
-              alt="Banner"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0"></div>
-            {/* <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
-              {t("news.title")}
-            </h1> */}
-            <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-              {socialMedia.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="box-icon"
-                >
-                  <box-icon
-                    name={social.name}
-                    type={social.type}
-                    color={social.color}
-                  ></box-icon>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
+        <BannerView
+          imagesBannerMap={{
+            enImage: BannerNewsEn,
+            esImage: BannerNewsEs,
+            keyTitle: "",
+          }}
+        />
       </div>
 
       <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

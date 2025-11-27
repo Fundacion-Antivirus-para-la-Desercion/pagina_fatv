@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerBootcampsEn from "../../../public/services_imgs/banner-services.jpg";
+import BannerBootcampsEs from "../../../public/services_imgs/banner-services.jpg";
 import nodo from "../../../public/projects/Bootcamps/ne.webp";
 import codigoc13 from "../../../public/projects/Bootcamps/codigoc13.jpg";
+
+import BannerView from "../../components/Banner-views/BannerView";
 
 function Bootcamps() {
   const [img, setImg] = useState([
@@ -21,7 +24,13 @@ function Bootcamps() {
 
   return (
     <div className="lg:pt-[145px]">
-      <BannerView title={"BOOTCAMPS"} />
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerBootcampsEn,
+          esImage: BannerBootcampsEs,
+          keyTitle: "",
+        }}
+      />
       <div className="m-8 sm:m-20">
         {img.map((item, key) => (
           <div key={key} className="mb-10">

@@ -1,79 +1,22 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import imgBanner from "../../public/services_imgs/banner-services.jpg";
+import BannerAcompanamientoEn from "../../public/services_imgs/banner-services.jpg";
 import foto1 from "../../public/services_imgs/foto1.jpg";
 import foto2 from "../../public/services_imgs/foto2-0000.jpg";
+import BannerView from "../components/Banner-views/BannerView";
 
 function AcompañamientoOrientacion() {
   const { t } = useTranslation();
 
   return (
     <div className="lg:pt-[145px]">
-      <div className="relative w-full h-60 sm:h-80 md:h-96">
-        <img
-          src={imgBanner}
-          alt="Banner"
-          className="w-full h-full object-cover"
+       <BannerView
+          imagesBannerMap={{
+            enImage: BannerAcompanamientoEn,
+            esImage: BannerAcompanamientoEn,
+            keyTitle: "",
+          }}
         />
-        <div className="absolute inset-0"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center uppercase font-impact text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-banner">
-          {t("acompañamientoOrientacion.title")}
-        </h1>
-        <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-          <a
-            href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="facebook-circle"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-          <a
-            href="https://www.instagram.com/somosantivirus/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="instagram-alt"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
-          </a>
-          <a
-            href="https://www.tiktok.com/@somosantivirus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon name="tiktok" type="logo" color="#ffffff"></box-icon>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/antivirus-desercion/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="linkedin-square"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-        </div>
-      </div>
 
       <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
         <div className="flex flex-col md:flex-row">

@@ -1,5 +1,5 @@
 import styles from "./ProVocacion.module.css";
-import Provocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
+import BannerFoundationEn from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
 import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.webp";
 import Acompañamiento from "../../src/assets/images/views/proVocacion/collage-provocacion.webp";
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
@@ -11,6 +11,7 @@ import EnMundoLaboral from "../assets/images/views/proVocacion/componentes/the-w
 import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
 import Focus from "../assets/images/views/proVocacion/information/focus.svg";
+import BannerView from "../components/Banner-views/BannerView";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -110,40 +111,6 @@ function ProVocacion() {
     }
   };
 
-  /******************************* */
-  const [socialMedia, setSocialMedia] = useState([
-    {
-      href: "https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d",
-      name: "facebook-circle",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.instagram.com/somosantivirus/",
-      name: "instagram-alt",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w",
-      name: "youtube",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.tiktok.com/@somosantivirus",
-      name: "tiktok",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.linkedin.com/company/antivirus-desercion/",
-      name: "linkedin-square",
-      type: "logo",
-      color: "#ffffff",
-    },
-  ]);
-
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openImageModal = (imageUrl) => {
@@ -210,34 +177,13 @@ function ProVocacion() {
         </div>
       </Modal>
       <section className="lg:pt-[145px]">
-        <div className="flex flex-col items-center justify-center">
-          <div className="relative w-full h-60 sm:h-80 md:h-96">
-            <img
-              src={Provocacion}
-              alt="Banner"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0"></div>
-
-            <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-              {socialMedia.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="box-icon"
-                >
-                  <box-icon
-                    name={social.name}
-                    type={social.type}
-                    color={social.color}
-                  ></box-icon>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
+        <BannerView
+          imagesBannerMap={{
+            enImage: BannerFoundationEn,
+            esImage: BannerFoundationEn,
+            keyTitle: "",
+          }}
+        />
 
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group">
           <a

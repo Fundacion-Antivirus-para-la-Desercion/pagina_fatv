@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Javi from "../assets/images/views/javi/javi-feliz.svg";
 import JaviGuinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
-import BannerRetentionEs from "../assets/images/views/studentretentionManagement/banner-gestion-de-la-permanencia.webp";
 import BannerRetentionEn from "../assets/images/views/studentretentionManagement/banner-student-retetion-managment.webp";
+import BannerRetentionEs from "../assets/images/views/studentretentionManagement/banner-gestion-de-la-permanencia.webp";
 import Grupo from "../assets/images/views/studentretentionManagement/manos.webp";
 import Graduado from "../assets/images/views/studentretentionManagement/graduado.webp";
 import { motion, useInView } from "framer-motion";
@@ -10,6 +10,7 @@ import CounterNumeric from "../components/ContextData/CounterNumer.jsx";
 import styles from "./StudentRetentionManagement.module.css";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
 import useImageByLanguage from "../hooks/useImageByLanguage.js";
+import BannerView from "../components/Banner-views/BannerView.jsx";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
@@ -55,67 +56,14 @@ function StudentRetentionManagement() {
 
   return (
     <section className="lg:pt-[145px]">
-      <div className="relative w-full">
-        <img
-          src={bannerByLanguage}
-          alt={t("studentRetentionManagement.alt_img_banner")}
-        />
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerRetentionEn,
+          esImage: BannerRetentionEs,
+          keyTitle: "studentRetentionManagement.alt_img_banner",
+        }}
+      />
 
-        <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-          <a
-            href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="facebook-circle"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-          <a
-            href="https://www.instagram.com/somosantivirus/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="instagram-alt"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
-          </a>
-          <a
-            href="https://www.tiktok.com/@somosantivirus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon name="tiktok" type="logo" color="#ffffff"></box-icon>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/antivirus-desercion/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="linkedin-square"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-        </div>
-      </div>
       <section className="grid grid-cols-1 lg:grid-cols-2 container text-center mx-auto md:my-10">
         <div>
           <h1 className="lineSubtitle m-5 mt-8 md:m-2 md:mt-16 text-4xl text-blueBase md:text-5xl font-impact">
@@ -298,7 +246,6 @@ function StudentRetentionManagement() {
           </div>
         </div>
       </section>
-
       <StudentRetentionService />
     </section>
   );
