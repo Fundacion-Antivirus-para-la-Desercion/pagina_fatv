@@ -249,12 +249,19 @@ function Header() {
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
-            <li
+            {/* <li
               onMouseEnter={handleMouseEnter}
               className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.for_students")}
-            </li>
+            </li> */}
+            <Link
+              to={"/gestion-de-la-permanencia"}
+              onClick={handleNav}
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
+              {t("header.sub_header.permanence")}
+            </Link>
             <Link
               to="/Consultorias"
               onClick={handleNav}

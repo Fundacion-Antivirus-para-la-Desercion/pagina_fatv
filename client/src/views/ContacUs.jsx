@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import BannerView from "../components/Banner-views/BannerView";
+import BannerContacUsEn from "../assets/images/views/contacUs/contact-us.webp";
+import BannerContacUsEs from "../assets/images/views/contacUs/contactanos.webp";
 import imgContact from "../../public/contactUs/contact-image.webp";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from "emailjs-com";
 import Modal from "../components/modal/Modal";
 import Javi from "../../public/contactUs/Javi cabezas_feliz.svg";
+import BannerView from "../components/Banner-views/BannerView";
 
 function ContactUs() {
   const { t } = useTranslation();
@@ -155,7 +157,13 @@ function ContactUs() {
         </div>
       </Modal>
       <div className="lg:pt-[145px]">
-        <BannerView title={t("contactUs.title")} />
+        <BannerView
+          imagesBannerMap={{
+            enImage: BannerContacUsEn,
+            esImage: BannerContacUsEs,
+            keyTitle: "studentRetentionManagement.alt_img_banner",
+          }}
+        />
         <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
           <div className="relative">
             <img src={imgContact} className="w-full lg:w-auto" />

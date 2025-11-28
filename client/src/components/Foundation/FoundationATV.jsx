@@ -4,7 +4,8 @@ import imgFB from "../../../public/img_Foundation/imgF.webp";
 import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
-import BannerImage from "../../assets/images/views/foundation/banners-sobre-nosotros.webp";
+import BannerFoundationEn from "../../assets/images/views/foundation/about-us.webp";
+import BannerFoundationEs from "../../assets/images/views/foundation/sobre-nosotros.webp";
 import TeoriaCambio from "../../assets/images/views/foundation/entrega-pc.webp";
 import Valores from "../../assets/images/views/foundation/valores.webp";
 import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
@@ -15,6 +16,7 @@ import { Sun, SunBlue } from "../../assets/images/svg/Svg";
 
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
+import BannerView from "../Banner-views/BannerView";
 
 function FoundationATV() {
   const { t } = useTranslation();
@@ -88,71 +90,13 @@ function FoundationATV() {
 
   return (
     <div className="relative w-full">
-      <div className="relative w-full">
-        <img
-          src={BannerImage}
-          alt="Banner"
-          className="w-full h-[69vh] object-cover object-[0_33%]"
-        />
-        <div className="absolute inset-0 "></div>
-        {/*<h1 className="absolute inset-0 flex items-center justify-center font-impact text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
-          {t("foundation.foundationATV.header")}
-        </h1>*/}
-        <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-          <a
-            href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="facebook-circle"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-          <a
-            href="https://www.instagram.com/somosantivirus/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="instagram-alt"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
-          </a>
-          <a
-            href="https://www.tiktok.com/@somosantivirus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon name="tiktok" type="logo" color="#ffffff"></box-icon>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/antivirus-desercion/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="box-icon"
-          >
-            <box-icon
-              name="linkedin-square"
-              type="logo"
-              color="#ffffff"
-            ></box-icon>
-          </a>
-        </div>
-      </div>
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerFoundationEn,
+          esImage: BannerFoundationEs,
+          keyTitle: "",
+        }}
+      />
 
       <div className="aboutUs">
         <div className="aboutUs-content">

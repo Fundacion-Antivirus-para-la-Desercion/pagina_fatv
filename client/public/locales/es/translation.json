@@ -15,6 +15,7 @@
       "socio_emotional_intervention": "INTERVENCIÓN SOCIO-EMOCIONAL",
       "communications": "COMUNICACIONES",
       "for_students": "A LOS ESTUDIANTES",
+      "permanence": "GESTIÓN DE LA PERMANENCIA",
       "consulting": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS",
       "pro_vocation": "PRO-VOCACIÓN",
       "academic_support": "Apoyo Académico",
@@ -531,6 +532,131 @@
     "schools": "Colegios",
     "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
     "description": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares."
+  },
+  "studentRetentionManagement": {
+    "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente",
+    "title": "OBJETIVO DE LA GESTIÓN DE PERMANENCIA",
+    "objectiveOne": {
+      "text_one": "🎯Acompañar a los estudiantes en su",
+      "span": "proceso académico",
+      "text_two": "para que logren culminar exitosamente su carrera universitaria",
+      "objective_two": "",
+      "objective_three": "",
+      "title_success": "TU ÉXITO ES NUESTRO ÉXITO"
+    },
+    "objectiveTwo": {
+      "text_one": "🤝 Fortalecer las",
+      "span": "redes de apoyo",
+      "text_two": "entre estudiantes, docentes y la comunidad universitaria"
+    },
+    "objectiveThree": {
+      "text_one": "📈 Reducir los índices de",
+      "span": "deserción estudiantil",
+      "text_two": "a través de estrategias integrales de acompañamiento"
+    },
+    "cardJavi": {
+      "alt_img_javi": "Javi Feliz, personaje institucional",
+      "title_part_one": "¡PERMANECER ES ",
+      "title_part_two": "LOGRAR TUS SUEÑOS!",
+      "description_one": "La permanencia estudiantil es nuestra prioridad.",
+      "span": "Juntos trabajamos",
+      "description_two": "para que completes tu carrera universitaria con éxito",
+      "students": "Estudiantes",
+      "years": "Años",
+      "commitment": "Compromiso"
+    },
+    "success": {
+      "title": "TU ÉXITO ES NUESTRO ÉXITO",
+      "paragraph_one": "💡Juntos construimos",
+      "paragraph_one_span": "tu camino al éxito",
+      "paragraph_two": "🎓 Porque quedarse es",
+      "paragraph_two_span": "crecer, aprender y alcanzar tus metas",
+      "alt_img_group": "Aprendemos mejor juntos - Estudiantes colaborando en grupo",
+      "message_group": "✨Aprendemos mejor juntos",
+      "alt_img_graduate": "Graduada sonriente, con el texto Tu logro nos inspira",
+      "message_graduate": "🎉 ¡Tu logro nos inspira!",
+      "btn_whatsapp": "¡Estamos con tigo!💪",
+      "alt_success_img": "Estudiante exitoso",
+      "see_more": "Ver más historias"
+    },
+    "studentRetentionService": {
+      "ourServices": "NUESTROS SERVICIOS",
+      "title": "PRESTAMOS LOS SIGUIENTES",
+      "titleSpan": "SERVICIOS:",
+      "description": "Programas diseñados para fortalecer tu permanencia y éxito universitario",
+      "centralTitle": "NUESTROS",
+      "centralTitleSpan": "SERVICIOS",
+      "centralParagraph": "Un ecosistema de acompañamiento centrado en el estudiante"
+    },
+    "services": {
+      "academic": {
+        "title": "ACADÉMICO",
+        "description": "Espacios de fortalecimiento académico en los cuales los estudiantes pueden aclarar dudas reforzar conocimientos.",
+        "itemOne": "Tutorías Académicas",
+        "itemTwo": "Mentorías Académicas",
+        "itemThree": "Grupos de Estudio",
+        "itemFour": "Talleres Nivélate con Antivirus",
+        "itemFive": "Repositorio Institucional"
+      },
+      "socioEmotional": {
+        "title": "SOCIOEMOCIONAL",
+        "description": "Fortalecer las habilidades socioemocionales de los estudiantes a través de espacios de orientación y acompañamiento.",
+        "itemOne": "Asesorías Sociopedagógicas (ASP)",
+        "itemTwo": "Orientación Psicológica",
+        "itemThree": "Promoción de la Salud Mental",
+        "itemFour": "Caja de Herramoientas",
+        "itemFive": "Talleres Socioemocionales"
+      },
+      "socioEconomic": {
+        "title": "SOCIOECONÓMICO",
+        "description": "Mitigar las dificultades económicas que pueden poner en riesgo la permanencia de los estudiantes.",
+        "itemOne": "Donación de Equipos",
+        "itemTwo": "Bono Solidario",
+        "itemThree": "Egresados Solidario",
+        "itemFour": "Ingresos Compartidos",
+        "itemFive": ""
+      },
+      "socioVocational": {
+        "title": "SOCIOVOCACIONAL",
+        "description": "Acompañamiento grupal e individual que brinda orientación en el ámbito del autoconocimiento, el mundo formativo y el mundo laboral.",
+        "itemOne": "Asesorías Sociovocacionales",
+        "itemTwo": "Salidas Pedagógicas",
+        "itemThree": "Talleres de orientación"
+      },
+      "socioEconmic": {
+        "title": "SOCIOECONOMIC",
+        "description": "",
+        "itemOne": "",
+        "itemTwo": "",
+        "itemThree": "",
+        "itemFour": "",
+        "itemFive": ""
+      }
+    },
+    "studentRetentionCard": {
+      "title": "TU PERMANENCIA",
+      "span": "ES NUESTRA PRIORIDAD",
+      "description": "Un ecosistema completo diseñado para acompañarte en cada paso de tu camino universitario.",
+      "strong": "Juntos construimos tu éxito",
+      "btnStartNow": "¡COMIENZA AHORA!"
+    },
+    "heading": "GESTIÓN DE LA PERMANENCIA",
+    "title_success": "TU ÉXITO ES NUESTRO ÉXITO",
+    "objective_one": {
+      "text_one": "🎯Acompañar a los estudiantes en su",
+      "span": "proceso académico",
+      "text_two": "para que logren culminar exitosamente su carrera universitaria.",
+      "objective_two": "",
+      "objective_three": "",
+      "title_success": "TU ÉXITO ES NUESTRO ÉXITO"
+    },
+    "Objective_one_text_one": "🎯Acompañar a los estudiantes en su",
+    "Objective_one_span": "proceso académico",
+    "Objective_one_text_two": "para que logren culminar exitosamente su carrera universitaria.",
+    "Objective_two": "",
+    "Objective_three": "",
+    "Objective_one": "🎯Acompañar a los estudiantes en su",
+    "HEADING": "GESTIÓN DE LA PERMANENCIA"
   },
   "provocacion": {
     "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",

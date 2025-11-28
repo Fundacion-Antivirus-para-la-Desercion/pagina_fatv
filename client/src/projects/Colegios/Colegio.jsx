@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerColegioEn from "../../../public/services_imgs/banner-services.jpg";
+import BannerColegioEs from "../../../public/services_imgs/banner-services.jpg";
 import colegio1 from "../../../public/projects/Colegios/colegioItagui.webp";
+
+import BannerView from "../../components/Banner-views/BannerView";
 
 function Colegio() {
   const [colegios, setColegios] = useState([
@@ -14,7 +17,13 @@ function Colegio() {
 
   return (
     <div className="lg:pt-[145px]">
-      <BannerView title={"COLEGIOS"} />
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerColegioEn,
+          esImage: BannerColegioEs,
+          keyTitle: "",
+        }}
+      />
       <div className="m-8 sm:m-20">
         {colegios.map((item, key) => (
           <div key={key} className="mb-10">
