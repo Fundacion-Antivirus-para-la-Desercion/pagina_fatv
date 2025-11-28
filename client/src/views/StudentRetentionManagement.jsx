@@ -150,7 +150,7 @@ function StudentRetentionManagement() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="relative">
         <div className="transform origin-bottom mt-5 p-[0.05rem]">
           <div className={styles.blueBar}>
             <div
@@ -224,7 +224,7 @@ function StudentRetentionManagement() {
             </motion.div>
           </section>
         </div>
-        <div className="flex justify-center mt-10 mb-5 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2">
+        <div className="absolute flex justify-center mt-10 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2">
           <motion.div {...floatSnake(0)}>
             <img
               className="relative md:bottom-20 w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
