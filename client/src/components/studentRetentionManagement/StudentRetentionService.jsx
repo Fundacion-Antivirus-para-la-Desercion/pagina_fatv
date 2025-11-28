@@ -14,8 +14,8 @@ function StudentRetentionService() {
   };
 
   const floatSnake = (delay = 0) => ({
-    initial: { y: -10 },
-    animate: { y: [0, -25, 0] },
+    initial: { y: -5 },
+    animate: { y: [0, -20, 0] },
     transition: {
       duration: 3,
       repeat: Infinity,
@@ -26,7 +26,11 @@ function StudentRetentionService() {
 
   return (
     <>
-      <section className="text-center mt-10 md:mt-10">
+      <section className="text-center mt-10 md:mt-5">
+        <div
+          className="relative right-0 bottom-0 w-[66%] h-[50px] bg-[#FFBA08] ml-auto z-[-1]
+          [clip-path:polygon(0%_70%,100%_0%,100%_100%,0%_100%)]"
+        ></div>
         <div className="flex items-center justify-center my-6">
           <span className="block w-16 h-[3px] bg-[#FFBA08] mr-4"></span>
           <h2 className="text-[#32526E] font-bold text-sm tracking-[0.3rem]">
@@ -48,8 +52,8 @@ function StudentRetentionService() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-8 mt-16 place-items-center">
-        <div className="relative flex flex-col items-center border-4 p-5 border-[#FFBA08] rounded-xl bg-[#FFF8E6] h-[420px] w-[350px]">
-          <div className="absolute -top-6 -left-5 ml-2 bg-[#FFBA08] p-3 rounded-xl shadow-lg flex items-center justify-center">
+        <div className="group relative flex flex-col items-center border-4 p-5 border-[#FFBA08] rounded-3xl bg-[#FFF8E6] h-[460px] w-[350px] hover:shadow-[0_10px_20px_0_#FFEBB8] transition-all duration-500 hover:-translate-y-2">
+          <div className="absolute flex -top-6 -left-5 ml-2 bg-[#FFBA08] p-3 rounded-xl shadow-lg items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">📚</span>
           </div>
           <span className="text-3xl block text-left font-impact m-5 text-[#FFBA08]">
@@ -59,46 +63,66 @@ function StudentRetentionService() {
             {t("studentRetentionManagement.services.academic.description")}
           </p>
           <ul className="">
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                📚
+              </span>
               {t("studentRetentionManagement.services.academic.itemOne")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                🎓
+              </span>
               {t("studentRetentionManagement.services.academic.itemTwo")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                👨‍👩‍👦
+              </span>
               {t("studentRetentionManagement.services.academic.itemThree")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                ⚡
+              </span>
               {t("studentRetentionManagement.services.academic.itemFour")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                ▶️
+              </span>
               {t("studentRetentionManagement.services.academic.itemFive")}
             </li>
           </ul>
         </div>
 
-        <div className="hidden md:block row-span-2 rounded-full flex-col items-center justify-center border-[6px] p-5 border-[#FFBA08] h-[350px] w-[350px] border-5">
-          <span className="flex justify-center text-6xl align-middle ">🎓</span>
-          <p className="text-4xl text-[#222D56] font-impact text-center p-5">
-            {t(
-              "studentRetentionManagement.studentRetentionService.centralTitle"
-            )}{" "}
-            <span className="text-[#FFBA08]">
-              <br />{" "}
+        <div className="relative hidden md:block row-span-2 inset-0 m-auto bg-[#DCEBF9] rounded-full h-[400px] w-[400px] z-[2]">
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute flex flex-col  rounded-full inset-0 m-auto items-center justify-center border-[6px] bg-white border-[#FFBA08] h-[330px] w-[330px] z-[2]"
+          >
+            <span className="text-6xl align-middle ">🎓</span>
+            <p className="text-4xl text-[#222D56] font-impact text-center">
               {t(
-                "studentRetentionManagement.studentRetentionService.centralTitleSpan"
+                "studentRetentionManagement.studentRetentionService.centralTitle"
               )}{" "}
-            </span>
-          </p>
-          <p className="text-lg text-center p-2">
-            {t(
-              "studentRetentionManagement.studentRetentionService.centralParagraph"
-            )}
-          </p>
+              <span className="text-[#FFBA08]">
+                <br />{" "}
+                {t(
+                  "studentRetentionManagement.studentRetentionService.centralTitleSpan"
+                )}{" "}
+              </span>
+            </p>
+            <p className="text-lg text-center p-2">
+              {t(
+                "studentRetentionManagement.studentRetentionService.centralParagraph"
+              )}
+            </p>
+          </motion.div>
         </div>
 
-        <div className="relative flex flex-col items-center border-4 p-5 border-[#2C9BC7] rounded-xl bg-[#CCEDE8] h-[420px] w-[350px]">
-          <div className="absolute -top-6 right-5 ml-2 bg-[#2C9BC7] p-3 rounded-xl shadow-lg flex items-center justify-center">
+        <div className="group relative flex flex-col items-center border-4 p-5 border-[#2C9BC7] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2">
+          <div className="absolute -top-6 -right-3 ml-3 bg-[#2C9BC7] p-3 rounded-xl shadow-lg flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">💙</span>
           </div>
           <span className="text-3xl block text-left font-impact m-5 text-[#2C9BC7]">
@@ -110,28 +134,43 @@ function StudentRetentionService() {
             )}
           </p>
           <ul className="">
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                💬
+              </span>
               {t("studentRetentionManagement.services.socioEmotional.itemOne")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                🧠
+              </span>
               {t("studentRetentionManagement.services.socioEmotional.itemTwo")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                💚
+              </span>
               {t(
                 "studentRetentionManagement.services.socioEmotional.itemThree"
               )}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                🧰
+              </span>
               {t("studentRetentionManagement.services.socioEmotional.itemFour")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                😊
+              </span>
               {t("studentRetentionManagement.services.socioEmotional.itemFive")}
             </li>
           </ul>
         </div>
 
-        <div className="relative flex flex-col items-center border-4 p-5 border-[#7C76B5] rounded-xl bg-[#D3C3E3] h-[420px] w-[350px]">
-          <div className="absolute  -bottom-6 -left-5 ml-2 bg-[#7C76B5] p-3 rounded-xl shadow-lg flex items-center justify-center">
+        <div className="group relative flex flex-col items-center border-4 p-5 border-[#7C76B5] rounded-3xl bg-[#D3C3E3] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#D3C3E3] transition-all duration-500 hover:-translate-y-2">
+          <div className="absolute  -bottom-6 -left-5 ml-2 bg-[#7C76B5] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">💰</span>
           </div>
           <span className="text-3xl block text-left font-impact m-5 text-[#7C76B5]">
@@ -141,23 +180,35 @@ function StudentRetentionService() {
             {t("studentRetentionManagement.services.socioEconomic.description")}
           </p>
           <ul className="">
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                💻
+              </span>
               {t("studentRetentionManagement.services.socioEconomic.itemOne")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                💰
+              </span>
               {t("studentRetentionManagement.services.socioEconomic.itemTwo")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                🤝
+              </span>
               {t("studentRetentionManagement.services.socioEconomic.itemThree")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                📊
+              </span>
               {t("studentRetentionManagement.services.socioEconomic.itemFour")}
             </li>
           </ul>
         </div>
 
-        <div className="relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-xl bg-[#CCEDE8] h-[420px] w-[350px]">
-          <div className="absolute -bottom-6 right-5 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center">
+        <div className="group relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2">
+          <div className="absolute -bottom-6 -right-3 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">🎯</span>
           </div>
           <span className="text-3xl block text-left font-impact m-5 text-[#0B8F84]">
@@ -169,13 +220,22 @@ function StudentRetentionService() {
             )}
           </p>
           <ul className="">
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                👥
+              </span>
               {t("studentRetentionManagement.services.socioVocational.itemOne")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                🏛️
+              </span>
               {t("studentRetentionManagement.services.socioVocational.itemTwo")}
             </li>
-            <li className="bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+                🎯
+              </span>
               {t(
                 "studentRetentionManagement.services.socioVocational.itemThree"
               )}
@@ -185,7 +245,7 @@ function StudentRetentionService() {
       </section>
 
       <motion.div {...expandableTransition}>
-        <section className="flex justify-center items-center min-h-screen mt-5 md:mt-8 mb-2 px-3">
+        <section className="flex justify-center items-center min-h-screen mt-5 md:mt-8 md:mb-2 px-3">
           <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-[#222D56] via-[#0B8F84] to-[#FFBA08] w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             <section className="bg-white text-center p-8 md:p-10 w-full h-full rounded-[14px] flex flex-col justify-center">
               <div className="flex justify-center text-4xl md:text-6xl mt-8 md:mt-4">

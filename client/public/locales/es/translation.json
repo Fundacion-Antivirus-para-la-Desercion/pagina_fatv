@@ -592,36 +592,36 @@
       "academic": {
         "title": "ACADÉMICO",
         "description": "Espacios de fortalecimiento académico en los cuales los estudiantes pueden aclarar dudas reforzar conocimientos.",
-        "itemOne": "📚 Tutorías Académicas",
-        "itemTwo": "🎓 Mentorías Académicas",
-        "itemThree": "👨‍👩‍👦 Grupos de Estudio",
-        "itemFour": "⚡ Talleres Nivélate con Antivirus",
-        "itemFive": "▶️ Repositorio Institucional"
+        "itemOne": "Tutorías Académicas",
+        "itemTwo": "Mentorías Académicas",
+        "itemThree": "Grupos de Estudio",
+        "itemFour": "Talleres Nivélate con Antivirus",
+        "itemFive": "Repositorio Institucional"
       },
       "socioEmotional": {
         "title": "SOCIOEMOCIONAL",
         "description": "Fortalecer las habilidades socioemocionales de los estudiantes a través de espacios de orientación y acompañamiento.",
-        "itemOne": "💬 Asesorías Sociopedagógicas (ASP)",
-        "itemTwo": "🧠 Orientación Psicológica",
-        "itemThree": "💚 Promoción de la Salud Mental",
-        "itemFour": "🧰 Caja de Herramoientas",
-        "itemFive": "😊 Talleres Socioemocionales"
+        "itemOne": "Asesorías Sociopedagógicas (ASP)",
+        "itemTwo": "Orientación Psicológica",
+        "itemThree": "Promoción de la Salud Mental",
+        "itemFour": "Caja de Herramoientas",
+        "itemFive": "Talleres Socioemocionales"
       },
       "socioEconomic": {
         "title": "SOCIOECONÓMICO",
         "description": "Mitigar las dificultades económicas que pueden poner en riesgo la permanencia de los estudiantes.",
-        "itemOne": "💻 Donación de Equipos",
-        "itemTwo": "💰 Bono Solidario",
-        "itemThree": "🤝 Egresados Solidario",
-        "itemFour": "📊 Ingresos Compartidos",
+        "itemOne": "Donación de Equipos",
+        "itemTwo": "Bono Solidario",
+        "itemThree": "Egresados Solidario",
+        "itemFour": "Ingresos Compartidos",
         "itemFive": ""
       },
       "socioVocational": {
         "title": "SOCIOVOCACIONAL",
         "description": "Acompañamiento grupal e individual que brinda orientación en el ámbito del autoconocimiento, el mundo formativo y el mundo laboral.",
-        "itemOne": "👥 Asesorías Sociovocacionales",
-        "itemTwo": "🏛️ Salidas Pedagógicas",
-        "itemThree": "🎯 Talleres de orientación"
+        "itemOne": "Asesorías Sociovocacionales",
+        "itemTwo": "Salidas Pedagógicas",
+        "itemThree": "Talleres de orientación"
       },
       "socioEconmic": {
         "title": "SOCIOECONOMIC",

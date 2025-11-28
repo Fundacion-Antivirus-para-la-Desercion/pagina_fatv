@@ -15,11 +15,6 @@ import BannerView from "../components/Banner-views/BannerView.jsx";
 function StudentRetentionManagement() {
   const { t } = useTranslation();
 
-  const bannerByLanguage = useImageByLanguage({
-    enImage: BannerRetentionEn,
-    esImage: BannerRetentionEs,
-  });
-
   const expandableTransition = {
     initial: { opacity: 0, scale: 0.5 },
     whileInView: { opacity: 1, scale: 1 },
@@ -31,14 +26,14 @@ function StudentRetentionManagement() {
     initial: { opacity: 0, x: -100 },
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.7 },
+    viewport: { once: true, amount: 0.6 },
   };
 
   const slideFromRight = {
     initial: { opacity: 0, x: 100 },
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.7 },
+    viewport: { once: true, amount: 0.6 },
   };
 
   const floatSnake = (delay = 0) => ({
@@ -101,8 +96,11 @@ function StudentRetentionManagement() {
             </motion.div>
           </div>
         </div>
-
         <div className="flex flex-col justify-center items-center bg-[#222D56] rounded-3xl m-3 p-8 text-center max-w-[540px] lg:mx-[700]">
+          <motion.div
+            {...floatSnake(0)}
+            className="self-start relative ml-auto -top-10 w-[55px] h-[55px] rounded-full bg-[#ffffff13]  z-[2]"
+          ></motion.div>
           <motion.div {...floatSnake(0)}>
             {" "}
             <img
@@ -168,14 +166,14 @@ function StudentRetentionManagement() {
           </div>
           <div className={styles.orangeBar}></div>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
-            <motion.div {...slideFromLeft}>
+            <motion.div className="will-change-transform" {...slideFromLeft}>
               <h2 className="text-5xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
                 {t("studentRetentionManagement.success.title")}
               </h2>
 
               <section className="relative">
                 <div className="mt-10 md:mt-5 md:absolute md:ml-4 md:top-20">
-                  <p className="shadow-lg text-center md:text-left font-bold text-lg md:ext-base sm:text-lg text-blueBase w-[340px] h-[90px] md:h-[70px] md:w-[550px] p-5 bg-white rounded-xl border-l-4 border-[#FFBA08] mx-auto md:mx-0 transform hover:scale-105 transition-all duration-500">
+                  <p className="shadow-lg text-center md:text-left text-lg md:text-lg sm:text-lg text-[#222D56] w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#FFBA08] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
                     <span className="text-[#FFBA08] font-bold">
                       {t(
@@ -184,7 +182,7 @@ function StudentRetentionManagement() {
                     </span>{" "}
                   </p>
 
-                  <p className="shadow-lg text-center md:text-left mt-4 font-bold text-lg md:ext-base  sm:text-lg text-blueBase w-[340px] h-[90px] md:h-[70px] md:w-[550px] p-5 bg-white rounded-xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-all duration-500">
+                  <p className="shadow-lg text-center md:text-left mt-4 text-lg md:text-lg sm:text-lg text-[#222D56] w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
                     {t("studentRetentionManagement.success.paragraph_two")}{" "}
                     <span className="text-[#28A499] font-bold">
                       {t(
@@ -195,7 +193,7 @@ function StudentRetentionManagement() {
                 </div>
               </section>
             </motion.div>
-            <motion.div {...slideFromRight}>
+            <motion.div className="will-change-transform" {...slideFromRight}>
               {" "}
               <div className="content-center flex flex-col items-center md:items-start">
                 <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3 transition duration-500 ease-in-out md:hover:rotate-0">
@@ -226,17 +224,17 @@ function StudentRetentionManagement() {
             </motion.div>
           </section>
         </div>
-        <div className="flex justify-center mt-10 mb-5 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2 relative md:bottom-20">
+        <div className="flex justify-center mt-10 mb-5 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2">
           <motion.div {...floatSnake(0)}>
             <img
-              className="w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+              className="relative md:bottom-20 w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
               src={JaviGuinandoOjo}
               alt=""
             />
           </motion.div>
           <div>
             <a
-              className="flex px-4 py-1 bg-white text-[#222D56] border font-bold text-lg rounded-2xl shadow-2xl"
+              className="flex relative md:bottom-20 px-4 py-1 bg-white text-[#222D56] border font-bold text-lg rounded-2xl shadow-2xl"
               href={`https://wa.me/${whatsAppNumber}`}
               target="_blank"
               rel="noopener noreferrer"
