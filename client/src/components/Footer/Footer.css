@@ -5,7 +5,6 @@ html {
 footer {
   position: relative;
   width: 94%;
-  background-color: #222d56;
   color: white;
   padding: 5% 5% 0% 5%;
   display: flex;
@@ -91,7 +90,6 @@ footer {
 
 @media screen and (min-width: 767px) and (max-width: 979px) {
   footer {
-    background-color: #222d56;
     display: flex;
   }
 
@@ -118,7 +116,6 @@ footer {
 @media screen and (min-width: 0px) and (max-width: 766px) {
   footer {
     width: 100%;
-    background-color: #222d56;
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;

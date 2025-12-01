@@ -52,7 +52,7 @@ function App() {
           {/* <Route path="/Universidades" element={<Universidades />} /> */}
           {/*<Route path="/Bootcamps" element={<Bootcamps />} />  */}
           {/* <Route path="/Becarios" element={<Becarios />} /> */}
-          {/*} <Route path="/colegios" element={<Colegio />} /> */}
+          {/* <Route path="/colegios" element={<Colegio />} /> */}
           <Route path="/provocacion" element={<ProVocacion />} />
           <Route path="/news/detail" element={<NewsDetail />} />
         </Route>

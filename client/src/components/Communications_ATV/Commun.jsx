@@ -7,19 +7,19 @@ function Commun() {
   const { t } = useTranslation();
 
   return (
-    <div id="communications">
+    <div id="communications flex flex-col items-center">
       <div className="data_analytics">
         <div className="data_analytics--cnt">
           <div className="data_analytics--content">
             <div className="data_analytics--text">
-              <p className="title">
+              <p className="title text-blue-base">
                 {t("communications_ATV.commun.our_model")}
               </p>
-              <h4 className="lineSubtitle subtitle font-impact">
+              <h1 className="lineSubtitle text-blue-base font-impact">
                 {t("communications_ATV.commun.subtitle")}
-              </h4>
+              </h1>
 
-              <p className="text-justify">
+              <p className="text-justify text-blue-base">
                 {t("communications_ATV.commun.paragraph_1")}
                 <br />
                 <br />

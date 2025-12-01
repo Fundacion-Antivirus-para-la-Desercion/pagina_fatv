@@ -2,8 +2,8 @@ import React from "react";
 import emocinal1 from "../../public/img_viewQHav/sociopedagogical-image-1.jpg";
 import emocinal2 from "../../public/img_viewQHav/sociopedagogical-image-2.webp";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
-import BannerQhfaEn from "../assets/images/views/socialIntervention/intervencion-social.webp";
-import BannerQhfaEs from "../assets/images/views/socialIntervention/social-intervention.webp";
+import BannerQhfaEn from "../assets/images/views/socialIntervention/social-intervention.webp";
+import BannerQhfaEs from "../assets/images/views/socialIntervention/intervencion-social.webp";
 
 import BannerView from "../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
@@ -25,13 +25,13 @@ function QHFA() {
         <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 pr-7">
-              <h1 className="tracking-nm text-blueBase">
+              <h1 className="tracking-nm text-blue-base">
                 {t("qhfa.our_model")}
               </h1>
-              <h1 className="lineSubtitle text-blueBase font-impact text-[3em] leading-[.92] uppercase sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+              <h2 className="lineSubtitle text-blue-base font-impact text-4xl md:text leading-[.92] uppercase sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
                 {t("qhfa.socio_emotional_intervention")}
-              </h1>
-              <p className="text-blueBase">
+              </h2>
+              <p className="mt-8 text-blue-base text-justify">
                 {t("qhfa.intervention_description")}
               </p>
             </div>
@@ -39,7 +39,7 @@ function QHFA() {
               <img
                 src={emocinal1}
                 alt={t("qhfa.alt_text.emotional_1")}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover mt-5 md:mt-0"
               />
             </div>
           </div>
@@ -53,11 +53,11 @@ function QHFA() {
               >
                 <div className="relative">
                   <img
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover mt-5 md:mt-0"
                     src={emocinal2}
                     alt={t("qhfa.alt_text.emotional_2")}
                   />
-                  <div className="absolute inset-0 text-blueBase opacity-80"></div>
+                  <div className="absolute inset-0 text-blue-base opacity-80"></div>
                   <div className="absolute inset-0 flex justify-center items-center">
                     <svg
                       width="117"
@@ -80,31 +80,33 @@ function QHFA() {
               </a>
             </div>
 
-            <div className="w-full md:w-1/2 pl-7">
-              <h1 className="text-blueBase font-impact text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
+            <div className="w-full md:w-1/2 md:pl-7">
+              <h3 className="text-blue-base font-impact text-4xl md:text-4xl lg:text-5xl my-8">
                 {t("qhfa.academic_strengthening")}
-              </h1>
-              <p className="text-blueBase">{t("qhfa.academic_description")}</p>
+              </h3>
+              <p className="text-blue-base text-justify">
+                {t("qhfa.academic_description")}
+              </p>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row relative ">
-            <div className="w-full md:w-1/2 pr-7">
-              <h1 className="text-blueBase font-impact text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
+            <div className="w-full md:w-1/2 md:pr-7">
+              <h4 className="text-blue-base font-impact text-4xl md:text-4xl lg:text-5xl my-8">
                 {t("qhfa.psycho_emotional_support")}
-              </h1>
-              <p className="text-blueBase">{t("qhfa.support_intro")}</p>
-              <ul>
-                <li className="list-disc text-blue-links">
+              </h4>
+              <p className="text-blue-base text-xl">{t("qhfa.support_intro")}</p>
+              <ul className="mt-5">
+                <li className="list-disc text-blue-base">
                   {t("qhfa.support_list.mental_health")}
                 </li>
-                <li className="list-disc text-blue-links">
+                <li className="list-disc text-blue-base">
                   {t("qhfa.support_list.vocational_guidance")}
                 </li>
-                <li className="list-disc text-blue-links">
+                <li className="list-disc text-blue-base">
                   {t("qhfa.support_list.strengthen_skills")}
                 </li>
-                <li className="list-disc text-blue-links">
+                <li className="list-disc text-blue-base">
                   {t("qhfa.support_list.organize_workshops")}
                 </li>
               </ul>
@@ -112,7 +114,7 @@ function QHFA() {
 
             <div className="w-full md:w-1/2">
               <img
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover mt-5 md:mt-0"
                 src={emocional3}
                 alt={t("qhfa.alt_text.emotional_3")}
               />

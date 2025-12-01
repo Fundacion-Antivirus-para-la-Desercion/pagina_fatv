@@ -22,19 +22,19 @@ function Consultorias() {
 
       <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
         <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 max-sm:text-center">
-          <p className="tracking-nm text-blueBase">
+          <p className="tracking-nm text-blue-base">
             {t("consultorias.services_title")}
           </p>
-          <h1 className="lineSubtitle text-blueBase font-impact text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+          <h1 className="lineSubtitle text-blue-base font-impact text-4xl md:text-5xl lg:text-5xl mb-2 mt-2">
             {t("consultorias.main_consulting_title")}
           </h1>
-          <ul className="text-blueBase list-disc text-xl mb-10">
+          <ul className="text-blue-base list-disc text-xl mb-10 mt-8">
             <li>{t("consultorias.universities")}</li>
             <li>{t("consultorias.bootcamps")}</li>
             <li>{t("consultorias.schools")}</li>
             <li>{t("consultorias.scholarship_programs")}</li>
           </ul>
-          <p className="text-blueBase text-xl">
+          <p className="text-blue-base text-xl text-justify">
             {t("consultorias.description")}
           </p>
         </div>

@@ -27,7 +27,7 @@ function Colegio() {
       <div className="m-8 sm:m-20">
         {colegios.map((item, key) => (
           <div key={key} className="mb-10">
-            <h1 className="text-yellow-500 text-2xl font-bold mb-4">
+            <h1 className="text-primary-yellow text-2xl font-bold mb-4">
               {item.name}
             </h1>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
@@ -36,7 +36,7 @@ function Colegio() {
                 src={item.img}
                 alt={item.name}
               />
-              <p className="text-blue-600 text-lg lg:w-1/2">{item.parrafo}</p>
+              <p className="text-blue-base text-lg lg:w-1/2">{item.parrafo}</p>
             </div>
           </div>
         ))}

@@ -169,7 +169,7 @@ function ProVocacion() {
         <div className="flex flex-col items-center text-center">
           <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" />
 
-          <h2 className="text-2xl font-bold mb-2 text-center text-title">
+          <h2 className="text-2xl font-bold mb-2 text-center text-blue-base">
             {t("provocacion.modal.title")}
           </h2>
 
@@ -193,7 +193,7 @@ function ProVocacion() {
             rel="noopener noreferrer"
           >
             <img src={Focus} alt="Botón fijo" className="w-10 h-10" />
-            <span className="text-title font-bold">
+            <span className="text-blue-base font-bold">
               {t("provocacion.let_yourself_be_provoked")}
             </span>
           </a>
@@ -203,12 +203,12 @@ function ProVocacion() {
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center">
         <div>
           <h1
-            className={`lineSubtitle mb-5 text-4xl text-title leading-tight font-impact max-md:text-3xl  ${styles.title}`}
+            className={`lineSubtitle mt-5 md:mt-0 mb-5 text-4xl text-blue-base leading-tight font-impact md:text-5xl  ${styles.title}`}
           >
             {t("provocacion.title_initial")}
           </h1>
           <p
-            className={`text-xl tracking-tighter text-justify max-w-prose mx-auto ${styles.text}`}
+            className="text-blue-base text-base md:text-xl tracking-tighter text-justify max-w-prose mx-auto"
           >
             {t("provocacion.description")}
           </p>
@@ -234,7 +234,7 @@ function ProVocacion() {
 
       <section className="p-5">
         <h2
-          className={`text-5xl text-title font-impact max-md:text-3xl text-center ${styles.title}`}
+          className={`text-5xl text-blue-base font-impact max-md:text-3xl text-center ${styles.title}`}
         >
           {t("provocacion.title_future")}
         </h2>
@@ -251,7 +251,7 @@ function ProVocacion() {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="cursor-pointer border-4 border-[#faa307] rounded-xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
+        <div className="cursor-pointer border-4 border-primary-yellow rounded-xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
           <img
             src={isEnglish ? EnMundoFormativo : MundoFormativo}
             alt="Mundo Formativo"
@@ -262,7 +262,7 @@ function ProVocacion() {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="cursor-pointer border-4 border-[#21294F] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-2xl">
+        <div className="cursor-pointer border-4 border-dark-blue rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-2xl">
           <img
             src={isEnglish ? EnMundoLaboral : MundoLaboral}
             alt="Mundo Laboral"
@@ -303,12 +303,12 @@ function ProVocacion() {
       <div className="w-full h-full bg-white mt-40 relative">
         <h3
           id="form-contac-us"
-          className="text-5xl text-[#F6A623] font-impact text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
+          className="text-5xl text-primary-yellow font-impact text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
         >
           {t("provocacion.title")}
         </h3>
 
-        <div className="bg-blue-links w-full h-90 mb-20 flex items-center justify-center">
+        <div className="bg-dark-blue w-full h-90 mb-20 flex items-center justify-center">
           <form
             className="w-full h-full px-8 py-10 md:px-44 md:py-32 bg-blue-link text-white shadow-md rounded-md relative"
             onSubmit={handleSubmit}
@@ -318,39 +318,39 @@ function ProVocacion() {
                 <input
                   type="text"
                   placeholder={t("provocacion.full_name_placeholder")}
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
                 />
                 {errors.fullName && (
-                  <p className="text-[#F6A623]">{errors.fullName}</p>
+                  <p className="text-primary-yellow">{errors.fullName}</p>
                 )}
               </div>
               <div>
                 <input
                   type="email"
                   placeholder={t("provocacion.email_placeholder")}
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                 />
                 {errors.email && (
-                  <p className="text-[#F6A623]">{errors.email}</p>
+                  <p className="text-primary-yellow">{errors.email}</p>
                 )}
               </div>
               <div>
                 <input
                   type="text"
                   placeholder={t("provocacion.phone_placeholder")}
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="phone"
                   value={formData.phone}
                   onChange={validatePhoneNumber}
                 />
                 {errors.phone && (
-                  <p className="text-[#F6A623]">{errors.phone}</p>
+                  <p className="text-primary-yellow">{errors.phone}</p>
                 )}
               </div>
               <div>
@@ -359,7 +359,7 @@ function ProVocacion() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 >
                   <option value="">
                     {t("provocacion.subject_placeholder")}
@@ -387,27 +387,27 @@ function ProVocacion() {
                 {/*<input
                   type="text"
                   placeholder="ASUNTO"
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
                 />*/}
                 {errors.subject && (
-                  <p className="text-[#F6A623]">{errors.subject}</p>
+                  <p className="text-primary-yellow">{errors.subject}</p>
                 )}
               </div>
             </div>
             <div className="mt-4">
               <textarea
                 placeholder={t("provocacion.message_placeholder")}
-                className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 rows="1"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
               {errors.message && (
-                <p className="text-[#F6A623]">{errors.message}</p>
+                <p className="text-primary-yellow">{errors.message}</p>
               )}
             </div>
             <div className="mt-4 flex items-center flex-wrap">
@@ -423,13 +423,13 @@ function ProVocacion() {
                 {t("provocacion.terms_label")}
               </label>
               {errors.terms && (
-                <p className="w-full text-[#F6A623]">{errors.terms}</p>
+                <p className="w-full text-primary-yellow">{errors.terms}</p>
               )}
             </div>
             <div className="mt-4 flex justify-center">
               <button
                 type="submit"
-                className={`w-full md:w-1/2 bg-white text-[#222D56] font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
+                className={`w-full md:w-1/2 bg-white text-dark-blue font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
                   isSending ? "cursor-not-allowed" : ""
                 }`}
               >

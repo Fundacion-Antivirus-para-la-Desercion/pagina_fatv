@@ -1,4 +1,3 @@
-import "./NewsDetail.css";
 import { useState, useMemo } from "react";
 import Date from "../assets/Icons/date.svg";
 import BannerNewsEn from "../assets/images/views/imagesNews/news.webp";
@@ -47,18 +46,21 @@ function NewsDetail() {
       </div>
 
       <section className="mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 relative p-4 mt-6">
-        <div id="content" className="p-4 border border-[#222D56] rounded-2xl">
-          <p className="flex tracking-[0.3rem] font-light m-2 text-[#33526d]">
+        <div id="content" className="p-4 border border-dark-blue rounded-2xl">
+          <p className="flex tracking-[0.3rem] font-light m-2 text-blue-base">
             <img className="mr-1" src={Date} />
             {t("newsDetail.news_label")}
           </p>
-          <h1 className="news-detail mb-4 text-left text-[3rem] text-title  font-impact max-md:text-3xl leading-10">
+          <h1 className="mb-4 text-left text-4xl md:text-5xl text-blue-base  font-impact leading-10">
             {news.newDetailContent.title}
           </h1>
           {news.newDetailContent.content.map((content, index) => {
             if (content.type === "parrafo") {
               return (
-                <p key={index} className="text-details text-lg mb-6 mt-5">
+                <p
+                  key={index}
+                  className="text-blue-base text-lg mb-6 mt-5 text-justify"
+                >
                   {content.value}
                 </p>
               );
@@ -83,7 +85,7 @@ function NewsDetail() {
           <div className="flex items-center">
             <Link
               to="/News"
-              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold mr-7"
+              className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold mr-7"
             >
               <img
                 className="ml-3 relative transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
@@ -98,7 +100,7 @@ function NewsDetail() {
                 "http://www.facebook.com/share.php?u=" + window.location.href
               }
               target="_blank"
-              className="group flex items-center text-xl text-[#7c78b3] cursor-pointer font-bold"
+              className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold"
             >
               <img
                 className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"

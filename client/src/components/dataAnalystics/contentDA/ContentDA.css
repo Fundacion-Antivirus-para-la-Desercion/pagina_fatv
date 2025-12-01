@@ -9,7 +9,6 @@
 
 .content-info {
   width: 50%;
-  color: #33526d;
   padding-left: 40px;
   padding-right: 20px;
   line-height: 1.2;
@@ -81,16 +80,8 @@
     height: auto;
   }
 
-  .subtitle {
-    font-size: 2.2em;
-  }
-
   .title {
     font-size: 0.9em;
-  }
-
-  .paragraph {
-    font-size: 1em;
   }
 }
 
@@ -100,10 +91,6 @@
   }
   .title {
     font-size: 1em;
-  }
-
-  .subtitle {
-    font-size: 1.7em;
   }
 
   .content-info {
@@ -133,18 +120,6 @@
   .content-image img {
     width: 80%;
   }
-
-  .subtitle {
-    font-size: 1.5em;
-  }
-
-  .title {
-    font-size: 0.9em;
-  }
-
-  .paragraph {
-    font-size: 0.85em;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -154,15 +129,6 @@
   .title {
     font-size: 0.88em;
   }
-
-  .subtitle {
-    font-size: 1.5em;
-  }
-
-  .paragraph {
-    font-size: 0.9em;
-  }
-
   .content-image img {
     width: 100%;
   }

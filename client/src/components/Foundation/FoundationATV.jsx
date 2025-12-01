@@ -102,7 +102,7 @@ function FoundationATV() {
         <div className="aboutUs-content">
           <div className="left-content">
             <p className="title">{t("foundation.foundationATV.title")}</p>
-            <h4 className="lineSubtitle font-impact text-[3em] leading-[.92] uppercase">
+            <h4 className="lineSubtitle font-impact text-4xl md:text-5xl leading-[.92] uppercase">
               {t("foundation.foundationATV.subtitle")}
             </h4>
           </div>
@@ -218,12 +218,12 @@ function FoundationATV() {
               />
             </div>
             <div className="p-6 rounded-lg border bg-[#CCEDE8] border-gray-200 shadow-xl">
-              <h5 className="text-left text-4xl font-impact text-[#33526d] mb-4">
+              <h5 className="text-left text-4xl font-impact text-blue-base mb-4">
                 {t(
                   "foundation.foundationATV.organization_info.change_theory.title"
                 )}
               </h5>
-              <p className="text-base p-1 text-[#33526d] text-justify">
+              <p className="text-base p-1 text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.change_theory.description"
                 )}
@@ -236,10 +236,10 @@ function FoundationATV() {
         <motion.div {...slideFromRight}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
             <div className="rounded-lg border bg-[#D3C3E3] border-gray-200 p-6 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.values.title")}
               </h5>
-              <p className="text-base text-[#33526d] text-justify">
+              <p className="text-base text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.values.description"
                 )}
@@ -258,18 +258,18 @@ function FoundationATV() {
 
         <motion.div {...slideFromLeft}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
-            <div className="bg-[#FFBA08] rounded-full">
+            <div className="bg-primary-yellow rounded-full">
               <img
                 className="rounded-full w-[400px] h-auto p-5 object-cover"
                 src={Mision}
                 alt="Foto"
               />
             </div>
-            <div className="rounded-lg bg-[#FFBA08] border border-gray-200 p-6 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+            <div className="rounded-lg bg-primary-yellow border border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.mission.title")}
               </h5>
-              <p className="text-base text-[#33526d] text-justify">
+              <p className="text-base text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.mission.description"
                 )}
@@ -282,12 +282,12 @@ function FoundationATV() {
         <motion.div {...slideFromRight}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
             <div className="rounded-lg bg-[#CCEDE8] border border-gray-200 p-6 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t(
                   "foundation.foundationATV.organization_info.target_audience.title"
                 )}
               </h5>
-              <p className="text-base text-[#33526d] text-justify">
+              <p className="text-base text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.target_audience.description"
                 )}
@@ -314,10 +314,10 @@ function FoundationATV() {
               />
             </div>
             <div className="rounded-lg border border-gray-200 bg-[#D3C3E3] p-8 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.vision.title")}
               </h5>
-              <p className="text-base text-[#33526d] text-justify">
+              <p className="text-base text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.vision.description"
                 )}
@@ -329,18 +329,18 @@ function FoundationATV() {
 
         <motion.div {...slideFromRight}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-2 items-center justify-center">
-            <div className="rounded-lg border border-gray-200 bg-[#FFBA08] p-8 shadow-xl">
-              <h5 className="text-4xl font-impact text-[#33526d] mb-4">
+            <div className="rounded-lg border border-gray-200 bg-primary-yellow p-8 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.purpose.title")}
               </h5>
-              <p className="text-base text-[#33526d] text-justify">
+              <p className="text-base text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.purpose.description"
                 )}
               </p>
             </div>
 
-            <div className="bg-[#FFBA08] rounded-full">
+            <div className="bg-primary-yellow rounded-full">
               <img
                 className="rounded-full w-[400px] h-auto p-5 object-cover"
                 src={Proposito}
@@ -352,12 +352,12 @@ function FoundationATV() {
       </section>
 
       <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
-        <h5 className="col-span-1 md:col-span-4 text-4xl font-impact text-center text-[#33526d] mb-8">
+        <h5 className="col-span-1 md:col-span-4 text-4xl font-impact text-center text-blue-base mb-8">
           {t("foundation.foundationATV.organization_info.priorities.title")}
         </h5>
         <motion.div {...expandableTransition}>
-          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
-            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               1
             </span>
             <p className="text-base text-justify mt-9 text-white">
@@ -369,8 +369,8 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...expandableTransition}>
-          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
-            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               2
             </span>
             <p className="text-base text-justify mt-9 text-white">
@@ -382,8 +382,8 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...expandableTransition}>
-          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
-            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               3
             </span>
             <p className="text-base text-justify mt-9 text-white">
@@ -395,8 +395,8 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...expandableTransition}>
-          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-[#222D56] p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
-            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ffb703] text-[#1d2951] font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               4
             </span>
             <p className="text-base text-justify mt-9 text-white">

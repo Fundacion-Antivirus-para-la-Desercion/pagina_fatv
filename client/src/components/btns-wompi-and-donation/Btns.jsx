@@ -24,7 +24,7 @@ function Btns() {
       }`}
     >
       <div
-        className={`flex items-center rounded-full p-2 shadow-lg bg-btn-back ${styles.btnDonate}`}
+        className={`flex items-center rounded-full p-2 shadow-lg bg-primary-purple ${styles.btnDonate}`}
       >
         <img
           src={IconDonation}

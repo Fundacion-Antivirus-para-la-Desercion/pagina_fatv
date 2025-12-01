@@ -16,8 +16,8 @@ function OtherNews({ newId }) {
 
   return (
     <div id="sidebar" className="lg:col-start-2">
-      <div className="shadow-xl rounded-2xl sticky top-4 border border-[#222D56] p-4">
-        <h3 className="news-detail mb-4 text-left text-3xl font-impact text-title max-md:text-2xl leading-8">
+      <div className="shadow-xl rounded-2xl sticky top-4 border border-dark-blue p-4">
+        <h3 className="news-detail mb-4 text-center md:text-left text-3xl  font-impact text-blue-base max-md:text-2xl leading-8">
           {t("otherNews.title")}
         </h3>
         <ul className="p-4">
@@ -39,7 +39,7 @@ function OtherNews({ newId }) {
                     />
                   </div>
                   <div>
-                    <h4 className="text-base font-bold mb-1 leading-5">
+                    <h4 className="text-blue-base text-base font-bold mb-1 leading-5">
                       {news.title}
                     </h4>
                     <a

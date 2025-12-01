@@ -73,19 +73,19 @@ function Carousel() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={`main-${index}`}>
-            <section className="relative lg:grid grid-cols-[40%_60%] bg-[#222D56]">
-              <div className="relative z-50 carousel-text flex items-center p-5">
+            <section className="relative lg:grid grid-cols-[40%_60%] bg-dark-blue">
+              <div className="relative z-50 flex items-center p-5">
                 <section>
-                  <h1 className="mb-4 text-[43px] font-impact leading-normal">
+                  <h1 className="mb-4 text-3xl md:text-[43px] text-primary-yellow font-impact leading-normal">
                     {t(slide.titleKey)} {/* Usamos t() para el título */}
                   </h1>
-                  <p className="lg:text-xl w-3/4 mb-2">
+                  <p className="text-sm lg:text-xl w-3/4 mb-2 text-white">
                     {t(slide.descriptionKey)}{" "}
                   </p>
 
                   <div className="flex flex-wrap mt-8 gap-4">
                     <a
-                      className="px-4 py-2 bg-white text-[#222D56] border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
+                      className="px-4 py-2 bg-white text-blue-base border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
                       href={`https://wa.me/${whatsAppNumber}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -94,7 +94,7 @@ function Carousel() {
                       {/* Usamos t() para el botón de contacto */}
                     </a>
                     <a
-                      className="px-4 py-2 bg-[#222D56] text-white border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
+                      className="px-4 py-2 bg-dark-blue text-white border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
                       href="#services"
                     >
                       {t("home.carousel.buttons.more")}{" "}
@@ -105,7 +105,7 @@ function Carousel() {
               </div>
               <div>
                 <img
-                  className="h-[80vh] object-cover object-[50%_33%] w-full"
+                  className="h-[45vh] md:h-[80vh] object-cover object-[50%_33%] w-full"
                   src={slide.image}
                   alt={`Slide ${index + 1}`}
                 />
@@ -142,7 +142,7 @@ function Carousel() {
               key={`thumb-${index}`}
               className={`cursor-pointer transition-opacity duration-300 ${
                 activeIndex === index
-                  ? "opacity-100 border-2 border-[#f8b732]"
+                  ? "opacity-100 border-2 border-primary-yellow"
                   : "opacity-60"
               }`}
               onClick={() => {

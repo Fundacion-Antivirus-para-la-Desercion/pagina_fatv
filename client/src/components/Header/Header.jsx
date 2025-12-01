@@ -108,22 +108,22 @@ function Header() {
           <Link
             to="/"
             onClick={handleNav}
-            className="text-lg text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain"
+            className="text-lg text-blue-base font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain"
           >
             {t("header.home")}
           </Link>
-          <span className="text-blue-links mx-1">|</span>
+          <span className="text-dark-blue mx-1">|</span>
           <Link
             to="/Fundacion"
             onClick={handleNav}
-            className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
           >
             {t("header.foundation")}
           </Link>
-          <span className="text-title mx-1">|</span>
+          <span className="text-blue-base mx-1">|</span>
           <button
             onClick={handleClikPopupQH}
-            className="flex items-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
           >
             {t("header.what_we_do")}
 
@@ -135,11 +135,11 @@ function Header() {
               <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
             </svg>
 
-            <span className="text-title mx-1">|</span>
+            <span className="text-blue-base mx-1">|</span>
           </button>
           <button
             onClick={handleClikPopupServices}
-            className="flex items-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
           >
             {t("header.services")}
 
@@ -167,22 +167,22 @@ function Header() {
           <Link
             to="/News"
             onClick={handleNav}
-            className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
           >
             {t("header.news")}
           </Link>
-          <span className="text-title mx-1">|</span>
+          <span className="text-blue-base mx-1">|</span>
           <Link
             to="/ContactUs"
             onClick={handleNav}
-            className="text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
           >
             {t("header.contact_us")}
           </Link>
-          <span className="text-title mx-1">|</span>
+          <span className="text-blue-base mx-1">|</span>
           <button
             onClick={handleClikPopupIdioma}
-            className="flex items-center justify-center text-lg text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+            className="flex items-center justify-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out"
           >
             {t("header.language")}
             <svg
@@ -198,7 +198,7 @@ function Header() {
             onClick={() =>
               window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
             }
-            className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
+            className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
           >
             <div className="flex items-center">
               {t("header.button_volunteer")}
@@ -214,7 +214,7 @@ function Header() {
 
       {queHacemos && (
         <div
-          className="hidden lg:block fixed left-0 right-0 bg-blue-links text-white  z-50 popup-animation text-3xl"
+          className="hidden lg:block fixed left-0 right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -245,7 +245,7 @@ function Header() {
 
       {servicios && (
         <div
-          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl"
+          className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -282,14 +282,14 @@ function Header() {
 
       {students && (
         <div
-          className="hidden lg:block fixed left-0 top-0 items-center right-0  bg-btn-back text-white z-50 popup-animation text-lg"
+          className="hidden lg:block fixed left-0 top-0 items-center right-0  bg-primary-purple text-white z-50 popup-animation text-lg"
           style={{ top: popupPositionStudents }}
         >
           <ul className="flex items-center justify-center gap-12 p-10 ">
             <Link
               to="/ApoyoAcademico"
               onClick={handleNav}
-              className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
             >
               <span className="font-bold">01.</span>{" "}
               {t("header.sub_header.academic_support")}
@@ -297,7 +297,7 @@ function Header() {
             {/* <Link
               to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
               onClick={handleNav}
-              className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
             >
               <span className="font-bold">02. </span>{" "}
               {t("header.sub_header.boe")}
@@ -305,7 +305,7 @@ function Header() {
             <Link
               to="/AcompañamientoOrientacion"
               onClick={handleNav}
-              className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
             >
               <span className="font-bold">02. </span>
               {t("header.sub_header.accompaniment_and_guidance")}
@@ -313,7 +313,7 @@ function Header() {
             <Link
               to="/Repositorio"
               onClick={handleNav}
-              className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
             >
               <span className="font-bold">03. </span>{" "}
               {t("header.sub_header.repository")}
@@ -324,7 +324,7 @@ function Header() {
 
       {idioma && (
         <div
-          className="hidden lg:block fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl"
+          className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
           <ul className="flex items-center justify-center gap-20 p-10">
@@ -404,19 +404,19 @@ function Header() {
           />
         </div>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link to="/" onClick={handleNav}>
             {t("header.home")}
           </Link>
         </li>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link to="/Fundacion" onClick={handleNav}>
             {t("header.foundation")}
           </Link>
         </li>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link onClick={handleClikPopupQH} className="flex items-center">
             {t("header.what_we_do")}{" "}
             <svg
@@ -430,12 +430,12 @@ function Header() {
 
           {queHacemos && (
             <ul className="pl-4">
-              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link to="/dataAnalyctis" onClick={handleNav}>
                   {t("header.sub_header.data_analytics")}
                 </Link>
               </li>
-              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to="/intervencion/fortalecimiento-academico"
                   onClick={handleNav}
@@ -443,7 +443,7 @@ function Header() {
                   {t("header.sub_header.socio_emotional_intervention")}
                 </Link>
               </li>
-              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to="/comunicaciones"
                   onClick={handleNav}
@@ -456,7 +456,7 @@ function Header() {
           )}
         </li>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link onClick={handleClikPopupServices} className="flex items-center">
             {t("header.services")}{" "}
             <svg
@@ -472,47 +472,47 @@ function Header() {
             <ul className="pl-4">
               <li
                 onMouseEnter={handleMouseEnter}
-                className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
                 {t("header.sub_header.for_students")}
 
                 {students && (
                   <ul className="pl-4">
-                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                    <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="/ApoyoAcademico"
                         onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
                       >
                         <span className="font-bold">01.</span>{" "}
                         {t("header.sub_header.academic_support")}
                       </Link>
                     </li>
-                    {/*<li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                    {/*<li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
                         onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
                       >
                         <span className="font-bold">02. </span>{" "}
                         {t("header.sub_header.boe")}
                       </Link>
                     </li> */}
-                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                    <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="/AcompañamientoOrientacion"
                         onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
                       >
                         <span className="font-bold">02. </span>
                         {t("header.sub_header.accompaniment_and_guidance")}
                       </Link>
                     </li>
-                    <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                    <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="/Repositorio"
                         onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-blue-links cursor-pointer"
+                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
                       >
                         <span className="font-bold">03. </span>{" "}
                         {t("header.sub_header.repository")}
@@ -521,7 +521,7 @@ function Header() {
                   </ul>
                 )}
               </li>
-              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to="/Consultorias"
                   onClick={handleNav}
@@ -530,7 +530,7 @@ function Header() {
                   {t("header.sub_header.consulting")}
                 </Link>
               </li>
-              <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to="/provocacion"
                   onClick={handleNav}
@@ -543,19 +543,19 @@ function Header() {
           )}
         </li>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link to="/News" onClick={handleNav}>
             {t("header.news")}
           </Link>
         </li>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link to="/ContactUs" onClick={handleNav}>
             {t("header.contact_us")}
           </Link>
         </li>
 
-        <li className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
           <Link onClick={handleClikPopupIdioma} className="flex items-center">
             {t("header.language")}{" "}
             <svg
@@ -575,7 +575,7 @@ function Header() {
                   localStorage.setItem("i18nextLng", "en");
                   handleNav();
                 }}
-                className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
                 {t("header.options_english")}
               </li>
@@ -585,7 +585,7 @@ function Header() {
                   localStorage.setItem("i18nextLng", "es");
                   handleNav();
                 }}
-                className="p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
                 {t("header.options_spanish")}
               </li>
@@ -596,7 +596,7 @@ function Header() {
           onClick={() =>
             window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
           }
-          className="flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
+          className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
         >
           <div className="flex items-center">
             {t("header.button_volunteer")}
