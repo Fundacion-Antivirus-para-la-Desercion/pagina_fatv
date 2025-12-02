@@ -16,7 +16,7 @@
       "communications": "COMUNICACIONES",
       "for_students": "A LOS ESTUDIANTES",
       "permanence": "GESTIÓN DE LA PERMANENCIA",
-      "consulting": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS",
+      "consulting": "CONSULTORÍAS EN PERMANENCIA ESTUDIANTIL",
       "pro_vocation": "PRO-VOCACIÓN",
       "academic_support": "Apoyo Académico",
       "boe": "Banco de Oportunidades Estudiantiles",
@@ -522,15 +522,49 @@
     }
   },
   "consultorias": {
-    "title": "Servicios",
-    "services_title": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
-    "main_consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA PERMANENCIA EN:",
+    "consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA ",
+    "consulting_title_span": "PERMANENCIA:",
     "universities": "Universidades",
+    "universities_description": "Estrategias integrales para reducir la deserción y aumentar la tasa de graduación.",
     "bootcamps": "Bootcamps",
+    "bootcamps_description": "Programas de acompañamiento intensivo para garantizar el éxito de los participantes.",
     "schools": "Colegios",
+    "schools_description": "Preparación y orientación vocacional para estudiantes de últimos años escolares.",
     "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
-    "description": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares."
+    "scholarship_programs_description": "Seguimiento personalizado para maximizar el impacto de los programas de becas.",
+    "description_general": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañia de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de deserción escolar.",
+    "why_choose_us": {
+      "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
+      "titlle_span": " TU INSTITUCIÓN?",
+      "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil."
+    },
+    "cards": {
+      "methodology_title": "Metodología Comprobada",
+      "methodology_description": "Nuestras estrategias están respaldadas por por años de experiencia y resultados medibles en instituciones educativas de todo el país.",
+      "focus_title": "Enfoque en Resultados",
+      "focus_description": "Trabajamos con KPIs claros: reducción de deserción aumento de tasas de graduación y mejora en la satisfacción estudiantil.",
+      "accompaniment_title": "Acompañamiento Integral",
+      "accompaniment_description": "No solo diseñamos estrategias, las implementamos junto a tu equipo garantizando la transferencia de conocimiento.",
+      "experience_title": "Experiencia especializada",
+      "experience_description": "Hemos trabajado con universidades, bootcamps, colegios y programas de becas, entendiendo las particularidades de cada contexto.",
+      "solutions_title": "Soluciones Personalizadas",
+      "solutions_description": "Cada institución es única. Diseñamos estrategias adaptadas a tu realidad, cultura organizacional y objetivos específicos.",
+      "innovation_title": "Innovación Continua",
+      "innovation_description": "Incorporamos las últimas tendencias en educación y tecnología para mantener tus programas a la vanguardia."
+    },
+    "pillars": {
+      "title": "PILARES DE NUESTRA",
+      "title_span": " METODOLOGÍA",
+      "description": "Tres principios fundamentales que garantizan el éxito de nuestras implementaciones.",
+      "titlePillarOne": "Colaboración Institucional",
+      "descriptionPillarOne": "Trabajamos codo a codo con tu equipo, construyendo soluciones sostenibles que se integran naturalmente en tu institución.",
+      "titlePillarTwo": "Impacto Mediable",
+      "descriptionPillarTwo": "Establecemos Métricas claras y sistemas de seguimiento que demuestran el retorno de inversión de cada estrategia implementada..",
+      "titlePillarThree": "Innovación Educativa",
+      "descriptionPillarThree": "Aplicamos las mejoras prácticas internacionales adaptadas a la realidad local, garantizando soluciones efectivas y sostenibles."
+    }
   },
+
   "studentRetentionManagement": {
     "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente",
     "title": "OBJETIVO DE LA GESTIÓN DE PERMANENCIA",

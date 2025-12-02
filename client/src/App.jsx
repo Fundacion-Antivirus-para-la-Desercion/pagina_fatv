@@ -48,7 +48,7 @@ function App() {
           />
           <Route path="/Repositorio" element={<Repositorio />} />
           <Route path="/gestion-de-la-permanencia" element={<StudentRetentionManagement />} />
-          <Route path="/Consultorias" element={<Consultorias />} />
+          <Route path="/consultorias" element={<Consultorias />} />
           {/* <Route path="/Universidades" element={<Universidades />} /> */}
           {/*<Route path="/Bootcamps" element={<Bootcamps />} />  */}
           {/* <Route path="/Becarios" element={<Becarios />} /> */}

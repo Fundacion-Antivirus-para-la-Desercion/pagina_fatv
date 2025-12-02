@@ -263,7 +263,7 @@ function Header() {
               {t("header.sub_header.permanence")}
             </Link>
             <Link
-              to="/Consultorias"
+              to="/consultorias"
               onClick={handleNav}
               className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
@@ -523,7 +523,7 @@ function Header() {
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
-                  to="/Consultorias"
+                  to="/consultorias"
                   onClick={handleNav}
                   className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
                 >

@@ -16,7 +16,7 @@
       "communications": "COMMUNICATIONS",
       "for_students": "FOR STUDENTS",
       "permanence": "MANAGEMENT OF STAY",
-      "consulting": " PROJECT CONSULTING AND IMPLEMENTATION",
+      "consulting": "CONSULTING SERVICES ON STUDENT RETENTION",
       "pro_vocation": "PRO-VOCATION",
       "academic_support": "Academic Support",
       "boe": "Student Opportunity Bank",
@@ -521,15 +521,48 @@
     }
   },
   "consultorias": {
-    "title": "Services",
-    "services_title": "WE PROVIDE THE FOLLOWING SERVICES",
-    "main_consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR RETENTION IN:",
+    "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
+    "consulting_title_span": "RETENTION:",
     "universities": "Universities",
+    "universities_description": "Comprehensive Strategies to Reduce Dropout Rates and Increase Graduation Rates.",
     "bootcamps": "Bootcamps",
+    "bootcamps_description": "Intensive Mentorship Programs to Ensure Learner Achievement.",
     "schools": "Schools",
-    "scholarship_programs": "Scholarship Programs from /NGOs/Companies",
-    "description": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes."
+    "schools_description": "College and Career Readiness for High School Seniors.",
+    "scholarship_programs": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
+    "description_general": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes.",
+    "whyChooseUs": {
+      "title": "WHY CHOOSE US TO TRANSFORM",
+      "titlle_span": "YOUR INSTITUTION?",
+      "description": "We implement proven strategies that generate measurable results in student retention and graduation."
+    },
+    "cards": {
+      "methodology_title": "Tested Methodology",
+      "methodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
+      "focus_title": "Focus on Results",
+      "focus_description": "We work with clear KPIs (Key Performance Indicators): reduced dropout rates, increased graduation rates, and improved student satisfaction.",
+      "accompaniment_title": "Comprehensive Support",
+      "accompaniment_description": "We don't just design strategies; we implement them alongside your team, ensuring knowledge transfer.",
+      "experience_title": "Specialized Expertise",
+      "experience_description": "We have worked with universities, bootcamps, schools, and scholarship programs, understanding the particularities of each context.",
+      "solutions_title": "Custom Solutions",
+      "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
+      "innovation_title": "Continuous Innovation",
+      "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront."
+    },
+    "pillars": {
+      "title": "PILLARS OF OUR",
+      "title_span": " METHODOLOGY",
+      "description": "Three fundamental principles that ensure the success of our implementations.",
+      "titlePillarOne": "Institutional collaboration",
+      "descriptionPillarOne": "We work side by side with your team, building sustainable solutions that integrate naturally into your institution.",
+      "titlePillarTwo": "Measurable Impact",
+      "descriptionPillarTwo": "We establish clear metrics and tracking systems that demonstrate the return on investment of each implemented strategy.",
+      "titlePillarThree": "Educational Innovation",
+      "descriptionPillarThree": "We apply international best practices adapted to the local context, guaranteeing effective and sustainable solutions."
+    }
   },
+  
   "studentRetentionManagement": {
     "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student",
     "title": "OBJECTIVE OF RETENTION MANAGEMENT",
@@ -620,7 +653,7 @@
       "title": "YOUR RETENTION",
       "span": "IS OUR PRIORITY",
       "description": "A comprehensive ecosystem designed to support you throughout every step of your university journey.",
-      "strong":"Together, We Build Your Success",
+      "strong": "Together, We Build Your Success",
       "btnStartNow": "¡START NOW!"
     }
   },
