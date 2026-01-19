@@ -11,13 +11,14 @@
     "options_spanish": "SPANISH",
     "options_english": "ENGLISH",
     "sub_header": {
-      "data_analytics": "DATA ANALYTICS",
-      "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
+      "data_analytics": "TECHNOLOGY AND DATA",
+      "socio_emotional_intervention": "SOCIAL INTERVENTION",
       "communications": "COMMUNICATIONS",
       "for_students": "FOR STUDENTS",
-      "permanence": "MANAGEMENT OF STAY",
-      "consulting": "CONSULTING SERVICES ON STUDENT RETENTION",
+      "permanence": "RETENTION MANAGEMENT",
+      "consulting": "RETENTION CONSULTING",
       "pro_vocation": "PRO-VOCATION",
+      "atv_connect": "ATVCONNECT",
       "academic_support": "Academic Support",
       "boe": "Student Opportunity Bank",
       "accompaniment_and_guidance": "Accompaniment and Guidance",
@@ -533,6 +534,7 @@
     "schools_description": "College and Career Readiness for High School Seniors.",
     "scholarship_programs": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
     "description_general": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes.",
+    "btn_request_consulting": "Request Consulting",
     "whyChooseUs": {
       "title": "WHY CHOOSE US TO TRANSFORM",
       "titlle_span": "YOUR INSTITUTION?",
@@ -807,6 +809,25 @@
         }
       ]
     }
+  },
+  "atvConnect": {
+    "description_one": "ATVConecta is more than just a tutoring platform. It is ",
+    "description_span": "your partner in overcoming academic challenges,",
+    "description_two": " boosting your performance, and reaching your university goals with confidence.",
+    "span_title": "OUR IMPACT",
+    "title": "The Numbers Speak for Themselves",
+    "figures_impact": {
+      "figure_one": "Active students",
+      "figure_two": "Certified tutors",
+      "figure_three": "Sessions completed",
+      "figure_four": "Student satisfaction"
+    },
+    "list": {
+      "item_one": "⭐ 4.9/5 Average rating",
+      "item_two": "🟡 95% Improve Their Grades",
+      "item_three": "✨ 24-hour turnaround"
+    },
+    "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {
     "title": "Contact Us",

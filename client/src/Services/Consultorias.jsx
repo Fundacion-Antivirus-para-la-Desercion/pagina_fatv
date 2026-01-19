@@ -7,7 +7,7 @@ import FraternidadMedellin from "../assets/images/views/consultorias/aliados-fra
 import UniversidadNorte from "../assets/images/views/consultorias/iniciativa-universidad-norte.webp";
 import Reunion from "../assets/images/views/consultorias/reunion.webp";
 import Colaboracion from "../assets/images/views/consultorias/colaboracion-institucional.png";
-import Inpacto from "../assets/images/views/consultorias/colaboracion-institucional.png";
+import Inpacto from "../assets/images/views/consultorias/inpacto-mediable.png";
 import Innovacion from "../assets/images/views/consultorias/inovacion-educativa.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +16,8 @@ import "swiper/css/effect-cards";
 import { EffectFade, Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
+import { Link } from "react-router-dom";
+
 
 function Consultorias() {
   const { t } = useTranslation();
@@ -33,7 +35,7 @@ function Consultorias() {
       </div>
 
       <section className="grid grid-cols-1 md:grid-cols-[60%_40%] mt-10 items-stretch">
-        <div className="">
+        <div className="min-h-[300px] md:min-h-[600px]">
           <Swiper
             effect={"fade"}
             grabCursor={true}
@@ -41,31 +43,51 @@ function Consultorias() {
               shadow: false,
             }}
             modules={[EffectFade, Autoplay]}
-            className="mySwiper"
+            className="mySwiper h-full"
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
             }}
           >
-            <SwiperSlide>
-              <img src={SocialFest} alt={t("")} className="w-full h-full" />
+            <SwiperSlide className="h-full">
+              <img
+                src={SocialFest}
+                alt={t("")}
+                className="w-full h-full md:object-cover"
+              />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={Reunion} alt={t("")} className="w-full h-full" />
+            <SwiperSlide className="h-full">
+              <img
+                src={Reunion}
+                alt={t("")}
+                className="w-full h-full md:object-cover"
+              />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={FraternidadMedellin} alt={t("")} className="w-full h-full" />
+            <SwiperSlide className="h-full">
+              <img
+                src={FraternidadMedellin}
+                alt={t("")}
+                className="w-full h-full md:object-cover"
+              />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={AlianzaFraternidad} alt={t("")} className="w-full h-full" />
+            <SwiperSlide className="h-full">
+              <img
+                src={AlianzaFraternidad}
+                alt={t("")}
+                className="w-full h-full md:object-cover"
+              />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={UniversidadNorte} alt={t("")} className="w-full h-full" />
+            <SwiperSlide className="h-full">
+              <img
+                src={UniversidadNorte}
+                alt={t("")}
+                className="w-full h-full md:object-cover"
+              />
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <div className="bg-dark-blue flex flex-col justify-center items-center p-5">
+        <div className="bg-dark-blue flex flex-col justify-center mt-10 md:mt-0 items-center p-5">
           <h1 className="lineSubtitle text-white font-impact text-4xl md:text-4xl lg:text-4xl mb-2 mt-2">
             {t("consultorias.consulting_title")}
             <span className="text-primary-yellow">
@@ -116,13 +138,13 @@ function Consultorias() {
               {t("consultorias.why_choose_us.titlle_span")}
             </span>
           </h2>
-          <p className="text-blue-base text-base p-5 ">
+          <p className="text-blue-base text-base ">
             {t("consultorias.why_choose_us.description")}
           </p>
         </div>
 
         <section className="grid grid-cols-1 m-2 md:grid-cols-3 p-2 grid-rows-2 gap-10 md:gap-10  md:m-16">
-          <div class="group bg-white h-[230px] w-[360px] p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+          <div class="group bg-white  min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
             <div class="flex items-start space-x-4 mb-4">
               <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">💛</span>
@@ -138,7 +160,7 @@ function Consultorias() {
             </p>
           </div>
 
-          <div class="group bg-white h-[220px] w-[360px] p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
             <div class="flex items-start space-x-4 mb-4">
               <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span class="text-2xl">🎯</span>
@@ -154,7 +176,7 @@ function Consultorias() {
             </p>
           </div>
 
-          <div class="group bg-white h-[220px] w-[360px] p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
             <div class="flex items-start space-x-4 mb-4">
               <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">👥</span>
@@ -170,9 +192,9 @@ function Consultorias() {
             </p>
           </div>
 
-          <div class="group bg-white h-[220px] w-[360px] p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
             <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center text-justify w-14 h-14 rounded-full bg-white border-full">
+              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">🎓</span>
               </div>
 
@@ -186,7 +208,7 @@ function Consultorias() {
             </p>
           </div>
 
-          <div class="group bg-white h-[220px] w-[360px] p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
             <div class="flex items-start space-x-4 mb-4">
               <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">✨</span>
@@ -202,7 +224,7 @@ function Consultorias() {
             </p>
           </div>
 
-          <div class="group bg-white h-[220px] w-[350px] p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
             <div class="flex items-start space-x-4 mb-4">
               <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span class="text-2xl">💡</span>
@@ -233,22 +255,60 @@ function Consultorias() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-10">
-          <div className="group relative flex flex-col  items-center p-5 rounded-3xl bg-white h-[370px] w-[410px]  shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-8 md:gap-5 md:max-w-[80%] mx-auto justify-center items-center">
+          <div className="group relative flex flex-col  items-center p-5 rounded-3xl bg-white min-h-[370px] w-full  shadow-2xl transition-all duration-500 hover:-translate-y-2">
             <img
               className="w-[130px] md:w-[150px] h-auto"
               src={Colaboracion}
               alt=""
             />
 
-            <div className="border-t-4 border-primary-yellow">
-              <h1 className="text-blue-base text-2xl font-bold">
+            <div className="border-t-4 border-primary-yellow ">
+              <h1 className="text-blue-base text-2xl mt-3 mb-3 font-bold">
                 {" "}
                 {t("consultorias.pillars.titlePillarOne")}
               </h1>
 
               <p className="text-base mb-3 text-blue-base text-justify ">
                 {t("consultorias.pillars.descriptionPillarOne")}
+              </p>
+            </div>
+          </div>
+
+          <div className="group relative flex flex-col  items-center p-5 rounded-3xl bg-white min-h-[370px] w-full  shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <img
+              className="w-[130px] md:w-[150px] h-auto"
+              src={Inpacto}
+              alt=""
+            />
+
+            <div className="border-t-4 border-primary-yellow">
+              <h1 className="text-blue-base text-2xl mt-3 mb-3 font-bold">
+                {" "}
+                {t("consultorias.pillars.titlePillarTwo")}
+              </h1>
+
+              <p className="text-base mb-3 text-blue-base text-justify ">
+                {t("consultorias.pillars.descriptionPillarTwo")}
+              </p>
+            </div>
+          </div>
+
+          <div className="group relative flex flex-col  items-center p-5 rounded-3xl bg-white min-h-[370px] w-full  shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <img
+              className="w-[130px] md:w-[150px] h-auto"
+              src={Innovacion}
+              alt=""
+            />
+
+            <div className="border-t-4 border-primary-yellow">
+              <h1 className="text-blue-base text-2xl mt-3 mb-3  font-bold">
+                {" "}
+                {t("consultorias.pillars.titlePillarThree")}
+              </h1>
+
+              <p className="text-base mb-3 text-blue-base text-justify ">
+                {t("consultorias.pillars.descriptionPillarThree")}
               </p>
             </div>
           </div>

@@ -17,7 +17,8 @@ const ServicesATV = () => {
         className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
       >
         <div className="flex flex-col items-center">
-          <section>-
+          <section>
+            -
             <div>
               <h1 className="font-impact text-center text-3xl md:text-5xl mb-10 md:mb-10 text-white">
                 {t("home.servicesATV.title")}
@@ -84,9 +85,12 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <button className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1">
+                  <Link
+                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
+                    to="/consultorias"
+                  >
                     {t("home.servicesATV.services.more_info")}
-                  </button>
+                  </Link>
                 </div>
               </section>
             </div>

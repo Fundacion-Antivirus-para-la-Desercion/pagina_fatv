@@ -11,13 +11,14 @@
     "options_spanish": "ESPAÑOL",
     "options_english": "INGLÉS",
     "sub_header": {
-      "data_analytics": "ANALÍTICA DE DATOS",
-      "socio_emotional_intervention": "INTERVENCIÓN SOCIO-EMOCIONAL",
+      "data_analytics": "TECNOLOGÍA Y DATOS",
+      "socio_emotional_intervention": "INTERVENCIÓN SOCIAL",
       "communications": "COMUNICACIONES",
       "for_students": "A LOS ESTUDIANTES",
       "permanence": "GESTIÓN DE LA PERMANENCIA",
-      "consulting": "CONSULTORÍAS EN PERMANENCIA ESTUDIANTIL",
+      "consulting": "CONSULTORÍAS EN PERMANENCIA",
       "pro_vocation": "PRO-VOCACIÓN",
+      "atv_connect": "ATVCONECTA",
       "academic_support": "Apoyo Académico",
       "boe": "Banco de Oportunidades Estudiantiles",
       "mentoring_and_guidance": "Acompañamiento y orientación",
@@ -535,6 +536,7 @@
     "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
     "scholarship_programs_description": "Seguimiento personalizado para maximizar el impacto de los programas de becas.",
     "description_general": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañia de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de deserción escolar.",
+    "btn_request_consulting": "Solicita consultoría",
     "why_choose_us": {
       "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
       "titlle_span": " TU INSTITUCIÓN?",
@@ -625,7 +627,7 @@
       "message_group": "✨Aprendemos mejor juntos",
       "alt_img_graduate": "Graduada sonriente, con el texto Tu logro nos inspira",
       "message_graduate": "🎉 ¡Tu logro nos inspira!",
-      "btn_whatsapp": "¡Estamos con tigo!💪",
+      "btn_whatsapp": "¡Estamos contigo!💪",
       "alt_success_img": "Estudiante exitoso",
       "see_more": "Ver más historias"
     },
@@ -809,6 +811,26 @@
         }
       ]
     }
+  },
+  "atvConnect": {
+    "description_one": "ATVConecta es más que una plataforma de tutorías. Es tu ",
+    "description_span": "aliado para superar desafíos académicos,",
+    "description_two": " mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
+    "span_title": "NUESTRO IMPACTO",
+    "title": "CIFRAS QUE HABLAN",
+    "figures_impact": {
+      "figure_one": "Estudiantes activos",
+      "figure_two": "Tutores certificados",
+      "figure_three": "Sesiones completadas",
+      "figure_four": "Satisfacción"
+    },
+    "list": {
+      "item_one": "⭐ 4.9/5 Calificación promedio",
+      "item_two": "🟡 95% Mejoran sus notas",
+      "item_three": "✨ Respuesta en 24h"
+    },
+    "description": "ATVConecta es más que una plataforma de tutorías. Es tu aliado para superar desafíos académicos, mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
+    "span_description": "aliado para superar desafíos académicos"
   },
   "contactUs": {
     "title": "Contactanos",

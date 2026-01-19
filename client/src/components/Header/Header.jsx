@@ -217,7 +217,7 @@ function Header() {
           className="hidden lg:block fixed left-0 right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
-          <ul className="flex items-center justify-center gap-20 p-10">
+          <ul className="flex items-center justify-center gap-16 p-10">
             <Link
               to="/dataAnalyctis"
               onClick={handleNav}
@@ -248,7 +248,7 @@ function Header() {
           className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
-          <ul className="flex items-center justify-center gap-20 p-10">
+          <ul className="flex items-center justify-center gap-16 p-10">
             {/* <li
               onMouseEnter={handleMouseEnter}
               className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
@@ -275,6 +275,13 @@ function Header() {
               className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
               {t("header.sub_header.pro_vocation")}
+            </Link>
+            <Link
+              to="/atvconnect"
+              onClick={handleNav}
+              className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+            >
+              {t("header.sub_header.atv_connect")}
             </Link>
           </ul>
         </div>
@@ -327,7 +334,7 @@ function Header() {
           className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: popupPosition }}
         >
-          <ul className="flex items-center justify-center gap-20 p-10">
+          <ul className="flex items-center justify-center gap-16 p-10">
             <li
               onClick={() => {
                 i18n.changeLanguage("en");
@@ -470,7 +477,7 @@ function Header() {
 
           {servicios && (
             <ul className="pl-4">
-              <li
+              {/*<li
                 onMouseEnter={handleMouseEnter}
                 className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out"
               >
@@ -497,7 +504,7 @@ function Header() {
                         <span className="font-bold">02. </span>{" "}
                         {t("header.sub_header.boe")}
                       </Link>
-                    </li> */}
+                    </li> /*}
                     <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="/AcompañamientoOrientacion"
@@ -520,6 +527,15 @@ function Header() {
                     </li>
                   </ul>
                 )}
+              </li>*/}
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link
+                  to={"/gestion-de-la-permanencia"}
+                  onClick={handleNav}
+                  className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+                >
+                  {t("header.sub_header.permanence")}
+                </Link>
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
@@ -537,6 +553,15 @@ function Header() {
                   className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
                 >
                   {t("header.sub_header.pro_vocation")}
+                </Link>
+              </li>
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+                <Link
+                  to="/atvconnect"
+                  onClick={handleNav}
+                  className="border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
+                >
+                  {t("header.sub_header.atv_connect")}
                 </Link>
               </li>
             </ul>
