@@ -829,6 +829,24 @@
       "item_two": "🟡 95% Mejoran sus notas",
       "item_three": "✨ Respuesta en 24h"
     },
+    "services": {
+      "span": "SERVICIOS",
+      "title_one": "TODO LO QUE NECESITAS",
+      "title_two": "PARA TRIUNFAR",
+      "item_tutoring": {
+        "title": "Tutorías Personalizadas",
+        "description": "Sesiones 1 a 1 con tutores que se adaptan a tu ritmo. Tú marcas el camino, nosotros te acompañamos."
+      },
+      "item_progress": {
+        "title": "Seguimiento de Proceso",
+        "description": "Visualiza tu avance con estadísticas claras. Identifica fortalezas y áreas de mejora."
+      },
+      "item_hours": {
+        "title": "Horarios Flexibles",
+        "description": "Agenda segun tu disponibilidad. Mañana, tarde o noche, siempre hay un tutor para ti."
+      },
+      "title": "TODO LO QUE NECESITAS PARA TRIUNFAR"
+    },
     "description": "ATVConecta es más que una plataforma de tutorías. Es tu aliado para superar desafíos académicos, mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
     "span_description": "aliado para superar desafíos académicos"
   },

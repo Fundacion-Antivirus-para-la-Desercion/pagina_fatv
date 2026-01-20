@@ -827,6 +827,24 @@
       "item_two": "🟡 95% Improve Their Grades",
       "item_three": "✨ 24-hour turnaround"
     },
+    "services": {
+      "span": "SERVICES",
+      "title_one": "EVERYTHING YOU NEED",
+      "title_two": " TO SUCCEED",
+      "item_tutoring": {
+        "title": "Personalized Tutoring",
+        "description": "1-on-1 support tailored to your learning style. You set the goals, we provide the guidance."
+      },
+      "item_progress": {
+        "title": "Progress Tracking",
+        "description": "Visualize your growth with clear stats. Identify your strengths and areas to improve."
+      },
+      "item_hours": {
+        "title": "Flexible Hours",
+        "description": "Book sessions that fit your schedule. Morning, afternoon, or night—there's always a tutor ready for you."
+      },
+      "title": "EVERYTHING YOU NEED TO SUCCEED"
+    },
     "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {

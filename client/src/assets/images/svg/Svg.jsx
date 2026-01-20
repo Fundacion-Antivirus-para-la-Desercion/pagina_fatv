@@ -1,6 +1,4 @@
-export const Sun = ({
-  classNames = "",
-}) => (
+export const Sun = ({ classNames = "" }) => (
   <svg
     viewBox="0 0 200 200"
     className={`absolute w-32 h-32 animate-spin-slower ${classNames}`}
@@ -39,9 +37,7 @@ export const Sun = ({
   </svg>
 );
 
-export const SunBlue = ({
-  classNames = "",
-}) => (
+export const SunBlue = ({ classNames = "" }) => (
   <svg
     viewBox="0 0 200 200"
     className={`absolute w-32 h-32 animate-spin-slower ${classNames}`}
@@ -79,3 +75,29 @@ export const SunBlue = ({
     />
   </svg>
 );
+
+export const DoodleLine = () => {
+  return (
+    <svg
+      viewBox="0 0 600 250"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="absolute top-0 bottom-0 w-[200px] h-auto pointer-events-none"
+    >
+      <path
+        d="
+          M 20 120
+          C 60 80, 120 80, 150 120
+          C 180 160, 120 190, 90 150
+          C 60 110, 140 100, 200 120
+          S 380 170, 520 120
+        "
+        stroke="#E5E7EB"
+        strokeWidth="6"
+        strokeLinecap="round"
+        strokeDasharray="80 20"
+        fill="none"
+      />
+    </svg>
+  );
+};
