@@ -847,6 +847,22 @@
       },
       "title": "TODO LO QUE NECESITAS PARA TRIUNFAR"
     },
+    "steps": {
+      "span": "PROCESO",
+      "title": "3 PASOS. ASí DE SIMPLE",
+      "step_one": {
+        "title": "Regístrate",
+        "description": "Crea tu cuenta gratis"
+      },
+      "step_two": {
+        "title": "Elige tutor",
+        "description": "Filtra por materia y rating"
+      },
+      "step_three": {
+        "title": "Aprende",
+        "description": "Agenda y mejora tus notas"
+      }
+    },
     "description": "ATVConecta es más que una plataforma de tutorías. Es tu aliado para superar desafíos académicos, mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
     "span_description": "aliado para superar desafíos académicos"
   },

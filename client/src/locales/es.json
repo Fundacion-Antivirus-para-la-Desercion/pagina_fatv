@@ -795,6 +795,22 @@
         "title": "Horarios Flexibles",
         "description": "Agenda segun tu disponibilidad. Mañana, tarde o noche, siempre hay un tutor para ti."
       }
+    },
+    "steps":{
+      "span":"PROCESO",
+      "title":"3 PASOS. ASí DE SIMPLE",
+      "step_one":{
+        "title":"Regístrate",
+        "description":"Crea tu cuenta gratis"
+      },
+      "step_two":{
+        "title":"Elige tutor",
+        "description":"Filtra por materia y rating"
+      },
+      "step_three":{
+        "title":"Aprende",
+        "description":"Agenda y mejora tus notas"
+      }
     }
   },
   "contactUs": {

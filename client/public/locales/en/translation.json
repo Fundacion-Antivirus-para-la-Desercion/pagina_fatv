@@ -845,6 +845,22 @@
       },
       "title": "EVERYTHING YOU NEED TO SUCCEED"
     },
+    "steps": {
+      "span": "HOW IT WORKS",
+      "title": "3 STEPS. AS SIMPLE AS THAT",
+      "step_one": {
+        "title": "Sign up",
+        "description": "Sign up for free"
+      },
+      "step_two": {
+        "title": "Pick a tutor",
+        "description": "Filter by: Subject, Rating"
+      },
+      "step_three": {
+        "title": "Start learning",
+        "description": "Book a session and improve your grades"
+      }
+    },
     "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {

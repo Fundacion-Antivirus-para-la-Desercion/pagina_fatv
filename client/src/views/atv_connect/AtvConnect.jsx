@@ -4,6 +4,7 @@ import BannerAtvConnectEs from "../../assets/images/views/atvConnect/tutorias-ac
 import LogoAtvConecta from "../../assets/images/views/proVocacion/information/logo-atv-conecta-blanco.webp";
 import BannerView from "../../components/Banner-views/BannerView";
 import Figura from "../../assets/images/views/atvConnect/figura.png";
+import Joven from "../../assets/images/views/atvConnect/68.png";
 import { LuGraduationCap } from "react-icons/lu";
 import { GoPeople } from "react-icons/go";
 import { LuBookOpen } from "react-icons/lu";
@@ -29,6 +30,13 @@ function AtvConnect() {
       ease: "linear",
       delay,
     },
+  });
+
+  const expandableTransition = (delayValue) => ({
+    initial: { opacity: 0, scale: 0.5 },
+    whileInView: { opacity: 1, scale: 1 },
+    transition: { duration: 0.8, ease: "easeOut", delay: delayValue },
+    viewport: { once: true },
   });
 
   return (
@@ -67,10 +75,10 @@ function AtvConnect() {
       <section className="max-w-4xl mx-auto m-10">
         <section className="flex flex-col items-center p-10">
           {" "}
-          <span className="text-base font-impact text-primary-purple">
+          <span className="text-lg md:text-xl font-impact text-primary-purple">
             {t("atvConnect.span_title")}
           </span>
-          <h1 className="text-3xl md:text-5xl font-impact text-blue-base">
+          <h1 className="text-4xl md:text-5xl font-impact text-blue-base">
             {t("atvConnect.title")}
           </h1>
         </section>
@@ -121,7 +129,7 @@ function AtvConnect() {
           </div>
         </section>
       </section>
-      <section className="bg-dark-blue p-5 mb-5">
+      <section className="bg-dark-blue p-5">
         <ol className="md:flex justify-center list-none text-white text-justify text-lg md:text-base">
           <li className="m-5 md:m-0 md:mr-8">
             {t("atvConnect.list.item_one")}
@@ -134,12 +142,12 @@ function AtvConnect() {
           </li>
         </ol>
       </section>
-      <section className="grid grid-cols-1 lg:grid-cols-2 container text-center p-5 md:gap-10">
+      <section className="grid grid-cols-1 lg:grid-cols-2 text-center p-5 md:gap-10 container">
         <div className="relative items-center justify-center flex flex-col">
-          <span className="text-base font-impact text-primary-purple">
+          <span className="text-lg md:text-xl font-impact text-primary-purple">
             {t("atvConnect.services.span")}
           </span>
-          <h2 className="text-3xl md:text-5xl font-impact text-blue-base">
+          <h2 className="text-4xl md:text-5xl font-impact text-blue-base">
             {t("atvConnect.services.title_one")} <br />
             <span className="text-primary-yellow">
               {t("atvConnect.services.title_two")}
@@ -199,6 +207,125 @@ function AtvConnect() {
               </div>
             </section>
           </section>
+        </div>
+      </section>
+
+      <section className="m-5 text-center p-10">
+        <div>
+          <span className="text-primary-purple font-impact text-lg md:text-xl">
+            {t("atvConnect.steps.span")}
+          </span>
+          <h5 className="text-dark-blue font-impact text-4xl md:text-5xl">
+            {t("atvConnect.steps.title")}
+          </h5>
+        </div>
+        <div>
+          <section className="md:flex md:justify-evenly m-10">
+            <motion.div
+              {...expandableTransition(0)}
+              className="relative flex flex-col items-center"
+            >
+              <span className="text-8xl font-impact text-[#F0F1F5]">01</span>
+              <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
+                {t("atvConnect.steps.step_one.title")}
+              </p>
+              <p className="text-gray-400">
+                {t("atvConnect.steps.step_one.description")}
+              </p>
+            </motion.div>
+            <motion.div
+              {...expandableTransition(1)}
+              className="relative flex flex-col items-center"
+            >
+              <span className="text-8xl font-impact text-[#F0F1F5]">02</span>
+              <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
+                {t("atvConnect.steps.step_two.title")}
+              </p>
+              <p className="text-gray-400">
+                {t("atvConnect.steps.step_two.description")}
+              </p>
+            </motion.div>
+            <motion.div
+              {...expandableTransition(2)}
+              className="relative flex flex-col items-center"
+            >
+              <span className="text-8xl font-impact text-[#F0F1F5]">03</span>
+              <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
+                {t("atvConnect.steps.step_three.title")}
+              </p>
+              <p className="text-gray-400">
+                {t("atvConnect.steps.step_three.description")}
+              </p>
+            </motion.div>
+          </section>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px] mb-64">
+        <div className="mb-10">
+          <span className="text-lg text-primary-purple font-impact">
+            MATERIAS
+          </span>
+          <h6 className="text-4xl md:text-5xl text-white font-impact">
+            TODAS LAS ÁREAS
+          </h6>
+        </div>
+
+        <div className="flex flex-wrap items-center">
+          <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Cálculo
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Física
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Química
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Programación
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Estadística
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Álgebra Lineal
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Contabilidad
+            </span>
+             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Economía
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Inglés
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Biología
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Matemáticas
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Bases de Datos
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Algoritmos
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Termodinámica
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Circuitos
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              Finanzas
+            </span>
+          </section>
+        </div>
+
+        <div className="relative">
+           <img className="md:absolute md:top-[-90px] max-w-[250px] md:max-w-[350px]" src={Joven} alt="" />
         </div>
       </section>
     </>
