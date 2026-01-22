@@ -863,6 +863,30 @@
         "description": "Agenda y mejora tus notas"
       }
     },
+    "subjects": {
+      "span": "MATERIAS",
+      "title": "TODAS LAS ÁREAS",
+      "subject_list": {
+        "calculus": "Cálculo",
+        "physics": "Física",
+        "chemistry": "Química",
+        "programming": "Programación",
+        "statistics": "Estadística",
+        "algebra": "Álgebra Lineal",
+        "accounting": "Contabilidad",
+        "economics": "Economía",
+        "english": "Inglés",
+        "biology": "Biología",
+        "mathematics": "Matemáticas",
+        "data_bases": "Bases de Datos",
+        "algorithms": "Algoritmos",
+        "thermodynamics": "Termodinámica",
+        "circuits": "Circuitos",
+        "finance": "Finanzas",
+        "Statistics": "Estadística",
+        "math": "Matemáticas"
+      }
+    },
     "description": "ATVConecta es más que una plataforma de tutorías. Es tu aliado para superar desafíos académicos, mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
     "span_description": "aliado para superar desafíos académicos"
   },

@@ -861,6 +861,31 @@
         "description": "Book a session and improve your grades"
       }
     },
+    "subjects": {
+      "span": "SUBJECTS",
+      "title": "ALL FIELDS",
+      "subject_list": {
+        "calculus": "Calculus",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "programming": "Programming",
+        "statistics": "Statistics",
+        "algebra": "Linear Algebra",
+        "accounting": "Accounting",
+        "economics": "Economics",
+        "english": "English",
+        "biology": "Biology",
+        "mathematics": "Mathematics",
+        "data_science": "Data Science",
+        "data_bases": "Bases de Datos",
+        "algorithms": "Algorithms",
+        "thermodynamics": "Thermodynamics",
+        "circuits": "Circuits",
+        "finance": "Finance",
+        "Statistics": "Statistics",
+        "math": "Mathematics"
+      }
+    },
     "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {

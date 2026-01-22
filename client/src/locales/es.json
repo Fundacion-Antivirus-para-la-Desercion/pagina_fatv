@@ -791,25 +791,47 @@
         "title": "Seguimiento de Proceso",
         "description": "Visualiza tu avance con estadísticas claras. Identifica fortalezas y áreas de mejora."
       },
-        "item_hours": {
+      "item_hours": {
         "title": "Horarios Flexibles",
         "description": "Agenda segun tu disponibilidad. Mañana, tarde o noche, siempre hay un tutor para ti."
       }
     },
-    "steps":{
-      "span":"PROCESO",
-      "title":"3 PASOS. ASí DE SIMPLE",
-      "step_one":{
-        "title":"Regístrate",
-        "description":"Crea tu cuenta gratis"
+    "steps": {
+      "span": "PROCESO",
+      "title": "3 PASOS. ASí DE SIMPLE",
+      "step_one": {
+        "title": "Regístrate",
+        "description": "Crea tu cuenta gratis"
       },
-      "step_two":{
-        "title":"Elige tutor",
-        "description":"Filtra por materia y rating"
+      "step_two": {
+        "title": "Elige tutor",
+        "description": "Filtra por materia y rating"
       },
-      "step_three":{
-        "title":"Aprende",
-        "description":"Agenda y mejora tus notas"
+      "step_three": {
+        "title": "Aprende",
+        "description": "Agenda y mejora tus notas"
+      }
+    },
+    "subjects": {
+      "span": "MATERIAS",
+      "title": "TODAS LAS ÁREAS",
+      "subject_list": {
+        "calculus": "Cálculo",
+        "physics": "Física",
+        "chemistry": "Química",
+        "programming": "Programación",
+        "statistics": "Estadística",
+        "algebra": "Álgebra Lineal",
+        "accounting": "Contabilidad",
+        "economics": "Economía",
+        "english": "Inglés",
+        "biology": "Biología",
+        "mathematics": "Matemáticas",
+        "data_bases": "Bases de Datos",
+        "algorithms": "Algoritmos",
+        "thermodynamics": "Termodinámica",
+        "circuits": "Circuitos",
+        "finance": "Finanzas"
       }
     }
   },

@@ -5,6 +5,8 @@ import LogoAtvConecta from "../../assets/images/views/proVocacion/information/lo
 import BannerView from "../../components/Banner-views/BannerView";
 import Figura from "../../assets/images/views/atvConnect/figura.png";
 import Joven from "../../assets/images/views/atvConnect/68.png";
+import Graduation from "../../assets/images/views/atvConnect/grados.jpg";
+import Birrete from "../../assets/images/views/atvConnect/birrete.webp";
 import { LuGraduationCap } from "react-icons/lu";
 import { GoPeople } from "react-icons/go";
 import { LuBookOpen } from "react-icons/lu";
@@ -50,26 +52,44 @@ function AtvConnect() {
           }}
         />
       </div>
-      <section className="relative bg-primary-purple flex justify-center items-center flex-col p-5 md:p-10">
-        <img className="absolute left-0 top-0 w-40" src={Figura} alt="" />
-        <img
-          className="w-28 h-auto md:w-36 md:h-auto"
-          src={LogoAtvConecta}
-          alt="Logo ATVConecta"
-        />
-        <p className="text-center text-xl md:text-2xl max-w-[700px] text-white p-3">
-          {t("atvConnect.description_one")}
-          <span className="text-primary-yellow ">
-            {t("atvConnect.description_span")}
-          </span>
-          {t("atvConnect.description_two")}
-        </p>
-        <img
-          className="absolute right-0 bottom-0 w-24 rotate-180"
-          src={Figura}
-          alt=""
-        />
-        <div className="absolute right-0 bottom-0"></div>
+      <section className="bg-gray-100 grid grid-col-1 md:grid-cols-2 items-center m-5 mb-20 p-5 md:p-5">
+        <section className="relative flex flex-col md:flex-row items-center md:items-start">
+          <div className="mb-5">
+            <img
+              className="block max-h-[470px] border-8 border-white rounded-3xl justify-between"
+              src={Birrete}
+              alt=""
+            />
+          </div>
+
+          <div className="mb-5">
+            {" "}
+            <img
+              className="w-20 h-20 md:w-32 md:h-32 rounded-full bg-brand-teal-400 p-3 md:mt-6 md:ml-6"
+              src={LogoAtvConecta}
+              alt="Logo ATVConecta"
+            />{" "}
+          </div>
+          <img
+            className="md:absolute md:top-44 md:right-[30%] md:max-h-[310px] border-8 border-white rounded-3xl w-fit mb-5"
+            src={Graduation}
+            alt=""
+          />
+        </section>
+
+        <div className="text-center">
+          <h1 className="text-4xl md:text-5xl mb-5 text-dark-blue font-impact">
+            ATVCONECTA
+          </h1>
+
+          <p className="text-center text-xl md:text-2xl max-w-[700px] bg-primary-purple text-white p-3">
+            {t("atvConnect.description_one")}
+            <span className="text-primary-yellow ">
+              {t("atvConnect.description_span")}
+            </span>
+            {t("atvConnect.description_two")}
+          </p>
+        </div>
       </section>
 
       <section className="max-w-4xl mx-auto m-10">
@@ -264,68 +284,72 @@ function AtvConnect() {
       <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px] mb-64">
         <div className="mb-10">
           <span className="text-lg text-primary-purple font-impact">
-            MATERIAS
+            {t("atvConnect.subjects.span")}{" "}
           </span>
           <h6 className="text-4xl md:text-5xl text-white font-impact">
-            TODAS LAS ÁREAS
+            {t("atvConnect.subjects.title")}
           </h6>
         </div>
 
         <div className="flex flex-wrap items-center">
           <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Cálculo
+              {t("atvConnect.subjects.subject_list.calculus")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Física
+              {t("atvConnect.subjects.subject_list.physics")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Química
+              {t("atvConnect.subjects.subject_list.chemistry")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Programación
+              {t("atvConnect.subjects.subject_list.programming")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Estadística
+              {t("atvConnect.subjects.subject_list.statistics")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Álgebra Lineal
+              {t("atvConnect.subjects.subject_list.algebra")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Contabilidad
-            </span>
-             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Economía
+              {t("atvConnect.subjects.subject_list.accounting")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Inglés
+              {t("atvConnect.subjects.subject_list.economics")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Biología
+              {t("atvConnect.subjects.subject_list.english")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Matemáticas
+              {t("atvConnect.subjects.subject_list.biology")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Bases de Datos
+              {t("atvConnect.subjects.subject_list.mathematics")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Algoritmos
+              {t("atvConnect.subjects.subject_list.data_bases")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Termodinámica
+              {t("atvConnect.subjects.subject_list.algorithms")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Circuitos
+              {t("atvConnect.subjects.subject_list.thermodynamics")}
             </span>
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              Finanzas
+              {t("atvConnect.subjects.subject_list.circuits")}
+            </span>
+            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
+              {t("atvConnect.subjects.subject_list.finance")}
             </span>
           </section>
         </div>
 
         <div className="relative">
-           <img className="md:absolute md:top-[-90px] max-w-[250px] md:max-w-[350px]" src={Joven} alt="" />
+          <img
+            className="md:absolute md:top-[-90px] max-w-[250px] md:max-w-[350px]"
+            src={Joven}
+            alt=""
+          />
         </div>
       </section>
     </>
