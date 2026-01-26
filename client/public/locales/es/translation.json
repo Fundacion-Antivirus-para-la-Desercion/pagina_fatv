@@ -887,6 +887,22 @@
         "math": "Matemáticas"
       }
     },
+    "testimonialsAtvConnect": {
+      "span": "TESTIMONIOS",
+      "title": "HISTORIAS REALES",
+      "testimony_one": {
+        "description": "“Pase cálculo 3 después de perderla dos veces. mi tutora fue increíble.”",
+        "profession": "Ing. Civil"
+      },
+      "testimony_two": {
+        "description": "“La plataforma es super fácil. En 5 minutos ya tenia mi primera tutoría agendada”",
+        "profession": "Administración"
+      },
+      "testimony_three": {
+        "description": "“Los tutores entienden porque ya pasaron por lo mismo. Eso hace la diferencia.”",
+        "profession": "Ing. Sistemas"
+      }
+    },
     "description": "ATVConecta es más que una plataforma de tutorías. Es tu aliado para superar desafíos académicos, mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
     "span_description": "aliado para superar desafíos académicos"
   },

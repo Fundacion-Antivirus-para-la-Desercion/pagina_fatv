@@ -75,11 +75,6 @@ function StudentRetentionService() {
         <p className="mt-3 text-lg text-dark-blue">
           {t("studentRetentionManagement.studentRetentionService.description")}
         </p>
-        <motion.div
-          {...slideFromRight}
-          className="relative right-0 mt-4 md:mt-1 bottom-0 w-[66%] h-[50px] bg-primary-yellow ml-auto z-[-1]
-          [clip-path:polygon(0%_70%,100%_0%,100%_100%,0%_100%)]"
-        ></motion.div>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-8 mt-16 place-items-center">

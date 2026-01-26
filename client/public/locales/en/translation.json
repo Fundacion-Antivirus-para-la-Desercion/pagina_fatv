@@ -815,7 +815,7 @@
     "description_span": "your partner in overcoming academic challenges,",
     "description_two": " boosting your performance, and reaching your university goals with confidence.",
     "span_title": "OUR IMPACT",
-    "title": "The Numbers Speak for Themselves",
+    "title": "THE NUMBERS SPEAK FOR THEMSELVES",
     "figures_impact": {
       "figure_one": "Active students",
       "figure_two": "Certified tutors",
@@ -884,6 +884,22 @@
         "finance": "Finance",
         "Statistics": "Statistics",
         "math": "Mathematics"
+      }
+    },
+    "testimonialsAtvConnect": {
+      "span": "TESTIMONIALS",
+      "title": "REAL STORIES",
+      "testimony_one": {
+        "description": "“I finally passed Calculus 3 after two tries. My tutor was amazing!”",
+        "profession": "Civil Eng."
+      },
+      "testimony_two": {
+        "description": "“The platform is super easy to use. I had my first tutoring session booked in just 5 minutes!”",
+        "profession": "Administration"
+      },
+      "testimony_three": {
+        "description": "“The tutors get it because they’ve been there too. That’s what makes the difference.”",
+        "profession": "Systems Eng."
       }
     },
     "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."

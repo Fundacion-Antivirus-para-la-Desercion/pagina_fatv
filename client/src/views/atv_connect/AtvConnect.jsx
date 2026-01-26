@@ -5,7 +5,8 @@ import LogoAtvConecta from "../../assets/images/views/proVocacion/information/lo
 import BannerView from "../../components/Banner-views/BannerView";
 import Figura from "../../assets/images/views/atvConnect/figura.png";
 import Joven from "../../assets/images/views/atvConnect/68.png";
-import Graduation from "../../assets/images/views/atvConnect/grados.jpg";
+import Javi from "../../assets/images/views/javi/Javi-4.png"
+import Graduation from "../../assets/images/views/atvConnect/graduados.png";
 import Birrete from "../../assets/images/views/atvConnect/birrete.webp";
 import { LuGraduationCap } from "react-icons/lu";
 import { GoPeople } from "react-icons/go";
@@ -19,6 +20,7 @@ import { DoodleLine } from "../../assets/images/svg/Svg";
 import { motion } from "framer-motion";
 import CounterNumeric from "../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
+import TestimonialsAtvConnect from "../../components/atvConnect/TestimonialsAtvConnect.jsx";
 
 function AtvConnect() {
   const { t } = useTranslation();
@@ -52,11 +54,11 @@ function AtvConnect() {
           }}
         />
       </div>
-      <section className="bg-gray-100 grid grid-col-1 md:grid-cols-2 items-center m-5 mb-20 p-5 md:p-5">
+      <section className="bg-[#F6F6F6] grid grid-col-1 md:grid-cols-2 items-center mb-20 p-5 md:p-10">
         <section className="relative flex flex-col md:flex-row items-center md:items-start">
           <div className="mb-5">
             <img
-              className="block max-h-[470px] border-8 border-white rounded-3xl justify-between"
+              className="block max-h-[470px] border-8 border-white rounded-3xl justify-between shadow-2xl"
               src={Birrete}
               alt=""
             />
@@ -65,13 +67,13 @@ function AtvConnect() {
           <div className="mb-5">
             {" "}
             <img
-              className="w-20 h-20 md:w-32 md:h-32 rounded-full bg-brand-teal-400 p-3 md:mt-6 md:ml-6"
+              className="w-20 h-20 md:w-32 md:h-32 rounded-full bg-brand-teal-400 p-3 md:mt-6 md:ml-6 sha"
               src={LogoAtvConecta}
               alt="Logo ATVConecta"
             />{" "}
           </div>
           <img
-            className="md:absolute md:top-44 md:right-[30%] md:max-h-[310px] border-8 border-white rounded-3xl w-fit mb-5"
+            className="md:absolute md:top-44 md:right-[15%] md:max-h-[420px] border-8 border-white rounded-3xl w-fit mb-5 shadow-2xl"
             src={Graduation}
             alt=""
           />
@@ -82,7 +84,7 @@ function AtvConnect() {
             ATVCONECTA
           </h1>
 
-          <p className="text-center text-xl md:text-2xl max-w-[700px] bg-primary-purple text-white p-3">
+          <p className="text-center text-xl md:text-2xl max-w-[700px] text-blue-base p-3">
             {t("atvConnect.description_one")}
             <span className="text-primary-yellow ">
               {t("atvConnect.description_span")}
@@ -162,7 +164,7 @@ function AtvConnect() {
           </li>
         </ol>
       </section>
-      <section className="grid grid-cols-1 lg:grid-cols-2 text-center p-5 md:gap-10 container">
+      <section className="bg-[#F6F6F6] grid grid-cols-1 lg:grid-cols-2 text-center p-10 md:gap-10">
         <div className="relative items-center justify-center flex flex-col">
           <span className="text-lg md:text-xl font-impact text-primary-purple">
             {t("atvConnect.services.span")}
@@ -175,7 +177,7 @@ function AtvConnect() {
           </h2>
 
           <div className="relative w-full h-auto">
-            <FaMedal className="sticky top-0 bottom-0 right-0 left-0 block mx-auto text-9xl m-5 text-gray-200 " />
+            <FaMedal className="sticky top-0 bottom-0 right-0 left-0 block mx-auto text-9xl m-5 text-gray-200" />
           </div>
         </div>
 
@@ -187,7 +189,7 @@ function AtvConnect() {
             </div>
           </motion.div>
           <section className="">
-            <section className="group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-md">
+            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl">
               <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                 <LuBookOpen className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
               </div>
@@ -200,7 +202,7 @@ function AtvConnect() {
                 </p>
               </div>
             </section>
-            <section className="group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-md">
+            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl">
               <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                 <FaArrowTrendUp className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
               </div>
@@ -213,7 +215,7 @@ function AtvConnect() {
                 </p>
               </div>
             </section>
-            <section className="group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-md">
+            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl">
               <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                 <IoMdTime className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
               </div>
@@ -281,7 +283,7 @@ function AtvConnect() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px] mb-64">
+      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px]">
         <div className="mb-10">
           <span className="text-lg text-primary-purple font-impact">
             {t("atvConnect.subjects.span")}{" "}
@@ -346,12 +348,15 @@ function AtvConnect() {
 
         <div className="relative">
           <img
-            className="md:absolute md:top-[-90px] max-w-[250px] md:max-w-[350px]"
-            src={Joven}
+            className="md:absolute md:top-[-90px] max-w-[250px] md:max-w-[200px]"
+            src={Javi}
             alt=""
           />
         </div>
       </section>
+
+
+      <TestimonialsAtvConnect/>
     </>
   );
 }
