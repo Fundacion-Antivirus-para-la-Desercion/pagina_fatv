@@ -1,11 +1,11 @@
-import React from "react";
+import { useEffect, useMemo, useState } from "react";
 import BannerAtvConnectEn from "../../assets/images/views/atvConnect/academic-tutoring.webp";
 import BannerAtvConnectEs from "../../assets/images/views/atvConnect/tutorias-academicas.webp";
 import LogoAtvConecta from "../../assets/images/views/proVocacion/information/logo-atv-conecta-blanco.webp";
 import BannerView from "../../components/Banner-views/BannerView";
 import Figura from "../../assets/images/views/atvConnect/figura.png";
 import Joven from "../../assets/images/views/atvConnect/68.png";
-import Javi from "../../assets/images/views/javi/Javi-4.png"
+import Javi from "../../assets/images/views/javi/Javi-4.png";
 import Graduation from "../../assets/images/views/atvConnect/graduados.png";
 import Birrete from "../../assets/images/views/atvConnect/birrete.webp";
 import { LuGraduationCap } from "react-icons/lu";
@@ -21,9 +21,27 @@ import { motion } from "framer-motion";
 import CounterNumeric from "../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
 import TestimonialsAtvConnect from "../../components/atvConnect/TestimonialsAtvConnect.jsx";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 function AtvConnect() {
+  const [init, setInit] = useState(false);
+
   const { t } = useTranslation();
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      //await loadAll(engine);
+      //await loadFull(engine);
+      await loadSlim(engine);
+      //await loadBasic(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
 
   const floatSnake = (delay = 0) => ({
     initial: { y: -10 },
@@ -35,6 +53,55 @@ function AtvConnect() {
       delay,
     },
   });
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
+  const options = useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "#0d47a1",
+        },
+      },
+      fpsLimit: 120,
+      particles: {
+        number: {
+          value: 200,
+          density: {
+            enable: true,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+        },
+        opacity: {
+          value: 0.7,
+          random: true,
+        },
+        size: {
+          value: { min: 1, max: 3 },
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "bottom",
+          random: true,
+          straight: false,
+          outModes: {
+            default: "out",
+          },
+        },
+      },
+      detectRetina: true,
+    }),
+    [],
+  );
 
   const expandableTransition = (delayValue) => ({
     initial: { opacity: 0, scale: 0.5 },
@@ -284,6 +351,12 @@ function AtvConnect() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px]">
+         <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+          className="relative"
+        />
         <div className="mb-10">
           <span className="text-lg text-primary-purple font-impact">
             {t("atvConnect.subjects.span")}{" "}
@@ -355,8 +428,7 @@ function AtvConnect() {
         </div>
       </section>
 
-
-      <TestimonialsAtvConnect/>
+      <TestimonialsAtvConnect />
     </>
   );
 }
