@@ -256,7 +256,7 @@ function AtvConnect() {
             </div>
           </motion.div>
           <section className="">
-            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl">
+            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
               <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                 <LuBookOpen className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
               </div>
@@ -269,7 +269,7 @@ function AtvConnect() {
                 </p>
               </div>
             </section>
-            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl">
+            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
               <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                 <FaArrowTrendUp className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
               </div>
@@ -282,7 +282,7 @@ function AtvConnect() {
                 </p>
               </div>
             </section>
-            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl">
+            <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
               <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                 <IoMdTime className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
               </div>
@@ -351,12 +351,6 @@ function AtvConnect() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px]">
-         <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
-          className="relative"
-        />
         <div className="mb-10">
           <span className="text-lg text-primary-purple font-impact">
             {t("atvConnect.subjects.span")}{" "}
