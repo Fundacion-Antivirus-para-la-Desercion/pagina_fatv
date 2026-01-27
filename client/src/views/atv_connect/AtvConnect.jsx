@@ -55,15 +55,15 @@ function AtvConnect() {
   });
 
   const particlesLoaded = (container) => {
+    console.log("particles conatiner");
     console.log(container);
   };
 
   const options = useMemo(
     () => ({
-      background: {
-        color: {
-          value: "#0d47a1",
-        },
+      fullScreen: {
+        enable: false, // <--- ESTO ES LO MÁS IMPORTANTE
+        zIndex: 0, // Asegura un z-index bajo si es necesario
       },
       fpsLimit: 120,
       particles: {
@@ -350,8 +350,14 @@ function AtvConnect() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px]">
-        <div className="mb-10">
+      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:pt-20 md:pb-[184px] relative">
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+          className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
+        />
+        <div className="mb-10 relative">
           <span className="text-lg text-primary-purple font-impact">
             {t("atvConnect.subjects.span")}{" "}
           </span>
@@ -360,8 +366,8 @@ function AtvConnect() {
           </h6>
         </div>
 
-        <div className="flex flex-wrap items-center">
-          <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
+        <div className="flex flex-wrap items-center relative">
+          <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4 ">
             <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
               {t("atvConnect.subjects.subject_list.calculus")}
             </span>
