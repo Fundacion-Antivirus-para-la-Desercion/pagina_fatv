@@ -214,18 +214,18 @@ function TestimonialsAtvConnect() {
           options={options}
           className="absolute top-0 left-0 w-full h-full z-0 bg-brand-teal-400"
         />
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col text-center items-center">
           <img
             className="w-28 h-28 md:w-32 md:h-32 block mx-auto"
             src={LogoAtvConecta}
             alt=""
           />
           <p className="text-3xl md:text-5xl text-white font-impact m-5">
-            {t("atvConnect.start_now")}
+            {t("atvConnect.goAtv.start_now")}
           </p>
           <p className="text-base text-white text-center">
             {" "}
-            {t("atvConnect.paragraph_start")}
+            {t("atvConnect.goAtv.paragraph_start")}
           </p>
           <div className="flex justify-center">
             <a

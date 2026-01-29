@@ -10,11 +10,6 @@ import { LuGraduationCap } from "react-icons/lu";
 import { GoPeople } from "react-icons/go";
 import { LuBookOpen } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { IoMdTime } from "react-icons/io";
-import { FaMedal } from "react-icons/fa";
-import { BsRocketTakeoff } from "react-icons/bs";
-import { DoodleLine } from "../../assets/images/svg/Svg";
 import { motion } from "framer-motion";
 import CounterNumeric from "../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
@@ -22,6 +17,7 @@ import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConne
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";
+import ServicesAtvConnect from "./servicesAtvConnect/ServicesAtvConnect.jsx";
 
 function AtvConnect() {
   const [init, setInit] = useState(false);
@@ -52,13 +48,6 @@ function AtvConnect() {
       delay,
     },
   });
-
-  const slideFromTop = {
-    initial: { opacity: 0, y: -100 }, // y: -100 empieza 100px arriba
-    whileInView: { opacity: 1, y: 0 }, // y: 0 vuelve a su posición original
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
 
   const slideFromRight = {
     initial: { opacity: 0, x: 100 },
@@ -130,6 +119,57 @@ function AtvConnect() {
     viewport: { once: true },
   });
 
+  const subjects = [
+    {
+      subject: t("atvConnect.subjects.subject_list.calculus"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.physics"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.chemistry"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.programming"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.statistics"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.algebra"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.accounting"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.economics"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.english"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.biology"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.mathematics"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.data_bases"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.algorithms"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.thermodynamics"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.circuits"),
+    },
+    {
+      subject: t("atvConnect.subjects.subject_list.finance"),
+    },
+  ];
+
   return (
     <>
       <BtnAtv />
@@ -146,7 +186,7 @@ function AtvConnect() {
         <section className="relative flex flex-col md:flex-row items-center md:items-start">
           <motion.div {...slideFromLeft} className="mb-5">
             <img
-              className="block max-h-[470px] border-8 border-white rounded-3xl justify-between shadow-2xl"
+              className="hidden md:block max-h-[470px] border-8 border-white rounded-3xl justify-between shadow-2xl"
               src={Birrete}
               alt=""
             />
@@ -257,83 +297,8 @@ function AtvConnect() {
           </li>
         </ol>
       </section>
-      <section className="bg-[#F6F6F6] grid grid-cols-1 lg:grid-cols-2 text-center p-10 md:gap-10">
-        <motion.div
-          {...slideFromTop}
-          className="relative items-center justify-center flex flex-col"
-        >
-          <span className="text-lg md:text-xl font-impact text-primary-purple">
-            {t("atvConnect.services.span")}
-          </span>
-          <h2 className="text-4xl md:text-5xl font-impact text-blue-base">
-            {t("atvConnect.services.title_one")} <br />
-            <span className="text-primary-yellow">
-              {t("atvConnect.services.title_two")}
-            </span>
-          </h2>
 
-          <div className="relative w-full h-auto">
-            <FaMedal className="sticky top-0 bottom-0 right-0 left-0 block mx-auto text-9xl m-5 text-gray-200" />
-          </div>
-        </motion.div>
-
-        <div className="relative">
-          <motion.div {...floatSnake(0)} className="absolute top-0 right-0">
-            <BsRocketTakeoff className="hidden md:block mx-auto text-9xl m-5 text-gray-200 rotate-12" />
-            <div className="hidden md:block relative top-[10px] left-[-170px] w-full h-full bg-opacity-10 -rotate-45">
-              <DoodleLine />
-            </div>
-          </motion.div>
-          <section className="">
-            <motion.div {...slideFromRight}>
-              {" "}
-              <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
-                  <LuBookOpen className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
-                </div>
-                <div className="flex flex-col m-2 text-left text-blue-base">
-                  <h4 className="text-lg md:text-xl font-bold">
-                    {t("atvConnect.services.item_tutoring.title")}
-                  </h4>
-                  <p className="text-sm md:text-base">
-                    {t("atvConnect.services.item_tutoring.description")}
-                  </p>
-                </div>
-              </section>
-            </motion.div>
-            <motion.div {...slideFromRight}>
-              <section className="relative bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
-                  <FaArrowTrendUp className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
-                </div>
-                <div className="flex flex-col m-2 text-left text-blue-base">
-                  <h4 className="text-lg md:text-xl font-bold">
-                    {t("atvConnect.services.item_progress.title")}
-                  </h4>
-                  <p className="text-sm md:text-base">
-                    {t("atvConnect.services.item_progress.description")}
-                  </p>
-                </div>
-              </section>
-            </motion.div>
-            <motion.div {...slideFromRight}>
-              <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5  p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
-                  <IoMdTime className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
-                </div>
-                <div className="flex flex-col m-2 text-left text-blue-base">
-                  <h4 className="text-lg md:text-xl font-bold">
-                    {t("atvConnect.services.item_hours.title")}
-                  </h4>
-                  <p className="text-sm md:text-base">
-                    {t("atvConnect.services.item_hours.description")}
-                  </p>
-                </div>
-              </section>
-            </motion.div>
-          </section>
-        </div>
-      </section>
+      <ServicesAtvConnect />
 
       <section className="m-5 text-center p-10">
         <div>
@@ -407,60 +372,20 @@ function AtvConnect() {
 
         <div className="flex flex-wrap items-center relative">
           <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.calculus")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.physics")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.chemistry")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.programming")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.statistics")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.algebra")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.accounting")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.economics")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.english")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.biology")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.mathematics")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.data_bases")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.algorithms")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.thermodynamics")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.circuits")}
-            </span>
-            <span className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer">
-              {t("atvConnect.subjects.subject_list.finance")}
-            </span>
+            {subjects.map((subjects, index) => (
+              <span
+                key={index}
+                className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer"
+              >
+                {subjects.subject}
+              </span>
+            ))}
           </section>
         </div>
 
         <div className="relative">
           <img
-            className="md:absolute md:top-[-90px] max-w-[190px] md:max-w-[200px]"
+            className="block mx-auto md:absolute md:top-[-90px] max-w-[190px] md:max-w-[200px]"
             src={Javi}
             alt=""
           />
