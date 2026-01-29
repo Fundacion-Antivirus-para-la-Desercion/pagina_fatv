@@ -798,7 +798,8 @@
     },
     "steps": {
       "span": "PROCESO",
-      "title": "3 PASOS. ASí DE SIMPLE",
+      "title": "3 PASOS:",
+      "span_two": "ASÍ DE SIMPLE",
       "step_one": {
         "title": "Regístrate",
         "description": "Crea tu cuenta gratis"
@@ -848,7 +849,10 @@
       "testimony_three": {
         "description": "“Los tutores entienden porque ya pasaron por lo mismo. Eso hace la diferencia.”",
         "profession": "Ing. Sistemas"
-      }
+      },
+      "start_now": "¿Listo para empezar?",
+      "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
+      "btn_start_free":"Comenzar"
     }
   },
   "contactUs": {

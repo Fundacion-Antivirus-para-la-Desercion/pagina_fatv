@@ -847,7 +847,8 @@
     },
     "steps": {
       "span": "HOW IT WORKS",
-      "title": "3 STEPS. AS SIMPLE AS THAT",
+      "title": "3 STEPS:",
+      "span_two": " AS SIMPLE AS THAT",
       "step_one": {
         "title": "Sign up",
         "description": "Sign up for free"
@@ -876,12 +877,12 @@
         "english": "English",
         "biology": "Biology",
         "mathematics": "Mathematics",
-        "data_science": "Data Science",
-        "data_bases": "Bases de Datos",
+        "data_bases": "Databases",
         "algorithms": "Algorithms",
         "thermodynamics": "Thermodynamics",
         "circuits": "Circuits",
         "finance": "Finance",
+        "data_science": "Data Science",
         "Statistics": "Statistics",
         "math": "Mathematics"
       }
@@ -902,6 +903,9 @@
         "profession": "Systems Eng."
       }
     },
+    "start_now": "Ready to get started?",
+    "paragraph_start": "Join students who are boosting their academic results.",
+    "btn_start_free": "Start",
     "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {
