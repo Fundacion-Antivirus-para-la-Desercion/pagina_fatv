@@ -8,6 +8,8 @@ import { Pagination } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Seminario from "../../assets/images/views/atvConnect/seminario.png";
+
 
 function TestimonialsAtvConnect() {
   const { t } = useTranslation();
@@ -177,7 +179,12 @@ function TestimonialsAtvConnect() {
         </Swiper>
       </section>
 
-      <section className="flex flex-col items-center bg-brand-teal-400 p-10 mb-5 m-5">
+      <section className="flex flex-col items-center bg-brand-teal-400 p-10 mb-5 m-5 relative">
+        <img
+          className="w-full absolute inset-0"
+          src={Seminario}
+          alt=""
+        />
         <img
           className="w-28 h-28 md:w-32 md:h-32"
           src={LogoAtvConecta}

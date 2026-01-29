@@ -23,6 +23,7 @@ import { useTranslation } from "react-i18next";
 import TestimonialsAtvConnect from "../../components/atvConnect/TestimonialsAtvConnect.jsx";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import Btns from "./btns-wompi-and-donation/Btns.jsx";
 
 function AtvConnect() {
   const [init, setInit] = useState(false);
@@ -55,11 +56,11 @@ function AtvConnect() {
   });
 
   const slideFromTop = {
-  initial: { opacity: 0, y: -100 }, // y: -100 empieza 100px arriba
-  whileInView: { opacity: 1, y: 0 }, // y: 0 vuelve a su posición original
-  transition: { duration: 0.8, ease: "easeOut" },
-  viewport: { once: true, amount: 0.6 },
-};
+    initial: { opacity: 0, y: -100 }, // y: -100 empieza 100px arriba
+    whileInView: { opacity: 1, y: 0 }, // y: 0 vuelve a su posición original
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.6 },
+  };
 
   const slideFromRight = {
     initial: { opacity: 0, x: 100 },
@@ -133,6 +134,7 @@ function AtvConnect() {
 
   return (
     <>
+      <Btns />
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
@@ -258,21 +260,24 @@ function AtvConnect() {
         </ol>
       </section>
       <section className="bg-[#F6F6F6] grid grid-cols-1 lg:grid-cols-2 text-center p-10 md:gap-10">
-          <motion.div {...slideFromTop} className="relative items-center justify-center flex flex-col">
-            <span className="text-lg md:text-xl font-impact text-primary-purple">
-              {t("atvConnect.services.span")}
+        <motion.div
+          {...slideFromTop}
+          className="relative items-center justify-center flex flex-col"
+        >
+          <span className="text-lg md:text-xl font-impact text-primary-purple">
+            {t("atvConnect.services.span")}
+          </span>
+          <h2 className="text-4xl md:text-5xl font-impact text-blue-base">
+            {t("atvConnect.services.title_one")} <br />
+            <span className="text-primary-yellow">
+              {t("atvConnect.services.title_two")}
             </span>
-            <h2 className="text-4xl md:text-5xl font-impact text-blue-base">
-              {t("atvConnect.services.title_one")} <br />
-              <span className="text-primary-yellow">
-                {t("atvConnect.services.title_two")}
-              </span>
-            </h2>
+          </h2>
 
-            <div className="relative w-full h-auto">
-              <FaMedal className="sticky top-0 bottom-0 right-0 left-0 block mx-auto text-9xl m-5 text-gray-200" />
-            </div>
-          </motion.div>
+          <div className="relative w-full h-auto">
+            <FaMedal className="sticky top-0 bottom-0 right-0 left-0 block mx-auto text-9xl m-5 text-gray-200" />
+          </div>
+        </motion.div>
 
         <div className="relative">
           <motion.div {...floatSnake(0)} className="absolute top-0 right-0">

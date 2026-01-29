@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./Btns.module.css";
-import IconDonation from "../../../src/assets/images/views/donationPay/coin.png";
+import IconATVConnect from "../../../assets/images/views/atvConnect/javiAtvConecta.webp";
 import { useTranslation } from "react-i18next";
 
 function Btns() {
@@ -11,7 +11,7 @@ function Btns() {
 
   useEffect(() => {
     const sessionStorageValue =
-      location.pathname.toLowerCase() === "/provocacion" || location.pathname.toLowerCase() === "/atvconnect" ? false : true;
+      location.pathname.toLowerCase() === "/provocacion" ? false : true;
 
     setShowDonationPay(sessionStorageValue);
   }, [location.pathname]);
@@ -24,14 +24,14 @@ function Btns() {
       }`}
     >
       <div
-        className={`flex items-center rounded-full p-2 shadow-lg bg-primary-purple ${styles.btnDonate}`}
+        className={`flex items-center rounded-full p-2 shadow-lg bg-brand-teal-400 ${styles.btnDonate}`}
       >
         <img
-          src={IconDonation}
+          src={IconATVConnect}
           alt={t("btns.alt_donation_icon")}
-          className="w-10 h-10"
+          className="w-14 h-14 rounded-full"
         />
-        <p className="text-white text-lg font-bold">{t("btns.donate")}</p>
+        <p className="text-white text-base font-bold">ATVConecta</p>
       </div>
     </Link>
   );
