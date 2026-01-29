@@ -850,9 +850,11 @@
         "profession": "Systems Eng."
       }
     },
-    "start_now": "Ready to get started?",
-    "paragraph_start": "Join students who are boosting their academic results.",
-    "btn_start_free":"Start"
+    "goAtv": {
+      "start_now": "Ready to get started?",
+      "paragraph_start": "Join students who are boosting their academic results.",
+      "btn_start_free": "Start"
+    }
   },
   "contactUs": {
     "title": "Contact Us",

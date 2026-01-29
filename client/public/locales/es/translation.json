@@ -903,6 +903,16 @@
         "description": "“Los tutores entienden porque ya pasaron por lo mismo. Eso hace la diferencia.”",
         "profession": "Ing. Sistemas"
       },
+      "goAtv": {
+        "start_now": "¿Listo para empezar?",
+        "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
+        "btn_start_free": "Comenzar"
+      },
+      "start_now": "¿Listo para empezar?",
+      "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
+      "btn_start_free": "Comenzar"
+    },
+    "goAtv": {
       "start_now": "¿Listo para empezar?",
       "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
       "btn_start_free": "Comenzar"

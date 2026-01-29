@@ -903,6 +903,11 @@
         "profession": "Systems Eng."
       }
     },
+    "goAtv": {
+      "start_now": "Ready to get started?",
+      "paragraph_start": "Join students who are boosting their academic results.",
+      "btn_start_free": "Start"
+    },
     "start_now": "Ready to get started?",
     "paragraph_start": "Join students who are boosting their academic results.",
     "btn_start_free": "Start",

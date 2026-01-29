@@ -3,8 +3,6 @@ import BannerAtvConnectEn from "../../assets/images/views/atvConnect/academic-tu
 import BannerAtvConnectEs from "../../assets/images/views/atvConnect/tutorias-academicas.webp";
 import LogoAtvConecta from "../../assets/images/views/proVocacion/information/logo-atv-conecta-blanco.webp";
 import BannerView from "../../components/Banner-views/BannerView";
-import Figura from "../../assets/images/views/atvConnect/figura.png";
-import Joven from "../../assets/images/views/atvConnect/68.png";
 import Javi from "../../assets/images/views/javi/Javi-4.png";
 import Graduation from "../../assets/images/views/atvConnect/graduados.png";
 import Birrete from "../../assets/images/views/atvConnect/birrete.webp";
@@ -20,10 +18,10 @@ import { DoodleLine } from "../../assets/images/svg/Svg";
 import { motion } from "framer-motion";
 import CounterNumeric from "../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
-import TestimonialsAtvConnect from "../../components/atvConnect/TestimonialsAtvConnect.jsx";
+import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-import Btns from "./btns-wompi-and-donation/Btns.jsx";
+import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";
 
 function AtvConnect() {
   const [init, setInit] = useState(false);
@@ -134,7 +132,7 @@ function AtvConnect() {
 
   return (
     <>
-      <Btns />
+      <BtnAtv />
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
