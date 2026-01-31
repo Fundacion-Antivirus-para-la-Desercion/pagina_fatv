@@ -820,13 +820,13 @@
     "title": "CIFRAS QUE HABLAN",
     "figures_impact": {
       "figure_one": "Estudiantes activos",
-      "figure_two": "Tutores certificados",
+      "figure_two": "Aprobaron sus materias",
       "figure_three": "Sesiones completadas",
       "figure_four": "Satisfacción"
     },
     "list": {
       "item_one": "⭐ 4.9/5 Calificación promedio",
-      "item_two": "🟡 95% Mejoran sus notas",
+      "item_two": "📅 Año de lanzamiento 2024",
       "item_three": "✨ Respuesta en 24h"
     },
     "services": {
@@ -838,8 +838,8 @@
         "description": "Sesiones 1 a 1 con tutores que se adaptan a tu ritmo. Tú marcas el camino, nosotros te acompañamos."
       },
       "item_progress": {
-        "title": "Seguimiento de Proceso",
-        "description": "Visualiza tu avance con estadísticas claras. Identifica fortalezas y áreas de mejora."
+        "title": "Red de Tutores Especializados",
+        "description": "Conecta con tutores capacitados en las áreas que realmente necesitas."
       },
       "item_hours": {
         "title": "Horarios Flexibles",
@@ -857,7 +857,7 @@
       },
       "step_two": {
         "title": "Elige tutor",
-        "description": "Filtra por materia y rating"
+        "description": "Filtra por materia y horario"
       },
       "step_three": {
         "title": "Aprende",
@@ -892,16 +892,46 @@
       "span": "TESTIMONIOS",
       "title": "HISTORIAS REALES",
       "testimony_one": {
-        "description": "“Pase cálculo 3 después de perderla dos veces. mi tutora fue increíble.”",
-        "profession": "Ing. Civil"
+        "description": "“Estoy feliz con esta plataforma, ya que es un apoyo para seguir preparándome en mi carrera”",
+        "role": "Estudiante",
+        "university": "Becario Aurelio Llano",
+        "profession": "Becario Aurelio Llano"
       },
       "testimony_two": {
-        "description": "“La plataforma es super fácil. En 5 minutos ya tenia mi primera tutoría agendada”",
-        "profession": "Administración"
+        "description": "“La plataforma es didáctica lo que facilita al estudiante la selección de tutor y el seguimiento por parte del tutor en los espacios solicitados”",
+        "role": "Tutor",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
       },
       "testimony_three": {
-        "description": "“Los tutores entienden porque ya pasaron por lo mismo. Eso hace la diferencia.”",
-        "profession": "Ing. Sistemas"
+        "description": "“Me parece una buena idea la implementación de una plataforma, gracias”",
+        "role": "Estudiante",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
+      },
+      "testimony_four": {
+        "description": "“Los felicito por esta web, de verdad uno no saben lo útil que es hasta que lo prueba y queda con la boca abierta sobre lo fácil que es tener contacto con compas como nosotros dispuestos a ayudar”",
+        "role": "Estudiante",
+        "university": "Becario Aurelio Llano",
+        "profession": "Becario Aurelio Llano"
+      },
+      "testimony_five": {
+        "description": "“Me parece una alternativa muy innovadora y útil”",
+        "role": "Estudiante",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
+      },
+      "testimony_six": {
+        "description": "“En general me gustó mucho, muchas gracias por siempre pensar en nuestro bienestar”",
+        "role": "Estudiante",
+        "university": "Becario Aurelio Llano",
+        "profession": "Becario Aurelio Llano"
+      },
+      "testimony_seven": {
+        "description": "“Excelente herramienta”",
+        "role": "Estudiante",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
       },
       "goAtv": {
         "start_now": "¿Listo para empezar?",

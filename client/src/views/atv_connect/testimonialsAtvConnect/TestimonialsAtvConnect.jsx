@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import AtvConnect from "../AtvConnect";
 
 function TestimonialsAtvConnect() {
   const [init, setInit] = useState(false);
@@ -99,40 +100,71 @@ function TestimonialsAtvConnect() {
       testimony: t(
         "atvConnect.testimonialsAtvConnect.testimony_one.description",
       ),
-      initial: "M",
-      name: "María F.",
-      profession: t(
-        "atvConnect.testimonialsAtvConnect.testimony_one.profession",
+      initial: "E",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_one.role"),
+
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_one.university",
       ),
     },
     {
       testimony: t(
         "atvConnect.testimonialsAtvConnect.testimony_two.description",
       ),
-      initial: "C",
-      name: "Carlos A.",
-      profession: t(
-        "atvConnect.testimonialsAtvConnect.testimony_two.profession",
+      initial: "T",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_two.role"),
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_two.university",
       ),
     },
     {
       testimony: t(
         "atvConnect.testimonialsAtvConnect.testimony_three.description",
       ),
-      initial: "L",
-      name: "Laura S.",
-      profession: t(
-        "atvConnect.testimonialsAtvConnect.testimony_three.profession",
+      initial: "E",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_three.role"),
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_three.university",
       ),
     },
     {
       testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_one.description",
+        "atvConnect.testimonialsAtvConnect.testimony_four.description",
       ),
-      initial: "M",
-      name: "María F.",
-      profession: t(
-        "atvConnect.testimonialsAtvConnect.testimony_one.profession",
+      initial: "E",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_four.role"),
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_four.university",
+      ),
+    },
+    {
+      testimony: t(
+        "atvConnect.testimonialsAtvConnect.testimony_five.description",
+      ),
+      initial: "E",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_five.role"),
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_five.university",
+      ),
+    },
+    {
+      testimony: t(
+        "atvConnect.testimonialsAtvConnect.testimony_six.description",
+      ),
+      initial: "E",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_six.role"),
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_six.university",
+      ),
+    },
+    {
+      testimony: t(
+        "atvConnect.testimonialsAtvConnect.testimony_seven.description",
+      ),
+      initial: "E",
+      role: t("atvConnect.testimonialsAtvConnect.testimony_seven.role"),
+      university: t(
+        "atvConnect.testimonialsAtvConnect.testimony_seven.university",
       ),
     },
   ];
@@ -174,11 +206,11 @@ function TestimonialsAtvConnect() {
           }}
         >
           {testimonials.map((testimonials, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="flex items-stretch">
               <motion.div {...slideFromTop}>
-                <section className="relative inline-block m-5 mt-10">
+                <section className="relative inline-block m-5">
                   <div className="absolute inset-0 translate-x-3 translate-y-3 bg-primary-yellow rounded-2xl" />
-                  <section className="relative p-5 min-h-[270px] bg-white border-2 border-dark-blue rounded-2xl shadow-sm">
+                  <section className="relative flex items-center flex-wrap p-5 min-h-[350px] bg-white border-2 border-dark-blue rounded-2xl shadow-sm">
                     <LuQuote className="text-4xl text-primary-yellow opacity-70" />
                     <p className="m-5 text-lg text-blue-base font-semibold">
                       {testimonials.testimony}
@@ -192,10 +224,10 @@ function TestimonialsAtvConnect() {
                       </div>{" "}
                       <div className="flex flex-col m-2">
                         <p className="text-blue-base font-semibold">
-                          {testimonials.name}
+                          {testimonials.role}
                         </p>
                         <p className="text-blue-base opacity-[0.7]">
-                          {testimonials.profession}
+                          {testimonials.university}
                         </p>
                       </div>
                     </section>

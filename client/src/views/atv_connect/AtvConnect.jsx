@@ -7,9 +7,12 @@ import Javi from "../../assets/images/views/javi/Javi-4.png";
 import Graduation from "../../assets/images/views/atvConnect/graduados.png";
 import Birrete from "../../assets/images/views/atvConnect/birrete.webp";
 import { LuGraduationCap } from "react-icons/lu";
-import { GoPeople } from "react-icons/go";
 import { LuBookOpen } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
+import { HiBadgeCheck } from "react-icons/hi";
+import { FaRegHeart } from "react-icons/fa";
+
+
 import { motion } from "framer-motion";
 import CounterNumeric from "../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
@@ -243,7 +246,7 @@ function AtvConnect() {
               <LuGraduationCap className="text-3xl text-dark-blue" />
             </div>
             <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={2500} />+
+              <CounterNumeric countNumber={800} />+
             </span>
             <p className="text-base text-dark-blue">
               {t("atvConnect.figures_impact.figure_one")}
@@ -251,10 +254,10 @@ function AtvConnect() {
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-16 h-16 bg-[#E5E7ED] rounded-2xl m-3 hover:scale-110 duration-300">
-              <GoPeople className="text-3xl text-dark-blue" />
+              <HiBadgeCheck className="text-3xl text-dark-blue" />
             </div>
             <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={150} />+
+              <CounterNumeric countNumber={85} />%
             </span>
             <p className="text-base text-dark-blue">
               {t("atvConnect.figures_impact.figure_two")}
@@ -265,7 +268,7 @@ function AtvConnect() {
               <LuBookOpen className="text-3xl text-dark-blue" />
             </div>
             <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={15000} />+
+              <CounterNumeric countNumber={700} />+
             </span>
             <p className="text-base text-dark-blue">
               {t("atvConnect.figures_impact.figure_three")}
@@ -273,7 +276,7 @@ function AtvConnect() {
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-16 h-16 bg-[#E5E7ED] rounded-2xl m-3 hover:scale-110 duration-300">
-              <CiHeart className="text-4xl text-dark-blue" />
+              <FaRegHeart className="text-4xl text-dark-blue" />
             </div>
             <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
               <CounterNumeric countNumber={98} />%
@@ -300,7 +303,7 @@ function AtvConnect() {
 
       <ServicesAtvConnect />
 
-      <section className="m-5 text-center p-10">
+      <section className="mt-5 text-center p-10">
         <div>
           <span className="text-primary-purple font-impact text-lg md:text-xl">
             {t("atvConnect.steps.span")}

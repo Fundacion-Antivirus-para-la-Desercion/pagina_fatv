@@ -1,7 +1,7 @@
-import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
 import { FaMedal } from "react-icons/fa";
 import { BsRocketTakeoff } from "react-icons/bs";
+import { BsPersonCheckFill } from "react-icons/bs";
 import { DoodleLine } from "../../../assets/images/svg/Svg";
 import { useTranslation } from "react-i18next";
 import { LuBookOpen } from "react-icons/lu";
@@ -84,7 +84,7 @@ function ServicesAtvConnect() {
             <motion.div {...slideFromRight}>
               <section className="relative bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
-                  <FaArrowTrendUp className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
+                  <BsPersonCheckFill className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
                 </div>
                 <div className="flex flex-col m-2 text-left text-blue-base">
                   <h4 className="text-lg md:text-xl font-bold">

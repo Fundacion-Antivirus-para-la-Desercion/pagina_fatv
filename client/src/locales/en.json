@@ -769,13 +769,13 @@
     "title": "THE NUMBERS SPEAK FOR THEMSELVES",
     "figures_impact": {
       "figure_one": "Active students",
-      "figure_two": "Certified tutors",
+      "figure_two": "Passed their classes",
       "figure_three": "Sessions completed",
       "figure_four": "Student satisfaction"
     },
     "list": {
       "item_one": "⭐ 4.9/5 Average rating",
-      "item_two": "🟡 95% Improve Their Grades",
+      "item_two": "📅 Release year 2024",
       "item_three": "✨ 24-hour turnaround"
     },
     "services": {
@@ -787,8 +787,8 @@
         "description": "1-on-1 support tailored to your learning style. You set the goals, we provide the guidance."
       },
       "item_progress": {
-        "title": "Progress Tracking",
-        "description": "Visualize your growth with clear stats. Identify your strengths and areas to improve."
+        "title": "Specialized Tutor Network",
+        "description": "Connect with expert tutors in the exact areas you need."
       },
       "item_hours": {
         "title": "Flexible Hours",
@@ -805,7 +805,7 @@
       },
       "step_two": {
         "title": "Pick a tutor",
-        "description": "Filter by: Subject, Rating"
+        "description": "Filter by class and schedule"
       },
       "step_three": {
         "title": "Start learning",
@@ -838,16 +838,39 @@
       "span": "TESTIMONIALS",
       "title": "REAL STORIES",
       "testimony_one": {
-        "description": "“I finally passed Calculus 3 after two tries. My tutor was amazing!”",
-        "profession": "Civil Eng."
+        "description": "“I'm really happy with this platform—it's the perfect support for my career goals”",
+        "role": "Student",
+        "university": "Aurelio Llano Scholar"
       },
       "testimony_two": {
-        "description": "“The platform is super easy to use. I had my first tutoring session booked in just 5 minutes!”",
-        "profession": "Administration"
+        "description": "“intuitive platform makes it easy for students to find a tutor and for tutors to track every session”",
+        "role": "Tutor",
+        "university": "University of Antioquia"
       },
       "testimony_three": {
-        "description": "“The tutors get it because they’ve been there too. That’s what makes the difference.”",
-        "profession": "Systems Eng."
+        "description": "“I think implementing this platform is a great idea, thank you!”",
+        "role": "Student",
+        "university": "University of Antioquia"
+      },
+      "testimony_four": {
+        "description": "“Congrats on this site! You don't realize how useful it is until you try it. I was blown away by how easy it is to connect with peers who are ready to help”",
+        "role": "Student",
+        "university": "Aurelio Llano Scholar"
+      },
+      "testimony_five": {
+        "description": "“I find it to be a very innovative and useful alternative”",
+        "role": "Student",
+        "university": "University of Antioquia"
+      },
+      "testimony_six": {
+        "description": "“I really liked it! Thank you for always thinking about our well-being”",
+        "role": "Student",
+        "university": "Aurelio Llano Scholar"
+      },
+      "testimony_seven": {
+        "description": "“Excellent tool”",
+        "role": "Student",
+        "university": "University of Antioquia"
       }
     },
     "goAtv": {
