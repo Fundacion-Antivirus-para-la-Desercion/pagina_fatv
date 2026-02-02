@@ -144,98 +144,98 @@ function Consultorias() {
         </div>
 
         <section className="grid grid-cols-1 m-2 md:grid-cols-3 p-2 grid-rows-2 gap-10 md:gap-10  md:m-16">
-          <div class="group bg-white  min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
+          <div className="group bg-white  min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+            <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">💛</span>
               </div>
 
-              <h2 class="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.methodology_title")}
               </h2>
             </div>
 
-            <p class="text-base text-blue-base text-justify group-hover:text-white">
+            <p className="text-base text-blue-base text-justify group-hover:text-white">
               {t("consultorias.cards.methodology_description")}
             </p>
           </div>
 
-          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span class="text-2xl">🎯</span>
+          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+            <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
+                <span className="text-2xl">🎯</span>
               </div>
 
-              <h2 class="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.focus_title")}
               </h2>
             </div>
 
-            <p class="text-base text-blue-base text-justify group-hover:text-white">
+            <p className="text-base text-blue-base text-justify group-hover:text-white">
               {t("consultorias.cards.focus_description")}
             </p>
           </div>
 
-          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
+          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+            <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">👥</span>
               </div>
 
-              <h2 class="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.accompaniment_title")}
               </h2>
             </div>
 
-            <p class="text-base text-blue-base text-justify group-hover:text-white">
+            <p className="text-base text-blue-base text-justify group-hover:text-white">
               {t("consultorias.cards.accompaniment_description")}
             </p>
           </div>
 
-          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
+          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+            <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">🎓</span>
               </div>
 
-              <h2 class="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.experience_title")}
               </h2>
             </div>
 
-            <p class="text-base text-blue-base text-justify group-hover:text-white">
+            <p className="text-base text-blue-base text-justify group-hover:text-white">
               {t("consultorias.cards.experience_description")}
             </p>
           </div>
 
-          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
+          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+            <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
                 <span className="text-2xl">✨</span>
               </div>
 
-              <h2 class="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.solutions_title")}
               </h2>
             </div>
 
-            <p class="text-base text-blue-base text-justify group-hover:text-white">
+            <p className="text-base text-blue-base text-justify group-hover:text-white">
               {t("consultorias.cards.solutions_description")}
             </p>
           </div>
 
-          <div class="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div class="flex items-start space-x-4 mb-4">
-              <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span class="text-2xl">💡</span>
+          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
+            <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
+                <span className="text-2xl">💡</span>
               </div>
 
-              <h2 class="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.innovation_title")}
               </h2>
             </div>
 
-            <p class="text-base text-blue-base text-justify group-hover:text-white">
+            <p className="text-base text-blue-base text-justify group-hover:text-white">
               {t("consultorias.cards.innovation_description")}
             </p>
           </div>

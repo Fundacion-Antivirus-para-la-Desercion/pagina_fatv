@@ -26,7 +26,7 @@ function NotFound() {
             className="group relative overflow-hidden w-full max-w-[200px] text-lg md:text-xl mt-5 p-3 border-2 rounded-3xl text-dark-blue font-bold shadow-2xl shadow-[#222D56] transform hover:scale-105 transition-all duration-500"
           >
             {t("notFound.button")}
-            <div class="absolute inset-0 bg-[#222d562f] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+            <div className="absolute inset-0 bg-[#222d562f] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
           </button>
         </Link>
       </div>

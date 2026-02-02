@@ -126,11 +126,11 @@ function StudentRetentionService() {
         </motion.div>
 
         <div className="relative hidden md:block row-span-2 inset-0 m-auto bg-[#DCEBF9] rounded-full h-[400px] w-[400px] z-[2]">
-          <div id="lines" class="relative w-[400px] h-[400px]">
-            <div class="absolute top-5 right-0 border-t-4 border-dashed border-[#D3C3E3] w-[200px] -rotate-45"></div>
-            <div class="absolute top-5 left-0 border-t-4 border-dashed border-[#ADD6FF] w-[200px] rotate-45"></div>
-            <div class="absolute bottom-5 left-0 border-t-4 border-dashed border-[#81F0E7] w-[200px] -rotate-45"></div>
-            <div class="absolute bottom-5 right-0 border-t-4 border-dashed border-[#FFDE8A] w-[200px] rotate-45"></div>
+          <div id="lines" className="relative w-[400px] h-[400px]">
+            <div className="absolute top-5 right-0 border-t-4 border-dashed border-[#D3C3E3] w-[200px] -rotate-45"></div>
+            <div className="absolute top-5 left-0 border-t-4 border-dashed border-[#ADD6FF] w-[200px] rotate-45"></div>
+            <div className="absolute bottom-5 left-0 border-t-4 border-dashed border-[#81F0E7] w-[200px] -rotate-45"></div>
+            <div className="absolute bottom-5 right-0 border-t-4 border-dashed border-[#FFDE8A] w-[200px] rotate-45"></div>
           </div>
 
           <motion.div
@@ -335,7 +335,7 @@ function StudentRetentionService() {
                       "studentRetentionManagement.studentRetentionCard.btnStartNow"
                     )}
                   </span>
-                  <div class="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+                  <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
                 </Link>
               </div>
             </section>

@@ -108,7 +108,7 @@ function goAtvConnect() {
                 {" "}
                 {t("atvConnect.goAtv.btn_start_free")}
               </span>
-              <div class="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+              <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
               <IoIosArrowForward className="text-xl ml-2 text-dark-blue" />
             </a>
           </div>

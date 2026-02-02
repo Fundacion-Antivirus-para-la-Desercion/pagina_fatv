@@ -385,7 +385,7 @@ function Header() {
 
       <div
         onClick={handleNav}
-        class={`
+        className={`
           ${
             nav
               ? "fixed inset-0 h-screen p-0 bg-[rgba(0,0,0,0.4117647059)] backdrop-blur-[4px] transition-all duration-400 ease-in-out z-30"
