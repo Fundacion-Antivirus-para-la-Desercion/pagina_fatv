@@ -4,18 +4,14 @@ import LogoAtvConecta from "../../assets/images/views/proVocacion/information/lo
 import BannerView from "../../components/Banner-views/BannerView";
 import Graduation from "../../assets/images/views/atvConnect/graduados.png";
 import Birrete from "../../assets/images/views/atvConnect/birrete.webp";
-import { LuGraduationCap } from "react-icons/lu";
-import { LuBookOpen } from "react-icons/lu";
-import { HiBadgeCheck } from "react-icons/hi";
-import { FaRegHeart } from "react-icons/fa";
-
 import { motion } from "framer-motion";
-import CounterNumeric from "../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
 import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
 import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";
 import ServicesAtvConnect from "./servicesAtvConnect/ServicesAtvConnect.jsx";
 import SchoolSubjectsAtvConnect from "./schoolSubjects/SchoolSubjectsAtvConnect.jsx";
+import StepsAtvConnect from "./stepsAtvConnect/StepsAtvConnect.jsx";
+import FiguresAtvConnect from "./figuresAtvConnect/FiguresAtvConnect.jsx";
 
 function AtvConnect() {
   const { t } = useTranslation();
@@ -44,13 +40,6 @@ function AtvConnect() {
     transition: { duration: 0.8, ease: "easeOut" },
     viewport: { once: true, amount: 0.6 },
   };
-
-  const expandableTransition = (delayValue) => ({
-    initial: { opacity: 0, scale: 0.5 },
-    whileInView: { opacity: 1, scale: 1 },
-    transition: { duration: 0.8, ease: "easeOut", delay: delayValue },
-    viewport: { once: true },
-  });
 
   return (
     <>
@@ -109,63 +98,8 @@ function AtvConnect() {
         </motion.div>
       </section>
 
-      <section className="max-w-4xl mx-auto m-5 mb-10">
-        <section className="flex flex-col items-center md:p-10">
-          {" "}
-          <span className="text-lg md:text-xl font-impact text-primary-purple">
-            {t("atvConnect.span_title")}
-          </span>
-          <h1 className="text-4xl md:text-5xl font-impact text-blue-base">
-            {t("atvConnect.title")}
-          </h1>
-        </section>
-        <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 justify-items-center p-5">
-          <div className="flex flex-col items-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-[#E5E7ED] rounded-2xl m-3 hover:scale-110 duration-300">
-              <LuGraduationCap className="text-3xl text-dark-blue" />
-            </div>
-            <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={800} />+
-            </span>
-            <p className="text-base text-dark-blue">
-              {t("atvConnect.figures_impact.figure_one")}
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-[#E5E7ED] rounded-2xl m-3 hover:scale-110 duration-300">
-              <HiBadgeCheck className="text-3xl text-dark-blue" />
-            </div>
-            <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={85} />%
-            </span>
-            <p className="text-base text-dark-blue">
-              {t("atvConnect.figures_impact.figure_two")}
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-[#E5E7ED] rounded-2xl m-3 hover:scale-110 duration-300">
-              <LuBookOpen className="text-3xl text-dark-blue" />
-            </div>
-            <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={700} />+
-            </span>
-            <p className="text-base text-dark-blue">
-              {t("atvConnect.figures_impact.figure_three")}
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-[#E5E7ED] rounded-2xl m-3 hover:scale-110 duration-300">
-              <FaRegHeart className="text-4xl text-dark-blue" />
-            </div>
-            <span className="statistic-number text-dark-blue text-3xl md:text-4xl font-impact">
-              <CounterNumeric countNumber={98} />%
-            </span>
-            <p className="text-base text-dark-blue">
-              {t("atvConnect.figures_impact.figure_four")}
-            </p>
-          </div>
-        </section>
-      </section>
+      <FiguresAtvConnect />
+
       <section className="bg-dark-blue p-5">
         <ol className="md:flex justify-center list-none text-white text-justify text-lg md:text-base">
           <li className="m-5 md:m-0 md:mr-8">
@@ -182,59 +116,7 @@ function AtvConnect() {
 
       <ServicesAtvConnect />
 
-      <section className="mt-5 text-center p-10">
-        <div>
-          <span className="text-primary-purple font-impact text-lg md:text-xl">
-            {t("atvConnect.steps.span")}
-          </span>
-          <h5 className="text-dark-blue font-impact text-4xl md:text-5xl">
-            {t("atvConnect.steps.title")}
-          </h5>
-          <h6 className="text-primary-yellow font-impact text-4xl md:text-5xl">
-            {t("atvConnect.steps.span_two")}
-          </h6>
-        </div>
-        <div>
-          <section className="md:flex md:justify-evenly m-10">
-            <motion.div
-              {...expandableTransition(0)}
-              className="relative flex flex-col items-center mt-5"
-            >
-              <span className="text-8xl font-impact text-[#F0F1F5]">01</span>
-              <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
-                {t("atvConnect.steps.step_one.title")}
-              </p>
-              <p className="text-gray-400">
-                {t("atvConnect.steps.step_one.description")}
-              </p>
-            </motion.div>
-            <motion.div
-              {...expandableTransition(0.4)}
-              className="relative flex flex-col items-center mt-5"
-            >
-              <span className="text-8xl font-impact text-[#F0F1F5]">02</span>
-              <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
-                {t("atvConnect.steps.step_two.title")}
-              </p>
-              <p className="text-gray-400">
-                {t("atvConnect.steps.step_two.description")}
-              </p>
-            </motion.div>
-            <motion.div
-              {...expandableTransition(0.8)}
-              className="relative flex flex-col items-center mt-5"
-            >
-              <span className="text-8xl font-impact text-[#F0F1F5]">03</span>
-              <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
-                {t("atvConnect.steps.step_three.title")}
-              </p>
-              <p className="text-gray-400">
-                {t("atvConnect.steps.step_three.description")}
-              </p>
-            </motion.div>
-          </section>
-        </div>
-      </section>
+      <StepsAtvConnect />
 
       <SchoolSubjectsAtvConnect />
 
