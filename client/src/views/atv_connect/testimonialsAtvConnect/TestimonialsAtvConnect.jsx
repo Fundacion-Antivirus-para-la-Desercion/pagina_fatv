@@ -92,7 +92,7 @@ function TestimonialsAtvConnect() {
 
   return (
     <>
-      <section className="p-14">
+      <section className="p-5 md:p-10">
         <div className="text-center mb-10">
           <span className="text-lg text-primary-purple font-impact">
             {t("atvConnect.testimonialsAtvConnect.span")}
@@ -119,7 +119,7 @@ function TestimonialsAtvConnect() {
             },
           }}
           modules={[Pagination]}
-          className="mySwiper pb-10"
+          className="mySwiper pb-1 md:pb-10"
           style={{
             "--swiper-pagination-color": "#FFBA08",
             "--swiper-pagination-bullet-inactive-color": "#94a3b8",
