@@ -1,11 +1,13 @@
 import React from "react";
 import BannerConsultoriasEn from "../assets/images/views/consultorias/student-retention-consulting.webp";
 import BannerConsultoriasEs from "../assets/images/views/consultorias/consultoria-en-permanencia-estudiantil.webp";
+import BannerConsulting from "../assets/images/views/consultorias/banner-consulting.webp";
 import SocialFest from "../assets/images/views/consultorias/social-fest.webp";
 import AlianzaFraternidad from "../assets/images/views/consultorias/alianza-fraternidad-medellin-fundacion.jpg";
 import FraternidadMedellin from "../assets/images/views/consultorias/aliados-fraternidad-medellin.webp";
 import UniversidadNorte from "../assets/images/views/consultorias/iniciativa-universidad-norte.webp";
 import Reunion from "../assets/images/views/consultorias/reunion.webp";
+import Estudiantes from "../assets/images/views/consultorias/estudiantes-colegio.webp";
 import Colaboracion from "../assets/images/views/consultorias/colaboracion-institucional.png";
 import Inpacto from "../assets/images/views/consultorias/inpacto-mediable.png";
 import Innovacion from "../assets/images/views/consultorias/inovacion-educativa.png";
@@ -13,121 +15,104 @@ import Innovacion from "../assets/images/views/consultorias/inovacion-educativa.
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { EffectFade, Autoplay } from "swiper/modules";
+import { EffectFade, Autoplay, EffectCards } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
 import { Link } from "react-router-dom";
 
-
 function Consultorias() {
   const { t } = useTranslation();
 
+  const consultingData = [
+    {
+      item: "1",
+      title: t("consultorias.universities"),
+      description: t("consultorias.universities_description"),
+    },
+    {
+      item: "2",
+      title: t("consultorias.bootcamps"),
+      description: t("consultorias.bootcamps_description"),
+    },
+    {
+      item: "3",
+      title: t("consultorias.schools"),
+      description: t("consultorias.schools_description"),
+    },
+    {
+      item: "4",
+      title: t("consultorias.scholarship_programs"),
+      description: t("consultorias.scholarship_programs_description"),
+    },
+  ];
+
   return (
     <>
-      <div className="lg:pt-[145px]">
+      <div className="relative lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
             enImage: BannerConsultoriasEn,
-            esImage: BannerConsultoriasEs,
+            esImage: BannerConsulting,
             keyTitle: "studentRetentionManagement.alt_img_banner",
           }}
         />
+        <h1 className="absolute z-10 bottom-40 left-1/2 transform -translate-x-1/2 text-center text-2xl md:text-5xl font-impact text-white border-dark-blue mt-5">
+          Consultoría en Permanencia Estudiantil
+        </h1>
+        <span className="absolute z-10 bottom-20 left-1/2 transform -translate-x-1/2 w-fit font-bold text-center text-sm md:text-3xl bg-dark-yellow text-dark-blue p-3 rounded-3xl">
+        Fundación Antivirus para la Deserción
+        </span>
       </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-[60%_40%] mt-10 items-stretch">
-        <div className="min-h-[300px] md:min-h-[600px]">
-          <Swiper
-            effect={"fade"}
-            grabCursor={true}
-            EffectFade={{
-              shadow: false,
-            }}
-            modules={[EffectFade, Autoplay]}
-            className="mySwiper h-full"
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-          >
-            <SwiperSlide className="h-full">
-              <img
-                src={SocialFest}
-                alt={t("")}
-                className="w-full h-full md:object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="h-full">
-              <img
-                src={Reunion}
-                alt={t("")}
-                className="w-full h-full md:object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="h-full">
-              <img
-                src={FraternidadMedellin}
-                alt={t("")}
-                className="w-full h-full md:object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="h-full">
-              <img
-                src={AlianzaFraternidad}
-                alt={t("")}
-                className="w-full h-full md:object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="h-full">
-              <img
-                src={UniversidadNorte}
-                alt={t("")}
-                className="w-full h-full md:object-cover"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+      <section className="relative bg-[#F6F6F6] grid grid-cols-1 md:grid-cols-2 p-10">
+        <div
+          className="absolute inset-0 z-1"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, #FFFFFF 1px, transparent 1px),
+        linear-gradient(to bottom, #FFFFFF 1px, transparent 1px)
+      `,
+            backgroundSize: "48px 48px, 48px 48px",
+          }}
+        />
+        <section className="relative">
+          <div className="">
+            <h2 className="lineSubtitle text-4xl md:text-5xl text-blue-base font-impact">
+              {t("consultorias.consulting_title")}
+              <span className="text-4xl md:text-5xl font-impact text-primary-yellow">
+                {t("consultorias.consulting_title_span")}
+              </span>
+            </h2>
 
-        <div className="bg-dark-blue flex flex-col justify-center mt-10 md:mt-0 items-center p-5">
-          <h1 className="lineSubtitle text-white font-impact text-4xl md:text-4xl lg:text-4xl mb-2 mt-2">
-            {t("consultorias.consulting_title")}
-            <span className="text-primary-yellow">
-              {" "}
-              {t("consultorias.consulting_title_span")}
-            </span>
-          </h1>
+            <p className="relative text-xl text-blue-base text-center md:text-left mt-10">
+              {t("consultorias.description_general")}
+            </p>
+          </div>
 
-          <ul className="text-white list-disc text-xl  mb-10 mt-8 ml-5">
-            <li className="mt-2 text-lg font-bold">
-              {t("consultorias.universities")}
-            </li>
-            <p className="text-sm mt-2">
-              {t("consultorias.universities_description")}
-            </p>
-            <li className="mt-2 text-lg font-bold">
-              {t("consultorias.bootcamps")}
-            </li>
-            <p className="text-sm mt-2">
-              {t("consultorias.bootcamps_description")}
-            </p>
+          <section className="relative grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            {consultingData.map((consultingData, index) => (
+              <div
+                key={index}
+                className="relative bg-white p-5 rounded-2xl shadow-lg max-w-md flex flex-col items-center  md:items-start hover:shadow-2xl transition duration-300"
+              >
+                <div className="flex items-center">
+                  <span className="flex items-center justify-center bg-primary-yellow text-white text-lg font-bold p-3 mr-3 rounded-2xl w-10 h-10">
+                    {consultingData.item}
+                  </span>
+                  <h4 className="text-blue-base font-semibold text-xl">
+                    {consultingData.title}
+                  </h4>
+                </div>
 
-            <li className="mt-2 text-lg font-bold">
-              {t("consultorias.schools")}
-            </li>
-            <p className="text-sm mt-2">
-              {t("consultorias.schools_description")}
-            </p>
+                <p className="text-blue-base text-base m-3">
+                  {consultingData.description}
+                </p>
+              </div>
+            ))}
+          </section>
 
-            <li className="mt-2 text-lg font-bold">
-              {t("consultorias.scholarship_programs")}
-            </li>
-            <p className="text-sm mt-2">
-              {t("consultorias.scholarship_programs_description")}
-            </p>
-          </ul>
-          <p className="text-white text-base md:text-base text-justify">
-            {t("consultorias.description_general")}
-          </p>
-        </div>
+          <img src="" alt="" />
+        </section>
       </section>
 
       <section className="mt-10 md:mt-20 text-center">
@@ -150,7 +135,7 @@ function Consultorias() {
                 <span className="text-2xl">💛</span>
               </div>
 
-              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.methodology_title")}
               </h2>
             </div>
@@ -166,7 +151,7 @@ function Consultorias() {
                 <span className="text-2xl">🎯</span>
               </div>
 
-              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.focus_title")}
               </h2>
             </div>
@@ -182,7 +167,7 @@ function Consultorias() {
                 <span className="text-2xl">👥</span>
               </div>
 
-              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.accompaniment_title")}
               </h2>
             </div>
@@ -198,7 +183,7 @@ function Consultorias() {
                 <span className="text-2xl">🎓</span>
               </div>
 
-              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.experience_title")}
               </h2>
             </div>
@@ -214,7 +199,7 @@ function Consultorias() {
                 <span className="text-2xl">✨</span>
               </div>
 
-              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.solutions_title")}
               </h2>
             </div>
@@ -230,7 +215,7 @@ function Consultorias() {
                 <span className="text-2xl">💡</span>
               </div>
 
-              <h2 className="group-hover:text-white text-xl font-extrabold text-blue-base mt-1">
+              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
                 {t("consultorias.cards.innovation_title")}
               </h2>
             </div>
@@ -250,7 +235,7 @@ function Consultorias() {
               {t("consultorias.pillars.title_br")}
             </span>
           </h3>
-          <p className="text-blue-base text-lg mt-3">
+          <p className="text-blue-base ext-lg md:text-xl  mt-3">
             {t("consultorias.pillars.description")}
           </p>
         </div>
