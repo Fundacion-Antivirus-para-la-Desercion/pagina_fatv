@@ -80,7 +80,7 @@ function Footer() {
           <p>{t("footer.dataProtection")}</p>
         </div>
         <div className="footer-redirecion">
-          <button>
+          <button className="btn-up" aria-label="Scroll to top">
             <svg
               className="svg"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

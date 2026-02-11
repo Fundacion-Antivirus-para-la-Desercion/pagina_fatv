@@ -44,7 +44,7 @@ function BannerView({ imagesBannerMap }) {
           className="w-full h-[50vh] max-h-[400px] md:h-full object-cover object-[30%_50%]"
         />
         <div className="absolute inset-0"></div>
-        <div className="absolute bottom-0 md:bottom-4 left-4 flex space-x-2 sm:space-x-4">
+        <div className="absolute bottom-2 md:bottom-4 left-4 flex space-x-2 sm:space-x-4">
           {socialMedia.map((social, index) => (
             <a
               key={index}
