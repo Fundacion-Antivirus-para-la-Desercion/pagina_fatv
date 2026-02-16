@@ -126,7 +126,7 @@ function Description() {
   ];
   return (
     <>
-      <section className="relative bg-[#F6F6F6] grid grid-cols-1 md:grid-cols-2 md:items-stretch md:gap-16 p-12 md:py-20">
+      <section className="relative bg-[#F6F6F6] grid grid-cols-1 md:grid-cols-2 md:items-stretch md:gap-16 p-8 md:py-20">
         <div
           className="absolute inset-0 z-1"
           style={{
@@ -217,7 +217,7 @@ function Description() {
             {imagesConsulting?.map((item, index) => (
               <SwiperSlide key={index}>
                 <img
-                  className="w-full h-full border-[4px] border-solid border-white rounded-3xl shadow-2xl object-cover"
+                  className="object-cover w-full h-[400px] md:h-full border-[4px] border-solid border-white rounded-3xl shadow-2xl"
                   src={item.image}
                   alt={`Slide ${index}`}
                 />

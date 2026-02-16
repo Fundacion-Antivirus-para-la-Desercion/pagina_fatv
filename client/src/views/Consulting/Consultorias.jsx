@@ -52,16 +52,28 @@ function Consultorias() {
         />
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end pb-20 md:pb-32 px-4">
-          <div className="relative">
-            <h1 className="relative z-10 max-w-4xl text-center text-3xl md:text-6xl font-renogare text-white font-extrabold drop-shadow-2xl">
+          <div className="relative w-full flex flex-col md:items-end">
+            <h1
+              className="relative z-10 max-w-4xl text-center md:text-left text-3xl md:text-7xl font-renogare text-white font-extrabold -tracking-wider md:leading-[4rem]"
+              style={{
+                textShadow: `
+          2px 2px 0 #222D56,
+          4px 4px 0 #222D56,
+          6px 6px 0 #222D56,
+          8px 8px 0 #242c57,
+          10px 10px 0 #222D56,
+          12px 12px 0 #222D56,
+          14px 14px 0 #222D56,
+          16px 16px 25px rgba(0,0,0,0.5)
+        `,
+                WebkitTextStroke: "2px #242c57",
+              }}
+            >
               Consultoría en permanencia estudiantil
             </h1>
-            <span className="absolute top-2 left-2 z-0 max-w-4xl text-center text-3xl md:text-6xl font-renogare text-dark-blue font-extrabold drop-shadow-2xl">
-              Consultoría en permanencia estudiantil
-            </span>
           </div>
 
-          <span className="mt-6 px-6 py-2 md:py-2 bg-dark-blue text-white font-semibold text-center text-sm md:text-3xl rounded-full shadow-xl">
+          <span className="mt-6 px-6 py-2 md:py-2 bg-dark-blue text-white font-semibold text-center text-sm md:text-3xl tracking-wide rounded-full shadow-xl">
             Fundación Antivirus para la Deserción
           </span>
         </div>
