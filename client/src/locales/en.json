@@ -522,35 +522,76 @@
     }
   },
   "consultorias": {
-    "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
-    "consulting_title_span": "RETENTION:",
-    "universities": "Universities",
-    "universities_description": "Comprehensive Strategies to Reduce Dropout Rates and Increase Graduation Rates.",
-    "bootcamps": "Bootcamps",
-    "bootcamps_description": "Intensive Mentorship Programs to Ensure Learner Achievement.",
-    "schools": "Schools",
-    "schools_description": "College and Career Readiness for High School Seniors.",
-    "scholarship_programs": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
-    "description_general": "We provide continuous support to help students stay the course, navigate their academic journey, and reach graduation.",
-    "btn_request_consulting": "Request Consulting",
+    "description": {
+      "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
+      "consulting_title_span": "RETENTION:",
+      "universities": "Universities",
+      "universities_description": "Comprehensive Strategies to Reduce Dropout Rates and Increase Graduation Rates.",
+      "bootcamps": "Bootcamps",
+      "bootcamps_description": "Intensive Mentorship Programs to Ensure Learner Achievement.",
+      "schools": "Schools",
+      "schools_description": "College and Career Readiness for High School Seniors.",
+      "scholarship_programs": "Becarios Programs: NGOs & Companies",
+      "scholarship_programs_description": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
+      "description_general": "We provide continuous support to help students stay the course, navigate their academic journey, and reach graduation.",
+      "btn_request_consulting": "Request Consulting",
+
+      "imagesConsultingArray": {
+        "link_see_more": "See More",
+        "retention_figure": "Retention",
+
+        "image_one": {
+          "description": "Supporting students through university sign-ups",
+          "alt": "Student getting help with university admissions from Fundación Antivirus"
+        },
+        "image_two": {
+          "description": "Social Fest 2026 Participation",
+          "alt": "Fundación Antivirus team at Social Fest 2026"
+        },
+        "image_three": {
+          "description": "Meeting with the Itagüí Secretary of Education",
+          "alt": "Reunión entre colaboradores de la Fundación Antivirus y representantes de la Secretaría de Educación de Itagüí"
+        },
+        "image_four": {
+          "description": "Meeting with Fraternidad Medellín and Comfama Scholarship Recipients",
+          "alt": "Becarios Fraternidad Medellín and Comfama scholars meeting"
+        },
+        "image_five": {
+          "description": "Supporting Ver + and Beca Tech students",
+          "alt": "Fundación Antivirus supporting scholarship students"
+        },
+        "image_six": {
+          "description": "Meeting with the Antioquia Government",
+          "alt": "Fundación Antivirus team meeting with Antioquia Government representatives"
+        },
+        "image_seven": {
+          "description": "Meeting with the Fundación Antivirus team",
+          "alt": "Fundación Antivirus team during an institutional activity"
+        },
+        "image_eight": {
+          "description": "Student Support at University of Antioquia",
+          "alt": "Fundación Antivirus supports students at the University of Antioquia"
+        }
+      }
+    },
     "whyChooseUs": {
       "title": "WHY CHOOSE US TO TRANSFORM",
       "titlle_span": "YOUR INSTITUTION?",
-      "description": "We implement proven strategies that generate measurable results in student retention and graduation."
-    },
-    "cards": {
-      "methodology_title": "Tested Methodology",
-      "methodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
-      "focus_title": "Focus on Results",
-      "focus_description": "We work with clear KPIs (Key Performance Indicators): reduced dropout rates, increased graduation rates, and improved student satisfaction.",
-      "accompaniment_title": "Comprehensive Support",
-      "accompaniment_description": "We don't just design strategies; we implement them alongside your team, ensuring knowledge transfer.",
-      "experience_title": "Specialized Expertise",
-      "experience_description": "We have worked with universities, bootcamps, schools, and scholarship programs, understanding the particularities of each context.",
-      "solutions_title": "Custom Solutions",
-      "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
-      "innovation_title": "Continuous Innovation",
-      "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront."
+      "description": "We implement proven strategies that generate measurable results in student retention and graduation.",
+      "cards": {
+        "methodology_title": "Tested Methodology",
+        "methodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
+        "focus_title": "Focus on Results",
+        "focus_description": "We work with clear KPIs (Key Performance Indicators): reduced dropout rates, increased graduation rates, and improved student satisfaction.",
+        "accompaniment_title": "Comprehensive Support",
+        "accompaniment_description": "We don't just design strategies; we implement them alongside your team, ensuring knowledge transfer.",
+        "experience_title": "Specialized Expertise",
+        "experience_description": "We have worked with universities, bootcamps, schools, and scholarship programs, understanding the particularities of each context.",
+        "solutions_title": "Custom Solutions",
+        "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
+        "innovation_title": "Continuous Innovation",
+        "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront."
+      }
     },
     "pillars": {
       "title": "PILLARS OF OUR",

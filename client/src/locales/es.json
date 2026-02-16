@@ -523,36 +523,76 @@
     }
   },
   "consultorias": {
-    "consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA ",
-    "consulting_title_span": "PERMANENCIA:",
-    "universities": "Universidades",
-    "universities_description": "Estrategias integrales para reducir la deserción y aumentar la tasa de graduación.",
-    "bootcamps": "Bootcamps",
-    "bootcamps_description": "Programas de acompañamiento intensivo para garantizar el éxito de los participantes.",
-    "schools": "Colegios",
-    "schools_description": "Preparación y orientación vocacional para estudiantes de últimos años escolares.",
-    "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
-    "scholarship_programs_description": "Seguimiento personalizado para maximizar el impacto de los programas de becas.",
-    "description_general": "Brindamos acompañamiento continuo para que los estudiantes permanezcan en su proceso formativo, culminen sus estudios y eviten la deserción.",
-    "btn_request_consulting": "Solicita consultoría",
-    "why_choose_us": {
+    "description": {
+      "consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA ",
+      "consulting_title_span": "PERMANENCIA:",
+      "universities": "Universidades",
+      "universities_description": "Estrategias integrales para reducir la deserción y aumentar la tasa de graduación.",
+      "bootcamps": "Bootcamps",
+      "bootcamps_description": "Programas de acompañamiento intensivo para garantizar el éxito de los participantes.",
+      "schools": "Colegios",
+      "schools_description": "Preparación y orientación vocacional para estudiantes de últimos años escolares.",
+      "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
+      "scholarship_programs_description": "Seguimiento personalizado para maximizar el impacto de los programas de becas.",
+      "description_general": "Brindamos acompañamiento continuo para que los estudiantes permanezcan en su proceso formativo, culminen sus estudios y eviten la deserción.",
+      "btn_request_consulting": "Solicita consultoría",
+
+      "imagesConsultingArray": {
+        "link_see_more": "Ver más",
+        "retention_figure": "Permanencia",
+
+        "image_one": {
+          "description": "Acompañamiento en el proceso de inscripción de Pines Universitarios",
+          "alt": "Estudiante recibiendo asesoría de una colaboradora de la Fundación Antivirus durante la inscripción al PIN universitario"
+        },
+        "image_two": {
+          "description": "Participación en el Social Fest 2026",
+          "alt": "Colaboradores de la Fundación Antivirus participando en el Social Fest 2026"
+        },
+        "image_three": {
+          "description": "Reunión con la Secretaría de Educación de Itagüí",
+          "alt": "Meeting between Fundación Antivirus and Itagüí’s Department of Education"
+        },
+        "image_four": {
+          "description": "Reunión con el programa de Becarios Fraternidad Medellín y Comfama",
+          "alt": "Becarios de la Fraternidad Medellín y Comfama reunidos"
+        },
+        "image_five": {
+          "description": "Acompañamiento a becarios ver + beca tech",
+          "alt": "La Fundación Antivirus acompaña a estudiantes becados"
+        },
+        "image_six": {
+          "description": "Encuentro con la gobernación de Antioquia",
+          "alt": "Colaboradores de la Fundación Antivirus se reúnen con representantes de la Gobernación de Antioquia"
+        },
+        "image_seven": {
+          "description": "Reunión con colaboradores de FATV",
+          "alt": "Colaboradores de la Fundación Antivirus se reúnen en una actividad institucional"
+        },
+        "image_eight": {
+          "description": "Acompañamiento a estudiantes en Universidad de Antioquia",
+          "alt": "La Fundación Antivirus acompaña a estudiantes en la Universidad de Antioquia"
+        }
+      }
+    },
+    "whyChooseUs": {
       "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
       "titlle_span": " TU INSTITUCIÓN?",
-      "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil."
-    },
-    "cards": {
-      "methodology_title": "Metodología Comprobada",
-      "methodology_description": "Nuestras estrategias están respaldadas por por años de experiencia y resultados medibles en instituciones educativas de todo el país.",
-      "focus_title": "Enfoque en Resultados",
-      "focus_description": "Trabajamos con KPIs claros: reducción de deserción aumento de tasas de graduación y mejora en la satisfacción estudiantil.",
-      "accompaniment_title": "Acompañamiento Integral",
-      "accompaniment_description": "No solo diseñamos estrategias, las implementamos junto a tu equipo garantizando la transferencia de conocimiento.",
-      "experience_title": "Experiencia especializada",
-      "experience_description": "Hemos trabajado con universidades, bootcamps, colegios y programas de becas, entendiendo las particularidades de cada contexto.",
-      "solutions_title": "Soluciones Personalizadas",
-      "solutions_description": "Cada institución es única. Diseñamos estrategias adaptadas a tu realidad, cultura organizacional y objetivos específicos.",
-      "innovation_title": "Innovación Continua",
-      "innovation_description": "Incorporamos las últimas tendencias en educación y tecnología para mantener tus programas a la vanguardia."
+      "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil.",
+      "cards": {
+        "methodology_title": "Metodología Comprobada",
+        "methodology_description": "Nuestras estrategias están respaldadas por por años de experiencia y resultados medibles en instituciones educativas de todo el país.",
+        "focus_title": "Enfoque en Resultados",
+        "focus_description": "Trabajamos con KPIs claros: reducción de deserción aumento de tasas de graduación y mejora en la satisfacción estudiantil.",
+        "accompaniment_title": "Acompañamiento Integral",
+        "accompaniment_description": "No solo diseñamos estrategias, las implementamos junto a tu equipo garantizando la transferencia de conocimiento.",
+        "experience_title": "Experiencia especializada",
+        "experience_description": "Hemos trabajado con universidades, bootcamps, colegios y programas de becas, entendiendo las particularidades de cada contexto.",
+        "solutions_title": "Soluciones Personalizadas",
+        "solutions_description": "Cada institución es única. Diseñamos estrategias adaptadas a tu realidad, cultura organizacional y objetivos específicos.",
+        "innovation_title": "Innovación Continua",
+        "innovation_description": "Incorporamos las últimas tendencias en educación y tecnología para mantener tus programas a la vanguardia."
+      }
     },
     "pillars": {
       "title": "PILARES DE NUESTRA",
@@ -561,7 +601,7 @@
       "titlePillarOne": "Colaboración Institucional",
       "descriptionPillarOne": "Trabajamos codo a codo con tu equipo, construyendo soluciones sostenibles que se integran naturalmente en tu institución.",
       "titlePillarTwo": "Impacto Mediable",
-      "descriptionPillarTwo": "Establecemos Métricas claras y sistemas de seguimiento que demuestran el retorno de inversión de cada estrategia implementada..",
+      "descriptionPillarTwo": "Establecemos métricas claras y sistemas de seguimiento que demuestran el retorno de inversión de cada estrategia implementada.",
       "titlePillarThree": "Innovación Educativa",
       "descriptionPillarThree": "Aplicamos las mejoras prácticas internacionales adaptadas a la realidad local, garantizando soluciones efectivas y sostenibles."
     }

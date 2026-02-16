@@ -100,9 +100,7 @@
       "statistic9": {
         "description": "Study groups",
         "alt_image": "Study groups"
-      },
-      "title_part1": "Our contribution",
-      "title_part2": "in Colombia"
+      }
     },
     "servicesATV": {
       "title": "OUR SERVICES",
@@ -524,42 +522,74 @@
     }
   },
   "consultorias": {
-    "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
-    "consulting_title_span": "RETENTION:",
-    "universities": "Universities",
-    "universities_description": "Comprehensive Strategies to Reduce Dropout Rates and Increase Graduation Rates.",
-    "bootcamps": "Bootcamps",
-    "bootcamps_description": "Intensive Mentorship Programs to Ensure Learner Achievement.",
-    "schools": "Schools",
-    "schools_description": "College and Career Readiness for High School Seniors.",
-    "scholarship_programs": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
-    "description_general": "We provide continuous support to help students stay the course, navigate their academic journey, and reach graduation.",
-    "btn_request_consulting": "Request Consulting",
+    "description": {
+      "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
+      "consulting_title_span": "RETENTION:",
+      "universities": "Universities",
+      "universities_description": "Comprehensive Strategies to Reduce Dropout Rates and Increase Graduation Rates.",
+      "bootcamps": "Bootcamps",
+      "bootcamps_description": "Intensive Mentorship Programs to Ensure Learner Achievement.",
+      "schools": "Schools",
+      "schools_description": "College and Career Readiness for High School Seniors.",
+      "scholarship_programs": "Becarios Programs: NGOs & Companies",
+      "scholarship_programs_description": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
+      "description_general": "We provide continuous support to help students stay the course, navigate their academic journey, and reach graduation.",
+      "btn_request_consulting": "Request Consulting",
+      "imagesConsultingArray": {
+        "link_see_more": "See More",
+        "retention_figure": "Retention",
+        "image_one": {
+          "description": "Supporting students through university sign-ups",
+          "alt": "Student getting help with university admissions from Fundación Antivirus"
+        },
+        "image_two": {
+          "description": "Social Fest 2026 Participation",
+          "alt": "Fundación Antivirus team at Social Fest 2026"
+        },
+        "image_three": {
+          "description": "Meeting with the Itagüí Secretary of Education",
+          "alt": "Reunión entre colaboradores de la Fundación Antivirus y representantes de la Secretaría de Educación de Itagüí"
+        },
+        "image_four": {
+          "description": "Meeting with Fraternidad Medellín and Comfama Scholarship Recipients",
+          "alt": "Becarios Fraternidad Medellín and Comfama scholars meeting"
+        },
+        "image_five": {
+          "description": "Supporting Ver + and Beca Tech students",
+          "alt": "Fundación Antivirus supporting scholarship students"
+        },
+        "image_six": {
+          "description": "Meeting with the Antioquia Government",
+          "alt": "Fundación Antivirus team meeting with Antioquia Government representatives"
+        },
+        "image_seven": {
+          "description": "Meeting with the Fundación Antivirus team",
+          "alt": "Fundación Antivirus team during an institutional activity"
+        },
+        "image_eight": {
+          "description": "Student Support at University of Antioquia",
+          "alt": "Fundación Antivirus supports students at the University of Antioquia"
+        }
+      }
+    },
     "whyChooseUs": {
       "title": "WHY CHOOSE US TO TRANSFORM",
       "titlle_span": "YOUR INSTITUTION?",
-      "description": "We implement proven strategies that generate measurable results in student retention and graduation."
-    },
-    "cards": {
-      "methodology_title": "Tested Methodology",
-      "methodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
-      "focus_title": "Focus on Results",
-      "focus_description": "We work with clear KPIs (Key Performance Indicators): reduced dropout rates, increased graduation rates, and improved student satisfaction.",
-      "accompaniment_title": "Comprehensive Support",
-      "accompaniment_description": "We don't just design strategies; we implement them alongside your team, ensuring knowledge transfer.",
-      "experience_title": "Specialized Expertise",
-      "experience_description": "We have worked with universities, bootcamps, schools, and scholarship programs, understanding the particularities of each context.",
-      "solutions_title": "Custom Solutions",
-      "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
-      "innovation_title": "Continuous Innovation",
-      "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront.",
-      "methodology": "Tested Methodology",
-      "metodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
-      "focus": "Focus on Results",
-      "accompaniment": "Comprehensive Support",
-      "experience": "Specialized Expertise",
-      "solutions": "Custom Solutions",
-      "innovation": "Continuous Innovation"
+      "description": "We implement proven strategies that generate measurable results in student retention and graduation.",
+      "cards": {
+        "methodology_title": "Tested Methodology",
+        "methodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
+        "focus_title": "Focus on Results",
+        "focus_description": "We work with clear KPIs (Key Performance Indicators): reduced dropout rates, increased graduation rates, and improved student satisfaction.",
+        "accompaniment_title": "Comprehensive Support",
+        "accompaniment_description": "We don't just design strategies; we implement them alongside your team, ensuring knowledge transfer.",
+        "experience_title": "Specialized Expertise",
+        "experience_description": "We have worked with universities, bootcamps, schools, and scholarship programs, understanding the particularities of each context.",
+        "solutions_title": "Custom Solutions",
+        "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
+        "innovation_title": "Continuous Innovation",
+        "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront."
+      }
     },
     "pillars": {
       "title": "PILLARS OF OUR",
@@ -570,13 +600,8 @@
       "titlePillarTwo": "Measurable Impact",
       "descriptionPillarTwo": "We establish clear metrics and tracking systems that demonstrate the return on investment of each implemented strategy.",
       "titlePillarThree": "Educational Innovation",
-      "descriptionPillarThree": "We apply international best practices adapted to the local context, guaranteeing effective and sustainable solutions.",
-      "title_br": " METHODOLOGY"
-    },
-    "description": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes.",
-    "title": "Services",
-    "main_consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR RETENTION:",
-    "services_title": "WE PROVIDE THE FOLLOWING SERVICES"
+      "descriptionPillarThree": "We apply international best practices adapted to the local context, guaranteeing effective and sustainable solutions."
+    }
   },
   "studentRetentionManagement": {
     "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student",
@@ -584,9 +609,7 @@
     "objectiveOne": {
       "text_one": "🎯Support students throughout their",
       "span": "academic journey",
-      "text_two": "so they can successfully complete their university degree.",
-      "objective_two": "",
-      "title_success": "YOUR SUCCESS IS OUR SUCCESS"
+      "text_two": "so they can successfully complete their university degree."
     },
     "objectiveTwo": {
       "text_one": "🤝 Strengthen the",
@@ -619,9 +642,7 @@
       "message_group": "✨ We learn better together",
       "alt_img_graduate": "Smiling graduate, with the text Your achievement inspires us",
       "message_graduate": "🎉 Your achievement inspires us!",
-      "btn_whatsapp": "we are with you!💪",
-      "alt_success_img": "Estudiante exitoso",
-      "see_more": "Ver más historias"
+      "btn_whatsapp": "we are with you!💪"
     },
     "studentRetentionService": {
       "ourServices": "OUR SERVICES",
@@ -657,8 +678,7 @@
         "itemOne": "Equipment Donation",
         "itemTwo": "Solidarity Grant",
         "itemThree": "Alumni Solidarity",
-        "itemFour": "Shared Income Program",
-        "itemFive": ""
+        "itemFour": "Shared Income Program"
       },
       "socioVocational": {
         "title": "SOCIO-VOCATIONAL",
@@ -666,22 +686,6 @@
         "itemOne": "Socio-Vocational Advising",
         "itemTwo": "Educational Field Trips",
         "itemThree": "Guidance Workshops"
-      },
-      "socioVocational|": {
-        "title": "SOCIO-VOCATIONAL",
-        "description": "Group and individual accompaniment providing guidance on self-knowledge, the educational world, and the world of work.",
-        "itemOne": "👥 Socio-Vocational Advising",
-        "itemTwo": "🏛️ Educational Field Trips",
-        "itemThree": "🎯 Guidance Workshops"
-      },
-      "socioEconmic": {
-        "title": "SOCIOECONOMIC",
-        "description": "Mitigate the financial difficulties that may put students' retention at risk.",
-        "itemOne": "",
-        "itemTwo": "",
-        "itemThree": "",
-        "itemFour": "",
-        "itemFive": ""
       }
     },
     "studentRetentionCard": {
@@ -690,23 +694,7 @@
       "description": "A comprehensive ecosystem designed to support you throughout every step of your university journey.",
       "strong": "Together, We Build Your Success",
       "btnStartNow": "¡START NOW!"
-    },
-    "heading": "RETENTION MANAGEMENT",
-    "title_success": "YOUR SUCCESS IS OUR SUCCESS",
-    "objective_one": {
-      "text_one": "🎯To support students throughout their",
-      "span": "academic journey",
-      "text_two": "so they can successfully complete their university degree.",
-      "objective_two": "",
-      "title_success": "YOUR SUCCESS IS OUR SUCCESS"
-    },
-    "Objective_one_text_one": "🎯To support students throughout their",
-    "Objective_one_span": "academic journey",
-    "Objective_one_text_two": "so they can successfully complete their university degree.",
-    "Objective_two": "",
-    "Objective_one": "",
-    "Objective_three": "",
-    "HEADING": "RETENTION MANAGEMENT"
+    }
   },
   "provocacion": {
     "title_initial": "SUPPORT OBJECTIVE",
@@ -842,8 +830,7 @@
       "item_hours": {
         "title": "Flexible Hours",
         "description": "Book sessions that fit your schedule. Morning, afternoon, or night—there's always a tutor ready for you."
-      },
-      "title": "EVERYTHING YOU NEED TO SUCCEED"
+      }
     },
     "steps": {
       "span": "HOW IT WORKS",
@@ -881,10 +868,7 @@
         "algorithms": "Algorithms",
         "thermodynamics": "Thermodynamics",
         "circuits": "Circuits",
-        "finance": "Finance",
-        "data_science": "Data Science",
-        "Statistics": "Statistics",
-        "math": "Mathematics"
+        "finance": "Finance"
       }
     },
     "testimonialsAtvConnect": {
@@ -893,55 +877,44 @@
       "testimony_one": {
         "description": "“I'm really happy with this platform—it's the perfect support for my career goals”",
         "role": "Student",
-        "university": "Aurelio Llano Scholar",
-        "profession": "Civil Eng."
+        "university": "Aurelio Llano Scholar"
       },
       "testimony_two": {
         "description": "“intuitive platform makes it easy for students to find a tutor and for tutors to track every session”",
         "role": "Tutor",
-        "university": "University of Antioquia",
-        "profession": "Administration"
+        "university": "University of Antioquia"
       },
       "testimony_three": {
         "description": "“I think implementing this platform is a great idea, thank you!”",
         "role": "Student",
-        "university": "University of Antioquia",
-        "profession": "Systems Eng."
+        "university": "University of Antioquia"
       },
       "testimony_four": {
         "description": "“Congrats on this site! You don't realize how useful it is until you try it. I was blown away by how easy it is to connect with peers who are ready to help”",
         "role": "Student",
-        "university": "Aurelio Llano Scholar",
-        "profession": "Systems Eng."
+        "university": "Aurelio Llano Scholar"
       },
       "testimony_five": {
         "description": "“I find it to be a very innovative and useful alternative”",
         "role": "Student",
-        "university": "University of Antioquia",
-        "profession": "Systems Eng."
+        "university": "University of Antioquia"
       },
       "testimony_six": {
         "description": "“I really liked it! Thank you for always thinking about our well-being”",
         "role": "Student",
-        "university": "Aurelio Llano Scholar",
-        "profession": "Systems Eng."
+        "university": "Aurelio Llano Scholar"
       },
       "testimony_seven": {
         "description": "“Excellent tool”",
         "role": "Student",
-        "university": "University of Antioquia",
-        "profession": "Systems Eng."
+        "university": "University of Antioquia"
       }
     },
     "goAtv": {
       "start_now": "Ready to get started?",
       "paragraph_start": "Join students who are boosting their academic results.",
       "btn_start_free": "Start"
-    },
-    "start_now": "Ready to get started?",
-    "paragraph_start": "Join students who are boosting their academic results.",
-    "btn_start_free": "Start",
-    "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
+    }
   },
   "contactUs": {
     "title": "Contact Us",
