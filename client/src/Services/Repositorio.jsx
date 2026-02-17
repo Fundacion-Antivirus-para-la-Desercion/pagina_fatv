@@ -21,16 +21,16 @@ function Repositorio() {
       <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-7">
-            <h1 className="text-xl text-blueBase mb-8 truncate">
+            <h1 className="text-xl text-blue-base mb-8 truncate">
               https://www.youtube.com/@AntivirusparalaDesercion/videos
             </h1>
 
             <div className="flex flex-col gap-8">
               <div>
-                <h2 className="text-blueBase text-xl">
+                <h2 className="text-blue-base text-xl">
                   {t("repositorio.youtube_channel.title")}{" "}
                 </h2>
-                <p className="text-blue-links text-lg">
+                <p className="text-dark-blue text-lg">
                   {t("repositorio.youtube_channel.description")}
                 </p>
               </div>
@@ -43,7 +43,7 @@ function Repositorio() {
               className="w-full h-auto object-cover"
             />
             {/* 
-      <div className='absolute bottom-0 left-0-0 bg-blue-links px-16 py-12'>
+      <div className='absolute bottom-0 left-0-0 bg-dark-blue px-16 py-12'>
         <b className='text-xl text-white '>Evento becados Itaguí</b>
         <p className='text-white text-xl'>Una alianza creada para a compañarte</p>
       </div> */}
@@ -58,7 +58,7 @@ function Repositorio() {
               alt="emocional 2"
             />
 
-            {/* <div className='absolute bottom-0 left-0-0 bg-blue-links px-16 py-12'>
+            {/* <div className='absolute bottom-0 left-0-0 bg-dark-blue px-16 py-12'>
         <b className='text-xl text-white '>Colegios Itaguí</b>
         <p className='text-white text-xl'>Charlas pedagógicas sobre el acompañamiento</p>
       </div> */}

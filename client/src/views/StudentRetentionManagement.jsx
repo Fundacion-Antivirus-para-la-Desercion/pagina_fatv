@@ -61,23 +61,23 @@ function StudentRetentionManagement() {
 
       <section className="grid grid-cols-1 lg:grid-cols-2 container text-center mx-auto md:my-10">
         <div>
-          <h1 className="lineSubtitle m-5 mt-8 md:m-2 md:mt-16 text-4xl text-blueBase md:text-5xl font-impact">
+          <h1 className="lineSubtitle m-5 mt-8 md:m-2 md:mt-16 text-4xl text-blue-base md:text-5xl font-impact">
             {t("studentRetentionManagement.title")}
           </h1>
 
           <div className="flex flex-col items-center lg:items-end md:mr-20">
             <motion.div {...slideFromLeft}>
               {" "}
-              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#FFEBB8] border-l-4 border-[#FFBA08] transform hover:scale-105 transition-all duration-500">
+              <p className="m-5 w-[350px] text-lg text-blue-base md:w-[420px] p-5 bg-gradient-to-r from-[#FFEBB8] border-l-4 border-primary-yellow transform hover:scale-105 transition-all duration-500">
                 {t("studentRetentionManagement.objectiveOne.text_one")}{" "}
-                <span className="text-[#FFBA08] font-bold">
+                <span className="text-primary-yellow font-bold">
                   {t("studentRetentionManagement.objectiveOne.span")}
                 </span>{" "}
                 {t("studentRetentionManagement.objectiveOne.text_two")}
               </p>
             </motion.div>
             <motion.div {...slideFromLeft}>
-              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#E8FCFB] border-l-4 border-[#28A499] transform hover:scale-105 transition-all duration-500">
+              <p className="m-5 w-[350px] text-lg text-blue-base md:w-[420px] p-5 bg-gradient-to-r from-[#E8FCFB] border-l-4 border-[#28A499] transform hover:scale-105 transition-all duration-500">
                 {t("studentRetentionManagement.objectiveTwo.text_one")}{" "}
                 <span className="text-[#28A499] font-bold">
                   {t("studentRetentionManagement.objectiveTwo.span")}
@@ -86,7 +86,7 @@ function StudentRetentionManagement() {
               </p>
             </motion.div>
             <motion.div {...slideFromLeft}>
-              <p className="m-5 w-[350px] text-lg text-blueBase md:w-[420px] p-5 bg-gradient-to-r from-[#D3C3E3] border-l-4 border-[#7C76B5] transform hover:scale-105 transition-all duration-500">
+              <p className="m-5 w-[350px] text-lg text-blue-base md:w-[420px] p-5 bg-gradient-to-r from-[#D3C3E3] border-l-4 border-[#7C76B5] transform hover:scale-105 transition-all duration-500">
                 {t("studentRetentionManagement.objectiveThree.text_one")}{" "}
                 <span className="text-[#7C76B5] font-bold">
                   {t("studentRetentionManagement.objectiveThree.span")}
@@ -96,7 +96,7 @@ function StudentRetentionManagement() {
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center bg-[#222D56] rounded-3xl m-3 p-8 text-center max-w-[540px] lg:mx-[700]">
+        <div className="flex flex-col justify-center items-center bg-dark-blue rounded-3xl m-3 p-8 text-center max-w-[540px] lg:mx-[700]">
           <motion.div
             {...floatSnake(0)}
             className="self-start relative ml-auto -top-10 w-[55px] h-[55px] rounded-full bg-[#ffffff13]  z-[2]"
@@ -111,20 +111,20 @@ function StudentRetentionManagement() {
           </motion.div>
           <p className="text-white text-2xl font-impact">
             {t("studentRetentionManagement.cardJavi.title_part_one")} <br />{" "}
-            <span className="text-[#FFBA08]">
+            <span className="text-primary-yellow">
               {t("studentRetentionManagement.cardJavi.title_part_two")}
             </span>
           </p>
           <p className="text-white text-lg w-full md:w-[450px] h-auto mt-4 rounded-2x rounded-2xl border p-4 bg-[#42688dbd] border-white">
             {t("studentRetentionManagement.cardJavi.description_one")} <br />{" "}
-            <span className="text-[#FFBA08] font-bold">
+            <span className="text-primary-yellow font-bold">
               {" "}
               {t("studentRetentionManagement.cardJavi.span")}
             </span>{" "}
             {t("studentRetentionManagement.cardJavi.description_two")}
           </p>
           <div className="grid grid-cols-3 justify-between w-full max-w-[350px] mt-10">
-            <span className="text-2xl font-renogare text-[#FFBA08]">
+            <span className="text-2xl font-renogare text-primary-yellow">
               +
               <CounterNumeric countNumber={10000} />
             </span>
@@ -173,16 +173,16 @@ function StudentRetentionManagement() {
 
               <section className="relative">
                 <div className="mt-10 md:mt-5 md:absolute md:ml-4 md:top-20">
-                  <p className="shadow-lg text-center md:text-left text-lg md:text-lg sm:text-lg text-[#222D56] w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#FFBA08] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
+                  <p className="shadow-lg text-center md:text-left text-lg md:text-lg sm:text-lg text-dark-blue w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-primary-yellow mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
-                    <span className="text-[#FFBA08] font-bold">
+                    <span className="text-primary-yellow font-bold">
                       {t(
                         "studentRetentionManagement.success.paragraph_one_span"
                       )}
                     </span>{" "}
                   </p>
 
-                  <p className="shadow-lg text-center md:text-left mt-4 text-lg md:text-lg sm:text-lg text-[#222D56] w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
+                  <p className="shadow-lg text-center md:text-left mt-4 text-lg md:text-lg sm:text-lg text-dark-blue w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
                     {t("studentRetentionManagement.success.paragraph_two")}{" "}
                     <span className="text-[#28A499] font-bold">
                       {t(
@@ -234,7 +234,7 @@ function StudentRetentionManagement() {
           </motion.div>
           <div>
             <a
-              className="flex relative md:bottom-20 px-4 py-1 bg-white text-[#222D56] border font-bold text-lg rounded-2xl shadow-2xl"
+              className="flex relative md:bottom-20 px-4 py-1 bg-white text-dark-blue border font-bold text-lg rounded-2xl shadow-2xl"
               href={`https://wa.me/${whatsAppNumber}`}
               target="_blank"
               rel="noopener noreferrer"

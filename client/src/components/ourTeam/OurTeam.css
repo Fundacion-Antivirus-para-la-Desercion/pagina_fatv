@@ -20,7 +20,6 @@
 }
 
 .OurTeam {
-  background-color: #ffb732;
   padding: 1rem;
   padding-bottom: 100px;
   width: 100%;
@@ -41,7 +40,6 @@
 
 .OurTeam-content {
   display: flex;
-  background-color: #232e55;
   padding: 16px;
   color: #ffffff;
   text-align: left;

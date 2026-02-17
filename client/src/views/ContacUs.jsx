@@ -168,7 +168,7 @@ function ContactUs() {
           <div className="relative">
             <img src={imgContact} className="w-full lg:w-auto" />
 
-            <div className="absolute bg-blue-links text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
+            <div className="absolute bg-dark-blue text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
               <div className="flex items-center justify-center gap-2">
                 <p className="text-2xl font-bold">
                   {t("contactUs.googleMaps")}
@@ -186,36 +186,36 @@ function ContactUs() {
           </div>
 
           <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 max-sm:text-center">
-            <p className="text-blueBase tracking-nm text-blue-links">
+            <p className="text-blue-base tracking-nm">
               {t("contactUs.startConversation")}
             </p>
 
-            <h1 className="lineSubtitle text-blueBase font-impact text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+            <h1 className="lineSubtitle text-blue-base font-impact text-4xl md:text-5xl lg:text-5xl mb-2 mt-2">
               {t("contactUs.conversationTitle")}
             </h1>
 
-            <p className="text-blue-links font-bold">
+            <p className="text-dark-blue font-bold">
               {t("contactUs.mainHeadquarters")}
             </p>
-            <p className="text-blueBase">{t("contactUs.address")} </p>
-            <p className="text-blueBase">{t("contactUs.city")}</p>
-            <p className="text-blue-links font-bold">{t("contactUs.email")}</p>
-            <p className="text-blueBase overflow-hidden whitespace-nowrap text-ellipsis">
+            <p className="text-blue-base">{t("contactUs.address")} </p>
+            <p className="text-blue-base">{t("contactUs.city")}</p>
+            <p className="text-dark-blue font-bold">{t("contactUs.email")}</p>
+            <p className="text-blue-base overflow-hidden whitespace-nowrap text-ellipsis">
               {t("contactUs.emailAddress")}
             </p>
 
-            <p className="text-blue-links font-bold">
+            <p className="text-dark-blue font-bold">
               {t("contactUs.whatsapp")}
             </p>
-            <p className="text-blueBase">{t("contactUs.whatsappNumber")}</p>
+            <p className="text-blue-base">{t("contactUs.whatsappNumber")}</p>
           </div>
         </div>
         <div className="w-full  h-full  mb bg-white">
-          <h3 className="text-5xl font-impact text-[#F6A623] text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
+          <h3 className="text-5xl font-impact text-primary-yellow text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
             {t("contactUs.writeToUs")}
           </h3>
 
-          <div className="bg-blue-links w-full h-90 mb-20 flex items-center justify-center">
+          <div className="bg-dark-blue w-full h-90 mb-20 flex items-center justify-center">
             <form
               className="w-full h-full px-8 py-10 md:px-44 md:py-32 bg-blue-link text-white shadow-md rounded-md relative"
               onSubmit={handleSubmit}
@@ -225,66 +225,66 @@ function ContactUs() {
                   <input
                     type="text"
                     placeholder={t("contactUs.form.fullName")}
-                    className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                    className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
                   />
                   {errors.fullName && (
-                    <p className="text-[#F6A623]">{errors.fullName}</p>
+                    <p className="text-primary-yellow">{errors.fullName}</p>
                   )}
                 </div>
                 <div>
                   <input
                     type="email"
                     placeholder={t("contactUs.form.email")}
-                    className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                    className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                   />
                   {errors.email && (
-                    <p className="text-[#F6A623]">{errors.email}</p>
+                    <p className="text-primary-yellow">{errors.email}</p>
                   )}
                 </div>
                 <div>
                   <input
                     type="text"
                     placeholder={t("contactUs.form.phone")}
-                    className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                    className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                     name="phone"
                     value={formData.phone}
                     onChange={validatePhoneNumber}
                   />
                   {errors.phone && (
-                    <p className="text-[#F6A623]">{errors.phone}</p>
+                    <p className="text-primary-yellow">{errors.phone}</p>
                   )}
                 </div>
                 <div>
                   <input
                     type="text"
                     placeholder={t("contactUs.form.subject")}
-                    className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                    className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                   />
                   {errors.subject && (
-                    <p className="text-[#F6A623]">{errors.subject}</p>
+                    <p className="text-primary-yellow">{errors.subject}</p>
                   )}
                 </div>
               </div>
               <div className="mt-4">
                 <textarea
                   placeholder={t("contactUs.form.message")}
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   rows="4"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
                 {errors.message && (
-                  <p className="text-[#F6A623]">{errors.message}</p>
+                  <p className="text-primary-yellow">{errors.message}</p>
                 )}
               </div>
               <div className="mt-4 flex items-center flex-wrap">
@@ -300,13 +300,13 @@ function ContactUs() {
                   {t("contactUs.form.termsConditions")}
                 </label>
                 {errors.terms && (
-                  <p className="text-[#F6A623] w-full">{errors.terms}</p>
+                  <p className="text-primary-yellow w-full">{errors.terms}</p>
                 )}
               </div>
               <div className="mt-4 flex justify-center">
                 <button
                   type="submit"
-                  className={`w-full md:w-1/2 bg-white text-[#222D56] font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
+                  className={`w-full md:w-1/2 bg-white text-dark-blue font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
                     isSending ? "cursor-not-allowed" : ""
                   }`}
                 >

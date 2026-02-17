@@ -12,11 +12,15 @@ const ServicesATV = () => {
 
   return (
     <>
-      <section id="services" className="relative text-blueBase p-5 py-10 md:py-16 bg-[#222d56ea]">
+      <section
+        id="services"
+        className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
+      >
         <div className="flex flex-col items-center">
           <section>
+            -
             <div>
-              <h1 className="font-impact text-center text-2xl md:text-5xl mb-10 md:mb-10 text-white">
+              <h1 className="font-impact text-center text-3xl md:text-5xl mb-10 md:mb-10 text-white">
                 {t("home.servicesATV.title")}
               </h1>
             </div>
@@ -27,7 +31,7 @@ const ServicesATV = () => {
               <section className="mb-5 md:mb-10">
                 <div className="flex justify-center">
                   <img
-                    className="w-24 bg-[#FFBA08] rounded-full"
+                    className="w-24 bg-primary-yellow rounded-full"
                     src={Graduados}
                     alt={t("home.servicesATV.image_alt_text")}
                   />
@@ -35,7 +39,7 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blueBase text-lg text-center font-bold">
+                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
                     {t("home.servicesATV.services.permanence_title")}
                   </h3>
                   <p className="mb-5 md:mb-8 text-justify">
@@ -45,9 +49,12 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <button className="block m-auto w-fit bg-[#FFBA08] text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1">
+                  <Link
+                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
+                    to="/gestion-de-la-permanencia"
+                  >
                     {t("home.servicesATV.services.more_info")}
-                  </button>
+                  </Link>
                 </div>
               </section>
             </div>
@@ -56,7 +63,7 @@ const ServicesATV = () => {
               <section className="mb-5 md:mb-10">
                 <div className="flex justify-center">
                   <img
-                    className="w-24 bg-[#222D56] rounded-full"
+                    className="w-24 bg-dark-blue rounded-full"
                     src={Aliados}
                     alt={t("home.servicesATV.image_alt_text")}
                   />
@@ -64,7 +71,7 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blueBase text-lg text-center font-bold">
+                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
                     {t(
                       "home.servicesATV.services.persistence_consulting_title"
                     )}
@@ -78,7 +85,7 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <button className="block m-auto w-fit bg-[#FFBA08] text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1">
+                  <button className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1">
                     {t("home.servicesATV.services.more_info")}
                   </button>
                 </div>
@@ -89,7 +96,7 @@ const ServicesATV = () => {
               <section className="mb-5 md:mb-10">
                 <div className="flex justify-center">
                   <img
-                    className="w-24 bg-[#7C76B5] rounded-full"
+                    className="w-24 bg-primary-purple rounded-full"
                     src={Focus}
                     alt={t("home.servicesATV.image_alt_text")}
                   />
@@ -97,7 +104,7 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blueBase text-lg text-center font-bold">
+                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
                     {t(
                       "home.servicesATV.services.socio_vocational_guidance_title"
                     )}
@@ -112,7 +119,7 @@ const ServicesATV = () => {
               <section>
                 <div className="">
                   <Link
-                    className="block m-auto w-fit bg-[#FFBA08] text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
+                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
                     to="/provocacion"
                   >
                     {t("home.servicesATV.services.more_info")}
@@ -125,7 +132,7 @@ const ServicesATV = () => {
               <section className="mb-5 md:mb-10">
                 <div className="flex justify-center">
                   <img
-                    className="w-24 bg-[#FFBA08] rounded-full"
+                    className="w-24 bg-primary-yellow rounded-full"
                     src={LogoAtvConecta}
                     alt={t("home.servicesATV.image_alt_text")}
                   />
@@ -133,7 +140,7 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blueBase text-lg text-center font-bold">
+                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
                     {t("home.servicesATV.services.atvconnect_title")}
                     <br />
                     {t("home.servicesATV.services.atvconnect_title_two")}
@@ -146,9 +153,12 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <button className="block m-auto w-fit bg-[#FFBA08] text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1">
+                  <Link
+                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
+                    to="/atvconnect"
+                  >
                     {t("home.servicesATV.services.more_info")}
-                  </button>
+                  </Link>
                 </div>
               </section>
             </div>

@@ -11,13 +11,14 @@
     "options_spanish": "SPANISH",
     "options_english": "ENGLISH",
     "sub_header": {
-      "data_analytics": "DATA ANALYTICS",
-      "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
+      "data_analytics": "TECHNOLOGY AND DATA",
+      "socio_emotional_intervention": "SOCIAL INTERVENTION",
       "communications": "COMMUNICATIONS",
       "for_students": "FOR STUDENTS",
-      "permanence": "MANAGEMENT OF STAY",
-      "consulting": " PROJECT CONSULTING AND IMPLEMENTATION",
+      "permanence": "RETENTION MANAGEMENT",
+      "consulting": "RETENTION CONSULTING",
       "pro_vocation": "PRO-VOCATION",
+      "atv_connect": "ATVCONNECT",
       "academic_support": "Academic Support",
       "boe": "Student Opportunity Bank",
       "accompaniment_and_guidance": "Accompaniment and Guidance",
@@ -523,14 +524,59 @@
     }
   },
   "consultorias": {
-    "title": "Services",
-    "services_title": "WE PROVIDE THE FOLLOWING SERVICES",
-    "main_consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR RETENTION IN:",
+    "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
+    "consulting_title_span": "RETENTION:",
     "universities": "Universities",
+    "universities_description": "Comprehensive Strategies to Reduce Dropout Rates and Increase Graduation Rates.",
     "bootcamps": "Bootcamps",
+    "bootcamps_description": "Intensive Mentorship Programs to Ensure Learner Achievement.",
     "schools": "Schools",
-    "scholarship_programs": "Scholarship Programs from /NGOs/Companies",
-    "description": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes."
+    "schools_description": "College and Career Readiness for High School Seniors.",
+    "scholarship_programs": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
+    "description_general": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes.",
+    "btn_request_consulting": "Request Consulting",
+    "whyChooseUs": {
+      "title": "WHY CHOOSE US TO TRANSFORM",
+      "titlle_span": "YOUR INSTITUTION?",
+      "description": "We implement proven strategies that generate measurable results in student retention and graduation."
+    },
+    "cards": {
+      "methodology_title": "Tested Methodology",
+      "methodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
+      "focus_title": "Focus on Results",
+      "focus_description": "We work with clear KPIs (Key Performance Indicators): reduced dropout rates, increased graduation rates, and improved student satisfaction.",
+      "accompaniment_title": "Comprehensive Support",
+      "accompaniment_description": "We don't just design strategies; we implement them alongside your team, ensuring knowledge transfer.",
+      "experience_title": "Specialized Expertise",
+      "experience_description": "We have worked with universities, bootcamps, schools, and scholarship programs, understanding the particularities of each context.",
+      "solutions_title": "Custom Solutions",
+      "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
+      "innovation_title": "Continuous Innovation",
+      "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront.",
+      "methodology": "Tested Methodology",
+      "metodology_description": "Our strategies are backed by years of experience and measurable results in educational institutions nationwide.",
+      "focus": "Focus on Results",
+      "accompaniment": "Comprehensive Support",
+      "experience": "Specialized Expertise",
+      "solutions": "Custom Solutions",
+      "innovation": "Continuous Innovation"
+    },
+    "pillars": {
+      "title": "PILLARS OF OUR",
+      "title_span": " METHODOLOGY",
+      "description": "Three fundamental principles that ensure the success of our implementations.",
+      "titlePillarOne": "Institutional collaboration",
+      "descriptionPillarOne": "We work side by side with your team, building sustainable solutions that integrate naturally into your institution.",
+      "titlePillarTwo": "Measurable Impact",
+      "descriptionPillarTwo": "We establish clear metrics and tracking systems that demonstrate the return on investment of each implemented strategy.",
+      "titlePillarThree": "Educational Innovation",
+      "descriptionPillarThree": "We apply international best practices adapted to the local context, guaranteeing effective and sustainable solutions.",
+      "title_br": " METHODOLOGY"
+    },
+    "description": "We offer specialized services aimed at implementing, in collaboration with universities, schools, and bootcamps, strategies to ensure educational retention, graduation, and, consequently, the reduction of school dropout. We focus on the unique context of each university, school, or bootcamp and respect their particular pedagogical and administrative processes.",
+    "title": "Services",
+    "main_consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR RETENTION:",
+    "services_title": "WE PROVIDE THE FOLLOWING SERVICES"
   },
   "studentRetentionManagement": {
     "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student",
@@ -763,6 +809,139 @@
         }
       ]
     }
+  },
+  "atvConnect": {
+    "description_one": "ATVConecta is more than just a tutoring platform. It is ",
+    "description_span": "your partner in overcoming academic challenges,",
+    "description_two": " boosting your performance, and reaching your university goals with confidence.",
+    "span_title": "OUR IMPACT",
+    "title": "THE NUMBERS SPEAK FOR THEMSELVES",
+    "figures_impact": {
+      "figure_one": "Active students",
+      "figure_two": "Passed their classes",
+      "figure_three": "Sessions completed",
+      "figure_four": "Student satisfaction"
+    },
+    "list": {
+      "item_one": "⭐ 4.9/5 Average rating",
+      "item_two": "📅 Release year 2024",
+      "item_three": "✨ 24-hour turnaround"
+    },
+    "services": {
+      "span": "SERVICES",
+      "title_one": "EVERYTHING YOU NEED",
+      "title_two": " TO SUCCEED",
+      "item_tutoring": {
+        "title": "Personalized Tutoring",
+        "description": "1-on-1 support tailored to your learning style. You set the goals, we provide the guidance."
+      },
+      "item_progress": {
+        "title": "Specialized Tutor Network",
+        "description": "Connect with expert tutors in the exact areas you need."
+      },
+      "item_hours": {
+        "title": "Flexible Hours",
+        "description": "Book sessions that fit your schedule. Morning, afternoon, or night—there's always a tutor ready for you."
+      },
+      "title": "EVERYTHING YOU NEED TO SUCCEED"
+    },
+    "steps": {
+      "span": "HOW IT WORKS",
+      "title": "3 STEPS:",
+      "span_two": " AS SIMPLE AS THAT",
+      "step_one": {
+        "title": "Sign up",
+        "description": "Sign up for free"
+      },
+      "step_two": {
+        "title": "Pick a tutor",
+        "description": "Filter by class and schedule"
+      },
+      "step_three": {
+        "title": "Start learning",
+        "description": "Book a session and improve your grades"
+      }
+    },
+    "subjects": {
+      "span": "SUBJECTS",
+      "title": "ALL FIELDS",
+      "subject_list": {
+        "calculus": "Calculus",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "programming": "Programming",
+        "statistics": "Statistics",
+        "algebra": "Linear Algebra",
+        "accounting": "Accounting",
+        "economics": "Economics",
+        "english": "English",
+        "biology": "Biology",
+        "mathematics": "Mathematics",
+        "data_bases": "Databases",
+        "algorithms": "Algorithms",
+        "thermodynamics": "Thermodynamics",
+        "circuits": "Circuits",
+        "finance": "Finance",
+        "data_science": "Data Science",
+        "Statistics": "Statistics",
+        "math": "Mathematics"
+      }
+    },
+    "testimonialsAtvConnect": {
+      "span": "TESTIMONIALS",
+      "title": "REAL STORIES",
+      "testimony_one": {
+        "description": "“I'm really happy with this platform—it's the perfect support for my career goals”",
+        "role": "Student",
+        "university": "Aurelio Llano Scholar",
+        "profession": "Civil Eng."
+      },
+      "testimony_two": {
+        "description": "“intuitive platform makes it easy for students to find a tutor and for tutors to track every session”",
+        "role": "Tutor",
+        "university": "University of Antioquia",
+        "profession": "Administration"
+      },
+      "testimony_three": {
+        "description": "“I think implementing this platform is a great idea, thank you!”",
+        "role": "Student",
+        "university": "University of Antioquia",
+        "profession": "Systems Eng."
+      },
+      "testimony_four": {
+        "description": "“Congrats on this site! You don't realize how useful it is until you try it. I was blown away by how easy it is to connect with peers who are ready to help”",
+        "role": "Student",
+        "university": "Aurelio Llano Scholar",
+        "profession": "Systems Eng."
+      },
+      "testimony_five": {
+        "description": "“I find it to be a very innovative and useful alternative”",
+        "role": "Student",
+        "university": "University of Antioquia",
+        "profession": "Systems Eng."
+      },
+      "testimony_six": {
+        "description": "“I really liked it! Thank you for always thinking about our well-being”",
+        "role": "Student",
+        "university": "Aurelio Llano Scholar",
+        "profession": "Systems Eng."
+      },
+      "testimony_seven": {
+        "description": "“Excellent tool”",
+        "role": "Student",
+        "university": "University of Antioquia",
+        "profession": "Systems Eng."
+      }
+    },
+    "goAtv": {
+      "start_now": "Ready to get started?",
+      "paragraph_start": "Join students who are boosting their academic results.",
+      "btn_start_free": "Start"
+    },
+    "start_now": "Ready to get started?",
+    "paragraph_start": "Join students who are boosting their academic results.",
+    "btn_start_free": "Start",
+    "description": "ATVConecta is more than just a tutoring platform. It is your partner in overcoming academic challenges, boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {
     "title": "Contact Us",

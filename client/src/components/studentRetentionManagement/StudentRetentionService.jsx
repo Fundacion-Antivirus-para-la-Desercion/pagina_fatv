@@ -53,75 +53,70 @@ function StudentRetentionService() {
       <section className="text-center mt-56 md:mt-10">
         {" "}
         <div className="flex items-center justify-center my-6">
-          <span className="block w-16 h-[3px] bg-[#FFBA08] mr-4"></span>
-          <h2 className="text-[#32526E] font-bold text-sm tracking-[0.3rem]">
+          <span className="block w-16 h-[3px] bg-primary-yellow mr-4"></span>
+          <h2 className="text-blue-base font-bold text-sm tracking-[0.3rem]">
             {t(
               "studentRetentionManagement.studentRetentionService.ourServices"
             )}
           </h2>
-          <span className="block w-16 h-[3px] bg-[#FFBA08] ml-4"></span>
+          <span className="block w-16 h-[3px] bg-primary-yellow ml-4"></span>
         </div>
         <motion.div {...slideFromLeft}>
-          <h4 className="text-3xl md:text-5xl text-blueBase font-impact">
+          <h4 className="text-3xl md:text-5xl text-blue-base font-impact">
             {t("studentRetentionManagement.studentRetentionService.title")}{" "}
             <br />
-            <span className="text-[#FFBA08]">
+            <span className="text-primary-yellow">
               {t(
                 "studentRetentionManagement.studentRetentionService.titleSpan"
               )}
             </span>
           </h4>
         </motion.div>
-        <p className="mt-3 text-lg text-[#222D56]">
+        <p className="mt-3 text-lg text-dark-blue">
           {t("studentRetentionManagement.studentRetentionService.description")}
         </p>
-        <motion.div
-          {...slideFromRight}
-          className="relative right-0 mt-4 md:mt-1 bottom-0 w-[66%] h-[50px] bg-[#FFBA08] ml-auto z-[-1]
-          [clip-path:polygon(0%_70%,100%_0%,100%_100%,0%_100%)]"
-        ></motion.div>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-8 mt-16 place-items-center">
         <motion.div
           {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#FFBA08] rounded-3xl bg-[#FFF8E6] h-[460px] w-[350px] hover:shadow-[0_10px_20px_0_#FFEBB8] transition-all duration-500 hover:-translate-y-2"
+          className="group relative flex flex-col items-center border-4 p-5 border-primary-yellow rounded-3xl bg-[#FFF8E6] h-[460px] w-[350px] hover:shadow-[0_10px_20px_0_#FFEBB8] transition-all duration-500 hover:-translate-y-2"
         >
-          <div className="absolute flex -top-6 -left-5 ml-2 bg-[#FFBA08] p-3 rounded-xl shadow-lg items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
+          <div className="absolute flex -top-6 -left-5 ml-2 bg-primary-yellow p-3 rounded-xl shadow-lg items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">📚</span>
           </div>
-          <span className="text-3xl block text-left font-impact m-5 text-[#FFBA08]">
+          <span className="text-3xl block text-left font-impact m-5 text-primary-yellow">
             {t("studentRetentionManagement.services.academic.title")}
           </span>
-          <p className="text-base mb-3 text-blueBase text-justify">
+          <p className="text-base mb-3 text-blue-base text-justify">
             {t("studentRetentionManagement.services.academic.description")}
           </p>
           <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 📚
               </span>
               {t("studentRetentionManagement.services.academic.itemOne")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 🎓
               </span>
               {t("studentRetentionManagement.services.academic.itemTwo")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 👨‍👩‍👦
               </span>
               {t("studentRetentionManagement.services.academic.itemThree")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 ⚡
               </span>
               {t("studentRetentionManagement.services.academic.itemFour")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 ▶️
               </span>
@@ -131,24 +126,24 @@ function StudentRetentionService() {
         </motion.div>
 
         <div className="relative hidden md:block row-span-2 inset-0 m-auto bg-[#DCEBF9] rounded-full h-[400px] w-[400px] z-[2]">
-          <div id="lines" class="relative w-[400px] h-[400px]">
-            <div class="absolute top-5 right-0 border-t-4 border-dashed border-[#D3C3E3] w-[200px] -rotate-45"></div>
-            <div class="absolute top-5 left-0 border-t-4 border-dashed border-[#ADD6FF] w-[200px] rotate-45"></div>
-            <div class="absolute bottom-5 left-0 border-t-4 border-dashed border-[#81F0E7] w-[200px] -rotate-45"></div>
-            <div class="absolute bottom-5 right-0 border-t-4 border-dashed border-[#FFDE8A] w-[200px] rotate-45"></div>
+          <div id="lines" className="relative w-[400px] h-[400px]">
+            <div className="absolute top-5 right-0 border-t-4 border-dashed border-[#D3C3E3] w-[200px] -rotate-45"></div>
+            <div className="absolute top-5 left-0 border-t-4 border-dashed border-[#ADD6FF] w-[200px] rotate-45"></div>
+            <div className="absolute bottom-5 left-0 border-t-4 border-dashed border-[#81F0E7] w-[200px] -rotate-45"></div>
+            <div className="absolute bottom-5 right-0 border-t-4 border-dashed border-[#FFDE8A] w-[200px] rotate-45"></div>
           </div>
 
           <motion.div
             {...floatSnake(0)}
-            className="absolute flex flex-col  rounded-full inset-0 m-auto items-center justify-center border-[6px] bg-white border-[#FFBA08] h-[330px] w-[330px] z-[2]"
+            className="absolute flex flex-col  rounded-full inset-0 m-auto items-center justify-center border-[6px] bg-white border-primary-yellow h-[330px] w-[330px] z-[2]"
           >
             {" "}
             <span className="text-6xl align-middle ">🎓</span>
-            <p className="text-4xl text-[#222D56] font-impact text-center">
+            <p className="text-4xl text-dark-blue font-impact text-center">
               {t(
                 "studentRetentionManagement.studentRetentionService.centralTitle"
               )}{" "}
-              <span className="text-[#FFBA08]">
+              <span className="text-primary-yellow">
                 <br />{" "}
                 {t(
                   "studentRetentionManagement.studentRetentionService.centralTitleSpan"
@@ -173,25 +168,25 @@ function StudentRetentionService() {
           <span className="text-3xl block text-left font-impact m-5 text-[#2C9BC7]">
             {t("studentRetentionManagement.services.socioEmotional.title")}
           </span>
-          <p className="text-base mb-3 text-blueBase text-justify">
+          <p className="text-base mb-3 text-blue-base text-justify">
             {t(
               "studentRetentionManagement.services.socioEmotional.description"
             )}
           </p>
           <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 💬
               </span>
               {t("studentRetentionManagement.services.socioEmotional.itemOne")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 🧠
               </span>
               {t("studentRetentionManagement.services.socioEmotional.itemTwo")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 💚
               </span>
@@ -199,13 +194,13 @@ function StudentRetentionService() {
                 "studentRetentionManagement.services.socioEmotional.itemThree"
               )}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 🧰
               </span>
               {t("studentRetentionManagement.services.socioEmotional.itemFour")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 😊
               </span>
@@ -215,7 +210,7 @@ function StudentRetentionService() {
         </motion.div>
 
         <motion.div
-          {...createFlipInVariant(2)}
+          {...createFlipInVariant(1)}
           className="group relative flex flex-col items-center border-4 p-5 border-[#7C76B5] rounded-3xl bg-[#D3C3E3] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#D3C3E3] transition-all duration-500 hover:-translate-y-2"
         >
           <div className="absolute  -bottom-6 -left-5 ml-2 bg-[#7C76B5] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
@@ -224,29 +219,29 @@ function StudentRetentionService() {
           <span className="text-3xl block text-left font-impact m-5 text-[#7C76B5]">
             {t("studentRetentionManagement.services.socioEconomic.title")}
           </span>
-          <p className="text-base mb-3 text-blueBase text-justify">
+          <p className="text-base mb-3 text-blue-base text-justify">
             {t("studentRetentionManagement.services.socioEconomic.description")}
           </p>
           <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 💻
               </span>
               {t("studentRetentionManagement.services.socioEconomic.itemOne")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 💰
               </span>
               {t("studentRetentionManagement.services.socioEconomic.itemTwo")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 🤝
               </span>
               {t("studentRetentionManagement.services.socioEconomic.itemThree")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 📊
               </span>
@@ -256,7 +251,7 @@ function StudentRetentionService() {
         </motion.div>
 
         <motion.div
-          {...createFlipInVariant(2)}
+          {...createFlipInVariant(1)}
           className="group relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2"
         >
           <div className="absolute -bottom-6 -right-3 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
@@ -265,25 +260,25 @@ function StudentRetentionService() {
           <span className="text-3xl block text-left font-impact m-5 text-[#0B8F84]">
             {t("studentRetentionManagement.services.socioVocational.title")}
           </span>
-          <p className="text-base mb-3 text-blueBase text-justify">
+          <p className="text-base mb-3 text-blue-base text-justify">
             {t(
               "studentRetentionManagement.services.socioVocational.description"
             )}
           </p>
           <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 👥
               </span>
               {t("studentRetentionManagement.services.socioVocational.itemOne")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 🏛️
               </span>
               {t("studentRetentionManagement.services.socioVocational.itemTwo")}
             </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blueBase rounded-lg w-[260px]">
+            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
               <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
                 🎯
               </span>
@@ -297,7 +292,7 @@ function StudentRetentionService() {
 
       <motion.div {...expandableTransition}>
         <section className="flex justify-center items-center mt-10 m-1 mb-10 md:m-10 md:mt-24 px-3">
-          <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-[#222D56] via-[#0B8F84] to-[#FFBA08] w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
+          <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-dark-blue via-[#0B8F84] to-primary-yellow w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             <section className="bg-white text-center p-8 md:p-10 w-full h-full rounded-3xl flex flex-col justify-center">
               <div className="flex justify-center text-4xl md:text-6xl mt-8 md:mt-4">
                 <motion.span {...floatSnake(0)} className="mx-2">
@@ -313,14 +308,14 @@ function StudentRetentionService() {
                   📚
                 </motion.span>
               </div>
-              <h5 className="text-4xl md:text-5xl mt-6 font-impact text-[#FFBA08] px-3 leading-tight">
+              <h5 className="text-4xl md:text-5xl mt-6 font-impact text-primary-yellow px-3 leading-tight">
                 {t("studentRetentionManagement.studentRetentionCard.title")}
-                <span className="text-[#222D56]">
+                <span className="text-dark-blue">
                   {" "}
                   {t("studentRetentionManagement.studentRetentionCard.span")}
                 </span>
               </h5>
-              <p className="text-blueBase text-base md:text-xl mt-4 px-3">
+              <p className="text-blue-base text-base md:text-xl mt-4 px-3">
                 {t(
                   "studentRetentionManagement.studentRetentionCard.description"
                 )}{" "}
@@ -331,7 +326,7 @@ function StudentRetentionService() {
               </p>
               <div className="flex justify-center">
                 <Link
-                  className="group px-16 py-6 relative overflow-hidden w-full max-w-[310px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-[#FFBA08] to-[#0B8F84]  transform hover:scale-105 transition-all duration-500"
+                  className="group px-16 py-6 relative overflow-hidden w-full max-w-[310px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-primary-yellow to-[#0B8F84]  transform hover:scale-105 transition-all duration-500"
                   to="/ContactUs"
                 >
                   <span className="relative">
@@ -340,7 +335,7 @@ function StudentRetentionService() {
                       "studentRetentionManagement.studentRetentionCard.btnStartNow"
                     )}
                   </span>
-                  <div class="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+                  <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
                 </Link>
               </div>
             </section>

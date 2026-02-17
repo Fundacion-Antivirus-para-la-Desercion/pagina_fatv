@@ -11,7 +11,7 @@ function Btns() {
 
   useEffect(() => {
     const sessionStorageValue =
-      location.pathname.toLowerCase() === "/provocacion" ? false : true;
+      location.pathname.toLowerCase() === "/provocacion" || location.pathname.toLowerCase() === "/atvconnect" ? false : true;
 
     setShowDonationPay(sessionStorageValue);
   }, [location.pathname]);
@@ -24,7 +24,7 @@ function Btns() {
       }`}
     >
       <div
-        className={`flex items-center rounded-full p-2 shadow-lg bg-btn-back ${styles.btnDonate}`}
+        className={`flex items-center rounded-full p-2 shadow-lg bg-primary-purple ${styles.btnDonate}`}
       >
         <img
           src={IconDonation}

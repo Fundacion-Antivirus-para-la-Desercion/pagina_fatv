@@ -1,3 +1,9 @@
+import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
 import useImageByLanguage from "../../hooks/useImageByLanguage";
 
 function BannerView({ imagesBannerMap }) {
@@ -10,33 +16,23 @@ function BannerView({ imagesBannerMap }) {
   const socialMedia = [
     {
       href: "https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d",
-      name: "facebook-circle",
-      type: "logo",
-      color: "#ffffff",
+      icon: <FaFacebook className="text-2xl text-white" />,
     },
     {
       href: "https://www.instagram.com/somosantivirus/",
-      name: "instagram-alt",
-      type: "logo",
-      color: "#ffffff",
+      icon: <AiFillInstagram className="text-2xl text-white" />,
     },
     {
       href: "https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w",
-      name: "youtube",
-      type: "logo",
-      color: "#ffffff",
+      icon: <AiFillYoutube className="text-2xl text-white" />,
     },
     {
       href: "https://www.tiktok.com/@somosantivirus",
-      name: "tiktok",
-      type: "logo",
-      color: "#ffffff",
+      icon: <FaTiktok className="text-2xl text-white" />,
     },
     {
       href: "https://www.linkedin.com/company/antivirus-desercion/",
-      name: "linkedin-square",
-      type: "logo",
-      color: "#ffffff",
+      icon: <FaLinkedin className="text-2xl text-white" />,
     },
   ];
   return (
@@ -45,7 +41,7 @@ function BannerView({ imagesBannerMap }) {
         <img
           src={bannerByLanguage.src}
           alt={bannerByLanguage.alt}
-          className="w-full h-[20vh] max-h-[400px] md:h-full object-cover object-[30%_50%]"
+          className="w-full h-[50vh] max-h-[400px] md:h-full object-cover object-[30%_50%]"
         />
         <div className="absolute inset-0"></div>
         <div className="absolute bottom-0 md:bottom-4 left-4 flex space-x-2 sm:space-x-4">
@@ -57,11 +53,7 @@ function BannerView({ imagesBannerMap }) {
               rel="noopener noreferrer"
               className="box-icon"
             >
-              <box-icon
-                name={social.name}
-                type={social.type}
-                color={social.color}
-              ></box-icon>
+              {social.icon}
             </a>
           ))}
         </div>

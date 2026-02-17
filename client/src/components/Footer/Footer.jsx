@@ -1,4 +1,9 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import "./Footer.css";
 import logo from "../../../public/logo.png";
@@ -8,14 +13,14 @@ function Footer() {
 
   return (
     <div className="footer-container">
-      <footer>
+      <footer className="bg-dark-blue">
         <div className="footer-content">
           <div className="logo-footer">
             <img src={logo} alt="logo-footer" />
           </div>
           <div className="footer-info">
             <div className="footer-visitanos">
-              <h2 className="font-impact" >{t("footer.visitUs")}</h2>
+              <h2 className="font-impact">{t("footer.visitUs")}</h2>
               <p>{t("footer.address1")}</p>
               <p>{t("footer.address2")}</p>
               <p>{t("footer.address3")}</p>
@@ -30,61 +35,41 @@ function Footer() {
             </div>
             <div className="footer-redes">
               <h2 className="font-impact">{t("footer.socialNetworks")}</h2>
-              <div className="bxicon">
+              <div className="mr-10 flex flex-wrap space-x-2 sm:space-x-4">
                 <a
                   href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <box-icon
-                    name="facebook-circle"
-                    type="logo"
-                    color="#ffffff"
-                  ></box-icon>
+                  <FaFacebook className="text-2xl text-white" />
                 </a>
                 <a
                   href="https://www.instagram.com/somosantivirus/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <box-icon
-                    name="instagram-alt"
-                    type="logo"
-                    color="#ffffff"
-                  ></box-icon>
+                  <AiFillInstagram className="text-2xl text-white" />
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <box-icon
-                    name="youtube"
-                    type="logo"
-                    color="#ffffff"
-                  ></box-icon>
+                  <AiFillYoutube className="text-2xl text-white" />
                 </a>
                 <a
                   href="https://www.tiktok.com/@somosantivirus"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <box-icon
-                    name="tiktok"
-                    type="logo"
-                    color="#ffffff"
-                  ></box-icon>
+                  <FaTiktok className="text-2xl text-white" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/antivirus-desercion/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <box-icon
-                    name="linkedin"
-                    type="logo"
-                    color="#ffffff"
-                  ></box-icon>
+                  <FaLinkedin className="text-2xl text-white" />
                 </a>
               </div>
             </div>

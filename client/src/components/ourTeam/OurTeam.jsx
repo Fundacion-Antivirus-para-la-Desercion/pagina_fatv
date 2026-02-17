@@ -93,12 +93,12 @@ function OurTeam() {
     <>
       <div className="OurTeam-block">
         <div className="OurTeam-block-title">
-          <h3 className="text-5xl font-impact text-title">
+          <h3 className="text-5xl font-impact text-blue-base">
             {t("ourTeam.title_part1")} <br />
             {t("ourTeam.title_part2")}
           </h3>
         </div>
-        <div className="OurTeam">
+        <div className="OurTeam bg-primary-yellow">
           <div ref={containerRef} className="cards">
             <Swiper
               breakpoints={{
@@ -140,7 +140,7 @@ function OurTeam() {
                     alt={card.name}
                     className="h-[50vh] object-cover object-[50%_10%] w-full rounded-b-none rounded-3xl"
                   />
-                  <div className="OurTeam-content rounded-r-3xl rounded-t-none">
+                  <div className="OurTeam-content bg-dark-blue rounded-r-3xl rounded-t-none">
                     <div className="OurTeam-content-info">
                       <h5 className="content-info-name font-impact">{card.name}</h5>
                       <p className="content-info-role">{card.role}</p>

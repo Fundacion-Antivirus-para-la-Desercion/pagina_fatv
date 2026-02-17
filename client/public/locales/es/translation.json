@@ -11,13 +11,14 @@
     "options_spanish": "ESPAÑOL",
     "options_english": "INGLÉS",
     "sub_header": {
-      "data_analytics": "ANALÍTICA DE DATOS",
-      "socio_emotional_intervention": "INTERVENCIÓN SOCIO-EMOCIONAL",
+      "data_analytics": "TECNOLOGÍA Y DATOS",
+      "socio_emotional_intervention": "INTERVENCIÓN SOCIAL",
       "communications": "COMUNICACIONES",
       "for_students": "A LOS ESTUDIANTES",
       "permanence": "GESTIÓN DE LA PERMANENCIA",
-      "consulting": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS",
+      "consulting": "CONSULTORÍAS EN PERMANENCIA",
       "pro_vocation": "PRO-VOCACIÓN",
+      "atv_connect": "ATVCONECTA",
       "academic_support": "Apoyo Académico",
       "boe": "Banco de Oportunidades Estudiantiles",
       "mentoring_and_guidance": "Acompañamiento y orientación",
@@ -524,14 +525,65 @@
     }
   },
   "consultorias": {
-    "title": "Servicios",
-    "services_title": "PRESTAMOS LOS SIGUIENTES SERVICIOS",
-    "main_consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA PERMANENCIA EN:",
+    "consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA ",
+    "consulting_title_span": "PERMANENCIA:",
     "universities": "Universidades",
+    "universities_description": "Estrategias integrales para reducir la deserción y aumentar la tasa de graduación.",
     "bootcamps": "Bootcamps",
+    "bootcamps_description": "Programas de acompañamiento intensivo para garantizar el éxito de los participantes.",
     "schools": "Colegios",
+    "schools_description": "Preparación y orientación vocacional para estudiantes de últimos años escolares.",
     "scholarship_programs": "Programas de becarios de /ONG's/Empresas",
-    "description": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares."
+    "scholarship_programs_description": "Seguimiento personalizado para maximizar el impacto de los programas de becas.",
+    "description_general": "Ofrecemos servicios especializados que tienen como objetivo implementar, en compañia de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de deserción escolar.",
+    "btn_request_consulting": "Solicita consultoría",
+    "why_choose_us": {
+      "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
+      "titlle_span": " TU INSTITUCIÓN?",
+      "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil."
+    },
+    "cards": {
+      "methodology_title": "Metodología Comprobada",
+      "methodology_description": "Nuestras estrategias están respaldadas por por años de experiencia y resultados medibles en instituciones educativas de todo el país.",
+      "focus_title": "Enfoque en Resultados",
+      "focus_description": "Trabajamos con KPIs claros: reducción de deserción aumento de tasas de graduación y mejora en la satisfacción estudiantil.",
+      "accompaniment_title": "Acompañamiento Integral",
+      "accompaniment_description": "No solo diseñamos estrategias, las implementamos junto a tu equipo garantizando la transferencia de conocimiento.",
+      "experience_title": "Experiencia especializada",
+      "experience_description": "Hemos trabajado con universidades, bootcamps, colegios y programas de becas, entendiendo las particularidades de cada contexto.",
+      "solutions_title": "Soluciones Personalizadas",
+      "solutions_description": "Cada institución es única. Diseñamos estrategias adaptadas a tu realidad, cultura organizacional y objetivos específicos.",
+      "innovation_title": "Innovación Continua",
+      "innovation_description": "Incorporamos las últimas tendencias en educación y tecnología para mantener tus programas a la vanguardia.",
+      "methodology": "Metodología Comprobada",
+      "metodology_description": "Nuestras estrategias están respaldadas por por años de experiencia y resultados medibles en instituciones educativas de todo el país.",
+      "focus": "Enfoque en Resultados",
+      "accompaniment": "Acompañamiento Integral",
+      "experience": "Experiencia especializada",
+      "solutions": "Soluciones Personalizadas",
+      "innovation": "Innovación Continua"
+    },
+    "pillars": {
+      "title": "PILARES DE NUESTRA",
+      "title_span": " METODOLOGÍA",
+      "description": "Tres principios fundamentales que garantizan el éxito de nuestras implementaciones.",
+      "titlePillarOne": "Colaboración Institucional",
+      "descriptionPillarOne": "Trabajamos codo a codo con tu equipo, construyendo soluciones sostenibles que se integran naturalmente en tu institución.",
+      "titlePillarTwo": "Impacto Mediable",
+      "descriptionPillarTwo": "Establecemos Métricas claras y sistemas de seguimiento que demuestran el retorno de inversión de cada estrategia implementada..",
+      "titlePillarThree": "Innovación Educativa",
+      "descriptionPillarThree": "Aplicamos las mejoras prácticas internacionales adaptadas a la realidad local, garantizando soluciones efectivas y sostenibles.",
+      "title_br": " METODOLOGÍA"
+    },
+    "whyChooseUs": {
+      "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
+      "titlle_span": " TU INSTITUCIÓN?",
+      "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil."
+    },
+    "description": "Ofrecemos   que tienen   , en compañía de universidades, colegios y bootcamps, estrategias para garantizar la permanencia educativa, la graduación y, consecuentemente la disminución de la deserción escolar. Nos enfocamos en el contexto singular de cada universidad, colegio o bootcamp y respetamos sus procesos pedagógicos y administrativos particulares.",
+    "title": "Servicios",
+    "main_consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA PERMANENCIA:",
+    "services_title": "PRESTAMOS LOS SIGUIENTES SERVICIOS"
   },
   "studentRetentionManagement": {
     "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente",
@@ -575,7 +627,7 @@
       "message_group": "✨Aprendemos mejor juntos",
       "alt_img_graduate": "Graduada sonriente, con el texto Tu logro nos inspira",
       "message_graduate": "🎉 ¡Tu logro nos inspira!",
-      "btn_whatsapp": "¡Estamos con tigo!💪",
+      "btn_whatsapp": "¡Estamos contigo!💪",
       "alt_success_img": "Estudiante exitoso",
       "see_more": "Ver más historias"
     },
@@ -759,6 +811,144 @@
         }
       ]
     }
+  },
+  "atvConnect": {
+    "description_one": "ATVConecta es más que una plataforma de tutorías. Es tu ",
+    "description_span": "aliado para superar desafíos académicos,",
+    "description_two": " mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
+    "span_title": "NUESTRO IMPACTO",
+    "title": "CIFRAS QUE HABLAN",
+    "figures_impact": {
+      "figure_one": "Estudiantes activos",
+      "figure_two": "Aprobaron sus materias",
+      "figure_three": "Sesiones completadas",
+      "figure_four": "Satisfacción"
+    },
+    "list": {
+      "item_one": "⭐ 4.9/5 Calificación promedio",
+      "item_two": "📅 Año de lanzamiento 2024",
+      "item_three": "✨ Respuesta en 24h"
+    },
+    "services": {
+      "span": "SERVICIOS",
+      "title_one": "TODO LO QUE NECESITAS",
+      "title_two": "PARA TRIUNFAR",
+      "item_tutoring": {
+        "title": "Tutorías Personalizadas",
+        "description": "Sesiones 1 a 1 con tutores que se adaptan a tu ritmo. Tú marcas el camino, nosotros te acompañamos."
+      },
+      "item_progress": {
+        "title": "Red de Tutores Especializados",
+        "description": "Conecta con tutores capacitados en las áreas que realmente necesitas."
+      },
+      "item_hours": {
+        "title": "Horarios Flexibles",
+        "description": "Agenda segun tu disponibilidad. Mañana, tarde o noche, siempre hay un tutor para ti."
+      },
+      "title": "TODO LO QUE NECESITAS PARA TRIUNFAR"
+    },
+    "steps": {
+      "span": "PROCESO",
+      "title": "3 PASOS:",
+      "span_two": "ASÍ DE SIMPLE",
+      "step_one": {
+        "title": "Regístrate",
+        "description": "Crea tu cuenta gratis"
+      },
+      "step_two": {
+        "title": "Elige tutor",
+        "description": "Filtra por materia y horario"
+      },
+      "step_three": {
+        "title": "Aprende",
+        "description": "Agenda y mejora tus notas"
+      }
+    },
+    "subjects": {
+      "span": "MATERIAS",
+      "title": "TODAS LAS ÁREAS",
+      "subject_list": {
+        "calculus": "Cálculo",
+        "physics": "Física",
+        "chemistry": "Química",
+        "programming": "Programación",
+        "statistics": "Estadística",
+        "algebra": "Álgebra Lineal",
+        "accounting": "Contabilidad",
+        "economics": "Economía",
+        "english": "Inglés",
+        "biology": "Biología",
+        "mathematics": "Matemáticas",
+        "data_bases": "Bases de Datos",
+        "algorithms": "Algoritmos",
+        "thermodynamics": "Termodinámica",
+        "circuits": "Circuitos",
+        "finance": "Finanzas",
+        "Statistics": "Estadística",
+        "math": "Matemáticas"
+      }
+    },
+    "testimonialsAtvConnect": {
+      "span": "TESTIMONIOS",
+      "title": "HISTORIAS REALES",
+      "testimony_one": {
+        "description": "“Estoy feliz con esta plataforma, ya que es un apoyo para seguir preparándome en mi carrera”",
+        "role": "Estudiante",
+        "university": "Becario Aurelio Llano",
+        "profession": "Becario Aurelio Llano"
+      },
+      "testimony_two": {
+        "description": "“La plataforma es didáctica lo que facilita al estudiante la selección de tutor y el seguimiento por parte del tutor en los espacios solicitados”",
+        "role": "Tutor",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
+      },
+      "testimony_three": {
+        "description": "“Me parece una buena idea la implementación de una plataforma, gracias”",
+        "role": "Estudiante",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
+      },
+      "testimony_four": {
+        "description": "“Los felicito por esta web, de verdad uno no saben lo útil que es hasta que lo prueba y queda con la boca abierta sobre lo fácil que es tener contacto con compas como nosotros dispuestos a ayudar”",
+        "role": "Estudiante",
+        "university": "Becario Aurelio Llano",
+        "profession": "Becario Aurelio Llano"
+      },
+      "testimony_five": {
+        "description": "“Me parece una alternativa muy innovadora y útil”",
+        "role": "Estudiante",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
+      },
+      "testimony_six": {
+        "description": "“En general me gustó mucho, muchas gracias por siempre pensar en nuestro bienestar”",
+        "role": "Estudiante",
+        "university": "Becario Aurelio Llano",
+        "profession": "Becario Aurelio Llano"
+      },
+      "testimony_seven": {
+        "description": "“Excelente herramienta”",
+        "role": "Estudiante",
+        "university": "Universidad de Antioquia",
+        "profession": "Universidad de Antioquia"
+      },
+      "goAtv": {
+        "start_now": "¿Listo para empezar?",
+        "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
+        "btn_start_free": "Comenzar"
+      },
+      "start_now": "¿Listo para empezar?",
+      "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
+      "btn_start_free": "Comenzar"
+    },
+    "goAtv": {
+      "start_now": "¿Listo para empezar?",
+      "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
+      "btn_start_free": "Comenzar"
+    },
+    "description": "ATVConecta es más que una plataforma de tutorías. Es tu aliado para superar desafíos académicos, mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
+    "span_description": "aliado para superar desafíos académicos"
   },
   "contactUs": {
     "title": "Contactanos",
