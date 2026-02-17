@@ -872,6 +872,7 @@
     "subjects": {
       "span": "MATERIAS",
       "title": "TODAS LAS ÁREAS",
+      "alt_image_subjects": "Javi de FATV, analizando datos y gráficos estadísticos en una estación de trabajo digital.",
       "subject_list": {
         "calculus": "Cálculo",
         "physics": "Física",
