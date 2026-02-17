@@ -19,7 +19,6 @@ Plataforma web informativa creada para la **Fundación Antivirus para la Deserci
 - [Ejecución Local](#ejecución-local)
 - [Despliegue](#despliegue)
 - [Flujo de Desarrollo (Gitflow)](#flujo-de-desarrollo-gitflow)
-- [Contribución](#contribución)
 
 ---
 
