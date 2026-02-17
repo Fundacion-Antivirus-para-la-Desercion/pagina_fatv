@@ -1,4 +1,6 @@
 import Javi from "../../../assets/images/views/javi/Javi-4.png";
+import JaviEstudioso from "../../../assets/images/views/javi/javi-estudioso-11.webp";
+
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
@@ -119,7 +121,7 @@ function SchoolSubjectsAtvConnect() {
 
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[184px] relative mb-10">
+      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
@@ -150,9 +152,9 @@ function SchoolSubjectsAtvConnect() {
 
         <div className="relative">
           <img
-            className="block mx-auto md:absolute md:top-[-90px] max-w-[190px] md:max-w-[200px]"
-            src={Javi}
-            alt=""
+            className="block mt-10 md:mt-0 mx-auto md:absolute md:top-[-50px] max-w-[210px] md:max-w-[200px] lg:top-[-20px] lg:max-w-[400px] "
+            src={JaviEstudioso}
+            alt={t("atvConnect.subjects.alt_image_subjects")}
           />
         </div>
       </section>
