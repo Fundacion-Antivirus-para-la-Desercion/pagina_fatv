@@ -33,7 +33,7 @@ En esta página web se presenta contenido relevante y de carácter informativo q
 - Gestión de la permanencia
 - Consultorías en permanencia
 - Acompañamiento estudiantil
-- Asesorias
+- Asesorías
 - Pro-Vocación
 - AtvConecta
 - Noticias
