@@ -8,6 +8,7 @@ export default {
         "blue-base": "#32526E", //titulos y textos
         "dark-blue": "#222D56", //Fondos azul oscuro
         "primary-yellow": "#FFBA08", //Fondos amarillo oscuro
+        "dark-yellow": "#FAA307", //Amarillo intenso
         "primary-purple": "#7C76B5",
         "primary-mediumblue": "#708BC6",
         "primary-ice": "#DCEBF9",

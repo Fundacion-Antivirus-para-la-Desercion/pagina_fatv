@@ -12,7 +12,7 @@ import Communications_ATV from "./views/Communications_ATV";
 import ApoyoAcademico from "./Services/ApoyoAcademico";
 import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
 import Repositorio from "./Services/Repositorio";
-import Consultorias from "./Services/Consultorias";
+import Consultorias from "./views/Consulting/Consultorias.jsx";
 import Projects_ATV from "./views/Projects_ATV";
 import Universidades from "./projects/Universidades/Universidades";
 import Bootcamps from "./projects/Bootcamps/Bootcamps";
