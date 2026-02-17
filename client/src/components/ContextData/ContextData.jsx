@@ -1,4 +1,5 @@
 import "./ContextData.css";
+import { useTranslation } from "react-i18next";
 import CounterNumeric from "./CounterNumer.jsx";
 import AcompanarImage from "../../assets/images/views/home/acompanar.webp";
 import OrientacionImage from "../../assets/images/views/home/orientacion.webp";
@@ -7,123 +8,144 @@ import TutoriaImage from "../../assets/images/views/home/tutoria-academica.webp"
 import TutorImage from "../../assets/images/views/home/tutor.webp";
 import PsicologiaImage from "../../assets/images/views/home/psicologia.webp";
 import EstudioImage from "../../assets/images/views/home/grupo-estudio.webp";
-import AcademicoImage from "../../assets/images/views/home/academico.webp";
+import TallerImage from "../../assets/images/views/home/academico.webp";
 import ComputerImage from "../../assets/images/views/home/computer.webp";
+import JaviAbajo from "../../assets/images/views/home/javi-abajo.webp";
 
-const ContextData = () => (
-  <div className="context-data-container">
-    <h1 className="mb-32 context-data-title text-5xl text-white font-extrabold text-center">
-      <span className="bg-[#f6a623] text-[#222d56] px-2">
-        Nuestro aporte
-      </span>{" "}
-       en Colombia
-    </h1>
-    <div className="context-data-statistics">
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={AcompanarImage}
-          alt="Acompañamiento"
-        />
-        <h2 className="statistic-number">
-          <CounterNumeric countNumber={11400} />
-        </h2>
-        <p className="statistic-description text-center">
-          Estudiantes acompañados por la Fundación
-        </p>
+const ContextData = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="context-data-container bg-dark-blue">
+      <div className="md:grid md:grid-cols-1 bg-primary-yellow relative items-center mb-10 md:mb-32 p-2">
+        <img className="hidden md:block md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt="Javi feliz" />
+        <h1 className="col-start-2 md:col-start-1 p-2 context-data-title uppercase font-impact text-2xl md:text-3xl lg:text-5xl text-dark-blue text-center">
+          {t("home.contextData.title")}
+        </h1>
       </div>
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={OrientacionImage}
-          alt="Orientación"
-        />
-        <h2 className="statistic-number2">
-          <CounterNumeric countNumber={19641} />
-        </h2>
-        <p className="statistic-description text-center">
-          Asesorías de orientación sociopedagógica y sociovocacional (ASP Y ASV)
-        </p>
+
+      <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-primary-yellow p-2 mb-3"
+              src={AcompanarImage}
+              alt={t("home.contextData.statistic1.alt_image")}
+            />
+            <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={11400} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold ">
+              {t("home.contextData.statistic1.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-dark-blue p-2 object-cover mb-3"
+              src={OrientacionImage}
+              alt={t("home.contextData.statistic2.alt_image")}
+            />
+            <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3 p-1">
+              <CounterNumeric countNumber={19641} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic2.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-primary-purple p-2 object-cover mb-3"
+              src={GrupoImage}
+              alt={t("home.contextData.statistic3.alt_image")}
+            />
+            <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={715} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic3.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-primary-yellow p-2 object-cover mb-3"
+              src={TutoriaImage}
+              alt={t("home.contextData.statistic4.alt_image")}
+            />
+            <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={4605} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic4.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-dark-blue p-2 object-cover mb-3"
+              src={TutorImage}
+              alt={t("home.contextData.statistic5.alt_image")}
+            />
+            <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={441} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic5.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-primary-purple p-2 object-cover mb-3"
+              src={PsicologiaImage}
+              alt={t("home.contextData.statistic6.alt_image")}
+            />
+            <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={565} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic6.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-primary-yellow p-2 object-cover mb-3"
+              src={TallerImage}
+              alt={t("home.contextData.statistic7.alt_image")}
+            />
+            <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={3560} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic7.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-dark-blue p-2 object-cover mb-3"
+              src={ComputerImage}
+              alt={t("home.contextData.statistic8.alt_image")}
+            />
+            <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={221} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic8.description")}
+            </p>
+          </div>
+          <div className="bg-white statistic p-7 rounded-lg border-none shadow-lg hover:shadow-xl duration-300">
+            <img
+              className="m-auto w-24 rounded-full bg-primary-purple p-2 object-cover mb-3"
+              src={EstudioImage}
+              alt={t("home.contextData.statistic9.alt_image")}
+            />
+            <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
+              <CounterNumeric countNumber={129} />
+            </p>
+            <p className="text-blue-base text-lg text-center font-bold">
+              {t("home.contextData.statistic9.description")}
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={GrupoImage}
-          alt="Grupo de estudio"
-        />
-        <h2 className="statistic-number3">
-          <CounterNumeric countNumber={715} />
-        </h2>
-        <p className="statistic-description text-center">Talleres grupales</p>
-      </div>
-      <div className="statistic">
-        <img className="m-auto d-block w-20" src={TutoriaImage} alt="Tutoria" />
-        <h2 className="statistic-number">
-          <CounterNumeric countNumber={4605} />
-        </h2>
-        <p className="statistic-description text-center">Tutorías académicas</p>
-      </div>
-      <div className="statistic">
-        <img className="m-auto d-block w-20" src={TutorImage} alt="Tutor" />
-        <h2 className="statistic-number2">
-          <CounterNumeric countNumber={441} />
-        </h2>
-        <p className="statistic-description text-center">
-          Tutores voluntarios vinculados
-        </p>
-      </div>
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={PsicologiaImage}
-          alt="Orientación Psicológica"
-        />
-        <h2 className="statistic-number3">
-          <CounterNumeric countNumber={565} />
-        </h2>
-        <p className="statistic-description text-center">
-          Espacios de orientación Psicológica
-        </p>
-      </div>
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={AcademicoImage}
-          alt="Taller"
-        />
-        <h2 className="statistic-number">
-          <CounterNumeric countNumber={3560} />
-        </h2>
-        <p className="statistic-description text-center">
-          Talleres de Nivélate
-        </p>
-      </div>
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={ComputerImage}
-          alt="computador"
-        />
-        <h2 className="statistic-number2">
-          <CounterNumeric countNumber={221} />
-        </h2>
-        <p className="statistic-description text-center">
-          Estudiantes que reciben computador en préstamo o donación
-        </p>
-      </div>
-      <div className="statistic">
-        <img
-          className="m-auto d-block w-20"
-          src={EstudioImage}
-          alt="Gripos de estudio"
-        />
-        <h2 className="statistic-number3">
-          <CounterNumeric countNumber={129} />
-        </h2>
-        <p className="statistic-description text-center">Grupos de estudio</p>
-      </div>
-    </div>
-  </div>
-);
+    </section>
+  );
+};
 
 export default ContextData;

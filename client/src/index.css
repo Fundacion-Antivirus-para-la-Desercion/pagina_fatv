@@ -2,53 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: 'Acumin1';
-    src: url('./fonts/Acumin-BdItPro.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "impact";
+  src: url("./fonts/impact.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Acumin2';
-    src: url('./fonts//Acumin-BdPro.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "renogare";
+  src: url("./fonts/Renogare-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Acumin3';
-    src: url('./fonts//Acumin-ItPro.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "myriad-pro";
+  src: url("./fonts/myriad-pro/MYRIADPRO-REGULAR.OTF");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: 'Acumin4';
-    src: url('./fonts//Acumin-RPro.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'impact';
-    src: url('./fonts//impact.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'renogare';
-    src: url('./fonts//Renogare-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'lucida';
-    src: url('./fonts//Lucida\ Fax\ Demibold.ttf');
-    font-weight: normal;
-    font-style: normal;
+@layer base {
+  body {
+    font-family: "myriad-pro";
+  }
 }

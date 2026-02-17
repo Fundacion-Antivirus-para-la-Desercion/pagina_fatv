@@ -1,92 +1,68 @@
 .content {
-    background: white;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .content-info {
-    width: 50%;
-    color: #33526d;
-    padding-left: 40px;
-    padding-right: 20px;
-    line-height: 1.2;
+  background: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
+.content-info {
+  width: 50%;
+  padding-left: 40px;
+  padding-right: 20px;
+  line-height: 1.2;
+}
 
-  }
-  
-  .paragraph {
-    text-align: justify;
-    margin-top: 15px;
-    
-  }
-  
-  .title {
-    font-size: 0.88em;
-    line-height: 1.5;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 15px;
-  }
-  
-  .content-info .subtitle::before {
-    content: "";
-    display: inline-block;
-    width: 55px;
-    height: 6px;
-    background: #33526d;
-    vertical-align: middle;
-    margin-bottom: 10px;
-    margin-right: 5px;
-  }
-  
-  .subtitle {
-    font-size: 2.94em;
-    line-height: 0.92;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    letter-spacing: -0.06em;
-    font-weight: bold;
-  }
-  
-  .content-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 60%;
+.paragraph {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 0.88em;
+  line-height: 1.5;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.content-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 60%;
+  padding: 20px;
+}
+.content-image img {
+  border-style: none;
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    height: auto;
     padding: 20px;
   }
-  .content-image img{
-      border-style: none;
-      width: 85%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      position: relative;
-      display: block;
+
+  .content-info,
+  .content-image {
+    width: 100%;
+    padding: 10px;
   }
 
-  @media screen and (max-width: 1200px) {
-    .content {
-      height: auto;
-      padding: 20px;
-    }
-    
-    .content-info,
-    .content-image {
-      width: 100%;
-      padding: 10px;
-    }
-    
-    .content-image img {
-      width: 100%;
-      height: auto;
-    }
+  .content-image img {
+    width: 100%;
+    height: auto;
   }
+}
 @media screen and (max-width: 996px) {
   .content {
     height: auto;
@@ -104,93 +80,56 @@
     height: auto;
   }
 
-  .subtitle {
-    font-size: 2.2em;
-  }
-
   .title {
     font-size: 0.9em;
   }
+}
 
-  .paragraph {
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .title {
     font-size: 1em;
+  }
+
+  .content-info {
+    padding: 10px;
+    font-size: 1em;
+  }
+  .content-image {
+    align-items: center;
+  }
+
+  .content-image img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .content-info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-image img {
+    width: 80%;
   }
 }
 
-  @media screen and (max-width: 768px) {
-    .content{
-      flex-direction: column;
-
-    }
-    .title {
-      font-size: 1em;
-    }
-  
-    .subtitle {
-      font-size: 1.7em;
-    }
-  
-    .content-info {
-      padding: 10px;
-      font-size: 1em;
-    }
-    .content-image{
-      align-items: center;
-
-    }
-  
-    .content-image img {
-      width: 70%;
-    }
+@media screen and (max-width: 480px) {
+  .content {
+    flex-direction: column;
   }
-  @media screen and (max-width: 576px) {
-    .content {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .content-info {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .content-image img {
-      width: 80%;
-    }
-  
-    .subtitle {
-      font-size: 1.5em;
-    }
-  
-    .title {
-      font-size: 0.9em;
-    }
-  
-    .paragraph {
-      font-size: 0.85em;
-    }
+  .title {
+    font-size: 0.88em;
   }
-  
-  
-  @media screen and (max-width: 480px) {
-    .content{
-      flex-direction: column;
-
-    }
-    .title {
-      font-size: 0.88em;
-    }
-  
-    .subtitle {
-      font-size: 1.5em;
-    }
-  
-    .paragraph {
-      font-size: 0.9em;
-    }
-  
-    .content-image img {
-      width: 100%;
-    }
+  .content-image img {
+    width: 100%;
   }
+}

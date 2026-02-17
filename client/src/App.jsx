@@ -12,7 +12,7 @@ import Communications_ATV from "./views/Communications_ATV";
 import ApoyoAcademico from "./Services/ApoyoAcademico";
 import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
 import Repositorio from "./Services/Repositorio";
-import Consultorias from "./Services/Consultorias";
+import Consultorias from "./views/Consulting/Consultorias.jsx";
 import Projects_ATV from "./views/Projects_ATV";
 import Universidades from "./projects/Universidades/Universidades";
 import Bootcamps from "./projects/Bootcamps/Bootcamps";
@@ -21,11 +21,12 @@ import Becarios from "./projects/Becarios/Becarios";
 import NotFound from "./views/NotFound";
 import Layout from "./components/layout/Layout";
 import ProVocacion from "./views/ProVocacion";
+import AtvConnect from "./views/atv_connect/AtvConnect.jsx";
 import News from "./components/News/News";
 import NewsDetail from "./views/NewsDetail.jsx";
+import StudentRetentionManagement from "./views/StudentRetentionManagement.jsx";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -47,13 +48,18 @@ function App() {
             element={<AcompañamientoOrientacion />}
           />
           <Route path="/Repositorio" element={<Repositorio />} />
-          <Route path="/Consultorias" element={<Consultorias />} />
-          <Route path="/Universidades" element={<Universidades />} />
-          <Route path="/Bootcamps" element={<Bootcamps />} />
-          <Route path="/Becarios" element={<Becarios />} />
-          <Route path="/Colegios" element={<Colegio />} />
-          <Route path="/Provocacion" element={<ProVocacion />} />
-          <Route path="/news/detail" element={<NewsDetail  />} />
+          <Route
+            path="/gestion-de-la-permanencia"
+            element={<StudentRetentionManagement />}
+          />
+          <Route path="/consultorias" element={<Consultorias />} />
+          {/* <Route path="/Universidades" element={<Universidades />} /> */}
+          {/*<Route path="/Bootcamps" element={<Bootcamps />} />  */}
+          {/* <Route path="/Becarios" element={<Becarios />} /> */}
+          {/* <Route path="/colegios" element={<Colegio />} /> */}
+          <Route path="/provocacion" element={<ProVocacion />} />
+          <Route path="/atvconnect" element={<AtvConnect />} />
+          <Route path="/news/detail" element={<NewsDetail />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />

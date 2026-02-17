@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerBecariosEn from "../../../public/services_imgs/banner-services.jpg";
+import BannerBecariosEs from "../../../public/services_imgs/banner-services.jpg";
 import aurelio from "../../../public/projects/Becarios/aurelio.webp";
 import becariosItagui from "../../../public/projects/Becarios/becarios-itagui.webp";
+
+import BannerView from "../../components/Banner-views/BannerView";
 
 function Becarios() {
   const [becarios, setBecarios] = useState([
@@ -21,11 +24,17 @@ function Becarios() {
 
   return (
     <div className="lg:pt-[145px]">
-      <BannerView title={"BECARIOS"} />
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerBecariosEn,
+          esImage: BannerBecariosEs,
+          keyTitle: "",
+        }}
+      />
       <div className="m-8 sm:m-20">
         {becarios.map((item, key) => (
           <div key={key} className="mb-10">
-            <h1 className="text-yellow-500 text-2xl font-bold mb-4">
+            <h1 className="text-primary-yellow text-2xl font-bold mb-4">
               {item.name}
             </h1>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
@@ -34,7 +43,7 @@ function Becarios() {
                 src={item.img}
                 alt={item.name}
               />
-              <p className="text-blue-600 text-lg lg:w-1/2">{item.parrafo}</p>
+              <p className="text-blue-base text-lg lg:w-1/2">{item.parrafo}</p>
             </div>
           </div>
         ))}

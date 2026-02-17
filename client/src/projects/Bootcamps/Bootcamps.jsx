@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerBootcampsEn from "../../../public/services_imgs/banner-services.jpg";
+import BannerBootcampsEs from "../../../public/services_imgs/banner-services.jpg";
 import nodo from "../../../public/projects/Bootcamps/ne.webp";
 import codigoc13 from "../../../public/projects/Bootcamps/codigoc13.jpg";
+
+import BannerView from "../../components/Banner-views/BannerView";
 
 function Bootcamps() {
   const [img, setImg] = useState([
@@ -21,11 +24,17 @@ function Bootcamps() {
 
   return (
     <div className="lg:pt-[145px]">
-      <BannerView title={"BOOTCAMPS"} />
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerBootcampsEn,
+          esImage: BannerBootcampsEs,
+          keyTitle: "",
+        }}
+      />
       <div className="m-8 sm:m-20">
         {img.map((item, key) => (
           <div key={key} className="mb-10">
-            <h1 className="text-yellow-500 text-2xl font-bold mb-4">
+            <h1 className="text-primary-yellow text-2xl font-bold mb-4">
               {item.name}
             </h1>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
@@ -34,7 +43,7 @@ function Bootcamps() {
                 src={item.img}
                 alt={item.name}
               />
-              <p className="text-blue-600 text-lg lg:w-1/2">{item.parrafo}</p>
+              <p className="text-blue-base text-lg lg:w-1/2">{item.parrafo}</p>
             </div>
           </div>
         ))}

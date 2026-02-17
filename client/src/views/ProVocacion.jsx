@@ -1,18 +1,26 @@
 import styles from "./ProVocacion.module.css";
-import Provocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.jpg";
-import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.jpg";
-import Acompañamiento from "../../src/assets/images/views/proVocacion/Collage_PROVocacion.jpg";
+import BannerFoundationEn from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
+import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.webp";
+import Acompañamiento from "../../src/assets/images/views/proVocacion/collage-provocacion.webp";
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
 import MundoFormativo from "../assets/images/views/proVocacion/componentes/mundo-formativo.webp";
 import MundoLaboral from "../assets/images/views/proVocacion/componentes/mundo-laboral.webp";
+import EnMundoFormativo from "../assets/images/views/proVocacion/componentes/training-world.webp";
+import EnAutoconocimiento from "../assets/images/views/proVocacion/componentes/self-knowledge.webp";
+import EnMundoLaboral from "../assets/images/views/proVocacion/componentes/the-world-of-work.webp";
 import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
 import Focus from "../assets/images/views/proVocacion/information/focus.svg";
+import BannerView from "../components/Banner-views/BannerView";
+
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Modal from "../components/modal/Modal";
 import emailjs from "emailjs-com";
 
 function ProVocacion() {
+  const { t, i18n } = useTranslation();
+  const isEnglish = (i18n && (i18n.resolvedLanguage || i18n.language)) === "en";
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -30,16 +38,22 @@ function ProVocacion() {
     let tempErrors = {};
     tempErrors.fullName = formData.fullName
       ? ""
-      : " Nombre completo es requerido.";
+      : t("provocacion.validation.full_name_required");
     tempErrors.email = /\S+@\S+\.\S+/.test(formData.email)
       ? ""
-      : " Correo electrónico es inválido.";
-    tempErrors.phone = formData.phone ? "" : " Teléfono es requerido.";
-    tempErrors.subject = formData.subject ? "" : " Asunto es requerido.";
-    tempErrors.message = formData.message ? "" : " Mensaje es requerido.";
+      : t("provocacion.validation.email_invalid");
+    tempErrors.phone = formData.phone
+      ? ""
+      : t("provocacion.validation.phone_required");
+    tempErrors.subject = formData.subject
+      ? ""
+      : t("provocacion.validation.subject_required");
+    tempErrors.message = formData.message
+      ? ""
+      : t("provocacion.validation.message_required");
     tempErrors.terms = formData.terms
       ? ""
-      : " Debes aceptar los términos y condiciones.";
+      : t("provocacion.validation.terms_required");
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === "");
   };
@@ -97,40 +111,6 @@ function ProVocacion() {
     }
   };
 
-  /******************************* */
-  const [socialMedia, setSocialMedia] = useState([
-    {
-      href: "https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d",
-      name: "facebook-circle",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.instagram.com/somosantivirus/",
-      name: "instagram-alt",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w",
-      name: "youtube",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.tiktok.com/@somosantivirus",
-      name: "tiktok",
-      type: "logo",
-      color: "#ffffff",
-    },
-    {
-      href: "https://www.linkedin.com/company/antivirus-desercion/",
-      name: "linkedin-square",
-      type: "logo",
-      color: "#ffffff",
-    },
-  ]);
-
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openImageModal = (imageUrl) => {
@@ -184,47 +164,26 @@ function ProVocacion() {
       <Modal
         isOpen={open}
         onClose={() => cerrarModal()}
-        title="Mensaje enviado"
+        title={t("provocacion.modal.title")}
       >
         <div className="flex flex-col items-center text-center">
           <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" />
 
-          <h2 className="text-2xl font-bold mb-2 text-center text-title">
-            ¡Mensaje enviado correctamente!
+          <h2 className="text-2xl font-bold mb-2 text-center text-blue-base">
+            {t("provocacion.modal.title")}
           </h2>
 
-          <p className="text-gray-700">Gracias por comunicarte con nosotros.</p>
+          <p className="text-gray-700">{t("provocacion.modal.description")}</p>
         </div>
       </Modal>
       <section className="lg:pt-[145px]">
-        <div className="flex flex-col items-center justify-center">
-          <div className="relative w-full h-60 sm:h-80 md:h-96">
-            <img
-              src={Provocacion}
-              alt="Banner"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-
-            <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-              {socialMedia.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="box-icon"
-                >
-                  <box-icon
-                    name={social.name}
-                    type={social.type}
-                    color={social.color}
-                  ></box-icon>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
+        <BannerView
+          imagesBannerMap={{
+            enImage: BannerFoundationEn,
+            esImage: BannerFoundationEn,
+            keyTitle: "",
+          }}
+        />
 
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group">
           <a
@@ -234,7 +193,9 @@ function ProVocacion() {
             rel="noopener noreferrer"
           >
             <img src={Focus} alt="Botón fijo" className="w-10 h-10" />
-            <span className="text-title font-bold">Déjate provocar</span>
+            <span className="text-blue-base font-bold">
+              {t("provocacion.let_yourself_be_provoked")}
+            </span>
           </a>
         </div>
       </section>
@@ -242,17 +203,14 @@ function ProVocacion() {
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center">
         <div>
           <h1
-            className={`mb-5 text-5xl text-title leading-tight font-extrabold max-md:text-3xl  ${styles.title}`}
+            className={`lineSubtitle mt-5 md:mt-0 mb-5 text-4xl text-blue-base leading-tight font-impact md:text-5xl  ${styles.title}`}
           >
-            OBJETIVO DEL ACOMPAÑAMIENTO
+            {t("provocacion.title_initial")}
           </h1>
           <p
-            className={`text-xl tracking-tighter text-justify max-w-prose mx-auto ${styles.text}`}
+            className="text-blue-base text-base md:text-xl tracking-tighter text-justify max-w-prose mx-auto"
           >
-            Potenciar el proyecto de vida de los <strong>jóvenes </strong>a
-            través de procesos de autoconocimiento, acercamiento a la educación
-            superior y al mundo laboral que les permitan tener herramientas para
-            construir su proyecto de vida auténtico.
+            {t("provocacion.description")}
           </p>
         </div>
         <div>
@@ -276,36 +234,42 @@ function ProVocacion() {
 
       <section className="p-5">
         <h2
-          className={`text-5xl text-title font-extrabold max-md:text-3xl text-center ${styles.title}`}
+          className={`text-5xl text-blue-base font-impact max-md:text-3xl text-center ${styles.title}`}
         >
-          TU FUTURO, PASO A PASO: CONOCE CADA ETAPA
+          {t("provocacion.title_future")}
         </h2>
       </section>
       <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-4">
         <div className="cursor-pointer border-4 border-[#7E96CB] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl">
           <img
-            src={Autoconocimiento}
+            src={isEnglish ? EnAutoconocimiento : Autoconocimiento}
             alt="Autoconocimiento"
             title="Ampliar imagen"
-            onClick={() => openImageModal(Autoconocimiento)}
+            onClick={() =>
+              openImageModal(isEnglish ? EnAutoconocimiento : Autoconocimiento)
+            }
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="cursor-pointer border-4 border-[#faa307] rounded-xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
+        <div className="cursor-pointer border-4 border-primary-yellow rounded-xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
           <img
-            src={MundoFormativo}
+            src={isEnglish ? EnMundoFormativo : MundoFormativo}
             alt="Mundo Formativo"
             title="Ampliar imagen"
-            onClick={() => openImageModal(MundoFormativo)}
+            onClick={() =>
+              openImageModal(isEnglish ? EnMundoFormativo : MundoFormativo)
+            }
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="cursor-pointer border-4 border-[#21294F] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-2xl">
+        <div className="cursor-pointer border-4 border-dark-blue rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-2xl">
           <img
-            src={MundoLaboral}
+            src={isEnglish ? EnMundoLaboral : MundoLaboral}
             alt="Mundo Laboral"
             title="Ampliar imagen"
-            onClick={() => openImageModal(MundoLaboral)}
+            onClick={() =>
+              openImageModal(isEnglish ? EnMundoLaboral : MundoLaboral)
+            }
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
@@ -336,15 +300,15 @@ function ProVocacion() {
 
       <Testimonials />
 
-      <div className="w-full  h-full bg-white mt-40 relative">
+      <div className="w-full h-full bg-white mt-40 relative">
         <h3
           id="form-contac-us"
-          className="font-anton  text-5xl  text-[#F6A623] text-center absolute top-[-30px] leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
+          className="text-5xl text-primary-yellow font-impact text-center absolute top-[-30px] leading-none mx-auto left-0 right-0 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12"
         >
-          ESCRÍBENOS AQUÍ
+          {t("provocacion.title")}
         </h3>
 
-        <div className="bg-blue-links w-full h-90 mb-20 flex items-center justify-center">
+        <div className="bg-dark-blue w-full h-90 mb-20 flex items-center justify-center">
           <form
             className="w-full h-full px-8 py-10 md:px-44 md:py-32 bg-blue-link text-white shadow-md rounded-md relative"
             onSubmit={handleSubmit}
@@ -353,41 +317,40 @@ function ProVocacion() {
               <div>
                 <input
                   type="text"
-                  placeholder="NOMBRE COMPLETO"
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  placeholder={t("provocacion.full_name_placeholder")}
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
                 />
                 {errors.fullName && (
-                  <p className="text-[#F6A623]">{errors.fullName}</p>
+                  <p className="text-primary-yellow">{errors.fullName}</p>
                 )}
               </div>
               <div>
                 <input
                   type="email"
-                  placeholder="CORREO ELECTRÓNICO"
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  placeholder={t("provocacion.email_placeholder")}
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                 />
                 {errors.email && (
-                  <p className="text-[#F6A623]">{errors.email}</p>
+                  <p className="text-primary-yellow">{errors.email}</p>
                 )}
               </div>
               <div>
                 <input
                   type="text"
-                  placeholder="TELÉFONO"
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  placeholder={t("provocacion.phone_placeholder")}
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="phone"
                   value={formData.phone}
                   onChange={validatePhoneNumber}
                 />
-
                 {errors.phone && (
-                  <p className="text-[#F6A623]">{errors.phone}</p>
+                  <p className="text-primary-yellow">{errors.phone}</p>
                 )}
               </div>
               <div>
@@ -396,52 +359,55 @@ function ProVocacion() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 >
-                  <option value="">Selecciona una opción</option>
+                  <option value="">
+                    {t("provocacion.subject_placeholder")}
+                  </option>
                   <option value="familiar">
-                    Quiero saber más información para un familiar
+                    {t("provocacion.subject_options.family_info")}
                   </option>
                   <option value="desorientado">
-                    Me siento desorientado/a y quiero orientación.
+                    {t("provocacion.subject_options.need_guidance")}
                   </option>
                   <option value="educacion">
-                    Quiero conocer más sobre educación superior.
+                    {t("provocacion.subject_options.higher_education")}
                   </option>
                   <option value="acompanamiento">
-                    Estoy interesado/a en el acompañamiento vocacional para
-                    alguien cercano.
+                    {t("provocacion.subject_options.vocational_support")}
                   </option>
-                  <option value="historia">Quiero contar mi historia.</option>
+                  <option value="historia">
+                    {t("provocacion.subject_options.share_story")}
+                  </option>
                   <option value="otro">
-                    Otro (especificar en el mensaje).
+                    {t("provocacion.subject_options.other")}
                   </option>
                 </select>
 
                 {/*<input
                   type="text"
                   placeholder="ASUNTO"
-                  className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                  className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
                 />*/}
                 {errors.subject && (
-                  <p className="text-[#F6A623]">{errors.subject}</p>
+                  <p className="text-primary-yellow">{errors.subject}</p>
                 )}
               </div>
             </div>
             <div className="mt-4">
               <textarea
-                placeholder="MENSAJE"
-                className="w-full p-2 bg-blue-links text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                placeholder={t("provocacion.message_placeholder")}
+                className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                 rows="1"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
               {errors.message && (
-                <p className="text-[#F6A623]">{errors.message}</p>
+                <p className="text-primary-yellow">{errors.message}</p>
               )}
             </div>
             <div className="mt-4 flex items-center flex-wrap">
@@ -454,20 +420,20 @@ function ProVocacion() {
                 onChange={handleChange}
               />
               <label htmlFor="terms" className="text-white">
-                Acepto los términos y condiciones
+                {t("provocacion.terms_label")}
               </label>
               {errors.terms && (
-                <p className="w-full text-[#F6A623]">{errors.terms}</p>
+                <p className="w-full text-primary-yellow">{errors.terms}</p>
               )}
             </div>
             <div className="mt-4 flex justify-center">
               <button
                 type="submit"
-                className={`w-full md:w-1/2 bg-white text-[#222D56] font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
+                className={`w-full md:w-1/2 bg-white text-dark-blue font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
                   isSending ? "cursor-not-allowed" : ""
                 }`}
               >
-                Enviar
+                {t("provocacion.submit_button")}
               </button>
             </div>
           </form>

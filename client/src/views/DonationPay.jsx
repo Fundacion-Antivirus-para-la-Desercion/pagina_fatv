@@ -1,118 +1,291 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import { EffectCube, Autoplay } from "swiper/modules";
+import Acompañamiento1 from "../../src/assets/images/views/donationPay/acompañamiento1.jpg";
+import Acompañamiento2 from "../../src/assets/images/views/donationPay/acompañamiento2.jpg";
+import Acompañamiento3 from "../../src/assets/images/views/donationPay/acompañamiento3.jpg";
+import Acompañamiento4 from "../../src/assets/images/views/donationPay/acompañamiento4.jpg";
+import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
+import Pay from "../../src/assets/images/views/donationPay/pay.png";
 
 function DonationPay() {
-    const [donationAmount, setDonationAmount] = useState(0);
-    const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const { t } = useTranslation();
+  const [donationAmount, setDonationAmount] = useState(100);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
 
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://checkout.wompi.co/widget.js';
-        script.async = true;
-        document.body.appendChild(script);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.wompi.co/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
 
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-
-    const handleClick = () => {
-        if (Number.isNaN(parseFloat(donationAmount)) || !acceptedTerms) {
-            console.error('Monto de donación no válido o términos no aceptados');
-            return;
-        }
-
-        const form = document.createElement('form');
-        form.action = 'https://checkout.wompi.co/p/';
-        form.method = 'GET';
-        document.body.appendChild(form);
-
-        const publicKey = document.createElement('input');
-        publicKey.type = 'hidden';
-        publicKey.name = 'public-key';
-        publicKey.value = import.meta.env.VITE_WOMPI_PUBLIC_KEY;; 
-        form.appendChild(publicKey);
-
-        const currency = document.createElement('input');
-        currency.type = 'hidden';
-        currency.name = 'currency';
-        currency.value = 'COP'; 
-        form.appendChild(currency);
-
-        const amount = document.createElement('input');
-        amount.type = 'hidden';
-        amount.name = 'amount-in-cents';
-        amount.value = donationAmount * 100;
-        form.appendChild(amount);
-
-        const reference = document.createElement('input');
-        reference.type = 'hidden';
-        reference.name = 'reference';
-        reference.value = 'REFERENCIA_DE_PAGO'; 
-        form.appendChild(reference);
-
-        form.submit();
+    return () => {
+      document.body.removeChild(script);
     };
+  }, []);
 
-    const handleChange = (e) => {
-        setDonationAmount(e.target.value);
-    };
+  const handleClick = () => {
+    if (Number.isNaN(parseFloat(donationAmount)) || !acceptedTerms) {
+      console.error("Monto de donación no válido o términos no aceptados");
+      return;
+    }
 
-    const handleCheckboxChange = (e) => {
-        setAcceptedTerms(e.target.checked);
-    };
+    const form = document.createElement("form");
+    form.action = "https://checkout.wompi.co/p/";
+    form.method = "GET";
+    document.body.appendChild(form);
 
-    return (
-        <div className='lg:pt-[145px]'>
-            <div className='flex rounded-xl mt-14 ml-20 mr-20 shadow-2xl justify-center'>
-                <div className='w-2/5 flex flex-col gap-6 mb-14 mt-14 border-r'>
-                    <p className='font-normal'>Pago a</p>
-                    <h1 className='text-4xl font-bold leading-tight'>
-                        Fundación<br />
-                        Antivirus para la<br />
-                        Deserción
-                    </h1>
-                    <p className='font-bold text-lg mb-48 opacity-85'>DONACIÓN ANTIVIRUS PARA LA <br /> DESERCIÓN</p>
-                    <p className='text-lg opacity-85 w-80'>EN LA FUNDACIÓN ANTIVIRUS PARA LA DESERCIÓN SOMOS UNA ORGANIZACIÓN SIN ÁNIMO DE LUCRO QUE BUSCA DISMINUIR LOS NIVELES DE DESERCIÓN ESTUDIANTIL EN COLOMBIA, MEJORAR LOS NIVELES DE PERMANENCIA Y DE GRADUACIÓN, SIENDO ESTA NUESTRA MANERA DE APORTAR AL LOGRO DE UN PAÍS CON MÁS EDUCACIÓN Y CONSECUENTEMENTE CON MÁS DESARROLLO.</p>
-                </div>
+    const publicKey = document.createElement("input");
+    publicKey.type = "hidden";
+    publicKey.name = "public-key";
+    publicKey.value = import.meta.env.VITE_WOMPI_PUBLIC_KEY;
+    form.appendChild(publicKey);
 
-                <div className='flex flex-col gap-6 mt-14 pl-10'>
-                    <b>Concepto de Fundación Antivirus para la Deserción</b>
-                    <div className='flex flex-col'>
-                        <select>
-                            <option value="opción" disabled>Seleccione una opción</option>
-                            <option value="">Donación a estudiante</option>
-                            <option value="">Donación a la Fundación</option>
-                            <option value="">Pago por servicio de provocación</option>
-                        </select>
-                    </div>
+    const currency = document.createElement("input");
+    currency.type = "hidden";
+    currency.name = "currency";
+    currency.value = "COP";
+    form.appendChild(currency);
 
-                    <h1 className='font-bold text-3xl mb-10'>Ingresa el monto a pagar</h1>
-                    <p className='text-center text-gray-700'>Monto a pagar</p>
-                    <input className='w-full h-16 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-8' type="number" min="0" step="0.01" value={donationAmount} onChange={handleChange} />
+    const amount = document.createElement("input");
+    amount.type = "hidden";
+    amount.name = "amount-in-cents";
+    amount.value = donationAmount * 100;
+    form.appendChild(amount);
 
-                    <div className='flex flex-col gap-12'>
-                        <h3>Comentarios adicionales</h3>
-                        <textarea placeholder='Escribe tus comentarios aquí' />
-                    </div>
+    const reference = document.createElement("input");
+    reference.type = "hidden";
+    reference.name = "reference";
+    reference.value = "REFERENCIA_DE_PAGO";
+    form.appendChild(reference);
 
-                    <div className='flex items-center mb-10'>
-                        <input type="checkbox" id="monthlyDonation" className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900" onChange={handleCheckboxChange} />
-                        <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">Permitir que el pago sea mensual según el monto mencionado</label>
-                    </div>
+    form.submit();
+  };
 
-                    <button
-                        className={`bg-zinc-900 text-yellow-400 rounded-2xl py-4 px-8 ${(!acceptedTerms || Number.isNaN(parseFloat(donationAmount))) && 'opacity-50 cursor-not-allowed'}`}
-                        onClick={handleClick}
-                        disabled={!acceptedTerms || Number.isNaN(parseFloat(donationAmount))}
-                    >
-                        Continuar
-                    </button>
-                </div>
-            </div>
-            <p className='ml-20'>PAGOS SEGUROS POR 
-                <span className='font-bold'> Wompi</span></p>
+  const handleChange = (e) => {
+    setDonationAmount(e.target.value);
+  };
+
+  const handleDonationTypeChange = (type) => {
+    setDonationType(type);
+    setAcceptedTerms(true);
+  };
+
+  return (
+    <div className="lg:pt-[145px] flex  justify-center flex-wrap">
+      <div className="w-[80%] grid grid-cols-1 rounded-3xl lg:grid-cols-2 shadow-2xl justify-center">
+        <div className="flex flex-col flex-wrap gap-6 p-5 lg:p-10 rounded-l-3xl bg-[#EDEFF8] lg:border-r">
+          <h1 className="text-xl md:text-2xl text-blue-base font-bold mb-5 leading-tight">
+            {t("donation.foundation_name")}
+          </h1>
+
+          <div>
+            <Swiper
+              effect={"cube"}
+              grabCursor={true}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              modules={[EffectCube, Autoplay]}
+              className="mySwiper w-32 h-32 lg:w-60 lg:h-60 rounded-xl"
+              autoplay={{
+                delay: 3500,
+                disableOnInteraction: false,
+              }}
+            >
+              <SwiperSlide>
+                <img
+                  src={Acompañamiento1}
+                  alt={t("donation.alt_text")}
+                  className="block w-full h-full object-cover rounded-xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Acompañamiento2}
+                  alt={t("donation.alt_text")}
+                  className="block w-full h-full object-cover rounded-xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Acompañamiento3}
+                  alt={t("donation.alt_text")}
+                  className="block w-full h-full object-cover rounded-xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Acompañamiento4}
+                  alt={t("donation.alt_text")}
+                  className="block w-full h-full object-cover rounded-xl"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Acompañamiento5}
+                  alt={t("donation.alt_text")}
+                  className="block w-full h-full object-cover rounded-xl"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <p className="text-sm md:text-base lg:text-lg text-blue-base opacity-85 text-justify m-3 md:m-5 leading-relaxed md:leading-normal">
+            {t("donation.description")}
+          </p>
         </div>
-    );
+
+        <div className="flex flex-col gap-6 lg:pl-10 p-10">
+          <div className="flex items-center justify-center mb-5">
+            <img className="w-10 h-10" src={Pay} alt="" />
+            <h2 className="m-2 font-impact text-2xl text-center md:text-3xl text-primary-yellow">
+              {t("donation.be_part_solution")}
+            </h2>
+          </div>
+
+          <p className="text-base font-bold text-dark-blue">
+            {t("donation.amount_to_donate")}
+          </p>
+          <input
+            className="w-full h-10 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-5"
+            type="number"
+            min="100"
+            step="1"
+            value={donationAmount}
+            onChange={handleChange}
+          />
+
+          <div className="flex flex-wrap justify-center gap-2">
+            <button
+              onClick={() => setDonationAmount(5000)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 5000
+                  ? "bg-primary-purple text-white"
+                  : "hover:bg-primary-purple hover:text-white"
+              }`}
+            >
+              $5.000
+            </button>
+            <button
+              onClick={() => setDonationAmount(10000)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 10000
+                  ? "bg-primary-yellow text-white"
+                  : "hover:bg-primary-yellow hover:text-white"
+              }`}
+            >
+              $10.000
+            </button>
+            <button
+              onClick={() => setDonationAmount(20000)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 20000
+                  ? "bg-primary-purple text-white"
+                  : "hover:bg-primary-purple hover:text-white"
+              }`}
+            >
+              $20.000
+            </button>
+            <button
+              onClick={() => setDonationAmount(50000)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 50000
+                  ? "bg-primary-yellow text-white"
+                  : "hover:bg-primary-yellow hover:text-white"
+              }`}
+            >
+              $50.000
+            </button>
+            <button
+              onClick={() => setDonationAmount(100000)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 100000
+                  ? "bg-primary-purple text-white"
+                  : "hover:bg-primary-purple hover:text-white"
+              }`}
+            >
+              $100.000
+            </button>
+            <button
+              onClick={() => setDonationAmount(0)}
+              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                donationAmount === 0
+                  ? "bg-primary-yellow text-white"
+                  : "hover:bg-primary-yellow hover:text-white"
+              }`}
+            >
+              {t("donation.other_amount")}
+            </button>
+            <p className="text-xs lg:text-sm m-2 font-semibold text-[#222D56] text-center">
+              {t("donation.cop")}
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-5  border-gray-300">
+            <p className=" text-base text-dark-blue font-bold">
+              {t("donation.additional_comments")}
+            </p>
+            <textarea
+              className="w-full h-16 rounded-xl p-2 border border-gray-300 hover:border-blue-300"
+              placeholder={t("donation.comments_placeholder")}
+            />
+          </div>
+
+          <div className="flex items-center">
+            <input
+              type="radio"
+              id="monthlyDonation"
+              name="donationType"
+              className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
+              onChange={() => handleDonationTypeChange("monthly")}
+              checked={donationType === "monthly"}
+            />
+            <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">
+              {t("donation.monthly_payment")}
+            </label>
+          </div>
+
+          <div className="flex items-center">
+            <input
+              type="radio"
+              id="oneTimeDonation"
+              name="donationType"
+              className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
+              onChange={() => handleDonationTypeChange("oneTime")}
+              checked={donationType === "oneTime"}
+            />
+            <label htmlFor="oneTimeDonation" className="ml-2 text-gray-700">
+              {t("donation.one_time_contribution")}
+            </label>
+          </div>
+
+          <button
+            className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${
+              (!donationType || Number.isNaN(parseFloat(donationAmount))) &&
+              "opacity-50 cursor-not-allowed"
+            }`}
+            onClick={handleClick}
+            disabled={!donationType || Number.isNaN(parseFloat(donationAmount))}
+          >
+            {t("donation.continue")}
+          </button>
+        </div>
+      </div>
+      <p className="lg:ml-20">
+        {t("donation.secure_payments")}
+        <span className="font-bold"> Wompi</span>
+      </p>
+    </div>
+  );
 }
 
 export default DonationPay;

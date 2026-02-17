@@ -1,104 +1,45 @@
 import React from "react";
-import imgBanner from "../../public/img_viewQHav/slider-servicios.webp";
 import emocinal1 from "../../public/img_viewQHav/sociopedagogical-image-1.jpg";
 import emocinal2 from "../../public/img_viewQHav/sociopedagogical-image-2.webp";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
+import BannerQhfaEn from "../assets/images/views/socialIntervention/social-intervention.webp";
+import BannerQhfaEs from "../assets/images/views/socialIntervention/intervencion-social.webp";
+
+import BannerView from "../components/Banner-views/BannerView";
+import { useTranslation } from "react-i18next";
 
 function QHFA() {
+  const { t } = useTranslation();
+
   return (
     <>
-      <div className="flex flex-col items-center justify-center lg:pt-[145px]">
-        <div className="relative w-full">
-          <img
-            src={imgBanner}
-            alt="Banner"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-            lo que hacemos
-          </h1>
-          <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-            <a
-              href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon
-                name="facebook-circle"
-                type="logo"
-                color="#ffffff"
-              ></box-icon>
-            </a>
-            <a
-              href="https://www.instagram.com/somosantivirus/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon
-                name="instagram-alt"
-                type="logo"
-                color="#ffffff"
-              ></box-icon>
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
-            </a>
-            <a
-              href="https://www.tiktok.com/@somosantivirus"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon name="tiktok" type="logo" color="#ffffff"></box-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/antivirus-desercion/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="box-icon"
-            >
-              <box-icon
-                name="linkedin-square"
-                type="logo"
-                color="#ffffff"
-              ></box-icon>
-            </a>
-          </div>
-        </div>
+      <div className="lg:pt-[145px]">
+        <BannerView
+          imagesBannerMap={{
+            enImage: BannerQhfaEn,
+            esImage: BannerQhfaEs,
+            keyTitle: "",
+          }}
+        />
 
         <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 pr-7">
-              <h1 className="tracking-nm text-blue-links">NUESTRO MODELO</h1>
-              <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
-                INTERVENCION SOCIO-EMOCIONAL
+              <h1 className="tracking-nm text-blue-base">
+                {t("qhfa.our_model")}
               </h1>
-              <p className="text-blue-links">
-                Es el campo de acción de la fundación que pretende identificar y
-                comprender las particularidades del contexto sociocultural y
-                socioemocional de los estudiantes, para influir, transformar e
-                impactar significativamente en sus condiciones y su proceso
-                formativo, a través de herramientas y alternativas de
-                acompañamiento socio pedagógico. El equipo social está compuesto
-                por trabajadores sociales y psicólogos encargados de diseñar y
-                ejecutar estrategias de fortalecimiento académico, apoyo
-                psicoemocional y sociopedagógico. Esta área cuenta con las
-                siguientes líneas de Intervención social:
+              <h2 className="lineSubtitle text-blue-base font-impact text-4xl md:text leading-[.92] uppercase sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2">
+                {t("qhfa.socio_emotional_intervention")}
+              </h2>
+              <p className="mt-8 text-blue-base text-justify">
+                {t("qhfa.intervention_description")}
               </p>
             </div>
             <div className="w-full md:w-1/2">
               <img
                 src={emocinal1}
-                alt="emocional 1"
-                className="w-full h-auto object-cover"
+                alt={t("qhfa.alt_text.emotional_1")}
+                className="w-full h-auto object-cover mt-5 md:mt-0"
               />
             </div>
           </div>
@@ -112,11 +53,11 @@ function QHFA() {
               >
                 <div className="relative">
                   <img
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover mt-5 md:mt-0"
                     src={emocinal2}
-                    alt="emocional 2"
+                    alt={t("qhfa.alt_text.emotional_2")}
                   />
-                  <div className="absolute inset-0 bg-blue-links opacity-80"></div>
+                  <div className="absolute inset-0 text-blue-base opacity-80"></div>
                   <div className="absolute inset-0 flex justify-center items-center">
                     <svg
                       width="117"
@@ -139,51 +80,43 @@ function QHFA() {
               </a>
             </div>
 
-            <div className="w-full md:w-1/2 pl-7">
-              <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
-                FORTALECIMIENTO ACADEMICO:
-              </h1>
-              <p className="text-blue-links">
-                Búsqueda de tutores y mentores dispuestos recibir un módico
-                estipendio por hora y ofrecer otra hora voluntaria. En este
-                sentido, una vez encontrados los tutores, esta área es
-                responsable de crear las citas para la tutoría uno a uno y
-                talleres temáticos para un repaso complementario de clases y
-                grupos de estudio.
+            <div className="w-full md:w-1/2 md:pl-7">
+              <h3 className="text-blue-base font-impact text-4xl md:text-4xl lg:text-5xl my-8">
+                {t("qhfa.academic_strengthening")}
+              </h3>
+              <p className="text-blue-base text-justify">
+                {t("qhfa.academic_description")}
               </p>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row relative ">
-            <div className="w-full md:w-1/2 pr-7">
-              <h1 className="font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8">
-                Acompañamiento psicoemocional y sociopedagógico:
-              </h1>
-              <p>Esta área está encargada de:</p>
-              <ul>
-                <li className="list-disc text-blue-links">
-                  Supervisar, orientar y atender a los estudiantes con problemas
-                  en su estado mental y salud emocional.
+            <div className="w-full md:w-1/2 md:pr-7">
+              <h4 className="text-blue-base font-impact text-4xl md:text-4xl lg:text-5xl my-8">
+                {t("qhfa.psycho_emotional_support")}
+              </h4>
+              <p className="text-blue-base text-xl">{t("qhfa.support_intro")}</p>
+              <ul className="mt-5">
+                <li className="list-disc text-blue-base">
+                  {t("qhfa.support_list.mental_health")}
                 </li>
-                <li className="list-disc text-blue-links">
-                  Dar orientación a situaciones vocacionales o familiares,
+                <li className="list-disc text-blue-base">
+                  {t("qhfa.support_list.vocational_guidance")}
                 </li>
-                <li className="list-disc text-blue-links">
-                  Ayudar a fortalecer las habilidades socioemocionales y la
-                  autoestima de los estudiantes.
+                <li className="list-disc text-blue-base">
+                  {t("qhfa.support_list.strengthen_skills")}
                 </li>
-                <li className="list-disc text-blue-links">
-                  Organizar talleres, encuentros y grupos focales para
-                  fortalecer las habilidades socioemocionales y vocacionales.
+                <li className="list-disc text-blue-base">
+                  {t("qhfa.support_list.organize_workshops")}
                 </li>
               </ul>
             </div>
 
             <div className="w-full md:w-1/2">
               <img
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover mt-5 md:mt-0"
                 src={emocional3}
-                alt="emocional 3"
+                alt={t("qhfa.alt_text.emotional_3")}
               />
             </div>
           </div>

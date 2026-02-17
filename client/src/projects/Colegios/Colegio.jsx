@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerColegioEn from "../../../public/services_imgs/banner-services.jpg";
+import BannerColegioEs from "../../../public/services_imgs/banner-services.jpg";
 import colegio1 from "../../../public/projects/Colegios/colegioItagui.webp";
+
+import BannerView from "../../components/Banner-views/BannerView";
 
 function Colegio() {
   const [colegios, setColegios] = useState([
@@ -14,11 +17,17 @@ function Colegio() {
 
   return (
     <div className="lg:pt-[145px]">
-      <BannerView title={"COLEGIOS"} />
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerColegioEn,
+          esImage: BannerColegioEs,
+          keyTitle: "",
+        }}
+      />
       <div className="m-8 sm:m-20">
         {colegios.map((item, key) => (
           <div key={key} className="mb-10">
-            <h1 className="text-yellow-500 text-2xl font-bold mb-4">
+            <h1 className="text-primary-yellow text-2xl font-bold mb-4">
               {item.name}
             </h1>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
@@ -27,7 +36,7 @@ function Colegio() {
                 src={item.img}
                 alt={item.name}
               />
-              <p className="text-blue-600 text-lg lg:w-1/2">{item.parrafo}</p>
+              <p className="text-blue-base text-lg lg:w-1/2">{item.parrafo}</p>
             </div>
           </div>
         ))}

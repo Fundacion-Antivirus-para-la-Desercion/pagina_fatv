@@ -1,377 +1,412 @@
-import React, { useState } from "react";
+import { useState, useRef } from "react";
 import "boxicons";
 import imgFB from "../../../public/img_Foundation/imgF.webp";
-import imgF2 from "../../../public/img_Foundation/imgF2.webp";
-import imgF3 from "../../../public/img_Foundation/imgF3.webp";
-import OurTeam from "../ourTeam/OurTeam";
-import "./FoundationATV.css";
+import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
+import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
+import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
+import BannerFoundationEn from "../../assets/images/views/foundation/about-us.webp";
+import BannerFoundationEs from "../../assets/images/views/foundation/sobre-nosotros.webp";
+import TeoriaCambio from "../../assets/images/views/foundation/entrega-pc.webp";
+import Valores from "../../assets/images/views/foundation/valores.webp";
+import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
+import Publico from "../../assets/images/views/foundation/estudiantes-colegio.webp";
+import Vision from "../../assets/images/views/foundation/estudiantes-universitarios.webp";
+import Proposito from "../../assets/images/views/foundation/foundation-estudiantes.webp";
+import { Sun, SunBlue } from "../../assets/images/svg/Svg";
+
+import { useTranslation } from "react-i18next";
+import { motion, useInView } from "framer-motion";
+import BannerView from "../Banner-views/BannerView";
 
 function FoundationATV() {
-  const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  const openPopup = () => {
-    setIsOpen(true);
+  // Create refs for sections we want to animate
+  const aboutSectionRef = useRef(null);
+  const videoSectionRef = useRef(null);
+  const cardsContainerRef = useRef(null);
+  const visionRef = useRef(null);
+  const purposeRef = useRef(null);
+  const prioritiesRef = useRef(null);
+
+  // Set up inView detection for each section
+  const isAboutInView = useInView(aboutSectionRef, { once: true, amount: 0.3 });
+  const isVideoInView = useInView(videoSectionRef, { once: true, amount: 0.4 });
+  const isCardsInView = useInView(cardsContainerRef, {
+    once: true,
+    amount: 0.1,
+  });
+  const isPrioritiesInView = useInView(prioritiesRef, {
+    once: true,
+    amount: 0.3,
+  });
+
+  // Card container variants for staggered animations
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
   };
 
-  const closePopup = () => {
-    setIsOpen(false);
+  // List item variants for staggered animations
+  const listItemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+  };
+
+  const slideFromRight = {
+    initial: { opacity: 0, x: 100 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.7 },
+  };
+  const slideFromLeft = {
+    initial: { opacity: 0, x: -100 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: "easeOut" },
+    viewport: { once: true, amount: 0.7 },
+  };
+
+  const expandableTransition = {
+    initial: { opacity: 0, scale: 0.5 }, // Comienza pequeña y escondida
+    whileInView: { opacity: 1, scale: 1 }, // Se expande y aparece
+    transition: { duration: 0.8, ease: "easeOut" }, // Suavidad
+    viewport: { once: true }, // Solo se anima una vez al verla
   };
 
   return (
     <div className="relative w-full">
-      <div className="relative">
-        <img id="bannerF" src={imgFB} alt="Banner" className="w-full object-cover " />
-        <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-        <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-          NUESTRA FUNDACIÓN
-        </h1>
-      </div>
-      <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
-        <a
-          href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box-icon"
-        >
-          <box-icon
-            name="facebook-circle"
-            type="logo"
-            color="#ffffff"
-          ></box-icon>
-        </a>
-        <a
-          href="https://www.instagram.com/somosantivirus/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box-icon"
-        >
-          <box-icon name="instagram-alt" type="logo" color="#ffffff"></box-icon>
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box-icon"
-        >
-          <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
-        </a>
-        <a
-          href="https://www.tiktok.com/@somosantivirus"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box-icon"
-        >
-          <box-icon name="tiktok" type="logo" color="#ffffff"></box-icon>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/antivirus-desercion/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box-icon"
-        >
-          <box-icon
-            name="linkedin-square"
-            type="logo"
-            color="#ffffff"
-          ></box-icon>
-        </a>
-      </div>
+      <BannerView
+        imagesBannerMap={{
+          enImage: BannerFoundationEn,
+          esImage: BannerFoundationEs,
+          keyTitle: "",
+        }}
+      />
 
       <div className="aboutUs">
         <div className="aboutUs-content">
           <div className="left-content">
-            <p className="title">¿Quiénes Somos?</p>
-            <h4 className="subtitle">
-              Somos una organización sin ánimo de lucro que
+            <p className="title">{t("foundation.foundationATV.title")}</p>
+            <h4 className="lineSubtitle font-impact text-4xl md:text-5xl leading-[.92] uppercase">
+              {t("foundation.foundationATV.subtitle")}
             </h4>
           </div>
           <div className="right-content">
-            <p className="right-paragraph">
-              Busca disminuir los niveles de deserción estudiantil en Colombia,
-              mejorar los niveles de permanencia y de graduación, siendo esta
-              nuestra manera de aportar al logro de un país con más educación y
-              consecuentemente con más desarrollo.
+            <p className="text-xl right-paragraph">
+              {t("foundation.foundationATV.description")}
             </p>
           </div>
         </div>
       </div>
 
-      <div className="foundation_team">
-        <div className="foundation_team--cnt">
-          <div className="foundation_team--content">
-            <div className="foundation_team--block">
-              <div className="_title">
-                <p>
-                  <small>NUESTROS</small>
-                </p>
-                <h5>FUNDADORES</h5>
-              </div>
-              <div className="_members">
-                <p>
-                  Carlos
-                  <strong>Vásquez Restrepo</strong>
-                </p>
-                <p>
-                  Paulina
-                  <strong>Tamayo Mejía</strong>
-                </p>
-                <p>
-                  Víctor Manuel
-                  <strong>Valencia Martínez</strong>
-                </p>
-                <p>
-                  Luis Fernando
-                  <strong>González Urán</strong>
-                </p>
-                <p>
-                  Andrea
-                  <strong>Jaramillo Ramírez</strong>
-                </p>
-                <p>
-                  Laura
-                  <strong>Calle Escobar</strong>
-                </p>
-                <p>
-                  León Felipe
-                  <strong>Hernández López</strong>
-                </p>
-                <p>
-                  Aida
-                  <strong>Orduz Quijano</strong>
-                </p>
-              </div>
-            </div>
-            <div className="foundation_team--block">
-              <div className="_title">
-                <p>
-                  <small>NUESTRA</small>
-                </p>
-                <h5>JUNTA DIRECTIVA</h5>
-              </div>
-              <div className="_members">
-                <p>
-                  Carlos Vásquez Restrepo
-                  <strong>Presidente Y Representante Legal Titular</strong>
-                </p>
-                <p>
-                  Luis Fernando Sánchez Hurtado
-                  <strong>
-                    Vicepresidente / Director y Primer Representante Legal
-                    Suplente
-                  </strong>
-                </p>
-                <p>
-                  David Santiago Botero Rodríguez
-                  <strong>
-                    Segundo Representante Legal Suplente / Coordinador Legal
-                  </strong>
-                </p>
-                <p>
-                  Víctor Manuel Valencia Martínez
-                  <strong>
-                    Subdirector / Tercer Representante Legal Suplente
-                  </strong>
-                </p>
-                <p>
-                  Luis Fernando
-                  <strong>González Urán</strong>
-                </p>
-              </div>
-            </div>
-            <div className="foundation_team--block">
-              <div className="_title">
-                <p>
-                  <small>NUESTRO</small>
-                </p>
-                <h5>REVISOR FISCAL</h5>
-              </div>
-              <div className="_members">
-                <p>
-                  Orlando
-                  <strong>Gaviria Flórez</strong>
-                </p>
-              </div>
-            </div>
-            <div className="foundation_team--block">
-              <div className="_title">
-                <p>
-                  <small>NUESTRA</small>
-                </p>
-                <h5>CONTADORA</h5>
-              </div>
-              <div className="_members">
-                <p>
-                  María Verónica
-                  <strong>Ortiz Rodríguez</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex justify-end">
-        <div className="contVideoF flex flex-row ">
-          <div className="relative flex mr-6 ">
-            <picture style={{ height: "100%" }}>
-              <img
-                src={imgF2}
-                alt="img2"
-                style={{ objectFit: "cover", height: "100%" }}
-              />
-              <div className="iconGrande absolute inset-0 flex items-center justify-center">
-                <button
-                  onClick={openPopup}
-                  style={{
-                    border: "none",
-                    background: "none",
-                    cursor: "pointer",
-                  }}
-                >
-                  <box-icon
-                    name="play-circle"
-                    color="white"
-                    style={{ fontSize: "5rem", width: "5rem", height: "5rem" }}
-                  ></box-icon>
-                </button>
-              </div>
-            </picture>
-          </div>
-          <div
-            className="relative w-auto h-1/2 overflow-hidden"
-            style={{ height: "100%" }}
-          >
-            <img
-              src={imgF3}
-              alt="img3"
-              className="w-full h-full img3"
-              style={{ clipPath: "inset(0 25% 0 0)", objectFit: "cover" }}
-            />
-          </div>
-          {isOpen && (
-            <div
-              className="popup-overlay"
-              style={{
-                position: "fixed",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                background: "rgba(0, 0, 0, 0.5)",
-                zIndex: 9999,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+      <section
+        ref={videoSectionRef}
+        className="md:grid md:grid-cols-[25%_50%_25%] p-5 md:items-stretch"
+      >
+        <motion.div
+          className="hidden md:block relative left-10"
+          initial={{ opacity: 0, x: -30 }}
+          animate={
+            isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }
+          }
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <img className="w-full object-cover" src={Foundation1} alt="" />
+        </motion.div>
+        <motion.div
+          className="relative z-10 flex justify-center items-center hover:cursor-pointer transform transition-transform duration-300 ease-out hover:scale-105"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={
+            isVideoInView
+              ? { opacity: 1, scale: 1 }
+              : { opacity: 0, scale: 0.9 }
+          }
+          transition={{ duration: 0.8 }}
+        >
+          <img
+            className={
+              isPlaying
+                ? `hidden`
+                : `absolute inset-0 w-full h-full object-cover shadow-2xl`
+            }
+            src={FotoVideo}
+            alt=""
+          />
+          {isPlaying ? null : (
+            <button
+              id="play-button"
+              onClick={handlePlayClick}
+              className={
+                isPlaying
+                  ? `hidden`
+                  : `absolute inset-0 flex justify-center items-center w-full h-full`
+              }
             >
-              <div
-                className="popup-content"
+              <box-icon
+                name="play-circle"
+                color="#ffffff"
                 style={{
-                  position: "relative",
-                  maxWidth: "90%",
-                  maxHeight: "90%",
+                  fontSize: "5rem",
+                  width: "5rem",
+                  height: "5rem",
+                  position: "absolute",
+                  cursor: "pointer",
+                  top: "0",
+                  bottom: "0",
+                  left: "0",
+                  right: "0",
+                  margin: "auto",
                 }}
-              >
-                <button
-                  onClick={closePopup}
-                  className="buttonF"
-                  style={{
-                    position: "absolute",
-                    top: "-40px",
-                    right: "0%",
-                    background: "none",
-                    border: "none",
-                    fontSize: "24px",
-                    color: "white",
-                    cursor: "pointer",
-                    zIndex: 10000,
-                  }}
-                >
-                  &times;
-                </button>
-                <iframe
-                  title="YouTube Video"
-                  src="https://www.youtube.com/embed/gzePCxLy8Ak"
-                  style={{ width: "800px", height: "450px", border: "none" }}
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
+              ></box-icon>
+            </button>
           )}
-        </div>
-      </div>
-      <OurTeam />
-      <div className="foundation_values--cnt">
-        <div className="foundation_values--content">
-          <h5>TEORÍA DEL CAMBIO</h5>
-          <p>
-            Identificar estudiantes con vulnerabilidades y acompañarlos
-            integralmente, a través de un ecosistema de estrategias centrado en
-            lo académico, económico y socioemocional para la permanencia.
-          </p>
 
-          <h5>MISIÓN</h5>
-          <p>
-            Aumentar las tasas de graduación de estudiantes de carreras y
-            programas en áreas de tecnología, a través de estrategias de
-            promoción de la permanencia y prevención de la deserción.
-          </p>
+          <iframe
+            id="foundation-video"
+            className="shadow-2xl min-h-[400px]"
+            width="100%"
+            height="100%"
+            src={
+              isPlaying
+                ? "https://www.youtube.com/embed/XhpGyJ02Guc?autoplay=1&mute=0&rel=0"
+                : "https://www.youtube.com/embed/XhpGyJ02Guc"
+            }
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </motion.div>
+        <motion.div
+          className="hidden md:block"
+          initial={{ opacity: 0, x: 30 }}
+          animate={isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          {" "}
+          <img
+            className="w-full object-cover relative right-10"
+            src={Foundation2}
+            alt=""
+          />
+        </motion.div>
+      </section>
 
-          <h5>VISIÓN</h5>
-          <p>
-            En 5 años vamos a tener presencia a nivel nacional, en las 10
-            mejores universidades del país, donde habremos disminuido la tasa de
-            deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a
-            estar replicando un modelo que es referente, cuyo éxito se puede
-            medir cualitativa y cuantitativamente.
-          </p>
+      <section className="relative mb-14">
+        <motion.div {...slideFromLeft}>
+          <Sun classNames="hidden md:block" />
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
+            <div className="bg-[#CCEDE8] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={TeoriaCambio}
+                alt="Foto"
+              />
+            </div>
+            <div className="p-6 rounded-lg border bg-[#CCEDE8] border-gray-200 shadow-xl">
+              <h5 className="text-left text-4xl font-impact text-blue-base mb-4">
+                {t(
+                  "foundation.foundationATV.organization_info.change_theory.title"
+                )}
+              </h5>
+              <p className="text-base p-1 text-blue-base text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.change_theory.description"
+                )}
+              </p>
+            </div>
+          </section>
+          <SunBlue classNames="hidden md:block right-0" />
+        </motion.div>
 
-          <h5>PROPÓSITO</h5>
-          <p>
-            Construir un país próspero, pacífico, armonioso, tecnológico y
-            competitivo, en el cual todos los jóvenes tienen acceso a la
-            educación y son buenos seres humanos, con metas y empoderados de sus
-            vidas. Gracias a esto, lograremos superar la pobreza y nos
-            convertiremos en un referente de desarrollo.
-          </p>
+        <motion.div {...slideFromRight}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
+            <div className="rounded-lg border bg-[#D3C3E3] border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
+                {t("foundation.foundationATV.organization_info.values.title")}
+              </h5>
+              <p className="text-base text-blue-base text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.values.description"
+                )}
+              </p>
+            </div>
+            <div className="relative bg-[#D3C3E3] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Valores}
+                alt="Foto"
+              />
+            </div>
+          </section>
+          <Sun classNames="hidden md:block" />
+        </motion.div>
 
-          <h5>VALORES</h5>
-          <p>
-            En la Fundación Antivirus para la Deserción hacemos nuestro trabajo
-            de forma colaborativa, con pasión, integridad, autonomía, empatía,
-            compromiso y compañerismo. Somos solidarios e innovadores y tenemos
-            una gran vocación de servicio.
-          </p>
+        <motion.div {...slideFromLeft}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
+            <div className="bg-primary-yellow rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Mision}
+                alt="Foto"
+              />
+            </div>
+            <div className="rounded-lg bg-primary-yellow border border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
+                {t("foundation.foundationATV.organization_info.mission.title")}
+              </h5>
+              <p className="text-base text-blue-base text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.mission.description"
+                )}
+              </p>
+            </div>
+          </section>
+          <SunBlue classNames="hidden md:block right-0" />
+        </motion.div>
 
-          <h5>PÚBLICO OBJETIVO</h5>
-          <p>
-            Trabajamos con estudiantes de carreras y programas TI de Educación
-            Media y Postsecundaria. Enfocamos nuestra intervención en
-            estudiantes vulnerables a la deserción.
-          </p>
+        <motion.div {...slideFromRight}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
+            <div className="rounded-lg bg-[#CCEDE8] border border-gray-200 p-6 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
+                {t(
+                  "foundation.foundationATV.organization_info.target_audience.title"
+                )}
+              </h5>
+              <p className="text-base text-blue-base text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.target_audience.description"
+                )}
+              </p>
+            </div>
+            <div className="bg-[#CCEDE8] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Publico}
+                alt="Foto"
+              />
+            </div>
+          </section>
+          <Sun classNames="hidden md:block" />
+        </motion.div>
 
-          <h5>PRIORIDADES</h5>
-          <ul>
-            <li>
-              Consolidar un modelo con procesos de identificación de
-              vulnerabilidades, intervención e indicadores de resultados.
-            </li>
-            <li>
-              Explorar modelos de intervención desde los colegios para aportar a
-              reducir la deserción en educación superior.
-            </li>
-            <li>
-              Conocer e involucrar a otros actores en el trabajo por la
-              permanencia (Rectores, Decanos, MEN, Empresas, entre otros).
-            </li>
-            <li>
-              Ayudar a reducir la deserción en otras universidades y programas
-              para afinar nuestro modelo y generar ingresos que aporten a la
-              sostenibilidad de la Fundación Antivirus.
-            </li>
-          </ul>
-        </div>
-      </div>
+        <motion.div {...slideFromLeft}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-2 items-center justify-center">
+            <div className="bg-[#D3C3E3] rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Vision}
+                alt="Foto"
+              />
+            </div>
+            <div className="rounded-lg border border-gray-200 bg-[#D3C3E3] p-8 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
+                {t("foundation.foundationATV.organization_info.vision.title")}
+              </h5>
+              <p className="text-base text-blue-base text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.vision.description"
+                )}
+              </p>
+            </div>
+          </section>
+          <SunBlue classNames="hidden md:block right-0" />
+        </motion.div>
+
+        <motion.div {...slideFromRight}>
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-2 items-center justify-center">
+            <div className="rounded-lg border border-gray-200 bg-primary-yellow p-8 shadow-xl">
+              <h5 className="text-4xl font-impact text-blue-base mb-4">
+                {t("foundation.foundationATV.organization_info.purpose.title")}
+              </h5>
+              <p className="text-base text-blue-base text-justify">
+                {t(
+                  "foundation.foundationATV.organization_info.purpose.description"
+                )}
+              </p>
+            </div>
+
+            <div className="bg-primary-yellow rounded-full">
+              <img
+                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                src={Proposito}
+                alt="Foto"
+              />
+            </div>
+          </section>
+        </motion.div>
+      </section>
+
+      <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
+        <h5 className="col-span-1 md:col-span-4 text-4xl font-impact text-center text-blue-base mb-8">
+          {t("foundation.foundationATV.organization_info.priorities.title")}
+        </h5>
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              1
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
+              )}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              2
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
+              )}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              3
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.involve_actors"
+              )}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div {...expandableTransition}>
+          <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
+              4
+            </span>
+            <p className="text-base text-justify mt-9 text-white">
+              {t(
+                "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
+              )}
+            </p>
+          </div>
+        </motion.div>
+      </section>
     </div>
   );
 }
