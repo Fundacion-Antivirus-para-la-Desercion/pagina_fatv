@@ -79,8 +79,8 @@ function SocialIntervention() {
         <section className="container block mx-auto">
           <div className="flex justify-center">
             <section className="flex flex-col lg:flex-row justify-center gap-5 p-8 text-center md:p-10">
-              <div className="relative">
-                <section className="relative flex  justify-center lg:justify-end h-full">
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative w-fit">
                   <img
                     className="h-full max-h-[500px] md:max-h-[700px] mb-16 md:mb-0 border-[4px] border-solid border-white rounded-3xl shadow-2xl"
                     src={Estudiante}
@@ -89,7 +89,7 @@ function SocialIntervention() {
 
                   <motion.div
                     {...floatSnake(1)}
-                    className="group z-10 absolute -right-5 -bottom-10 w-24 md:w-40"
+                    className="group z-10 absolute right-2 -bottom-6 md:-right-5 md:-bottom-10 lg:-bottom-2 xl:-bottom-10 w-24 md:w-40"
                   >
                     <div className="bg-[#ffffff] p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
                       <span
@@ -113,7 +113,7 @@ function SocialIntervention() {
                       </div>
                     </div>
                   </motion.div>
-                </section>
+                </div>
               </div>
 
               <div className="">
