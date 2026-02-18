@@ -446,6 +446,39 @@
       "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
     }
   },
+  "socialIntervention": {
+    "span": "ÁREAS DE ARTICULACÓN",
+    "title": "INTERVENCIÓN SOCIAL",
+    "figure": "Intervenciones este año",
+    "description": "Utilizamos una metodología basada en la comprensión profunda de las particularidades de cada individuo, a través de un análisis detallado de su contexto histórico, social, económico, socioemocional y académico, para diseñar intervenciones específicas que les permitan mejorar significativamente.",
+    "socialData": {
+      "item_one": {
+        "title": "Análisis Contextual",
+        "description": "Evaluamos el contexto histórico, social, económico, socioemocional y académico de cada estudiante."
+      },
+      "item_two": {
+        "title": "Acompañamiento Personalizado",
+        "description": "Diseñamos intervenciones específicas adaptadas a las necesidades particulares de cada individuo."
+      },
+      "item_three": {
+        "title": "Escucha Activa",
+        "description": "Brindamos espacios seguros donde los estudiantes pueden expresar sus preocupaciones y metas."
+      },
+      "item_four": {
+        "title": "Red de Apoyo",
+        "description": "Conectamos a los estudiantes con recursos institucionales, familiares y comunitarios."
+      },
+      "item_five": {
+        "title": "Orientación Vocacional",
+        "description": "Guiamos en la toma de decisiones sociovocacionales para un futuro profesional sólido."
+      },
+      "item_six": {
+        "title": "Seguimiento Continuo",
+        "description": "Realizamos monitoreo constante para asegurar el progreso y bienestar del estudiante."
+      }
+    }
+  },
+
   "qhfa": {
     "page_title": "lo que hacemos",
     "our_model": "NUESTRO MODELO",

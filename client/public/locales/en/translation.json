@@ -445,6 +445,38 @@
       "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator"
     }
   },
+  "socialIntervention": {
+    "span": "AREAS OF INTEGRATION",
+    "title": "SOCIAL INTERVENTION",
+    "figure": "Interventions this year",
+    "description": "We use a methodology based on a deep understanding of each individual's unique characteristics. Through a detailed analysis of their historical, social, economic, socio-emotional, and academic context, we design specific interventions that allow them to improve significantly.",
+    "socialData": {
+      "item_one": {
+        "title": "Contextual Analysis",
+        "description": "We evaluate each student's historical, social, economic, socio-emotional, and academic context."
+      },
+      "item_two": {
+        "title": "Personalized Support",
+        "description": "We design specific interventions tailored to the unique needs of each individual."
+      },
+      "item_three": {
+        "title": "Active Listening",
+        "description": "We provide safe spaces where students can express their concerns and goals."
+      },
+      "item_four": {
+        "title": "Support Network",
+        "description": "We connect students with institutional, family, and community resources."
+      },
+      "item_five": {
+        "title": "Vocational Guidance",
+        "description": "We guide sociovocational decision-making for a solid professional future."
+      },
+      "item_six": {
+        "title": "Ongoing Monitoring",
+        "description": "We conduct constant monitoring to ensure the student's progress and well-being."
+      }
+    }
+  },
   "qhfa": {
     "page_title": "what we do",
     "our_model": "OUR MODEL",
