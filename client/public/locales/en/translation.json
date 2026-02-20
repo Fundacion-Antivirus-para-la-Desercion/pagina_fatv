@@ -475,6 +475,40 @@
         "title": "Ongoing Monitoring",
         "description": "We conduct constant monitoring to ensure the student's progress and well-being."
       }
+    },
+    "metrics": {
+      "span": "OUR IMPACT",
+      "title": "FIGURES THAT TRANSFORM REALITIES",
+      "description": "Each number represents a story of overcoming, a hopeful family, and a professional future built with dedication and comprehensive support.",
+      "metricsData": {
+        "span": "NUESTRO IMPACTO",
+        "title": "CIFRAS QUE TRANSFORMAN REALIDADES",
+        "description": "Cada número representa una historia de superación, una familia esperanzada y un futuro profesional construido con dedicación y apoyo integral.",
+        "metrict_one": {
+          "span": "STUDENT RETENTION",
+          "description": "Student retention rate achieved thanks to our comprehensive support interventions."
+        },
+        "metrict_two": {
+          "span": "STUDENTS",
+          "description": "Young people supported through our social and academic programs."
+        },
+        "metrict_three": {
+          "span": "DECISIONS",
+          "description": "Career and academic guidance to shape our students' future."
+        },
+        "metrict_four": {
+          "span": "SATISFACTION",
+          "description": "of students report significant improvements in their academic and emotional well-being."
+        },
+        "metrict_five": {
+          "span": "GRADUATES",
+          "description": "Students who successfully completed their studies with our support."
+        },
+        "metrict_six": {
+          "span": "ALLIES",
+          "description": "Educational institutions and organizations joined in our mission to prevent student dropout."
+        }
+      }
     }
   },
   "qhfa": {

@@ -1,10 +1,10 @@
 import BannerQhfaEn from "../../assets/images/views/socialIntervention/social-intervention.webp";
 import BannerQhfaEs from "../../assets/images/views/socialIntervention/intervencion-social.webp";
-import Description from "./Description/Description";
 
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
-
+import Description from "./Description/Description";
+import Metrics from "./Metrics/Metrics";
 function SocialIntervention() {
   const { t } = useTranslation();
 
@@ -20,6 +20,7 @@ function SocialIntervention() {
         />
       </section>
       <Description />
+      <Metrics />
     </>
   );
 }

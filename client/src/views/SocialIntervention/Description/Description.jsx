@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 function Description() {
-
   const { t } = useTranslation();
 
   const slideFromRight = {
@@ -68,7 +67,7 @@ function Description() {
     <>
       <section className="container block mx-auto">
         <div className="flex justify-center">
-          <section className="flex flex-col lg:flex-row justify-center gap-5 p-8 text-center md:p-10">
+          <section className="flex flex-col lg:flex-row justify-center gap-8 p-8 text-center md:p-10">
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-fit">
                 <img
@@ -83,9 +82,8 @@ function Description() {
                 >
                   <div className="bg-[#ffffff] p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
                     <span
-                      className="absolute -top-10 left-1/2 -translate-x-1/2 
-                             scale-0 group-hover:scale-100 transition-all duration-200
-                             bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
+                      className="absolute -top-10 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-all duration-200
+                      bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
                     >
                       FATV <TiHeart className="inline text-base" />
                       <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
@@ -120,7 +118,7 @@ function Description() {
               </section>
 
               <motion.div {...slideFromRight}>
-                <section className="grid grid-cols-1 justify-center lg:grid-cols-2 gap-3 mt-5 md:mt-0">
+                <section className="grid grid-cols-1 justify-center lg:grid-cols-2 gap-3 mt-5">
                   {socialData.map((socialData, index) => (
                     <div
                       key={index}
@@ -136,7 +134,7 @@ function Description() {
                           <h4 className="text-lg text-dark-blue font-extrabold">
                             {socialData.title}{" "}
                           </h4>
-                          <p className="text-sm text-blue-base mt-2">
+                          <p className="text-base text-blue-base mt-2">
                             {socialData.description}
                           </p>
                         </div>
