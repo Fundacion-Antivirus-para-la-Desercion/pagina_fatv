@@ -509,6 +509,11 @@
           "description": "Educational institutions and organizations joined in our mission to prevent student dropout."
         }
       }
+    },
+    "projectsAndTeams": {
+      "span": "WHAT WE OFFER",
+      "title": "PROJECTS AND TEAMS",
+      "description": "We work across all educational levels with a team dedicated to transforming every student's life."
     }
   },
   "qhfa": {

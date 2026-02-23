@@ -5,6 +5,8 @@ import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description";
 import Metrics from "./Metrics/Metrics";
+import ProjectsAndTeams from "./ProjectsAndTeams/ProjectsAndTeams";
+
 function SocialIntervention() {
   const { t } = useTranslation();
 
@@ -21,6 +23,7 @@ function SocialIntervention() {
       </section>
       <Description />
       <Metrics />
+      <ProjectsAndTeams />
     </>
   );
 }

@@ -527,6 +527,11 @@
           }
         }
       }
+    },
+    "projectsAndTeams": {
+      "span": "NUESTRO ALCANCE",
+      "title": "PROYECTOS Y EQUIPOS",
+      "description": "Trabajamos en diferentes niveles educativos con un equipo comprometido en transformar la vida de cada estudiante."
     }
   },
   "qhfa": {
