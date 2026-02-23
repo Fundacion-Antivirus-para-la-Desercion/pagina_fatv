@@ -513,7 +513,29 @@
     "projectsAndTeams": {
       "span": "WHAT WE OFFER",
       "title": "PROJECTS AND TEAMS",
-      "description": "We work across all educational levels with a team dedicated to transforming every student's life."
+      "description": "We work across all educational levels with a team dedicated to transforming every student's life.",
+      "projectsCards": {
+        "one": {
+          "title_button": "Universities",
+          "title": "Universities",
+          "description": "Comprehensive support for college students to ensure retention and academic success."
+        },
+        "two": {
+          "title_button": "High Schools",
+          "title": "High Schools",
+          "description": "Comprehensive support for high school students to ensure retention and academic success."
+        },
+        "three": {
+          "title_button": "Bootcamps",
+          "title": "Bootcamps",
+          "description": "Comprehensive support for bootcamp students to ensure retention and academic success."
+        },
+        "four": {
+          "title_button": "Scholarship Programs",
+          "title": "Scholarship Programs",
+          "description": "Comprehensive support for scholarship program students to ensure retention and academic success."
+        }
+      }
     }
   },
   "qhfa": {

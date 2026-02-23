@@ -1,18 +1,13 @@
-import { FaSchool } from "react-icons/fa";
-import { IoMdCode } from "react-icons/io";
-import { PiMedal } from "react-icons/pi";
-import { LuGraduationCap } from "react-icons/lu";
-
-export const projectsData = [
+const projectsData = [
   {
     id: 0,
-    icon: <LuGraduationCap />,
-    name: "Universidades",
+    icon: "LuGraduationCap",
+    name: "socialIntervention.projectsAndTeams.projectsCards.one.title_button",
     card: {
-      title: "Universidades",
-      icon: <LuGraduationCap />,
+      title: "socialIntervention.projectsAndTeams.projectsCards.one.title",
+      icon: "LuGraduationCap",
       description:
-        "Conectamos estudiantes universitarios con oportunidades reales en empresas líderes del sector tecnológico, impulsando su desarrollo profesional desde el primer año.",
+        "socialIntervention.projectsAndTeams.projectsCards.one.description",
       stats: [
         { value: "1,200+", label: "Estudiantes" },
         { value: "92%", label: "Permanencia" },
@@ -21,13 +16,13 @@ export const projectsData = [
     },
   },
   {
-    icon: <FaSchool />,
-    name: "Colegios",
+    icon: "FaSchool",
+    name: "socialIntervention.projectsAndTeams.projectsCards.two.title_button",
     card: {
-      title: "Colegios",
-      icon: <FaSchool />,
+      title: "socialIntervention.projectsAndTeams.projectsCards.two.title",
+      icon: "FaSchool",
       description:
-        "Conectamos estudiantes universitarios con oportunidades reales en empresas líderes del sector tecnológico, impulsando su desarrollo profesional desde el primer año.",
+        "Acompañamiento integral a estudiantes de educación básica y media para garantizar su permanencia y éxito académico.",
       stats: [
         { value: "1,200+", label: "Estudiantes" },
         { value: "92%", label: "Permanencia" },
@@ -36,13 +31,13 @@ export const projectsData = [
     },
   },
   {
-    icon: <IoMdCode />,
-    name: "Bootcamps",
+    icon: "IoMdCode",
+    name: "socialIntervention.projectsAndTeams.projectsCards.three.title_button",
     card: {
-      title: "Bootcamps",
-      icon: <IoMdCode />,
+      title: "socialIntervention.projectsAndTeams.projectsCards.three.title",
+      icon: "IoMdCode",
       description:
-        "Conectamos estudiantes universitarios con oportunidades reales en empresas líderes del sector tecnológico, impulsando su desarrollo profesional desde el primer año.",
+        "Acompañamiento integral a estudiantes de bootcamps para garantizar su desarrollo profesional desde el primer año.",
       stats: [
         { value: "1,200+", label: "Estudiantes" },
         { value: "92%", label: "Permanencia" },
@@ -51,13 +46,13 @@ export const projectsData = [
     },
   },
   {
-    icon: <PiMedal />,
-    name: "Programas de Becarios",
+    icon: "PiMedal",
+    name: "socialIntervention.projectsAndTeams.projectsCards.four.title_button",
     card: {
-      title: "Programas de Becarios",
-      icon: <PiMedal />,
+      title: "socialIntervention.projectsAndTeams.projectsCards.four.title",
+      icon: "PiMedal",
       description:
-        "Conectamos estudiantes universitarios con oportunidades reales en empresas líderes del sector tecnológico, impulsando su desarrollo profesional desde el primer año.",
+        "Acompañamiento integral a estudiantes de programas de becarios para garantizar su desarrollo profesional",
       stats: [
         { value: "1,200+", label: "Estudiantes" },
         { value: "92%", label: "Permanencia" },
@@ -66,3 +61,5 @@ export const projectsData = [
     },
   },
 ];
+
+export default projectsData;

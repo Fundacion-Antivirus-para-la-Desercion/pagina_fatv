@@ -511,7 +511,29 @@
     "projectsAndTeams": {
       "span": "NUESTRO ALCANCE",
       "title": "PROYECTOS Y EQUIPOS",
-      "description": "Trabajamos en diferentes niveles educativos con un equipo comprometido en transformar la vida de cada estudiante."
+      "description": "Trabajamos en diferentes niveles educativos con un equipo comprometido en transformar la vida de cada estudiante.",
+      "projectsCards": {
+        "one": {
+          "title_button": "Universidades",
+          "title": "Universidades",
+          "description": "Acompañamiento integral a estudiantes de educación superior para garantizar su permanencia y éxito académico."
+        },
+        "two": {
+          "title_button": "Colegios",
+          "title": "Colegios",
+          "description": "Acompañamiento integral a estudiantes de educación secundaria para garantizar su permanencia y éxito académico."
+        },
+        "three": {
+          "title_button": "Bootcamps",
+          "title": "Bootcamps",
+          "description": "Acompañamiento integral a estudiantes de bootcamps para garantizar su permanencia y éxito académico."
+        },
+        "four": {
+          "title_button": "Programas de Becarios",
+          "title": "Programas de Becarios",
+          "description": "Acompañamiento integral a estudiantes de programas de becas para garantizar su permanencia y éxito académico."
+        }
+      }
     }
   },
 
