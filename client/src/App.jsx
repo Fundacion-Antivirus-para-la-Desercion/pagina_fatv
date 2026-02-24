@@ -34,10 +34,10 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/DonationPay" element={<DonationPay />} />
-          <Route
+          {/*<Route
             path="/intervencion/fortalecimiento-academico"
             element={<QHFA />}
-          />
+          />*/}
           <Route path="/social-intervention" element={<SocialIntervention />} />
           <Route path="/dataAnalyctis" element={<DataAnalytics />} />
           <Route path="/Comunicaciones" element={<Communications_ATV />} />
