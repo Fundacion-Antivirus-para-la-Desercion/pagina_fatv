@@ -1,9 +1,15 @@
 import { LuLinkedin } from "react-icons/lu";
-import UDEA from "../../../../public/logos_alianzas/udea.webp";
+import UDEA from "../../../../public/logos_alianzas/udea-horizontal.webp";
+import FUDEA from "../../../../public/logos_alianzas/fundacion-universidad-de-antioquia.webp";
 import UNAL from "../../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg";
 import AstridF from "../../../../public/img_OurTeam/astrid-franco-gonzalez.webp";
 import DanielaA from "../../../../public/img_OurTeam/daniela-arias.webp";
 import JesicaC from "../../../../public/img_OurTeam/jesica-cano.webp";
+import SamaiderH from "../../../../public/img_OurTeam/samaider-hoyos.webp";
+import MateoD from "../../../../public/img_OurTeam/mateo-duque.webp";
+import CarolinaP from "../../../../public/img_OurTeam/carolina-perez.webp";
+import NathaliaR from "../../../../public/img_OurTeam/nathalia-revelo.webp";
+import JhiselH from "../../../../public/img_OurTeam/jhisel-holguin.webp";
 import AlcandiaITG from "../../../../public/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png";
 import CodigoC13 from "../../../../public/logos_alianzas/Logo-codigo-C13_Mesa de trabajo 1.png";
 import MisionTIC from "../../../../public/logos_alianzas/mision-tic-2.png";
@@ -12,7 +18,7 @@ import NodoEAFIT from "../../../../public/logos_alianzas/nodo-eafit.webp";
 import AurelioLlano from "../../../../public/logos_alianzas/Logo Aurelio Llano_Mesa de trabajo 1.png";
 import BecaTech from "../../../../public/logos_alianzas/logo_Beca Tech Negro.png";
 import Fundation from "../../../../public/logos_alianzas/logo-fraternidad.webp";
-import BecasNutresa from "../../../../public/logos_alianzas/becas-nutresa.webp"; 
+import BecasNutresa from "../../../../public/logos_alianzas/becas-nutresa.webp";
 
 const projectsData = [
   {
@@ -36,7 +42,12 @@ const projectsData = [
         logo: UDEA,
       },
       {
-        name: "Universidad nacional de Colombia",
+        name: "Fundación Universidad de Antioquia",
+        logo: FUDEA,
+      },
+      {
+        name: "Universidad Nacional de Colombia",
+
         logo: UNAL,
       },
     ],
@@ -91,6 +102,18 @@ const projectsData = [
       {
         name: "alcaldía de Itagüí",
         logo: AlcandiaITG,
+      },
+    ],
+    cardLeader: [
+      {
+        photo: SamaiderH,
+        position: "",
+        name: "Samaider Hoyos",
+        department: "Lider de procesos - Colegios",
+        description:
+          "Coordina intervenciones tempranas en instituciones de educación media para prevenir la deserción.",
+        email: "samaiderhoyos@fundacionantivirus.org",
+        userLinkedin: "samaiderhoyos",
       },
     ],
   },
@@ -157,6 +180,48 @@ const projectsData = [
       {
         name: "Becas Nutresa",
         logo: BecasNutresa,
+      },
+    ],
+    cardLeader: [
+      {
+        photo: JhiselH,
+        position: "",
+        name: "Jhisel Holguin",
+        department: "Lider de procesos - Becarios Ver+",
+        description:
+          "Brinda acompañamiento especializado a beneficiarios del programa de becas Ver+.",
+        email: "jhiselholguin@fundacionantivirus.org",
+        userLinkedin: "jhiselholguin",
+      },
+      {
+        photo: MateoD,
+        position: "",
+        name: "Mateo Arias",
+        department: "Lider de Proceso - Becarios Ver+",
+        description:
+          "Apoya el seguimiento y desarrollo académico de los becarios del programa Ver+.",
+        email: "mateoarias@fundacionantivirus.org",
+        userLinkedin: "mateoarias",
+      },
+      {
+        photo: CarolinaP,
+        position: "",
+        name: "Carolina Pérez",
+        department: "Lider de Proceso - Becarios Fraternidad Medellín",
+        description:
+          "Lidera el acompañamiento a becarios de la Fraternidad Medellín en su trayectoria educativa.",
+        email: "carolinaperez@fundacionantivirus.org",
+        userLinkedin: "carolinaperez",
+      },
+      {
+        photo: NathaliaR,
+        position: "",
+        name: "Nathalia Revelo",
+        department: "Lider de Proceso - Becarios Fundación Aurelio Llano",
+        description:
+          "Gestiona el programa de becarios de la fundación Aurelio Llano.",
+        email: "nathaliarevelo@fundacionantivirus.org",
+        userLinkedin: "nathaliarevelo",
       },
     ],
   },

@@ -133,7 +133,7 @@ function ProjectsAndTeams() {
         <section className="flex flex-col flex-wrap md:flex-row p-5 mt-10 items-stretch">
           {activeProject.cardLeader &&
             activeProject.cardLeader.map((leader, index) => (
-              <div className="flex flex-col md:flex-row md:text-left m-5 gap-5 bg-white rounded-2xl shadow-2xl p-5 max-w-3xl mx-auto border-t-[7px] border-primary-yellow">
+              <div className="flex flex-col md:flex-row md:text-left m-5 gap-5 bg-white rounded-2xl shadow-2xl p-5 max-w-2xl mx-auto border-t-[7px] border-primary-yellow">
                 <div className="relative flex flex-col items-center md:flex-grow h-fit">
                   <img
                     key={index}
