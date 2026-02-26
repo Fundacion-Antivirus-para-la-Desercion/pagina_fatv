@@ -51,7 +51,7 @@ const projectsData = [
         logo: UNAL,
       },
     ],
-    cardLeader: [
+    cardProjectLeader: [
       {
         photo: AstridF,
         position: "LIDERAZGO",
@@ -60,27 +60,23 @@ const projectsData = [
         description:
           "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil.",
         email: "astridfranco@fundacionantivirus.org",
-        userLinkedin: "astridf",
+        userLinkedin: "astrid-franco-g",
       },
+    ],
+    cardAreaLead: [
       {
         photo: DanielaA,
-        position: "",
         name: "Daniela Arias",
-        department: "Lider de Proceso - Universidad de Antioquia",
+        areaLeader: "Lider de Proceso - Universidad de Antioquia",
         description:
           "Acompaña a los estudiantes de la Universidad de Antioquia en su proceso de adaptación y permanencia universitaria.",
-        email: "danielarias@fundacionantivirus.org",
-        userLinkedin: "danielarias",
       },
       {
         photo: JesicaC,
-        position: "",
         name: "Jesica Cano",
-        department: "Lider de Proceso - Universidad Nacional",
+        areaLeader: "Lider de Proceso - Universidad Nacional",
         description:
           "Gestiona el programa de acompañamiento integral para estudiantes de la Universidad Nacional.",
-        email: "jesicacano@fundacionantivirus.org",
-        userLinkedin: "jesicacano",
       },
     ],
   },
@@ -104,16 +100,25 @@ const projectsData = [
         logo: AlcandiaITG,
       },
     ],
-    cardLeader: [
+    cardProjectLeader: [
+      {
+        photo: AstridF,
+        position: "LIDERAZGO",
+        name: "Astrid Franco",
+        department: "Coordinadora del Área Social",
+        description:
+          "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil.",
+        email: "astridfranco@fundacionantivirus.org",
+        userLinkedin: "astrid-franco-g",
+      },
+    ],
+    cardAreaLead: [
       {
         photo: SamaiderH,
-        position: "",
         name: "Samaider Hoyos",
-        department: "Lider de procesos - Colegios",
+        areaLeader: "Lider FATV - Colegios",
         description:
           "Coordina intervenciones tempranas en instituciones de educación media para prevenir la deserción.",
-        email: "samaiderhoyos@fundacionantivirus.org",
-        userLinkedin: "samaiderhoyos",
       },
     ],
   },
@@ -182,46 +187,46 @@ const projectsData = [
         logo: BecasNutresa,
       },
     ],
-    cardLeader: [
+    cardProjectLeader: [
+      {
+        photo: AstridF,
+        position: "LIDERAZGO",
+        name: "Astrid Franco",
+        department: "Coordinadora del Área Social",
+        description:
+          "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil.",
+        email: "astridfranco@fundacionantivirus.org",
+        userLinkedin: "astrid-franco-g",
+      },
+    ],
+    cardAreaLead: [
       {
         photo: JhiselH,
-        position: "",
         name: "Jhisel Holguin",
-        department: "Lider de procesos - Becarios Ver+",
+        areaLeader: "Lider FATV - Becarios Ver+",
         description:
           "Brinda acompañamiento especializado a beneficiarios del programa de becas Ver+.",
-        email: "jhiselholguin@fundacionantivirus.org",
-        userLinkedin: "jhiselholguin",
       },
       {
         photo: MateoD,
-        position: "",
         name: "Mateo Arias",
-        department: "Lider de Proceso - Becarios Ver+",
+        areaLeader: "Lider de Proceso - Becarios Ver+",
         description:
           "Apoya el seguimiento y desarrollo académico de los becarios del programa Ver+.",
-        email: "mateoarias@fundacionantivirus.org",
-        userLinkedin: "mateoarias",
       },
       {
         photo: CarolinaP,
-        position: "",
         name: "Carolina Pérez",
-        department: "Lider de Proceso - Becarios Fraternidad Medellín",
+        areaLeader: "Lider de Proceso - Becarios Fraternidad Medellín",
         description:
           "Lidera el acompañamiento a becarios de la Fraternidad Medellín en su trayectoria educativa.",
-        email: "carolinaperez@fundacionantivirus.org",
-        userLinkedin: "carolinaperez",
       },
       {
         photo: NathaliaR,
-        position: "",
         name: "Nathalia Revelo",
-        department: "Lider de Proceso - Becarios Fundación Aurelio Llano",
+        areaLeader: "Lider de Proceso - Becarios Fundación Aurelio Llano",
         description:
           "Gestiona el programa de becarios de la fundación Aurelio Llano.",
-        email: "nathaliarevelo@fundacionantivirus.org",
-        userLinkedin: "nathaliarevelo",
       },
     ],
   },

@@ -57,7 +57,7 @@ function ProjectsAndTeams() {
           </p>
         </div>
 
-        <section>
+        <section className="p-3 md:p-0">
           <div className="flex-col md:flex-row flex items-center justify-center mt-10 gap-1 md:gap-5">
             {data.map((project, index) => (
               <button
@@ -82,9 +82,9 @@ function ProjectsAndTeams() {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="mt-8 max-w-5xl mx-auto bg-dark-blue rounded-2xl shadow-lg p-10 m-10"
+              className="mt-8 max-w-3xl mx-auto bg-dark-blue rounded-2xl shadow-lg p-10 m-10"
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-5">
                 <span className="text-4xl text-white bg-[#f6f6f61e] rounded-2xl p-5">
                   {icons[activeProject.card.icon]}
                 </span>
@@ -92,16 +92,21 @@ function ProjectsAndTeams() {
                   {t(activeProject.card.title)}
                 </h3>
               </div>
-              <p className="text-white text-lg leading-relaxed">
+              <p className="text-white text-lg leading-relaxed text-center md:text-left m-5">
                 {t(activeProject.card.description)}
               </p>
               <div className="mt-6 grid grid-cols-3 gap-4 text-center">
                 {activeProject.card.stats.map((stat, i) => (
-                  <div key={i} className="bg-[#f6f6f61e] rounded-2xl p-5">
-                    <p className="text-4xl font-bold text-white font-impact">
+                  <div
+                    key={i}
+                    className="bg-[#f6f6f61e] rounded-2xl p-5 items-center justify-center flex flex-col"
+                  >
+                    <p className="text-2xl md:text-4xl font-bold text-white font-impact">
                       {stat.value}
                     </p>
-                    <p className="text-sm text-white">{stat.label}</p>
+                    <p className="text-xs md:text-sm text-white">
+                      {stat.label}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -110,10 +115,10 @@ function ProjectsAndTeams() {
         </section>
 
         <section className="text-center">
-          <h4 className="text-4xl text-dark-blue font-impact">
+          <h4 className="text-3xl md:text-4xl text-dark-blue font-impact">
             INSTITUCIONES ALIADAS
           </h4>
-          <div className="flex items-center justify-center gap-5 mt-5">
+          <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
             {activeProject.cardAllies &&
               activeProject.cardAllies.map((ally, index) => (
                 <div
@@ -129,57 +134,95 @@ function ProjectsAndTeams() {
               ))}
           </div>
         </section>
-
-        <section className="flex flex-col flex-wrap md:flex-row p-5 mt-10 items-stretch">
-          {activeProject.cardLeader &&
-            activeProject.cardLeader.map((leader, index) => (
-              <div className="flex flex-col md:flex-row md:text-left m-5 gap-5 bg-white rounded-2xl shadow-2xl p-5 max-w-2xl mx-auto border-t-[7px] border-primary-yellow">
-                <div className="relative flex flex-col items-center md:flex-grow h-fit">
-                  <img
-                    key={index}
-                    src={leader.photo}
-                    alt={t(leader.name)}
-                    className="w-52 md:w-64 object-cover mb-5 md:mb-0 rounded-full border-4 border-primary-yellow"
-                  />
-
-                  <PiMedal className="absolute text-4xl text-dark-blue bottom-0 md:right-5  bg-primary-yellow rounded-full p-1" />
-                </div>
-                <div className="flex flex-col items-center md:items-start gap-2">
-                  <p className="text-lg text-primary-yellow">
+        <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 p-4 md:p-16 items-start">
+          <div className="flex flex-col">
+            {activeProject.cardProjectLeader &&
+              activeProject.cardProjectLeader.map((leader, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto"
+                >
+                  <p className="text-sm md:text-lg font-bold text-primary-yellow uppercase tracking-wider mb-4 text-center md:text-left">
                     {leader.position}
                   </p>
 
-                  <span className="text-2xl text-dark-blue font-extrabold">
-                    {leader.name}
-                  </span>
-                  <p className="text-lg text-primary-yellow">
-                    {leader.department}
-                  </p>
-                  <p className="text-base text-blue-base mt-3">
-                    {leader.description}
-                  </p>
-                  <div className="flex flex-col md:flex-row items-center gap-5 mt-5">
-                    <div className="flex items-center gap-2 text-dark-blue hover:text-primary-yellow transition-colors">
-                      <HiOutlineMail className="text-lg" />
-                      <a href={`mailto:${leader.email}`} className="text-base">
-                        {leader.email}
-                      </a>
+                  <div className="relative w-fit mx-auto mb-6">
+                    <img
+                      src={leader.photo}
+                      alt={t(leader.name)}
+                      className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-4 border-primary-yellow shadow-md"
+                    />
+                    <div className="absolute bottom-2 right-2 bg-primary-yellow p-2 rounded-full shadow-lg">
+                      <PiMedal className="text-2xl md:text-3xl text-dark-blue" />
                     </div>
-                    <div className="flex items-center gap-2 text-dark-blue hover:text-primary-yellow transition-colors">
-                      <IoLogoLinkedin className="text-lg inline-block" />
+                  </div>
+
+                  <div className="flex flex-col items-center text-center">
+                    <span className="text-2xl md:text-3xl text-dark-blue font-extrabold leading-tight">
+                      {leader.name}
+                    </span>
+                    <p className="text-lg text-primary-yellow font-medium mt-1">
+                      {leader.department}
+                    </p>
+                    <p className="text-base text-blue-base mt-4">
+                      {leader.description}
+                    </p>
+
+                    <div className="flex flex-col w-full gap-3 mt-8 pt-6 border-t border-gray-100">
+                      <a
+                        href={`mailto:${leader.email}`}
+                        className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
+                      >
+                        <HiOutlineMail className="text-xl group-hover:scale-110 transition-transform" />
+                        <span className="text-sm md:text-base break-all font-semibold">
+                          {leader.email}
+                        </span>
+                      </a>
                       <a
                         href={`https://www.linkedin.com/in/${leader.userLinkedin}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-base flex items-center gap-1"
+                        className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
                       >
-                        LinkedIn
+                        <IoLogoLinkedin className="text-xl group-hover:scale-110 transition-transform" />
+                        <span className="text-sm md:text-base font-semibold">
+                          LinkedIn
+                        </span>
                       </a>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-fit">
+            {activeProject.cardAreaLead &&
+              activeProject.cardAreaLead.map((leader, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-dark-blue hover:shadow-2xl transition-shadow duration-300"
+                >
+                  <div className="flex flex-col items-center md:items-start gap-4">
+                    <img
+                      src={leader.photo}
+                      alt={t(leader.name)}
+                      className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-gray-100 shadow-sm"
+                    />
+                    <div className="text-center md:text-left">
+                      <h4 className="text-xl font-extrabold text-dark-blue leading-tight">
+                        {leader.name}
+                      </h4>
+                      <p className="text-base font-bold text-primary-yellow mt-1">
+                        {leader.areaLeader}
+                      </p>
+                      <p className="text-base text-blue-base mt-3 opacity-90">
+                        {leader.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
         </section>
       </section>
     </>
