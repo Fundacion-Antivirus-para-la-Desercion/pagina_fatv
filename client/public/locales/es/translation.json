@@ -505,28 +505,11 @@
         "metrict_six": {
           "span": "ALIADOS",
           "description": "Instituciones educativas y organizaciones aliadas en nuestra misión contra la deserción estudiantil."
-        },
-        "span": "NUESTRO IMPACTO",
-        "title": "CIFRAS QUE TRANSFORMAN REALIDADES",
-        "description": "Cada número representa una historia de superación, una familia esperanzada y un futuro profesional construido con dedicación y apoyo integral.",
-        "metricsData": {
-          "metrict_one": {
-            "span": "PERMANENCIA",
-            "descrption": "Tasa de permanencia estudiantil lograda gracias a nuestras intervenciones de acompañamiento integral."
-          }
-        }
-      },
-      "metrics": {
-        "span": "NUESTRO IMPACTO",
-        "title": "CIFRAS QUE TRANSFORMAN REALIDADES",
-        "description": "Cada número representa una historia de superación, una familia esperanzada y un futuro profesional construido con dedicación y apoyo integral.",
-        "metricsData": {
-          "metrict_one": {
-            "span": "PERMANENCIA",
-            "descrption": "Tasa de permanencia estudiantil lograda gracias a nuestras intervenciones de acompañamiento integral."
-          }
         }
       }
+    },
+    "cardAllies": {
+      "title": "INSTITUCIONES ALIADAS"
     },
     "projectsAndTeams": {
       "span": "NUESTRO ALCANCE",
@@ -554,70 +537,49 @@
           "description": "Acompañamiento integral a estudiantes de programas de becas para garantizar su permanencia y éxito académico."
         }
       },
-      "projects": {
-        "one": {
-          "title_button": "Universidades",
-          "title": "Universidades",
-          "description": "Acompañamiento integral a estudiantes de educación superior para garantizar su permanencia y éxito académico."
+      "leaders": {
+        "title": "Nuestro Equipo",
+        "leader_one": {
+          "alt": "Astrid Franco, coordinadora social, sonriendo amable.",
+          "position": "LIDERAZGO",
+          "department": "Coordinadora del Área Social",
+          "description": "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil."
         },
-        "two": {
-          "title_button": "Colegios",
-          "title": "Colegios",
-          "description": "Acompañamiento integral a estudiantes de educación secundaria para garantizar su permanencia y éxito académico."
+        "leader_two": {
+          "alt": "Daniela Arias, líder FATV - UdeA, sonriendo amable.",
+          "areaLeader": "Lider FATV - Universidad de Antioquia",
+          "description": "Acompaña a los estudiantes de la Universidad de Antioquia en su proceso de adaptación y permanencia universitaria."
         },
-        "three": {
-          "title_button": "Bootcamps",
-          "title": "Bootcamps",
-          "description": "Acompañamiento integral a estudiantes de bootcamps para garantizar su permanencia y éxito académico."
+        "leader_three": {
+          "alt": "Jesica Cano, líder FATV - UNAL, sonriendo amable.",
+          "areaLeader": "Lider FATV - Universidad Nacional",
+          "description": "Gestiona el programa de acompañamiento integral para estudiantes de la Universidad Nacional."
         },
-        "four": {
-          "title_button": "Programas de Becarios",
-          "title": "Programas de Becarios",
-          "description": "Acompañamiento integral a estudiantes de programas de becas para garantizar su permanencia y éxito académico."
+        "leader_four": {
+          "alt": "Samaider Hoyos, líder FATV - Colegios, sonriendo amable.",
+          "areaLeader": "Lider FATV - Colegios",
+          "description": "Coordina intervenciones tempranas en instituciones de educación media para prevenir la deserción."
+        },
+        "leader_five": {
+          "alt": "Jhisel Holguin, líder FATV - Becarios Ver+, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Ver+",
+          "description": "Brinda acompañamiento especializado a beneficiarios del programa de becas Ver+."
+        },
+        "leader_six": {
+          "alt": "Mateo Arias, líder FATV - Becarios Ver+, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Ver+",
+          "description": "Apoya el seguimiento y desarrollo académico de los becarios del programa Ver+."
+        },
+        "leader_seven": {
+          "alt": "Carolina Pérez, líder FATV - Becarios Fraternidad Medellín, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Fraternidad Medellín",
+          "description": "Lidera el acompañamiento a becarios de la Fraternidad Medellín en su trayectoria educativa."
+        },
+        "leader_eight": {
+          "alt": "Nathalia Revelo, líder FATV - Becarios Fundación Aurelio Llano, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Fundación Aurelio Llano",
+          "description": "Gestiona el programa de becarios de la fundación Aurelio Llano."
         }
-      }
-    },
-    "leaders": {
-      "leader_one": {
-        "alt": "Astrid Franco, coordinadora social, sonriendo amable.",
-        "position": "LIDERAZGO",
-        "department": "Coordinadora del Área Social",
-        "description": "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil."
-      },
-      "leader_two": {
-        "alt": "Daniela Arias, líder FATV - UdeA, sonriendo amable.",
-        "areaLeader": "Lider FATV - Universidad de Antioquia",
-        "description": "Acompaña a los estudiantes de la Universidad de Antioquia en su proceso de adaptación y permanencia universitaria."
-      },
-      "leader_three": {
-        "alt": "Jesica Cano, líder FATV - UNAL, sonriendo amable.",
-        "areaLeader": "Lider FATV - Universidad Nacional",
-        "description": "Gestiona el programa de acompañamiento integral para estudiantes de la Universidad Nacional."
-      },
-      "leader_four": {
-        "alt": "Samaider Hoyos, líder FATV - Colegios, sonriendo amable.",
-        "areaLeader": "Lider FATV - Colegios",
-        "description": "Coordina intervenciones tempranas en instituciones de educación media para prevenir la deserción."
-      },
-      "leader_five": {
-        "alt": "Jhisel Holguin, líder FATV - Becarios Ver+, sonriendo amable.",
-        "areaLeader": "Lider FATV - Becarios Ver+",
-        "description": "Brinda acompañamiento especializado a beneficiarios del programa de becas Ver+."
-      },
-      "leader_six": {
-        "alt": "Mateo Arias, líder FATV - Becarios Ver+, sonriendo amable.",
-        "areaLeader": "Lider FATV - Becarios Ver+",
-        "description": "Apoya el seguimiento y desarrollo académico de los becarios del programa Ver+."
-      },
-      "leader_seven": {
-        "alt": "Carolina Pérez, líder FATV - Becarios Fraternidad Medellín, sonriendo amable.",
-        "areaLeader": "Lider FATV - Becarios Fraternidad Medellín",
-        "description": "Lidera el acompañamiento a becarios de la Fraternidad Medellín en su trayectoria educativa."
-      },
-      "leader_eight": {
-        "alt": "Nathalia Revelo, líder FATV - Becarios Fundación Aurelio Llano, sonriendo amable.",
-        "areaLeader": "Lider FATV - Becarios Fundación Aurelio Llano",
-        "description": "Gestiona el programa de becarios de la fundación Aurelio Llano."
       }
     }
   },

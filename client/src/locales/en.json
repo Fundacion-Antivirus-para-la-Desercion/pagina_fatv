@@ -535,9 +535,9 @@
           "title": "Scholarship Programs",
           "description": "Comprehensive support for scholarship program students to ensure retention and academic success."
         }
-      }
-    },
+      },
     "leaders": {
+      "title":"Our Team",
       "leader_one": {
         "alt": "Astrid Franco, Social Coordinator, with a friendly smile.",
         "position": "LEADERSHIP",
@@ -579,6 +579,7 @@
         "areaLeader": "FATV Leader - Aurelio Llano Foundation Scholars",
         "description": "Manages the scholarship program for the Aurelio Llano Foundation."
       }
+    }
     }
   },
   "qhfa": {

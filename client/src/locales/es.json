@@ -508,6 +508,9 @@
         }
       }
     },
+    "cardAllies": {
+      "title": "INSTITUCIONES ALIADAS"
+    },
     "projectsAndTeams": {
       "span": "NUESTRO ALCANCE",
       "title": "PROYECTOS Y EQUIPOS",
@@ -533,9 +536,9 @@
           "title": "Programas de Becarios",
           "description": "Acompañamiento integral a estudiantes de programas de becas para garantizar su permanencia y éxito académico."
         }
-      }
-    },
-    "leaders": {
+      },
+      "leaders": {
+      "title": "Nuestro Equipo",
       "leader_one": {
         "alt": "Astrid Franco, coordinadora social, sonriendo amable.",
         "position": "LIDERAZGO",
@@ -577,6 +580,7 @@
         "areaLeader": "Lider FATV - Becarios Fundación Aurelio Llano",
         "description": "Gestiona el programa de becarios de la fundación Aurelio Llano."
       }
+    }
     }
   },
 

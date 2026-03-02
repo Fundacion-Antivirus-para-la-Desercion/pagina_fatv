@@ -6,6 +6,7 @@ import { PiMedal } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLogoLinkedin } from "react-icons/io";
+import Javi from "../../../assets/images/views/javi/javi-guina-el-ojo.svg";
 
 import { motion, AnimatePresence } from "framer-motion";
 import data from "./data";
@@ -39,6 +40,17 @@ function ProjectsAndTeams() {
     },
     exit: { opacity: 0, scale: 0.96, y: -20 },
   };
+
+  const floatSnake = (delay = 0) => ({
+    initial: { y: -5 },
+    animate: { y: [0, -20, 0] },
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "linear",
+      delay,
+    },
+  });
 
   const activeProject = data[activeIndex];
 
@@ -116,7 +128,7 @@ function ProjectsAndTeams() {
 
         <section className="text-center">
           <h4 className="text-3xl md:text-4xl text-dark-blue font-impact">
-            INSTITUCIONES ALIADAS
+            
           </h4>
           <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
             {activeProject.cardAllies &&
@@ -134,6 +146,15 @@ function ProjectsAndTeams() {
               ))}
           </div>
         </section>
+
+        <div className="flex items-center justify-center mt-10">
+          <motion.div {...floatSnake()}>
+            <img className="h-24" src={Javi} alt="Javi Guinando" />
+          </motion.div>
+          <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact m-10">
+            {t("socialIntervention.projectsAndTeams.leaders.title")}
+          </h6>
+        </div>
         <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 p-4 md:p-16 items-start">
           <div className="flex flex-col">
             {activeProject.cardProjectLeader &&
@@ -195,14 +216,14 @@ function ProjectsAndTeams() {
               ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-fit">
+          <div className="bg-[#E6E7ED] grid grid-cols-1 md:grid-cols-2 gap-6 h-fit p-16 rounded-3xl shadow-lg">
             {activeProject.cardAreaLead &&
               activeProject.cardAreaLead.map((leader, index) => (
                 <div
                   key={index}
                   className="flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-dark-blue hover:shadow-2xl transition-shadow duration-300"
                 >
-                  <div className="flex flex-col items-center md:items-start gap-4">
+                  <div className="flex items-center md:items-start gap-4">
                     <img
                       src={leader.photo}
                       alt={t(leader.alt)}
