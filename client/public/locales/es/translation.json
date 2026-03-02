@@ -576,6 +576,49 @@
           "description": "Acompañamiento integral a estudiantes de programas de becas para garantizar su permanencia y éxito académico."
         }
       }
+    },
+    "leaders": {
+      "leader_one": {
+        "alt": "Astrid Franco, coordinadora social, sonriendo amable.",
+        "position": "LIDERAZGO",
+        "department": "Coordinadora del Área Social",
+        "description": "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil."
+      },
+      "leader_two": {
+        "alt": "Daniela Arias, líder FATV - UdeA, sonriendo amable.",
+        "areaLeader": "Lider FATV - Universidad de Antioquia",
+        "description": "Acompaña a los estudiantes de la Universidad de Antioquia en su proceso de adaptación y permanencia universitaria."
+      },
+      "leader_three": {
+        "alt": "Jesica Cano, líder FATV - UNAL, sonriendo amable.",
+        "areaLeader": "Lider FATV - Universidad Nacional",
+        "description": "Gestiona el programa de acompañamiento integral para estudiantes de la Universidad Nacional."
+      },
+      "leader_four": {
+        "alt": "Samaider Hoyos, líder FATV - Colegios, sonriendo amable.",
+        "areaLeader": "Lider FATV - Colegios",
+        "description": "Coordina intervenciones tempranas en instituciones de educación media para prevenir la deserción."
+      },
+      "leader_five": {
+        "alt": "Jhisel Holguin, líder FATV - Becarios Ver+, sonriendo amable.",
+        "areaLeader": "Lider FATV - Becarios Ver+",
+        "description": "Brinda acompañamiento especializado a beneficiarios del programa de becas Ver+."
+      },
+      "leader_six": {
+        "alt": "Mateo Arias, líder FATV - Becarios Ver+, sonriendo amable.",
+        "areaLeader": "Lider FATV - Becarios Ver+",
+        "description": "Apoya el seguimiento y desarrollo académico de los becarios del programa Ver+."
+      },
+      "leader_seven": {
+        "alt": "Carolina Pérez, líder FATV - Becarios Fraternidad Medellín, sonriendo amable.",
+        "areaLeader": "Lider FATV - Becarios Fraternidad Medellín",
+        "description": "Lidera el acompañamiento a becarios de la Fraternidad Medellín en su trayectoria educativa."
+      },
+      "leader_eight": {
+        "alt": "Nathalia Revelo, líder FATV - Becarios Fundación Aurelio Llano, sonriendo amable.",
+        "areaLeader": "Lider FATV - Becarios Fundación Aurelio Llano",
+        "description": "Gestiona el programa de becarios de la fundación Aurelio Llano."
+      }
     }
   },
   "qhfa": {

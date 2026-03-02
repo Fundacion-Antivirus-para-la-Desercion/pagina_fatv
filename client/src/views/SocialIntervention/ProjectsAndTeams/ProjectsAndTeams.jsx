@@ -143,13 +143,13 @@ function ProjectsAndTeams() {
                   className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto"
                 >
                   <p className="text-sm md:text-lg font-bold text-primary-yellow uppercase tracking-wider mb-4 text-center md:text-left">
-                    {leader.position}
+                    {t(leader.position)}
                   </p>
 
                   <div className="relative w-fit mx-auto mb-6">
                     <img
                       src={leader.photo}
-                      alt={t(leader.name)}
+                      alt={t(leader.alt)}
                       className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-4 border-primary-yellow shadow-md"
                     />
                     <div className="absolute bottom-2 right-2 bg-primary-yellow p-2 rounded-full shadow-lg">
@@ -162,10 +162,10 @@ function ProjectsAndTeams() {
                       {leader.name}
                     </span>
                     <p className="text-lg text-primary-yellow font-medium mt-1">
-                      {leader.department}
+                      {t(leader.department)}
                     </p>
                     <p className="text-base text-blue-base mt-4">
-                      {leader.description}
+                      {t(leader.description)}
                     </p>
 
                     <div className="flex flex-col w-full gap-3 mt-8 pt-6 border-t border-gray-100">
@@ -205,18 +205,18 @@ function ProjectsAndTeams() {
                   <div className="flex flex-col items-center md:items-start gap-4">
                     <img
                       src={leader.photo}
-                      alt={t(leader.name)}
+                      alt={t(leader.alt)}
                       className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-gray-100 shadow-sm"
                     />
                     <div className="text-center md:text-left">
                       <h4 className="text-xl font-extrabold text-dark-blue leading-tight">
-                        {leader.name}
+                        {t(leader.name)}
                       </h4>
                       <p className="text-base font-bold text-primary-yellow mt-1">
-                        {leader.areaLeader}
+                        {t(leader.areaLeader)}
                       </p>
                       <p className="text-base text-blue-base mt-3 opacity-90">
-                        {leader.description}
+                        {t(leader.description)}
                       </p>
                     </div>
                   </div>

@@ -54,11 +54,11 @@ const projectsData = [
     cardProjectLeader: [
       {
         photo: AstridF,
-        position: "LIDERAZGO",
+        alt: "socialIntervention.leaders.leader_one.alt",
+        position: "socialIntervention.leaders.leader_one.position",
         name: "Astrid Franco",
-        department: "Coordinadora del Área Social",
-        description:
-          "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil.",
+        department: "socialIntervention.leaders.leader_one.department",
+        description: "socialIntervention.leaders.leader_one.description",
         email: "astridfranco@fundacionantivirus.org",
         userLinkedin: "astrid-franco-g",
       },
@@ -66,17 +66,17 @@ const projectsData = [
     cardAreaLead: [
       {
         photo: DanielaA,
+        alt: "socialIntervention.leaders.leader_two.alt",
         name: "Daniela Arias",
-        areaLeader: "Lider de Proceso - Universidad de Antioquia",
-        description:
-          "Acompaña a los estudiantes de la Universidad de Antioquia en su proceso de adaptación y permanencia universitaria.",
+        areaLeader: "socialIntervention.leaders.leader_two.areaLeader",
+        description: "socialIntervention.leaders.leader_two.description",
       },
       {
         photo: JesicaC,
+        alt: "socialIntervention.leaders.leader_three.alt",
         name: "Jesica Cano",
-        areaLeader: "Lider de Proceso - Universidad Nacional",
-        description:
-          "Gestiona el programa de acompañamiento integral para estudiantes de la Universidad Nacional.",
+        areaLeader: "socialIntervention.leaders.leader_three.areaLeader",
+        description: "socialIntervention.leaders.leader_three.description",
       },
     ],
   },
@@ -103,11 +103,11 @@ const projectsData = [
     cardProjectLeader: [
       {
         photo: AstridF,
-        position: "LIDERAZGO",
+        alt: "socialIntervention.leaders.leader_one.alt",
+        position: "socialIntervention.leaders.leader_one.position",
         name: "Astrid Franco",
-        department: "Coordinadora del Área Social",
-        description:
-          "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil.",
+        department: "socialIntervention.leaders.leader_one.department",
+        description: "socialIntervention.leaders.leader_one.description",
         email: "astridfranco@fundacionantivirus.org",
         userLinkedin: "astrid-franco-g",
       },
@@ -115,10 +115,11 @@ const projectsData = [
     cardAreaLead: [
       {
         photo: SamaiderH,
+        alt: "socialIntervention.leaders.leader_four.alt",
         name: "Samaider Hoyos",
-        areaLeader: "Lider FATV - Colegios",
+        areaLeader: "socialIntervention.leaders.leader_four.areaLeader",
         description:
-          "Coordina intervenciones tempranas en instituciones de educación media para prevenir la deserción.",
+          "socialIntervention.leaders.leader_four.description",
       },
     ],
   },
@@ -190,11 +191,11 @@ const projectsData = [
     cardProjectLeader: [
       {
         photo: AstridF,
-        position: "LIDERAZGO",
+        alt: "socialIntervention.leaders.leader_one.alt",
+        position: "socialIntervention.leaders.leader_one.position",
         name: "Astrid Franco",
-        department: "Coordinadora del Área Social",
-        description:
-          "Lidera el equipo de intervención social, diseñando estrategias de acompañamiento integral para garantizar la permanencia estudiantil.",
+        department: "socialIntervention.leaders.leader_one.department",
+        description: "socialIntervention.leaders.leader_one.description",
         email: "astridfranco@fundacionantivirus.org",
         userLinkedin: "astrid-franco-g",
       },
@@ -202,31 +203,35 @@ const projectsData = [
     cardAreaLead: [
       {
         photo: JhiselH,
+        alt: "socialIntervention.leaders.leader_five.alt",
         name: "Jhisel Holguin",
-        areaLeader: "Lider FATV - Becarios Ver+",
+        areaLeader: "socialIntervention.leaders.leader_five.areaLeader",
         description:
-          "Brinda acompañamiento especializado a beneficiarios del programa de becas Ver+.",
+          "socialIntervention.leaders.leader_five.description",
       },
       {
         photo: MateoD,
+        alt: "socialIntervention.leaders.leader_six.alt",
         name: "Mateo Arias",
-        areaLeader: "Lider de Proceso - Becarios Ver+",
+        areaLeader: "socialIntervention.leaders.leader_six.areaLeader",
         description:
-          "Apoya el seguimiento y desarrollo académico de los becarios del programa Ver+.",
+          "socialIntervention.leaders.leader_six.description",
       },
       {
         photo: CarolinaP,
+        alt: "socialIntervention.leaders.leader_seven.alt",
         name: "Carolina Pérez",
-        areaLeader: "Lider de Proceso - Becarios Fraternidad Medellín",
+        areaLeader: "socialIntervention.leaders.leader_seven.areaLeader",
         description:
-          "Lidera el acompañamiento a becarios de la Fraternidad Medellín en su trayectoria educativa.",
+          "socialIntervention.leaders.leader_seven.description",
       },
       {
         photo: NathaliaR,
+        alt: "socialIntervention.leaders.leader_eight.alt",
         name: "Nathalia Revelo",
-        areaLeader: "Lider de Proceso - Becarios Fundación Aurelio Llano",
+        areaLeader: "socialIntervention.leaders.leader_eight.areaLeader",
         description:
-          "Gestiona el programa de becarios de la fundación Aurelio Llano.",
+          "socialIntervention.leaders.leader_eight.description",
       },
     ],
   },
