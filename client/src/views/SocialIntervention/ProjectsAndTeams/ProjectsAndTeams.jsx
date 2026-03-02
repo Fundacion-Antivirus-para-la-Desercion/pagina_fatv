@@ -155,7 +155,7 @@ function ProjectsAndTeams() {
             {t("socialIntervention.projectsAndTeams.leaders.title")}
           </h6>
         </div>
-        <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 p-4 md:p-16 items-start">
+        <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 p-4 md:p-16 items-center">
           <div className="flex flex-col">
             {activeProject.cardProjectLeader &&
               activeProject.cardProjectLeader.map((leader, index) => (
@@ -216,12 +216,16 @@ function ProjectsAndTeams() {
               ))}
           </div>
 
-          <div className="bg-[#E6E7ED] grid grid-cols-1 md:grid-cols-2 gap-6 h-fit p-16 rounded-3xl shadow-lg">
+          <div className={`bg-[#E6E7ED] grid gap-6 h-fit p-16 rounded-3xl shadow-lg ${
+            activeProject.cardAreaLead?.length === 1
+              ? "grid-cols-1 place-items-center"
+              : "grid-cols-1 md:grid-cols-2"
+          }`}>
             {activeProject.cardAreaLead &&
               activeProject.cardAreaLead.map((leader, index) => (
                 <div
                   key={index}
-                  className="flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-dark-blue hover:shadow-2xl transition-shadow duration-300"
+                  className="flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-dark-blue hover:shadow-2xl transition-shadow duration-300 max-w-sm w-full"
                 >
                   <div className="flex items-center md:items-start gap-4">
                     <img
