@@ -56,7 +56,7 @@ function ProjectsAndTeams() {
 
   return (
     <>
-      <section className="pt-10 md:pt-14 bg-[#f6f6f6]">
+      <section className="pt-10 md:pt-14">
         <div className="text-center">
           <span className="text-lg text-primary-yellow font-impact">
             {t("socialIntervention.projectsAndTeams.span")}
@@ -75,14 +75,10 @@ function ProjectsAndTeams() {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className="flex bg-[#E6E7ED] items-center mb-4 rounded-2xl p-3 group hover:scale-105 transition-transform duration-500 cursor-pointer hover:bg-dark-blue"
+                className={`flex bg-[#E6E7ED] items-center mb-4 rounded-2xl p-3 group hover:scale-105 transition-transform duration-500 cursor-pointer hover:bg-dark-blue text-dark-blue hover:text-white ${activeIndex === index ? "bg-dark-blue text-white" : ""}`}
               >
-                <span className="text-2xl mr-2 text-dark-blue group-hover:text-white">
-                  {icons[project.icon]}
-                </span>
-                <span className="text-lg text-dark-blue group-hover:text-white ">
-                  {t(project.name)}
-                </span>
+                <span className="text-2xl mr-2 ">{icons[project.icon]}</span>
+                <span className="text-lg  ">{t(project.name)}</span>
               </button>
             ))}
           </div>
@@ -127,9 +123,7 @@ function ProjectsAndTeams() {
         </section>
 
         <section className="text-center">
-          <h4 className="text-3xl md:text-4xl text-dark-blue font-impact">
-            
-          </h4>
+          <h4 className="text-3xl md:text-4xl text-dark-blue font-impact"></h4>
           <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
             {activeProject.cardAllies &&
               activeProject.cardAllies.map((ally, index) => (
@@ -149,14 +143,18 @@ function ProjectsAndTeams() {
 
         <div className="flex items-center justify-center mt-10">
           <motion.div {...floatSnake()}>
-            <img className="h-24" src={Javi} alt="Javi Guinando" />
+            <img
+              className="h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+              src={Javi}
+              alt="Javi Guinando"
+            />
           </motion.div>
           <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact m-10">
             {t("socialIntervention.projectsAndTeams.leaders.title")}
           </h6>
         </div>
-        <section className="grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center">
-          <div className="flex flex-col">
+        <section className="relative grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
+          <div className="z-10 flex flex-col">
             {activeProject.cardProjectLeader &&
               activeProject.cardProjectLeader.map((leader, index) => (
                 <div
@@ -215,17 +213,32 @@ function ProjectsAndTeams() {
                 </div>
               ))}
           </div>
+          <div
+            className={`mt-16 lg:mt-0 relative z-10 bg-dark-blue grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg ${
+              activeProject.cardAreaLead?.length === 1
+                ? "grid-cols-1 place-items-center"
+                : "grid-cols-1 lg:grid-cols-2"
+            }`}
+          >
+            <span className="absolute -top-12 left-1 text-2xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-2 rounded-xl">
+              Líderes Universidades
+            </span>
 
-          <div className={`bg-[#E6E7ED] grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg ${
-            activeProject.cardAreaLead?.length === 1
-              ? "grid-cols-1 place-items-center"
-              : "grid-cols-1 lg:grid-cols-2"
-          }`}>
+            <div
+              className="absolute inset-0 z-1 rounded-3xl mt-2"
+              style={{
+                backgroundImage: `
+        linear-gradient(to right, #2F3863 1px, transparent 1px),
+        linear-gradient(to bottom, #2F3863 1px, transparent 1px)
+      `,
+                backgroundSize: "48px 48px, 48px 48px",
+              }}
+            />
             {activeProject.cardAreaLead &&
               activeProject.cardAreaLead.map((leader, index) => (
                 <div
                   key={index}
-                  className="flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-dark-blue hover:shadow-2xl transition-shadow duration-300 max-w-md w-full mx-auto"
+                  className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow hover:shadow-2xl transition-shadow duration-300 max-w-md w-full mx-auto"
                 >
                   <div className="flex flex-col lg:flex-row items-center md:items-start gap-4">
                     <img
@@ -248,6 +261,10 @@ function ProjectsAndTeams() {
                 </div>
               ))}
           </div>
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-primary-yellow bg-opacity-40 h-64 w-64 rounded-full -bottom-10 left-5"
+          ></motion.div>
         </section>
       </section>
     </>
