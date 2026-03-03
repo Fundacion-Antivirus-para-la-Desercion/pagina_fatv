@@ -83,189 +83,197 @@ function ProjectsAndTeams() {
             ))}
           </div>
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeIndex}
-              variants={cardVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="mt-8 max-w-3xl mx-auto bg-dark-blue rounded-2xl shadow-lg p-10 m-10"
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-4xl text-white bg-[#f6f6f61e] rounded-2xl p-5">
-                  {icons[activeProject.card.icon]}
-                </span>
-                <h3 className="text-4xl font-impact text-white">
-                  {t(activeProject.card.title)}
-                </h3>
+          <section className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeIndex}
+                variants={cardVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="mt-8 max-w-3xl mx-auto bg-dark-blue rounded-2xl shadow-lg p-10 m-10"
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="text-4xl text-white bg-[#f6f6f61e] rounded-2xl p-5">
+                    {icons[activeProject.card.icon]}
+                  </span>
+                  <h3 className="text-4xl font-impact text-white">
+                    {t(activeProject.card.title)}
+                  </h3>
+                </div>
+                <p className="text-white text-lg leading-relaxed text-center md:text-left m-5">
+                  {t(activeProject.card.description)}
+                </p>
+                <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                  {activeProject.card.stats.map((stat, i) => (
+                    <div
+                      key={i}
+                      className="bg-[#f6f6f61e] rounded-2xl p-5 items-center justify-center flex flex-col"
+                    >
+                      <p className="text-2xl md:text-4xl font-bold text-white font-impact">
+                        {stat.value}
+                      </p>
+                      <p className="text-xs md:text-sm text-white">
+                        {stat.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            </AnimatePresence>
+
+            <div className="text-center">
+              <h4 className="text-3xl md:text-4xl text-dark-blue font-impact"></h4>
+              <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
+                {activeProject.cardAllies &&
+                  activeProject.cardAllies.map((ally, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl"
+                    >
+                      <img
+                        src={ally.logo}
+                        alt={t(ally.name)}
+                        className="h-20 object-contain"
+                      />
+                    </div>
+                  ))}
               </div>
-              <p className="text-white text-lg leading-relaxed text-center md:text-left m-5">
-                {t(activeProject.card.description)}
-              </p>
-              <div className="mt-6 grid grid-cols-3 gap-4 text-center">
-                {activeProject.card.stats.map((stat, i) => (
-                  <div
-                    key={i}
-                    className="bg-[#f6f6f61e] rounded-2xl p-5 items-center justify-center flex flex-col"
-                  >
-                    <p className="text-2xl md:text-4xl font-bold text-white font-impact">
-                      {stat.value}
-                    </p>
-                    <p className="text-xs md:text-sm text-white">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </AnimatePresence>
+            </div>
+          </section>
         </section>
 
-        <section className="text-center">
-          <h4 className="text-3xl md:text-4xl text-dark-blue font-impact"></h4>
-          <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
-            {activeProject.cardAllies &&
-              activeProject.cardAllies.map((ally, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl"
-                >
+        {activeProject.cardProjectLeader &&
+          activeProject.cardProjectLeader.length > 0 && (
+            <section>
+              <div className="flex items-center justify-center mt-10">
+                <motion.div {...floatSnake()}>
                   <img
-                    src={ally.logo}
-                    alt={t(ally.name)}
-                    className="h-20 object-contain"
+                    className="h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+                    src={Javi}
+                    alt="Javi Guinando"
                   />
-                </div>
-              ))}
-          </div>
-        </section>
+                </motion.div>
+                <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact m-10">
+                  {t("socialIntervention.projectsAndTeams.leaders.title")}
+                </h6>
+              </div>
 
-        <div className="flex items-center justify-center mt-10">
-          <motion.div {...floatSnake()}>
-            <img
-              className="h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
-              src={Javi}
-              alt="Javi Guinando"
-            />
-          </motion.div>
-          <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact m-10">
-            {t("socialIntervention.projectsAndTeams.leaders.title")}
-          </h6>
-        </div>
-        <section className="relative grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
-          <div className="z-10 flex flex-col">
-            {activeProject.cardProjectLeader &&
-              activeProject.cardProjectLeader.map((leader, index) => (
+              <section className="relative grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
+                <div className="z-10 flex flex-col">
+                  {activeProject.cardProjectLeader &&
+                    activeProject.cardProjectLeader.map((leader, index) => (
+                      <div
+                        key={index}
+                        className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto"
+                      >
+                        <p className="text-sm md:text-lg font-bold text-primary-yellow uppercase tracking-wider mb-4 text-center md:text-left">
+                          {t(leader.position)}
+                        </p>
+
+                        <div className="relative w-fit mx-auto mb-6">
+                          <img
+                            src={leader.photo}
+                            alt={t(leader.alt)}
+                            className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-4 border-primary-yellow shadow-md"
+                          />
+                          <div className="absolute bottom-2 right-2 bg-primary-yellow p-2 rounded-full shadow-lg">
+                            <PiMedal className="text-2xl md:text-3xl text-dark-blue" />
+                          </div>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                          <span className="text-2xl md:text-3xl text-dark-blue font-extrabold leading-tight">
+                            {leader.name}
+                          </span>
+                          <p className="text-lg text-primary-yellow font-medium mt-1">
+                            {t(leader.department)}
+                          </p>
+                          <p className="text-base text-blue-base mt-4">
+                            {t(leader.description)}
+                          </p>
+
+                          <div className="flex flex-col w-full gap-3 mt-8 pt-6 border-t border-gray-100">
+                            <a
+                              href={`mailto:${leader.email}`}
+                              className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
+                            >
+                              <HiOutlineMail className="text-xl group-hover:scale-110 transition-transform" />
+                              <span className="text-sm md:text-base break-all font-semibold">
+                                {leader.email}
+                              </span>
+                            </a>
+                            <a
+                              href={`https://www.linkedin.com/in/${leader.userLinkedin}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
+                            >
+                              <IoLogoLinkedin className="text-xl group-hover:scale-110 transition-transform" />
+                              <span className="text-sm md:text-base font-semibold">
+                                LinkedIn
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                </div>
                 <div
-                  key={index}
-                  className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto"
+                  className={`mt-16 lg:mt-0 relative z-10 bg-dark-blue grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg ${
+                    activeProject.cardAreaLead?.length === 1
+                      ? "grid-cols-1 place-items-center"
+                      : "grid-cols-1 lg:grid-cols-2"
+                  }`}
                 >
-                  <p className="text-sm md:text-lg font-bold text-primary-yellow uppercase tracking-wider mb-4 text-center md:text-left">
-                    {t(leader.position)}
-                  </p>
+                  <span className="absolute -top-12 left-1 text-2xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-2 rounded-xl">
+                    Líderes Universidades
+                  </span>
 
-                  <div className="relative w-fit mx-auto mb-6">
-                    <img
-                      src={leader.photo}
-                      alt={t(leader.alt)}
-                      className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-4 border-primary-yellow shadow-md"
-                    />
-                    <div className="absolute bottom-2 right-2 bg-primary-yellow p-2 rounded-full shadow-lg">
-                      <PiMedal className="text-2xl md:text-3xl text-dark-blue" />
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col items-center text-center">
-                    <span className="text-2xl md:text-3xl text-dark-blue font-extrabold leading-tight">
-                      {leader.name}
-                    </span>
-                    <p className="text-lg text-primary-yellow font-medium mt-1">
-                      {t(leader.department)}
-                    </p>
-                    <p className="text-base text-blue-base mt-4">
-                      {t(leader.description)}
-                    </p>
-
-                    <div className="flex flex-col w-full gap-3 mt-8 pt-6 border-t border-gray-100">
-                      <a
-                        href={`mailto:${leader.email}`}
-                        className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
-                      >
-                        <HiOutlineMail className="text-xl group-hover:scale-110 transition-transform" />
-                        <span className="text-sm md:text-base break-all font-semibold">
-                          {leader.email}
-                        </span>
-                      </a>
-                      <a
-                        href={`https://www.linkedin.com/in/${leader.userLinkedin}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
-                      >
-                        <IoLogoLinkedin className="text-xl group-hover:scale-110 transition-transform" />
-                        <span className="text-sm md:text-base font-semibold">
-                          LinkedIn
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-          <div
-            className={`mt-16 lg:mt-0 relative z-10 bg-dark-blue grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg ${
-              activeProject.cardAreaLead?.length === 1
-                ? "grid-cols-1 place-items-center"
-                : "grid-cols-1 lg:grid-cols-2"
-            }`}
-          >
-            <span className="absolute -top-12 left-1 text-2xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-2 rounded-xl">
-              Líderes Universidades
-            </span>
-
-            <div
-              className="absolute inset-0 z-1 rounded-3xl mt-2"
-              style={{
-                backgroundImage: `
+                  <div
+                    className="absolute inset-0 z-1 rounded-3xl mt-2"
+                    style={{
+                      backgroundImage: `
         linear-gradient(to right, #2F3863 1px, transparent 1px),
         linear-gradient(to bottom, #2F3863 1px, transparent 1px)
       `,
-                backgroundSize: "48px 48px, 48px 48px",
-              }}
-            />
-            {activeProject.cardAreaLead &&
-              activeProject.cardAreaLead.map((leader, index) => (
-                <div
-                  key={index}
-                  className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow hover:shadow-2xl transition-shadow duration-300 max-w-md w-full mx-auto"
-                >
-                  <div className="flex flex-col lg:flex-row items-center md:items-start gap-4">
-                    <img
-                      src={leader.photo}
-                      alt={t(leader.alt)}
-                      className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-gray-100 shadow-sm"
-                    />
-                    <div className="text-center md:text-left">
-                      <h4 className="text-xl font-extrabold text-dark-blue leading-tight">
-                        {t(leader.name)}
-                      </h4>
-                      <p className="text-base font-bold text-primary-yellow mt-1">
-                        {t(leader.areaLeader)}
-                      </p>
-                      <p className="text-base text-blue-base mt-3 opacity-90">
-                        {t(leader.description)}
-                      </p>
-                    </div>
-                  </div>
+                      backgroundSize: "48px 48px, 48px 48px",
+                    }}
+                  />
+                  {activeProject.cardAreaLead &&
+                    activeProject.cardAreaLead.map((leader, index) => (
+                      <div
+                        key={index}
+                        className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow hover:shadow-2xl transition-shadow duration-300 max-w-md w-full mx-auto"
+                      >
+                        <div className="flex flex-col lg:flex-row items-center md:items-start gap-4">
+                          <img
+                            src={leader.photo}
+                            alt={t(leader.alt)}
+                            className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-gray-100 shadow-sm"
+                          />
+                          <div className="text-center md:text-left">
+                            <h4 className="text-xl font-extrabold text-dark-blue leading-tight">
+                              {t(leader.name)}
+                            </h4>
+                            <p className="text-base font-bold text-primary-yellow mt-1">
+                              {t(leader.areaLeader)}
+                            </p>
+                            <p className="text-base text-blue-base mt-3 opacity-90">
+                              {t(leader.description)}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                 </div>
-              ))}
-          </div>
-          <motion.div
-            {...floatSnake(0)}
-            className="absolute z-0 bg-primary-yellow bg-opacity-40 h-64 w-64 rounded-full -bottom-10 left-5"
-          ></motion.div>
-        </section>
+                <motion.div
+                  {...floatSnake(0)}
+                  className="absolute z-0 bg-primary-yellow bg-opacity-40 h-64 w-64 rounded-full -bottom-10 left-5"
+                ></motion.div>
+              </section>
+            </section>
+          )}
       </section>
     </>
   );
