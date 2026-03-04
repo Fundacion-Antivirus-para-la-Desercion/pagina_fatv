@@ -539,6 +539,12 @@
       },
       "leaders": {
       "title": "NUESTRO EQUIPO",
+      "spans_subtitle": {
+          "spanOne": "Líderes de Universidades",
+          "spanTwo": "Líderes de Colegios",
+          "spanThree": "Líderes de Bootcamps",
+          "spanFour": "Líderes de Programas de Becarios"
+        },
       "leader_one": {
         "alt": "Astrid Franco, coordinadora social, sonriendo amable.",
         "position": "LIDERAZGO",

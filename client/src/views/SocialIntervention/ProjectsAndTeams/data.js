@@ -55,12 +55,20 @@ const projectsData = [
       {
         photo: AstridF,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_one.alt",
-        position: "socialIntervention.projectsAndTeams.leaders.leader_one.position",
+        position:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.position",
         name: "Astrid Franco",
-        department: "socialIntervention.projectsAndTeams.leaders.leader_one.department",
-        description: "socialIntervention.projectsAndTeams.leaders.leader_one.description",
-        email: "astridfranco@fundacionantivirus.org",
+        department:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.department",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.description",
+        email: "coordinacionsocial@fundacionantivirusparaladesercion.org",
         userLinkedin: "astrid-franco-g",
+      },
+    ],
+    spanAreaLeaders: [
+      {
+        span: "socialIntervention.projectsAndTeams.leaders.spans_subtitle.spanOne",
       },
     ],
     cardAreaLead: [
@@ -68,15 +76,19 @@ const projectsData = [
         photo: DanielaA,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_two.alt",
         name: "Daniela Arias",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_two.areaLeader",
-        description: "socialIntervention.projectsAndTeams.leaders.leader_two.description",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_two.areaLeader",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_two.description",
       },
       {
         photo: JesicaC,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
         name: "Jesica Cano",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_three.areaLeader",
-        description: "socialIntervention.projectsAndTeams.leaders.leader_three.description",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_three.areaLeader",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_three.description",
       },
     ],
   },
@@ -104,12 +116,20 @@ const projectsData = [
       {
         photo: AstridF,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_one.alt",
-        position: "socialIntervention.projectsAndTeams.leaders.leader_one.position",
+        position:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.position",
         name: "Astrid Franco",
-        department: "socialIntervention.projectsAndTeams.leaders.leader_one.department",
-        description: "socialIntervention.projectsAndTeams.leaders.leader_one.description",
-        email: "astridfranco@fundacionantivirus.org",
+        department:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.department",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.description",
+        email: "coordinacionsocial@fundacionantivirusparaladesercion.org",
         userLinkedin: "astrid-franco-g",
+      },
+    ],
+    spanAreaLeaders: [
+      {
+        span: "socialIntervention.projectsAndTeams.leaders.spans_subtitle.spanTwo",
       },
     ],
     cardAreaLead: [
@@ -117,7 +137,8 @@ const projectsData = [
         photo: SamaiderH,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_four.alt",
         name: "Samaider Hoyos",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_four.areaLeader",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_four.areaLeader",
         description:
           "socialIntervention.projectsAndTeams.leaders.leader_four.description",
       },
@@ -192,36 +213,29 @@ const projectsData = [
       {
         photo: AstridF,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_one.alt",
-        position: "socialIntervention.projectsAndTeams.leaders.leader_one.position",
+        position:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.position",
         name: "Astrid Franco",
-        department: "socialIntervention.projectsAndTeams.leaders.leader_one.department",
-        description: "socialIntervention.projectsAndTeams.leaders.leader_one.description",
-        email: "astridfranco@fundacionantivirus.org",
+        department:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.department",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_one.description",
+        email: "coordinacionsocial@fundacionantivirusparaladesercion.org",
         userLinkedin: "astrid-franco-g",
+      },
+    ],
+    spanLeaders: [
+      {
+        span: "socialIntervention.projectsAndTeams.leaders.spans_subtitle.spanFour",
       },
     ],
     cardAreaLead: [
       {
-        photo: JhiselH,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_five.alt",
-        name: "Jhisel Holguin",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_five.areaLeader",
-        description:
-          "socialIntervention.projectsAndTeams.leaders.leader_five.description",
-      },
-      {
-        photo: MateoD,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_six.alt",
-        name: "Mateo Arias",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_six.areaLeader",
-        description:
-          "socialIntervention.projectsAndTeams.leaders.leader_six.description",
-      },
-      {
         photo: CarolinaP,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_seven.alt",
         name: "Carolina Pérez",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_seven.areaLeader",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_seven.areaLeader",
         description:
           "socialIntervention.projectsAndTeams.leaders.leader_seven.description",
       },
@@ -229,9 +243,28 @@ const projectsData = [
         photo: NathaliaR,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_eight.alt",
         name: "Nathalia Revelo",
-        areaLeader: "socialIntervention.projectsAndTeams.leaders.leader_eight.areaLeader",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_eight.areaLeader",
         description:
           "socialIntervention.projectsAndTeams.leaders.leader_eight.description",
+      },
+      {
+        photo: JhiselH,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_five.alt",
+        name: "Jhisel Holguin",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_five.areaLeader",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_five.description",
+      },
+      {
+        photo: MateoD,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_six.alt",
+        name: "Mateo Arias",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_six.areaLeader",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_six.description",
       },
     ],
   },

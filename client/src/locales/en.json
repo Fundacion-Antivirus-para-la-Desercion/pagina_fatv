@@ -536,50 +536,56 @@
           "description": "Comprehensive support for scholarship program students to ensure retention and academic success."
         }
       },
-    "leaders": {
-      "title":"OUR TEAM",
-      "leader_one": {
-        "alt": "Astrid Franco, Social Coordinator, with a friendly smile.",
-        "position": "LEADERSHIP",
-        "department": "Social Area Coordinator",
-        "description": "Leads the social intervention team, designing comprehensive support strategies to ensure student retention."
-      },
-      "leader_two": {
-        "alt": "Daniela Arias, FATV Leader - UdeA, with a friendly smile.",
-        "areaLeader": "FATV Leader - Universidad de Antioquia",
-        "description": "Supports Universidad de Antioquia students through their university adaptation and retention process."
-      },
-      "leader_three": {
-        "alt": "Jesica Cano, FATV Leader - UNAL, with a friendly smile.",
-        "areaLeader": "FATV Leader - Universidad Nacional",
-        "description": "Manages the comprehensive support program for students at the Universidad Nacional."
-      },
-      "leader_four": {
-        "alt": "Samaider Hoyos, FATV Leader - Schools, with a friendly smile.",
-        "areaLeader": "FATV Leader - Schools",
-        "description": "Coordinates early interventions in high schools to prevent student dropout."
-      },
-      "leader_five": {
-        "alt": "Jhisel Holguin, FATV Leader - Ver+ Scholars, with a friendly smile.",
-        "areaLeader": "FATV Leader - Ver+ Scholars",
-        "description": "Provides specialized support to scholars in the Ver+ scholarship program."
-      },
-      "leader_six": {
-        "alt": "Mateo Arias, FATV Leader - Ver+ Scholars, with a friendly smile.",
-        "areaLeader": "FATV Leader - Ver+ Scholars",
-        "description": "Supports the academic follow-up and development of scholars in the Ver+ program."
-      },
-      "leader_seven": {
-        "alt": "Carolina Pérez, FATV Leader - Fraternidad Medellín Scholars, with a friendly smile.",
-        "areaLeader": "FATV Leader - Fraternidad Medellín Scholars",
-        "description": "Leads the support and guidance for Fraternidad Medellín scholars throughout their educational journey."
-      },
-      "leader_eight": {
-        "alt": "Nathalia Revelo, FATV Leader - Aurelio Llano Foundation Scholars, with a friendly smile.",
-        "areaLeader": "FATV Leader - Aurelio Llano Foundation Scholars",
-        "description": "Manages the scholarship program for the Aurelio Llano Foundation."
+      "leaders": {
+        "title": "OUR TEAM",
+        "spans_subtitle": {
+          "spanOne": "University Leaders",
+          "spanTwo": "Líderes de Colegios",
+          "spanThree": "Líderes de Bootcamps",
+          "spanFour": "Líderes de Programas de Becarios"
+        },
+        "leader_one": {
+          "alt": "Astrid Franco, Social Coordinator, with a friendly smile.",
+          "position": "LEADERSHIP",
+          "department": "Social Area Coordinator",
+          "description": "Leads the social intervention team, designing comprehensive support strategies to ensure student retention."
+        },
+        "leader_two": {
+          "alt": "Daniela Arias, FATV Leader - UdeA, with a friendly smile.",
+          "areaLeader": "FATV Leader - Universidad de Antioquia",
+          "description": "Supports Universidad de Antioquia students through their university adaptation and retention process."
+        },
+        "leader_three": {
+          "alt": "Jesica Cano, FATV Leader - UNAL, with a friendly smile.",
+          "areaLeader": "FATV Leader - Universidad Nacional",
+          "description": "Manages the comprehensive support program for students at the Universidad Nacional."
+        },
+        "leader_four": {
+          "alt": "Samaider Hoyos, FATV Leader - Schools, with a friendly smile.",
+          "areaLeader": "FATV Leader - Schools",
+          "description": "Coordinates early interventions in high schools to prevent student dropout."
+        },
+        "leader_five": {
+          "alt": "Jhisel Holguin, FATV Leader - Ver+ Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Ver+ Scholars",
+          "description": "Provides specialized support to scholars in the Ver+ scholarship program."
+        },
+        "leader_six": {
+          "alt": "Mateo Arias, FATV Leader - Ver+ Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Ver+ Scholars",
+          "description": "Supports the academic follow-up and development of scholars in the Ver+ program."
+        },
+        "leader_seven": {
+          "alt": "Carolina Pérez, FATV Leader - Fraternidad Medellín Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Fraternidad Medellín Scholars",
+          "description": "Leads the support and guidance for Fraternidad Medellín scholars throughout their educational journey."
+        },
+        "leader_eight": {
+          "alt": "Nathalia Revelo, FATV Leader - Aurelio Llano Foundation Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Aurelio Llano Foundation Scholars",
+          "description": "Manages the scholarship program for the Aurelio Llano Foundation."
+        }
       }
-    }
     }
   },
   "qhfa": {

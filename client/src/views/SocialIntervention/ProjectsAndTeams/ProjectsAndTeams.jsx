@@ -165,7 +165,7 @@ function ProjectsAndTeams() {
                     activeProject.cardProjectLeader.map((leader, index) => (
                       <div
                         key={index}
-                        className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto"
+                        className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto hover:scale-105 transition-transform duration-300"
                       >
                         <p className="text-sm md:text-lg font-bold text-primary-yellow uppercase tracking-wider mb-4 text-center md:text-left">
                           {t(leader.position)}
@@ -193,23 +193,23 @@ function ProjectsAndTeams() {
                             {t(leader.description)}
                           </p>
 
-                          <div className="flex flex-col w-full gap-3 mt-8 pt-6 border-t border-gray-100">
+                          <div className="flex flex-col md:flex-row md:flex-wrap gap-3 mt-8 pt-6 border-t border-gray-100">
                             <a
                               href={`mailto:${leader.email}`}
-                              className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
+                              className="flex items-center justify-center md:justify-start gap-1 text-dark-blue hover:text-primary-yellow transition-colors group"
                             >
-                              <HiOutlineMail className="text-xl group-hover:scale-110 transition-transform" />
+                              <HiOutlineMail className="text-2xl group-hover:scale-110 transition-transform" />
                               <span className="text-sm md:text-base break-all font-semibold">
-                                {leader.email}
+                                Email
                               </span>
                             </a>
                             <a
                               href={`https://www.linkedin.com/in/${leader.userLinkedin}`}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center md:justify-start gap-3 text-dark-blue hover:text-primary-yellow transition-colors group"
+                              className="flex items-center justify-center md:justify-start gap-1 text-dark-blue hover:text-primary-yellow transition-colors group"
                             >
-                              <IoLogoLinkedin className="text-xl group-hover:scale-110 transition-transform" />
+                              <IoLogoLinkedin className="text-2xl group-hover:scale-110 transition-transform" />
                               <span className="text-sm md:text-base font-semibold">
                                 LinkedIn
                               </span>
@@ -226,10 +226,6 @@ function ProjectsAndTeams() {
                       : "grid-cols-1 lg:grid-cols-2"
                   }`}
                 >
-                  <span className="absolute -top-12 left-1 text-2xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-2 rounded-xl">
-                    Líderes Universidades
-                  </span>
-
                   <div
                     className="absolute inset-0 z-1 rounded-3xl mt-2"
                     style={{
@@ -240,11 +236,20 @@ function ProjectsAndTeams() {
                       backgroundSize: "48px 48px, 48px 48px",
                     }}
                   />
+                  {activeProject.spanAreaLeaders && (
+                    <span className="absolute -top-12 left-1 text-2xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-2 rounded-xl">
+                      {t(
+                        activeProject.spanAreaLeaders.find(
+                          (spanAreaLeaders) => spanAreaLeaders.span,
+                        ).span,
+                      )}
+                    </span>
+                  )}
                   {activeProject.cardAreaLead &&
                     activeProject.cardAreaLead.map((leader, index) => (
                       <div
                         key={index}
-                        className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow hover:shadow-2xl transition-shadow duration-300 max-w-md w-full mx-auto"
+                        className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow  hover:scale-105 transition-transform duration-300 max-w-md w-full mx-auto"
                       >
                         <div className="flex flex-col lg:flex-row items-center md:items-start gap-4">
                           <img
@@ -267,9 +272,23 @@ function ProjectsAndTeams() {
                       </div>
                     ))}
                 </div>
+
                 <motion.div
                   {...floatSnake(0)}
-                  className="absolute z-0 bg-primary-yellow bg-opacity-40 h-64 w-64 rounded-full -bottom-10 left-5"
+                  className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full top-0 right-5"
+                ></motion.div>
+                <motion.div
+                  {...floatSnake(0)}
+                  className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full top-20 right-5"
+                ></motion.div>
+                <motion.div
+                  {...floatSnake(0)}
+                  className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full -bottom-5 left-16"
+                ></motion.div>
+
+                <motion.div
+                  {...floatSnake(0)}
+                  className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full -bottom-16 left-5"
                 ></motion.div>
               </section>
             </section>
