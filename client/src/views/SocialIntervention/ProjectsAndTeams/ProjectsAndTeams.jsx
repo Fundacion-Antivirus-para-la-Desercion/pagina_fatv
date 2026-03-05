@@ -89,19 +89,20 @@ function ProjectsAndTeams() {
         </div>
 
         <section className="p-3">
-          <div className="flex-col md:flex-row flex items-center justify-center mt-10 gap-1 md:gap-5">
+          <div className="flex-col md:flex-row flex items-center justify-center mt-10 gap-3 md:gap-5">
             {data.map((project, index) => (
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`flex bg-[#E6E7ED] items-center mb-4 rounded-2xl p-3 group hover:scale-105 transition-transform duration-500 cursor-pointer hover:bg-dark-blue text-dark-blue hover:text-white ${activeIndex === index ? "bg-dark-blue text-white" : ""}`}
+                className={`flex bg-[#E6E7ED] items-center rounded-2xl p-3 group hover:scale-105 transition-transform duration-500 cursor-pointer hover:bg-dark-blue text-dark-blue hover:text-white ${activeIndex === index ? "bg-dark-blue text-white" : ""}`}
               >
                 <span className="text-2xl mr-2 ">{icons[project.icon]}</span>
                 <span className="text-lg  ">{t(project.name)}</span>
               </button>
             ))}
           </div>
-          <section className="relative grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-10 gap-5">
+          {/* Card projects */}
+          <section className="relative grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-2 md:mt-10 gap-5 mb-5">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -125,30 +126,32 @@ function ProjectsAndTeams() {
                   <span className="text-4xl text-white bg-[#f6f6f650] rounded-2xl p-5">
                     {icons[activeProject.card.icon]}
                   </span>
-                  <h3 className="text-4xl font-impact text-white">
+                  <h3 className="text-3xl md:text-4xl font-impact text-white">
                     {t(activeProject.card.title)}
                   </h3>
                 </div>
-                <p className="relative text-white text-lg leading-relaxed text-center md:text-left m-5">
+                <p className="relative text-white text-lg leading-relaxed text-center md:text-left mt-10">
                   {t(activeProject.card.description)}
                 </p>
-                <div className="relative mt-6 grid grid-cols-3 gap-4 text-center">
+                <div className="relative mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                   {activeProject.card.stats.map((stat, i) => (
                     <div
                       key={i}
-                      className="bg-[#f6f6f650] rounded-2xl p-5 items-center justify-center flex flex-col"
+                      className="bg-[#f6f6f650] rounded-2xl p-4 md:p-5 items-center justify-center flex flex-col hover:scale-105 transition-transform duration-300"
                     >
-                      <p className="text-2xl md:text-4xl font-bold text-white font-impact">
+                      <p className="text-2xl md:text-3xl  text-white font-impact">
                         {stat.value}
                       </p>
-                      <p className="text-xs md:text-sm text-white">
-                        {stat.label}
+                      <p className="text-xs md:text-sm text-white mt-1">
+                        {t(stat.label)}
                       </p>
                     </div>
                   ))}
                 </div>
               </motion.div>
             </AnimatePresence>
+
+            {/* Card allies */}
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -164,7 +167,7 @@ function ProjectsAndTeams() {
                     activeProject.cardAllies.map((ally, index) => (
                       <div
                         key={index}
-                        className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl  z-10 hover:scale-105 transition-all duration-500 hover:border-t-dark-blue hover:border-t-8"
+                        className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl  z-10 hover:scale-105 transition-all duration-500 hover:border-t-primary-yellow hover:border-t-[7px]"
                       >
                         <img
                           src={ally.logo}
@@ -178,12 +181,12 @@ function ProjectsAndTeams() {
             </AnimatePresence>
             <motion.div
               {...floatSnake(0)}
-              className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full -bottom-5 left-5"
+              className="hidden md:block absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full -bottom-5 left-5"
             ></motion.div>
 
             <motion.div
               {...floatSnake(0)}
-              className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full -bottom-24 left-5"
+              className="hidden md:block absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full -bottom-24 left-5"
             ></motion.div>
           </section>
         </section>
@@ -191,19 +194,20 @@ function ProjectsAndTeams() {
         {activeProject.cardProjectLeader &&
           activeProject.cardProjectLeader.length > 0 && (
             <section>
-              <div className="flex items-center justify-center mt-12 md:mt-10">
+              <div className="flex items-center justify-center mt-12 md:mt-10 gap-2 m-5 md:m-0">
                 <motion.div {...floatSnake()}>
                   <img
-                    className="h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+                    className="h-20 md:h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
                     src={Javi}
                     alt="Javi Guinando"
                   />
                 </motion.div>
-                <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact ml-5">
+                <h6 className="text-3xl md:text-5xl m-5 text-dark-blue text-center font-impact">
                   {t("socialIntervention.projectsAndTeams.leaders.title")}
                 </h6>
               </div>
 
+              {/* Card leaders */}
               <section className="relative grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
                 <div className="z-10 flex flex-col">
                   {activeProject.cardProjectLeader &&

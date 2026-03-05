@@ -17,7 +17,7 @@ function Metrics() {
     {
       icon: <HiMiniArrowTrendingUp />,
       span: t("socialIntervention.metrics.metricsData.metrict_one.span"),
-      value: <CounterNumeric countNumber={94} />,
+      value: <CounterNumeric countNumber={91} />,
       sign: "%",
       description: t(
         "socialIntervention.metrics.metricsData.metrict_one.description",
@@ -26,7 +26,7 @@ function Metrics() {
     {
       icon: <GoPeople />,
       span: t("socialIntervention.metrics.metricsData.metrict_two.span"),
-      value: <CounterNumeric countNumber={2547} />,
+      value: <CounterNumeric countNumber={10512} />,
       sign: "+",
       description: t(
         "socialIntervention.metrics.metricsData.metrict_two.description",
@@ -35,7 +35,7 @@ function Metrics() {
     {
       icon: <LuCompass />,
       span: t("socialIntervention.metrics.metricsData.metrict_three.span"),
-      value: <CounterNumeric countNumber={1823} />,
+      value: <CounterNumeric countNumber={3834} />,
       sign: "+",
       description: t(
         "socialIntervention.metrics.metricsData.metrict_three.description",
@@ -44,7 +44,7 @@ function Metrics() {
     {
       icon: <PiHeartStraight />,
       span: t("socialIntervention.metrics.metricsData.metrict_four.span"),
-      value: <CounterNumeric countNumber={89} />,
+      value: <CounterNumeric countNumber={85} />,
       sign: "%",
       description: t(
         "socialIntervention.metrics.metricsData.metrict_four.description",
@@ -53,7 +53,7 @@ function Metrics() {
     {
       icon: <LuGraduationCap />,
       span: t("socialIntervention.metrics.metricsData.metrict_five.span"),
-      value: <CounterNumeric countNumber={156} />,
+      value: <CounterNumeric countNumber={2885} />,
       sign: "+",
       description: t(
         "socialIntervention.metrics.metricsData.metrict_five.description",
@@ -62,7 +62,7 @@ function Metrics() {
     {
       icon: <PiPuzzlePieceBold />,
       span: t("socialIntervention.metrics.metricsData.metrict_six.span"),
-      value: <CounterNumeric countNumber={45} />,
+      value: <CounterNumeric countNumber={26} />,
       sign: "+",
       description: t(
         "socialIntervention.metrics.metricsData.metrict_six.description",

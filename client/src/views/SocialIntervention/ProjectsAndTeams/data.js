@@ -31,9 +31,21 @@ const projectsData = [
       description:
         "socialIntervention.projectsAndTeams.projectsCards.one.description",
       stats: [
-        { value: "1,200+", label: "Estudiantes" },
-        { value: "92%", label: "Permanencia" },
-        { value: "12", label: "Instituciones" },
+        {
+          value: "13.000+",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.students",
+        },
+        {
+          value: "81%",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.retention",
+        },
+        {
+          value: "2",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.institutions",
+        },
       ],
     },
     cardAllies: [
@@ -99,11 +111,23 @@ const projectsData = [
       title: "socialIntervention.projectsAndTeams.projectsCards.two.title",
       icon: "FaSchool",
       description:
-        "Acompañamiento integral a estudiantes de educación básica y media para garantizar su permanencia y éxito académico.",
+        "socialIntervention.projectsAndTeams.projectsCards.two.description",
       stats: [
-        { value: "1,200+", label: "Estudiantes" },
-        { value: "92%", label: "Permanencia" },
-        { value: "12", label: "Instituciones" },
+        {
+          value: "4.000+",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.students",
+        },
+        {
+          value: "91,14 %",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.higher_education",
+        },
+        {
+          value: "24",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.institutions",
+        },
       ],
     },
     cardAllies: [
@@ -151,11 +175,18 @@ const projectsData = [
       title: "socialIntervention.projectsAndTeams.projectsCards.three.title",
       icon: "IoMdCode",
       description:
-        "Acompañamiento integral a estudiantes de bootcamps para garantizar su desarrollo profesional desde el primer año.",
+        "socialIntervention.projectsAndTeams.projectsCards.three.description",
       stats: [
-        { value: "1,200+", label: "Estudiantes" },
-        { value: "92%", label: "Permanencia" },
-        { value: "12", label: "Instituciones" },
+        {
+          value: "6.100+",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.students",
+        },
+        {
+          value: "4",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.institutions",
+        },
       ],
     },
     cardAllies: [
@@ -184,11 +215,23 @@ const projectsData = [
       title: "socialIntervention.projectsAndTeams.projectsCards.four.title",
       icon: "PiMedal",
       description:
-        "Acompañamiento integral a estudiantes de programas de becarios para garantizar su desarrollo profesional",
+        "socialIntervention.projectsAndTeams.projectsCards.four.description",
       stats: [
-        { value: "1,200+", label: "Estudiantes" },
-        { value: "92%", label: "Permanencia" },
-        { value: "12", label: "Instituciones" },
+        {
+          value: "1.480+",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.students",
+        },
+        {
+          value: "96,97%",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.retention",
+        },
+        {
+          value: "4",
+          label:
+            "socialIntervention.projectsAndTeams.projectsCards.label_stats.institutions",
+        },
       ],
     },
     cardAllies: [
@@ -224,7 +267,7 @@ const projectsData = [
         userLinkedin: "astrid-franco-g",
       },
     ],
-    spanLeaders: [
+    spanAreaLeaders: [
       {
         span: "socialIntervention.projectsAndTeams.leaders.spans_subtitle.spanFour",
       },
@@ -232,39 +275,39 @@ const projectsData = [
     cardAreaLead: [
       {
         photo: CarolinaP,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_seven.alt",
-        name: "Carolina Pérez",
-        areaLeader:
-          "socialIntervention.projectsAndTeams.leaders.leader_seven.areaLeader",
-        description:
-          "socialIntervention.projectsAndTeams.leaders.leader_seven.description",
-      },
-      {
-        photo: NathaliaR,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_eight.alt",
-        name: "Nathalia Revelo",
-        areaLeader:
-          "socialIntervention.projectsAndTeams.leaders.leader_eight.areaLeader",
-        description:
-          "socialIntervention.projectsAndTeams.leaders.leader_eight.description",
-      },
-      {
-        photo: JhiselH,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_five.alt",
-        name: "Jhisel Holguin",
+        name: "Carolina Pérez",
         areaLeader:
           "socialIntervention.projectsAndTeams.leaders.leader_five.areaLeader",
         description:
           "socialIntervention.projectsAndTeams.leaders.leader_five.description",
       },
       {
-        photo: MateoD,
+        photo: NathaliaR,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_six.alt",
-        name: "Mateo Arias",
+        name: "Nathalia Revelo",
         areaLeader:
           "socialIntervention.projectsAndTeams.leaders.leader_six.areaLeader",
         description:
           "socialIntervention.projectsAndTeams.leaders.leader_six.description",
+      },
+      {
+        photo: JhiselH,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_seven.alt",
+        name: "Jhisel Holguin",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_seven.areaLeader",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_seven.description",
+      },
+      {
+        photo: MateoD,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_eight.alt",
+        name: "Mateo Arias",
+        areaLeader:
+          "socialIntervention.projectsAndTeams.leaders.leader_eight.areaLeader",
+        description:
+          "socialIntervention.projectsAndTeams.leaders.leader_eight.description",
       },
     ],
   },

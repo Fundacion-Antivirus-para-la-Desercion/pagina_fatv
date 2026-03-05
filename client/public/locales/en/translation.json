@@ -515,6 +515,12 @@
       "title": "PROJECTS AND TEAMS",
       "description": "We work across all educational levels with a team dedicated to transforming every student's life.",
       "projectsCards": {
+        "label_stats": {
+          "students": "Students",
+          "retention": "Student Retention",
+          "institutions": "Institutions",
+          "higher_education": "Higher Education Continuity"
+        },
         "one": {
           "title_button": "Universities",
           "title": "Universities",
@@ -523,71 +529,73 @@
         "two": {
           "title_button": "High Schools",
           "title": "High Schools",
-          "description": "Comprehensive support for high school students to ensure retention and academic success."
+          "description": "Social and vocational support for students to build their future and transition into higher education."
         },
         "three": {
           "title_button": "Bootcamps",
           "title": "Bootcamps",
-          "description": "Comprehensive support for bootcamp students to ensure retention and academic success."
+          "description": "Comprehensive support for bootcamp students to ensure they stay on track and succeed in tech training."
         },
         "four": {
           "title_button": "Scholarship Programs",
           "title": "Scholarship Programs",
           "description": "Comprehensive support for scholarship program students to ensure retention and academic success."
+        },
+        "labels_stats": {
+          "students": "Students",
+          "retention": "Student Retention",
+          "institutions": "Institutions",
+          "higher_education": "Higher Education Continuity"
         }
       },
       "leaders": {
         "title": "OUR TEAM",
         "spans_subtitle": {
           "spanOne": "University Leaders",
-          "spanTwo": "Líderes de Colegios",
-          "spanThree": "Líderes de Bootcamps",
-          "spanFour": "Líderes de Programas de Becarios",
-          "span_one": "Líderes de Universidades",
-          "span_two": "Líderes de Colegios",
-          "span_three": "Líderes de Bootcamps",
-          "span_four": "Líderes de Programas de Becarios"
+          "spanTwo": "High School Leaders",
+          "spanThree": "Bootcamp Leaders",
+          "spanFour": "Scholarship Program Leaders"
         },
         "leader_one": {
           "alt": "Astrid Franco, Social Coordinator, with a friendly smile.",
           "position": "LEADERSHIP",
           "department": "Social Area Coordinator",
-          "description": "Leads the social intervention team, designing comprehensive support strategies to ensure student retention."
+          "description": "Coordinates social intervention projects, ensuring comprehensive support for students through strategies focused on student retention."
         },
         "leader_two": {
           "alt": "Daniela Arias, FATV Leader - UdeA, with a friendly smile.",
           "areaLeader": "FATV Leader - Universidad de Antioquia",
-          "description": "Supports Universidad de Antioquia students through their university adaptation and retention process."
+          "description": "Leads the FATV program at the Universidad de Antioquia, supporting the adaptation and retention processes for Systems Engineering students."
         },
         "leader_three": {
           "alt": "Jesica Cano, FATV Leader - UNAL, with a friendly smile.",
           "areaLeader": "FATV Leader - Universidad Nacional",
-          "description": "Manages the comprehensive support program for students at the Universidad Nacional."
+          "description": "Leads the FATV program at the Universidad Nacional, promoting comprehensive support and student retention for Systems Engineering students."
         },
         "leader_four": {
           "alt": "Samaider Hoyos, FATV Leader - Schools, with a friendly smile.",
           "areaLeader": "FATV Leader - Schools",
-          "description": "Coordinates early interventions in high schools to prevent student dropout."
+          "description": "Leads socio-vocational interventions in high schools to strengthen students' educational paths."
         },
         "leader_five": {
-          "alt": "Jhisel Holguin, FATV Leader - Ver+ Scholars, with a friendly smile.",
-          "areaLeader": "FATV Leader - Ver+ Scholars",
-          "description": "Provides specialized support to scholars in the Ver+ scholarship program."
-        },
-        "leader_six": {
-          "alt": "Mateo Arias, FATV Leader - Ver+ Scholars, with a friendly smile.",
-          "areaLeader": "FATV Leader - Ver+ Scholars",
-          "description": "Supports the academic follow-up and development of scholars in the Ver+ program."
-        },
-        "leader_seven": {
           "alt": "Carolina Pérez, FATV Leader - Fraternidad Medellín Scholars, with a friendly smile.",
           "areaLeader": "FATV Leader - Fraternidad Medellín Scholars",
-          "description": "Leads the support and guidance for Fraternidad Medellín scholars throughout their educational journey."
+          "description": "Leads the support for Fraternidad Medellín scholars across various fields of study, strengthening their academic journey and university retention."
         },
-        "leader_eight": {
+        "leader_six": {
           "alt": "Nathalia Revelo, FATV Leader - Aurelio Llano Foundation Scholars, with a friendly smile.",
           "areaLeader": "FATV Leader - Aurelio Llano Foundation Scholars",
-          "description": "Manages the scholarship program for the Aurelio Llano Foundation."
+          "description": "Leads the support for Aurelio Llano Foundation scholars, promoting access and retention for students from rural backgrounds."
+        },
+        "leader_seven": {
+          "alt": "Jhisel Holguin, FATV Leader - Ver+ Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Ver+ Scholars",
+          "description": "Leads the support for Ver+ program scholars, focusing on systems engineering and related fields."
+        },
+        "leader_eight": {
+          "alt": "Mateo Arias, FATV Leader - Ver+ Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Ver+ Scholars",
+          "description": "Leads the psychosocial and educational monitoring of Ver+ program scholars, strengthening their development in technological fields."
         }
       }
     }
