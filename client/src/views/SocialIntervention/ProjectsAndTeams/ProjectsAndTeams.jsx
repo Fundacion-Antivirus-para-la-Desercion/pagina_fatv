@@ -133,16 +133,17 @@ function ProjectsAndTeams() {
                 <p className="relative text-white text-lg leading-relaxed text-center md:text-left mt-10">
                   {t(activeProject.card.description)}
                 </p>
-                <div className="relative mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div className="relative mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
                   {activeProject.card.stats.map((stat, i) => (
                     <div
                       key={i}
-                      className="bg-[#f6f6f650] rounded-2xl p-4 md:p-5 items-center justify-center flex flex-col hover:scale-105 transition-transform duration-300"
+                      className="flex flex-col items-center justify-center rounded-2xl bg-[#f6f6f650] p-5 sm:p-6 border border-white/10 hover:border-white/40 transition-colors duration-300"
                     >
-                      <p className="text-2xl md:text-3xl  text-white font-impact">
+                      <p className="text-3xl sm:text-4xl text-white font-impact leading-none">
                         {stat.value}
                       </p>
-                      <p className="text-xs md:text-sm text-white mt-1">
+
+                      <p className="mt-2 text-sm text-white/80 max-w-[140px]">
                         {t(stat.label)}
                       </p>
                     </div>
