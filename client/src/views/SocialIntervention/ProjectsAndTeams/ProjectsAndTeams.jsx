@@ -6,7 +6,9 @@ import { PiMedal } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLogoLinkedin } from "react-icons/io";
+import { TiHeart } from "react-icons/ti";
 import Javi from "../../../assets/images/views/javi/javi-guina-el-ojo.svg";
+import JaviEsquina from "../../../assets/images/views/javi/javi-esquina-derecha.webp";
 
 import { motion, AnimatePresence } from "framer-motion";
 import data from "./data";
@@ -56,8 +58,25 @@ function ProjectsAndTeams() {
 
   return (
     <>
-      <section className="pt-10 md:pt-14">
-        <div className="text-center">
+      <section className="relative pt-10 md:pt-14">
+        <img
+          className="absolute h-[200px] md:h-[340px] mx-auto right-0 top-52 md:-top-16 z-0"
+          src={JaviEsquina}
+          alt=""
+        />
+
+        <div className="hidden lg:block">
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full top-10 left-5"
+          ></motion.div>
+
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full top-44 left-44"
+          ></motion.div>
+        </div>
+        <div className="relative text-center">
           <span className="text-lg text-primary-yellow font-impact">
             {t("socialIntervention.projectsAndTeams.span")}
           </span>
@@ -69,7 +88,7 @@ function ProjectsAndTeams() {
           </p>
         </div>
 
-        <section className="p-3 md:p-0">
+        <section className="p-3">
           <div className="flex-col md:flex-row flex items-center justify-center mt-10 gap-1 md:gap-5">
             {data.map((project, index) => (
               <button
@@ -82,8 +101,7 @@ function ProjectsAndTeams() {
               </button>
             ))}
           </div>
-
-          <section className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+          <section className="relative grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-10 gap-5">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -91,24 +109,34 @@ function ProjectsAndTeams() {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="mt-8 max-w-3xl mx-auto bg-dark-blue rounded-2xl shadow-lg p-10 m-10"
+                className="relative mt-8 max-w-3xl mx-auto bg-dark-blue rounded-3xl shadow-lg z-10 p-8"
               >
-                <div className="flex items-center gap-3 mb-5">
-                  <span className="text-4xl text-white bg-[#f6f6f61e] rounded-2xl p-5">
+                <div
+                  className="absolute inset-0 z-1 rounded-3xl"
+                  style={{
+                    backgroundImage: `
+        linear-gradient(to right, #2F3863 1px, transparent 1px),
+        linear-gradient(to bottom, #2F3863 1px, transparent 1px)
+      `,
+                    backgroundSize: "48px 48px, 48px 48px",
+                  }}
+                />
+                <div className="relative flex items-center gap-3 mb-5">
+                  <span className="text-4xl text-white bg-[#f6f6f650] rounded-2xl p-5">
                     {icons[activeProject.card.icon]}
                   </span>
                   <h3 className="text-4xl font-impact text-white">
                     {t(activeProject.card.title)}
                   </h3>
                 </div>
-                <p className="text-white text-lg leading-relaxed text-center md:text-left m-5">
+                <p className="relative text-white text-lg leading-relaxed text-center md:text-left m-5">
                   {t(activeProject.card.description)}
                 </p>
-                <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                <div className="relative mt-6 grid grid-cols-3 gap-4 text-center">
                   {activeProject.card.stats.map((stat, i) => (
                     <div
                       key={i}
-                      className="bg-[#f6f6f61e] rounded-2xl p-5 items-center justify-center flex flex-col"
+                      className="bg-[#f6f6f650] rounded-2xl p-5 items-center justify-center flex flex-col"
                     >
                       <p className="text-2xl md:text-4xl font-bold text-white font-impact">
                         {stat.value}
@@ -121,32 +149,49 @@ function ProjectsAndTeams() {
                 </div>
               </motion.div>
             </AnimatePresence>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeIndex}
+                variants={cardVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="text-center"
+              >
+                <h4 className="text-3xl md:text-4xl text-dark-blue font-impact"></h4>
+                <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
+                  {activeProject.cardAllies &&
+                    activeProject.cardAllies.map((ally, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl  z-10 hover:scale-105 transition-all duration-500 hover:border-t-dark-blue hover:border-t-8"
+                      >
+                        <img
+                          src={ally.logo}
+                          alt={t(ally.name)}
+                          className="h-16 md:h-20 object-contain"
+                        />
+                      </div>
+                    ))}
+                </div>
+              </motion.div>
+            </AnimatePresence>
+            <motion.div
+              {...floatSnake(0)}
+              className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full -bottom-5 left-5"
+            ></motion.div>
 
-            <div className="text-center">
-              <h4 className="text-3xl md:text-4xl text-dark-blue font-impact"></h4>
-              <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
-                {activeProject.cardAllies &&
-                  activeProject.cardAllies.map((ally, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl"
-                    >
-                      <img
-                        src={ally.logo}
-                        alt={t(ally.name)}
-                        className="h-20 object-contain"
-                      />
-                    </div>
-                  ))}
-              </div>
-            </div>
+            <motion.div
+              {...floatSnake(0)}
+              className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full -bottom-24 left-5"
+            ></motion.div>
           </section>
         </section>
 
         {activeProject.cardProjectLeader &&
           activeProject.cardProjectLeader.length > 0 && (
             <section>
-              <div className="flex items-center justify-center mt-10">
+              <div className="flex items-center justify-center mt-12 md:mt-10">
                 <motion.div {...floatSnake()}>
                   <img
                     className="h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
@@ -154,7 +199,7 @@ function ProjectsAndTeams() {
                     alt="Javi Guinando"
                   />
                 </motion.div>
-                <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact m-10">
+                <h6 className="text-3xl md:text-5xl text-dark-blue text-center font-impact ml-5">
                   {t("socialIntervention.projectsAndTeams.leaders.title")}
                 </h6>
               </div>
