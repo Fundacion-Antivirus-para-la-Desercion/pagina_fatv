@@ -1,4 +1,3 @@
-import { LuLinkedin } from "react-icons/lu";
 import UDEA from "../../../../public/logos_alianzas/udea-horizontal.webp";
 import FUDEA from "../../../../public/logos_alianzas/fundacion-universidad-de-antioquia.webp";
 import UNAL from "../../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg";

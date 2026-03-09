@@ -6,7 +6,6 @@ import { PiMedal } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLogoLinkedin } from "react-icons/io";
-import { TiHeart } from "react-icons/ti";
 import Javi from "../../../assets/images/views/javi/javi-guina-el-ojo.svg";
 import JaviEsquina from "../../../assets/images/views/javi/javi-esquina-derecha.webp";
 

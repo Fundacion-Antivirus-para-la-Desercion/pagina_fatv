@@ -91,7 +91,7 @@ function Description() {
                     <div>
                       <PiHeartStraight className="p-2 text-4xl md:text-5xl text-primary-yellow bg-yellow-100 rounded-xl" />
                     </div>
-                    <div className="felx flex-col text-center">
+                    <div className="flex flex-col text-center">
                       <span className="text-md md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
                         +500
                       </span>
