@@ -445,6 +445,152 @@
       "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator"
     }
   },
+  "socialIntervention": {
+    "span": "AREAS OF INTEGRATION",
+    "title": "SOCIAL INTERVENTION",
+    "figure": "Interventions this year",
+    "description": "We use a methodology based on a deep understanding of each individual's unique characteristics. Through a detailed analysis of their historical, social, economic, socio-emotional, and academic context, we design specific interventions that allow them to improve significantly.",
+    "socialData": {
+      "item_one": {
+        "title": "Contextual Analysis",
+        "description": "We evaluate each student's historical, social, economic, socio-emotional, and academic context."
+      },
+      "item_two": {
+        "title": "Personalized Support",
+        "description": "We design specific interventions tailored to the unique needs of each individual."
+      },
+      "item_three": {
+        "title": "Active Listening",
+        "description": "We provide safe spaces where students can express their concerns and goals."
+      },
+      "item_four": {
+        "title": "Support Network",
+        "description": "We connect students with institutional, family, and community resources."
+      },
+      "item_five": {
+        "title": "Vocational Guidance",
+        "description": "We guide sociovocational decision-making for a solid professional future."
+      },
+      "item_six": {
+        "title": "Ongoing Monitoring",
+        "description": "We conduct constant monitoring to ensure the student's progress and well-being."
+      }
+    },
+    "metrics": {
+      "span": "OUR IMPACT",
+      "title": "FIGURES THAT TRANSFORM REALITIES",
+      "description": "Each number represents a story of overcoming, a hopeful family, and a professional future built with dedication and comprehensive support.",
+      "metricsData": {
+        "metrict_one": {
+          "span": "STUDENT RETENTION",
+          "description": "Student retention rate achieved thanks to our comprehensive support interventions."
+        },
+        "metrict_two": {
+          "span": "STUDENTS",
+          "description": "Young people supported through our social and academic programs."
+        },
+        "metrict_three": {
+          "span": "DECISIONS",
+          "description": "Career and academic guidance to shape our students' future."
+        },
+        "metrict_four": {
+          "span": "SATISFACTION",
+          "description": "of students report significant improvements in their academic and emotional well-being."
+        },
+        "metrict_five": {
+          "span": "GRADUATES",
+          "description": "Students who successfully completed their studies with our support."
+        },
+        "metrict_six": {
+          "span": "ALLIES",
+          "description": "Educational institutions and organizations joined in our mission to prevent student dropout."
+        }
+      }
+    },
+    "projectsAndTeams": {
+      "span": "WHAT WE OFFER",
+      "title": "PROJECTS AND TEAMS",
+      "description": "We work across all educational levels with a team dedicated to transforming every student's life.",
+      "projectsCards": {
+        "label_stats": {
+          "students": "Students",
+          "retention": "Student Retention",
+          "institutions": "Institutions",
+          "higher_education": "Higher Education Continuity"
+        },
+        "one": {
+          "title_button": "Universities",
+          "title": "Universities",
+          "description": "Comprehensive support for college students to ensure retention and academic success."
+        },
+        "two": {
+          "title_button": "High Schools",
+          "title": "High Schools",
+          "description": "Social and vocational support for students to build their future and transition into higher education."
+        },
+        "three": {
+          "title_button": "Bootcamps",
+          "title": "Bootcamps",
+          "description": "Comprehensive support for bootcamp students to ensure they stay on track and succeed in tech training."
+        },
+        "four": {
+          "title_button": "Scholarship Programs",
+          "title": "Scholarship Programs",
+          "description": "Comprehensive support for scholarship program students to ensure retention and academic success."
+        }
+      },
+      "leaders": {
+        "title": "OUR TEAM",
+        "spans_subtitle": {
+          "spanOne": "University Leaders",
+          "spanTwo": "High School Leaders",
+          "spanThree": "Bootcamp Leaders",
+          "spanFour": "Scholarship Program Leaders"
+        },
+        "leader_one": {
+          "alt": "Astrid Franco, Social Coordinator, with a friendly smile.",
+          "position": "LEADERSHIP",
+          "department": "Social Area Coordinator",
+          "description": "Coordinates social intervention projects, ensuring comprehensive support for students through strategies focused on student retention."
+        },
+        "leader_two": {
+          "alt": "Daniela Arias, FATV Leader - UdeA, with a friendly smile.",
+          "areaLeader": "FATV Leader - Universidad de Antioquia",
+          "description": "Leads the FATV program at the Universidad de Antioquia, supporting the adaptation and retention processes for Systems Engineering students."
+        },
+        "leader_three": {
+          "alt": "Jesica Cano, FATV Leader - UNAL, with a friendly smile.",
+          "areaLeader": "FATV Leader - Universidad Nacional",
+          "description": "Leads the FATV program at the Universidad Nacional, promoting comprehensive support and student retention for Systems Engineering students."
+        },
+        "leader_four": {
+          "alt": "Samaider Hoyos, FATV Leader - Schools, with a friendly smile.",
+          "areaLeader": "FATV Leader - Schools",
+          "description": "Leads socio-vocational interventions in high schools to strengthen students' educational paths."
+        },
+        "leader_five": {
+          "alt": "Carolina Pérez, FATV Leader - Fraternidad Medellín Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Fraternidad Medellín Scholars",
+          "description": "Leads the support for Fraternidad Medellín scholars across various fields of study, strengthening their academic journey and university retention."
+        },
+        "leader_six": {
+          "alt": "Nathalia Revelo, FATV Leader - Aurelio Llano Foundation Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Aurelio Llano Foundation Scholars",
+          "description": "Leads the support for Aurelio Llano Foundation scholars, promoting access and retention for students from rural backgrounds."
+        },
+        "leader_seven": {
+          "alt": "Jhisel Holguin, FATV Leader - Ver+ Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Ver+ Scholars",
+          "description": "Leads the support for Ver+ program scholars, focusing on systems engineering and related fields."
+        },
+        "leader_eight": {
+          "alt": "Mateo Duque, FATV Leader - Ver+ Scholars, with a friendly smile.",
+          "areaLeader": "FATV Leader - Ver+ Scholars",
+          "description": "Leads the psychosocial and educational monitoring of Ver+ program scholars, strengthening their development in technological fields."
+        }
+      }
+    }
+  },
   "qhfa": {
     "page_title": "what we do",
     "our_model": "OUR MODEL",
