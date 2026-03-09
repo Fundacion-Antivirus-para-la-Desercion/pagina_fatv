@@ -303,7 +303,7 @@ const projectsData = [
       {
         photo: MateoD,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_eight.alt",
-        name: "Mateo Arias",
+        name: "Mateo Duque",
         areaLeader:
           "socialIntervention.projectsAndTeams.leaders.leader_eight.areaLeader",
         description:

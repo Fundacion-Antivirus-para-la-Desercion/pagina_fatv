@@ -102,6 +102,7 @@ function ProjectsAndTeams() {
             ))}
           </div>
           {/* Card projects */}
+
           <section className="relative grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-2 md:mt-10 gap-5 mb-5">
             <AnimatePresence mode="wait">
               <motion.div
@@ -137,7 +138,7 @@ function ProjectsAndTeams() {
                   {activeProject.card.stats.map((stat, i) => (
                     <div
                       key={i}
-                      className="flex flex-col items-center justify-center rounded-2xl bg-[#f6f6f650] p-5 sm:p-6 border border-white/10 hover:border-white/40 transition-colors duration-300"
+                      className="flex flex-col items-center justify-center rounded-2xl bg-[#f6f6f650] p-5 sm:p-6 border-2 border-white/10 hover:border-white/50 transition-colors duration-300"
                     >
                       <p className="text-3xl sm:text-4xl text-white font-impact leading-none">
                         {stat.value}
@@ -191,7 +192,6 @@ function ProjectsAndTeams() {
             ></motion.div>
           </section>
         </section>
-
         {activeProject.cardProjectLeader &&
           activeProject.cardProjectLeader.length > 0 && (
             <section>
@@ -209,7 +209,7 @@ function ProjectsAndTeams() {
               </div>
 
               {/* Card leaders */}
-              <section className="relative grid grid-cols-1 lg:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
+              <section className="relative grid grid-cols-1 xl:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
                 <div className="z-10 flex flex-col">
                   {activeProject.cardProjectLeader &&
                     activeProject.cardProjectLeader.map((leader, index) => (
@@ -270,10 +270,10 @@ function ProjectsAndTeams() {
                     ))}
                 </div>
                 <div
-                  className={`mt-16 lg:mt-0 relative z-10 bg-dark-blue grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg ${
+                  className={`mt-16 lg:mt-0 relative z-10 bg-dark-blue grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg min-w-0 ${
                     activeProject.cardAreaLead?.length === 1
                       ? "grid-cols-1 place-items-center"
-                      : "grid-cols-1 lg:grid-cols-2"
+                      : "grid-cols-1 xl:grid-cols-2"
                   }`}
                 >
                   <div
@@ -287,7 +287,7 @@ function ProjectsAndTeams() {
                     }}
                   />
                   {activeProject.spanAreaLeaders && (
-                    <span className="absolute -top-12 left-1 text-2xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-2 rounded-xl">
+                    <span className="absolute -top-10 md:-top-12 left-1 text-xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-1 md:-rotate-2 rounded-xl">
                       {t(
                         activeProject.spanAreaLeaders.find(
                           (spanAreaLeaders) => spanAreaLeaders.span,
@@ -299,18 +299,18 @@ function ProjectsAndTeams() {
                     activeProject.cardAreaLead.map((leader, index) => (
                       <div
                         key={index}
-                        className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow  hover:scale-105 transition-transform duration-300 max-w-md w-full mx-auto"
+                        className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow  hover:scale-105 transition-transform duration-300 max-w-md w-full mx-auto min-w-0"
                       >
-                        <div className="flex flex-col lg:flex-row items-center md:items-start gap-4">
+                        <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
                           <img
                             src={leader.photo}
                             alt={t(leader.alt)}
                             className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-gray-100 shadow-sm"
                           />
-                          <div className="text-center md:text-left">
-                            <h4 className="text-xl font-extrabold text-dark-blue leading-tight">
+                          <div className="text-center md:text-left break-words">
+                            <span className="text-xl font-extrabold text-dark-blue leading-tight">
                               {t(leader.name)}
-                            </h4>
+                            </span>
                             <p className="text-base font-bold text-primary-yellow mt-1">
                               {t(leader.areaLeader)}
                             </p>
