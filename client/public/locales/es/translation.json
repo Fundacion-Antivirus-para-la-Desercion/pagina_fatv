@@ -446,6 +446,161 @@
       "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
     }
   },
+  "socialIntervention": {
+    "span": "ÁREAS DE ARTICULACÓN",
+    "title": "INTERVENCIÓN SOCIAL",
+    "figure": "Intervenciones este año",
+    "description": "Utilizamos una metodología basada en la comprensión profunda de las particularidades de cada individuo, a través de un análisis detallado de su contexto histórico, social, económico, socioemocional y académico, para diseñar intervenciones específicas que les permitan mejorar significativamente.",
+    "socialData": {
+      "item_one": {
+        "title": "Análisis Contextual",
+        "description": "Evaluamos el contexto histórico, social, económico, socioemocional y académico de cada estudiante."
+      },
+      "item_two": {
+        "title": "Acompañamiento Personalizado",
+        "description": "Diseñamos intervenciones específicas adaptadas a las necesidades particulares de cada individuo."
+      },
+      "item_three": {
+        "title": "Escucha Activa",
+        "description": "Brindamos espacios seguros donde los estudiantes pueden expresar sus preocupaciones y metas."
+      },
+      "item_four": {
+        "title": "Red de Apoyo",
+        "description": "Conectamos a los estudiantes con recursos institucionales, familiares y comunitarios."
+      },
+      "item_five": {
+        "title": "Orientación Vocacional",
+        "description": "Guiamos en la toma de decisiones sociovocacionales para un futuro profesional sólido."
+      },
+      "item_six": {
+        "title": "Seguimiento Continuo",
+        "description": "Realizamos monitoreo constante para asegurar el progreso y bienestar del estudiante."
+      }
+    },
+    "metrics": {
+      "span": "NUESTRO IMPACTO",
+      "title": "CIFRAS QUE TRANSFORMAN REALIDADES",
+      "description": "Cada número representa una historia de superación, una familia esperanzada y un futuro profesional construido con dedicación y apoyo integral.",
+      "metricsData": {
+        "metrict_one": {
+          "span": "PERMANENCIA",
+          "description": "Tasa de permanencia estudiantil lograda gracias a nuestras intervenciones de acompañamiento integral."
+        },
+        "metrict_two": {
+          "span": "ESTUDIANTES",
+          "description": "Jóvenes apoyados a través de nuestros programas de intervención social y apoyo académico."
+        },
+        "metrict_three": {
+          "span": "DECISIONES",
+          "description": "Decisiones sociovocacionales acompañadas para orientar el futuro profesional de nuestros estudiantes."
+        },
+        "metrict_four": {
+          "span": "SATISFACCIÓN",
+          "description": "De los estudiantes reportan mejoras significativas en su bienestar académico y emocional."
+        },
+        "metrict_five": {
+          "span": "GRADUADOS",
+          "description": "Estudiantes que completaron exitosamente sus estudios con nuestro acompañamiento."
+        },
+        "metrict_six": {
+          "span": "ALIADOS",
+          "description": "Instituciones educativas y organizaciones aliadas en nuestra misión contra la deserción estudiantil."
+        }
+      }
+    },
+    "cardAllies": {
+      "title": "INSTITUCIONES ALIADAS"
+    },
+    "projectsAndTeams": {
+      "span": "NUESTRO ALCANCE",
+      "title": "PROYECTOS Y EQUIPOS",
+      "description": "Trabajamos en diferentes niveles educativos con un equipo comprometido en transformar la vida de cada estudiante.",
+      "projectsCards": {
+        "label_stats": {
+          "students": "Estudiantes",
+          "retention": "Permanencia",
+          "institutions": "Instituciones",
+          "higher_education": "Continuidad a educación Superior"
+        },
+        "one": {
+          "title_button": "Universidades",
+          "title": "Universidades",
+          "description": "Acompañamiento integral a estudiantes de educación superior para garantizar su permanencia y éxito académico."
+        },
+        "two": {
+          "title_button": "Colegios",
+          "title": "Colegios",
+          "description": "Acompañamiento sociovocacional a estudiantes de educación básica y media para fortalecer su proyecto de vida y su transición a la educación superior."
+        },
+        "three": {
+          "title_button": "Bootcamps",
+          "title": "Bootcamps",
+          "description": "Acompañamiento integral a estudiantes de bootcamps para promover su permanencia y éxito en procesos de formación tecnológica."
+        },
+        "four": {
+          "title_button": "Programas de Becarios",
+          "title": "Programas de Becarios",
+          "description": "Acompañamiento integral a estudiantes de programas de becas para garantizar su permanencia y éxito académico."
+        },
+        "labels_stats": {
+          "students": "Estudiantes",
+          "retention": "Permanencia",
+          "institutions": "Instituciones",
+          "higher_education": "Continuidad a educación Superior"
+        }
+      },
+      "leaders": {
+        "title": "NUESTRO EQUIPO",
+        "spans_subtitle": {
+          "spanOne": "Líderes de Universidades",
+          "spanTwo": "Líderes de Colegios",
+          "spanThree": "Líderes de Bootcamps",
+          "spanFour": "Líderes de Programas de Becarios"
+        },
+        "leader_one": {
+          "alt": "Astrid Franco, coordinadora social, sonriendo amable.",
+          "position": "LIDERAZGO",
+          "department": "Coordinadora del Área Social",
+          "description": "Coordina los proyectos del equipo de intervención social, garantizando el acompañamiento integral de los estudiantes mediante estrategias orientadas a la permanencia estudiantil."
+        },
+        "leader_two": {
+          "alt": "Daniela Arias, líder FATV - UdeA, sonriendo amable.",
+          "areaLeader": "Lider FATV - Universidad de Antioquia",
+          "description": "Lidera el programa FATV en la Universidad de Antioquia, acompañando los procesos de adaptación y permanencia de los estudiantes de Ingeniería de Sistemas."
+        },
+        "leader_three": {
+          "alt": "Jesica Cano, líder FATV - UNAL, sonriendo amable.",
+          "areaLeader": "Lider FATV - Universidad Nacional",
+          "description": "Lidera el programa FATV en la Universidad Nacional, promoviendo el acompañamiento integral y la permanencia estudiantil de los estudiantes de Ingeniería de Sistemas."
+        },
+        "leader_four": {
+          "alt": "Samaider Hoyos, líder FATV - Colegios, sonriendo amable.",
+          "areaLeader": "Lider FATV - Colegios",
+          "description": "Lidera las intervenciones sociovocacionales en educación media para fortalecer las trayectorias educativas de los estudiantes."
+        },
+        "leader_five": {
+          "alt": "Carolina Pérez, líder FATV - Becarios Fraternidad Medellín, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Fraternidad Medellín",
+          "description": "Lidera el acompañamiento a becarios de Fraternidad Medellín de distintas áreas del conocimiento, fortaleciendo su trayectoria académica y permanencia universitaria."
+        },
+        "leader_six": {
+          "alt": "Nathalia Revelo, líder FATV - Becarios Fundación Aurelio Llano, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Fundación Aurelio Llano",
+          "description": "Lidera el acompañamiento a becarios de la Fundación Aurelio Llano, promoviendo el acceso y la permanencia de estudiantes provenientes de contextos rurales."
+        },
+        "leader_seven": {
+          "alt": "Jhisel Holguin, líder FATV - Becarios Ver+, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Ver+",
+          "description": "Lidera el acompañamiento a becarios del programa Ver+, enfocado en estudiantes de ingeniería de sistemas y áreas afines."
+        },
+        "leader_eight": {
+          "alt": "Mateo Duque, líder FATV - Becarios Ver+, sonriendo amable.",
+          "areaLeader": "Lider FATV - Becarios Ver+",
+          "description": "Lidera el seguimiento psicosocial y formativo de los becarios del programa Ver+, fortaleciendo su desarrollo en áreas tecnológicas."
+        }
+      }
+    }
+  },
   "qhfa": {
     "page_title": "lo que hacemos",
     "our_model": "NUESTRO MODELO",
@@ -602,25 +757,6 @@
       "descriptionPillarTwo": "Establecemos métricas claras y sistemas de seguimiento que demuestran el retorno de inversión de cada estrategia implementada.",
       "titlePillarThree": "Innovación Educativa",
       "descriptionPillarThree": "Aplicamos las mejoras prácticas internacionales adaptadas a la realidad local, garantizando soluciones efectivas y sostenibles."
-    },
-    "why_choose_us": {
-      "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
-      "titlle_span": " TU INSTITUCIÓN?",
-      "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil.",
-      "cards": {
-        "methodology_title": "Metodología Comprobada",
-        "methodology_description": "Nuestras estrategias están respaldadas por por años de experiencia y resultados medibles en instituciones educativas de todo el país.",
-        "focus_title": "Enfoque en Resultados",
-        "focus_description": "Trabajamos con KPIs claros: reducción de deserción aumento de tasas de graduación y mejora en la satisfacción estudiantil.",
-        "accompaniment_title": "Acompañamiento Integral",
-        "accompaniment_description": "No solo diseñamos estrategias, las implementamos junto a tu equipo garantizando la transferencia de conocimiento.",
-        "experience_title": "Experiencia especializada",
-        "experience_description": "Hemos trabajado con universidades, bootcamps, colegios y programas de becas, entendiendo las particularidades de cada contexto.",
-        "solutions_title": "Soluciones Personalizadas",
-        "solutions_description": "Cada institución es única. Diseñamos estrategias adaptadas a tu realidad, cultura organizacional y objetivos específicos.",
-        "innovation_title": "Innovación Continua",
-        "innovation_description": "Incorporamos las últimas tendencias en educación y tecnología para mantener tus programas a la vanguardia."
-      }
     }
   },
   "studentRetentionManagement": {

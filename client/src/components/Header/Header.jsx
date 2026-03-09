@@ -226,7 +226,7 @@ function Header() {
               {t("header.sub_header.data_analytics")}
             </Link>
             <Link
-              to="/intervencion/fortalecimiento-academico"
+              to="/social-intervention"
               onClick={handleNav}
               className="font-impact border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer"
             >
@@ -444,7 +444,7 @@ function Header() {
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
-                  to="/intervencion/fortalecimiento-academico"
+                  to="/social-intervention"
                   onClick={handleNav}
                 >
                   {t("header.sub_header.socio_emotional_intervention")}

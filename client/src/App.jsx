@@ -25,6 +25,7 @@ import AtvConnect from "./views/atv_connect/AtvConnect.jsx";
 import News from "./components/News/News";
 import NewsDetail from "./views/NewsDetail.jsx";
 import StudentRetentionManagement from "./views/StudentRetentionManagement.jsx";
+import SocialIntervention from "./views/SocialIntervention/SocialIntervention.jsx";
 
 function App() {
   return (
@@ -33,10 +34,11 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/DonationPay" element={<DonationPay />} />
-          <Route
+          {/*<Route
             path="/intervencion/fortalecimiento-academico"
             element={<QHFA />}
-          />
+          />*/}
+          <Route path="/social-intervention" element={<SocialIntervention />} />
           <Route path="/dataAnalyctis" element={<DataAnalytics />} />
           <Route path="/Comunicaciones" element={<Communications_ATV />} />
           <Route path="/fundacion" element={<Foundation />} />
