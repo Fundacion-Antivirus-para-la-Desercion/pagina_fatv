@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
 import "./consultoria.css";
+import card from "../../assets/images/views/consultorias/card-p.webp";
+
 
 function Consultorias() {
   const { t } = useTranslation();
@@ -196,11 +198,13 @@ function Consultorias() {
         </div>
 
         <motion.div {...slideFromTop}>
-          <div className="relative grid grid-cols-1 md:grid-cols-3 mt-10 gap-8 md:gap-5 mx-auto justify-center items-center">
+          <div className="relative flex flex-wrap mt-10 gap-8 md:gap-5 mx-auto justify-center items-center">
             {pillarsData.map((pillarsData, index) => (
-              <section className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 bg-[url('/src/assets/images/views/consultorias/card-p.webp')] bg-cover min-w-[300px] max-w-[450px] min-h-[280px]">
-                <div key={index}>
-                  <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
+              <section className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 min-w-[300px] max-w-[450px] min-h-[280px]">
+                <img src={card} alt="Card background" className="absolute inset-0 w-full h-full rounded-3xl" />
+                <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
+                <div key={index} className="relative">
+                  
 
                   <h4 className="bg-dark-blue text-white rounded-3xl p-2 text-xl md:text-2xl mb-3">
                     {pillarsData.title}
