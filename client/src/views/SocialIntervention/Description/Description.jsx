@@ -100,7 +100,7 @@ function Description() {
                 </p>
               </section>
 
-              <motion.div {...slideFromRight()}>
+              <motion.div {...slideFromRight({ viewport: { amount: 0.1 } })}>
                 <section className="grid grid-cols-1 justify-center lg:grid-cols-2 gap-3 mt-5">
                   {socialData.map((socialData, index) => (
                     <div
