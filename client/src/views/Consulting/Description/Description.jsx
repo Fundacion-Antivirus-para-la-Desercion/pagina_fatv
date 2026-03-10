@@ -34,7 +34,7 @@ function Description() {
     },
   });
 
-   const slideFromTop = {
+  const slideFromTop = {
     initial: { opacity: 0, y: -100 },
     whileInView: { opacity: 1, y: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
@@ -126,7 +126,7 @@ function Description() {
   ];
   return (
     <>
-      <section className="relative bg-[#F6F6F6] grid grid-cols-1 md:grid-cols-2 md:items-stretch md:gap-16 p-8 md:py-20">
+      <section className="relative bg-[#F6F6F6] grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
         <div
           className="absolute inset-0 z-1"
           style={{
@@ -146,24 +146,27 @@ function Description() {
               </span>
             </h2>
 
-            <p className="relative text-lg text-blue-base text-center md:text-left mt-10">
+            <p className="relative text-xl text-blue-base text-center md:text-left mt-10">
               {t("consultorias.description.description_general")}
             </p>
           </div>
 
-          <motion.section {...slideFromTop} className="relative grid grid-cols-1 md:grid-cols-2 gap-5 justify-center mt-5 mb-5 md:mb-0">
+          <motion.section
+            {...slideFromTop}
+            className="relative grid grid-cols-1 md:grid-cols-2 gap-5 justify-center mt-5 mb-5 md:mb-0"
+          >
             {consultingData.map((consultingData, index) => (
               <div
                 key={index}
-                className="relative bg-white p-5 rounded-2xl shadow-lg max-w-md block mx-auto hover:shadow-2xl transition duration-300"
+                className="relative bg-white p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300"
               >
-                <div className="flex items-center">
-                  <span className="flex items-center justify-center bg-primary-yellow text-white text-lg font-bold p-3 mr-3 rounded-2xl w-10 h-10">
+                <div className="flex flex-col md:flex-row items-center mb-4">
+                  <span className="flex items-center justify-center bg-primary-yellow text-white text-xl font-bold p-3 mr-3 rounded-lg w-10 h-10 mb-5 md:mb-0">
                     {consultingData.item}
                   </span>
-                  <h4 className="text-blue-base font-semibold text-lg">
+                  <span className="text-blue-base text-lg md:text-xl font-bold">
                     {consultingData.title}
-                  </h4>
+                  </span>
                 </div>
 
                 <p className="text-blue-base text-base m-3 text-center">
@@ -174,89 +177,90 @@ function Description() {
           </motion.section>
         </section>
 
-        <section className="relative">
-          <motion.div
-            {...floatSnake(1)}
-            className="group z-10 absolute -right-10 top-10 w-20 md:w-36"
-          >
-            <div className="bg-[#f6f6f6cb] p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
-              <span
-                className="absolute -top-10 left-1/2 -translate-x-1/2 
-                   scale-0 group-hover:scale-100 transition-all duration-200
-                   bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
-              >
-                FATV <TiHeart className="inline text-base" />
-                <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
-              </span>
-              <div>
-                <LuGraduationCap className="p-2 text-4xl md:text-5xl text-primary-yellow bg-yellow-100 rounded-xl" />
-              </div>
-              <div className="felx flex-col text-center">
-                <span className="text-xl md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
-                  91%
-                </span>
-                <h4 className="text-dark-blue font-semibold text-xs">
-                  {t(
-                    "consultorias.description.imagesConsultingArray.retention_figure",
-                  )}
-                </h4>
-              </div>
-            </div>
-          </motion.div>
-
-          <Swiper
-            modules={[Autoplay, EffectFade]}
-            effect="fade"
-            speed={1000}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-            className="h-full rounded-3xl"
-          >
-            {imagesConsulting?.map((item, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  className="object-cover w-full h-[400px] md:h-full border-[4px] border-solid border-white rounded-3xl shadow-2xl"
-                  src={item.image}
-                  alt={`Slide ${index}`}
-                />
-                <p className="absolute text-sm md:text-lg bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-xl">
-                  <PiShootingStarFill className="text-dark-yellow inline mr-2 text-xl" />
-                  {t(imagesConsulting[index].description)}
-                </p>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <motion.div
-            {...floatSnake(0)}
-            className="group z-10 absolute -left-11 bottom-14 w-20 md:w-36"
-          >
-            <Link
-              to="/ContactUs"
-              className="bg-[#f6f6f6cb] p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all"
+        <section className="relative w-full h-auto">
+          <div className="relative h-fit w-full max-w-[620px] block mx-auto">
+            <motion.div
+              {...floatSnake(1)}
+              className="group z-10 absolute right-2 top-5 md:-right-10 md:top-10 w-20 md:w-36"
             >
-              <span
-                className="absolute -top-10 left-1/2 -translate-x-1/2 
+              <div className="bg-white p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
+                <span
+                  className="absolute -top-10 left-1/2 -translate-x-1/2 
                    scale-0 group-hover:scale-100 transition-all duration-200
                    bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
+                >
+                  FATV <TiHeart className="inline text-base" />
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
+                </span>
+                <div>
+                  <LuGraduationCap className="p-2 text-4xl md:text-5xl text-primary-yellow bg-yellow-100 rounded-xl" />
+                </div>
+                <div className="flex flex-col text-center">
+                  <span className="text-xl md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
+                    91%
+                  </span>
+                  <h4 className="text-dark-blue font-semibold text-xs">
+                    {t(
+                      "consultorias.description.imagesConsultingArray.retention_figure",
+                    )}
+                  </h4>
+                </div>
+              </div>
+            </motion.div>
+            <Swiper
+              modules={[Autoplay, EffectFade]}
+              effect="fade"
+              speed={1000}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
+              className="relative h-full max-w-[620px] mx-auto rounded-3xl"
+            >
+              {imagesConsulting?.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    className="object-cover w-full h-[300px] sm:h-[380px] md:h-[460px] lg:h-[520px] xl:h-[650px] max-h-[650px] border-4 border-white rounded-3xl shadow-2xl block"
+                    src={item.image}
+                    alt={`Slide ${index}`}
+                  />
+                  <p className="absolute text-sm md:text-lg bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-xl">
+                    <PiShootingStarFill className="text-dark-yellow inline mr-2 text-xl" />
+                    {t(imagesConsulting[index].description)}
+                  </p>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <motion.div
+              {...floatSnake(0)}
+              className="group z-10 absolute left-2 bottom-2 md:-left-11 md:bottom-14 w-20 md:w-36"
+            >
+              <Link
+                to="/ContactUs"
+                className="bg-white p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all"
               >
-                Click <MdKeyboardArrowRight className="inline text-base" />
-                <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
-              </span>
+                <span
+                  className="absolute -top-10 left-1/2 -translate-x-1/2 
+                   scale-0 group-hover:scale-100 transition-all duration-200
+                   bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
+                >
+                  Click <MdKeyboardArrowRight className="inline text-base" />
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
+                </span>
 
-              <div>
-                <IoMdContact className="p-2 text-4xl md:text-5xl text-dark-blue bg-blue-100 rounded-xl" />
-              </div>
-              <div className="flex flex-col md:items-center md:justify-center">
-                <h4 className="text-dark-blue font-semibold text-sm md:text-lg">
-                  {t(
-                    "consultorias.description.imagesConsultingArray.link_see_more",
-                  )}
-                </h4>
-              </div>
-            </Link>
-          </motion.div>
+                <div>
+                  <IoMdContact className="p-2 text-4xl md:text-5xl text-dark-blue bg-blue-100 rounded-xl" />
+                </div>
+                <div className="flex flex-col md:items-center md:justify-center">
+                  <h4 className="text-dark-blue font-semibold text-sm md:text-lg">
+                    {t(
+                      "consultorias.description.imagesConsultingArray.link_see_more",
+                    )}
+                  </h4>
+                </div>
+              </Link>
+            </motion.div>
+          </div>
         </section>
       </section>
     </>
