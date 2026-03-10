@@ -160,7 +160,7 @@ function Description() {
                 key={index}
                 className="relative bg-white p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300"
               >
-                <div className="flex flex-col md:flex-row items-center mb-4">
+                <div className="flex flex-col md:flex-row items-center text-center md:text-left mb-4">
                   <span className="flex items-center justify-center bg-primary-yellow text-white text-xl font-bold p-3 mr-3 rounded-lg w-10 h-10 mb-5 md:mb-0">
                     {consultingData.item}
                   </span>
@@ -181,7 +181,7 @@ function Description() {
           <div className="relative h-fit w-full max-w-[620px] block mx-auto">
             <motion.div
               {...floatSnake(1)}
-              className="group z-10 absolute right-2 top-5 md:-right-10 md:top-10 w-20 md:w-36"
+              className="group z-10 relative ml-auto md:absolute md:-right-10 md:top-10 w-20 md:w-36"
             >
               <div className="bg-white p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
                 <span
@@ -215,7 +215,7 @@ function Description() {
                 delay: 4000,
                 disableOnInteraction: false,
               }}
-              className="relative h-full max-w-[620px] mx-auto rounded-3xl"
+              className="relative h-full max-w-[620px] mx-auto rounded-3xl mb-10"
             >
               {imagesConsulting?.map((item, index) => (
                 <SwiperSlide key={index}>
@@ -233,7 +233,7 @@ function Description() {
             </Swiper>
             <motion.div
               {...floatSnake(0)}
-              className="group z-10 absolute left-2 bottom-2 md:-left-11 md:bottom-14 w-20 md:w-36"
+              className="group z-10 md:absolute md:-left-11 md:bottom-14 w-20 md:w-36"
             >
               <Link
                 to="/ContactUs"
