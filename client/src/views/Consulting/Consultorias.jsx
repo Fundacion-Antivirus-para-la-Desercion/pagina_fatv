@@ -53,22 +53,7 @@ function Consultorias() {
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end pb-20 md:pb-32 px-4">
           <div className="relative w-full flex flex-col md:items-end">
-            <h1
-              className="relative z-10 max-w-4xl text-center md:text-left text-3xl md:text-7xl font-renogare text-white font-extrabold -tracking-wider md:leading-[4rem]"
-              style={{
-                textShadow: `
-          2px 2px 0 #222D56,
-          4px 4px 0 #222D56,
-          6px 6px 0 #222D56,
-          8px 8px 0 #242c57,
-          10px 10px 0 #222D56,
-          12px 12px 0 #222D56,
-          14px 14px 0 #222D56,
-          16px 16px 25px rgba(0,0,0,0.5)
-        `,
-                WebkitTextStroke: "2px #242c57",
-              }}
-            >
+            <h1 className="consultorias-banner-titlee relative z-10 text-center md:text-left text-3xl md:text-7xl font-impact text-white md:leading-[4rem]">
               Consultoría en permanencia estudiantil
             </h1>
           </div>

@@ -7,7 +7,7 @@ export const floatSnake = ({
   initial: { y: -10, ...initial },
   animate: { y: [0, -25, 0], ...animate },
   transition: {
-    duration: 0.6,
+    duration: 2.6,
     repeat: Infinity,
     ease: "linear",
     delay: 0.3,
