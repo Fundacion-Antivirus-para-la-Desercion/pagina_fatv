@@ -8,6 +8,7 @@ import { RiMedal2Fill } from "react-icons/ri";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { slideFromTop } from "../../../components/motion/constants/Animations.js";
 
 function Metrics() {
   const { t } = useTranslation();
@@ -69,20 +70,19 @@ function Metrics() {
     },
   ];
 
-  const slideFromTop = {
-    initial: { opacity: 0, y: -100 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
   return (
     <>
       <section className="relative bg-dark-blue mt-10 p-10">
-        <motion.div {...slideFromTop} className="will-change-transform">
+        <motion.div
+          {...slideFromTop({ viewport: { amount: 0.98 } })}
+          className="will-change-transform"
+        >
           <RiMedal2Fill className="absolute hidden md:block top-0 left-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
         </motion.div>
-        <motion.div {...slideFromTop} className="will-change-transform">
+        <motion.div
+          {...slideFromTop({ viewport: { amount: 0.98 } })}
+          className="will-change-transform"
+        >
           <RiMedal2Fill className="absolute hidden md:block top-0 right-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
         </motion.div>
 
