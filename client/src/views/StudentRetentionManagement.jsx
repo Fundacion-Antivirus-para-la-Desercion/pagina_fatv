@@ -11,6 +11,7 @@ import styles from "./StudentRetentionManagement.module.css";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
 import useImageByLanguage from "../hooks/useImageByLanguage.js";
 import BannerView from "../components/Banner-views/BannerView.jsx";
+import BannerRetentionEn1 from "../assets/images/views/studentretentionManagement/Bannersitioweb_3.jpg.jpeg";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
@@ -54,7 +55,7 @@ function StudentRetentionManagement() {
       <BannerView
         imagesBannerMap={{
           enImage: BannerRetentionEn,
-          esImage: BannerRetentionEs,
+          esImage: BannerRetentionEn1,
           keyTitle: "studentRetentionManagement.alt_img_banner",
         }}
       />
