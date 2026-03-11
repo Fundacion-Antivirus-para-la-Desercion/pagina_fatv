@@ -11,13 +11,13 @@ function SocialIntervention() {
   return (
     <>
       <section className="lg:pt-[145px]">
-       <BannerView
-        imagesBannerMap={{
-          image: BannerSocial,
-          keyAlt: "studentRetentionManagement.alt_img_banner",
-          keyH1: "studentRetentionManagement.title",
-        }}
-      />
+        <BannerView
+          imagesBannerMap={{
+            image: BannerSocial,
+            keyAlt: "studentRetentionManagement.alt_img_banner",
+            keyH1: "studentRetentionManagement.title",
+          }}
+        />
       </section>
       <Description />
       <Metrics />
