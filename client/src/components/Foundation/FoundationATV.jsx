@@ -4,8 +4,7 @@ import imgFB from "../../../public/img_Foundation/imgF.webp";
 import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
-import BannerFoundationEn from "../../assets/images/views/foundation/about-us.webp";
-import BannerFoundationEs from "../../assets/images/views/foundation/sobre-nosotros.webp";
+import BannerFoundation from "../../assets/images/views/foundation/banner-foundation.webp";
 import TeoriaCambio from "../../assets/images/views/foundation/entrega-pc.webp";
 import Valores from "../../assets/images/views/foundation/valores.webp";
 import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
@@ -92,9 +91,9 @@ function FoundationATV() {
     <div className="relative w-full">
       <BannerView
         imagesBannerMap={{
-          enImage: BannerFoundationEn,
-          esImage: BannerFoundationEs,
-          keyTitle: "",
+          image: BannerFoundation,
+          keyAlt: "foundation.foundationATV.alt_img_banner",
+          keyH1: "foundation.foundationATV.title",
         }}
       />
 

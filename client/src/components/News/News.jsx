@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./News.css";
-import BannerNewsEn from "../../assets/images/views/imagesNews/news.webp";
-import BannerNewsEs from "../../assets/images/views/imagesNews/noticias.webp";
+import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import Date from "../../../src/assets/Icons/date.svg";
 import Arrow from "../../../src/assets/Icons/arrow.svg";
 import { useNavigate } from "react-router-dom";
@@ -18,9 +17,9 @@ function News() {
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerNewsEn,
-            esImage: BannerNewsEs,
-            keyTitle: "",
+            image: BannerNews,
+            keyAlt: "studentRetentionManagement.alt_img_banner",
+            keyH1: "studentRetentionManagement.title",
           }}
         />
       </div>

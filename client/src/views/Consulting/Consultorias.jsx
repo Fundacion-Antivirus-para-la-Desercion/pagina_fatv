@@ -1,5 +1,4 @@
 import React from "react";
-import BannerConsultoriasEn from "../../assets/images/views/consultorias/student-retention-consulting.webp";
 import BannerConsulting from "../../assets/images/views/consultorias/banner-consulting.webp";
 import BannerView from "../../components/Banner-views/BannerView";
 import { PiShootingStarFill } from "react-icons/pi";
@@ -8,7 +7,6 @@ import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
 import "./consultoria.css";
 import card from "../../assets/images/views/consultorias/card-p.webp";
-
 
 function Consultorias() {
   const { t } = useTranslation();
@@ -46,24 +44,12 @@ function Consultorias() {
     <>
       <div className="relative lg:pt-[145px] ">
         <BannerView
-          imagesBannerMap={{
-            enImage: BannerConsultoriasEn,
-            esImage: BannerConsulting,
-            keyTitle: "studentRetentionManagement.alt_img_banner",
-          }}
-        />
-
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-end pb-20 md:pb-32 px-4">
-          <div className="relative w-full flex flex-col md:items-end">
-            <h1 className="consultorias-banner-titlee relative z-10 text-center md:text-left text-3xl md:text-7xl font-impact text-white md:leading-[4rem]">
-              Consultoría en permanencia estudiantil
-            </h1>
-          </div>
-
-          <span className="mt-6 px-6 py-2 md:py-2 bg-dark-blue text-white font-semibold text-center text-sm md:text-3xl tracking-wide rounded-full shadow-xl">
-            Fundación Antivirus para la Deserción
-          </span>
-        </div>
+        imagesBannerMap={{
+          image: BannerConsulting,
+          keyAlt: "studentRetentionManagement.alt_img_banner",
+          keyH1: "studentRetentionManagement.title",
+        }}
+      />
       </div>
 
       <Description />
@@ -201,11 +187,13 @@ function Consultorias() {
           <div className="relative flex flex-wrap mt-10 gap-8 md:gap-5 mx-auto justify-center items-center">
             {pillarsData.map((pillarsData, index) => (
               <section className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 min-w-[300px] max-w-[450px] min-h-[280px]">
-                <img src={card} alt="Card background" className="absolute inset-0 w-full h-full rounded-3xl" />
+                <img
+                  src={card}
+                  alt="Card background"
+                  className="absolute inset-0 w-full h-full rounded-3xl"
+                />
                 <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
                 <div key={index} className="relative">
-                  
-
                   <h4 className="bg-dark-blue text-white rounded-3xl p-2 text-xl md:text-2xl mb-3">
                     {pillarsData.title}
                   </h4>

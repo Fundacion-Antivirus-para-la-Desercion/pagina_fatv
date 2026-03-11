@@ -1,6 +1,4 @@
-import BannerQhfaEn from "../../assets/images/views/socialIntervention/social-intervention.webp";
-import BannerQhfaEs from "../../assets/images/views/socialIntervention/intervencion-social.webp";
-
+import BannerSocial from "../../assets/images/views/socialIntervention/banner-social-intervention.webp";
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description";
@@ -13,13 +11,13 @@ function SocialIntervention() {
   return (
     <>
       <section className="lg:pt-[145px]">
-        <BannerView
-          imagesBannerMap={{
-            enImage: BannerQhfaEn,
-            esImage: BannerQhfaEs,
-            keyTitle: "studentRetentionManagement.alt_img_banner",
-          }}
-        />
+       <BannerView
+        imagesBannerMap={{
+          image: BannerSocial,
+          keyAlt: "studentRetentionManagement.alt_img_banner",
+          keyH1: "studentRetentionManagement.title",
+        }}
+      />
       </section>
       <Description />
       <Metrics />

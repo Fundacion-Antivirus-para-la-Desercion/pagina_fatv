@@ -1,7 +1,6 @@
 import { useState, useMemo } from "react";
 import Date from "../assets/Icons/date.svg";
-import BannerNewsEn from "../assets/images/views/imagesNews/news.webp";
-import BannerNewsEs from "../assets/images/views/imagesNews/noticias.webp";
+import BannerNews from "../assets/images/views/imagesNews/banner-news.webp";
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
@@ -38,9 +37,9 @@ function NewsDetail() {
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerNewsEn,
-            esImage: BannerNewsEs,
-            keyTitle: "",
+            image: BannerNews,
+            keyAlt: "studentRetentionManagement.alt_img_banner",
+            keyH1: "studentRetentionManagement.title",
           }}
         />
       </div>

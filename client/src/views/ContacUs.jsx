@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import BannerContacUsEn from "../assets/images/views/contacUs/contact-us.webp";
-import BannerContacUsEs from "../assets/images/views/contacUs/contactanos.webp";
+import BannerContacUs from "../assets/images/views/contacUs/banner-contact-us.webp";
 import imgContact from "../../public/contactUs/contact-image.webp";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from "emailjs-com";
@@ -79,7 +78,7 @@ function ContactUs() {
           "service_ciqn2wp", //  service ID de EmailJS
           "template_oacf6ns", //  template ID de EmailJS
           emailParams,
-          "06in3EAhhtx15iDoZ" //  public key de EmailJS
+          "06in3EAhhtx15iDoZ", //  public key de EmailJS
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -159,9 +158,9 @@ function ContactUs() {
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerContacUsEn,
-            esImage: BannerContacUsEs,
-            keyTitle: "studentRetentionManagement.alt_img_banner",
+            image: BannerContacUs,
+            keyAlt: "studentRetentionManagement.alt_img_banner",
+            keyH1: "studentRetentionManagement.title",
           }}
         />
         <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">

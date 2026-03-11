@@ -1,5 +1,4 @@
-import BannerAtvConnectEn from "../../assets/images/views/atvConnect/academic-tutoring.webp";
-import BannerAtvConnectEs from "../../assets/images/views/atvConnect/tutorias-academicas.webp";
+import BannerAtvConnect from "../../assets/images/views/atvConnect/banner-atv-connect.webp";
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
 import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
@@ -20,9 +19,9 @@ function AtvConnect() {
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerAtvConnectEn,
-            esImage: BannerAtvConnectEs,
-            keyTitle: "studentRetentionManagement.alt_img_banner",
+            image: BannerAtvConnect,
+            keyAlt: "studentRetentionManagement.alt_img_banner",
+            keyH1: "studentRetentionManagement.title",
           }}
         />
       </div>

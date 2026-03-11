@@ -3,7 +3,7 @@ import emocinal1 from "../../public/img_viewQHav/sociopedagogical-image-1.jpg";
 import emocinal2 from "../../public/img_viewQHav/sociopedagogical-image-2.webp";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
 import BannerQhfaEn from "../assets/images/views/socialIntervention/social-intervention.webp";
-import BannerQhfaEs from "../assets/images/views/socialIntervention/intervencion-social.webp";
+import BannerQhfaEs from "../assets/images/views/socialIntervention/banner-social-intervention.webp";
 
 import BannerView from "../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";

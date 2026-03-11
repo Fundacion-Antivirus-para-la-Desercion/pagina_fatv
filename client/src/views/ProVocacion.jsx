@@ -1,5 +1,5 @@
 import styles from "./ProVocacion.module.css";
-import BannerFoundationEn from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
+import BannerProvocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
 import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.webp";
 import Acompañamiento from "../../src/assets/images/views/proVocacion/collage-provocacion.webp";
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
@@ -85,7 +85,7 @@ function ProVocacion() {
           "service_ciqn2wp", //  service ID de EmailJS
           "template_oacf6ns", //  template ID de EmailJS
           emailParams,
-          "06in3EAhhtx15iDoZ" //  public key de EmailJS
+          "06in3EAhhtx15iDoZ", //  public key de EmailJS
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -179,9 +179,9 @@ function ProVocacion() {
       <section className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerFoundationEn,
-            esImage: BannerFoundationEn,
-            keyTitle: "",
+            image: BannerProvocacion,
+            keyAlt: "studentRetentionManagement.alt_img_banner",
+            keyH1: "studentRetentionManagement.title",
           }}
         />
 
@@ -207,9 +207,7 @@ function ProVocacion() {
           >
             {t("provocacion.title_initial")}
           </h1>
-          <p
-            className="text-blue-base text-base md:text-xl tracking-tighter text-justify max-w-prose mx-auto"
-          >
+          <p className="text-blue-base text-base md:text-xl tracking-tighter text-justify max-w-prose mx-auto">
             {t("provocacion.description")}
           </p>
         </div>

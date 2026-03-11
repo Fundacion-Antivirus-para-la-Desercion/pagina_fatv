@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Javi from "../assets/images/views/javi/javi-feliz.svg";
 import JaviGuinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
-import BannerRetentionEn from "../assets/images/views/studentretentionManagement/banner-student-retetion-managment.webp";
-import BannerRetentionEs from "../assets/images/views/studentretentionManagement/banner-gestion-de-la-permanencia.webp";
+import BannerRetention from "../assets/images/views/studentretentionManagement/banner-student-retention.webp";
 import Grupo from "../assets/images/views/studentretentionManagement/manos.webp";
 import Graduado from "../assets/images/views/studentretentionManagement/graduado.webp";
 import { motion, useInView } from "framer-motion";
@@ -11,7 +10,6 @@ import styles from "./StudentRetentionManagement.module.css";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
 import useImageByLanguage from "../hooks/useImageByLanguage.js";
 import BannerView from "../components/Banner-views/BannerView.jsx";
-import BannerRetentionEn1 from "../assets/images/views/studentretentionManagement/Bannersitioweb_3.jpg.jpeg";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
@@ -54,9 +52,9 @@ function StudentRetentionManagement() {
     <section className="lg:pt-[145px]">
       <BannerView
         imagesBannerMap={{
-          enImage: BannerRetentionEn,
-          esImage: BannerRetentionEn1,
-          keyTitle: "studentRetentionManagement.alt_img_banner",
+          image: BannerRetention,
+          keyAlt: "studentRetentionManagement.alt_img_banner",
+          keyH1: "studentRetentionManagement.title",
         }}
       />
 

@@ -3,15 +3,11 @@ import { AiFillInstagram } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-
-import useImageByLanguage from "../../hooks/useImageByLanguage";
+import { useTranslation } from "react-i18next";
 
 function BannerView({ imagesBannerMap }) {
-  const bannerByLanguage = useImageByLanguage({
-    enImage: imagesBannerMap.enImage,
-    esImage: imagesBannerMap.esImage,
-    keyTitle: imagesBannerMap.keyTitle,
-  });
+
+  const { i18n, t } = useTranslation();
 
   const socialMedia = [
     {
@@ -39,8 +35,8 @@ function BannerView({ imagesBannerMap }) {
     <div className="flex flex-col items-center justify-center">
       <div className="relative w-full">
         <img
-          src={bannerByLanguage.src}
-          alt={bannerByLanguage.alt}
+          src={imagesBannerMap.image}
+          alt={t(imagesBannerMap.keyAlt)}
           className="w-full h-[50vh] max-h-[500px] md:h-full object-cover object-[40%_50%]"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 text-center pointer-events-none">
@@ -48,7 +44,7 @@ function BannerView({ imagesBannerMap }) {
           <div className="space-y-2">
             <h1 className="font-renogare leading-none text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3">
               <span className="inline-block bg-[#fff] text-dark-blue px-3 py-1 rotate-[-1deg]">
-                Gestion de la
+                Gestion de la {/*t(imagesBannerMap.keyH1)*/}
               </span>
               <span className="block mt-2">
                 <span className="inline-block bg-[#fff] text-dark-blue px-3 py-1 rotate-[1deg]">
