@@ -44,12 +44,13 @@ function Consultorias() {
     <>
       <div className="relative lg:pt-[145px] ">
         <BannerView
-        imagesBannerMap={{
-          image: BannerConsulting,
-          keyAlt: "studentRetentionManagement.alt_img_banner",
-          keyH1: "studentRetentionManagement.title",
-        }}
-      />
+          imagesBannerMap={{
+            image: BannerConsulting,
+            keyAlt: "consultorias.banner.alt",
+            keyH1: "consultorias.banner.h1",
+            keyBr: "consultorias.banner.br",
+          }}
+        />
       </div>
 
       <Description />

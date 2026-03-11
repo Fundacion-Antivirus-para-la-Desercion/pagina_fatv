@@ -92,8 +92,8 @@ function FoundationATV() {
       <BannerView
         imagesBannerMap={{
           image: BannerFoundation,
-          keyAlt: "foundation.foundationATV.alt_img_banner",
-          keyH1: "foundation.foundationATV.title",
+          keyAlt: "foundation.banner.alt",
+          keyH1: "foundation.banner.h1",
         }}
       />
 

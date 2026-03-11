@@ -139,11 +139,9 @@
     "alt_text": "Student support"
   },
   "dataAnalytics": {
-    "bannerDA": {
-      "banner": {
-        "title": "what we do",
-        "alt_banner": "Banner with the title 'what we do'"
-      }
+    "banner": {
+      "h1": "Technology and Data",
+      "alt": "Group of students actively participating in a classroom lesson"
     },
     "contentDA": {
       "title": "Our Model",
@@ -151,9 +149,19 @@
       "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
       "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
       "alt_image": "Data analytics chart"
+    },
+    "bannerDA": {
+      "banner": {
+        "title": "what we do",
+        "alt_banner": "Banner with the title 'what we do'"
+      }
     }
   },
   "communications_ATV": {
+    "banner": {
+      "h1": "Communications",
+      "alt": "The Communications Team smiling together."
+    },
     "commun": {
       "title_banner": "what we do",
       "our_model": "OUR MODEL",
@@ -166,6 +174,10 @@
     }
   },
   "foundation": {
+    "banner": {
+      "h1": "About Us",
+      "alt": "The Antivirus Foundation team working together."
+    },
     "foundationATV": {
       "header": "About us",
       "title": "Who Are We?",
@@ -231,6 +243,10 @@
     }
   },
   "news": {
+    "banner": {
+      "h1": "News",
+      "alt": "Close-up of a hand with the institutional wristband over a group of young students, symbolizing a commitment to education."
+    },
     "title": "NEWS",
     "category": "NEWS",
     "read_more": "Read more",
@@ -446,6 +462,10 @@
     }
   },
   "socialIntervention": {
+    "banner": {
+      "h1": "Social Intervention",
+      "alt": "Antivirus Foundation staff member and students in their respective educational environments."
+    },
     "span": "AREAS OF INTEGRATION",
     "title": "SOCIAL INTERVENTION",
     "figure": "Interventions this year",
@@ -677,6 +697,11 @@
     }
   },
   "consultorias": {
+    "banner": {
+      "h1": "Student Retention",
+      "br": "Consulting",
+      "alt": "Students in a classroom participating in a student retention workshop."
+    },
     "description": {
       "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
       "consulting_title_span": "RETENTION:",
@@ -759,7 +784,11 @@
     }
   },
   "studentRetentionManagement": {
-    "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student",
+    "banner": {
+      "h1": "Student Retention",
+      "br": "Management",
+      "alt": "Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student"
+    },
     "title": "OBJECTIVE OF RETENTION MANAGEMENT",
     "objectiveOne": {
       "text_one": "🎯Support students throughout their",
@@ -849,7 +878,8 @@
       "description": "A comprehensive ecosystem designed to support you throughout every step of your university journey.",
       "strong": "Together, We Build Your Success",
       "btnStartNow": "¡START NOW!"
-    }
+    },
+    "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student"
   },
   "provocacion": {
     "title_initial": "SUPPORT OBJECTIVE",
@@ -954,6 +984,11 @@
     }
   },
   "atvConnect": {
+    "banner": {
+      "h1": "ATVConecta:",
+      "br": "Academic Tutoring",
+      "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
+    },
     "description_one": "ATVConecta is more than just a tutoring platform. It is ",
     "description_span": "your partner in overcoming academic challenges,",
     "description_two": " boosting your performance, and reaching your university goals with confidence.",
@@ -1073,6 +1108,10 @@
     }
   },
   "contactUs": {
+    "banner": {
+      "h1": "Contact Us",
+      "alt": "Smiling Antivirus Foundation team members, ready to support you."
+    },
     "title": "Contact Us",
     "startConversation": "LET'S START",
     "conversationTitle": "A CONVERSATION DO YOU HAVE ANY QUESTIONS? WE HAVE THE ANSWER!",

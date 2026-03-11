@@ -11,8 +11,8 @@ function Communications() {
       <BannerView
         imagesBannerMap={{
           image: BannerCommun,
-          keyAlt: "studentRetentionManagement.alt_img_banner",
-          keyH1: "studentRetentionManagement.title",
+          keyAlt: "communications_ATV.banner.alt",
+          keyH1: "communications_ATV.banner.h1",
         }}
       />
       <Commun />

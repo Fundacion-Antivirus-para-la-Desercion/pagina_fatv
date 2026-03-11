@@ -14,8 +14,8 @@ function SocialIntervention() {
         <BannerView
           imagesBannerMap={{
             image: BannerSocial,
-            keyAlt: "studentRetentionManagement.alt_img_banner",
-            keyH1: "studentRetentionManagement.title",
+            keyAlt: "socialIntervention.banner.alt",
+            keyH1: "socialIntervention.banner.h1",
           }}
         />
       </section>

@@ -9,8 +9,8 @@ function DataAnalytics() {
         <BannerView
           imagesBannerMap={{
             image: BannerDataAnalytics,
-            keyAlt: "studentRetentionManagement.alt_img_banner",
-            keyH1: "studentRetentionManagement.title",
+            keyAlt: "dataAnalytics.banner.alt",
+            keyH1: "dataAnalytics.banner.h1",
           }}
         />
       </div>

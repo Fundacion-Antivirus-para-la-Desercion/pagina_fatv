@@ -38,8 +38,8 @@ function NewsDetail() {
         <BannerView
           imagesBannerMap={{
             image: BannerNews,
-            keyAlt: "studentRetentionManagement.alt_img_banner",
-            keyH1: "studentRetentionManagement.title",
+            keyAlt: "news.banner.alt",
+            keyH1: "news.banner.h1",
           }}
         />
       </div>

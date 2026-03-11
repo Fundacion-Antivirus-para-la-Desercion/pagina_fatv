@@ -140,11 +140,9 @@
     "alt_text": "Acompañamiento a estudiantes"
   },
   "dataAnalytics": {
-    "bannerDA": {
-      "banner": {
-        "title": "lo que hacemos",
-        "alt_banner": "Banner con el título 'lo que hacemos'"
-      }
+    "banner": {
+      "h1": " Tecnología y Datos",
+      "alt": "Grupo de estudiantes participando activamente en una clase dentro del aula."
     },
     "contentDA": {
       "title": "Nuestro Modelo",
@@ -152,9 +150,19 @@
       "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
       "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
       "alt_image": "Gráfico de análisis de datos"
+    },
+    "bannerDA": {
+      "banner": {
+        "title": "lo que hacemos",
+        "alt_banner": "Banner con el título 'lo que hacemos'"
+      }
     }
   },
   "communications_ATV": {
+    "banner": {
+      "h1": "Comunicaciones",
+      "alt": "El equipo de comunicaciones sonriendo juntos."
+    },
     "commun": {
       "title_banner": "lo que hacemos",
       "our_model": "NUESTRO MODELO",
@@ -167,6 +175,10 @@
     }
   },
   "foundation": {
+    "banner": {
+      "h1": "Sobre Nosotros",
+      "alt": "Imagen con colaboradores de la fundacion antivirus para la deserción."
+    },
     "foundationATV": {
       "header": "sobre nosotros",
       "title": "¿Quiénes Somos?",
@@ -229,9 +241,15 @@
           "description": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
         }
       }
-    }
+    },
+    "h1": "Sobre Nosotros",
+    "alt": "Imagen con colaboradores de la fundacion antivirus para la deserción"
   },
   "news": {
+    "banner": {
+      "h1": "NOTICIAS",
+      "alt": "Primer plano de una mano cerrada con la pulsera institucional sobre una imagen de jóvenes estudiando, simbolizando el compromiso con la educación."
+    },
     "title": "NOTICIAS",
     "category": "NOTICIAS",
     "read_more": "Leer más",
@@ -447,7 +465,11 @@
     }
   },
   "socialIntervention": {
-    "span": "ÁREAS DE ARTICULACÓN",
+    "banner": {
+      "h1": "Intervención Social",
+      "alt": "Colaborador de la Fundación Antivirus y estudiantes en sus respectivos entornos educativos."
+    },
+    "span": "ÁREAS DE ARTICULACIÓN",
     "title": "INTERVENCIÓN SOCIAL",
     "figure": "Intervenciones este año",
     "description": "Utilizamos una metodología basada en la comprensión profunda de las particularidades de cada individuo, a través de un análisis detallado de su contexto histórico, social, económico, socioemocional y académico, para diseñar intervenciones específicas que les permitan mejorar significativamente.",
@@ -678,6 +700,11 @@
     }
   },
   "consultorias": {
+    "banner": {
+      "h1": "Consultoría en Permanencia",
+      "br": "Estudiantil",
+      "alt": "Estudiantes en un aula de clase participando en una sesión de consultoría sobre permanencia estudiantil."
+    },
     "description": {
       "consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA ",
       "consulting_title_span": "PERMANENCIA:",
@@ -760,7 +787,11 @@
     }
   },
   "studentRetentionManagement": {
-    "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente",
+    "banner": {
+      "h1": "Gestión de la",
+      "br": "Permanencia Estudiantil",
+      "alt": "Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente"
+    },
     "title": "OBJETIVO DE LA GESTIÓN DE PERMANENCIA",
     "objectiveOne": {
       "text_one": "🎯Acompañar a los estudiantes en su",
@@ -850,7 +881,8 @@
       "description": "Un ecosistema completo diseñado para acompañarte en cada paso de tu camino universitario.",
       "strong": "Juntos construimos tu éxito",
       "btnStartNow": "¡COMIENZA AHORA!"
-    }
+    },
+    "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente"
   },
   "provocacion": {
     "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",
@@ -955,6 +987,11 @@
     }
   },
   "atvConnect": {
+    "banner": {
+      "h1": "ATVConecta:",
+      "br": "Tutorías Académicas",
+      "alt": "Tutores académicos de ATVConecta sonrientes y preparados para acompañar tu proceso de aprendizaje."
+    },
     "description_one": "ATVConecta es más que una plataforma de tutorías. Es tu ",
     "description_span": "aliado para superar desafíos académicos,",
     "description_two": " mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
@@ -1074,7 +1111,11 @@
     }
   },
   "contactUs": {
-    "title": "Contactanos",
+    "banner": {
+      "h1": "Contáctanos",
+      "alt": "Integrantes del equipo de la Fundación Antivirus sonriendo, listos para brindarte apoyo y asesoría."
+    },
+    "title": "Contáctanos",
     "startConversation": "COMENCEMOS",
     "conversationTitle": "UNA CONVERSACIÓN ¿TIENES ALGUNA PREGUNTA? ¡TENEMOS LA RESPUESTA!",
     "mainHeadquarters": "Sede principal",

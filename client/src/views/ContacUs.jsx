@@ -159,8 +159,8 @@ function ContactUs() {
         <BannerView
           imagesBannerMap={{
             image: BannerContacUs,
-            keyAlt: "studentRetentionManagement.alt_img_banner",
-            keyH1: "studentRetentionManagement.title",
+            keyAlt: "contactUs.banner.alt",
+            keyH1: "contactUs.banner.h1",
           }}
         />
         <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">

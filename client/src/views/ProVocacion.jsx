@@ -180,8 +180,8 @@ function ProVocacion() {
         <BannerView
           imagesBannerMap={{
             image: BannerProvocacion,
-            keyAlt: "studentRetentionManagement.alt_img_banner",
-            keyH1: "studentRetentionManagement.title",
+            keyAlt: "",
+            keyH1: "",
           }}
         />
 

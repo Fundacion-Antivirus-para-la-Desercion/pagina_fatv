@@ -53,8 +53,9 @@ function StudentRetentionManagement() {
       <BannerView
         imagesBannerMap={{
           image: BannerRetention,
-          keyAlt: "studentRetentionManagement.alt_img_banner",
-          keyH1: "studentRetentionManagement.title",
+          keyAlt: "studentRetentionManagement.banner.alt",
+          keyBr: "studentRetentionManagement.banner.br",
+          keyH1: "studentRetentionManagement.banner.h1",
         }}
       />
 

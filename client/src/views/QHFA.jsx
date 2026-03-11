@@ -2,8 +2,7 @@ import React from "react";
 import emocinal1 from "../../public/img_viewQHav/sociopedagogical-image-1.jpg";
 import emocinal2 from "../../public/img_viewQHav/sociopedagogical-image-2.webp";
 import emocional3 from "../../public/img_viewQHav/sociopedagogical-image-3.webp";
-import BannerQhfaEn from "../assets/images/views/socialIntervention/social-intervention.webp";
-import BannerQhfaEs from "../assets/images/views/socialIntervention/banner-social-intervention.webp";
+import BannerQhfa from "../assets/images/views/socialIntervention/banner-social-intervention.webp";
 
 import BannerView from "../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
@@ -14,13 +13,13 @@ function QHFA() {
   return (
     <>
       <div className="lg:pt-[145px]">
-        <BannerView
-          imagesBannerMap={{
-            enImage: BannerQhfaEn,
-            esImage: BannerQhfaEs,
-            keyTitle: "",
-          }}
-        />
+         <BannerView
+        imagesBannerMap={{
+          image: BannerQhfa,
+          keyAlt: "foundation.foundationATV.alt_img_banner",
+          keyH1: "foundation.title",
+        }}
+      />
 
         <div className="mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl">
           <div className="flex flex-col md:flex-row">

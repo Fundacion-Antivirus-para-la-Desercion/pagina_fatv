@@ -20,8 +20,9 @@ function AtvConnect() {
         <BannerView
           imagesBannerMap={{
             image: BannerAtvConnect,
-            keyAlt: "studentRetentionManagement.alt_img_banner",
-            keyH1: "studentRetentionManagement.title",
+            keyAlt: "atvConnect.banner.alt",
+            keyBr: "atvConnect.banner.br",
+            keyH1: "atvConnect.banner.h1",
           }}
         />
       </div>
