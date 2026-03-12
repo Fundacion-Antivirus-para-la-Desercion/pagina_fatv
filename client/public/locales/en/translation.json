@@ -882,6 +882,11 @@
     "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student"
   },
   "provocacion": {
+    "banner": {
+      "h1": "ProVocación",
+      "alt": "High school students receiving guidance to define their life project and academic future.",
+      "br": "Vocación"
+    },
     "title_initial": "SUPPORT OBJECTIVE",
     "description": "Empower young people's life projects through self-knowledge processes, approach to higher education and the working world that allow them to have tools to build their authentic life project.",
     "title_future": "YOUR FUTURE, STEP BY STEP: KNOW EACH STAGE",

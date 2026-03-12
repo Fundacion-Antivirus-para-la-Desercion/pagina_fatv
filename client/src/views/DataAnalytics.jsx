@@ -1,6 +1,6 @@
 import "boxicons";
 import BannerView from "../components/Banner-views/BannerView";
-import BannerDataAnalytics from "../assets/images/views/dataAnalytics/tecnologia-y-datos.webp";
+import BannerDataAnalytics from "../assets/images/views/dataAnalytics/technology-and-data.webp";
 import ContentDA from "../components/dataAnalystics/contentDA/ContentDA";
 function DataAnalytics() {
   return (

@@ -885,6 +885,11 @@
     "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente"
   },
   "provocacion": {
+    "banner": {
+      "h1": "ProVocación",
+      "alt": "Estudiantes de colegio recibiendo orientación para definir su proyecto de vida y futuro académico.",
+      "br": "Vocación"
+    },
     "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",
     "description": "Potenciar el proyecto de vida de los jóvenes a través de procesos de autoconocimiento, acercamiento a la educación superior y al mundo laboral que les permitan tener herramientas para construir su proyecto de vida auténtico.",
     "title_future": "TU FUTURO, PASO A PASO: CONOCE CADA ETAPA",

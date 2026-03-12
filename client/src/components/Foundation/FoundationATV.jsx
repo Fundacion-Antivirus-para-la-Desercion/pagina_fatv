@@ -106,7 +106,7 @@ function FoundationATV() {
             </h4>
           </div>
           <div className="right-content">
-            <p className="text-xl right-paragraph">
+            <p className="text-lg md:text-lg text-justify">
               {t("foundation.foundationATV.description")}
             </p>
           </div>

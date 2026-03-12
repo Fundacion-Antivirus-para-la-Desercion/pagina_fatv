@@ -36,21 +36,23 @@ function BannerView({ imagesBannerMap }) {
         <img
           src={imagesBannerMap.image}
           alt={t(imagesBannerMap.keyAlt)}
-          className="w-full h-[50vh] max-h-[500px] md:h-full object-cover object-[40%_50%]"
+          className="w-full h-[50vh] max-h-[500px] md:h-full object-cover object-[45%_50%]"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 text-center pointer-events-none">
           <div className="space-y-2">
-            <h1 className="font-renogare leading-none text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3">
+            <h1 className="font-impact leading-none text-2xl sm:text-3xl md:text-4xl lg:text-6xl mb-3">
               <span className="inline-block bg-[#fff] text-dark-blue px-3 py-1 rotate-[-1deg]">
                 {t(imagesBannerMap.keyH1)}
               </span>
-              <span className="block mt-2">
-                <span className="inline-block bg-[#fff] text-dark-blue px-3 py-1 rotate-[1deg]">
-                  {t(imagesBannerMap.keyBr)}
+              {imagesBannerMap.keyBr && (
+                <span className="block mt-2">
+                  <span className="inline-block bg-[#fff] text-dark-blue px-3 py-1 rotate-[1deg]">
+                    {t(imagesBannerMap.keyBr)}
+                  </span>
                 </span>
-              </span>
+              )}
             </h1>
-            <span className="px-6 py-2 md:py-2 bg-dark-blue text-white font-semibold text-center text-sm md:text-3xl tracking-wide rounded-full shadow-xl">
+            <span className="px-6 py-2 md:py-2 bg-dark-blue text-white font-semibold text-center text-sm md:text-2xl lg:text-3xl tracking-wide rounded-full shadow-xl">
               Fundación Antivirus para la Deserción
             </span>
           </div>

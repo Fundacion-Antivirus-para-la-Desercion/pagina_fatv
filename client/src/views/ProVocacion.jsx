@@ -1,5 +1,5 @@
 import styles from "./ProVocacion.module.css";
-import BannerProvocacion from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
+import BannerProvocacion from "../../src/assets/images/views/proVocacion/banner-pro-vocacion.webp";
 import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.webp";
 import Acompañamiento from "../../src/assets/images/views/proVocacion/collage-provocacion.webp";
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
@@ -180,8 +180,8 @@ function ProVocacion() {
         <BannerView
           imagesBannerMap={{
             image: BannerProvocacion,
-            keyAlt: "",
-            keyH1: "",
+            keyAlt: "provocacion.banner.alt",
+            keyH1: "provocacion.banner.h1",
           }}
         />
 
