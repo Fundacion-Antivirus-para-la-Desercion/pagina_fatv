@@ -97,16 +97,18 @@ function FoundationATV() {
         }}
       />
 
-      <div className="aboutUs">
-        <div className="aboutUs-content">
-          <div className="left-content">
-            <p className="title">{t("foundation.foundationATV.title")}</p>
+      <div className="text-blue-base m-8 md:m-12 md:p-16">
+        <div className="flex flex-col gap-5 items-end md:flex-row md:flex-wrap md:justify-between">
+          <div className="w-full md:w-[calc(60%-70px)]">
+            <p className="text-sm tracking-nm uppercase text-center md:text-left mt-4">
+              {t("foundation.foundationATV.title")}
+            </p>
             <h4 className="lineSubtitle font-impact text-4xl md:text-5xl leading-[.92] uppercase">
               {t("foundation.foundationATV.subtitle")}
             </h4>
           </div>
-          <div className="right-content">
-            <p className="text-lg md:text-lg text-justify">
+          <div className="w-full text-center mt-4 text-base sm:px-0 md:w-2/5 md:text-start md:mt-0">
+            <p className="text-lg md:text-xl text-justify">
               {t("foundation.foundationATV.description")}
             </p>
           </div>

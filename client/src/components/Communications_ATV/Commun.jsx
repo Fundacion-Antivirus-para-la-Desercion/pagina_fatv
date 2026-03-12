@@ -12,10 +12,10 @@ function Commun() {
         <div className="data_analytics--cnt">
           <div className="data_analytics--content">
             <div className="data_analytics--text">
-              <p className="title text-blue-base">
+              <p className="text-sm tracking-nm uppercase text-left text-blue-base">
                 {t("communications_ATV.commun.our_model")}
               </p>
-              <h1 className="lineSubtitle text-blue-base font-impact">
+              <h1 className="lineSubtitle text-xl text-blue-base font-impact">
                 {t("communications_ATV.commun.subtitle")}
               </h1>
 
