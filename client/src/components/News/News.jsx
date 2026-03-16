@@ -24,15 +24,15 @@ function News() {
         />
       </div>
 
-      <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
         {buildNewsArray(t).map((news, idx) => (
-          <div key={idx}>
+          <div key={idx} className="flex flex-col">
             <img className="mb-3 aspect-ratio" src={news.img} alt={news.alt} />
             <p className="flex tracking-[0.3rem] font-light text-blue-base">
               <img className="mr-1" src={Date} />
               {t("news.category")}
             </p>
-            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base max-md:text-3xl leading-9">
+            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base max-md:text-3xl leading-9 flex-grow">
               {news.title}
             </p>
             <hr className="mb-3" />
