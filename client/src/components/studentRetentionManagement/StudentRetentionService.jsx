@@ -77,10 +77,10 @@ function StudentRetentionService() {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-8 mt-16 place-items-center">
+      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-1 gap-8 mt-16 place-items-center">
         <motion.div
           {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-primary-yellow rounded-3xl bg-[#FFF8E6] h-[460px] w-[350px] hover:shadow-[0_10px_20px_0_#FFEBB8] transition-all duration-500 hover:-translate-y-2"
+          className="group relative flex flex-col items-center border-4 p-5 border-primary-yellow rounded-3xl bg-[#FFF8E6] h-[460px] w-[350px] hover:shadow-[0_10px_20px_0_#FFEBB8] transition-all duration-500 hover:-translate-y-2 xl:justify-self-end"
         >
           <div className="absolute flex -top-6 -left-5 ml-2 bg-primary-yellow p-3 rounded-xl shadow-lg items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">📚</span>
@@ -125,7 +125,7 @@ function StudentRetentionService() {
           </ul>
         </motion.div>
 
-        <div className="relative hidden md:block row-span-2 inset-0 m-auto bg-[#DCEBF9] rounded-full h-[400px] w-[400px] z-[2]">
+        <div className="relative hidden xl:block row-span-2 inset-0 m-auto bg-[#DCEBF9] rounded-full h-[400px] w-[400px] z-[2]">
           <div id="lines" className="relative w-[400px] h-[400px]">
             <div className="absolute top-5 right-0 border-t-4 border-dashed border-[#D3C3E3] w-[200px] -rotate-45"></div>
             <div className="absolute top-5 left-0 border-t-4 border-dashed border-[#ADD6FF] w-[200px] rotate-45"></div>
@@ -160,7 +160,7 @@ function StudentRetentionService() {
 
         <motion.div
           {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#2C9BC7] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2"
+          className="group relative flex flex-col items-center border-4 p-5 border-[#2C9BC7] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2 xl:justify-self-start"
         >
           <div className="absolute -top-6 -right-3 ml-3 bg-[#2C9BC7] p-3 rounded-xl shadow-lg flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">💙</span>
@@ -211,7 +211,7 @@ function StudentRetentionService() {
 
         <motion.div
           {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#7C76B5] rounded-3xl bg-[#D3C3E3] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#D3C3E3] transition-all duration-500 hover:-translate-y-2"
+          className="group relative flex flex-col items-center border-4 p-5 border-[#7C76B5] rounded-3xl bg-[#D3C3E3] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#D3C3E3] transition-all duration-500 hover:-translate-y-2 xl:justify-self-end"
         >
           <div className="absolute  -bottom-6 -left-5 ml-2 bg-[#7C76B5] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">💰</span>
@@ -252,7 +252,7 @@ function StudentRetentionService() {
 
         <motion.div
           {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2"
+          className="group relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2 xl:justify-self-start"
         >
           <div className="absolute -bottom-6 -right-3 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
             <span className="text-3xl">🎯</span>
