@@ -65,16 +65,16 @@ function OrganizationalStructure() {
         initial="hidden"
         animate={isSectionInView ? "visible" : "hidden"}
         variants={fadeIn}
-        className="relative grid grid-cols-1 md:grid-cols-[20%,80%] mb-10 m-2"
+        className="relative grid grid-cols-1 md:grid-cols-[30%,70%] mb-10 m-2 gap-1 container mx-auto items-center"
       >
         <div className="hidden md:block">
           <img
-            className="hidden md:block md:h-[550px] ml-2 bottom-0 absolute z-10"
+            className="hidden md:block md:h-[550px] lg:h-[650px] ml-2 bottom-0 absolute z-10"
             src={JaviSonrie}
             alt="Javi Sonrie"
           />
         </div>
-        <section className="grid grid-cols-1 relative md:grid-cols-2 max-w-[1000px] mx-auto items-center">
+        <section className="grid grid-cols-1 relative md:grid-cols-2  max-w-[1000px] mx-auto items-center">
           <motion.div
             ref={puzzleOneRef}
             variants={slideFromLeft}
@@ -92,7 +92,7 @@ function OrganizationalStructure() {
                   {t("foundation.foundationATV.founders.title")}
                 </h5>
 
-                <div className="lg:columns-2 gap-[15px] break-inside-avoid">
+                <div className="lg:columns-2 gap-5 break-inside-avoid">
                   <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
                     Carlos
                     <strong className="text-inherit block">
@@ -103,7 +103,7 @@ function OrganizationalStructure() {
                     Paulina
                     <strong className="text-inherit block">Tamayo Mejía</strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-5 text-base break-inside-avoid">
                     Víctor Manuel
                     <strong className="text-inherit block">
                       Valencia Martínez
@@ -161,7 +161,7 @@ function OrganizationalStructure() {
                   {t("foundation.foundationATV.board_directors.title")}
                 </h5>
 
-                <div className="lg:columns-2 gap-[15px] break-inside-avoid mt-3">
+                <div className="lg:columns-2 gap-5 break-inside-avoid mt-3">
                   <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
                     Carlos Vásquez Restrepo
                     <strong className="text-inherit block">

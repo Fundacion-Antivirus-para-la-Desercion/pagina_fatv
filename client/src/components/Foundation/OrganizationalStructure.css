@@ -71,12 +71,12 @@
 @media (min-width: 768px) {
   .puzzlePieceOne,
   .puzzlePieceTwo {
-    height: 370px;
+    height: 380px;
   }
 
   .puzzlePieceThree,
   .puzzlePieceFour {
-    height: 200px;
+    height: 210px;
   }
 
   .puzzlePieceOne::before {
