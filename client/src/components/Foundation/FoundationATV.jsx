@@ -210,10 +210,10 @@ function FoundationATV() {
       <section className="relative mb-14">
         <motion.div {...slideFromLeft}>
           <Sun classNames="hidden md:block" />
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
-            <div className="bg-[#CCEDE8] rounded-full">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-0 items-center justify-center">
+            <div className="bg-[#CCEDE8] rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={TeoriaCambio}
                 alt="Foto"
               />
@@ -235,7 +235,7 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...slideFromRight}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-0 items-center justify-center">
             <div className="rounded-lg border bg-[#D3C3E3] border-gray-200 p-6 shadow-xl">
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.values.title")}
@@ -246,9 +246,9 @@ function FoundationATV() {
                 )}
               </p>
             </div>
-            <div className="relative bg-[#D3C3E3] rounded-full">
+            <div className="relative bg-[#D3C3E3] rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Valores}
                 alt="Foto"
               />
@@ -258,10 +258,10 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...slideFromLeft}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
-            <div className="bg-primary-yellow rounded-full">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-0 items-center justify-center">
+            <div className="bg-primary-yellow rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Mision}
                 alt="Foto"
               />
@@ -281,7 +281,7 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...slideFromRight}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-0 items-center justify-center">
             <div className="rounded-lg bg-[#CCEDE8] border border-gray-200 p-6 shadow-xl">
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t(
@@ -294,9 +294,9 @@ function FoundationATV() {
                 )}
               </p>
             </div>
-            <div className="bg-[#CCEDE8] rounded-full">
+            <div className="bg-[#CCEDE8] rounded-full max-w-[400px] block mx-auto relative">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Publico}
                 alt="Foto"
               />
@@ -306,10 +306,10 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...slideFromLeft}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-2 items-center justify-center">
-            <div className="bg-[#D3C3E3] rounded-full">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-0 items-center justify-center">
+            <div className="bg-[#D3C3E3] rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Vision}
                 alt="Foto"
               />
@@ -329,7 +329,7 @@ function FoundationATV() {
         </motion.div>
 
         <motion.div {...slideFromRight}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-2 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-0 items-center justify-center">
             <div className="rounded-lg border border-gray-200 bg-primary-yellow p-8 shadow-xl">
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.purpose.title")}
@@ -341,9 +341,9 @@ function FoundationATV() {
               </p>
             </div>
 
-            <div className="bg-primary-yellow rounded-full">
+            <div className="bg-primary-yellow rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Proposito}
                 alt="Foto"
               />
