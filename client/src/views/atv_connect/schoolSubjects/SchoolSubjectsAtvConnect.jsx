@@ -121,7 +121,7 @@ function SchoolSubjectsAtvConnect() {
 
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
+      <section className="grid grid-cols-1 md:grid-cols-[20%,80%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}

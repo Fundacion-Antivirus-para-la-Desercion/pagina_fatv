@@ -64,12 +64,12 @@ function DescriptionAtvConnect() {
           </motion.div>
         </section>
 
-        <motion.div {...slideFromRight} className="text-center">
+        <motion.div {...slideFromRight} className="text-center max-w-[700px]">
           <h1 className="text-4xl md:text-5xl text-dark-blue font-impact">
             ATVCONECTA
           </h1>
 
-          <p className="text-center text-xl md:text-2xl max-w-[700px] text-blue-base p-3">
+          <p className="text-center text-xl md:text-2xl  text-blue-base p-3">
             {t("atvConnect.description_one")}
             <span className="text-primary-yellow ">
               {t("atvConnect.description_span")}
