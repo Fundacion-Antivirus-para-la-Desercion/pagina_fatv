@@ -209,8 +209,8 @@ function FoundationATV() {
 
       <section className="relative mb-14">
         <motion.div {...slideFromLeft}>
-          <Sun classNames="hidden md:block" />
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-0 items-center justify-center">
+          <Sun classNames="hidden xl:block top-16 left-24" />
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
             <div className="bg-[#CCEDE8] rounded-full max-w-[400px] block mx-auto">
               <img
                 className="rounded-full w-full h-auto p-5 object-cover"
@@ -231,11 +231,11 @@ function FoundationATV() {
               </p>
             </div>
           </section>
-          <SunBlue classNames="hidden md:block right-0" />
+          <SunBlue classNames="hidden xl:block right-24" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-0 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
             <div className="rounded-lg border bg-[#D3C3E3] border-gray-200 p-6 shadow-xl">
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.values.title")}
@@ -254,11 +254,11 @@ function FoundationATV() {
               />
             </div>
           </section>
-          <Sun classNames="hidden md:block" />
+          <Sun classNames="hidden xl:block left-24" />
         </motion.div>
 
         <motion.div {...slideFromLeft}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-0 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
             <div className="bg-primary-yellow rounded-full max-w-[400px] block mx-auto">
               <img
                 className="rounded-full w-full h-auto p-5 object-cover"
@@ -277,11 +277,11 @@ function FoundationATV() {
               </p>
             </div>
           </section>
-          <SunBlue classNames="hidden md:block right-0" />
+          <SunBlue classNames="hidden xl:block right-24" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-0 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[40%_20%] gap-2 items-center justify-center">
             <div className="rounded-lg bg-[#CCEDE8] border border-gray-200 p-6 shadow-xl">
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t(
@@ -302,11 +302,11 @@ function FoundationATV() {
               />
             </div>
           </section>
-          <Sun classNames="hidden md:block" />
+          <Sun classNames="hidden xl:block left-24" />
         </motion.div>
 
         <motion.div {...slideFromLeft}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-0 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-2 items-center justify-center">
             <div className="bg-[#D3C3E3] rounded-full max-w-[400px] block mx-auto">
               <img
                 className="rounded-full w-full h-auto p-5 object-cover"
@@ -325,11 +325,11 @@ function FoundationATV() {
               </p>
             </div>
           </section>
-          <SunBlue classNames="hidden md:block right-0" />
+          <SunBlue classNames="hidden xl:block right-24" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
-          <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-0 items-center justify-center">
+          <section className="m-5 grid grid-cols-1 md:grid-cols-[50%_20%] gap-2 items-center justify-center">
             <div className="rounded-lg border border-gray-200 bg-primary-yellow p-8 shadow-xl">
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.purpose.title")}
