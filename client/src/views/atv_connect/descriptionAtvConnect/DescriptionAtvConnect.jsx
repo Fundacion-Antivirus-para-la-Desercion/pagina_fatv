@@ -26,7 +26,7 @@ function DescriptionAtvConnect() {
     <>
       <section className="bg-[#F6F6F6] grid grid-col-1 lg:grid-cols-2 items-center mb-20 p-2 lg:p-5">
         <motion.div {...slideFromLeft} className="mb-5">
-          <section className="relative grid grid-col-1 lg:grid-cols-[4fr_1fr_4fr]">
+          <section className="relative xl:left-[10%] grid grid-col-1 lg:grid-cols-[4fr_1fr_4fr]">
             <div className="hidden lg:block">
               <img
                 className=" md:max-h-[390px] border-8 border-white rounded-3xl justify-between shadow-2xl"
