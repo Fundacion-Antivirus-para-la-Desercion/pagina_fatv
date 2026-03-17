@@ -36,7 +36,7 @@ function BannerView({ imagesBannerMap }) {
         <img
           src={imagesBannerMap.image}
           alt={t(imagesBannerMap.keyAlt)}
-          className="w-full h-[50vh] max-h-[500px] md:h-full object-cover object-[45%_50%]"
+          className="w-full h-[50vh] max-h-[600px] md:h-full object-cover object-[45%_50%]"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 text-center pointer-events-none">
           <div className="space-y-2">
