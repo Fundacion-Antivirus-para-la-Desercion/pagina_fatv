@@ -3,7 +3,7 @@ import styles from "./Information.module.css";
 import EstudiantesUno from "../../assets/images/views/proVocacion/information/estudiantes-uno.jpeg";
 import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
 import EstudiantesTres from "../../assets/images/views/proVocacion/information/estudiantes-tres.jpeg";
-import EstudiantesCuantro from "../../assets/images/views/proVocacion/information/estudiantes-cuatro.jpeg";
+import EstudiantesCuatro from "../../assets/images/views/proVocacion/information/estudiantes-cuatro.jpeg";
 import EstudiantesCinco from "../../assets/images/views/proVocacion/information/estudiantes-cinco.jpeg";
 import EstudiantesSeis from "../../assets/images/views/proVocacion/information/estudiantes-seis.jpeg";
 import EstudiantesSiete from "../../assets/images/views/proVocacion/information/estudiantes-siete.jpeg";
@@ -17,6 +17,12 @@ import EstudiantesCatorce from "../../assets/images/views/proVocacion/informatio
 import Estudiantesquince from "../../assets/images/views/proVocacion/information/estudiantes-quince.jpeg";
 import EstudiantesDieciseis from "../../assets/images/views/proVocacion/information/estudiantes-dieciseis.jpg";
 
+import Javicorto from "../../assets/images/views/javi/javi-corto.webp";
+import Javi from "../../assets/images/views/javi/javi-senala.webp";
+import FocusTransparent from "../../assets/images/views/proVocacion/information/focus.webp";
+import { floatSnake } from "../../components/motion/constants/Animations.js";
+import { motion } from "framer-motion";
+
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 
 import { useTranslation } from "react-i18next";
@@ -24,6 +30,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import "swiper/css/effect-creative";
+
+// import required modules
+import { EffectCreative, Mousewheel } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 
 const whatsAppNumber = "573173831481";
@@ -31,9 +41,11 @@ const whatsAppNumber = "573173831481";
 function Information() {
   const { t } = useTranslation();
 
+
+
   return (
     <>
-      <section className="h-auto shadow-lg mb-5 bg-[#222D56]  text-white">
+      <section className="h-auto shadow-lg mb-5 bg-[#222D56] text-white">
         <Swiper
           spaceBetween={30}
           navigation={{ clickable: true }}
@@ -42,22 +54,22 @@ function Information() {
           loop={true}
         >
           <SwiperSlide>
-            <section className="grid lg:grid-cols-[5fr_7fr] overflow-hidden">
-              <div className="flex flex-col gap-2 py-4 relative bottom-9 lg:max-h-[560px] max-h-[700px]">
+            <section className="flex flex-col md:flex-row overflow-hidden">
+              <div className="flex flex-col gap-5 py-4 relative bottom-16 lg:max-h-[600px]">
                 <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-24 right-20">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative left-72"></div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
+                  <div className="bg-[#7C78B3] h-[200px] w-[200px] rotate-45 flex items-center justify-center relative left-72"></div>
+                  <div className="bg-[#F8B732] h-[200px] w-[200px] rotate-45 flex items-center justify-center"></div>
                 </section>
 
                 <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-36 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
+                  <div className="bg-[#7C78B3] h-[200px] w-[200px] rotate-45 flex items-center justify-center overflow-hidden ">
                     <img
                       className={` ${styles.diamondImage}`}
                       src={EstudiantesUno}
                       alt=""
                     />
                   </div>
-                  <div className="bg-[#F8B732]  h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
+                  <div className="bg-primary-yellow  h-[200px] w-[200px] rotate-45 flex items-center justify-center overflow-hidden ">
                     <img
                       className={` ${styles.diamondImage}`}
                       src={EstudiantesDos}
@@ -67,14 +79,14 @@ function Information() {
                 </section>
 
                 <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-48 right-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
+                  <div className="bg-[#7C78B3] h-[200px] w-[200px] rotate-45 flex items-center justify-center overflow-hidden ">
                     <img
                       className={` ${styles.diamondImage}`}
                       src={EstudiantesDieciseis}
                       alt=""
                     />
                   </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
+                  <div className="bg-primary-yellow  h-[200px] w-[200px] rotate-45 flex items-center justify-center overflow-hidden ">
                     <img
                       className={` ${styles.diamondImage}`}
                       src={EstudiantesTres}
@@ -84,14 +96,14 @@ function Information() {
                 </section>
 
                 <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-60 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
+                  <div className="bg-[#7C78B3] h-[200px] w-[200px] rotate-45 flex items-center justify-center overflow-hidden">
                     <img
                       className={` ${styles.diamondImage}`}
-                      src={EstudiantesCuantro}
+                      src={EstudiantesCuatro}
                       alt=""
                     />
                   </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
+                  <div className="bg-[#F8B732] h-[200px] w-[200px] rotate-45 flex items-center justify-center overflow-hidden">
                     <img
                       className={` ${styles.diamondImage}`}
                       src={EstudiantesCinco}
@@ -101,20 +113,18 @@ function Information() {
                 </section>
 
                 <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-[280px] right-14">
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative bottom-2 left-64"></div>
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
+                  <div className="bg-[#F8B732] h-[200px] w-[200px] rotate-45 flex items-center justify-center relative bottom-2 left-64"></div>
+                  <div className="bg-[#7C78B3] h-[200px] w-[200px] rotate-45 flex items-center justify-center"></div>
                 </section>
               </div>
 
               <div className="flex flex-col h-full items-center justify-between gap-4 p-6 rounded-lg">
-                <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
-                >
+                <h3 className={`mb-1 text-4xl text-[#F8B732] font-impact`}>
                   {t("provocacion.information.directed_to")}
                 </h3>
 
                 <div className="mb-1">
-                  <p className="text-lg font-bold text-center mb-2">
+                  <p className="text- font-bold text-center mb-2">
                     {t("provocacion.information.who_is_it_for")}
                   </p>
                   <p className="text-lg text-center w-3/4 mx-auto">
@@ -230,9 +240,7 @@ function Information() {
               </div>
 
               <div className="flex flex-col h-full  items-center justify-between gap-4 p-6 rounded-lg">
-                <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
-                >
+                <h3 className={`mb-1 text-4xl text-[#F8B732] font-impact`}>
                   {t("provocacion.information.installed_capacities")}
                 </h3>
 
@@ -361,9 +369,7 @@ function Information() {
               </div>
 
               <div className="flex flex-col h-full  items-center justify-between gap-4 p-6 rounded-lg">
-                <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
-                >
+                <h3 className={`mb-1 text-4xl text-[#F8B732] font-impact`}>
                   {t("provocacion.information.what_includes_service")}
                 </h3>
 
@@ -460,6 +466,223 @@ function Information() {
             </section>
           </SwiperSlide>
         </Swiper>
+      </section>
+
+      <section className="bg-[#FFEBB8]">
+        <Swiper
+          effect={"creative"}
+          grabCursor={true}
+          mousewheel={{
+            forceToAxis: true,
+            sensitivity: 1,
+            releaseOnEdges: true,
+          }}
+          direction={"vertical"}
+          creativeEffect={{
+            prev: {
+              translate: [0, 0, -1],
+            },
+            next: {
+              translate: [0, "100%", 0],
+            },
+          }}
+          modules={[EffectCreative, Mousewheel]}
+          className="mySwiper"
+          style={{ height: "600px" }}
+        >
+          <SwiperSlide>
+            <section className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto my-5 pt-10">
+              <div className="relative flex flex-col xl:flex-row bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center items-center">
+                {/* Contenido de texto */}
+                <img
+                  className="w-[600px] rounded-xl"
+                  src={EstudiantesDieciseis}
+                  alt=""
+                />
+
+                <div className="flex flex-col items-center justify-center gap-4 flex-1">
+                  <h4 className="text-xl md:text-3xl font-impact text-primary-yellow mb-2">
+                    DIRIGIDO A:
+                  </h4>
+
+                  <div className="mb-4">
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.who_is_it_for")}
+                    </p>
+                    <p className="text-base md:text-xl text-center w-full md:w-3/4 mx-auto">
+                      <strong>
+                        {t("provocacion.information.young_people_description")}
+                      </strong>{" "}
+                      {t("provocacion.information.students_description")}
+                    </p>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.when_moment")}
+                    </p>
+                    <p className="text-base md:text-xl text-center">
+                      {t("provocacion.information.decision_time")}
+                      <strong>
+                        {" "}
+                        {t("provocacion.information.academic_future")}
+                      </strong>
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.what_are_they_living")}
+                    </p>
+                    <p className="text-base md:text-xl text-center">
+                      <strong>
+                        {t("provocacion.information.feelings_description")}
+                      </strong>
+                    </p>
+
+                    <section className="w-full flex justify-center items-center mt-6">
+                      <a
+                        className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                        href={`https://wa.me/${whatsAppNumber}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("provocacion.information.i_want_it")}
+                        <img src={Focus} alt="icono" className="w-10 h-10" />
+                      </a>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <section className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto my-5 pt-10">
+              <div className="relative flex flex-col xl:flex-row bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center items-center">
+                {/* Contenido de texto */}
+                <img
+                  className="w-[600px] rounded-xl"
+                  src={EstudiantesDiez}
+                  alt=""
+                />
+
+                <div className="flex flex-col items-center justify-center gap-4 flex-1">
+                  <h4 className="text-xl md:text-3xl font-impact text-primary-yellow mb-2">
+                    CAPACIDADES INSTALADAS:
+                  </h4>
+
+                  <div className="mb-4">
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.who_is_it_for")}
+                    </p>
+                    <p className="text-base md:text-xl text-center w-full md:w-3/4 mx-auto">
+                      <strong>
+                        {t("provocacion.information.young_people_description")}
+                      </strong>{" "}
+                      {t("provocacion.information.students_description")}
+                    </p>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.when_moment")}
+                    </p>
+                    <p className="text-base md:text-xl text-center">
+                      {t("provocacion.information.decision_time")}
+                      <strong>
+                        {" "}
+                        {t("provocacion.information.academic_future")}
+                      </strong>
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.what_are_they_living")}
+                    </p>
+                    <p className="text-base md:text-xl text-center">
+                      <strong>
+                        {t("provocacion.information.feelings_description")}
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <section className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto my-5 pt-10">
+              <div className="relative flex flex-col xl:flex-row bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center items-center">
+                {/* Contenido de texto */}
+                <img
+                  className="w-[600px] rounded-xl"
+                  src={EstudiantesCinco}
+                  alt=""
+                />
+
+                <div className="flex flex-col items-center justify-center gap-4 flex-1">
+                  <h4 className="text-xl md:text-3xl font-impact text-primary-yellow mb-2">
+                    ¿QUÉ INCLUYE EL SERVICIO?
+                  </h4>
+
+                  <div className="mb-4">
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.who_is_it_for")}
+                    </p>
+                    <p className="text-base md:text-xl text-center w-full md:w-3/4 mx-auto">
+                      <strong>
+                        {t("provocacion.information.young_people_description")}
+                      </strong>{" "}
+                      {t("provocacion.information.students_description")}
+                    </p>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.when_moment")}
+                    </p>
+                    <p className="text-base md:text-xl text-center">
+                      {t("provocacion.information.decision_time")}
+                      <strong>
+                        {" "}
+                        {t("provocacion.information.academic_future")}
+                      </strong>
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-lg md:text-2xl font-extrabold text-center mb-3">
+                      {t("provocacion.information.what_are_they_living")}
+                    </p>
+                    <p className="text-base md:text-xl text-center">
+                      <strong>
+                        {t("provocacion.information.feelings_description")}
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </SwiperSlide>
+        </Swiper>
+        {/* Javi + Foco */}
+        <div className="flex justify-center flex-shrink-0">
+          <div className="relative">
+            <motion.div
+              {...floatSnake(0)}
+              className="absolute top-10 md:top-16 -left-5"
+            >
+              <img className="h-16 md:h-24" src={FocusTransparent} alt="" />
+            </motion.div>
+            <img
+              className="w-[150px] md:w-[280px] xl:w-[270px]"
+              src={Javicorto}
+              alt="Javi señalando"
+            />
+          </div>
+        </div>
       </section>
     </>
   );
