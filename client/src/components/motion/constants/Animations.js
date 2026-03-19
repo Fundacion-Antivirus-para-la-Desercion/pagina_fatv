@@ -47,6 +47,28 @@ export const slideFromTop = ({
 });
 
 
+
+/**
+ * Animación de expansión con opacidad y escala.
+ * @param {Object} param0 - Configuración de la animación (opcional).
+ * @param {Object} param0.initial - Estado inicial de la animación (opcional).
+ * @param {Object} param0.whileInView - Estado final de la animación (opcional).
+ * @param {Object} param0.transition - Configuración de la transición (opcional).
+ * @param {Object} param0.viewport - Configuración del viewport (opcional).
+ * @returns {Object} Configuración de la animación para Framer Motion.
+ */
+export const expandableTransition = ({
+  initial,
+  whileInView,
+  transition,
+  viewport,
+} = {}) => ({
+  initial: { opacity: 0, scale: 0.5, ...initial },
+  whileInView: { opacity: 1, scale: 1, ...whileInView },
+  transition: { duration: 0.8, ease: "easeOut", ...transition },
+  viewport: { once: true, ...viewport },
+});
+
 /**
  * Animación para deslizar desde arriba con opacidad hacia abajo, diseñada para el cuerpo principal de la página. Se puede personalizar con parámetros opcionales.
  * @param {Object} param0 - Configuración de la animación (opcional).

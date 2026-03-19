@@ -74,7 +74,7 @@ function OrganizationalStructure() {
             alt="Javi Sonrie"
           />
         </div>
-        <section className="grid grid-cols-1 relative lg:grid-cols-2  max-w-[1000px] mx-auto items-center">
+        <section className="grid grid-cols-1 relative lg:grid-cols-2  max-w-[1000px] mx-auto items-center mb-10">
           <motion.div
             ref={puzzleOneRef}
             variants={slideFromLeft}

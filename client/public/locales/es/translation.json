@@ -139,6 +139,10 @@
     "other_amount": "Otro valor",
     "alt_text": "Acompañamiento a estudiantes"
   },
+  "ethicsTransparency": {
+    "title": "ÉTICA Y TRANSPARENCIA EMPRESARIAL",
+    "description": "La Fundación Antivirus para la Deserción cuenta con un programa de ética y transparencia empresarial, adoptando políticas anticorrupción y antisoborno, así como lineamientos internos claros para el adecuado manejo, control y destinación de las donaciones recibidas, asegurando su uso responsable y alineado con los fines misionales de la organización."
+  },
   "dataAnalytics": {
     "banner": {
       "h1": " Tecnología y Datos",

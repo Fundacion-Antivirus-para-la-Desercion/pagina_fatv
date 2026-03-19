@@ -138,6 +138,10 @@
     "other_amount": "Other amount",
     "alt_text": "Student support"
   },
+  "ethicsTransparency": {
+    "title": "Ethics & Transparency",
+    "description": "At Fundación Antivirus para la Deserción, we follow a strict ethics and transparency program. We have clear anti-corruption policies and internal guidelines to ensure every donation is managed responsibly and used solely to support our mission."
+  },
   "dataAnalytics": {
     "banner": {
       "h1": "Technology and Data",
