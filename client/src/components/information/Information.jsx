@@ -21,7 +21,7 @@ import Javicorto from "../../assets/images/views/javi/javi-corto.webp";
 import Javi from "../../assets/images/views/javi/javi-senala.webp";
 import FocusTransparent from "../../assets/images/views/proVocacion/information/focus.webp";
 import { floatSnake } from "../../components/motion/constants/Animations.js";
-import { motion } from "framer-motion";
+import { motion, time } from "framer-motion";
 
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 
@@ -43,53 +43,52 @@ function Information() {
 
   const slideData = [
     {
-      image: EstudiantesDieciseis,
-      title: t("provocacion.information.directed_to"),
-      paragraphs: [
-        t("provocacion.information.who_is_it_for"),
-        t("provocacion.information.young_people_description"),
-        t("provocacion.information.students_description"),
-        t("provocacion.information.when_moment"),
-        t("provocacion.information.decision_time"),
-        t("provocacion.information.academic_future"),
-        t("provocacion.information.what_are_they_living"),
-        t("provocacion.information.feelings_description"),
-      ],
-    },
-    {
+      id: 1,
       image: EstudiantesDiez,
-      title: t("provocacion.information.installed_capacities"),
-      paragraphs: [
-        t("provocacion.information.skills_promotion"),
-        t("provocacion.information.focus_on_autos"),
-        t("provocacion.information.self_perception"),
-        t("provocacion.information.self_observation"),
-        t("provocacion.information.self_esteem"),
-        t("provocacion.information.self_concept"),
-        t("provocacion.information.autonomy"),
-        t("provocacion.information.self_confidence"),
-        t("provocacion.information.self_motivation"),
-        t("provocacion.information.self_evaluation"),
+      title: t("provocacion.information.cards.one.title"),
+      questions: [
+        {
+          q: t("provocacion.information.cards.one.questionOne"),
+          a: t("provocacion.information.cards.one.answernOne"),
+        },
+        {
+          q: t("provocacion.information.cards.one.questionTwo"),
+          a: t("provocacion.information.cards.one.answerTwo"),
+        },
+        {
+          q: t("provocacion.information.cards.one.questionThree"),
+          a: t("provocacion.information.cards.one.answerThree"),
+        },
       ],
     },
     {
-      image: EstudiantesCinco,
-      title: t("provocacion.information.what_includes_service"),
-      titleTwo: t("provocacion.information.payment_methods"),
-      titleThree: t("provocacion.information.cost"),
-      paragraphs: [
-        t("provocacion.information.five_sessions"),
-        t("provocacion.information.one_counseling"),
-        t("provocacion.information.digital_tools"),
-        t("provocacion.information.experiential_activities"),
-        t("provocacion.information.experience_exchange"),
-        t("provocacion.information.whatsapp_support"),
-        t("provocacion.information.participation_certificate"),
-        t("provocacion.information.bank_transfer"),
-        t("provocacion.information.debit_card"),
-        t("provocacion.information.credit_card"),
-        t("provocacion.information.base_price"),
-        t("provocacion.information.final_price"),
+      id: 2,
+      image: EstudiantesDieciseis,
+      title: t("provocacion.information.cards.two.title"),
+      questions: [
+        {
+          q: t("provocacion.information.cards.two.questionOne"),
+          a: t("provocacion.information.cards.two.answerOne"),
+        },
+        {
+          q: t("provocacion.information.cards.two.questionTwo"),
+          a: t("provocacion.information.cards.two.answerTwo"),
+        },
+      ],
+    },
+    {
+      id: 3,
+      image: EstudiantesDos,
+      title: t("information.cards.three.title"),
+      questions: [
+        {
+          q: "Título de pregunta 1",
+          a: "Texto de respuesta de prueba para la pregunta 1 de la tercera card.",
+        },
+        {
+          q: "Título de pregunta 2",
+          a: "Texto de respuesta de prueba para la pregunta 2 de la segunda card.",
+        },
       ],
     },
   ];
@@ -97,6 +96,22 @@ function Information() {
   return (
     <>
       <section className="bg-[#FFEBB8]">
+        {/* Javi + Foco */}
+        <div className="flex justify-center flex-shrink-0">
+          <div className="relative bottom-0">
+            <motion.div
+              {...floatSnake(0)}
+              className="absolute top-10 md:top-16 -left-5"
+            >
+              <img className="h-16 md:h-24" src={FocusTransparent} alt="" />
+            </motion.div>
+            <img
+              className="w-[180px] md:w-[250px] xl:w-[260px]"
+              src={Javicorto}
+              alt="Javi señalando"
+            />
+          </div>
+        </div>
         <Swiper
           effect={"creative"}
           grabCursor={true}
@@ -117,121 +132,52 @@ function Information() {
           }}
           modules={[EffectCreative, Mousewheel]}
           className="mySwiper"
-          style={{ height: "1100px" }}
+          style={{ height: "700px" }}
         >
           {slideData.map((slide, index) => (
             <SwiperSlide key={index}>
-              {/* Javi + Foco */}
-              <div className="flex justify-center flex-shrink-0">
-                <div className="relative bottom-0">
-                  <motion.div
-                    {...floatSnake(0)}
-                    className="absolute top-10 md:top-16 -left-5"
-                  >
+              <section className="w-[80%] md:w-[65%] lg:w-[60%] mx-auto">
+                <div className="relative flex flex-col bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center md:text-left items-center min-h-[550px] border-t-[10px] border-primary-yellow">
+                  <div className="flex flex-col xl:flex-row w-full items-center mb-5">
+                    {/* Imagen */}
                     <img
-                      className="h-16 md:h-24"
-                      src={FocusTransparent}
+                      className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+                      src={slide.image}
                       alt=""
                     />
-                  </motion.div>
-                  <img
-                    className="w-[150px] md:w-[280px] xl:w-[270px]"
-                    src={Javicorto}
-                    alt="Javi señalando"
-                  />
-                </div>
-              </div>
-              <section className="w-[90%] md:w-[65%] lg:w-[70%] mx-auto">
-                <div className="relative flex flex-col xl:flex-row bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center items-center min-h-[800px]">
-                  {/* Contenido de texto */}
-                  <img
-                    className="w-[500px] rounded-xl"
-                    src={slide.image}
-                    alt=""
-                  />
-
-                  <div className="flex flex-col items-center justify-center gap-4 flex-1 px-3 md:px-6 lg:px-10 mt-6 xl:mt-0">
-                    <h4 className="text-xl md:text-3xl font-impact text-primary-yellow mb-2">
-                      {slide.title}
-                    </h4>
-
-                    <div className="mb-4 w-full">
-                      {/* Para las dos primeras cards, solo lista los párrafos */}
-                      {index !== 2 ? (
-                        slide.paragraphs.map((paragraph, idx) => (
-                          <p
-                            key={idx}
-                            className="text-sm md:text-base xl:text-lg font-extrabold text-center mb-3"
-                          >
-                            {paragraph}
-                          </p>
-                        ))
-                      ) : (
-                        <>
-                          {/* Servicios incluidos */}
-                          <div className="mb-4">
-                            {slide.paragraphs
-                              .slice(0, 7)
-                              .map((paragraph, idx) => (
-                                <p
-                                  key={idx}
-                                  className="text-sm md:text-base xl:text-lg font-extrabold text-center mb-3"
-                                >
-                                  {paragraph}
-                                </p>
-                              ))}
-                          </div>
-                          {/* Métodos de pago y Costos en columnas en desktop, stack en móvil */}
-                          <div className="flex flex-col md:flex-row gap-6 justify-center items-center w-full text-center">
-                            <div className="flex-1 flex flex-col items-center">
-                              {slide.titleTwo && (
-                                <h4 className="text-xl md:text-3xl font-impact text-primary-yellow mb-2 text-center md:text-left">
-                                  {slide.titleTwo}
-                                </h4>
-                              )}
-                              {slide.paragraphs
-                                .slice(7, 10)
-                                .map((paragraph, idx) => (
-                                  <p
-                                    key={idx}
-                                    className="text-sm md:text-base xl:text-lg font-extrabold text-center md:text-left mb-3"
-                                  >
-                                    {paragraph}
-                                  </p>
-                                ))}
-                            </div>
-                            <div className="flex-1 flex flex-col items-center">
-                              {slide.titleThree && (
-                                <h4 className="text-xl md:text-3xl font-impact text-primary-yellow mb-2 text-center md:text-left">
-                                  {slide.titleThree}
-                                </h4>
-                              )}
-                              {slide.paragraphs
-                                .slice(10)
-                                .map((paragraph, idx) => (
-                                  <p
-                                    key={idx}
-                                    className="text-sm md:text-base xl:text-lg font-extrabold text-center md:text-left mb-3"
-                                  >
-                                    {paragraph}
-                                  </p>
-                                ))}
-                            </div>
-                          </div>
-                        </>
+                    {/* Texto */}
+                    <div className="flex flex-col items-center md:items-start justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+                      {slide.title && (
+                        <h4 className="text-xl md:text-4xl font-impact text-primary-yellow mb-2">
+                          {slide.title}
+                        </h4>
                       )}
-                      <div className="w-full flex justify-center items-center mt-6">
-                        <a
-                          className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                          href={`https://wa.me/${whatsAppNumber}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {t("provocacion.information.i_want_it")}
-                          <img src={Focus} alt="icono" className="w-10 h-10" />
-                        </a>
+                      <div className="mb-4 w-full mx-5">
+                        {slide.questions &&
+                          slide.questions.map((qa, idx) => (
+                            <div key={idx} className="mb-3">
+                              <strong className="block text-base md:text-xl text-dark-blue mb-1">
+                                {qa.q}
+                              </strong>
+                              <p className="text-sm md:text-base xl:text-lg text-center md:text-left">
+                                {qa.a}
+                              </p>
+                            </div>
+                          ))}
                       </div>
                     </div>
+                  </div>
+                  {/* Botón debajo de imagen y texto, dentro de la card */}
+                  <div className="w-full flex justify-center items-center">
+                    <a
+                      className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                      href={`https://wa.me/${whatsAppNumber}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("provocacion.information.i_want_it")}
+                      <img src={Focus} alt="icono" className="w-10 h-10" />
+                    </a>
                   </div>
                 </div>
               </section>

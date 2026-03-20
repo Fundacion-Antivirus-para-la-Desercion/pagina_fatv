@@ -915,6 +915,35 @@
       "description": "Gracias por comunicarte con nosotros."
     },
     "information": {
+      "cards": {
+        "one": {
+          "title": "DIRIGIDO A :",
+          "questionOne": "¿A quién está dirigido?",
+          "answernOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
+          "questionTwo": "¿En qué momento?",
+          "answerTwo": "Cuando necesitan tomar decisiones sobre su futuro académico y profesional.",
+          "questionThree": "¿Qué están viviendo?",
+          "answerThree": "Sentimientos de desorientación, confusión o inseguridad frente al futuro."
+        },
+        "two": {
+          "title": "CAPACIDADES INSTALADAS",
+          "description": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
+          "titleTwo": "ENFOQUE EN LOS AUTOS",
+          "studentFocus": {
+            "autoperception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
+            "autobservacion": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
+            "autoestima": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
+            "autoconcepto": "🔍 Autoconcepto: Comprender cómo me defino.",
+            "autonomia": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
+            "autoconfianza": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
+            "automotivacion": "🔥 Automotivación: Impulsarme desde adentro.",
+            "autoevaluacion": "📊 Autoevaluación: Aprender de mis acciones y experiencias."
+          }
+        },
+        "three": {
+          "title": "¿QUÉ INCLUYE EL SERVICIO?"
+        }
+      },
       "directed_to": "DIRIGIDO A :",
       "who_is_it_for": "¿A quién está dirigido?",
       "young_people_description": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida,",
