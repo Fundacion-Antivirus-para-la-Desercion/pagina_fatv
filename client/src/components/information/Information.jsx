@@ -121,7 +121,27 @@ function Information() {
         >
           {slideData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <section className="w-[90%] md:w-[65%] lg:w-[70%] mx-auto my-5 pt-10">
+              {/* Javi + Foco */}
+              <div className="flex justify-center flex-shrink-0">
+                <div className="relative bottom-0">
+                  <motion.div
+                    {...floatSnake(0)}
+                    className="absolute top-10 md:top-16 -left-5"
+                  >
+                    <img
+                      className="h-16 md:h-24"
+                      src={FocusTransparent}
+                      alt=""
+                    />
+                  </motion.div>
+                  <img
+                    className="w-[150px] md:w-[280px] xl:w-[270px]"
+                    src={Javicorto}
+                    alt="Javi señalando"
+                  />
+                </div>
+              </div>
+              <section className="w-[90%] md:w-[65%] lg:w-[70%] mx-auto">
                 <div className="relative flex flex-col xl:flex-row bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center items-center min-h-[800px]">
                   {/* Contenido de texto */}
                   <img
@@ -150,14 +170,16 @@ function Information() {
                         <>
                           {/* Servicios incluidos */}
                           <div className="mb-4">
-                            {slide.paragraphs.slice(0, 7).map((paragraph, idx) => (
-                              <p
-                                key={idx}
-                                className="text-sm md:text-base xl:text-lg font-extrabold text-center mb-3"
-                              >
-                                {paragraph}
-                              </p>
-                            ))}
+                            {slide.paragraphs
+                              .slice(0, 7)
+                              .map((paragraph, idx) => (
+                                <p
+                                  key={idx}
+                                  className="text-sm md:text-base xl:text-lg font-extrabold text-center mb-3"
+                                >
+                                  {paragraph}
+                                </p>
+                              ))}
                           </div>
                           {/* Métodos de pago y Costos en columnas en desktop, stack en móvil */}
                           <div className="flex flex-col md:flex-row gap-6 justify-center items-center w-full text-center">
@@ -167,14 +189,16 @@ function Information() {
                                   {slide.titleTwo}
                                 </h4>
                               )}
-                              {slide.paragraphs.slice(7, 10).map((paragraph, idx) => (
-                                <p
-                                  key={idx}
-                                  className="text-sm md:text-base xl:text-lg font-extrabold text-center md:text-left mb-3"
-                                >
-                                  {paragraph}
-                                </p>
-                              ))}
+                              {slide.paragraphs
+                                .slice(7, 10)
+                                .map((paragraph, idx) => (
+                                  <p
+                                    key={idx}
+                                    className="text-sm md:text-base xl:text-lg font-extrabold text-center md:text-left mb-3"
+                                  >
+                                    {paragraph}
+                                  </p>
+                                ))}
                             </div>
                             <div className="flex-1 flex flex-col items-center">
                               {slide.titleThree && (
@@ -182,14 +206,16 @@ function Information() {
                                   {slide.titleThree}
                                 </h4>
                               )}
-                              {slide.paragraphs.slice(10).map((paragraph, idx) => (
-                                <p
-                                  key={idx}
-                                  className="text-sm md:text-base xl:text-lg font-extrabold text-center md:text-left mb-3"
-                                >
-                                  {paragraph}
-                                </p>
-                              ))}
+                              {slide.paragraphs
+                                .slice(10)
+                                .map((paragraph, idx) => (
+                                  <p
+                                    key={idx}
+                                    className="text-sm md:text-base xl:text-lg font-extrabold text-center md:text-left mb-3"
+                                  >
+                                    {paragraph}
+                                  </p>
+                                ))}
                             </div>
                           </div>
                         </>
@@ -212,22 +238,6 @@ function Information() {
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* Javi + Foco */}
-        <div className="flex justify-center flex-shrink-0">
-          <div className="relative">
-            <motion.div
-              {...floatSnake(0)}
-              className="absolute top-10 md:top-16 -left-5"
-            >
-              <img className="h-16 md:h-24" src={FocusTransparent} alt="" />
-            </motion.div>
-            <img
-              className="w-[150px] md:w-[280px] xl:w-[270px]"
-              src={Javicorto}
-              alt="Javi señalando"
-            />
-          </div>
-        </div>
       </section>
     </>
   );
