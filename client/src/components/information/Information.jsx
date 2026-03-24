@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Information.module.css";
 import EstudiantesUno from "../../assets/images/views/proVocacion/information/estudiantes-uno.jpeg";
 import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
@@ -25,6 +25,7 @@ import { motion, time } from "framer-motion";
 
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -34,7 +35,6 @@ import "swiper/css/effect-creative";
 
 // import required modules
 import { EffectCreative, Mousewheel } from "swiper/modules";
-import { Navigation } from "swiper/modules";
 
 const whatsAppNumber = "573173831481";
 
@@ -43,6 +43,7 @@ function Information() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const swiperRef = useRef(null);
 
   const slideData = [
     {
@@ -144,12 +145,12 @@ function Information() {
             setIsTransitioning(false);
             setPrevIndex(null);
           }}
+          onSwiper={(swiper) => { swiperRef.current = swiper; }}
           allowTouchMove={false}
           touchStartPreventDefault={false}
-          navigation={true}
-          modules={[EffectCreative, Mousewheel, Navigation]}
+          modules={[EffectCreative, Mousewheel]}
           className="mySwiper"
-          style={{ height: "1000px", "--swiper-navigation-color": "#fff" }}
+          style={{ height: "1050px" }}
         >
           {slideData.map((slide, index) => (
             <SwiperSlide
@@ -164,7 +165,7 @@ function Information() {
             >
               <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
                 <div className="h-fit max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow">
-                  <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center">
+                  <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
                     <div className="justify-self-center xl:justify-self-end">
                       {/* Imagen */}
                       <img
@@ -243,6 +244,28 @@ function Information() {
                         {t("provocacion.information.i_want_it")}
                         <img src={Focus} alt="icono" className="w-10 h-10" />
                       </a>
+                    </div>
+                    {/* Flechas de navegación custom */}
+                    <div className="w-full flex justify-center items-center gap-6 mt-4">
+                      <button
+                        onClick={() => swiperRef.current?.slidePrev()}
+                        disabled={activeIndex === 0}
+                        className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
+                        aria-label="Anterior"
+                      >
+                        <FaChevronLeft size={16} />
+                      </button>
+                      <span className="text-[#222D56] font-bold text-sm select-none">
+                        {index + 1} / {slideData.length}
+                      </span>
+                      <button
+                        onClick={() => swiperRef.current?.slideNext()}
+                        disabled={activeIndex === slideData.length - 1}
+                        className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
+                        aria-label="Siguiente"
+                      >
+                        <FaChevronRight size={16} />
+                      </button>
                     </div>
                   </section>
                 </div>
