@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Information.module.css";
 import EstudiantesUno from "../../assets/images/views/proVocacion/information/estudiantes-uno.jpeg";
 import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
@@ -40,6 +40,9 @@ const whatsAppNumber = "573173831481";
 
 function Information() {
   const { t } = useTranslation();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [prevIndex, setPrevIndex] = useState(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const slideData = [
     {
@@ -132,23 +135,44 @@ function Information() {
               translate: [0, "100%", 0],
             },
           }}
+          onSlideChange={(swiper) => {
+            setPrevIndex(activeIndex);
+            setActiveIndex(swiper.activeIndex);
+            setIsTransitioning(true);
+          }}
+          onSlideChangeTransitionEnd={() => {
+            setIsTransitioning(false);
+            setPrevIndex(null);
+          }}
           modules={[EffectCreative, Mousewheel]}
           className="mySwiper"
-          style={{ height: "900px" }}
+          style={{ height: "1000px" }}
         >
           {slideData.map((slide, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              style={{
+                visibility:
+                  index === activeIndex ||
+                  (isTransitioning && index === prevIndex)
+                    ? "visible"
+                    : "hidden",
+              }}
+            >
               <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
-                <div className="h-fit relative flex flex-col bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center md:text-left items-center border-t-[10px] border-primary-yellow">
-                  <div className="flex flex-col xl:flex-row w-full items-center mb-5">
-                    {/* Imagen */}
-                    <img
-                      className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
-                      src={slide.image}
-                      alt=""
-                    />
+                <div className="h-fit max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow">
+                  <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center">
+                    <div className="justify-self-center xl:justify-self-end">
+                      {/* Imagen */}
+                      <img
+                        className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+                        src={slide.image}
+                        alt=""
+                      />
+                    </div>
+
                     {/* Texto */}
-                    <div className="flex flex-col items-center md:items-start justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+                    <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
                       {slide.title && (
                         <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
                           {slide.title}
@@ -167,7 +191,10 @@ function Information() {
                       {slide.studentFocus && (
                         <ul className="list-disc pl-5">
                           {slide.studentFocus.map((item, idx) => (
-                            <li key={idx} className="mb-1 text-sm md:text-base xl:text-lg">
+                            <li
+                              key={idx}
+                              className="mb-1 text-sm md:text-base xl:text-lg"
+                            >
                               {item}
                             </li>
                           ))}
@@ -176,7 +203,10 @@ function Information() {
                       {slide.itemsServices && (
                         <ul className="list-disc pl-5">
                           {slide.itemsServices.map((item, idx) => (
-                            <li key={idx} className="mb-1 text-sm md:text-base xl:text-lg">
+                            <li
+                              key={idx}
+                              className="mb-1 text-sm md:text-base xl:text-lg"
+                            >
                               {item}
                             </li>
                           ))}
@@ -189,7 +219,7 @@ function Information() {
                               <strong className="block text-base md:text-xl text-dark-blue mb-1">
                                 {qa.q}
                               </strong>
-                              <p className="text-sm md:text-base xl:text-lg text-center md:text-left">
+                              <p className="text-sm md:text-base xl:text-lg md:text-left">
                                 {qa.a}
                               </p>
                             </div>
@@ -197,19 +227,21 @@ function Information() {
                         </div>
                       )}
                     </div>
-                  </div>
-                  {/* Botón debajo de imagen y texto, dentro de la card */}
-                  <div className="w-full flex justify-center items-center">
-                    <a
-                      className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                      href={`https://wa.me/${whatsAppNumber}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {t("provocacion.information.i_want_it")}
-                      <img src={Focus} alt="icono" className="w-10 h-10" />
-                    </a>
-                  </div>
+                  </section>
+                  <section>
+                    {/* Botón debajo de imagen y texto, dentro de la card */}
+                    <div className="w-full flex justify-center items-center">
+                      <a
+                        className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                        href={`https://wa.me/${whatsAppNumber}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("provocacion.information.i_want_it")}
+                        <img src={Focus} alt="icono" className="w-10 h-10" />
+                      </a>
+                    </div>
+                  </section>
                 </div>
               </section>
             </SwiperSlide>
