@@ -940,6 +940,18 @@
         },
         "two": {
           "title": "CAPACIDADES INSTALADAS",
+          "description": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
+          "titleTwo": "ENFOQUE EN LOS AUTOS",
+          "studentFocus": {
+            "autoperception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
+            "autobservacion": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
+            "autoestima": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
+            "autoconcepto": "🔍 Autoconcepto: Comprender cómo me defino.",
+            "autonomia": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
+            "autoconfianza": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
+            "automotivacion": "🔥 Automotivación: Impulsarme desde adentro.",
+            "autoevaluacion": "📊 Autoevaluación: Aprender de mis acciones y experiencias."
+          },
           "questionOne": "¿A quién está dirigido?",
           "answernOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
           "questionTwo": "¿En qué momento?",
@@ -948,7 +960,25 @@
           "answerThree": "Sentimientos de desorientación, confusión o inseguridad frente al futuro."
         },
         "three": {
-          "title": "¿QUÉ INCLUYE EL SERVICIO?"
+          "title": "¿QUÉ INCLUYE EL SERVICIO?",
+          "listServices": {
+            "one": "5 sesiones grupales y/o individuales",
+            "two": "1 asesoría sociovocacional individual (a demanda)",
+            "three": "Herramientas digitales y guías prácticas para cada sesión",
+            "four": "Actividades experienciales",
+            "five": "Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.",
+            "six": "Grupo de WhatsApp de apoyo o resolución de dudas",
+            "seven": "Certificado de participación"
+          },
+          "itemsServices": {
+            "one": "5 sesiones grupales y/o individuales",
+            "two": "1 asesoría sociovocacional individual (a demanda)",
+            "three": "Herramientas digitales y guías prácticas para cada sesión",
+            "four": "Actividades experienciales",
+            "five": "Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.",
+            "six": "Grupo de WhatsApp de apoyo o resolución de dudas",
+            "seven": "Certificado de participación"
+          }
         }
       },
       "directed_to": "DIRIGIDO A :",

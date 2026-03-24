@@ -49,7 +49,7 @@ function Information() {
       questions: [
         {
           q: t("provocacion.information.cards.one.questionOne"),
-          a: t("provocacion.information.cards.one.answernOne"),
+          a: t("provocacion.information.cards.one.answerOne"),
         },
         {
           q: t("provocacion.information.cards.one.questionTwo"),
@@ -65,37 +65,39 @@ function Information() {
       id: 2,
       image: EstudiantesDieciseis,
       title: t("provocacion.information.cards.two.title"),
-      questions: [
-        {
-          q: t("provocacion.information.cards.two.questionOne"),
-          a: t("provocacion.information.cards.two.answerOne"),
-        },
-        {
-          q: t("provocacion.information.cards.two.questionTwo"),
-          a: t("provocacion.information.cards.two.answerTwo"),
-        },
+      description: t("provocacion.information.cards.two.description"),
+      titleTwo: t("provocacion.information.cards.two.titleTwo"),
+      studentFocus: [
+        t("provocacion.information.cards.two.studentFocus.autoperception"),
+        t("provocacion.information.cards.two.studentFocus.autobservacion"),
+        t("provocacion.information.cards.two.studentFocus.autoestima"),
+        t("provocacion.information.cards.two.studentFocus.autoconcepto"),
+        t("provocacion.information.cards.two.studentFocus.autonomia"),
+        t("provocacion.information.cards.two.studentFocus.autoconfianza"),
+        t("provocacion.information.cards.two.studentFocus.automotivacion"),
+        t("provocacion.information.cards.two.studentFocus.autoevaluacion"),
       ],
     },
     {
       id: 3,
       image: EstudiantesDos,
-      title: t("information.cards.three.title"),
-      questions: [
-        {
-          q: "Título de pregunta 1",
-          a: "Texto de respuesta de prueba para la pregunta 1 de la tercera card.",
-        },
-        {
-          q: "Título de pregunta 2",
-          a: "Texto de respuesta de prueba para la pregunta 2 de la segunda card.",
-        },
+      title: t("provocacion.information.cards.three.title"),
+      itemsServices: [
+        t("provocacion.information.cards.three.listServices.one"),
+        t("provocacion.information.cards.three.listServices.two"),
+        t("provocacion.information.cards.three.listServices.three"),
+        t("provocacion.information.cards.three.listServices.four"),
+        t("provocacion.information.cards.three.listServices.five"),
+        t("provocacion.information.cards.three.listServices.six"),
+        t("provocacion.information.cards.three.listServices.seven"),
+        t("provocacion.information.cards.three.listServices.eight"),
       ],
     },
   ];
 
   return (
     <>
-      <section className="bg-[#FFEBB8]">
+      <section className="bg-[#06407A] py-10 md:py-16 lg:py-20">
         {/* Javi + Foco */}
         <div className="flex justify-center flex-shrink-0">
           <div className="relative bottom-0">
@@ -106,7 +108,7 @@ function Information() {
               <img className="h-16 md:h-24" src={FocusTransparent} alt="" />
             </motion.div>
             <img
-              className="w-[180px] md:w-[250px] xl:w-[260px]"
+              className="w-[180px] md:w-[240px] xl:w-[250px]"
               src={Javicorto}
               alt="Javi señalando"
             />
@@ -132,12 +134,12 @@ function Information() {
           }}
           modules={[EffectCreative, Mousewheel]}
           className="mySwiper"
-          style={{ height: "700px" }}
+          style={{ height: "900px" }}
         >
           {slideData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <section className="w-[80%] md:w-[65%] lg:w-[60%] mx-auto">
-                <div className="relative flex flex-col bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center md:text-left items-center min-h-[550px] border-t-[10px] border-primary-yellow">
+              <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
+                <div className="h-fit relative flex flex-col bg-white p-6 md:p-10 text-blue-base rounded-[40px] text-center md:text-left items-center border-t-[10px] border-primary-yellow">
                   <div className="flex flex-col xl:flex-row w-full items-center mb-5">
                     {/* Imagen */}
                     <img
@@ -148,13 +150,41 @@ function Information() {
                     {/* Texto */}
                     <div className="flex flex-col items-center md:items-start justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
                       {slide.title && (
-                        <h4 className="text-xl md:text-4xl font-impact text-primary-yellow mb-2">
+                        <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
                           {slide.title}
                         </h4>
                       )}
-                      <div className="mb-4 w-full mx-5">
-                        {slide.questions &&
-                          slide.questions.map((qa, idx) => (
+                      {slide.description && (
+                        <p className="text-base md:text-xl mb-2">
+                          {slide.description}
+                        </p>
+                      )}
+                      {slide.titleTwo && (
+                        <h5 className="text-xl md:text-2xl font-impact text-dark-blue mb-2">
+                          {slide.titleTwo}
+                        </h5>
+                      )}
+                      {slide.studentFocus && (
+                        <ul className="list-disc pl-5">
+                          {slide.studentFocus.map((item, idx) => (
+                            <li key={idx} className="mb-1 text-sm md:text-base xl:text-lg">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {slide.itemsServices && (
+                        <ul className="list-disc pl-5">
+                          {slide.itemsServices.map((item, idx) => (
+                            <li key={idx} className="mb-1 text-sm md:text-base xl:text-lg">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {slide.questions && (
+                        <div className="mb-4 w-full">
+                          {slide.questions.map((qa, idx) => (
                             <div key={idx} className="mb-3">
                               <strong className="block text-base md:text-xl text-dark-blue mb-1">
                                 {qa.q}
@@ -164,7 +194,8 @@ function Information() {
                               </p>
                             </div>
                           ))}
-                      </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                   {/* Botón debajo de imagen y texto, dentro de la card */}

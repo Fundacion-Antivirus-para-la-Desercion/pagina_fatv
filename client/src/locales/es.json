@@ -919,7 +919,7 @@
         "one": {
           "title": "DIRIGIDO A :",
           "questionOne": "¿A quién está dirigido?",
-          "answernOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
+          "answerOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
           "questionTwo": "¿En qué momento?",
           "answerTwo": "Cuando necesitan tomar decisiones sobre su futuro académico y profesional.",
           "questionThree": "¿Qué están viviendo?",
@@ -941,7 +941,16 @@
           }
         },
         "three": {
-          "title": "¿QUÉ INCLUYE EL SERVICIO?"
+          "title": "¿QUÉ INCLUYE EL SERVICIO?",
+          "listServices": {
+            "one": "5 sesiones grupales y/o individuales",
+            "two": "1 asesoría sociovocacional individual (a demanda)",
+            "three": "Herramientas digitales y guías prácticas para cada sesión",
+            "four": "Actividades experienciales",
+            "five": "Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.",
+            "six": "Grupo de WhatsApp de apoyo o resolución de dudas",
+            "seven": "Certificado de participación"
+          }
         }
       },
       "directed_to": "DIRIGIDO A :",

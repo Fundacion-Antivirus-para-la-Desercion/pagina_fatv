@@ -924,6 +924,44 @@
       "description": "Thank you for contacting us."
     },
     "information": {
+      "cards": {
+        "one": {
+          "title": "DIRECTED TO:",
+          "questionOne": "Who is it for?",
+          "answernOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition.",
+          "questionTwo": "When?",
+          "answerTwo": "When they need to make decisions about their academic and professional future.",
+          "questionThree": "What are they experiencing?",
+          "answerThree": "Feelings of disorientation, confusion, or insecurity about the future."
+        },
+        "two": {
+          "title": "INSTALLED CAPABILITIES",
+          "description": "We promote the development of personal and emotional skills that allow young people to know themselves, value themselves, and project themselves.",
+          "titleTwo": "FOCUS ON THE SELF",
+          "studentFocus": {
+            "autoperception": "🧠 Self-perception: Recognize who I am and how I see myself.",
+            "autobservacion": "👁️ Self-observation: Identify my emotions and behaviors.",
+            "autoestima": "❤️ Self-esteem: Value myself and recognize my own worth.",
+            "autoconcepto": "🔍 Self-concept: Understand how I define myself.",
+            "autonomia": "🧭 Autonomy: Make conscious and responsible decisions.",
+            "autoconfianza": "💪 Self-confidence: Believe in my abilities and potential.",
+            "automotivacion": "🔥 Self-motivation: Drive myself from within.",
+            "autoevaluacion": "📊 Self-evaluation: Learn from my actions and experiences."
+          }
+        },
+        "three": {
+          "title": "WHAT DOES THE SERVICE INCLUDE?",
+          "listServices": {
+            "one": "5 group and/or individual sessions",
+            "two": "1 individual socio-vocational counseling (on demand)",
+            "three": "Digital tools and practical guides for each session",
+            "four": "Experiential activities",
+            "five": "One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.",
+            "six": "WhatsApp support group or doubt resolution",
+            "seven": "Certificate of participation"
+          }
+        }
+      },
       "directed_to": "DIRECTED TO:",
       "who_is_it_for": "Who is it for?",
       "young_people_description": "Young people who are about to make important decisions about their lives,",
