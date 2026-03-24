@@ -144,9 +144,12 @@ function Information() {
             setIsTransitioning(false);
             setPrevIndex(null);
           }}
-          modules={[EffectCreative, Mousewheel]}
+          allowTouchMove={false}
+          touchStartPreventDefault={false}
+          navigation={true}
+          modules={[EffectCreative, Mousewheel, Navigation]}
           className="mySwiper"
-          style={{ height: "1000px" }}
+          style={{ height: "1000px", "--swiper-navigation-color": "#fff" }}
         >
           {slideData.map((slide, index) => (
             <SwiperSlide
