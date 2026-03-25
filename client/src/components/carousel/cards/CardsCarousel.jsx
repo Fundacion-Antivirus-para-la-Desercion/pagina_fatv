@@ -20,8 +20,7 @@ function CardsCarousel({
   const swiperRef = useRef(null);
 
   const handlePrev = () => {
-    if (activeIndex <= 0) return;
-    const newIndex = activeIndex - 1;
+    const newIndex = activeIndex <= 0 ? slideData.length - 1 : activeIndex - 1;
     setActiveIndex(newIndex);
     swiperRef.current?.slideTo(newIndex);
   };
@@ -100,8 +99,7 @@ function CardsCarousel({
               <div className="w-full flex justify-center items-center gap-6 mt-4">
                 <button
                   onClick={handlePrev}
-                  disabled={activeIndex === 0}
-                  className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
+                  className="p-3 rounded-full bg-[#222D56] text-white hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
                   aria-label="Anterior"
                 >
                   <FaChevronLeft size={16} />
