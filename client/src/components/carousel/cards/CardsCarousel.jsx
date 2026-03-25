@@ -56,65 +56,58 @@ function CardsCarousel({
           allowTouchMove={false}
           touchStartPreventDefault={false}
           modules={[Mousewheel]}
-          className="mySwiper h-[1000px] md:h-[1100px] xl:h-[700px]"
+          className="mySwiper h-0 overflow-hidden"
         >
-          {slideData.map((slide, index) => (
-            <SwiperSlide
-              key={index}
-              style={{
-                visibility: index === activeIndex ? "visible" : "hidden",
-              }}
-            >
-              <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
-                <div
-                  id="slide-content"
-                  className="h-fit max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow"
-                >
-                  <section id="main-content">
-                    <AnimatePresence mode="wait">
-                      {index === activeIndex && (
-                        <motion.div
-                          key={activeIndex}
-                          variants={cardContainerVariants}
-                          initial="initial"
-                          animate="animate"
-                          exit="exit"
-                        >
-                          {slide}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </section>
-
-                  {/* Flechas de navegación custom */}
-                  <section id="navigation">
-                    <div className="w-full flex justify-center items-center gap-6 mt-4">
-                      <button
-                        onClick={() => swiperRef.current?.slidePrev()}
-                        disabled={activeIndex === 0}
-                        className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
-                        aria-label="Anterior"
-                      >
-                        <FaChevronLeft size={16} />
-                      </button>
-                      <span className="text-[#222D56] font-bold text-sm select-none">
-                        {index + 1} / {slideData.length}
-                      </span>
-                      <button
-                        onClick={() => swiperRef.current?.slideNext()}
-                        disabled={activeIndex === slideData.length - 1}
-                        className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
-                        aria-label="Siguiente"
-                      >
-                        <FaChevronRight size={16} />
-                      </button>
-                    </div>
-                  </section>
-                </div>
-              </section>
-            </SwiperSlide>
+          {slideData.map((_, index) => (
+            <SwiperSlide key={index} />
           ))}
         </Swiper>
+
+        <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
+          <div
+            id="slide-content"
+            className="min-h-[1050px] xl:min-h-[690px] max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow"
+          >
+            <section id="main-content">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeIndex}
+                  variants={cardContainerVariants}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                >
+                  {slideData[activeIndex]}
+                </motion.div>
+              </AnimatePresence>
+            </section>
+
+            {/* Flechas de navegación custom */}
+            <section id="navigation" className="absolute bottom-10 left-0 right-0">
+              <div className="w-full flex justify-center items-center gap-6 mt-4">
+                <button
+                  onClick={() => swiperRef.current?.slidePrev()}
+                  disabled={activeIndex === 0}
+                  className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
+                  aria-label="Anterior"
+                >
+                  <FaChevronLeft size={16} />
+                </button>
+                <span className="text-[#222D56] font-bold text-sm select-none">
+                  {activeIndex + 1} / {slideData.length}
+                </span>
+                <button
+                  onClick={() => swiperRef.current?.slideNext()}
+                  disabled={activeIndex === slideData.length - 1}
+                  className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
+                  aria-label="Siguiente"
+                >
+                  <FaChevronRight size={16} />
+                </button>
+              </div>
+            </section>
+          </div>
+        </section>
       </section>
     </>
   );
