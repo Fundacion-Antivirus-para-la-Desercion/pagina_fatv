@@ -7,14 +7,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
-import "./Carousel.css";
+import "./MainCarousel.css";
 
-import banner1 from "../assets/Banner/banner1c.jpeg";
-import banner2 from "../../public/projects/Becarios/becarios-itagui.webp";
-import banner3 from "../assets/Banner/banner5c.jpeg";
-import banner4 from "../assets/Banner/banner10c.jpeg";
+import banner1 from "../../../assets/Banner/banner1c.jpeg";
+import banner2 from "../../../../public/projects/Becarios/becarios-itagui.webp";
+import banner3 from "../../../assets/Banner/banner5c.jpeg";
+import banner4 from "../../../assets/Banner/banner10c.jpeg";
 
-function Carousel() {
+function MainCarousel() {
   const { t } = useTranslation(); // Inicializa el hook de traducción
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -164,4 +164,4 @@ function Carousel() {
   );
 }
 
-export default Carousel;
+export default MainCarousel;
