@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import styles from "./Information.module.css";
 import EstudiantesUno from "../../assets/images/views/proVocacion/information/estudiantes-uno.jpeg";
 import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
 import EstudiantesTres from "../../assets/images/views/proVocacion/information/estudiantes-tres.jpeg";
