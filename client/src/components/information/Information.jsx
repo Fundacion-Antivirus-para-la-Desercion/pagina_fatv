@@ -19,7 +19,7 @@ import EstudiantesDieciseis from "../../assets/images/views/proVocacion/informat
 import Javicorto from "../../assets/images/views/javi/javi-corto.webp";
 import Javi from "../../assets/images/views/javi/javi-senala.webp";
 import FocusTransparent from "../../assets/images/views/proVocacion/information/focus.webp";
-import { floatSnake } from "../../components/motion/constants/Animations.js";
+import { floatSnake, cardItemReveal } from "../../components/motion/constants/Animations.js";
 import { motion } from "framer-motion";
 
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
@@ -42,38 +42,39 @@ function Information() {
         />
       </div>
       <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
-        <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
+        <motion.h4 variants={cardItemReveal} className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
           {t("provocacion.information.cards.one.title")}
-        </h4>
+        </motion.h4>
         <div className="mb-4 w-full">
-          <div className="mb-3">
+          <motion.div variants={cardItemReveal} className="mb-3">
             <strong className="block text-base md:text-xl text-dark-blue mb-1">
               {t("provocacion.information.cards.one.questionOne")}
             </strong>
             <p className="text-sm md:text-base xl:text-lg md:text-left">
               {t("provocacion.information.cards.one.answerOne")}
             </p>
-          </div>
-          <div className="mb-3">
+          </motion.div>
+          <motion.div variants={cardItemReveal} className="mb-3">
             <strong className="block text-base md:text-xl text-dark-blue mb-1">
               {t("provocacion.information.cards.one.questionTwo")}
             </strong>
             <p className="text-sm md:text-base xl:text-lg md:text-left">
               {t("provocacion.information.cards.one.answerTwo")}
             </p>
-          </div>
-          <div className="mb-3">
+          </motion.div>
+          <motion.div variants={cardItemReveal} className="mb-3">
             <strong className="block text-base md:text-xl text-dark-blue mb-1">
               {t("provocacion.information.cards.one.questionThree")}
             </strong>
             <p className="text-sm md:text-base xl:text-lg md:text-left">
               {t("provocacion.information.cards.one.answerThree")}
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="col-span-full w-full flex justify-center items-center mt-4">
-        <a
+        <motion.a
+          variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
@@ -81,7 +82,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </div>
     </section>,
 
@@ -94,15 +95,15 @@ function Information() {
         />
       </div>
       <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
-        <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
+        <motion.h4 variants={cardItemReveal} className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
           {t("provocacion.information.cards.two.title")}
-        </h4>
-        <p className="text-base md:text-xl mb-2">
+        </motion.h4>
+        <motion.p variants={cardItemReveal} className="text-base md:text-xl mb-2">
           {t("provocacion.information.cards.two.description")}
-        </p>
-        <h5 className="text-xl md:text-2xl font-impact text-dark-blue mb-2">
+        </motion.p>
+        <motion.h5 variants={cardItemReveal} className="text-xl md:text-2xl font-impact text-dark-blue mb-2">
           {t("provocacion.information.cards.two.titleTwo")}
-        </h5>
+        </motion.h5>
         <ul className="list-disc pl-5">
           {[
             "autoperception",
@@ -114,14 +115,15 @@ function Information() {
             "automotivacion",
             "autoevaluacion",
           ].map((key) => (
-            <li key={key} className="mb-1 text-sm md:text-base xl:text-lg">
+            <motion.li variants={cardItemReveal} key={key} className="mb-1 text-sm md:text-base xl:text-lg">
               {t(`provocacion.information.cards.two.studentFocus.${key}`)}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
       <div className="col-span-full w-full flex justify-center items-center mt-4">
-        <a
+        <motion.a
+          variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
@@ -129,7 +131,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </div>
     </section>,
 
@@ -142,21 +144,22 @@ function Information() {
         />
       </div>
       <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
-        <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
+        <motion.h4 variants={cardItemReveal} className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
           {t("provocacion.information.cards.three.title")}
-        </h4>
+        </motion.h4>
         <ul className="list-disc pl-5">
           {["one", "two", "three", "four", "five", "six", "seven"].map(
             (key) => (
-              <li key={key} className="mb-1 text-sm md:text-base xl:text-lg">
+              <motion.li variants={cardItemReveal} key={key} className="mb-1 text-sm md:text-base xl:text-lg">
                 {t(`provocacion.information.cards.three.listServices.${key}`)}
-              </li>
+              </motion.li>
             )
           )}
         </ul>
       </div>
       <div className="col-span-full w-full flex justify-center items-center mt-4">
-        <a
+        <motion.a
+          variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
@@ -164,7 +167,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </div>
     </section>,
 
@@ -177,19 +180,20 @@ function Information() {
         />
       </div>
       <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
-        <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
+        <motion.h4 variants={cardItemReveal} className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
           {t("provocacion.information.cards.four.title_two")}
-        </h4>
+        </motion.h4>
         <ul className="list-disc pl-5">
           {["one", "two", "three", "price", "final_price"].map((key) => (
-            <li key={key} className="mb-1 text-sm md:text-base xl:text-lg">
+            <motion.li variants={cardItemReveal} key={key} className="mb-1 text-sm md:text-base xl:text-lg">
               {t(`provocacion.information.cards.four.${key}`)}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
       <div className="col-span-full w-full flex justify-center items-center mt-4">
-        <a
+        <motion.a
+          variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
@@ -197,7 +201,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </div>
     </section>,
   ];

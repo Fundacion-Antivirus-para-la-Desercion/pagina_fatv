@@ -92,3 +92,29 @@ export const slideFromTopBody = ({
     ...transition,
   },
 });
+
+/**
+ * Variants para el contenedor padre del contenido de una card.
+ * Orquesta el stagger de los elementos hijos al entrar y salir.
+ * Usar con AnimatePresence mode="wait" en CardsCarousel.
+ */
+export const cardContainerVariants = {
+  initial: {},
+  animate: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
+  },
+  exit: {
+    transition: { staggerChildren: 0.04, staggerDirection: -1 },
+  },
+};
+
+/**
+ * Variants para cada elemento individual del contenido de una card.
+ * Entra desde la izquierda y sale levemente hacia la derecha.
+ * Usar en motion.h4, motion.p, motion.li, etc. con variants={cardItemReveal}.
+ */
+export const cardItemReveal = {
+  initial: { opacity: 0, x: -30 },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
+  exit: { opacity: 0, x: 20, transition: { duration: 0.2, ease: "easeIn" } },
+};

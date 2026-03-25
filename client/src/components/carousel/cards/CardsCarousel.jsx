@@ -2,25 +2,21 @@ import { useState, useRef } from "react";
 
 import Javicorto from "../../../assets/images/views/javi/javi-corto.webp";
 import FocusTransparent from "../../../assets/images/views/proVocacion/information/focus.webp";
-import { floatSnake } from "../../motion/constants/Animations.js";
-import { motion } from "framer-motion";
+import { floatSnake, cardContainerVariants } from "../../motion/constants/Animations.js";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import "swiper/css/effect-creative";
-
 // import required modules
-import { EffectCreative, Mousewheel } from "swiper/modules";
+import { Mousewheel } from "swiper/modules";
 
 function CardsCarousel({
     slideData = [<div>No hay contenido</div>, <div>No hay contenido</div>, <div>No hay contenido</div>],
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [prevIndex, setPrevIndex] = useState(null);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const swiperRef = useRef(null);
 
   return (
@@ -43,49 +39,30 @@ function CardsCarousel({
           </div>
         </div>
         <Swiper
-          effect={"creative"}
           grabCursor={true}
-          speed={500}
+          speed={1}
           mousewheel={{
             forceToAxis: true,
             sensitivity: 1,
             releaseOnEdges: true,
           }}
           direction={"vertical"}
-          creativeEffect={{
-            prev: {
-              translate: [0, 0, -1],
-            },
-            next: {
-              translate: [0, "100%", 0],
-            },
-          }}
           onSlideChange={(swiper) => {
-            setPrevIndex(activeIndex);
             setActiveIndex(swiper.activeIndex);
-            setIsTransitioning(true);
-          }}
-          onSlideChangeTransitionEnd={() => {
-            setIsTransitioning(false);
-            setPrevIndex(null);
           }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
           allowTouchMove={false}
           touchStartPreventDefault={false}
-          modules={[EffectCreative, Mousewheel]}
+          modules={[Mousewheel]}
           className="mySwiper h-[1000px] md:h-[1100px] xl:h-[700px]"
         >
           {slideData.map((slide, index) => (
             <SwiperSlide
               key={index}
               style={{
-                visibility:
-                  index === activeIndex ||
-                  (isTransitioning && index === prevIndex)
-                    ? "visible"
-                    : "hidden",
+                visibility: index === activeIndex ? "visible" : "hidden",
               }}
             >
               <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
@@ -93,7 +70,21 @@ function CardsCarousel({
                   id="slide-content"
                   className="h-fit max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow"
                 >
-                  <section id="main-content">{slide}</section>
+                  <section id="main-content">
+                    <AnimatePresence mode="wait">
+                      {index === activeIndex && (
+                        <motion.div
+                          key={activeIndex}
+                          variants={cardContainerVariants}
+                          initial="initial"
+                          animate="animate"
+                          exit="exit"
+                        >
+                          {slide}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </section>
 
                   {/* Flechas de navegación custom */}
                   <section id="navigation">
