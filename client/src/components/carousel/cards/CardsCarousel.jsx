@@ -6,34 +6,41 @@ import { floatSnake, cardContainerVariants } from "../../motion/constants/Animat
 import { motion, AnimatePresence } from "framer-motion";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Mousewheel } from "swiper/modules";
 
 function CardsCarousel({
     slideData = [<div>No hay contenido</div>, <div>No hay contenido</div>, <div>No hay contenido</div>],
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const swiperRef = useRef(null);
+  const isScrolling = useRef(false);
 
   const handlePrev = () => {
-    const newIndex = activeIndex <= 0 ? slideData.length - 1 : activeIndex - 1;
-    setActiveIndex(newIndex);
-    swiperRef.current?.slideTo(newIndex);
+    setActiveIndex((prev) => (prev <= 0 ? slideData.length - 1 : prev - 1));
   };
 
   const handleNext = () => {
-    const newIndex = activeIndex >= slideData.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(newIndex);
-    swiperRef.current?.slideTo(newIndex);
+    setActiveIndex((prev) => (prev >= slideData.length - 1 ? 0 : prev + 1));
+  };
+
+  // Detecta scroll del mouse para cambiar de slide
+  const handleWheel = (e) => {
+    if (isScrolling.current) return;
+    isScrolling.current = true;
+
+    if (e.deltaY > 0) {
+      handleNext();
+    } else if (e.deltaY < 0) {
+      handlePrev();
+    }
+
+    // Espera 600ms antes de permitir otro cambio
+    setTimeout(() => {
+      isScrolling.current = false;
+    }, 600);
   };
 
   return (
     <>
-      <section className="bg-[#06407A] py-10 md:py-16 lg:py-20">
+      <section className="bg-[#06407A] py-10 md:py-16 lg:py-20" onWheel={handleWheel}>
         {/* Javi + Foco */}
         <div className="flex justify-center flex-shrink-0">
           <div className="relative bottom-0">
@@ -50,30 +57,6 @@ function CardsCarousel({
             />
           </div>
         </div>
-        <Swiper
-          grabCursor={true}
-          speed={1}
-          mousewheel={{
-            forceToAxis: true,
-            sensitivity: 1,
-            releaseOnEdges: true,
-          }}
-          direction={"vertical"}
-          onSlideChange={(swiper) => {
-            setActiveIndex(swiper.activeIndex);
-          }}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-          }}
-          allowTouchMove={false}
-          touchStartPreventDefault={false}
-          modules={[Mousewheel]}
-          className="mySwiper h-0 overflow-hidden"
-        >
-          {slideData.map((_, index) => (
-            <SwiperSlide key={index} />
-          ))}
-        </Swiper>
 
         <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
           <div
@@ -94,7 +77,7 @@ function CardsCarousel({
               </AnimatePresence>
             </section>
 
-            {/* Flechas de navegación custom */}
+            {/* Flechas de navegación */}
             <section id="navigation" className="absolute bottom-10 left-0 right-0">
               <div className="w-full flex justify-center items-center gap-6 mt-4">
                 <button
