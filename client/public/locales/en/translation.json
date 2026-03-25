@@ -928,11 +928,12 @@
         "one": {
           "title": "DIRECTED TO:",
           "questionOne": "Who is it for?",
-          "answernOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition.",
+          "answerOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition.",
           "questionTwo": "When?",
           "answerTwo": "When they need to make decisions about their academic and professional future.",
           "questionThree": "What are they experiencing?",
-          "answerThree": "Feelings of disorientation, confusion, or insecurity about the future."
+          "answerThree": "Feelings of disorientation, confusion, or insecurity about the future.",
+          "answernOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition."
         },
         "two": {
           "title": "INSTALLED CAPABILITIES",
@@ -950,6 +951,18 @@
           }
         },
         "three": {
+          "title": "WHAT DOES THE SERVICE INCLUDE?",
+          "listServices": {
+            "one": "5 group and/or individual sessions",
+            "two": "1 individual socio-vocational counseling (on demand)",
+            "three": "Digital tools and practical guides for each session",
+            "four": "Experiential activities",
+            "five": "One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.",
+            "six": "WhatsApp support group or doubt resolution",
+            "seven": "Certificate of participation"
+          }
+        },
+        "four": {
           "title": "WHAT DOES THE SERVICE INCLUDE?",
           "listServices": {
             "one": "5 group and/or individual sessions",

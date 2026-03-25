@@ -946,44 +946,20 @@
             "six": "WhatsApp support group or doubt resolution",
             "seven": "Certificate of participation"
           }
+        },
+        "four": {
+          "title": "WHAT DOES THE SERVICE INCLUDE?",
+          "listServices": {
+            "one": "5 group and/or individual sessions",
+            "two": "1 individual socio-vocational counseling (on demand)",
+            "three": "Digital tools and practical guides for each session",
+            "four": "Experiential activities",
+            "five": "One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.",
+            "six": "WhatsApp support group or doubt resolution",
+            "seven": "Certificate of participation"
+          }
         }
-      },
-      "directed_to": "DIRECTED TO:",
-      "who_is_it_for": "Who is it for?",
-      "young_people_description": "Young people who are about to make important decisions about their lives,",
-      "students_description": "especially in relation to their life project. Final year students, high school graduates or young people in transition.",
-      "when_moment": "When?",
-      "decision_time": "When they need to make decisions about their",
-      "academic_future": "academic and professional future.",
-      "what_are_they_living": "What are they experiencing?",
-      "feelings_description": "Feelings of disorientation, confusion or insecurity about the future.",
-      "i_want_it": "I want it",
-      "installed_capacities": "INSTALLED CAPACITIES",
-      "skills_promotion": "We promote the development of personal and emotional skills that allow young people to know, value and project themselves.",
-      "focus_on_autos": "FOCUS ON THE SELF",
-      "self_perception": "🧠 Self-perception: Recognizing who I am and how I see myself.",
-      "self_observation": "👁️ Self-observation: Identifying my emotions and behaviors.",
-      "self_esteem": "❤️ Self-esteem: Valuing myself and recognizing my own worth.",
-      "self_concept": "🔍 Self-concept: Understanding how I define myself.",
-      "autonomy": "🧭 Autonomy: Making conscious and responsible decisions.",
-      "self_confidence": "💪 Self-confidence: Believing in my abilities and potential.",
-      "self_motivation": "🔥 Self-motivation: Driving myself from within.",
-      "self_evaluation": "📊 Self-evaluation: Learning from my actions and experiences.",
-      "what_includes_service": "WHAT DOES THE SERVICE INCLUDE?",
-      "five_sessions": "- 5 group and/or individual sessions",
-      "one_counseling": "- 1 individual socio-vocational counseling (on demand)",
-      "digital_tools": "- Digital tools and practical guides for each session",
-      "experiential_activities": "- Experiential activities",
-      "experience_exchange": "(One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.)",
-      "whatsapp_support": "- WhatsApp support group or doubt resolution",
-      "participation_certificate": "- Certificate of participation",
-      "payment_methods": "PAYMENT METHODS",
-      "bank_transfer": "- Bank transfer",
-      "debit_card": "- Debit card",
-      "credit_card": "- Credit card",
-      "cost": "COST",
-      "base_price": "450,000 + VAT",
-      "final_price": "535,500"
+      }
     },
     "testimonials": {
       "title": "Testimonials",

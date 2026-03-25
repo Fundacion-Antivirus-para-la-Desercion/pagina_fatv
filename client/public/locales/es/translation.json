@@ -931,11 +931,12 @@
         "one": {
           "title": "DIRIGIDO A :",
           "questionOne": "¿A quién está dirigido?",
-          "answernOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
+          "answerOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
           "questionTwo": "¿En qué momento?",
           "answerTwo": "Cuando necesitan tomar decisiones sobre su futuro académico y profesional.",
           "questionThree": "¿Qué están viviendo?",
           "answerThree": "Sentimientos de desorientación, confusión o inseguridad frente al futuro.",
+          "answernOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
           "answerneOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición."
         },
         "two": {
@@ -979,6 +980,15 @@
             "six": "Grupo de WhatsApp de apoyo o resolución de dudas",
             "seven": "Certificado de participación"
           }
+        },
+        "four": {
+          "title": "MEDIOS DE PAGO",
+          "title_two": "COSTO",
+          "one": "Tranferencia bancaria",
+          "two": "Tarjeta débito",
+          "three": "Tarjeta crédito",
+          "price": "450.000 + IVA",
+          "final_price": "535.500"
         }
       },
       "directed_to": "DIRIGIDO A :",

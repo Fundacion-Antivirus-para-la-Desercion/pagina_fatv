@@ -94,7 +94,19 @@ function Information() {
         t("provocacion.information.cards.three.listServices.five"),
         t("provocacion.information.cards.three.listServices.six"),
         t("provocacion.information.cards.three.listServices.seven"),
-        t("provocacion.information.cards.three.listServices.eight"),
+      ],
+    },
+    {
+      id: 4,
+      image: EstudiantesTres,
+      title: t("provocacion.information.cards.four.title"),
+      title: t("provocacion.information.cards.four.title_two"),
+      itemsServices: [
+        t("provocacion.information.cards.four.one"),
+        t("provocacion.information.cards.four.two"),
+        t("provocacion.information.cards.four.three"),
+        t("provocacion.information.cards.four.price"),
+        t("provocacion.information.cards.four.final_price"),
       ],
     },
   ];
@@ -145,12 +157,13 @@ function Information() {
             setIsTransitioning(false);
             setPrevIndex(null);
           }}
-          onSwiper={(swiper) => { swiperRef.current = swiper; }}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           allowTouchMove={false}
           touchStartPreventDefault={false}
           modules={[EffectCreative, Mousewheel]}
-          className="mySwiper"
-          style={{ height: "1050px" }}
+          className="mySwiper h-[1000px] md:h-[1100px] xl:h-[700px]"
         >
           {slideData.map((slide, index) => (
             <SwiperSlide
@@ -164,87 +177,95 @@ function Information() {
               }}
             >
               <section className="w-[80%] md:w-[65%] lg:w-[80%] mx-auto">
-                <div className="h-fit max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow">
-                  <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
-                    <div className="justify-self-center xl:justify-self-end">
-                      {/* Imagen */}
-                      <img
-                        className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
-                        src={slide.image}
-                        alt=""
-                      />
-                    </div>
+                <div
+                  id="slide-content"
+                  className="h-fit max-w-[1200px] mx-auto relative bg-white p-6 md:p-10 text-blue-base rounded-[40px] md:text-left border-t-[10px] border-primary-yellow"
+                >
+                  <section id="main-content">
+                    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
+                      <div className="justify-self-center xl:justify-self-end">
+                        {/* Imagen */}
+                        <img
+                          className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+                          src={slide.image}
+                          alt=""
+                        />
+                      </div>
 
-                    {/* Texto */}
-                    <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
-                      {slide.title && (
-                        <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
-                          {slide.title}
-                        </h4>
-                      )}
-                      {slide.description && (
-                        <p className="text-base md:text-xl mb-2">
-                          {slide.description}
-                        </p>
-                      )}
-                      {slide.titleTwo && (
-                        <h5 className="text-xl md:text-2xl font-impact text-dark-blue mb-2">
-                          {slide.titleTwo}
-                        </h5>
-                      )}
-                      {slide.studentFocus && (
-                        <ul className="list-disc pl-5">
-                          {slide.studentFocus.map((item, idx) => (
-                            <li
-                              key={idx}
-                              className="mb-1 text-sm md:text-base xl:text-lg"
-                            >
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                      {slide.itemsServices && (
-                        <ul className="list-disc pl-5">
-                          {slide.itemsServices.map((item, idx) => (
-                            <li
-                              key={idx}
-                              className="mb-1 text-sm md:text-base xl:text-lg"
-                            >
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                      {slide.questions && (
-                        <div className="mb-4 w-full">
-                          {slide.questions.map((qa, idx) => (
-                            <div key={idx} className="mb-3">
-                              <strong className="block text-base md:text-xl text-dark-blue mb-1">
-                                {qa.q}
-                              </strong>
-                              <p className="text-sm md:text-base xl:text-lg md:text-left">
-                                {qa.a}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                      {/* Texto */}
+                      <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+                        {slide.title && (
+                          <h4 className="text-xl md:text-3xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2">
+                            {slide.title}
+                          </h4>
+                        )}
+                        {slide.description && (
+                          <p className="text-base md:text-xl mb-2">
+                            {slide.description}
+                          </p>
+                        )}
+                        {slide.titleTwo && (
+                          <h5 className="text-xl md:text-2xl font-impact text-dark-blue mb-2">
+                            {slide.titleTwo}
+                          </h5>
+                        )}
+                        {slide.studentFocus && (
+                          <ul className="list-disc pl-5">
+                            {slide.studentFocus.map((item, idx) => (
+                              <li
+                                key={idx}
+                                className="mb-1 text-sm md:text-base xl:text-lg"
+                              >
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {slide.itemsServices && (
+                          <ul className="list-disc pl-5">
+                            {slide.itemsServices.map((item, idx) => (
+                              <li
+                                key={idx}
+                                className="mb-1 text-sm md:text-base xl:text-lg"
+                              >
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {slide.questions && (
+                          <div className="mb-4 w-full">
+                            {slide.questions.map((qa, idx) => (
+                              <div key={idx} className="mb-3">
+                                <strong className="block text-base md:text-xl text-dark-blue mb-1">
+                                  {qa.q}
+                                </strong>
+                                <p className="text-sm md:text-base xl:text-lg md:text-left">
+                                  {qa.a}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </section>
+                    <section>
+                      {/* Botón debajo de imagen y texto, dentro de la card */}
+                      <div className="w-full flex justify-center items-center">
+                        <a
+                          className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                          href={`https://wa.me/${whatsAppNumber}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {t("provocacion.information.i_want_it")}
+                          <img src={Focus} alt="icono" className="w-10 h-10" />
+                        </a>
+                      </div>
+                    </section>
                   </section>
-                  <section>
-                    {/* Botón debajo de imagen y texto, dentro de la card */}
-                    <div className="w-full flex justify-center items-center">
-                      <a
-                        className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                        href={`https://wa.me/${whatsAppNumber}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {t("provocacion.information.i_want_it")}
-                        <img src={Focus} alt="icono" className="w-10 h-10" />
-                      </a>
-                    </div>
+
+                  <section id="navigation">
                     {/* Flechas de navegación custom */}
                     <div className="w-full flex justify-center items-center gap-6 mt-4">
                       <button
