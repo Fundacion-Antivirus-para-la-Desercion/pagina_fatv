@@ -19,6 +19,19 @@ function CardsCarousel({
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
+  const handlePrev = () => {
+    if (activeIndex <= 0) return;
+    const newIndex = activeIndex - 1;
+    setActiveIndex(newIndex);
+    swiperRef.current?.slideTo(newIndex);
+  };
+
+  const handleNext = () => {
+    const newIndex = activeIndex >= slideData.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(newIndex);
+    swiperRef.current?.slideTo(newIndex);
+  };
+
   return (
     <>
       <section className="bg-[#06407A] py-10 md:py-16 lg:py-20">
@@ -86,7 +99,7 @@ function CardsCarousel({
             <section id="navigation" className="absolute bottom-10 left-0 right-0">
               <div className="w-full flex justify-center items-center gap-6 mt-4">
                 <button
-                  onClick={() => swiperRef.current?.slidePrev()}
+                  onClick={handlePrev}
                   disabled={activeIndex === 0}
                   className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
                   aria-label="Anterior"
@@ -97,9 +110,8 @@ function CardsCarousel({
                   {activeIndex + 1} / {slideData.length}
                 </span>
                 <button
-                  onClick={() => swiperRef.current?.slideNext()}
-                  disabled={activeIndex === slideData.length - 1}
-                  className="p-3 rounded-full bg-[#222D56] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
+                  onClick={handleNext}
+                  className="p-3 rounded-full bg-[#222D56] text-white hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
                   aria-label="Siguiente"
                 >
                   <FaChevronRight size={16} />
