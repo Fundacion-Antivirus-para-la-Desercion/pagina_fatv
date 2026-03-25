@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 import Javicorto from "../../../assets/images/views/javi/javi-corto.webp";
 import FocusTransparent from "../../../assets/images/views/proVocacion/information/focus.webp";
@@ -11,7 +11,6 @@ function CardsCarousel({
     slideData = [<div>No hay contenido</div>, <div>No hay contenido</div>, <div>No hay contenido</div>],
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const isScrolling = useRef(false);
 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev <= 0 ? slideData.length - 1 : prev - 1));
@@ -21,26 +20,9 @@ function CardsCarousel({
     setActiveIndex((prev) => (prev >= slideData.length - 1 ? 0 : prev + 1));
   };
 
-  // Detecta scroll del mouse para cambiar de slide
-  const handleWheel = (e) => {
-    if (isScrolling.current) return;
-    isScrolling.current = true;
-
-    if (e.deltaY > 0) {
-      handleNext();
-    } else if (e.deltaY < 0) {
-      handlePrev();
-    }
-
-    // Espera 600ms antes de permitir otro cambio
-    setTimeout(() => {
-      isScrolling.current = false;
-    }, 600);
-  };
-
   return (
     <>
-      <section className="bg-[#06407A] py-10 md:py-16 lg:py-20" onWheel={handleWheel}>
+      <section className="bg-[#06407A] py-10 md:py-16 lg:py-20">
         {/* Javi + Foco */}
         <div className="flex justify-center flex-shrink-0">
           <div className="relative bottom-0">
