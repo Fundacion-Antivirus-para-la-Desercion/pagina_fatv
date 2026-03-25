@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 
 import Javicorto from "../../../assets/images/views/javi/javi-corto.webp";
 import FocusTransparent from "../../../assets/images/views/proVocacion/information/focus.webp";
-import { floatSnake } from "../../../components/motion/constants/Animations.js";
+import { floatSnake } from "../../motion/constants/Animations.js";
 import { motion } from "framer-motion";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -15,7 +15,7 @@ import "swiper/css/effect-creative";
 // import required modules
 import { EffectCreative, Mousewheel } from "swiper/modules";
 
-function MainCarousel({
+function CardsCarousel({
     slideData = [<div>No hay contenido</div>, <div>No hay contenido</div>, <div>No hay contenido</div>],
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -129,4 +129,4 @@ function MainCarousel({
   );
 }
 
-export default MainCarousel;
+export default CardsCarousel;
