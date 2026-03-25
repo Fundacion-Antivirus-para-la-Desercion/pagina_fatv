@@ -33,7 +33,7 @@ function Information() {
   const { t } = useTranslation();
 
   const slideData = [
-    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
@@ -86,7 +86,7 @@ function Information() {
       </div>
     </section>,
 
-    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
@@ -135,7 +135,7 @@ function Information() {
       </div>
     </section>,
 
-    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
@@ -171,7 +171,7 @@ function Information() {
       </div>
     </section>,
 
-    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] items-center justify-center mb-2 xl:mb-5">
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
