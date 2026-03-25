@@ -4,8 +4,8 @@ import Testimonial2 from "../../assets/images/views/proVocacion/testimonials/tes
 import Testimonial3 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-03.jpg";
 import Testimonial4 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-04.jpg";
 import Testimonial5 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-05.jpg";
-import Comilla from "../../assets/images/views/proVocacion/testimonials/comilla.png";
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
+import { FaQuoteLeft } from "react-icons/fa6";
 
 import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -43,7 +43,7 @@ function Testimonials() {
     "provocacion.testimonials.testimonials_content",
     {
       returnObjects: true,
-    }
+    },
   );
 
   return (
@@ -74,23 +74,19 @@ function Testimonials() {
           {contentTestimonials.map((testimonial, index) => (
             <SwiperSlide key={`main-${index}`}>
               <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-6xl mx-auto">
-                <div>
+                <div className="flex-shrink-0">
                   <img
-                    className={`rounded-full min-h-80 w-80 object-cover shadow-sm border-[12px] border-[#F6A623] ${styles.borderImage}`}
+                    className={`rounded-full w-52 h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 object-cover shadow-sm border-[8px] md:border-[12px] border-primary-yellow ${styles.borderImage}`}
                     src={testimonialsImages[index]}
                     alt={`${t(
-                      "provocacion.testimonials.alt_testimonial_img"
+                      "provocacion.testimonials.alt_testimonial_img",
                     )} ${index + 1}`}
                   />
                 </div>
-                <div className=" text-lg space-y-4 text-justify max-w-xl">
-                  <img
-                    className="w-8 mx-auto"
-                    src={Comilla}
-                    alt={t("provocacion.testimonials.alt_comilla")}
-                  />
-                  <p className={`${styles.text}`}> {testimonial.description}</p>
-                  <p className="font-semibold text-right text-xl text-[#F6A623]">
+                <div className=" text-base md:text-lg space-y-4 text-justify max-w-xl">
+                  <FaQuoteLeft className="w-8 h-8 mx-auto text-[#F6A623]" />
+                  <p className="text-white"> {testimonial.description}</p>
+                  <p className="font-semibold text-right text-base md:text-xl text-[#F6A623]">
                     {testimonial.author}
                   </p>
                 </div>
@@ -99,29 +95,27 @@ function Testimonials() {
           ))}
         </Swiper>
 
-        <section className="flex justify-end">
-          <div className="flex gap-4 flex-wrap items-center">
-            <a
-              className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-              href={`https://wa.me/${whatsAppNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("provocacion.testimonials.button1")}
-              <img
-                src={Focus}
-                alt={t("provocacion.testimonials.alt_focus")}
-                className="w-10 h-10"
-              />
-            </a>
-            <a
-              className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-              href="#form-contac-us"
-            >
-              {t("provocacion.testimonials.button2")}
-            </a>
-          </div>
-        </section>
+        <div className="flex gap-4 flex-wrap justify-center md:justify-end mt-10">
+          <a
+            className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+            href={`https://wa.me/${whatsAppNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("provocacion.testimonials.button1")}
+            <img
+              src={Focus}
+              alt={t("provocacion.testimonials.alt_focus")}
+              className="w-10 h-10"
+            />
+          </a>
+          <a
+            className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+            href="#form-contac-us"
+          >
+            {t("provocacion.testimonials.button2")}
+          </a>
+        </div>
       </section>
     </>
   );
