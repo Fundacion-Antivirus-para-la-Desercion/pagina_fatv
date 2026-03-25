@@ -17,6 +17,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "../components/modal/Modal";
 import emailjs from "emailjs-com";
+import CardsCarousel from "../components/carousel/cards/MainCarousel";
 
 function ProVocacion() {
   const { t, i18n } = useTranslation();
@@ -201,7 +202,8 @@ function ProVocacion() {
       </section>
 
       <Description />
-      <Information />
+      <CardsCarousel />
+      {/*<Information />*/}
 
       <section>
         <img
