@@ -963,7 +963,13 @@
           }
         },
         "four": {
-          "title": "WHAT DOES THE SERVICE INCLUDE?",
+          "title": "PAYMENT METHODS",
+          "title_two": "COST",
+          "one": "Bank transfer",
+          "two": "Debit card",
+          "three": "Credit card",
+          "price": "450,000 + VAT",
+          "final_price": "535,500",
           "listServices": {
             "one": "5 group and/or individual sessions",
             "two": "1 individual socio-vocational counseling (on demand)",
