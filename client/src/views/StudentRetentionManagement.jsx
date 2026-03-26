@@ -165,9 +165,9 @@ function StudentRetentionManagement() {
             />
           </div>
           <div className={styles.orangeBar}></div>
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
+          <section className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-4 md:mt-2 justify-center text-center">
             <motion.div className="will-change-transform" {...slideFromLeft}>
-              <h2 className="text-5xl text-center m-7 md:text-6xl md:ml-10 md:m-5 md:mt-12 font-impact text-white p-2">
+              <h2 className="text-5xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-12 font-impact text-white p-2">
                 {t("studentRetentionManagement.success.title")}
               </h2>
 
