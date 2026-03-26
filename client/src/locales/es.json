@@ -156,7 +156,7 @@
       "alt_image": "Gráfico de análisis de datos"
     }
   },
-  "communications_ATV": {
+  "communications": {
     "banner": {
       "h1": "Comunicaciones",
       "alt": "El equipo de comunicaciones sonriendo juntos."
@@ -170,6 +170,12 @@
       "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
       "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
       "alt_image": "Equipo de Comunicaciones"
+    },
+    "description": {
+      "spam": "NUESTRA MISIÓN CREATIVA",
+      "title": "CADA FORMATO QUE CREAMOS NARRA UNA HISTORIA DE",
+      "spam_title": "CAMBIO",
+      "description_general": "Somos el puente creativo entre el impacto social de la Fundación y las audiencias que necesitan conocerlo. Diseñamos estrategias de comunicación que educan, inspiran y transforman."
     }
   },
   "foundation": {

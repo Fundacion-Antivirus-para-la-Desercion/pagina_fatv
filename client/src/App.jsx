@@ -7,7 +7,7 @@ import QHFA from "./views/QHFA";
 import DataAnalytics from "./views/DataAnalytics";
 import Foundation from "./views/Foundation";
 import ContacUs from "./views/ContacUs";
-import Communications_ATV from "./views/Communications_ATV";
+import Communications from "./views/Communications/Communications.jsx";
 import ApoyoAcademico from "./Services/ApoyoAcademico";
 import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
 import Repositorio from "./Services/Repositorio";
@@ -39,7 +39,7 @@ function App() {
           />*/}
           <Route path="/social-intervention" element={<SocialIntervention />} />
           <Route path="/dataAnalyctis" element={<DataAnalytics />} />
-          <Route path="/Comunicaciones" element={<Communications_ATV />} />
+          <Route path="/Comunicaciones" element={<Communications />} />
           <Route path="/fundacion" element={<Foundation />} />
           <Route path="/News" element={<News />} />
           <Route path="/ContactUs" element={<ContacUs />} />

@@ -192,7 +192,62 @@ function Information() {
             ),
           )}
         </ul>
+        <div className="flex justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+        <div className="flex-col justify-evenly">
+          <motion.h4
+            variants={cardItemReveal}
+            className="text-xl md:text-2xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-1 mb-2"
+          >
+            {t("provocacion.information.cards.four.title")}
+          </motion.h4>
+          <ul className="list-none pl-5">
+            <motion.li
+              variants={cardItemReveal}
+              className="flex items-start mb-1 text-sm md:text-base xl:text-lg"
+            >
+              <MdOutlineAttachMoney className="flex-shrink-0 mt-1 mr-2 bg-dark-blue rounded-full p-1 text-white text-2xl" />
+              <span>{t("provocacion.information.cards.four.one")}</span>
+            </motion.li>
+            <motion.li
+              variants={cardItemReveal}
+              className="flex items-start mb-1 text-sm md:text-base xl:text-lg"
+            >
+              <MdPayment className="flex-shrink-0 mt-1 mr-2 bg-dark-blue rounded-full p-1 text-white text-2xl" />
+              <span>{t("provocacion.information.cards.four.two")}</span>
+            </motion.li>
+            <motion.li
+              variants={cardItemReveal}
+              className="flex items-start mb-1 text-sm md:text-base xl:text-lg"
+            >
+              <BiCreditCardAlt className="flex-shrink-0 mt-1 mr-2 bg-dark-blue rounded-full p-1 text-white text-2xl" />
+              <span>{t("provocacion.information.cards.four.three")}</span>
+            </motion.li>
+          </ul>
+        </div>
+        <div>
+          <motion.h4
+            variants={cardItemReveal}
+            className="text-xl md:text-2xl font-impact text-dark-blue bg-primary-yellow rounded-xl p-1 mb-2"
+          >
+            {t("provocacion.information.cards.four.title_two")}
+          </motion.h4>
+
+          <ul className="list-none pl-5">
+            {["price", "final_price"].map((key) => (
+              <motion.li
+                variants={cardItemReveal}
+                key={key}
+                className="mb-1 text-sm md:text-base xl:text-lg"
+              >
+                {t(`provocacion.information.cards.four.${key}`)}
+              </motion.li>
+            ))}
+          </ul>
+        </div>
       </div>
+      </div>
+      
+       
       <motion.div
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"

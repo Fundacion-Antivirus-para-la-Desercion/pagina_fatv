@@ -100,7 +100,7 @@ function FoundationATV() {
       <div className="text-blue-base m-8 md:m-12 md:p-16">
         <div className="flex flex-col gap-5 items-end md:flex-row md:flex-wrap md:justify-between">
           <div className="w-full md:w-[calc(60%-70px)]">
-            <p className="text-sm tracking-nm uppercase text-center md:text-left mt-4">
+            <p className="text-lg text-primary-purple uppercase font-impact text-center md:text-left mt-4">
               {t("foundation.foundationATV.title")}
             </p>
             <h4 className="lineSubtitle font-impact text-4xl md:text-5xl leading-[.92] uppercase">
