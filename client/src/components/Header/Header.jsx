@@ -456,7 +456,7 @@ function Header() {
 
           {queHacemos && (
             <ul className="pl-4">
-              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
+              <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link to="/dataAnalyctis" onClick={handleNav}>
                   {t("header.sub_header.data_analytics")}
                 </Link>
@@ -553,7 +553,7 @@ function Header() {
                   </ul>
                 )}
               </li>*/}
-              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to={"/gestion-de-la-permanencia"}
                   onClick={handleNav}
@@ -636,7 +636,7 @@ function Header() {
                   localStorage.setItem("i18nextLng", "en");
                   handleNav();
                 }}
-                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer"
+                className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer"
               >
                 {t("header.options_english")}
               </li>
