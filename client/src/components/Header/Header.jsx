@@ -130,12 +130,12 @@ function Header() {
           <span className="text-blue-base mx-1">|</span>
           <button
             onClick={handleClikPopupQH}
-            className="flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
+            className="group flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.what_we_do")}
 
             <svg
-              className="ml-1 text-blue-300 w-3 h-3"
+              className="ml-1 fill-blue-base  w-3 h-3 group-hover:fill-primary-purple transition duration-400 ease-in-out"
               viewBox="0 0 5 8"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -146,12 +146,12 @@ function Header() {
           </button>
           <button
             onClick={handleClikPopupServices}
-            className="flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
+            className="group flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.services")}
 
             <svg
-              className="ml-1 text-blue-300 w-3 h-3"
+              className="ml-1 fill-blue-base -300 w-3 h-3 group-hover:fill-primary-purple transition duration-400 ease-in-out"
               viewBox="0 0 5 8"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -174,7 +174,7 @@ function Header() {
           <Link
             to="/News"
             onClick={handleNav}
-            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm  hover:text-primary-purple"
           >
             {t("header.news")}
           </Link>
@@ -182,18 +182,18 @@ function Header() {
           <Link
             to="/ContactUs"
             onClick={handleNav}
-            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm"
+            className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm  hover:text-primary-purple"
           >
             {t("header.contact_us")}
           </Link>
           <span className="text-blue-base mx-1">|</span>
           <button
             onClick={handleClikPopupIdioma}
-            className="flex items-center justify-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple"
+            className="group flex items-center justify-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple"
           >
             {t("header.language")}
             <svg
-              className="ml-1 text-blue-300 w-3 h-3"
+              className="ml-1 fill-blue-base -300 w-3 h-3 group-hover:fill-primary-purple transition duration-400 ease-in-out"
               viewBox="0 0 5 8"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -205,14 +205,14 @@ function Header() {
             onClick={() =>
               window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
             }
-            className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2"
+            className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-dark-yellow transition duration-700 transform hover:scale-105 max-xl:py-2"
           >
             <div className="flex items-center">
               {t("header.button_volunteer")}
               <FaHandSparkles
                 size={20}
                 name="gift"
-                color="#eae9e9"
+                color="#ffffff"
               ></FaHandSparkles>
             </div>
           </button>
@@ -415,18 +415,18 @@ function Header() {
           <AiOutlineClose
             onClick={handleNav}
             size={30}
-            className="hover:cursor-pointer absolute right-0 pr-2 text-dark-blue"
+            className="hover:cursor-pointer absolute right-0 pr-2 text-blue-base"
           />
         </div>
 
-        <li className="flex items-center gap-1 p-2 text-dark-blue font-impact uppercase transition duration-400 ease-in-out">
+        <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase transition duration-400 ease-in-out hover:text-primary-purple">
           <TiHome className="flex-shrink-0 relative -top-[3px]" size={20} />
           <Link to="/" onClick={handleNav} className="leading-none">
             {t("header.home")}
           </Link>
         </li>
 
-        <li className="flex items-center gap-1 p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+        <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
           <FaHandHoldingHeart
             className="flex-shrink-0 relative -top-[3px]"
             size={20}
@@ -436,16 +436,16 @@ function Header() {
           </Link>
         </li>
 
-        <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
           <div className="flex items-center gap-1">
             <RiServiceLine
               className="flex-shrink-0 relative -top-[3px]"
               size={20}
             />
-            <Link onClick={handleClikPopupQH} className="flex items-center">
+            <Link onClick={handleClikPopupQH} className="group flex items-center">
               {t("header.what_we_do")}{" "}
               <svg
-                className="ml-1 text-blue-300 w-3 h-3"
+                className="ml-1 text-blue-base group-hover:fill-primary-purple w-3 h-3"
                 viewBox="0 0 5 8"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -456,17 +456,17 @@ function Header() {
 
           {queHacemos && (
             <ul className="pl-4">
-              <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link to="/dataAnalyctis" onClick={handleNav}>
                   {t("header.sub_header.data_analytics")}
                 </Link>
               </li>
-              <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link to="/social-intervention" onClick={handleNav}>
                   {t("header.sub_header.socio_emotional_intervention")}
                 </Link>
               </li>
-              <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link
                   to="/comunicaciones"
                   onClick={handleNav}
@@ -479,7 +479,7 @@ function Header() {
           )}
         </li>
 
-        <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
           <div className="flex items-center gap-1">
             <MdSupportAgent
               className="flex-shrink-0 relative -top-[3px]"
@@ -487,11 +487,11 @@ function Header() {
             />
             <Link
               onClick={handleClikPopupServices}
-              className="flex items-center"
+              className="group flex items-center"
             >
               {t("header.services")}{" "}
               <svg
-                className="ml-1 text-blue-300 w-3 h-3"
+                className="ml-1 text-blue-base group-hover:fill-primary-purple w-3 h-3"
                 viewBox="0 0 5 8"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -504,13 +504,13 @@ function Header() {
             <ul className="pl-4">
               {/*<li
                 onMouseEnter={handleMouseEnter}
-                className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out"
+                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple"
               >
                 {t("header.sub_header.for_students")}
 
                 {students && (
                   <ul className="pl-4">
-                    <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+                    <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                       <Link
                         to="/ApoyoAcademico"
                         onClick={handleNav}
@@ -520,7 +520,7 @@ function Header() {
                         {t("header.sub_header.academic_support")}
                       </Link>
                     </li>
-                    {/*<li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+                    {/*<li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                       <Link
                         to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
                         onClick={handleNav}
@@ -553,7 +553,7 @@ function Header() {
                   </ul>
                 )}
               </li>*/}
-              <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to={"/gestion-de-la-permanencia"}
                   onClick={handleNav}
@@ -562,7 +562,7 @@ function Header() {
                   {t("header.sub_header.permanence")}
                 </Link>
               </li>
-              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link
                   to="/consultorias"
                   onClick={handleNav}
@@ -571,7 +571,7 @@ function Header() {
                   {t("header.sub_header.consulting")}
                 </Link>
               </li>
-              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link
                   to="/provocacion"
                   onClick={handleNav}
@@ -580,7 +580,7 @@ function Header() {
                   {t("header.sub_header.pro_vocation")}
                 </Link>
               </li>
-              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+              <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link
                   to="/atvconnect"
                   onClick={handleNav}
@@ -593,7 +593,7 @@ function Header() {
           )}
         </li>
 
-        <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
           <IoNewspaperOutline
             className="flex-shrink-0 relative -top-[3px]"
             size={20}
@@ -603,23 +603,23 @@ function Header() {
           </Link>
         </li>
 
-        <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
+        <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
           <MdEmail className="flex-shrink-0 relative -top-[3px]" size={20} />
           <Link to="/ContactUs" onClick={handleNav}>
             {t("header.contact_us")}
           </Link>
         </li>
 
-        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-          <div className="flex items-center gap-1 ">
+        <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
+          <div className="flex items-center gap-1">
             <MdTranslate
               className="flex-shrink-0 relative -top-[3px]"
               size={20}
             />
-            <Link onClick={handleClikPopupIdioma} className="flex items-center">
+            <Link onClick={handleClikPopupIdioma} className="group flex items-center">
               {t("header.language")}{" "}
               <svg
-                className="ml-1 text-blue-300 w-3 h-3"
+                className="ml-1 text-blue-base group-hover:fill-primary-purple w-3 h-3"
                 viewBox="0 0 5 8"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -636,7 +636,7 @@ function Header() {
                   localStorage.setItem("i18nextLng", "en");
                   handleNav();
                 }}
-                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer"
               >
                 {t("header.options_english")}
               </li>
@@ -646,7 +646,7 @@ function Header() {
                   localStorage.setItem("i18nextLng", "es");
                   handleNav();
                 }}
-                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out"
+                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer"
               >
                 {t("header.options_spanish")}
               </li>
