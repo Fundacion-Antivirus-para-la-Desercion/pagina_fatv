@@ -20,7 +20,7 @@ function Communications() {
       </div>
 
       <Description />
-      <Commun />
+      {/*<Commun />*/}
     </>
   );
 }

@@ -169,6 +169,26 @@
       "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
       "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
       "alt_image": "Communications Team"
+    },
+    "description": {
+      "spam": "OUR CREATIVE MISSION",
+      "title": "EVERY FORMAT WE CREATE TELLS A STORY OF",
+      "spam_title": "CHANGE",
+      "description_general": "We are the creative bridge between our Foundation's social impact and the audiences that need to hear about it. We design communication strategies that educate, inspire, and transform.",
+      "ancla_one": "Watch Showreel",
+      "ancla_two": "Explore Portfolio",
+      "cardPrincipal": {
+        "title": "What is Educommunication?",
+        "description": "It is an approach that combines education and communication to create content that doesn't just inform, but also sparks critical thinking and drives social change. At the foundation, every video, design, and post is created with this purpose.",
+        "spams": {
+          "one": "Educate",
+          "one_description": "Through content",
+          "two": "Inspire",
+          "two_description": "With real stories",
+          "three": "Transform",
+          "three_description": "Whole communities"
+        }
+      }
     }
   },
   "foundation": {

@@ -175,7 +175,21 @@
       "spam": "NUESTRA MISIÓN CREATIVA",
       "title": "CADA FORMATO QUE CREAMOS NARRA UNA HISTORIA DE",
       "spam_title": "CAMBIO",
-      "description_general": "Somos el puente creativo entre el impacto social de la Fundación y las audiencias que necesitan conocerlo. Diseñamos estrategias de comunicación que educan, inspiran y transforman."
+      "description_general": "Somos el puente creativo entre el impacto social de la Fundación y las audiencias que necesitan conocerlo. Diseñamos estrategias de comunicación que educan, inspiran y transforman.",
+      "ancla_one": "Ver Showreel",
+      "ancla_two": "Explorar portafolio",
+      "cardPrincipal": {
+        "title": "¿Qué es la Educomunicación?",
+        "description": "Es un enfoque que une educación y comunicación para crear contenido que no solo informa, sino que genera pensamiento crítico y promueve el cambio social. En la fundación cada video, cada diseño y cada publicación tiene este propósito.",
+        "spams": {
+          "one": "Educar",
+          "one_description": "A través del contenido",
+          "two": "Inspirar",
+          "two_description": "Con historias reales",
+          "three": "Transformar",
+          "three_description": "Comunidades enteras"
+        }
+      }
     }
   },
   "foundation": {

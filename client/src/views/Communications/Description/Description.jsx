@@ -21,7 +21,9 @@ function Description() {
 
           <h2 className="text-3xl md:text-5xl font-impact text-blue-base mb-5 md:mb-8">
             {t("communications.description.title")}{" "}
-            <span className="text-primary-yellow">{t("communications.description.spam_title")}</span>
+            <span className="text-primary-yellow">
+              {t("communications.description.spam_title")}
+            </span>
           </h2>
           <p className="text-base md:text-lg text-blue-base max-w-xl mb-10">
             {t("communications.description.description_general")}
@@ -35,7 +37,7 @@ function Description() {
                 className="text-xs sm:text-base md:text-lg lg:text-xl font-extrabold text-dark-blue transition-colors duration-300 group-hover:text-white whitespace-nowrap"
                 href=""
               >
-                Ver Showreel
+                {t("communications.description.ancla_one")}
               </a>
             </div>
 
@@ -44,7 +46,7 @@ function Description() {
                 className="text-xs sm:text-base md:text-lg lg:text-xl font-extrabold text-dark-blue transition-colors duration-300 group-hover:text-primary-purple whitespace-nowrap"
                 href=""
               >
-                Explorar portafolio
+                {t("communications.description.ancla_two")}
               </a>
 
               <MdArrowDownward className="text-dark-blue text-base sm:text-lg ml-1 transition-colors duration-300 group-hover:text-primary-purple" />
@@ -56,14 +58,11 @@ function Description() {
           {/* Texto */}
           <div>
             <h3 className="text-lg sm:text-xl md:text-3xl font-extrabold text-white mb-3 md:mb-4">
-              ¿Qué es la Educomunicación?
+              {t("communications.description.cardPrincipal.title")}
             </h3>
 
             <p className="text-[#ffffffb7] text-sm sm:text-base leading-relaxed text-left sm:text-justify mb-10">
-              Es un enfoque que une educación y comunicación para crear
-              contenido que no solo informa, sino que genera pensamiento crítico
-              y promueve el cambio social. En la fundación cada video, cada
-              diseño y cada publicación tiene este propósito.
+              {t("communications.description.cardPrincipal.description")}
             </p>
           </div>
           {/* Valores */}
@@ -71,28 +70,34 @@ function Description() {
             <ul className="grid grid-cols-3 gap-3 sm:gap-4 text-center">
               <li className="flex flex-col items-center gap-1">
                 <span className="text-primary-yellow text-sm sm:text-base md:text-xl lg:text-2xl font-impact">
-                  Educar
+                  {t("communications.description.cardPrincipal.spams.one")}
                 </span>
                 <span className="text-[#ffffffb7] text-xs sm:text-sm md:text-base leading-snug">
-                  A través del contenido
+                  {t(
+                    "communications.description.cardPrincipal.spams.one_description",
+                  )}
                 </span>
               </li>
 
               <li className="flex flex-col items-center gap-1">
                 <span className="text-primary-yellow text-sm sm:text-base md:text-xl lg:text-2xl font-impact">
-                  Inspirar
+                  {t("communications.description.cardPrincipal.spams.two")}
                 </span>
                 <span className="text-[#ffffffb7] text-xs sm:text-sm md:text-base leading-snug">
-                  Con historias reales
+                  {t(
+                    "communications.description.cardPrincipal.spams.two_description",
+                  )}
                 </span>
               </li>
 
               <li className="flex flex-col items-center gap-1">
                 <span className="text-primary-yellow text-sm sm:text-base md:text-xl lg:text-2xl font-impact">
-                  Transformar
+                  {t("communications.description.cardPrincipal.spams.three")}
                 </span>
                 <span className="text-[#ffffffb7] text-xs sm:text-sm md:text-base leading-snug">
-                  Comunidades enteras
+                  {t(
+                    "communications.description.cardPrincipal.spams.three_description",
+                  )}
                 </span>
               </li>
             </ul>
