@@ -54,9 +54,9 @@ function StudentRetentionService() {
         {" "}
         <div className="flex items-center justify-center my-6">
           <span className="block w-16 h-[3px] bg-primary-yellow mr-4"></span>
-          <h2 className="text-blue-base font-bold text-sm tracking-[0.3rem]">
+          <h2 className="text-base md:text-lg text-blue-base font-impact">
             {t(
-              "studentRetentionManagement.studentRetentionService.ourServices"
+              "studentRetentionManagement.studentRetentionService.ourServices",
             )}
           </h2>
           <span className="block w-16 h-[3px] bg-primary-yellow ml-4"></span>
@@ -67,7 +67,7 @@ function StudentRetentionService() {
             <br />
             <span className="text-primary-yellow">
               {t(
-                "studentRetentionManagement.studentRetentionService.titleSpan"
+                "studentRetentionManagement.studentRetentionService.titleSpan",
               )}
             </span>
           </h4>
@@ -141,18 +141,18 @@ function StudentRetentionService() {
             <span className="text-6xl align-middle ">🎓</span>
             <p className="text-4xl text-dark-blue font-impact text-center">
               {t(
-                "studentRetentionManagement.studentRetentionService.centralTitle"
+                "studentRetentionManagement.studentRetentionService.centralTitle",
               )}{" "}
               <span className="text-primary-yellow">
                 <br />{" "}
                 {t(
-                  "studentRetentionManagement.studentRetentionService.centralTitleSpan"
+                  "studentRetentionManagement.studentRetentionService.centralTitleSpan",
                 )}{" "}
               </span>
             </p>
             <p className="text-lg text-center p-2">
               {t(
-                "studentRetentionManagement.studentRetentionService.centralParagraph"
+                "studentRetentionManagement.studentRetentionService.centralParagraph",
               )}
             </p>
           </motion.div>
@@ -170,7 +170,7 @@ function StudentRetentionService() {
           </span>
           <p className="text-base mb-3 text-blue-base text-justify">
             {t(
-              "studentRetentionManagement.services.socioEmotional.description"
+              "studentRetentionManagement.services.socioEmotional.description",
             )}
           </p>
           <ul className="">
@@ -191,7 +191,7 @@ function StudentRetentionService() {
                 💚
               </span>
               {t(
-                "studentRetentionManagement.services.socioEmotional.itemThree"
+                "studentRetentionManagement.services.socioEmotional.itemThree",
               )}
             </li>
             <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
@@ -262,7 +262,7 @@ function StudentRetentionService() {
           </span>
           <p className="text-base mb-3 text-blue-base text-justify">
             {t(
-              "studentRetentionManagement.services.socioVocational.description"
+              "studentRetentionManagement.services.socioVocational.description",
             )}
           </p>
           <ul className="">
@@ -283,7 +283,7 @@ function StudentRetentionService() {
                 🎯
               </span>
               {t(
-                "studentRetentionManagement.services.socioVocational.itemThree"
+                "studentRetentionManagement.services.socioVocational.itemThree",
               )}
             </li>
           </ul>
@@ -317,11 +317,13 @@ function StudentRetentionService() {
               </h5>
               <p className="text-blue-base text-base md:text-xl mt-4 px-3">
                 {t(
-                  "studentRetentionManagement.studentRetentionCard.description"
+                  "studentRetentionManagement.studentRetentionCard.description",
                 )}{" "}
                 <strong className="text-[#28A499]">
                   <br />{" "}
-                  {t("studentRetentionManagement.studentRetentionCard.strong")}{" "}
+                  {t(
+                    "studentRetentionManagement.studentRetentionCard.strong",
+                  )}{" "}
                 </strong>
               </p>
               <div className="flex justify-center">
@@ -332,7 +334,7 @@ function StudentRetentionService() {
                   <span className="relative">
                     {" "}
                     {t(
-                      "studentRetentionManagement.studentRetentionCard.btnStartNow"
+                      "studentRetentionManagement.studentRetentionCard.btnStartNow",
                     )}
                   </span>
                   <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>

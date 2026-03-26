@@ -212,9 +212,7 @@ function ProVocacion() {
       </section>
 
       <section className="p-5">
-        <h2
-          className={`text-5xl text-blue-base font-impact max-md:text-3xl text-center ${styles.title}`}
-        >
+        <h2 className="text-3xl md:text-5xl text-blue-base font-impact text-center ">
           {t("provocacion.title_future")}
         </h2>
       </section>

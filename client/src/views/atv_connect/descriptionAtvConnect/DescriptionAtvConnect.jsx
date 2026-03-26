@@ -63,7 +63,7 @@ function DescriptionAtvConnect() {
           <section>
             <div>
               {" "}
-              <h1 className="text-4xl md:text-5xl text-dark-blue font-impact">
+              <h1 className="text-4xl md:text-5xl text-blue-base font-impact mb-5 md:mb-8">
                 ATVCONECTA
               </h1>
               <p className="text-center text-xl md:text-2xl  text-blue-base p-3">

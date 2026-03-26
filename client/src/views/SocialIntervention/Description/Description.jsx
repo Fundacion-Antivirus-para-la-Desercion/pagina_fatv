@@ -9,7 +9,10 @@ import { GoLightBulb } from "react-icons/go";
 import { FiCheckCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { floatSnake, slideFromRight } from "../../../components/motion/constants/Animations.js";
+import {
+  floatSnake,
+  slideFromRight,
+} from "../../../components/motion/constants/Animations.js";
 
 function Description() {
   const { t } = useTranslation();
@@ -89,10 +92,10 @@ function Description() {
 
             <div className="">
               <section>
-                <span className="text-lg text-primary-yellow font-impact">
+                <span className="text-base md:text-lg text-primary-yellow font-impact text-center md:text-left mt-4">
                   {t("socialIntervention.span")}
                 </span>
-                <h1 className="text-4xl md:text-5xl text-dark-blue font-impact">
+                <h1 className="text-4xl md:text-5xl text-blue-base font-impact">
                   {t("socialIntervention.title")}
                 </h1>
                 <p className="text-lg text-blue-base p-5 mt-5 text-justify max-w-3xl">
@@ -100,7 +103,13 @@ function Description() {
                 </p>
               </section>
 
-              <motion.div className="will-change-transform" {...slideFromRight({ transition: { delay: 0.5 }, viewport: { amount: 0.1 } })}>
+              <motion.div
+                className="will-change-transform"
+                {...slideFromRight({
+                  transition: { delay: 0.5 },
+                  viewport: { amount: 0.1 },
+                })}
+              >
                 <section className="grid grid-cols-1 justify-center lg:grid-cols-2 gap-3 mt-5">
                   {socialData.map((socialData, index) => (
                     <div

@@ -184,8 +184,8 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 max-sm:text-center">
-            <p className="text-blue-base tracking-nm">
+          <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 text-center md:text-left">
+            <p className="text-base md:text-lg text-primary-purple font-impact">
               {t("contactUs.startConversation")}
             </p>
 

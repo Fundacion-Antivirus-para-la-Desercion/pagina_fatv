@@ -139,9 +139,9 @@ function Description() {
         />
         <section className="relative">
           <div className="text-center md:text-left">
-            <h2 className="lineSubtitle text-3xl md:text-4xl text-blue-base font-impact">
+            <h2 className="lineSubtitle text-3xl md:text-5xl text-blue-base font-impact">
               {t("consultorias.description.consulting_title")}
-              <span className="text-3xl md:text-4xl font-impact text-primary-yellow">
+              <span className="text-3xl md:text-5xl font-impact text-primary-yellow">
                 {t("consultorias.description.consulting_title_span")}
               </span>
             </h2>

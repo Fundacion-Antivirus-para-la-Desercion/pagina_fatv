@@ -9,12 +9,12 @@ function AboutUs() {
     <div className="text-blue-base m-8 md:p-12 lg:p-20">
       <div className="flex flex-col items-end md:flex-row md:flex-wrap md:justify-between lg:gap-x-10">
         <div className="w-full md:w-[calc(50%-50px)] mb-5 md:mb-0">
-          <p className="text-sm tracking-nm uppercase text-center md:text-left mt-4">
+          <span className="text-base md:text-lg text-primary-purple font-impact uppercase text-center md:text-left mt-4">
             {t("home.aboutUs.title")}
-          </p>
-          <h1 className="lineSubtitle text-center md:text-start font-impact text-4xl md:text-5xl leading-[.92] uppercase mb-8 md:mb-1">
+          </span>
+          <h2 className="lineSubtitle text-center md:text-start font-impact text-4xl md:text-5xl leading-[.92] uppercase mb-8 md:mb-1">
             {t("home.aboutUs.subtitle")}
-          </h1>
+          </h2>
           <p className="text-lg text-justify max-w-2xl mt-4">
             {t("home.aboutUs.paragraph1")}
           </p>

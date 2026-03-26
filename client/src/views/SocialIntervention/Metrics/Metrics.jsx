@@ -93,7 +93,7 @@ function Metrics() {
         </motion.div>
 
         <div className="flex flex-col text-center mt-10">
-          <span className="text-primary-yellow font-impact">
+          <span className="text-base md:text-lg text-primary-yellow font-impact uppercase text-center mt-4">
             {t("socialIntervention.metrics.span")}
           </span>
           <h2 className="text-4xl md:text-5xl text-white font-impact">

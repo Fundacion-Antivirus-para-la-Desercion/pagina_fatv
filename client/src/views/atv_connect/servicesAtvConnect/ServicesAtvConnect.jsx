@@ -42,7 +42,7 @@ function ServicesAtvConnect() {
           {...slideFromTop}
           className="relative items-center justify-center flex flex-col"
         >
-          <span className="text-lg md:text-xl font-impact text-primary-purple">
+          <span className="text-base md:text-lg font-impact text-primary-purple">
             {t("atvConnect.services.span")}
           </span>
           <h2 className="text-4xl md:text-5xl font-impact text-blue-base">
