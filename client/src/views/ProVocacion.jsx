@@ -218,7 +218,7 @@ function ProVocacion() {
           {t("provocacion.title_future")}
         </h2>
       </section>
-      <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-4">
+      <section className="p-5 md:p-10 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-10 mb-10">
         <div className="cursor-pointer border-4 border-[#7E96CB] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl">
           <img
             src={isEnglish ? EnAutoconocimiento : Autoconocimiento}
