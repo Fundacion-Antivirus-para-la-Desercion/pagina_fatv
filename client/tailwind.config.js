@@ -65,6 +65,16 @@ export default {
       animation: {
         "spin-slower": "spin 25s linear infinite",
       },
+      // Animación para el texto desplazándose horizontalmente
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll linear infinite",
+      },
     },
   },
   plugins: [],

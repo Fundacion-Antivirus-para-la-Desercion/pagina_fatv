@@ -8,7 +8,7 @@ function Description() {
   const { t } = useTranslation();
 
   return (
-    <section className="mx-auto">
+    <section className="mx-auto mb-10">
       <section className="grid grid-cols-1 md:grid-cols-[50%_50%] gap-10 md:flex-row p-5 md:p-10 lg:p-12 items-center">
         <div className="p-5 md:p-10 text-center md:text-left">
           <div className="flex items-center mb-2 md:mb-4 justify-center md:justify-start">
