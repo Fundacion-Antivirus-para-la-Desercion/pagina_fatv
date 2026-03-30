@@ -3,6 +3,8 @@ import Footer from "../Footer/Footer";
 import Btns from "../btns-wompi-and-donation/Btns";
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { slideFromTopBody } from "../motion/constants/Animations.js";
 
 function Layout() {
   const location = useLocation();
@@ -15,7 +17,11 @@ function Layout() {
   return (
     <>
       <Header />
-      <Outlet />
+      <div style={{ overflow: "hidden" }}>
+        <motion.section key={location.pathname} {...slideFromTopBody()}>
+          <Outlet />
+        </motion.section>
+      </div>
       <Footer />
       <Btns />
     </>

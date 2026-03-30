@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./News.css";
-import BannerNewsEn from "../../assets/images/views/imagesNews/news.webp";
-import BannerNewsEs from "../../assets/images/views/imagesNews/noticias.webp";
+import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import Date from "../../../src/assets/Icons/date.svg";
-import Arrow from "../../../src/assets/Icons/arrow.svg";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray from "./newsArray";
 import { useTranslation } from "react-i18next";
 import BannerView from "../Banner-views/BannerView";
+import { FaArrowRight } from "react-icons/fa";
 
 function News() {
   const navigate = useNavigate();
@@ -18,39 +17,37 @@ function News() {
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerNewsEn,
-            esImage: BannerNewsEs,
-            keyTitle: "",
+            image: BannerNews,
+            keyAlt: "news.banner.alt",
+            keyH1: "news.banner.h1",
           }}
         />
       </div>
 
-      <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
         {buildNewsArray(t).map((news, idx) => (
-          <div key={idx}>
+          <div key={idx} className="flex flex-col">
             <img className="mb-3 aspect-ratio" src={news.img} alt={news.alt} />
-            <p className="flex tracking-[0.3rem] font-light text-blue-base">
+            <p className="flex text-base md:text-lg font-impact text-primary-purple mb-2">
               <img className="mr-1" src={Date} />
               {t("news.category")}
             </p>
-            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base max-md:text-3xl leading-9">
+            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base max-md:text-3xl leading-9 flex-grow">
               {news.title}
             </p>
             <hr className="mb-3" />
-            <a
-              className="group flex items-center text-2xl text-primary-purple cursor-pointer"
-              onClick={() => {
-                news.id = idx;
-                navigate("/news/detail", { state: { news } });
-              }}
-            >
-              {t("news.read_more")}
-              <img
-                className="ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1"
-                src={Arrow}
-                alt={t("news.see_more_alt")}
-              />
-            </a>
+            <div className="group flex">
+              <button
+                className="text-xl md:text-2xl text-primary-purple cursor-pointer"
+                onClick={() => {
+                  news.id = idx;
+                  navigate("/news/detail", { state: { news } });
+                }}
+              >
+                {t("news.read_more")}
+              </button>
+              <FaArrowRight className="text-lg text-primary-purple ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1" />
+            </div>
           </div>
         ))}
       </section>

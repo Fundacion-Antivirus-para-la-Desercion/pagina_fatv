@@ -76,10 +76,10 @@ function ProjectsAndTeams() {
           ></motion.div>
         </div>
         <div className="relative text-center">
-          <span className="text-lg text-primary-yellow font-impact">
+          <span className="text-base md:text-lg text-primary-yellow font-impact uppercase text-center md:text-left mt-4">
             {t("socialIntervention.projectsAndTeams.span")}
           </span>
-          <h2 className="text-4xl md:text-5xl text-dark-blue font-impact">
+          <h2 className="text-4xl md:text-5xl text-blue-base font-impact">
             {t("socialIntervention.projectsAndTeams.title")}
           </h2>
           <p className="text-lg text-blue-base p-5 mt-5 text-center max-w-3xl mx-auto">
@@ -162,7 +162,7 @@ function ProjectsAndTeams() {
                 exit="exit"
                 className="text-center"
               >
-                <h4 className="text-3xl md:text-4xl text-dark-blue font-impact"></h4>
+                {/*<h4 className="text-3xl md:text-4xl text-blue-base font-impact">ALIADOS</h4> */}
                 <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
                   {activeProject.cardAllies &&
                     activeProject.cardAllies.map((ally, index) => (
@@ -202,7 +202,7 @@ function ProjectsAndTeams() {
                     alt="Javi Guinando"
                   />
                 </motion.div>
-                <h6 className="text-3xl md:text-5xl m-5 text-dark-blue text-center font-impact">
+                <h6 className="text-3xl md:text-5xl m-5 text-blue-base text-center font-impact">
                   {t("socialIntervention.projectsAndTeams.leaders.title")}
                 </h6>
               </div>

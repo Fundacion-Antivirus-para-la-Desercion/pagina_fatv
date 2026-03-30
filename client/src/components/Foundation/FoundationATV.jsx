@@ -4,8 +4,7 @@ import imgFB from "../../../public/img_Foundation/imgF.webp";
 import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
-import BannerFoundationEn from "../../assets/images/views/foundation/about-us.webp";
-import BannerFoundationEs from "../../assets/images/views/foundation/sobre-nosotros.webp";
+import BannerFoundation from "../../assets/images/views/foundation/banner-foundation.webp";
 import TeoriaCambio from "../../assets/images/views/foundation/entrega-pc.webp";
 import Valores from "../../assets/images/views/foundation/valores.webp";
 import Mision from "../../assets/images/views/foundation/pase-a-la-u.webp";
@@ -92,22 +91,24 @@ function FoundationATV() {
     <div className="relative w-full">
       <BannerView
         imagesBannerMap={{
-          enImage: BannerFoundationEn,
-          esImage: BannerFoundationEs,
-          keyTitle: "",
+          image: BannerFoundation,
+          keyAlt: "foundation.banner.alt",
+          keyH1: "foundation.banner.h1",
         }}
       />
 
-      <div className="aboutUs">
-        <div className="aboutUs-content">
-          <div className="left-content">
-            <p className="title">{t("foundation.foundationATV.title")}</p>
+      <div className="text-blue-base m-8 md:m-12 md:p-16">
+        <div className="flex flex-col gap-5 items-end md:flex-row md:flex-wrap md:justify-between">
+          <div className="w-full md:w-[calc(60%-70px)]">
+            <p className="text-base md:text-lg text-primary-purple uppercase font-impact text-center md:text-left mt-4">
+              {t("foundation.foundationATV.title")}
+            </p>
             <h4 className="lineSubtitle font-impact text-4xl md:text-5xl leading-[.92] uppercase">
               {t("foundation.foundationATV.subtitle")}
             </h4>
           </div>
-          <div className="right-content">
-            <p className="text-xl right-paragraph">
+          <div className="w-full text-center mt-4 text-base sm:px-0 md:w-2/5 md:text-start md:mt-0">
+            <p className="text-lg md:text-xl text-justify">
               {t("foundation.foundationATV.description")}
             </p>
           </div>
@@ -208,11 +209,11 @@ function FoundationATV() {
 
       <section className="relative mb-14">
         <motion.div {...slideFromLeft}>
-          <Sun classNames="hidden md:block" />
+          <Sun classNames="hidden xl:block top-16 left-24" />
           <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
-            <div className="bg-[#CCEDE8] rounded-full">
+            <div className="bg-[#CCEDE8] rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={TeoriaCambio}
                 alt="Foto"
               />
@@ -230,7 +231,7 @@ function FoundationATV() {
               </p>
             </div>
           </section>
-          <SunBlue classNames="hidden md:block right-0" />
+          <SunBlue classNames="hidden xl:block right-24" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
@@ -245,22 +246,22 @@ function FoundationATV() {
                 )}
               </p>
             </div>
-            <div className="relative bg-[#D3C3E3] rounded-full">
+            <div className="relative bg-[#D3C3E3] rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Valores}
                 alt="Foto"
               />
             </div>
           </section>
-          <Sun classNames="hidden md:block" />
+          <Sun classNames="hidden xl:block left-24" />
         </motion.div>
 
         <motion.div {...slideFromLeft}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_40%] gap-2 items-center justify-center">
-            <div className="bg-primary-yellow rounded-full">
+            <div className="bg-primary-yellow rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Mision}
                 alt="Foto"
               />
@@ -276,7 +277,7 @@ function FoundationATV() {
               </p>
             </div>
           </section>
-          <SunBlue classNames="hidden md:block right-0" />
+          <SunBlue classNames="hidden xl:block right-24" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
@@ -293,22 +294,22 @@ function FoundationATV() {
                 )}
               </p>
             </div>
-            <div className="bg-[#CCEDE8] rounded-full">
+            <div className="bg-[#CCEDE8] rounded-full max-w-[400px] block mx-auto relative">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Publico}
                 alt="Foto"
               />
             </div>
           </section>
-          <Sun classNames="hidden md:block" />
+          <Sun classNames="hidden xl:block left-24" />
         </motion.div>
 
         <motion.div {...slideFromLeft}>
           <section className="m-5 grid grid-cols-1 md:grid-cols-[20%_50%] gap-2 items-center justify-center">
-            <div className="bg-[#D3C3E3] rounded-full">
+            <div className="bg-[#D3C3E3] rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Vision}
                 alt="Foto"
               />
@@ -324,7 +325,7 @@ function FoundationATV() {
               </p>
             </div>
           </section>
-          <SunBlue classNames="hidden md:block right-0" />
+          <SunBlue classNames="hidden xl:block right-24" />
         </motion.div>
 
         <motion.div {...slideFromRight}>
@@ -340,9 +341,9 @@ function FoundationATV() {
               </p>
             </div>
 
-            <div className="bg-primary-yellow rounded-full">
+            <div className="bg-primary-yellow rounded-full max-w-[400px] block mx-auto">
               <img
-                className="rounded-full w-[400px] h-auto p-5 object-cover"
+                className="rounded-full w-full h-auto p-5 object-cover"
                 src={Proposito}
                 alt="Foto"
               />

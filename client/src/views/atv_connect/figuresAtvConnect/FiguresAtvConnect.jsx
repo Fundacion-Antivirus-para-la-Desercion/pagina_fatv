@@ -41,7 +41,7 @@ function FiguresAtvConnect() {
       <section className="max-w-4xl mx-auto m-5 mb-10">
         <section className="flex flex-col items-center md:p-10">
           {" "}
-          <span className="text-lg md:text-xl font-impact text-primary-purple">
+          <span className="text-base md:text-lg font-impact text-primary-purple">
             {t("atvConnect.span_title")}
           </span>
           <h1 className="text-4xl md:text-5xl font-impact text-blue-base">

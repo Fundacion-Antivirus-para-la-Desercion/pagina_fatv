@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Javi from "../assets/images/views/javi/javi-feliz.svg";
 import JaviGuinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
-import BannerRetentionEn from "../assets/images/views/studentretentionManagement/banner-student-retetion-managment.webp";
-import BannerRetentionEs from "../assets/images/views/studentretentionManagement/banner-gestion-de-la-permanencia.webp";
+import BannerRetention from "../assets/images/views/studentretentionManagement/banner-student-retention.webp";
 import Grupo from "../assets/images/views/studentretentionManagement/manos.webp";
 import Graduado from "../assets/images/views/studentretentionManagement/graduado.webp";
 import { motion, useInView } from "framer-motion";
@@ -53,9 +52,10 @@ function StudentRetentionManagement() {
     <section className="lg:pt-[145px]">
       <BannerView
         imagesBannerMap={{
-          enImage: BannerRetentionEn,
-          esImage: BannerRetentionEs,
-          keyTitle: "studentRetentionManagement.alt_img_banner",
+          image: BannerRetention,
+          keyAlt: "studentRetentionManagement.banner.alt",
+          keyBr: "studentRetentionManagement.banner.br",
+          keyH1: "studentRetentionManagement.banner.h1",
         }}
       />
 
@@ -165,15 +165,15 @@ function StudentRetentionManagement() {
             />
           </div>
           <div className={styles.orangeBar}></div>
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-2 justify-center text-center">
+          <section className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-4 md:mt-2 justify-center text-center">
             <motion.div className="will-change-transform" {...slideFromLeft}>
-              <h2 className="text-5xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-20 font-impact text-white p-2">
+              <h2 className="text-5xl text-center m-7 md:text-7xl md:ml-10 md:m-5 md:mt-12 font-impact text-white p-2">
                 {t("studentRetentionManagement.success.title")}
               </h2>
 
               <section className="relative">
                 <div className="mt-10 md:mt-5 md:absolute md:ml-4 md:top-20">
-                  <p className="shadow-lg text-center md:text-left text-lg md:text-lg sm:text-lg text-dark-blue w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-primary-yellow mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
+                  <p className="shadow-lg text-center md:text-left text-lg md:text-lg sm:text-lg text-dark-blue w-[340px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-primary-yellow mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
                     <span className="text-primary-yellow font-bold">
                       {t(
@@ -182,7 +182,7 @@ function StudentRetentionManagement() {
                     </span>{" "}
                   </p>
 
-                  <p className="shadow-lg text-center md:text-left mt-4 text-lg md:text-lg sm:text-lg text-dark-blue w-[340px] h-[90px] md:h-[75px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
+                  <p className="shadow-lg text-center md:text-left mt-4 text-lg md:text-lg sm:text-lg text-dark-blue w-[340px] md:w-[560px] p-5 bg-[#FFFEFE] rounded-2xl border-l-4 border-[#28A499] mx-auto md:mx-0 transform hover:scale-105 transition-transform duration-300">
                     {t("studentRetentionManagement.success.paragraph_two")}{" "}
                     <span className="text-[#28A499] font-bold">
                       {t(
@@ -224,7 +224,7 @@ function StudentRetentionManagement() {
             </motion.div>
           </section>
         </div>
-        <div className="absolute flex justify-center mt-10 md:mb-0 md:mt-0 md:justify-start items-center md:ml-2">
+        <div className="absolute xl:-bottom-5 flex justify-center mt-10 md:mb-0 md:mt-0 md:justify-start items-center ml-2">
           <motion.div {...floatSnake(0)}>
             <img
               className="relative md:bottom-20 w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
