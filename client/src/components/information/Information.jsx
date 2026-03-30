@@ -81,7 +81,7 @@ function Information() {
         </motion.a>
       </motion.div>
     </section>,
-
+ 
     <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
       <div className="justify-self-center xl:justify-self-end">
         <img
