@@ -1,27 +1,10 @@
-import React from "react";
-import EstudiantesUno from "../../assets/images/views/proVocacion/information/estudiantes-uno.jpeg";
 import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
-import EstudiantesTres from "../../assets/images/views/proVocacion/information/estudiantes-tres.jpeg";
-import EstudiantesCuatro from "../../assets/images/views/proVocacion/information/estudiantes-cuatro.jpeg";
-import EstudiantesCinco from "../../assets/images/views/proVocacion/information/estudiantes-cinco.jpeg";
-import EstudiantesSeis from "../../assets/images/views/proVocacion/information/estudiantes-seis.jpeg";
-import EstudiantesSiete from "../../assets/images/views/proVocacion/information/estudiantes-siete.jpeg";
-import EstudiantesOcho from "../../assets/images/views/proVocacion/information/estudiantes-ocho.jpeg";
-import EstudiantesNueve from "../../assets/images/views/proVocacion/information/estudiantes-nueve.jpeg";
 import EstudiantesDiez from "../../assets/images/views/proVocacion/information/estudiantes-diez.jpeg";
-import EstudiantesOnce from "../../assets/images/views/proVocacion/information/estudiantes-once.jpeg";
-import EstudiantesDoce from "../../assets/images/views/proVocacion/information/estudiantes-doce.jpeg";
-import EstudiantesTrece from "../../assets/images/views/proVocacion/information/estudiantes-trece.jpeg";
-import EstudiantesCatorce from "../../assets/images/views/proVocacion/information/estudiantes-catorce.jpeg";
-import Estudiantesquince from "../../assets/images/views/proVocacion/information/estudiantes-quince.jpeg";
 import EstudiantesDieciseis from "../../assets/images/views/proVocacion/information/estudiantes-dieciseis.jpg";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
 import { BiCreditCardAlt } from "react-icons/bi";
 
-import Javicorto from "../../assets/images/views/javi/javi-corto.webp";
-import Javi from "../../assets/images/views/javi/javi-senala.webp";
-import FocusTransparent from "../../assets/images/views/proVocacion/information/focus.webp";
 import {
   floatSnake,
   cardItemReveal,
@@ -86,7 +69,7 @@ function Information() {
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"
       >
-        <a
+        <motion.a
           variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
@@ -95,7 +78,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </motion.div>
     </section>,
 
@@ -151,7 +134,7 @@ function Information() {
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"
       >
-        <a
+        <motion.a
           variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
@@ -160,7 +143,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </motion.div>
     </section>,
 
@@ -251,7 +234,7 @@ function Information() {
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"
       >
-        <a
+        <motion.a
           variants={cardItemReveal}
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
@@ -260,7 +243,7 @@ function Information() {
         >
           {t("provocacion.information.i_want_it")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </a>
+        </motion.a>
       </motion.div>
     </section>,
   ];

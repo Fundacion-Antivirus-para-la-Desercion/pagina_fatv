@@ -37,7 +37,7 @@ function News() {
             </p>
             <hr className="mb-3" />
             <div className="group flex">
-              <a
+              <button
                 className="text-xl md:text-2xl text-primary-purple cursor-pointer"
                 onClick={() => {
                   news.id = idx;
@@ -45,7 +45,7 @@ function News() {
                 }}
               >
                 {t("news.read_more")}
-              </a>
+              </button>
               <FaArrowRight className="text-lg text-primary-purple ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>

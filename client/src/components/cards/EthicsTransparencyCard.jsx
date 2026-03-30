@@ -1,9 +1,8 @@
 import { IoShieldCheckmark } from "react-icons/io5";
-import { MdVolunteerActivism } from "react-icons/md";
 import { WiStars } from "react-icons/wi";
 
 import { useTranslation } from "react-i18next";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   floatSnake,
   expandableTransition,

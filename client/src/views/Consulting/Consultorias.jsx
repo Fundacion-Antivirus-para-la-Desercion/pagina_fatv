@@ -5,7 +5,6 @@ import { PiShootingStarFill } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
-import "./consultoria.css";
 import card from "../../assets/images/views/consultorias/card-p.webp";
 
 function Consultorias() {
