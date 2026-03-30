@@ -1,17 +1,22 @@
 import React from "react";
 
-const RunningBanner = ({ items = [], speed = 25 }) => {
+const RunningBanner = ({ items = [], speed = 40 }) => {
   const duplicatedItems = [...items, ...items];
   return (
-    <div className="overflow-hidden whitespace-nowrap">
+    <div className="overflow-hidden w-full">
       <ul
-        className="flex gap-12 animate-scroll"
+        className="flex animate-scroll"
         style={{
+          width: "max-content",
+          willChange: "transform",
           animationDuration: `${speed}s`,
         }}
       >
         {duplicatedItems.map((item, index) => (
-          <li key={index} className="list-disc font-extrabold cursor-pointer">
+          <li
+            key={index}
+            className="list-disc font-extrabold cursor-pointer mx-6 whitespace-nowrap"
+          >
             {item}
           </li>
         ))}

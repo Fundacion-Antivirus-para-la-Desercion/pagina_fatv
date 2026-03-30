@@ -17,7 +17,7 @@ function CommunicationSkills() {
 
   return (
     <div className="bg-primary-purple text-sm md:text-base text-white py-5 overflow-hidden w-full">
-      <RunningBanner items={skills} speed={25} />
+      <RunningBanner items={skills} speed={40} />
     </div>
   );
 }
