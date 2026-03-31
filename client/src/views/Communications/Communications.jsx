@@ -3,6 +3,7 @@ import BannerView from "../../components/Banner-views/BannerView";
 import Description from "../Communications/Description/Description.jsx";
 import Commun from "../../components/Communications_ATV/Commun";
 import CommunicationSkills from "../Communications/CommunicationSkills/CommunicationSkills.jsx";
+import Services from "../Communications/Services/Services.jsx";
 
 function Communications() {
   return (
@@ -19,6 +20,7 @@ function Communications() {
 
       <Description />
       <CommunicationSkills />
+      <Services />
       {/*<Commun />*/}
     </>
   );
