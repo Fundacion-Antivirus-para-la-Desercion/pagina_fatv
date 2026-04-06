@@ -167,16 +167,6 @@
       "h1": "Comunicaciones",
       "alt": "El equipo de comunicaciones sonriendo juntos."
     },
-    "commun": {
-      "title_banner": "lo que hacemos",
-      "our_model": "NUESTRO MODELO",
-      "subtitle": "COMUNICACIONES",
-      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-      "alt_image": "Equipo de Comunicaciones"
-    },
     "description": {
       "spam": "NUESTRA MISIÓN CREATIVA",
       "title": "CADA FORMATO QUE CREAMOS NARRA UNA HISTORIA DE",
@@ -214,6 +204,28 @@
         "two": "Con historias reales",
         "three": "Comunidades enteras"
       }
+    },
+    "communicationsSkills": {
+      "one": "FOTOGRAFÍA PROFESIONAL",
+      "two": "DISEÑO GRÁFICO",
+      "three": "MOTION GRAPHICS",
+      "four": "BRANDING",
+      "five": "MARKETING SOCIAL",
+      "six": "GESTIÓN DE REDES",
+      "seven": "STORYTELLING",
+      "eight": "EDUCOMUNICACIÓN",
+      "nine": "ESTRATEGIA DIGITAL",
+      "ten": "EDICIÓN DE VIDEO"
+    },
+    "commun": {
+      "title_banner": "lo que hacemos",
+      "our_model": "NUESTRO MODELO",
+      "subtitle": "COMUNICACIONES",
+      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+      "alt_image": "Equipo de Comunicaciones"
     }
   },
   "foundation": {

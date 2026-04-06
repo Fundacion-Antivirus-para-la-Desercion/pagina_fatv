@@ -166,16 +166,6 @@
       "h1": "Communications",
       "alt": "The Communications Team smiling together."
     },
-    "commun": {
-      "title_banner": "what we do",
-      "our_model": "OUR MODEL",
-      "subtitle": "COMMUNICATIONS",
-      "paragraph_1": "This area is made up of social communicators and graphic designers.",
-      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
-      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
-      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-      "alt_image": "Communications Team"
-    },
     "description": {
       "spam": "OUR CREATIVE MISSION",
       "title": "EVERY FORMAT WE CREATE TELLS A STORY OF",
@@ -208,6 +198,28 @@
           "three": "Whole communities"
         }
       }
+    },
+    "communicationsSkills": {
+      "one": "PROFESSIONAL PHOTOGRAPHY",
+      "two": "GRAPHIC DESIGN",
+      "three": "MOTION GRAPHICS",
+      "four": "BRANDING",
+      "five": "SOCIAL MEDIA MARKETING",
+      "six": "COMMUNITY MANAGEMENT",
+      "seven": "STORYTELLING",
+      "eight": "EDUCATIONAL COMMUNICATION",
+      "nine": "DIGITAL STRATEGY",
+      "ten": "VIDEO EDITING"
+    },
+    "commun": {
+      "title_banner": "what we do",
+      "our_model": "OUR MODEL",
+      "subtitle": "COMMUNICATIONS",
+      "paragraph_1": "This area is made up of social communicators and graphic designers.",
+      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
+      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
+      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
+      "alt_image": "Communications Team"
     }
   },
   "foundation": {
