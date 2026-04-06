@@ -217,6 +217,12 @@
         "description": "Estrategias de contenido digital que generan comunidad y visibilizan nuestro trabajo."
       }
     },
+    "metrics": {
+      "one": "Productos audiovisuales",
+      "two": "Fotografías producidas",
+      "three": "Seguidores en redes",
+      "four": "Piezas de diseño"
+    },
     "commun": {
       "title_banner": "lo que hacemos",
       "our_model": "NUESTRO MODELO",

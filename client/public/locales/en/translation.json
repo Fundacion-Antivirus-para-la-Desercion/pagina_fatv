@@ -235,6 +235,12 @@
         "description": "Digital content strategies that build community and showcase our work."
       }
     },
+    "metrics": {
+      "one": "Audiovisual Projects",
+      "two": "Photos Produced",
+      "three": "Social Media Followers",
+      "four": "Design Pieces"
+    },
     "commun": {
       "title_banner": "what we do",
       "our_model": "OUR MODEL",

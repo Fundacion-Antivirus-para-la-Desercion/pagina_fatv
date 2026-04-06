@@ -4,6 +4,7 @@ import Description from "../Communications/Description/Description.jsx";
 import Commun from "../../components/Communications_ATV/Commun";
 import CommunicationSkills from "../Communications/CommunicationSkills/CommunicationSkills.jsx";
 import Services from "../Communications/Services/Services.jsx";
+import Metrics from "../Communications/Metrics/Metrics.jsx";
 
 function Communications() {
   return (
@@ -21,6 +22,7 @@ function Communications() {
       <Description />
       <CommunicationSkills />
       <Services />
+      <Metrics />
       {/*<Commun />*/}
     </>
   );
