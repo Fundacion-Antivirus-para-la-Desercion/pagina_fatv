@@ -217,6 +217,30 @@
       "nine": "ESTRATEGIA DIGITAL",
       "ten": "EDICIÓN DE VIDEO"
     },
+    "services": {
+      "span": "QUÉ HACEMOS",
+      "title": "SERVICIOS DEL ÁREA",
+      "serviceOne": {
+        "title": "Producción Audiovisual",
+        "description": "Videos institucionales, documentales cortos y contenido multimedia que narra historias de transformación."
+      },
+      "servicesTwo": {
+        "title": "Marketing Social",
+        "description": "Campañas estratégicas que amplifican el impacto social y generan conexiones significativas."
+      },
+      "servicesThree": {
+        "title": "Educomunicación",
+        "description": "Contenido educativo que transforma la comunicación en herramienta de aprendizaje."
+      },
+      "servicesFour": {
+        "title": "Diseño y Branding",
+        "description": "Identidad visual coherente, memorable y con propósito a través de piezas gráficas."
+      },
+      "servicesFive": {
+        "title": "Gestión de Redes",
+        "description": "Estrategias de contenido digital que generan comunidad y visibilizan nuestro trabajo."
+      }
+    },
     "commun": {
       "title_banner": "lo que hacemos",
       "our_model": "NUESTRO MODELO",

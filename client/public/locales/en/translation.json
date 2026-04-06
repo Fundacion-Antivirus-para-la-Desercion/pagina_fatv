@@ -211,6 +211,30 @@
       "nine": "DIGITAL STRATEGY",
       "ten": "VIDEO EDITING"
     },
+    "services": {
+      "span": "WHAT WE DO",
+      "title": "DEPARTMENT SERVICES",
+      "serviceOne": {
+        "title": "Audiovisual Production",
+        "description": "Institutional videos, short documentaries, and multimedia content that tell stories of transformation."
+      },
+      "servicesTwo": {
+        "title": "Social Marketing",
+        "description": "Strategic campaigns that amplify social impact and create meaningful connections."
+      },
+      "servicesThree": {
+        "title": "Educational Communication",
+        "description": "Educational content that turns communication into a powerful learning tool."
+      },
+      "servicesFour": {
+        "title": "Design & Branding",
+        "description": "Coherent and memorable visual identity with a purpose through graphic design."
+      },
+      "servicesFive": {
+        "title": "Social Media Management",
+        "description": "Digital content strategies that build community and showcase our work."
+      }
+    },
     "commun": {
       "title_banner": "what we do",
       "our_model": "OUR MODEL",
