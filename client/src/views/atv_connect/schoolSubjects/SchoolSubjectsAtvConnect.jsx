@@ -121,7 +121,7 @@ function SchoolSubjectsAtvConnect() {
 
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-[30%,70%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
+      <section className="grid grid-cols-1 md:grid-cols-[20%,80%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
@@ -139,13 +139,16 @@ function SchoolSubjectsAtvConnect() {
 
         <div className="flex flex-wrap items-center relative">
           <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
-            {subjects.map((subjects, index) => (
-              <span
+            {subjects.map((subject, index) => (
+              <a
                 key={index}
-                className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer"
+                href="https://atvconecta.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer hover:bg-white hover:bg-opacity-5 transition-colors"
               >
-                {subjects.subject}
-              </span>
+                {subject.subject}
+              </a>
             ))}
           </section>
         </div>

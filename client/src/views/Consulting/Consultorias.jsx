@@ -1,12 +1,11 @@
 import React from "react";
-import BannerConsultoriasEn from "../../assets/images/views/consultorias/student-retention-consulting.webp";
 import BannerConsulting from "../../assets/images/views/consultorias/banner-consulting.webp";
 import BannerView from "../../components/Banner-views/BannerView";
 import { PiShootingStarFill } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
-import "./consultoria.css";
+import card from "../../assets/images/views/consultorias/card-p.webp";
 
 function Consultorias() {
   const { t } = useTranslation();
@@ -45,38 +44,12 @@ function Consultorias() {
       <div className="relative lg:pt-[145px] ">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerConsultoriasEn,
-            esImage: BannerConsulting,
-            keyTitle: "studentRetentionManagement.alt_img_banner",
+            image: BannerConsulting,
+            keyAlt: "consultorias.banner.alt",
+            keyH1: "consultorias.banner.h1",
+            keyBr: "consultorias.banner.br",
           }}
         />
-
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-end pb-20 md:pb-32 px-4">
-          <div className="relative w-full flex flex-col md:items-end">
-            <h1
-              className="relative z-10 max-w-4xl text-center md:text-left text-3xl md:text-7xl font-renogare text-white font-extrabold -tracking-wider md:leading-[4rem]"
-              style={{
-                textShadow: `
-          2px 2px 0 #222D56,
-          4px 4px 0 #222D56,
-          6px 6px 0 #222D56,
-          8px 8px 0 #242c57,
-          10px 10px 0 #222D56,
-          12px 12px 0 #222D56,
-          14px 14px 0 #222D56,
-          16px 16px 25px rgba(0,0,0,0.5)
-        `,
-                WebkitTextStroke: "2px #242c57",
-              }}
-            >
-              Consultoría en permanencia estudiantil
-            </h1>
-          </div>
-
-          <span className="mt-6 px-6 py-2 md:py-2 bg-dark-blue text-white font-semibold text-center text-sm md:text-3xl tracking-wide rounded-full shadow-xl">
-            Fundación Antivirus para la Deserción
-          </span>
-        </div>
       </div>
 
       <Description />
@@ -211,12 +184,16 @@ function Consultorias() {
         </div>
 
         <motion.div {...slideFromTop}>
-          <div className="relative grid grid-cols-1 md:grid-cols-3 mt-10 gap-8 md:gap-5 mx-auto justify-center items-center">
+          <div className="relative flex flex-wrap mt-10 gap-8 md:gap-5 mx-auto justify-center items-center">
             {pillarsData.map((pillarsData, index) => (
-              <section className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 bg-[url('/src/assets/images/views/consultorias/card-p.webp')] bg-cover min-w-[300px] max-w-[450px] min-h-[280px]">
-                <div key={index}>
-                  <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
-
+              <section className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 min-w-[300px] max-w-[450px] min-h-[280px]">
+                <img
+                  src={card}
+                  alt="Card background"
+                  className="absolute inset-0 w-full h-full rounded-3xl"
+                />
+                <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
+                <div key={index} className="relative">
                   <h4 className="bg-dark-blue text-white rounded-3xl p-2 text-xl md:text-2xl mb-3">
                     {pillarsData.title}
                   </h4>

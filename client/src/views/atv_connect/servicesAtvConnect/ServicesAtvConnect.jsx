@@ -42,7 +42,7 @@ function ServicesAtvConnect() {
           {...slideFromTop}
           className="relative items-center justify-center flex flex-col"
         >
-          <span className="text-lg md:text-xl font-impact text-primary-purple">
+          <span className="text-base md:text-lg font-impact text-primary-purple">
             {t("atvConnect.services.span")}
           </span>
           <h2 className="text-4xl md:text-5xl font-impact text-blue-base">
@@ -64,10 +64,10 @@ function ServicesAtvConnect() {
               <DoodleLine />
             </div>
           </motion.div>
-          <section className="">
+          <section className="max-w-[450px] block mx-auto">
             <motion.div {...slideFromRight}>
               {" "}
-              <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
+              <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                   <LuBookOpen className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
                 </div>
@@ -82,7 +82,7 @@ function ServicesAtvConnect() {
               </section>
             </motion.div>
             <motion.div {...slideFromRight}>
-              <section className="relative bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
+              <section className="relative bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly m-3 mb-5 p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                   <BsPersonCheckFill className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
                 </div>
@@ -97,7 +97,7 @@ function ServicesAtvConnect() {
               </section>
             </motion.div>
             <motion.div {...slideFromRight}>
-              <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly max-w-[450px] m-3 mb-5  p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
+              <section className="bg-white group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly m-3 mb-5  p-5 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center m-2 justify-center rounded-xl p-3 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
                   <IoMdTime className="text-2xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors" />{" "}
                 </div>

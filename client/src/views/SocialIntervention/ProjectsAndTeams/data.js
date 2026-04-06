@@ -118,7 +118,7 @@ const projectsData = [
             "socialIntervention.projectsAndTeams.projectsCards.label_stats.students",
         },
         {
-          value: "91,14 %",
+          value: "91.14 %",
           label:
             "socialIntervention.projectsAndTeams.projectsCards.label_stats.higher_education",
         },

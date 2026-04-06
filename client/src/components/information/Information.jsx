@@ -1,468 +1,254 @@
-import React from "react";
-import styles from "./Information.module.css";
-import EstudiantesUno from "../../assets/images/views/proVocacion/information/estudiantes-uno.jpeg";
 import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
-import EstudiantesTres from "../../assets/images/views/proVocacion/information/estudiantes-tres.jpeg";
-import EstudiantesCuantro from "../../assets/images/views/proVocacion/information/estudiantes-cuatro.jpeg";
-import EstudiantesCinco from "../../assets/images/views/proVocacion/information/estudiantes-cinco.jpeg";
-import EstudiantesSeis from "../../assets/images/views/proVocacion/information/estudiantes-seis.jpeg";
-import EstudiantesSiete from "../../assets/images/views/proVocacion/information/estudiantes-siete.jpeg";
-import EstudiantesOcho from "../../assets/images/views/proVocacion/information/estudiantes-ocho.jpeg";
-import EstudiantesNueve from "../../assets/images/views/proVocacion/information/estudiantes-nueve.jpeg";
 import EstudiantesDiez from "../../assets/images/views/proVocacion/information/estudiantes-diez.jpeg";
-import EstudiantesOnce from "../../assets/images/views/proVocacion/information/estudiantes-once.jpeg";
-import EstudiantesDoce from "../../assets/images/views/proVocacion/information/estudiantes-doce.jpeg";
-import EstudiantesTrece from "../../assets/images/views/proVocacion/information/estudiantes-trece.jpeg";
-import EstudiantesCatorce from "../../assets/images/views/proVocacion/information/estudiantes-catorce.jpeg";
-import Estudiantesquince from "../../assets/images/views/proVocacion/information/estudiantes-quince.jpeg";
 import EstudiantesDieciseis from "../../assets/images/views/proVocacion/information/estudiantes-dieciseis.jpg";
+import { MdOutlineAttachMoney } from "react-icons/md";
+import { MdPayment } from "react-icons/md";
+import { BiCreditCardAlt } from "react-icons/bi";
+
+import {
+  floatSnake,
+  cardItemReveal,
+  expandableTransition,
+} from "../../components/motion/constants/Animations.js";
+import { motion } from "framer-motion";
 
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 
 import { useTranslation } from "react-i18next";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-
-import { Navigation } from "swiper/modules";
+import CardsCarousel from "../carousel/cards/CardsCarousel.jsx";
 
 const whatsAppNumber = "573173831481";
 
 function Information() {
   const { t } = useTranslation();
 
-  return (
-    <>
-      <section className="h-auto shadow-lg mb-5 bg-[#222D56]  text-white">
-        <Swiper
-          spaceBetween={30}
-          navigation={{ clickable: true }}
-          modules={[Navigation]}
-          className="mySwiper h-full"
-          loop={true}
+  const slideData = [
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
+      <div className="justify-self-center xl:justify-self-end">
+        <img
+          className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+          src={EstudiantesDiez}
+          alt=""
+        />
+      </div>
+      <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+        <motion.h4
+          variants={cardItemReveal}
+          className="text-xl md:text-3xl font-impact text-dark-blue text-center bg-primary-yellow rounded-xl p-2 mb-2"
         >
-          <SwiperSlide>
-            <section className="grid lg:grid-cols-[5fr_7fr] overflow-hidden">
-              <div className="flex flex-col gap-2 py-4 relative bottom-9 lg:max-h-[560px] max-h-[700px]">
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-24 right-20">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative left-72"></div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
-                </section>
+          {t("provocacion.information.cards.one.title")}
+        </motion.h4>
+        <div className="mb-4 w-full">
+          <motion.div variants={cardItemReveal} className="mb-3">
+            <strong className="block text-base md:text-xl text-dark-blue mb-1">
+              {t("provocacion.information.cards.one.questionOne")}
+            </strong>
+            <p className="text-sm md:text-base xl:text-lg text-justify md:text-left mb-5">
+              {t("provocacion.information.cards.one.answerOne")}
+            </p>
+          </motion.div>
+          <motion.div variants={cardItemReveal} className="mb-3">
+            <strong className="block text-base md:text-xl text-dark-blue mb-1">
+              {t("provocacion.information.cards.one.questionTwo")}
+            </strong>
+            <p className="text-sm md:text-base xl:text-lg text-justify md:text-left mb-5">
+              {t("provocacion.information.cards.one.answerTwo")}
+            </p>
+          </motion.div>
+          <motion.div variants={cardItemReveal} className="mb-3">
+            <strong className="block text-base md:text-xl text-dark-blue mb-1">
+              {t("provocacion.information.cards.one.questionThree")}
+            </strong>
+            <p className="text-sm md:text-base xl:text-lg text-justify md:text-left mb-5">
+              {t("provocacion.information.cards.one.answerThree")}
+            </p>
+          </motion.div>
+        </div>
+      </div>
+      <motion.div
+        {...expandableTransition(0)}
+        className="col-span-full w-full flex justify-center items-center mt-4"
+      >
+        <motion.a
+          variants={cardItemReveal}
+          className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          href={`https://wa.me/${whatsAppNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("provocacion.information.i_want_it")}
+          <img src={Focus} alt="icono" className="w-10 h-10" />
+        </motion.a>
+      </motion.div>
+    </section>,
+ 
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
+      <div className="justify-self-center xl:justify-self-end">
+        <img
+          className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+          src={EstudiantesDieciseis}
+          alt=""
+        />
+      </div>
+      <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+        <motion.h4
+          variants={cardItemReveal}
+          className="text-xl md:text-3xl font-impact text-dark-blue text-center bg-primary-yellow rounded-xl p-2 mb-2"
+        >
+          {t("provocacion.information.cards.two.title")}
+        </motion.h4>
+        <motion.p
+          variants={cardItemReveal}
+          className="text-sm md:text-lg mb-2 text-justify md:text-left"
+        >
+          {t("provocacion.information.cards.two.description")}
+        </motion.p>
+        <motion.h5
+          variants={cardItemReveal}
+          className="text-xl md:text-3xl font-impact text-dark-blue text-center bg-primary-yellow rounded-xl p-2 mb-2"
+        >
+          {t("provocacion.information.cards.two.titleTwo")}
+        </motion.h5>
+        <ul className="list-disc pl-5">
+          {[
+            "autoperception",
+            "autobservacion",
+            "autoestima",
+            "autoconcepto",
+            "autonomia",
+            "autoconfianza",
+            "automotivacion",
+            "autoevaluacion",
+          ].map((key) => (
+            <motion.li
+              variants={cardItemReveal}
+              key={key}
+              className="mb-1 text-sm md:text-base xl:text-lg"
+            >
+              {t(`provocacion.information.cards.two.studentFocus.${key}`)}
+            </motion.li>
+          ))}
+        </ul>
+      </div>
+      <motion.div
+        {...expandableTransition(0)}
+        className="col-span-full w-full flex justify-center items-center mt-4"
+      >
+        <motion.a
+          variants={cardItemReveal}
+          className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          href={`https://wa.me/${whatsAppNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("provocacion.information.i_want_it")}
+          <img src={Focus} alt="icono" className="w-10 h-10" />
+        </motion.a>
+      </motion.div>
+    </section>,
 
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-36 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesUno}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732]  h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesDos}
-                      alt=""
-                    />
-                  </div>
-                </section>
+    <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
+      <div className="justify-self-center xl:justify-self-end">
+        <img
+          className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+          src={EstudiantesDos}
+          alt=""
+        />
+      </div>
+      <div className="flex flex-col justify-center gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+        <motion.h4
+          variants={cardItemReveal}
+          className="text-xl md:text-3xl text-center font-impact text-dark-blue bg-primary-yellow rounded-xl p-2 mb-2"
+        >
+          {t("provocacion.information.cards.three.title")}
+        </motion.h4>
+        <ul className="list-disc pl-5">
+          {["one", "two", "three", "four", "five", "six", "seven"].map(
+            (key) => (
+              <motion.li
+                variants={cardItemReveal}
+                key={key}
+                className="mb-1 text-sm md:text-base xl:text-lg"
+              >
+                {t(`provocacion.information.cards.three.listServices.${key}`)}
+              </motion.li>
+            ),
+          )}
+        </ul>
+        <div className="flex justify-evenly gap-4 flex-1 px-3 md:px-5 lg:px-5 mt-6 xl:mt-0">
+          <div className="flex-col">
+            <motion.h4
+              variants={cardItemReveal}
+              className="text-xl md:text-2xl font-impact text-dark-blue text-center bg-primary-yellow rounded-xl p-1 mb-2"
+            >
+              {t("provocacion.information.cards.four.title")}
+            </motion.h4>
+            <ul className="list-none pl-5">
+              <motion.li
+                variants={cardItemReveal}
+                className="flex items-start mb-1 text-sm md:text-base xl:text-lg"
+              >
+                <MdOutlineAttachMoney className="flex-shrink-0 mt-1 mr-2 bg-dark-blue rounded-full p-1 text-white text-2xl" />
+                <span>{t("provocacion.information.cards.four.one")}</span>
+              </motion.li>
+              <motion.li
+                variants={cardItemReveal}
+                className="flex items-start mb-1 text-sm md:text-base xl:text-lg"
+              >
+                <MdPayment className="flex-shrink-0 mt-1 mr-2 bg-dark-blue rounded-full p-1 text-white text-2xl" />
+                <span>{t("provocacion.information.cards.four.two")}</span>
+              </motion.li>
+              <motion.li
+                variants={cardItemReveal}
+                className="flex items-start mb-1 text-sm md:text-base xl:text-lg"
+              >
+                <BiCreditCardAlt className="flex-shrink-0 mt-1 mr-2 bg-dark-blue rounded-full p-1 text-white text-2xl" />
+                <span>{t("provocacion.information.cards.four.three")}</span>
+              </motion.li>
+            </ul>
+          </div>
+          <div>
+            <motion.h4
+              variants={cardItemReveal}
+              className="text-xl md:text-2xl font-impact text-dark-blue text-center bg-primary-yellow rounded-xl p-1 mb-2"
+            >
+              {t("provocacion.information.cards.four.title_two")}
+            </motion.h4>
 
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-48 right-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesDieciseis}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesTres}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-60 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesCuantro}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesCinco}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-[280px] right-14">
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative bottom-2 left-64"></div>
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
-                </section>
-              </div>
-
-              <div className="flex flex-col h-full items-center justify-between gap-4 p-6 rounded-lg">
-                <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
+            <ul className="list-none pl-5 text-center">
+              {["price", "final_price"].map((key) => (
+                <motion.li
+                  variants={cardItemReveal}
+                  key={key}
+                  className="mb-1 text-sm md:text-base xl:text-lg"
                 >
-                  {t("provocacion.information.directed_to")}
-                </h3>
+                  {t(`provocacion.information.cards.four.${key}`)}
+                </motion.li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                <div className="mb-1">
-                  <p className="text-lg font-bold text-center mb-2">
-                    {t("provocacion.information.who_is_it_for")}
-                  </p>
-                  <p className="text-lg text-center w-3/4 mx-auto">
-                    <strong>
-                      {t("provocacion.information.young_people_description")}
-                    </strong>{" "}
-                    {t("provocacion.information.students_description")}
-                  </p>
-                </div>
+      <motion.div
+        {...expandableTransition(0)}
+        className="col-span-full w-full flex justify-center items-center mt-4"
+      >
+        <motion.a
+          variants={cardItemReveal}
+          className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          href={`https://wa.me/${whatsAppNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("provocacion.information.i_want_it")}
+          <img src={Focus} alt="icono" className="w-10 h-10" />
+        </motion.a>
+      </motion.div>
+    </section>,
+  ];
 
-                <div className="mb-1">
-                  <p className="text-lg font-bold text-center mb-2">
-                    {t("provocacion.information.when_moment")}
-                  </p>
-                  <p className="text-lg text-center">
-                    {t("provocacion.information.decision_time")}
-                    <strong>
-                      {" "}
-                      {t("provocacion.information.academic_future")}
-                    </strong>
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-lg font-bold text-center mb-2">
-                    {t("provocacion.information.what_are_they_living")}
-                  </p>
-                  <p className="text-lg text-center">
-                    <strong>
-                      {t("provocacion.information.feelings_description")}
-                    </strong>
-                  </p>
-                </div>
-
-                <section className="w-full flex justify-end items-end">
-                  <a
-                    className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                    href={`https://wa.me/${whatsAppNumber}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("provocacion.information.i_want_it")}
-                    <img src={Focus} alt="icono" className="w-10 h-10" />
-                  </a>
-                </section>
-              </div>
-            </section>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <section className="grid lg:grid-cols-[4fr_6fr] overflow-hidden">
-              <div className="flex flex-col gap-2 py-4 relative bottom-9 lg:max-h-[560px] max-h-[700px]">
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-24 right-20">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative left-72"></div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-36 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesNueve}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732]  h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesOcho}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-48 right-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesDieciseis}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesSiete}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-60 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesSeis}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesDiez}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-[280px] right-14">
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative bottom-2 left-64"></div>
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
-                </section>
-              </div>
-
-              <div className="flex flex-col h-full  items-center justify-between gap-4 p-6 rounded-lg">
-                <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
-                >
-                  {t("provocacion.information.installed_capacities")}
-                </h3>
-
-                <div className="mb-1">
-                  <p className="text-lg font-semibold text-center mb-4 w-3/4 mx-auto">
-                    {t("provocacion.information.skills_promotion")}
-                  </p>
-                  <h3
-                    className={`mb-1 text-4xl text-[#F8B732] font-impact text-center`}
-                  >
-                    {t("provocacion.information.focus_on_autos")}
-                  </h3>
-                </div>
-                <div className="mb-1">
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.self_perception")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.self_observation")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.provocacion.information.self_esteem")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.self_concept")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.autonomy")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.self_confidence")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.self_motivation")}
-                  </p>
-
-                  <p className="text-base font-semibold text-center">
-                    {t("provocacion.information.self_evaluation")}
-                  </p>
-                </div>
-
-                <section className="w-full flex justify-end">
-                  <a
-                    className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                    href={`https://wa.me/${whatsAppNumber}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("provocacion.information.i_want_it")}
-                    <img src={Focus} alt="icono" className="w-10 h-10" />
-                  </a>
-                </section>
-              </div>
-            </section>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <section className="grid lg:grid-cols-[4fr_6fr] overflow-hidden">
-              <div className="flex flex-col gap-2 py-4 relative bottom-9 lg:max-h-[560px] max-h-[700px]">
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-24 right-20">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative left-72"></div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-36 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesDoce}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732]  h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesOnce}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-48 right-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesDieciseis}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden ">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={Estudiantesquince}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-60 left-16">
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
-                    <img
-                      className={`object-[center_top] ${styles.diamondImage}`}
-                      src={EstudiantesCatorce}
-                      alt=""
-                    />
-                  </div>
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center overflow-hidden">
-                    <img
-                      className={` ${styles.diamondImage}`}
-                      src={EstudiantesTrece}
-                      alt=""
-                    />
-                  </div>
-                </section>
-
-                <section className="grid grid-cols-2 items-center justify-center gap-[5.5rem] w-fit relative bottom-[280px] right-14">
-                  <div className="bg-[#F8B732] h-[180px] w-[180px] rotate-45 flex items-center justify-center relative bottom-2 left-64"></div>
-                  <div className="bg-[#7C78B3] h-[180px] w-[180px] rotate-45 flex items-center justify-center"></div>
-                </section>
-              </div>
-
-              <div className="flex flex-col h-full  items-center justify-between gap-4 p-6 rounded-lg">
-                <h3
-                  className={`mb-1 text-4xl text-[#F8B732] font-impact`}
-                >
-                  {t("provocacion.information.what_includes_service")}
-                </h3>
-
-                <div className="mb-1">
-                  <p className="text-base text-center ">
-                    <strong>
-                      {t("provocacion.information.five_sessions")}
-                    </strong>
-                  </p>
-
-                  <p className="text-base text-center">
-                    <strong>
-                      {t("provocacion.information.one_counseling")}
-                    </strong>
-                  </p>
-
-                  <p className="text-base text-center">
-                    {t("provocacion.information.digital_tools")}
-                  </p>
-
-                  <p className="text-base text-center w-3/4 mx-auto">
-                    <strong>
-                      {t("provocacion.information.experiential_activities")}
-                    </strong>{" "}
-                    {t("provocacion.information.experience_exchange")}
-                  </p>
-
-                  <p className="text-base text-center">
-                    {t("provocacion.information.whatsapp_support")}
-                  </p>
-
-                  <p className="text-base text-center mb-1">
-                    <strong>
-                      {t("provocacion.information.participation_certificate")}
-                    </strong>
-                  </p>
-
-                  <section className="flex  justify-center gap-10  mt-4">
-                    <div>
-                      <div>
-                        <h3
-                          className={`mb-1 text-3xl text-[#F8B732] font-impact text-center`}
-                        >
-                          {t("provocacion.information.payment_methods")}
-                        </h3>
-                      </div>
-                      <div className="mb-1">
-                        <p className="text-lg font-bold text-center mb-1">
-                          {t("provocacion.information.bank_transfer")}
-                        </p>
-
-                        <p className="text-lg font-bold  text-center mb-1">
-                          {t("provocacion.information.debit_card")}
-                        </p>
-
-                        <p className="text-lg font-bold  text-center mb-1">
-                          {t("provocacion.information.credit_card")}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <div>
-                        <h3
-                          className={`mb-1 text-3xl text-[#F8B732] font-impact text-center`}
-                        >
-                          {t("provocacion.information.cost")}
-                        </h3>
-                      </div>
-                      <div className="mb-1">
-                        <p className="text-lg font-bold  text-center mb-1">
-                          {t("provocacion.information.base_price")}
-                        </p>
-
-                        <p className="text-lg font-bold  text-center mb-1">
-                          {t("provocacion.information.final_price")}
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-                <section className="w-full flex justify-end">
-                  <a
-                    className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                    href={`https://wa.me/${whatsAppNumber}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("provocacion.information.i_want_it")}
-                    <img src={Focus} alt="icono" className="w-10 h-10" />
-                  </a>
-                </section>
-              </div>
-            </section>
-          </SwiperSlide>
-        </Swiper>
-      </section>
-    </>
-  );
+  return <CardsCarousel slideData={slideData} />;
 }
 
 export default Information;

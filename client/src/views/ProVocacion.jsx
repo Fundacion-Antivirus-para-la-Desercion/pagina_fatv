@@ -1,7 +1,6 @@
 import styles from "./ProVocacion.module.css";
-import BannerFoundationEn from "../../src/assets/images/views/proVocacion/banner-provocacion.webp";
+import BannerProvocacion from "../../src/assets/images/views/proVocacion/banner-pro-vocacion.webp";
 import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.webp";
-import Acompañamiento from "../../src/assets/images/views/proVocacion/collage-provocacion.webp";
 import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
 import MundoFormativo from "../assets/images/views/proVocacion/componentes/mundo-formativo.webp";
 import MundoLaboral from "../assets/images/views/proVocacion/componentes/mundo-laboral.webp";
@@ -12,6 +11,7 @@ import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
 import Focus from "../assets/images/views/proVocacion/information/focus.svg";
 import BannerView from "../components/Banner-views/BannerView";
+import Description from "./StudentProvocation/Description";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -85,7 +85,7 @@ function ProVocacion() {
           "service_ciqn2wp", //  service ID de EmailJS
           "template_oacf6ns", //  template ID de EmailJS
           emailParams,
-          "06in3EAhhtx15iDoZ" //  public key de EmailJS
+          "06in3EAhhtx15iDoZ", //  public key de EmailJS
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -179,9 +179,9 @@ function ProVocacion() {
       <section className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerFoundationEn,
-            esImage: BannerFoundationEn,
-            keyTitle: "",
+            image: BannerProvocacion,
+            keyAlt: "provocacion.banner.alt",
+            keyH1: "provocacion.banner.h1",
           }}
         />
 
@@ -200,28 +200,7 @@ function ProVocacion() {
         </div>
       </section>
 
-      <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr] gap-10 justify-between items-center">
-        <div>
-          <h1
-            className={`lineSubtitle mt-5 md:mt-0 mb-5 text-4xl text-blue-base leading-tight font-impact md:text-5xl  ${styles.title}`}
-          >
-            {t("provocacion.title_initial")}
-          </h1>
-          <p
-            className="text-blue-base text-base md:text-xl tracking-tighter text-justify max-w-prose mx-auto"
-          >
-            {t("provocacion.description")}
-          </p>
-        </div>
-        <div>
-          <img
-            src={Acompañamiento}
-            alt="Acompañamiento"
-            className="w-auto max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[500px] object-cover rounded-xl p-4 mx-auto shadow-lg transition-transform duration-500 hover:rotate-3"
-          />
-        </div>
-      </section>
-
+      <Description />
       <Information />
 
       <section>
@@ -233,13 +212,11 @@ function ProVocacion() {
       </section>
 
       <section className="p-5">
-        <h2
-          className={`text-5xl text-blue-base font-impact max-md:text-3xl text-center ${styles.title}`}
-        >
+        <h2 className="text-3xl md:text-5xl text-blue-base font-impact text-center ">
           {t("provocacion.title_future")}
         </h2>
       </section>
-      <section className="p-5 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-4">
+      <section className="p-5 md:p-10 grid grid-cols-1 lg:grid-cols-[5fr_5fr_5fr] gap-10 mb-10">
         <div className="cursor-pointer border-4 border-[#7E96CB] rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl">
           <img
             src={isEnglish ? EnAutoconocimiento : Autoconocimiento}

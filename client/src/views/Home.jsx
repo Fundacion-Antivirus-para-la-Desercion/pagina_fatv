@@ -4,7 +4,7 @@ import AboutUs from "../components/aboutUs/AboutUs";
 import OurTeam from "../components/ourTeam/OurTeam";
 import ContextData from "../components/ContextData/ContextData";
 import ServicesATV from "../components/Services_ATV/Services_ATV";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/carousel/thumbs/MainCarousel";
 function Home() {
   return (
     <div className="lg:pt-[145px]">

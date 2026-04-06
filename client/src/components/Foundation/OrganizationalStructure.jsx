@@ -65,16 +65,16 @@ function OrganizationalStructure() {
         initial="hidden"
         animate={isSectionInView ? "visible" : "hidden"}
         variants={fadeIn}
-        className="relative grid grid-cols-1 md:grid-cols-[20%,80%] mb-10 m-2"
+        className="relative grid grid-cols-1 lg:grid-cols-[30%_70%] mb-10 m-2 gap-1 container mx-auto items-center"
       >
         <div className="hidden md:block">
           <img
-            className="hidden md:block md:h-[550px] ml-2 bottom-0 absolute z-10"
+            className="hidden lg:block md:h-[550px] lg:h-[600px] ml-2 bottom-0 absolute z-10"
             src={JaviSonrie}
             alt="Javi Sonrie"
           />
         </div>
-        <section className="grid grid-cols-1 relative md:grid-cols-2 max-w-[1000px] mx-auto items-center">
+        <section className="grid grid-cols-1 relative lg:grid-cols-2  max-w-[1000px] mx-auto items-center mb-10">
           <motion.div
             ref={puzzleOneRef}
             variants={slideFromLeft}
@@ -82,7 +82,7 @@ function OrganizationalStructure() {
             animate={isPuzzleOneInView ? "visible" : "hidden"}
           >
             <div className="w-full puzzlePieceOne">
-              <div className="p-10 md:m-2 relative z-10">
+              <div className="p-10 lg:m-2 relative z-10">
                 <p>
                   <small className="text-dark-blue text-base leading-[1.533] tracking-[0.3em] uppercase">
                     {t("foundation.foundationATV.founders.subtitle")}
@@ -92,48 +92,48 @@ function OrganizationalStructure() {
                   {t("foundation.foundationATV.founders.title")}
                 </h5>
 
-                <div className="lg:columns-2 gap-[15px] break-inside-avoid">
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                <div className="lg:columns-2 gap-5 ">
+                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base ">
                     Carlos
                     <strong className="text-inherit block">
                       Vásquez Restrepo
                     </strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base ">
                     Paulina
                     <strong className="text-inherit block">Tamayo Mejía</strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-5 text-base ">
                     Víctor Manuel
                     <strong className="text-inherit block">
                       Valencia Martínez
                     </strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base">
                     Luis Fernando
                     <strong className="text-inherit block">
                       González Urán
                     </strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base ">
                     Andrea
                     <strong className="text-inherit block">
                       Jaramillo Ramírez
                     </strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base ">
                     Laura
                     <strong className="text-inherit block">
                       Calle Escobar
                     </strong>
                   </p>
-                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base ">
                     León Felipe
                     <strong className="text-inherit block">
                       Hernández López
                     </strong>
                   </p>
-                  <p className="w-full z-10 relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                  <p className="w-full z-10 relative block text-dark-blue text-left mb-[15px] text-base ">
                     Aida
                     <strong className="text-inherit block">
                       Orduz Quijano
@@ -151,7 +151,7 @@ function OrganizationalStructure() {
             animate={isPuzzleTwoInView ? "visible" : "hidden"}
           >
             <div className="w-full puzzlePieceTwo">
-              <div className="p-10 md:m-2">
+              <div className="p-10 lg:m-2">
                 <p>
                   <small className="text-white text-base leading-[1.533] tracking-[0.3em] uppercase">
                     {t("foundation.foundationATV.board_directors.subtitle")}
@@ -161,8 +161,8 @@ function OrganizationalStructure() {
                   {t("foundation.foundationATV.board_directors.title")}
                 </h5>
 
-                <div className="lg:columns-2 gap-[15px] break-inside-avoid mt-3">
-                  <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
+                <div className="lg:columns-2 gap-5  mt-3">
+                  <p className="w-full relative block text-white text-left mb-[15px] text-sm ">
                     Carlos Vásquez Restrepo
                     <strong className="text-inherit block">
                       {t(
@@ -170,7 +170,7 @@ function OrganizationalStructure() {
                       )}
                     </strong>
                   </p>
-                  <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
+                  <p className="w-full relative block text-white text-left mb-[15px] text-sm ">
                     Luis Fernando Sánchez Hurtado
                     <strong className="text-inherit block">
                       {t(
@@ -178,7 +178,7 @@ function OrganizationalStructure() {
                       )}
                     </strong>
                   </p>
-                  <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
+                  <p className="w-full relative block text-white text-left mb-[15px] text-sm ">
                     David Santiago Botero Rodríguez
                     <strong className="text-inherit block">
                       {t(
@@ -186,7 +186,7 @@ function OrganizationalStructure() {
                       )}
                     </strong>
                   </p>
-                  <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
+                  <p className="w-full relative block text-white text-left mb-[15px] text-sm ">
                     Víctor Manuel Valencia Martínez
                     <strong className="text-inherit block">
                       {t(
@@ -194,7 +194,7 @@ function OrganizationalStructure() {
                       )}
                     </strong>
                   </p>
-                  <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
+                  <p className="w-full relative block text-white text-left mb-[15px] text-sm ">
                     Luis Fernando
                     <strong className="text-inherit block">
                       González Urán
@@ -221,7 +221,7 @@ function OrganizationalStructure() {
                 <h5 className="font-impact text-white uppercase text-4xl leading-[0.917] mb-[10px]">
                   {t("foundation.foundationATV.fiscal_reviewer.title")}
                 </h5>
-                <p className="w-full relative block text-white text-left mb-[15px] text-sm break-inside-avoid">
+                <p className="w-full relative block text-white text-left mb-[15px] text-sm ">
                   Orlando
                   <strong> Gaviria Flórez</strong>
                 </p>
@@ -245,7 +245,7 @@ function OrganizationalStructure() {
                 <h5 className="font-impact text-dark-blue uppercase text-4xl leading-[0.917] mb-[10px]">
                   {t("foundation.foundationATV.accountant.title")}
                 </h5>
-                <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base break-inside-avoid">
+                <p className="w-full relative block text-dark-blue text-left mb-[15px] text-base ">
                   María Verónica
                   <strong className="text-inherit block ">
                     Ortiz Rodríguez

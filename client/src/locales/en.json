@@ -138,12 +138,14 @@
     "other_amount": "Other amount",
     "alt_text": "Student support"
   },
+  "ethicsTransparency": {
+    "title": "Ethics & Transparency",
+    "description": "At Fundación Antivirus para la Deserción, we follow a strict ethics and transparency program. We have clear anti-corruption policies and internal guidelines to ensure every donation is managed responsibly and used solely to support our mission."
+  },
   "dataAnalytics": {
-    "bannerDA": {
-      "banner": {
-        "title": "what we do",
-        "alt_banner": "Banner with the title 'what we do'"
-      }
+    "banner": {
+      "h1": "Technology and Data",
+      "alt": "Group of students actively participating in a classroom lesson"
     },
     "contentDA": {
       "title": "Our Model",
@@ -153,7 +155,11 @@
       "alt_image": "Data analytics chart"
     }
   },
-  "communications_ATV": {
+  "communications": {
+    "banner": {
+      "h1": "Communications",
+      "alt": "The Communications Team smiling together."
+    },
     "commun": {
       "title_banner": "what we do",
       "our_model": "OUR MODEL",
@@ -163,9 +169,33 @@
       "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
       "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
       "alt_image": "Communications Team"
+    },
+    "description": {
+      "spam": "OUR CREATIVE MISSION",
+      "title": "EVERY FORMAT WE CREATE TELLS A STORY OF",
+      "spam_title": "CHANGE",
+      "description_general": "We are the creative bridge between our Foundation's social impact and the audiences that need to hear about it. We design communication strategies that educate, inspire, and transform.",
+      "ancla_one": "Watch Showreel",
+      "ancla_two": "Explore Portfolio",
+      "cardPrincipal": {
+        "title": "What is Educommunication?",
+        "description": "It is an approach that combines education and communication to create content that doesn't just inform, but also sparks critical thinking and drives social change. At the foundation, every video, design, and post is created with this purpose.",
+        "spams": {
+          "one": "Educate",
+          "one_description": "Through content",
+          "two": "Inspire",
+          "two_description": "With real stories",
+          "three": "Transform",
+          "three_description": "Whole communities"
+        }
+      }
     }
   },
   "foundation": {
+    "banner": {
+      "h1": "About Us",
+      "alt": "The Antivirus Foundation team working together."
+    },
     "foundationATV": {
       "header": "About us",
       "title": "Who Are We?",
@@ -231,6 +261,10 @@
     }
   },
   "news": {
+    "banner": {
+      "h1": "News",
+      "alt": "Close-up of a hand with the institutional wristband over a group of young students, symbolizing a commitment to education."
+    },
     "title": "NEWS",
     "category": "NEWS",
     "read_more": "Read more",
@@ -446,6 +480,10 @@
     }
   },
   "socialIntervention": {
+    "banner": {
+      "h1": "Social Intervention",
+      "alt": "Antivirus Foundation staff member and students in their respective educational environments."
+    },
     "span": "AREAS OF INTEGRATION",
     "title": "SOCIAL INTERVENTION",
     "figure": "Interventions this year",
@@ -516,7 +554,7 @@
           "students": "Students",
           "retention": "Student Retention",
           "institutions": "Institutions",
-          "higher_education": "Higher Education Continuity"
+          "higher_education": "Plan to pursue higher education"
         },
         "one": {
           "title_button": "Universities",
@@ -668,6 +706,11 @@
     }
   },
   "consultorias": {
+    "banner": {
+      "h1": "Student Retention",
+      "br": "Consulting",
+      "alt": "Students in a classroom participating in a student retention workshop."
+    },
     "description": {
       "consulting_title": "CONSULTING AND IMPLEMENTATION OF PROJECTS FOR ",
       "consulting_title_span": "RETENTION:",
@@ -753,9 +796,12 @@
   },
 
   "studentRetentionManagement": {
-    "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student",
+    "banner": {
+      "h1": "Student Retention",
+      "br": "Management",
+      "alt": "Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student"
+    },
     "title": "OBJECTIVE OF RETENTION MANAGEMENT",
-
     "objectiveOne": {
       "text_one": "🎯Support students throughout their",
       "span": "academic journey",
@@ -847,6 +893,10 @@
     }
   },
   "provocacion": {
+    "banner": {
+      "h1": "ProVocación",
+      "alt": "High school students receiving guidance to define their life project and academic future."
+    },
     "title_initial": "SUPPORT OBJECTIVE",
     "description": "Empower young people's life projects through self-knowledge processes, approach to higher education and the working world that allow them to have tools to build their authentic life project.",
     "title_future": "YOUR FUTURE, STEP BY STEP: KNOW EACH STAGE",
@@ -880,42 +930,53 @@
       "description": "Thank you for contacting us."
     },
     "information": {
-      "directed_to": "DIRECTED TO:",
-      "who_is_it_for": "Who is it for?",
-      "young_people_description": "Young people who are about to make important decisions about their lives,",
-      "students_description": "especially in relation to their life project. Final year students, high school graduates or young people in transition.",
-      "when_moment": "When?",
-      "decision_time": "When they need to make decisions about their",
-      "academic_future": "academic and professional future.",
-      "what_are_they_living": "What are they experiencing?",
-      "feelings_description": "Feelings of disorientation, confusion or insecurity about the future.",
-      "i_want_it": "I want it",
-      "installed_capacities": "INSTALLED CAPACITIES",
-      "skills_promotion": "We promote the development of personal and emotional skills that allow young people to know, value and project themselves.",
-      "focus_on_autos": "FOCUS ON THE SELF",
-      "self_perception": "🧠 Self-perception: Recognizing who I am and how I see myself.",
-      "self_observation": "👁️ Self-observation: Identifying my emotions and behaviors.",
-      "self_esteem": "❤️ Self-esteem: Valuing myself and recognizing my own worth.",
-      "self_concept": "🔍 Self-concept: Understanding how I define myself.",
-      "autonomy": "🧭 Autonomy: Making conscious and responsible decisions.",
-      "self_confidence": "💪 Self-confidence: Believing in my abilities and potential.",
-      "self_motivation": "🔥 Self-motivation: Driving myself from within.",
-      "self_evaluation": "📊 Self-evaluation: Learning from my actions and experiences.",
-      "what_includes_service": "WHAT DOES THE SERVICE INCLUDE?",
-      "five_sessions": "- 5 group and/or individual sessions",
-      "one_counseling": "- 1 individual socio-vocational counseling (on demand)",
-      "digital_tools": "- Digital tools and practical guides for each session",
-      "experiential_activities": "- Experiential activities",
-      "experience_exchange": "(One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.)",
-      "whatsapp_support": "- WhatsApp support group or doubt resolution",
-      "participation_certificate": "- Certificate of participation",
-      "payment_methods": "PAYMENT METHODS",
-      "bank_transfer": "- Bank transfer",
-      "debit_card": "- Debit card",
-      "credit_card": "- Credit card",
-      "cost": "COST",
-      "base_price": "450,000 + VAT",
-      "final_price": "535,500"
+      "cards": {
+        "one": {
+          "title": "DIRECTED TO:",
+          "questionOne": "Who is it for?",
+          "answerOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition.",
+          "questionTwo": "When?",
+          "answerTwo": "When they need to make decisions about their academic and professional future.",
+          "questionThree": "What are they experiencing?",
+          "answerThree": "Feelings of disorientation, confusion, or insecurity about the future."
+        },
+        "two": {
+          "title": "INSTALLED CAPABILITIES",
+          "description": "We promote the development of personal and emotional skills that allow young people to know themselves, value themselves, and project themselves.",
+          "titleTwo": "FOCUS ON THE SELF",
+          "studentFocus": {
+            "autoperception": "🧠 Self-perception: Recognize who I am and how I see myself.",
+            "autobservacion": "👁️ Self-observation: Identify my emotions and behaviors.",
+            "autoestima": "❤️ Self-esteem: Value myself and recognize my own worth.",
+            "autoconcepto": "🔍 Self-concept: Understand how I define myself.",
+            "autonomia": "🧭 Autonomy: Make conscious and responsible decisions.",
+            "autoconfianza": "💪 Self-confidence: Believe in my abilities and potential.",
+            "automotivacion": "🔥 Self-motivation: Drive myself from within.",
+            "autoevaluacion": "📊 Self-evaluation: Learn from my actions and experiences."
+          }
+        },
+        "three": {
+          "title": "WHAT DOES THE SERVICE INCLUDE?",
+          "listServices": {
+            "one": "5 group and/or individual sessions",
+            "two": "1 individual socio-vocational counseling (on demand)",
+            "three": "Digital tools and practical guides for each session",
+            "four": "Experiential activities",
+            "five": "One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.",
+            "six": "WhatsApp support group or doubt resolution",
+            "seven": "Certificate of participation"
+          }
+        },
+        "four": {
+          "title": "PAYMENT METHODS",
+          "title_two": "COST",
+          "one": "Bank transfer",
+          "two": "Debit card",
+          "three": "Credit card",
+          "price": "450,000 + VAT",
+          "final_price": "535,500"
+        }
+      }
     },
     "testimonials": {
       "title": "Testimonials",
@@ -949,6 +1010,11 @@
     }
   },
   "atvConnect": {
+    "banner": {
+      "h1": "ATVConecta:",
+      "br": "Academic Tutoring",
+      "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
+    },
     "description_one": "ATVConecta is more than just a tutoring platform. It is ",
     "description_span": "your partner in overcoming academic challenges,",
     "description_two": " boosting your performance, and reaching your university goals with confidence.",
@@ -1068,6 +1134,10 @@
     }
   },
   "contactUs": {
+    "banner": {
+      "h1": "Contact Us",
+      "alt": "Smiling Antivirus Foundation team members, ready to support you."
+    },
     "title": "Contact Us",
     "startConversation": "LET'S START",
     "conversationTitle": "A CONVERSATION DO YOU HAVE ANY QUESTIONS? WE HAVE THE ANSWER!",

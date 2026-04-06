@@ -1,7 +1,6 @@
 import { useState, useMemo } from "react";
 import Date from "../assets/Icons/date.svg";
-import BannerNewsEn from "../assets/images/views/imagesNews/news.webp";
-import BannerNewsEs from "../assets/images/views/imagesNews/noticias.webp";
+import BannerNews from "../assets/images/views/imagesNews/banner-news.webp";
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
@@ -38,16 +37,16 @@ function NewsDetail() {
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
-            enImage: BannerNewsEn,
-            esImage: BannerNewsEs,
-            keyTitle: "",
+            image: BannerNews,
+            keyAlt: "news.banner.alt",
+            keyH1: "news.banner.h1",
           }}
         />
       </div>
 
       <section className="mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 relative p-4 mt-6">
         <div id="content" className="p-4 border border-dark-blue rounded-2xl">
-          <p className="flex tracking-[0.3rem] font-light m-2 text-blue-base">
+          <p className="flex  text-base md:text-lg font-impact m-2 text-primary-purple">
             <img className="mr-1" src={Date} />
             {t("newsDetail.news_label")}
           </p>

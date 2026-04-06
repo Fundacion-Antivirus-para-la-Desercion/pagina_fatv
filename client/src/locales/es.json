@@ -139,12 +139,14 @@
     "other_amount": "Otro valor",
     "alt_text": "Acompañamiento a estudiantes"
   },
+  "ethicsTransparency": {
+    "title": "ÉTICA Y TRANSPARENCIA EMPRESARIAL",
+    "description": "La Fundación Antivirus para la Deserción cuenta con un programa de ética y transparencia empresarial, adoptando políticas anticorrupción y antisoborno, así como lineamientos internos claros para el adecuado manejo, control y destinación de las donaciones recibidas, asegurando su uso responsable y alineado con los fines misionales de la organización."
+  },
   "dataAnalytics": {
-    "bannerDA": {
-      "banner": {
-        "title": "lo que hacemos",
-        "alt_banner": "Banner con el título 'lo que hacemos'"
-      }
+    "banner": {
+      "h1": " Tecnología y Datos",
+      "alt": "Grupo de estudiantes participando activamente en una clase dentro del aula."
     },
     "contentDA": {
       "title": "Nuestro Modelo",
@@ -154,7 +156,11 @@
       "alt_image": "Gráfico de análisis de datos"
     }
   },
-  "communications_ATV": {
+  "communications": {
+    "banner": {
+      "h1": "Comunicaciones",
+      "alt": "El equipo de comunicaciones sonriendo juntos."
+    },
     "commun": {
       "title_banner": "lo que hacemos",
       "our_model": "NUESTRO MODELO",
@@ -164,9 +170,33 @@
       "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
       "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
       "alt_image": "Equipo de Comunicaciones"
+    },
+    "description": {
+      "spam": "NUESTRA MISIÓN CREATIVA",
+      "title": "CADA FORMATO QUE CREAMOS NARRA UNA HISTORIA DE",
+      "spam_title": "CAMBIO",
+      "description_general": "Somos el puente creativo entre el impacto social de la Fundación y las audiencias que necesitan conocerlo. Diseñamos estrategias de comunicación que educan, inspiran y transforman.",
+      "ancla_one": "Ver Showreel",
+      "ancla_two": "Explorar portafolio",
+      "cardPrincipal": {
+        "title": "¿Qué es la Educomunicación?",
+        "description": "Es un enfoque que une educación y comunicación para crear contenido que no solo informa, sino que genera pensamiento crítico y promueve el cambio social. En la fundación cada video, cada diseño y cada publicación tiene este propósito.",
+        "spams": {
+          "one": "Educar",
+          "one_description": "A través del contenido",
+          "two": "Inspirar",
+          "two_description": "Con historias reales",
+          "three": "Transformar",
+          "three_description": "Comunidades enteras"
+        }
+      }
     }
   },
   "foundation": {
+    "banner": {
+      "h1": "Sobre Nosotros",
+      "alt": "Imagen con colaboradores de la fundacion antivirus para la deserción."
+    },
     "foundationATV": {
       "header": "sobre nosotros",
       "title": "¿Quiénes Somos?",
@@ -232,6 +262,10 @@
     }
   },
   "news": {
+    "banner": {
+      "h1": "NOTICIAS",
+      "alt": "Primer plano de una mano cerrada con la pulsera institucional sobre una imagen de jóvenes estudiando, simbolizando el compromiso con la educación."
+    },
     "title": "NOTICIAS",
     "category": "NOTICIAS",
     "read_more": "Leer más",
@@ -447,7 +481,11 @@
     }
   },
   "socialIntervention": {
-    "span": "ÁREAS DE ARTICULACÓN",
+    "banner": {
+      "h1": "Intervención Social",
+      "alt": "Colaborador de la Fundación Antivirus y estudiantes en sus respectivos entornos educativos."
+    },
+    "span": "ÁREAS DE ARTICULACIÓN",
     "title": "INTERVENCIÓN SOCIAL",
     "figure": "Intervenciones este año",
     "description": "Utilizamos una metodología basada en la comprensión profunda de las particularidades de cada individuo, a través de un análisis detallado de su contexto histórico, social, económico, socioemocional y académico, para diseñar intervenciones específicas que les permitan mejorar significativamente.",
@@ -520,7 +558,7 @@
           "students": "Estudiantes",
           "retention": "Permanencia",
           "institutions": "Instituciones",
-          "higher_education": "Continuidad a educación Superior"
+          "higher_education": "Proyecta continuar a educación superior"
         },
         "one": {
           "title_button": "Universidades",
@@ -673,6 +711,11 @@
     }
   },
   "consultorias": {
+    "banner": {
+      "h1": "Consultoría en Permanencia",
+      "br": "Estudiantil",
+      "alt": "Estudiantes en un aula de clase participando en una sesión de consultoría sobre permanencia estudiantil."
+    },
     "description": {
       "consulting_title": "CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS PARA LA ",
       "consulting_title_span": "PERMANENCIA:",
@@ -758,7 +801,11 @@
   },
 
   "studentRetentionManagement": {
-    "alt_img_banner": "Banner promocional: Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente",
+    "banner": {
+      "h1": "Gestión de la",
+      "br": "Permanencia Estudiantil",
+      "alt": "Gestión de la permanencia estudiantil de la Fundación Antivirus para la Deserción. Muestra una estudiante sonriente"
+    },
     "title": "OBJETIVO DE LA GESTIÓN DE PERMANENCIA",
     "objectiveOne": {
       "text_one": "🎯Acompañar a los estudiantes en su",
@@ -823,7 +870,7 @@
         "itemOne": "Asesorías Sociopedagógicas (ASP)",
         "itemTwo": "Orientación Psicológica",
         "itemThree": "Promoción de la Salud Mental",
-        "itemFour": "Caja de Herramoientas",
+        "itemFour": "Caja de Herramientas",
         "itemFive": "Talleres Socioemocionales"
       },
       "socioEconomic": {
@@ -851,6 +898,10 @@
     }
   },
   "provocacion": {
+    "banner": {
+      "h1": "ProVocación",
+      "alt": "Estudiantes de colegio recibiendo orientación para definir su proyecto de vida y futuro académico."
+    },
     "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",
     "description": "Potenciar el proyecto de vida de los jóvenes a través de procesos de autoconocimiento, acercamiento a la educación superior y al mundo laboral que les permitan tener herramientas para construir su proyecto de vida auténtico.",
     "title_future": "TU FUTURO, PASO A PASO: CONOCE CADA ETAPA",
@@ -884,42 +935,53 @@
       "description": "Gracias por comunicarte con nosotros."
     },
     "information": {
-      "directed_to": "DIRIGIDO A :",
-      "who_is_it_for": "¿A quién está dirigido?",
-      "young_people_description": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida,",
-      "students_description": "especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
-      "when_moment": "¿En qué momento?",
-      "decision_time": "Cuando necesitan tomar decisiones sobre su",
-      "academic_future": "futuro académico y profesional.",
-      "what_are_they_living": "¿Qué están viviendo?",
-      "feelings_description": "Sentimientos de desorientación, confusión o inseguridad frente al futuro.",
-      "i_want_it": "Lo quiero",
-      "installed_capacities": "CAPACIDADES INSTALADAS",
-      "skills_promotion": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
-      "focus_on_autos": "ENFOQUE EN LOS AUTOS",
-      "self_perception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
-      "self_observation": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
-      "self_esteem": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
-      "self_concept": "🔍 Autoconcepto: Comprender cómo me defino.",
-      "autonomy": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
-      "self_confidence": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
-      "self_motivation": "🔥 Automotivación: Impulsarme desde adentro.",
-      "self_evaluation": "📊 Autoevaluación: Aprender de mis acciones y experiencias.",
-      "what_includes_service": "¿QUÉ INCLUYE EL SERVICIO?",
-      "five_sessions": "- 5 sesiones grupales y/o individuales",
-      "one_counseling": "- 1 asesoría sociovocacional individual (a demanda)",
-      "digital_tools": "- Herramientas digitales y guías prácticas para cada sesión",
-      "experiential_activities": "- Actividades experienciales",
-      "experience_exchange": "(Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.)",
-      "whatsapp_support": "- Grupo de WhatsApp de apoyo o resolución de dudas",
-      "participation_certificate": "- Certificado de participación",
-      "payment_methods": "MEDIOS DE PAGO",
-      "bank_transfer": "- Transferencia bancaria",
-      "debit_card": "- Tarjeta débito",
-      "credit_card": "- Tarjeta crédito",
-      "cost": "COSTO",
-      "base_price": "450.000 + IVA",
-      "final_price": "535.500"
+      "cards": {
+        "one": {
+          "title": "DIRIGIDO A :",
+          "questionOne": "¿A quién está dirigido?",
+          "answerOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
+          "questionTwo": "¿En qué momento?",
+          "answerTwo": "Cuando necesitan tomar decisiones sobre su futuro académico y profesional.",
+          "questionThree": "¿Qué están viviendo?",
+          "answerThree": "Sentimientos de desorientación, confusión o inseguridad frente al futuro."
+        },
+        "two": {
+          "title": "CAPACIDADES INSTALADAS",
+          "description": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
+          "titleTwo": "ENFOQUE EN LOS AUTOS",
+          "studentFocus": {
+            "autoperception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
+            "autobservacion": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
+            "autoestima": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
+            "autoconcepto": "🔍 Autoconcepto: Comprender cómo me defino.",
+            "autonomia": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
+            "autoconfianza": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
+            "automotivacion": "🔥 Automotivación: Impulsarme desde adentro.",
+            "autoevaluacion": "📊 Autoevaluación: Aprender de mis acciones y experiencias."
+          }
+        },
+        "three": {
+          "title": "¿QUÉ INCLUYE EL SERVICIO?",
+          "listServices": {
+            "one": "5 sesiones grupales y/o individuales",
+            "two": "1 asesoría sociovocacional individual (a demanda)",
+            "three": "Herramientas digitales y guías prácticas para cada sesión",
+            "four": "Actividades experienciales",
+            "five": "Una de las sesiones incluye intercambio de experiencias, ya sea en una universidad o con un profesional del área de interés.",
+            "six": "Grupo de WhatsApp de apoyo o resolución de dudas",
+            "seven": "Certificado de participación"
+          }
+        },
+        "four": {
+          "title": "MEDIOS DE PAGO",
+          "title_two": "COSTO",
+          "one": "Transferencia bancaria",
+          "two": "Tarjeta débito",
+          "three": "Tarjeta crédito",
+          "price": "450.000 + IVA",
+          "final_price": "535.500"
+        }
+      }
     },
     "testimonials": {
       "title": "Testimonios",
@@ -953,6 +1015,11 @@
     }
   },
   "atvConnect": {
+    "banner": {
+      "h1": "ATVConecta:",
+      "br": "Tutorías Académicas",
+      "alt": "Tutores académicos de ATVConecta sonrientes y preparados para acompañar tu proceso de aprendizaje."
+    },
     "description_one": "ATVConecta es más que una plataforma de tutorías. Es tu ",
     "description_span": "aliado para superar desafíos académicos,",
     "description_two": " mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
@@ -1073,7 +1140,11 @@
     }
   },
   "contactUs": {
-    "title": "Contactanos",
+    "banner": {
+      "h1": "Contáctanos",
+      "alt": "Integrantes del equipo de la Fundación Antivirus sonriendo, listos para brindarte apoyo y asesoría."
+    },
+    "title": "Contáctanos",
     "startConversation": "COMENCEMOS",
     "conversationTitle": "UNA CONVERSACIÓN ¿TIENES ALGUNA PREGUNTA? ¡TENEMOS LA RESPUESTA!",
     "mainHeadquarters": "Sede principal",

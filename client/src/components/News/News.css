@@ -11,11 +11,7 @@
   gap: 50px;
 }
 
-.noticias-content > div {
-  align-content: space-between;
-}
-
 .aspect-ratio {
-   aspect-ratio: 1;
-   object-fit: cover;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
