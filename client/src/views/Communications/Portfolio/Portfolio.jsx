@@ -64,8 +64,9 @@ function Portfolio() {
             key="grid"
             variants={cardVariants}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
             exit="exit"
+            viewport={{ once: true, amount: 0.5 }}
             className="col-span-2 grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
           >
             {data
