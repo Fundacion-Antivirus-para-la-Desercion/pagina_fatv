@@ -49,46 +49,62 @@ function Portfolio() {
         ))}
       </div>
 
-      {activeIndex === 0 ? (
-        <section className="col-span-2 grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5">
-          {data
-            .filter((item) => item.image)
-            .map((item) => (
-              <motion.div {...expandableTransition(0)}
-                key={item.id}
-                className={`relative overflow-hidden rounded-2xl shadow-2xl group ${
-                  item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
-                } ${
-                  item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"
-                }`}
-              >
+      <AnimatePresence mode="wait">
+        {activeIndex === 0 ? (
+          <motion.section
+            key="grid"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="col-span-2 grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
+          >
+            {data
+              .filter((item) => item.image)
+              .map((item) => (
+                <motion.div {...expandableTransition()}
+                  key={item.id}
+                  className={`relative overflow-hidden rounded-2xl shadow-2xl group ${
+                    item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
+                  } ${
+                    item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"
+                  }`}
+                >
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                  <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                    {t(item.title)}
+                  </span>
+                </motion.div>
+              ))}
+          </motion.section>
+        ) : (
+          activeProject.image && (
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex items-center justify-center mt-2 md:mt-10 mb-5"
+            >
+              <div className="relative inline-block">
                 <img
-                  src={item.image}
+                  src={activeProject.image}
                   alt=""
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="max-w-full h-auto rounded-2xl shadow-2xl object-contain"
                 />
                 <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
-                  {t(item.title)}
+                  {t(activeProject.title)}
                 </span>
-              </motion.div>
-            ))}
-        </section>
-      ) : (
-        activeProject.image && (
-          <div className="flex items-center justify-center mt-2 md:mt-10 mb-5">
-            <motion.div {...expandableTransition(0)} className="relative inline-block">
-              <img
-                src={activeProject.image}
-                alt=""
-                className="max-w-full h-auto rounded-2xl shadow-2xl object-contain"
-              />
-              <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
-                {t(activeProject.title)}
-              </span>
+              </div>
             </motion.div>
-          </div>
-        )
-      )}
+          )
+        )}
+      </AnimatePresence>
     </section>
   );
 }
