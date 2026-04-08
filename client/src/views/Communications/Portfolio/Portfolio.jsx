@@ -38,7 +38,7 @@ function Portfolio() {
 
   return (
     <section className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-2 auto-rows-mins gap-5 md:gap-10 items-start">
-      <div className="text-center">
+      <div className="text-center md:text-left">
         <span className="text-xl text-primary-yellow font-impact">
           PORTAFOLIO
         </span>
@@ -47,7 +47,7 @@ function Portfolio() {
         </h5>
       </div>
 
-      <div className="col-span-full md:col-span-1 flex flex-row flex-wrap items-center justify-end mt-10 gap-3 md:gap-5">
+      <div className="col-span-full md:col-span-1 flex flex-row flex-wrap items-center justify-center mt-10 gap-3 md:gap-5">
         {data.map((portfolio, index) => (
           <button
             key={index}
@@ -69,7 +69,7 @@ function Portfolio() {
             whileInView="visible"
             exit="exit"
             viewport={{ once: true, amount: 0.5 }}
-            className="col-span-2 grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
+            className="col-span-full grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
           >
             {data
               .filter((item) => item.image)
