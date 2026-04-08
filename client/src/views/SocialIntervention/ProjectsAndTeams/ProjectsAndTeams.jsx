@@ -54,7 +54,7 @@ function ProjectsAndTeams() {
     },
   });
 
-  const activeProject = data[activeIndex];
+  const teamsData = data[activeIndex];
 
   return (
     <>
@@ -125,17 +125,17 @@ function ProjectsAndTeams() {
                 />
                 <div className="relative flex items-center gap-3 mb-5">
                   <span className="text-4xl text-white bg-[#f6f6f650] rounded-2xl p-5">
-                    {icons[activeProject.card.icon]}
+                    {icons[teamsData.card.icon]}
                   </span>
                   <h3 className="text-3xl md:text-4xl font-impact text-white">
-                    {t(activeProject.card.title)}
+                    {t(teamsData.card.title)}
                   </h3>
                 </div>
                 <p className="relative text-white text-lg leading-relaxed text-center md:text-left mt-10">
-                  {t(activeProject.card.description)}
+                  {t(teamsData.card.description)}
                 </p>
                 <div className="relative mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
-                  {activeProject.card.stats.map((stat, i) => (
+                  {teamsData.card.stats.map((stat, i) => (
                     <div
                       key={i}
                       className="flex flex-col items-center justify-center rounded-2xl bg-[#f6f6f650] p-5 sm:p-6 border-2 border-white/10 hover:border-white/50 transition-colors duration-300"
@@ -165,8 +165,8 @@ function ProjectsAndTeams() {
               >
                 {/*<h4 className="text-3xl md:text-4xl text-blue-base font-impact">ALIADOS</h4> */}
                 <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
-                  {activeProject.cardAllies &&
-                    activeProject.cardAllies.map((ally, index) => (
+                  {teamsData.cardAllies &&
+                    teamsData.cardAllies.map((ally, index) => (
                       <div
                         key={index}
                         className="flex flex-col items-center gap-2  bg-white p-5 rounded-2xl shadow-2xl  z-10 hover:scale-105 transition-all duration-500 hover:border-t-primary-yellow hover:border-t-[7px]"
@@ -192,9 +192,10 @@ function ProjectsAndTeams() {
             ></motion.div>
           </section>
         </section>
-        {activeProject.cardProjectLeader &&
-          activeProject.cardProjectLeader.length > 0 && (
-            <Teams activeProject={activeProject} />
+
+        {teamsData.cardProjectLeader &&
+          teamsData.cardProjectLeader.length > 0 && (
+            <Teams teamsData={teamsData} />
           )}
       </section>
     </>

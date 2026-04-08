@@ -6,8 +6,11 @@ import CommunicationSkills from "../Communications/CommunicationSkills/Communica
 import Services from "../Communications/Services/Services.jsx";
 import Metrics from "../Communications/Metrics/Metrics.jsx";
 import Portfolio from "../Communications/Portfolio/Portfolio.jsx";
+import data from "./data.js";
+import Teams from "../../components/teamsArea/Teams.jsx";
 
 function Communications() {
+  const teamsData = data[0];
   return (
     <>
       <div className="Communications lg:pt-[145px]">
@@ -25,6 +28,7 @@ function Communications() {
       <Services />
       <Metrics />
       <Portfolio />
+      <Teams teamsData={teamsData} />
       {/*<Commun />*/}
     </>
   );

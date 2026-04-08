@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { PiMedal } from "react-icons/pi";
 import { IoLogoLinkedin } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
 
-const Teams = ({ activeProject }) => {
+const Teams = ({ teamsData }) => {
   const { t } = useTranslation();
 
   const floatSnake = (delay = 0) => ({
@@ -38,8 +37,8 @@ const Teams = ({ activeProject }) => {
       {/* Card leaders */}
       <section className="relative grid grid-cols-1 xl:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
         <div className="z-10 flex flex-col">
-          {activeProject.cardProjectLeader &&
-            activeProject.cardProjectLeader.map((leader, index) => (
+          {teamsData.cardProjectLeader &&
+            teamsData.cardProjectLeader.map((leader, index) => (
               <div
                 key={index}
                 className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto hover:scale-105 transition-transform duration-300"
@@ -98,7 +97,7 @@ const Teams = ({ activeProject }) => {
         </div>
         <div
           className={`mt-16 lg:mt-0 relative z-10 bg-dark-blue grid gap-4 md:gap-6 h-fit px-5 py-6 rounded-3xl shadow-lg min-w-0 ${
-            activeProject.cardAreaLead?.length === 1
+            teamsData.cardAreaLead?.length === 1
               ? "grid-cols-1 place-items-center"
               : "grid-cols-1 xl:grid-cols-2"
           }`}
@@ -113,17 +112,17 @@ const Teams = ({ activeProject }) => {
               backgroundSize: "48px 48px, 48px 48px",
             }}
           />
-          {activeProject.spanAreaLeaders && (
+          {teamsData.spanAreaLeaders && (
             <span className="absolute -top-10 md:-top-12 left-1 text-xl md:text-3xl text-dark-blue font-impact bg-primary-yellow p-2 -rotate-1 md:-rotate-2 rounded-xl">
               {t(
-                activeProject.spanAreaLeaders.find(
+                teamsData.spanAreaLeaders.find(
                   (spanAreaLeaders) => spanAreaLeaders.span,
                 ).span,
               )}
             </span>
           )}
-          {activeProject.cardAreaLead &&
-            activeProject.cardAreaLead.map((leader, index) => (
+          {teamsData.cardAreaLead &&
+            teamsData.cardAreaLead.map((leader, index) => (
               <div
                 key={index}
                 className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow  hover:scale-105 transition-transform duration-300 max-w-md w-full mx-auto min-w-0"
