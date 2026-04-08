@@ -2,26 +2,34 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import data from "./data.js";
 import { motion, AnimatePresence } from "framer-motion";
-import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 
 function Portfolio() {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
 
   const cardVariants = {
-    hidden: { opacity: 0, scale: 0.96, y: 20 },
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+    exit: {
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+      },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
     visible: {
       opacity: 1,
       scale: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 25,
-        staggerChildren: 0.1,
-      },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
-    exit: { opacity: 0, scale: 0.96, y: -20 },
+    exit: { opacity: 0, scale: 0.5, transition: { duration: 0.3 } },
   };
 
   const activeProject = data[activeIndex];
@@ -52,6 +60,7 @@ function Portfolio() {
       <AnimatePresence mode="wait">
         {activeIndex === 0 ? (
           <motion.section
+            id="all-portfolio"
             key="grid"
             variants={cardVariants}
             initial="hidden"
@@ -62,13 +71,12 @@ function Portfolio() {
             {data
               .filter((item) => item.image)
               .map((item) => (
-                <motion.div {...expandableTransition()}
+                <motion.div
+                  variants={childVariants}
                   key={item.id}
                   className={`relative overflow-hidden rounded-2xl shadow-2xl group ${
                     item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
-                  } ${
-                    item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"
-                  }`}
+                  } ${item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"}`}
                 >
                   <img
                     src={item.image}
