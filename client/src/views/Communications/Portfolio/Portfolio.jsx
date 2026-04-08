@@ -2,10 +2,12 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import data from "./data.js";
 import { motion, AnimatePresence } from "framer-motion";
+import { IoSearchCircle } from "react-icons/io5";
 
 function Portfolio() {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [selectedImage, setSelectedImage] = useState(null); // State for modal image
 
   const cardVariants = {
     hidden: {},
@@ -35,8 +37,8 @@ function Portfolio() {
   const activeProject = data[activeIndex];
 
   return (
-    <section className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start">
-      <div className="text-center md:text-left">
+    <section className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-2 auto-rows-mins gap-5 md:gap-10 items-start">
+      <div className="text-center">
         <span className="text-xl text-primary-yellow font-impact">
           PORTAFOLIO
         </span>
@@ -45,7 +47,7 @@ function Portfolio() {
         </h5>
       </div>
 
-      <div className="flex flex-row flex-wrap items-center justify-end mt-10 gap-3 md:gap-5">
+      <div className="col-span-full md:col-span-1 flex flex-row flex-wrap items-center justify-end mt-10 gap-3 md:gap-5">
         {data.map((portfolio, index) => (
           <button
             key={index}
@@ -78,6 +80,7 @@ function Portfolio() {
                   className={`relative overflow-hidden rounded-2xl shadow-2xl group ${
                     item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
                   } ${item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"}`}
+                  onClick={() => setSelectedImage(item.image)} // Set image in modal
                 >
                   <img
                     src={item.image}
@@ -87,6 +90,12 @@ function Portfolio() {
                   <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
                     {t(item.title)}
                   </span>
+
+                  <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                      <IoSearchCircle className="w-10 h-10 text-primary-yellow" />
+                    </div>
+                  </div>
                 </motion.div>
               ))}
           </motion.section>
@@ -105,8 +114,9 @@ function Portfolio() {
                   src={activeProject.image}
                   alt=""
                   className="max-w-full h-auto rounded-2xl shadow-2xl object-contain"
+                  onClick={() => setSelectedImage(activeProject.image)} // Set image in modal
                 />
-                <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                <span className="absolute bottom-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
                   {t(activeProject.title)}
                 </span>
               </div>
@@ -114,6 +124,20 @@ function Portfolio() {
           )
         )}
       </AnimatePresence>
+
+      {/* Modal for enlarged image */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-65 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)} // Close modal on click
+        >
+          <img
+            src={selectedImage}
+            alt="Enlarged"
+            className="max-w-full max-h-full object-contain rounded-lg"
+          />
+        </div>
+      )}
     </section>
   );
 }
