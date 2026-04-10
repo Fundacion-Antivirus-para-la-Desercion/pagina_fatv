@@ -259,6 +259,18 @@
         }
       }
     },
+    "portfolio": {
+      "span": "PORTFOLIO",
+      "title": "OUR FORMATS",
+      "opcions": {
+        "one": "All",
+        "two": "Social Campaigns",
+        "three": "Event Coverage",
+        "four": "Social Media",
+        "five": "Cobranding",
+        "six": "Infographics"
+      }
+    },
     "commun": {
       "title_banner": "what we do",
       "our_model": "OUR MODEL",

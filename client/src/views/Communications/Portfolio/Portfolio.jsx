@@ -37,13 +37,13 @@ function Portfolio() {
   const activeProject = data[activeIndex];
 
   return (
-    <section className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-2 auto-rows-mins gap-5 md:gap-10 items-start">
+    <section className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-[4fr_6fr] auto-rows-mins gap-5 md:gap-10 items-start">
       <div className="text-center md:text-left">
         <span className="text-xl text-primary-yellow font-impact">
-          PORTAFOLIO
+            {t("communications.portfolio.span")}
         </span>
         <h5 className="text-3xl md:text-5xl text-blue-base font-impact">
-          NUESTRAS PIEZAS
+            {t("communications.portfolio.title")}
         </h5>
       </div>
 
@@ -54,7 +54,7 @@ function Portfolio() {
             onClick={() => setActiveIndex(index)}
             className={`flex bg-[#E6E7ED] items-center rounded-3xl p-3 group hover:scale-105 transition-transform duration-500 cursor-pointer hover:bg-primary-yellow text-dark-blue ${activeIndex === index ? "bg-primary-yellow" : ""}`}
           >
-            <span className="text-sm md:text-lg">{t(portfolio.title)}</span>
+            <span className="text-sm md:text-lg min-w-14">{t(portfolio.title)}</span>
           </button>
         ))}
       </div>
