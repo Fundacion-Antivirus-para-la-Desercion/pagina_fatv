@@ -1,9 +1,12 @@
 import UDEA from "../../../public/logos_alianzas/udea-horizontal.webp";
 import FUDEA from "../../../public/logos_alianzas/fundacion-universidad-de-antioquia.webp";
 import UNAL from "../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg";
-import AstridF from "../../../public/img_OurTeam/astrid-franco-gonzalez.webp";
-import DanielaA from "../../../public/img_OurTeam/daniela-arias.webp";
-import JesicaC from "../../../public/img_OurTeam/jesica-cano.webp";
+import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
+import SantiagoQ from "../../../public/img_OurTeam/santiago-quintero.webp";
+import MayerlinG from "../../../public/img_OurTeam/mayerlin-giraldo.webp";
+import DaliaB from "../../../public/img_OurTeam/dalia-bedoya.webp";
+import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
+
 
 const projectsData = [
   {
@@ -50,45 +53,69 @@ const projectsData = [
     ],
     cardProjectLeader: [
       {
-        photo: AstridF,
+        photo: ManuelaC,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_one.alt",
         position:
-          "socialIntervention.projectsAndTeams.leaders.leader_one.position",
-        name: "Astrid Franco",
+          "communications.team.leader.position",
+        name: "Manuela Correa",
         department:
-          "socialIntervention.projectsAndTeams.leaders.leader_one.department",
+          "communications.team.leader.department",
         description:
-          "socialIntervention.projectsAndTeams.leaders.leader_one.description",
-        email: "coordinacionsocial@fundacionantivirusparaladesercion.org",
-        userLinkedin: "astrid-franco-g",
+          "communications.team.leader.description",
+        email: "coordinacioncomunicaciones@fundacionantivirusparaladesercion.org",
+        userLinkedin: "manuela-correa-quintero-206bb9215",
       },
     ],
     spanAreaLeaders: [
       {
-        span: "socialIntervention.projectsAndTeams.leaders.spans_subtitle.spanOne",
+        span: "communications.team.span",
       },
     ],
     cardAreaLead: [
       {
-        photo: DanielaA,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_two.alt",
-        name: "Daniela Arias",
-        areaLeader:
-          "socialIntervention.projectsAndTeams.leaders.leader_two.areaLeader",
+        photo: SantiagoQ,
+        alt: "communications.projectsAndTeams.leaders.leader_two.alt",
+        name: "Santiago Quintero",
+        areaLeader:"communications.team.members.member_one.position",
         description:
-          "socialIntervention.projectsAndTeams.leaders.leader_two.description",
+          "communications.team.members.member_one.description",
       },
       {
-        photo: JesicaC,
+        photo: MayerlinG,
         alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
-        name: "Jesica Cano",
+        name: "Mayerlin Gaviria",
+        areaLeader:"communications.team.members.member_two.position",
+        description:"communications.team.members.member_two.description",
+      },
+      {
+        photo: MayerlinG,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        name: "Estefanía Gómez",
         areaLeader:
-          "socialIntervention.projectsAndTeams.leaders.leader_three.areaLeader",
+          "communications.team.members.member_three.position",
         description:
-          "socialIntervention.projectsAndTeams.leaders.leader_three.description",
+          "communications.team.members.member_three.description",
+      },
+      {
+        photo: DaliaB,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        name: "Dalia Bedoya",
+        areaLeader:
+          "communications.team.members.member_four.position",
+        description:
+          "communications.team.members.member_four.description",
+      },
+      {
+        photo: JuanaR,
+        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        name: "Juana Rueda",
+        areaLeader:
+          "communications.team.members.member_five.position",
+        description:
+          "communications.team.members.member_five.description",
       },
     ],
-  }
+  },
 ];
 
 export default projectsData;

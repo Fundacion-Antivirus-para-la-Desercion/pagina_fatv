@@ -205,6 +205,70 @@
         "three": "Comunidades enteras"
       }
     },
+    "team": {
+      "title": "NUESTRO EQUIPO",
+      "span": "Equipo de Comunicaciones",
+      "leader": {
+        "alt": "",
+        "position": "LIDERAZGO",
+        "department": "Coordinadora del Área de Comunicaciones",
+        "description": "Coordina los proyectos del equipo de comunicaciones."
+      },
+      "members": {
+        "member_one": {
+          "alt": "",
+          "position": "Comunicador Audiovisual",
+          "description": "Cuenta historias que conectan los sueños de los estudiantes con nuestro propósito misional."
+        },
+        "member_two": {
+          "alt": "",
+          "position": "Productora Multimedia",
+          "description": "Da vida a ideas a través de experiencias digitales dinámicas y memorables."
+        },
+        "member_three": {
+          "alt": "",
+          "position": "Comunicadora social",
+          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
+        },
+        "member_four": {
+          "alt": "",
+          "position": "Diseñadora Gráfica",
+          "description": "Da forma visible a los sueños, creando imágenes que inspiran y dejan huella de transformación."
+        },
+        "member_five": {
+          "alt": "",
+          "position": "Comunicadora",
+          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
+        }
+      },
+      "team_members": {
+        "member_one": {
+          "alt": "",
+          "position": "Comunicador Audiovisual",
+          "description": "Diseña piezas gráficas para redes sociales, campañas y eventos."
+        },
+        "member_two": {
+          "alt": "",
+          "position": "Productora Multimedia",
+          "description": "Produce videos institucionales, documentales cortos y contenido multimedia."
+        },
+        "member_three": {
+          "alt": "",
+          "position": "Comunicadora social",
+          "description": "Gestiona las redes sociales y la comunidad digital de la fundación."
+        },
+        "member_four": {
+          "alt": "",
+          "position": "Comunicadora social",
+          "description": "Gestiona las redes sociales y la comunidad digital de la fundación."
+        },
+        "member_five": {
+          "alt": "",
+          "position": "Comunicadora social",
+          "description": "Gestiona las redes sociales y la comunidad digital de la fundación."
+        }
+      }
+    },
     "communicationsSkills": {
       "one": "FOTOGRAFÍA PROFESIONAL",
       "two": "DISEÑO GRÁFICO",

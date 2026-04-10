@@ -241,6 +241,43 @@
       "three": "Social Media Followers",
       "four": "Design Pieces"
     },
+    "team": {
+      "title": "OUR TEAM",
+      "span": "Communications Team",
+      "leader": {
+        "alt": "",
+        "position": "LEADERSHIP",
+        "department": "Communications Coordinator",
+        "description": "Manages projects for the communications team."
+      },
+      "members": {
+        "member_one": {
+          "alt": "",
+          "position": "Audiovisual Communicator",
+          "description": "Tells stories that connect student dreams with our mission."
+        },
+        "member_two": {
+          "alt": "",
+          "position": "Multimedia Producer",
+          "description": "Brings ideas to life through dynamic and memorable digital experiences."
+        },
+        "member_three": {
+          "alt": "",
+          "position": "Social Communicator",
+          "description": "Builds meaningful connections that transform lives and bring the FATV community together."
+        },
+        "member_four": {
+          "alt": "",
+          "position": "Graphic Designer",
+          "description": "Gives shape to dreams by creating images that inspire and leave a lasting mark of transformation."
+        },
+        "member_five": {
+          "alt": "",
+          "position": "Communications Specialist",
+          "description": "Builds meaningful connections that transform lives and unite the FATV community."
+        }
+      }
+    },
     "commun": {
       "title_banner": "what we do",
       "our_model": "OUR MODEL",
