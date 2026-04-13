@@ -223,43 +223,6 @@
       "three": "Seguidores en redes",
       "four": "Piezas de diseño"
     },
-    "team": {
-      "title": "NUESTRO EQUIPO",
-      "span": "Equipo de Comunicaciones",
-      "leader": {
-        "alt": "",
-        "position": "LIDERAZGO",
-        "department": "Coordinadora del Área de Comunicaciones",
-        "description": "Coordina los proyectos del equipo de comunicaciones."
-      },
-      "members": {
-        "member_one": {
-          "alt": "",
-          "position": "Comunicador Audiovisual",
-          "description": "Cuenta historias que conectan los sueños de los estudiantes con nuestro propósito misional."
-        },
-        "member_two": {
-          "alt": "",
-          "position": "Productora Multimedia",
-          "description": "Da vida a ideas a través de experiencias digitales dinámicas y memorables."
-        },
-        "member_three": {
-          "alt": "",
-          "position": "Comunicadora social",
-          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
-        },
-        "member_four": {
-          "alt": "",
-          "position": "Diseñadora Gráfica",
-          "description": "Da forma visible a los sueños, creando imágenes que inspiran y dejan huella de transformación."
-        },
-        "member_five": {
-          "alt": "",
-          "position": "Comunicadora",
-          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
-        }
-      }
-    },
     "portfolio": {
       "span": "PORTAFOLIO",
       "title": "NUESTROS FORMATOS",
@@ -270,6 +233,43 @@
         "four": "Redes Sociales",
         "five": "Cobranding",
         "six": "Infografía "
+      }
+    },
+    "team": {
+      "title": "NUESTRO EQUIPO",
+      "span": "Equipo de Comunicaciones",
+      "leader": {
+        "alt": "Coordinadora del equipo de comunicaciones, sonriendo en un retrato profesional de medio cuerpo.",
+        "position": "LIDERAZGO",
+        "department": "Coordinadora del Área de Comunicaciones",
+        "description": "Lidera la estrategia de comunicación y educomunicación, diseñando campañas que amplifican el impacto social de la Fundación."
+      },
+      "members": {
+        "member_one": {
+          "alt": "Comunicador audiovisual posando con expresión alegre y profesional.",
+          "position": "Comunicador Audiovisual",
+          "description": "Cuenta historias que conectan los sueños de los estudiantes con nuestro propósito misional."
+        },
+        "member_two": {
+          "alt": "Productora multimedia posando con una sonrisa alegre.",
+          "position": "Productora Multimedia",
+          "description": "Da vida a ideas a través de experiencias digitales dinámicas y memorables."
+        },
+        "member_three": {
+          "alt": "Comunicadora social posando con una sonrisa cercana y actitud amable.",
+          "position": "Comunicadora social",
+          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
+        },
+        "member_four": {
+          "alt": "Diseñadora gráfica posando con una sonrisa amable.",
+          "position": "Diseñadora Gráfica",
+          "description": "Da forma visible a los sueños, creando imágenes que inspiran y dejan huella de transformación."
+        },
+        "member_five": {
+          "alt": "Comunicadora del equipo posando con una sonrisa cálida y expresión amable.",
+          "position": "Comunicadora",
+          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
+        }
       }
     },
     "commun": {

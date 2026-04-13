@@ -116,7 +116,7 @@ function Portfolio() {
                   className="max-w-full h-auto rounded-2xl shadow-2xl object-contain"
                   onClick={() => setSelectedImage(activeProject.image)} // Set image in modal
                 />
-                <span className="absolute bottom-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
                   {t(activeProject.title)}
                 </span>
               </div>

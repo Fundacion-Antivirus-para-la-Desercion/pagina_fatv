@@ -10,51 +10,10 @@ import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
 
 const projectsData = [
   {
-    id: 0,
-    icon: "LuGraduationCap",
-    name: "socialIntervention.projectsAndTeams.projectsCards.one.title_button",
-    card: {
-      title: "socialIntervention.projectsAndTeams.projectsCards.one.title",
-      icon: "LuGraduationCap",
-      description:
-        "socialIntervention.projectsAndTeams.projectsCards.one.description",
-      stats: [
-        {
-          value: "13.000+",
-          label:
-            "socialIntervention.projectsAndTeams.projectsCards.label_stats.students",
-        },
-        {
-          value: "81%",
-          label:
-            "socialIntervention.projectsAndTeams.projectsCards.label_stats.retention",
-        },
-        {
-          value: "2",
-          label:
-            "socialIntervention.projectsAndTeams.projectsCards.label_stats.institutions",
-        },
-      ],
-    },
-    cardAllies: [
-      {
-        name: "Universidad de Antioquia",
-        logo: UDEA,
-      },
-      {
-        name: "Fundación Universidad de Antioquia",
-        logo: FUDEA,
-      },
-      {
-        name: "Universidad Nacional de Colombia",
-
-        logo: UNAL,
-      },
-    ],
     cardProjectLeader: [
       {
         photo: ManuelaC,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_one.alt",
+        alt: "communications.team.leader.alt",
         position:
           "communications.team.leader.position",
         name: "Manuela Correa",
@@ -74,7 +33,7 @@ const projectsData = [
     cardAreaLead: [
       {
         photo: SantiagoQ,
-        alt: "communications.projectsAndTeams.leaders.leader_two.alt",
+        alt: "communications.team.members.member_one.alt",
         name: "Santiago Quintero",
         areaLeader:"communications.team.members.member_one.position",
         description:
@@ -82,14 +41,14 @@ const projectsData = [
       },
       {
         photo: MayerlinG,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        alt: "communications.team.members.member_two.alt",
         name: "Mayerlin Gaviria",
         areaLeader:"communications.team.members.member_two.position",
         description:"communications.team.members.member_two.description",
       },
       {
         photo: MayerlinG,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        alt: "communications.team.members.member_three.alt",
         name: "Estefanía Gómez",
         areaLeader:
           "communications.team.members.member_three.position",
@@ -98,7 +57,7 @@ const projectsData = [
       },
       {
         photo: DaliaB,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        alt: "communications.team.members.member_four.alt",
         name: "Dalia Bedoya",
         areaLeader:
           "communications.team.members.member_four.position",
@@ -107,7 +66,7 @@ const projectsData = [
       },
       {
         photo: JuanaR,
-        alt: "socialIntervention.projectsAndTeams.leaders.leader_three.alt",
+        alt: "communications.team.members.member_five.alt",
         name: "Juana Rueda",
         areaLeader:
           "communications.team.members.member_five.position",
