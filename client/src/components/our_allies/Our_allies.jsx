@@ -17,7 +17,7 @@ function OurAllies() {
     "/logos_alianzas/logo-sofia-perez-de-soto-fundacion.webp",
     "logos_alianzas/celerix.png",
     "/logos_alianzas/udea.webp",
-    "/logos_alianzas/fundacion-universidad-antioquia.png",
+    "/logos_alianzas/fundacion-universidad-de-antioquia.webp",
     "/logos_alianzas/Logo-fundacion-nutresa.webp",
     "/logos_alianzas/logo-fidelity-charitable.webp",
     "/logos_alianzas/unnamed.png",

@@ -38,7 +38,7 @@ function Portfolio() {
   const activeProject = data[activeIndex];
 
   return (
-    <section className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-[4fr_6fr] auto-rows-mins gap-5 md:gap-10 items-start">
+    <section id="portfolio" className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-[4fr_6fr] auto-rows-mins gap-5 md:gap-10 items-start">
       <div className="text-center md:text-left">
         <span className="text-xl text-primary-yellow font-impact">
           {t("communications.portfolio.span")}

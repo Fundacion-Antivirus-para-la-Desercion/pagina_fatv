@@ -1021,6 +1021,7 @@
       "description": "Thank you for contacting us."
     },
     "information": {
+      "button_whatsapp":"I want it",
       "cards": {
         "one": {
           "title": "DIRECTED TO:",
