@@ -69,16 +69,15 @@ function Information() {
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"
       >
-        <motion.a
-          variants={cardItemReveal}
+        <a
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t("provocacion.information.i_want_it")}
+          {t("provocacion.information.button_whatsapp")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </motion.a>
+        </a>
       </motion.div>
     </section>,
  
@@ -134,16 +133,15 @@ function Information() {
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"
       >
-        <motion.a
-          variants={cardItemReveal}
+        <a
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t("provocacion.information.i_want_it")}
+          {t("provocacion.information.button_whatsapp")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </motion.a>
+        </a>
       </motion.div>
     </section>,
 
@@ -234,16 +232,15 @@ function Information() {
         {...expandableTransition(0)}
         className="col-span-full w-full flex justify-center items-center mt-4"
       >
-        <motion.a
-          variants={cardItemReveal}
+        <a
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
           href={`https://wa.me/${whatsAppNumber}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t("provocacion.information.i_want_it")}
+          {t("provocacion.information.button_whatsapp")}
           <img src={Focus} alt="icono" className="w-10 h-10" />
-        </motion.a>
+        </a>
       </motion.div>
     </section>,
   ];
