@@ -161,16 +161,6 @@
       "h1": "Comunicaciones",
       "alt": "El equipo de comunicaciones sonriendo juntos."
     },
-    "commun": {
-      "title_banner": "lo que hacemos",
-      "our_model": "NUESTRO MODELO",
-      "subtitle": "COMUNICACIONES",
-      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-      "alt_image": "Equipo de Comunicaciones"
-    },
     "description": {
       "spam": "NUESTRA MISIÓN CREATIVA",
       "title": "CADA FORMATO QUE CREAMOS NARRA UNA HISTORIA DE",
@@ -190,6 +180,107 @@
           "three_description": "Comunidades enteras"
         }
       }
+    },
+    "communicationsSkills": {
+      "one": "FOTOGRAFÍA PROFESIONAL",
+      "two": "DISEÑO GRÁFICO",
+      "three": "MOTION GRAPHICS",
+      "four": "BRANDING",
+      "five": "MARKETING SOCIAL",
+      "six": "GESTIÓN DE REDES",
+      "seven": "STORYTELLING",
+      "eight": "EDUCOMUNICACIÓN",
+      "nine": "ESTRATEGIA DIGITAL",
+      "ten": "EDICIÓN DE VIDEO"
+    },
+    "services": {
+      "span": "QUÉ HACEMOS",
+      "title": "SERVICIOS DEL ÁREA",
+      "serviceOne": {
+        "title": "Producción Audiovisual",
+        "description": "Videos institucionales, documentales cortos y contenido multimedia que narra historias de transformación."
+      },
+      "servicesTwo": {
+        "title": "Marketing Social",
+        "description": "Campañas estratégicas que amplifican el impacto social y generan conexiones significativas."
+      },
+      "servicesThree": {
+        "title": "Educomunicación",
+        "description": "Contenido educativo que transforma la comunicación en herramienta de aprendizaje."
+      },
+      "servicesFour": {
+        "title": "Diseño y Branding",
+        "description": "Identidad visual coherente, memorable y con propósito a través de piezas gráficas."
+      },
+      "servicesFive": {
+        "title": "Gestión de Redes",
+        "description": "Estrategias de contenido digital que generan comunidad y visibilizan nuestro trabajo."
+      }
+    },
+    "metrics": {
+      "one": "Productos audiovisuales",
+      "two": "Fotografías producidas",
+      "three": "Seguidores en redes",
+      "four": "Piezas de diseño"
+    },
+    "portfolio": {
+      "span": "PORTAFOLIO",
+      "title": "NUESTROS FORMATOS",
+      "opcions": {
+        "one": "Todos",
+        "two": "Campaña Social",
+        "three": "Cubrimiento",
+        "four": "Redes Sociales",
+        "five": "Cobranding",
+        "six": "Infografía "
+      }
+    },
+    "team": {
+      "title": "NUESTRO EQUIPO",
+      "span": "Equipo de Comunicaciones",
+      "leader": {
+        "alt": "Coordinadora del equipo de comunicaciones, sonriendo en un retrato profesional de medio cuerpo.",
+        "position": "LIDERAZGO",
+        "department": "Coordinadora del Área de Comunicaciones",
+        "description": "Lidera la estrategia de comunicación y educomunicación, diseñando campañas que amplifican el impacto social de la Fundación."
+      },
+      "members": {
+        "member_one": {
+          "alt": "Comunicador audiovisual posando con expresión alegre y profesional.",
+          "position": "Comunicador Audiovisual",
+          "description": "Cuenta historias que conectan los sueños de los estudiantes con nuestro propósito misional."
+        },
+        "member_two": {
+          "alt": "Productora multimedia posando con una sonrisa alegre.",
+          "position": "Productora Multimedia",
+          "description": "Da vida a ideas a través de experiencias digitales dinámicas y memorables."
+        },
+        "member_three": {
+          "alt": "Comunicadora social posando con una sonrisa cercana y actitud amable.",
+          "position": "Comunicadora social",
+          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
+        },
+        "member_four": {
+          "alt": "Diseñadora gráfica posando con una sonrisa amable.",
+          "position": "Diseñadora Gráfica",
+          "description": "Da forma visible a los sueños, creando imágenes que inspiran y dejan huella de transformación."
+        },
+        "member_five": {
+          "alt": "Comunicadora del equipo posando con una sonrisa cálida y expresión amable.",
+          "position": "Comunicadora",
+          "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
+        }
+      }
+    },
+    "commun": {
+      "title_banner": "lo que hacemos",
+      "our_model": "NUESTRO MODELO",
+      "subtitle": "COMUNICACIONES",
+      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
+      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
+      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
+      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
+      "alt_image": "Equipo de Comunicaciones"
     }
   },
   "foundation": {
@@ -935,6 +1026,7 @@
       "description": "Gracias por comunicarte con nosotros."
     },
     "information": {
+      "button_whatsapp":"Lo quiero",
       "cards": {
         "one": {
           "title": "DIRIGIDO A :",

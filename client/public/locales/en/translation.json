@@ -153,28 +153,12 @@
       "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
       "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
       "alt_image": "Data analytics chart"
-    },
-    "bannerDA": {
-      "banner": {
-        "title": "what we do",
-        "alt_banner": "Banner with the title 'what we do'"
-      }
     }
   },
   "communications": {
     "banner": {
       "h1": "Communications",
       "alt": "The Communications Team smiling together."
-    },
-    "commun": {
-      "title_banner": "what we do",
-      "our_model": "OUR MODEL",
-      "subtitle": "COMMUNICATIONS",
-      "paragraph_1": "This area is made up of social communicators and graphic designers.",
-      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
-      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
-      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-      "alt_image": "Communications Team"
     },
     "description": {
       "spam": "OUR CREATIVE MISSION",
@@ -193,21 +177,109 @@
           "two_description": "With real stories",
           "three": "Transform",
           "three_description": "Whole communities"
-        },
-        "spamsOne": {
-          "one": "Educate",
-          "one_description": "Through content",
-          "two": "Inspire",
-          "two_description": "With real stories",
-          "three": "Transform",
-          "three_description": "Whole communities"
-        },
-        "spamsTwo": {
-          "one": "Through content",
-          "two": "With real stories",
-          "three": "Whole communities"
         }
       }
+    },
+    "communicationsSkills": {
+      "one": "PROFESSIONAL PHOTOGRAPHY",
+      "two": "GRAPHIC DESIGN",
+      "three": "MOTION GRAPHICS",
+      "four": "BRANDING",
+      "five": "SOCIAL MEDIA MARKETING",
+      "six": "COMMUNITY MANAGEMENT",
+      "seven": "STORYTELLING",
+      "eight": "EDUCATIONAL COMMUNICATION",
+      "nine": "DIGITAL STRATEGY",
+      "ten": "VIDEO EDITING"
+    },
+    "services": {
+      "span": "WHAT WE DO",
+      "title": "DEPARTMENT SERVICES",
+      "serviceOne": {
+        "title": "Audiovisual Production",
+        "description": "Institutional videos, short documentaries, and multimedia content that tell stories of transformation."
+      },
+      "servicesTwo": {
+        "title": "Social Marketing",
+        "description": "Strategic campaigns that amplify social impact and create meaningful connections."
+      },
+      "servicesThree": {
+        "title": "Educational Communication",
+        "description": "Educational content that turns communication into a powerful learning tool."
+      },
+      "servicesFour": {
+        "title": "Design & Branding",
+        "description": "Coherent and memorable visual identity with a purpose through graphic design."
+      },
+      "servicesFive": {
+        "title": "Social Media Management",
+        "description": "Digital content strategies that build community and showcase our work."
+      }
+    },
+    "metrics": {
+      "one": "Audiovisual Projects",
+      "two": "Photos Produced",
+      "three": "Social Media Followers",
+      "four": "Design Pieces"
+    },
+    "portfolio": {
+      "span": "PORTFOLIO",
+      "title": "OUR FORMATS",
+      "opcions": {
+        "one": "All",
+        "two": "Social Campaigns",
+        "three": "Event Coverage",
+        "four": "Social Media",
+        "five": "Cobranding",
+        "six": "Infographics"
+      }
+    },
+    "team": {
+      "title": "OUR TEAM",
+      "span": "Communications Team",
+      "leader": {
+        "alt": "Communications Team Coordinator, smiling in a professional half-body portrait.",
+        "position": "LEADERSHIP",
+        "department": "Communications Coordinator",
+        "description": "Leads communication and educommunication strategies, designing campaigns that amplify the Foundation's social impact."
+      },
+      "members": {
+        "member_one": {
+          "alt": "Audiovisual Communicator posing with a cheerful and professional expression.",
+          "position": "Audiovisual Communicator",
+          "description": "Tells stories that connect student dreams with our mission."
+        },
+        "member_two": {
+          "alt": "Multimedia Producer posing with a cheerful smile.",
+          "position": "Multimedia Producer",
+          "description": "Brings ideas to life through dynamic and memorable digital experiences."
+        },
+        "member_three": {
+          "alt": "Social Communicator posing with a friendly smile and a welcoming attitude.",
+          "position": "Social Communicator",
+          "description": "Builds meaningful connections that transform lives and bring the FATV community together."
+        },
+        "member_four": {
+          "alt": "Graphic Designer posing with a friendly smile.",
+          "position": "Graphic Designer",
+          "description": "Gives shape to dreams by creating images that inspire and leave a lasting mark of transformation."
+        },
+        "member_five": {
+          "alt": "Team Communicator posing with a warm smile and a friendly expression.",
+          "position": "Communications Specialist",
+          "description": "Builds meaningful connections that transform lives and unite the FATV community."
+        }
+      }
+    },
+    "commun": {
+      "title_banner": "what we do",
+      "our_model": "OUR MODEL",
+      "subtitle": "COMMUNICATIONS",
+      "paragraph_1": "This area is made up of social communicators and graphic designers.",
+      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
+      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
+      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
+      "alt_image": "Communications Team"
     }
   },
   "foundation": {
@@ -561,10 +633,7 @@
         "metrict_six": {
           "span": "ALLIES",
           "description": "Educational institutions and organizations joined in our mission to prevent student dropout."
-        },
-        "span": "NUESTRO IMPACTO",
-        "title": "CIFRAS QUE TRANSFORMAN REALIDADES",
-        "description": "Cada número representa una historia de superación, una familia esperanzada y un futuro profesional construido con dedicación y apoyo integral."
+        }
       }
     },
     "projectsAndTeams": {
@@ -597,12 +666,6 @@
           "title_button": "Scholarship Programs",
           "title": "Scholarship Programs",
           "description": "Comprehensive support for scholarship program students to ensure retention and academic success."
-        },
-        "labels_stats": {
-          "students": "Students",
-          "retention": "Student Retention",
-          "institutions": "Institutions",
-          "higher_education": "Higher Education Continuity"
         }
       },
       "leaders": {
@@ -915,14 +978,12 @@
       "description": "A comprehensive ecosystem designed to support you throughout every step of your university journey.",
       "strong": "Together, We Build Your Success",
       "btnStartNow": "¡START NOW!"
-    },
-    "alt_img_banner": "Promotional banner: Management of Student Retention by the Fundación Antivirus para la Deserción (Antivirus Foundation for Dropout). Shows a smiling student"
+    }
   },
   "provocacion": {
     "banner": {
       "h1": "ProVocación",
-      "alt": "High school students receiving guidance to define their life project and academic future.",
-      "br": "Vocación"
+      "alt": "High school students receiving guidance to define their life project and academic future."
     },
     "title_initial": "SUPPORT OBJECTIVE",
     "description": "Empower young people's life projects through self-knowledge processes, approach to higher education and the working world that allow them to have tools to build their authentic life project.",
@@ -957,6 +1018,7 @@
       "description": "Thank you for contacting us."
     },
     "information": {
+      "button_whatsapp": "I want it",
       "cards": {
         "one": {
           "title": "DIRECTED TO:",
@@ -965,8 +1027,7 @@
           "questionTwo": "When?",
           "answerTwo": "When they need to make decisions about their academic and professional future.",
           "questionThree": "What are they experiencing?",
-          "answerThree": "Feelings of disorientation, confusion, or insecurity about the future.",
-          "answernOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition."
+          "answerThree": "Feelings of disorientation, confusion, or insecurity about the future."
         },
         "two": {
           "title": "INSTALLED CAPABILITIES",
@@ -1002,54 +1063,9 @@
           "two": "Debit card",
           "three": "Credit card",
           "price": "450,000 + VAT",
-          "final_price": "535,500",
-          "listServices": {
-            "one": "5 group and/or individual sessions",
-            "two": "1 individual socio-vocational counseling (on demand)",
-            "three": "Digital tools and practical guides for each session",
-            "four": "Experiential activities",
-            "five": "One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.",
-            "six": "WhatsApp support group or doubt resolution",
-            "seven": "Certificate of participation"
-          }
+          "final_price": "535,500"
         }
-      },
-      "directed_to": "DIRECTED TO:",
-      "who_is_it_for": "Who is it for?",
-      "young_people_description": "Young people who are about to make important decisions about their lives,",
-      "students_description": "especially in relation to their life project. Final year students, high school graduates or young people in transition.",
-      "when_moment": "When?",
-      "decision_time": "When they need to make decisions about their",
-      "academic_future": "academic and professional future.",
-      "what_are_they_living": "What are they experiencing?",
-      "feelings_description": "Feelings of disorientation, confusion or insecurity about the future.",
-      "i_want_it": "I want it",
-      "installed_capacities": "INSTALLED CAPACITIES",
-      "skills_promotion": "We promote the development of personal and emotional skills that allow young people to know, value and project themselves.",
-      "focus_on_autos": "FOCUS ON THE SELF",
-      "self_perception": "🧠 Self-perception: Recognizing who I am and how I see myself.",
-      "self_observation": "👁️ Self-observation: Identifying my emotions and behaviors.",
-      "self_esteem": "❤️ Self-esteem: Valuing myself and recognizing my own worth.",
-      "self_concept": "🔍 Self-concept: Understanding how I define myself.",
-      "autonomy": "🧭 Autonomy: Making conscious and responsible decisions.",
-      "self_confidence": "💪 Self-confidence: Believing in my abilities and potential.",
-      "self_motivation": "🔥 Self-motivation: Driving myself from within.",
-      "self_evaluation": "📊 Self-evaluation: Learning from my actions and experiences.",
-      "what_includes_service": "WHAT DOES THE SERVICE INCLUDE?",
-      "five_sessions": "- 5 group and/or individual sessions",
-      "one_counseling": "- 1 individual socio-vocational counseling (on demand)",
-      "digital_tools": "- Digital tools and practical guides for each session",
-      "experiential_activities": "- Experiential activities",
-      "experience_exchange": "(One of the sessions includes experience exchange, either at a university or with a professional in the area of interest.)",
-      "whatsapp_support": "- WhatsApp support group or doubt resolution",
-      "participation_certificate": "- Certificate of participation",
-      "payment_methods": "PAYMENT METHODS",
-      "bank_transfer": "- Bank transfer",
-      "debit_card": "- Debit card",
-      "credit_card": "- Credit card",
-      "cost": "COST",
-      "base_price": "450,000 + VAT",
-      "final_price": "535,500"
+      }
     },
     "testimonials": {
       "title": "Testimonials",
@@ -1265,21 +1281,5 @@
     "title": "Oops!",
     "message": "Sorry, page not found",
     "button": "Back to Home"
-  },
-  "communications_ATV": {
-    "banner": {
-      "h1": "Communications",
-      "alt": "The Communications Team smiling together."
-    },
-    "commun": {
-      "title_banner": "what we do",
-      "our_model": "OUR MODEL",
-      "subtitle": "COMMUNICATIONS",
-      "paragraph_1": "This area is made up of social communicators and graphic designers.",
-      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
-      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
-      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-      "alt_image": "Communications Team"
-    }
   }
 }
