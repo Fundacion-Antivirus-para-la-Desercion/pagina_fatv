@@ -152,6 +152,33 @@
       "span": "OBJECTIVE",
       "paragraph": "Enhancing internal processes and decision-making for the foundation using data analytics, Power BI visualization, and custom web platforms."
     },
+    "team": {
+      "title": "OUR TEAM",
+      "span": "Technology and Data Team",
+      "leader": {
+        "alt": "Technology and Data Team Lead, smiling in a professional waist-up portrait.",
+        "position": "LEADERSHIP",
+        "department": "Technology and Data Coordinator",
+        "description": "Leads data analysis and tech strategies, creating solutions to improve the Foundation's internal processes."
+      },
+      "members": {
+        "member_one": {
+          "alt": "Data Analyst posing with a friendly and professional expression.",
+          "position": "Data Analyst",
+          "description": "Discovers the stories hidden in data to help us understand and improve everything we do."
+        },
+        "member_two": {
+          "alt": "Software Developer posing with a bright, friendly smile.",
+          "position": "Software Developer",
+          "description": "Turns ideas into digital tools that bring our work to life."
+        },
+        "member_three": {
+          "alt": "Software Developer posing with a warm smile and a friendly attitude.",
+          "position": "Software Developer",
+          "description": "Transforms needs into digital solutions that are functional and built to last."
+        }
+      }
+    },
     "contentDA": {
       "title": "Our Model",
       "subtitle": "Data Analytics",

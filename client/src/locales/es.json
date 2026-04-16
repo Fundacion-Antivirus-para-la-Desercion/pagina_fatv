@@ -153,6 +153,33 @@
       "span": "ESTRATEGICO",
       "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el análisis de datos, la visualización de datos en PowerBI y el desarrollo de plataformas web."
     },
+    "team": {
+      "title": "NUESTRO EQUIPO",
+      "span": "Equipo de Tecnología y Datos",
+      "leader": {
+        "alt": "Coordinadora del equipo de tecnología y datos, sonriendo en un retrato profesional de medio cuerpo.",
+        "position": "LIDERAZGO",
+        "department": "Coordinadora del Área de Tecnología y Datos",
+        "description": "Lidera la estrategia de análisis de datos y desarrollo tecnológico, diseñando soluciones que optimizan los procesos internos de la Fundación."
+      },
+      "members": {
+        "member_one": {
+          "alt": "Analista de datos posando con expresión alegre y profesional.",
+          "position": "Analista de Datos",
+          "description": "Encuentra en los datos las historias que nos ayudan a entender y mejorar lo que hacemos."
+        },
+        "member_two": {
+          "alt": "Desarrollador de software posando con una sonrisa alegre.",
+          "position": "Desarrollador de Software",
+          "description": "Convierte ideas en herramientas digitales que hacen posible nuestro trabajo."
+        },
+        "member_three": {
+          "alt": "Desarrolladora de software posando con una sonrisa cercana y actitud amable.",
+          "position": "Desarrolladora de Software",
+          "description": "Transforma necesidades en soluciones digitales funcionales y bien hechas."
+        }
+      }
+    },
     "contentDA": {
       "title": "Nuestro Modelo",
       "subtitle": "Analítica de Datos",
