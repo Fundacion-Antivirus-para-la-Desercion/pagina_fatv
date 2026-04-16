@@ -1,10 +1,10 @@
 import "boxicons";
-import BannerView from "../components/Banner-views/BannerView";
-import BannerDataAnalytics from "../assets/images/views/dataAnalytics/technology-and-data.webp";
-import ContentDA from "../components/dataAnalystics/contentDA/ContentDA";
-import Description from "./DataAnalytics/Description/Description";
-import Teams from "../components/teamsArea/Teams.jsx";
-import data from "../views/DataAnalytics/data.js";
+import BannerView from "../../components/Banner-views/BannerView";
+import BannerDataAnalytics from "../../assets/images/views/dataAnalytics/technology-and-data.webp";
+import ContentDA from "../../components/dataAnalystics/contentDA/ContentDA.jsx";
+import Description from "../DataAnalytics/Description/Description.jsx";
+import Teams from "../../components/teamsArea/Teams.jsx";
+import data from "./data.js"
 
 
 function DataAnalytics() {
