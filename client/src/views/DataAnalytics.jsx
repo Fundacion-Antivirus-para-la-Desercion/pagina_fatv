@@ -2,6 +2,8 @@ import "boxicons";
 import BannerView from "../components/Banner-views/BannerView";
 import BannerDataAnalytics from "../assets/images/views/dataAnalytics/technology-and-data.webp";
 import ContentDA from "../components/dataAnalystics/contentDA/ContentDA";
+import Description from "./DataAnalytics/Description/Description";
+
 function DataAnalytics() {
   return (
     <div className="data-analytics-container lg:pt-[145px]">
@@ -14,7 +16,9 @@ function DataAnalytics() {
           }}
         />
       </div>
-      <ContentDA />
+
+      <Description/>
+      {/*<ContentDA />*/}
     </div>
   );
 }

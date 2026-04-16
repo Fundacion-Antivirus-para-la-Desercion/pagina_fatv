@@ -148,6 +148,11 @@
       "h1": " Tecnología y Datos",
       "alt": "Grupo de estudiantes participando activamente en una clase dentro del aula."
     },
+    "description": {
+      "title": "OBJETIVO",
+      "span": "ESTRATEGICO",
+      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el análisis de datos, la visualización de datos en PowerBI y el desarrollo de plataformas web."
+    },
     "contentDA": {
       "title": "Nuestro Modelo",
       "subtitle": "Analítica de Datos",
@@ -1026,7 +1031,7 @@
       "description": "Gracias por comunicarte con nosotros."
     },
     "information": {
-      "button_whatsapp":"Lo quiero",
+      "button_whatsapp": "Lo quiero",
       "cards": {
         "one": {
           "title": "DIRIGIDO A :",
