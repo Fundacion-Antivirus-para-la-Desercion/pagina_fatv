@@ -5,6 +5,7 @@ import ContentDA from "../../components/dataAnalystics/contentDA/ContentDA.jsx";
 import Description from "../DataAnalytics/Description/Description.jsx";
 import Teams from "../../components/teamsArea/Teams.jsx";
 import data from "./data.js"
+import Metrics from "./Metrics/Metrics.jsx";
 
 
 function DataAnalytics() {
@@ -22,6 +23,7 @@ function DataAnalytics() {
       </div>
 
       <Description />
+      <Metrics />
       <Teams teamsData={teamsData} />
       {/*<ContentDA />*/}
     </div>
