@@ -4,7 +4,7 @@ import { FiGlobe } from "react-icons/fi";
 import { IoCodeSlash } from "react-icons/io5";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
-import { slideFromTopForMetrics } from "../../../components/motion/constants/Animations.js";
+import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
 import { t } from "i18next";
 
@@ -64,7 +64,7 @@ function Metrics() {
 
           return (
             <motion.div
-              {...slideFromTopForMetrics({
+              {...expandableTransition({
                 transition: { delay: index * 0.3 },
               })}
               key={index}
