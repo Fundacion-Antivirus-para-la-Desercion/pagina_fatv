@@ -118,3 +118,25 @@ export const cardItemReveal = {
   animate: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
   exit: { opacity: 0, x: 20, transition: { duration: 0.2, ease: "easeIn" } },
 };
+
+/**
+ * Animación personalizada para las métricas.
+ * Diseñada para activarse solo la primera vez que el usuario llega a la sección.
+ * @param {Object} param0 - Configuración de la animación (opcional).
+ * @param {Object} param0.initial - Estado inicial de la animación (opcional).
+ * @param {Object} param0.whileInView - Estado final de la animación (opcional).
+ * @param {Object} param0.transition - Configuración de la transición (opcional).
+ * @param {Object} param0.viewport - Configuración del viewport (opcional).
+ * @returns {Object} Configuración de la animación para Framer Motion.
+ */
+export const slideFromTopForMetrics = ({
+  initial,
+  whileInView,
+  transition,
+  viewport,
+} = {}) => ({
+  initial: { opacity: 0, y: -50, ...initial },
+  whileInView: { opacity: 1, y: 0, ...whileInView },
+  transition: { duration: 1, delay: 0, ...transition },
+  viewport: { once: true, amount: 0.6, ...viewport }, // Cambiado para activarse solo una vez
+});

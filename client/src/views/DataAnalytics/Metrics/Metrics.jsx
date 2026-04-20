@@ -4,10 +4,9 @@ import { FiGlobe } from "react-icons/fi";
 import { IoCodeSlash } from "react-icons/io5";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
-import { slideFromTop } from "../../../components/motion/constants/Animations.js";
+import { slideFromTopForMetrics } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
 import { t } from "i18next";
-
 
 function Metrics() {
   const techMetrics = [
@@ -64,7 +63,10 @@ function Metrics() {
           const styles = isDark ? variantStyles.dark : variantStyles.yellow;
 
           return (
-            <div
+            <motion.div
+              {...slideFromTopForMetrics({
+                transition: { delay: index * 0.3 },
+              })}
               key={index}
               className={`flex flex-col items-center text-center p-5 m-2 bg-white rounded-2xl border-[1px] border-brand-blue-50 shadow-md transform hover:scale-105 transition-all duration-500`}
             >
@@ -89,7 +91,7 @@ function Metrics() {
                   {metric.title}
                 </p>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </section>
