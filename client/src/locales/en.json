@@ -152,6 +152,12 @@
       "span": "OBJECTIVE",
       "paragraph": "Enhancing internal processes and decision-making for the foundation using data analytics, Power BI visualization, and custom web platforms."
     },
+    "metrics": {
+      "one": "Universities with SEBU",
+      "two": "Power BI Dashboards",
+      "three": "Active web platforms",
+      "four": "Analyzed records"
+    },
     "team": {
       "title": "OUR TEAM",
       "span": "Technology and Data Team",
@@ -159,7 +165,7 @@
         "alt": "Technology and Data Team Lead, smiling in a professional waist-up portrait.",
         "position": "LEADERSHIP",
         "department": "Technology and Data Coordinator",
-        "description": "Leads data analysis and tech strategies, creating solutions to improve the Foundation's internal processes."
+        "description": "Coordinates the data analysis and technology area, designing solutions that optimize the Foundation's internal processes."
       },
       "members": {
         "member_one": {

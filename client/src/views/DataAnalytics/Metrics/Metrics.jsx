@@ -5,6 +5,9 @@ import { IoCodeSlash } from "react-icons/io5";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
 import { slideFromTop } from "../../../components/motion/constants/Animations.js";
+import { useTranslation } from "react-i18next";
+import { t } from "i18next";
+
 
 function Metrics() {
   const techMetrics = [
@@ -13,28 +16,28 @@ function Metrics() {
       icon: <FiDatabase />,
       value: "9",
       sign: "+",
-      title: "Universidades con SEBU",
+      title: t("dataAnalytics.metrics.one"),
     },
     {
       id: "02",
       icon: <RiBarChartGroupedLine />,
       value: "50",
       sign: "+",
-      title: "Tableros en PowerBI",
+      title: t("dataAnalytics.metrics.two"),
     },
     {
       id: "03",
       icon: <FiGlobe />,
       value: "3",
       sign: "+",
-      title: "Plataformas web activas",
+      title: t("dataAnalytics.metrics.three"),
     },
     {
       id: "04",
       icon: <IoCodeSlash />,
       value: "10",
       sign: "k",
-      title: "Registros analizados",
+      title: t("dataAnalytics.metrics.four"),
     },
   ];
 

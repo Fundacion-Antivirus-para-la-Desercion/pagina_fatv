@@ -153,6 +153,12 @@
       "span": "ESTRATEGICO",
       "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el análisis de datos, la visualización de datos en PowerBI y el desarrollo de plataformas web."
     },
+    "metrics": {
+      "one": "Universidades con SEBU",
+      "two": "Tableros en PowerBI",
+      "three": "Plataformas web activas",
+      "four": "Registros analizados"
+    },
     "team": {
       "title": "NUESTRO EQUIPO",
       "span": "Equipo de Tecnología y Datos",
@@ -160,7 +166,7 @@
         "alt": "Coordinadora del equipo de tecnología y datos, sonriendo en un retrato profesional de medio cuerpo.",
         "position": "LIDERAZGO",
         "department": "Coordinadora del Área de Tecnología y Datos",
-        "description": "Lidera la estrategia de análisis de datos y desarrollo tecnológico, diseñando soluciones que optimizan los procesos internos de la Fundación."
+        "description": "Coordina el área de análisis de datos y desarrollo tecnológico, diseñando soluciones que optimizan los procesos internos de la Fundación."
       },
       "members": {
         "member_one": {
