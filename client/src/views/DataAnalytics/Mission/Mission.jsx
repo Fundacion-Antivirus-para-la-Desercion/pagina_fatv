@@ -4,6 +4,7 @@ import { FiGlobe } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
+import WriteEffect from "../../../components/writeEffect/WriteEffect.jsx";
 
 function CodeCard({ t }) {
   return (
@@ -15,7 +16,7 @@ function CodeCard({ t }) {
           <span className="w-3 h-3 rounded-full bg-yellow-400" />
           <span className="w-3 h-3 rounded-full bg-blue-400" />
           <span className="ml-3 text-gray-400 text-xs font-mono">
-            {">_"} fundacion_antivirus.ts
+            {">_"} <WriteEffect text="fundacion_antivirus.ts" />
           </span>
         </div>
 
