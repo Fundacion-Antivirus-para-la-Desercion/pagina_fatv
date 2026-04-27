@@ -97,7 +97,7 @@ function TechStack() {
             initial="hidden"
             whileInView="visible"
             exit="exit"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6"
           >
             {filteredTools.map((tool) => (
