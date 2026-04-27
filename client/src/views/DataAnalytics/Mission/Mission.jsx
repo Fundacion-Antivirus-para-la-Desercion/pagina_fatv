@@ -1,7 +1,8 @@
 import { IoIosFlash } from "react-icons/io";
 import { RiBarChartGroupedLine } from "react-icons/ri";
 import { FiGlobe } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
 import WriteEffect from "../../../components/writeEffect/WriteEffect.jsx";
@@ -129,16 +130,43 @@ function PillarCard({
   );
 }
 
+function Bar({ height, index }) {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const run = async () => {
+      await controls.start({
+        scaleY: 1,
+        transition: { duration: 0.4, ease: "easeOut", delay: 1.3 + index * 0.06 },
+      });
+      controls.start({
+        scaleY: [1, 0.45, 1],
+        transition: {
+          duration: 2 + (index % 5) * 0.25,
+          repeat: Infinity,
+          ease: "easeInOut",
+        },
+      });
+    };
+    run();
+  }, []);
+
+  return (
+    <motion.div
+      className="flex-1 bg-primary-yellow/70 rounded-t-sm"
+      style={{ height: `${height * 10}%`, transformOrigin: "bottom" }}
+      initial={{ scaleY: 0 }}
+      animate={controls}
+    />
+  );
+}
+
 function BarChartIllustration() {
   const bars = [3, 3, 5, 3, 6, 3, 5, 7, 4, 6, 5, 7, 8];
   return (
     <div className="flex items-end gap-1 h-24 px-2">
       {bars.map((h, i) => (
-        <div
-          key={i}
-          className="flex-1 bg-primary-yellow/70 rounded-t-sm"
-          style={{ height: `${h * 10}%` }}
-        />
+        <Bar key={i} height={h} index={i} />
       ))}
     </div>
   );
@@ -207,6 +235,7 @@ function Mission() {
 
         <motion.div {...expandableTransition({ transition: { delay: 0.5 } })}>
           <PillarCard
+          id="data-pillar"
             icon={<RiBarChartGroupedLine />}
             pillarLabel={t("dataAnalytics.mission.pillar1.label")}
             title={t("dataAnalytics.mission.pillar1.title")}
@@ -218,6 +247,7 @@ function Mission() {
 
         <motion.div {...expandableTransition({ transition: { delay: 0.7 } })}>
           <PillarCard
+          id="web-pillar"
             icon={<FiGlobe />}
             pillarLabel={t("dataAnalytics.mission.pillar2.label")}
             title={t("dataAnalytics.mission.pillar2.title")}
