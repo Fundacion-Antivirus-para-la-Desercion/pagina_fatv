@@ -172,6 +172,37 @@ function BarChartIllustration() {
   );
 }
 
+function ProgressBar({ className, index }) {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const run = async () => {
+      await controls.start({
+        scaleX: 1,
+        transition: { duration: 0.5, ease: "easeOut", delay: 1.7 + index * 0.15 },
+      });
+      controls.start({
+        scaleX: [1, 0.4, 1],
+        transition: {
+          duration: 2.2 + index * 0.4,
+          repeat: Infinity,
+          ease: "easeInOut",
+        },
+      });
+    };
+    run();
+  }, []);
+
+  return (
+    <motion.div
+      className={className}
+      style={{ transformOrigin: "left" }}
+      initial={{ scaleX: 0 }}
+      animate={controls}
+    />
+  );
+}
+
 function BrowserIllustration() {
   return (
     <div className="bg-[#1a1f3d] rounded-lg overflow-hidden border border-white/10">
@@ -183,9 +214,9 @@ function BrowserIllustration() {
         </span>
       </div>
       <div className="p-4 space-y-3">
-        <div className="h-2 bg-gray-500 rounded w-3/4" />
-        <div className="h-2 bg-gray-600 rounded w-1/2" />
-        <div className="h-6 bg-primary-yellow/60 rounded w-1/3 mt-2" />
+        <ProgressBar className="h-2 bg-gray-500 rounded w-3/4" index={0} />
+        <ProgressBar className="h-2 bg-gray-600 rounded w-1/2" index={1} />
+        <ProgressBar className="h-6 bg-primary-yellow/60 rounded w-1/3 mt-2" index={2} />
       </div>
     </div>
   );

@@ -95,7 +95,7 @@ function Highlights() {
                   {t(card.codeKey)}
                 </span>
 
-                <h3 className="mt-6 max-w-[26rem] font-impact text-2xl md:text-[2rem] leading-tight text-white">
+                <h3 className="mt-6 max-w-[26rem] font-impact text-base md:text-xl leading-tight text-white">
                   {t(card.titleKey)}
                 </h3>
 
