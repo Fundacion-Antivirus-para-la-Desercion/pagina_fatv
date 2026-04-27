@@ -5,6 +5,33 @@ import { motion } from "framer-motion";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
 import WriteEffect from "../../../components/writeEffect/WriteEffect.jsx";
+import SyntaxTypewriter from "../../../components/writeEffect/SyntaxTypewriter.jsx";
+
+const codeLines = [
+  [
+    { text: "1", className: "text-gray-500 mr-3" },
+    { text: "const", className: "text-purple-400" },
+    { text: " impacto = " },
+    { text: "await", className: "text-purple-400" },
+  ],
+  [
+    { text: "  analizar(datos);" },
+  ],
+  [
+    { text: "2", className: "text-gray-500 mr-3" },
+    { text: "dashboard.render(indicadores);" },
+  ],
+  [
+    { text: "3", className: "text-gray-500 mr-3" },
+    { text: "await", className: "text-purple-400" },
+    { text: " sebu.evaluar(universidad);" },
+  ],
+  [
+    { text: "4", className: "text-gray-500 mr-3" },
+    { text: "permanencia" },
+    { text: "(estudiante);", className: "text-primary-yellow" },
+  ],
+];
 
 function CodeCard({ t }) {
   return (
@@ -16,33 +43,21 @@ function CodeCard({ t }) {
           <span className="w-3 h-3 rounded-full bg-yellow-400" />
           <span className="w-3 h-3 rounded-full bg-blue-400" />
           <span className="ml-3 text-gray-400 text-xs font-mono">
-            {">_"} <WriteEffect text="fundacion_antivirus.ts" />
+            {">_"} fundacion_antivirus.ts
           </span>
         </div>
 
         {/* Code block */}
-        <div className="font-mono text-sm leading-7 text-gray-300 pl-2">
-          <p>
-            <span className="text-gray-500 mr-3">1</span>
-            <span className="text-purple-400">const</span> impacto ={" "}
-            <span className="text-purple-400">await</span>
-          </p>
-          <p className="pl-8">analizar(datos);</p>
-          <p>
-            <span className="text-gray-500 mr-3">2</span>
-            dashboard.render(indicadores);
-          </p>
-          <p>
-            <span className="text-gray-500 mr-3">3</span>
-            <span className="text-purple-400">await</span>{" "}
-            sebu.evaluar(universidad);
-          </p>
-          <p>
-            <span className="text-gray-500 mr-3">4</span>
-            permanenc
-            <span className="inline-block w-2 h-5 bg-primary-yellow ml-0.5 animate-pulse" />
-          </p>
-        </div>
+        <SyntaxTypewriter
+          lines={codeLines}
+          typingSpeed={55}
+          pauseAfterTyping={3000}
+          pauseBeforeRestart={800}
+          loop
+          cursorChar="|"
+          cursorClassName="text-primary-yellow"
+          containerClassName="font-mono text-sm leading-7 text-gray-300 pl-2"
+        />
 
         {/* Status bar */}
         <div className="flex justify-between items-center mt-6 bg-[#1a1f3d] rounded-lg px-4 py-2">
