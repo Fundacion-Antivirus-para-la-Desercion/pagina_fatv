@@ -65,7 +65,7 @@ function Metrics() {
           return (
             <motion.div
               {...expandableTransition({
-                transition: { delay: index * 0.3 },
+                transition: { delay: index * 0.2 }
               })}
               key={index}
               className={`flex flex-col items-center text-center p-5 m-2 bg-white rounded-2xl border-[1px] border-brand-blue-50 shadow-md transform hover:scale-105 transition-all duration-500`}

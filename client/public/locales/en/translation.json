@@ -152,11 +152,80 @@
       "span": "OBJECTIVE",
       "paragraph": "Enhancing internal processes and decision-making for the foundation using data analytics, Power BI visualization, and custom web platforms."
     },
-    "metrics": {
+    "mestrics": {
       "one": "Universities with SEBU",
       "two": "Power BI Dashboards",
       "three": "Active web platforms",
       "four": "Analyzed records"
+    },
+    "mission": {
+      "badge": "Our mission",
+      "title": "Data that speaks,",
+      "titleHighlight": "code that transforms",
+      "paragraph": "Optimization of internal processes and strengthening strategic decision-making for the foundation, through data analysis, Power BI visualization, and web platform development.",
+      "pillar1": {
+        "label": "PILLAR 01",
+        "title": "Data Analytics",
+        "description": "We collect, process, and visualize data to generate tracking indicators, results, and impact. We transform complex information into strategic decisions with clear reports and interactive dashboards."
+      },
+      "pillar2": {
+        "label": "PILLAR 02",
+        "title": "Web Development",
+        "description": "We design and develop accessible and functional web platforms that support student retention. We create digital tools that connect students, institutions, and work teams."
+      }
+    },
+    "stack": {
+      "badge": "Technology stack",
+      "title": "TOOLS WE",
+      "titleHighlight": "USE",
+      "tabs": {
+        "all": "All",
+        "visualization": "Visualization",
+        "analysis": "Analysis",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "data": "Data",
+        "design": "Design",
+        "devops": "DevOps",
+        "measurement": "Measurement",
+        "aiDev": "AI Dev"
+      }
+    },
+    "highlights": {
+      "badge": "Featured achievements",
+      "title": "Memorable",
+      "titleHighlight": "Highlights",
+      "description": "Products and systems that generate real impact on student retention.",
+      "cards": {
+        "sebu": {
+          "code": "SEBU",
+          "metric": "9+",
+          "metricLabel": "Universities",
+          "title": "University Well-Being Evaluation System",
+          "description": "A platform implemented for student retention in more than 9 universities, making it possible to evaluate and monitor students' overall well-being."
+        },
+        "lda": {
+          "code": "LDA",
+          "metric": "50+",
+          "metricLabel": "Dashboards",
+          "title": "Academic Performance Lab",
+          "description": "A tool for identifying critical subjects and degree paths for students, generating early alerts and intervention strategies."
+        },
+        "isi": {
+          "code": "ISI",
+          "metric": "100%",
+          "metricLabel": "Data-driven",
+          "title": "Tracking and Impact Indicators",
+          "description": "Incorporation of tracking, results, and impact indicators into processes for evidence-based management."
+        },
+        "rtd": {
+          "code": "RTD",
+          "metric": "∞",
+          "metricLabel": "Decisions",
+          "title": "Reports and Decision Dashboards",
+          "description": "Stronger decision-making through clear reports and tracking dashboards for the Foundation's teams."
+        }
+      }
     },
     "team": {
       "title": "OUR TEAM",
@@ -191,6 +260,12 @@
       "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
       "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
       "alt_image": "Data analytics chart"
+    },
+    "metrics": {
+      "one": "Universities with SEBU",
+      "two": "Power BI Dashboards",
+      "three": "Active web platforms",
+      "four": "Analyzed records"
     }
   },
   "communications": {
