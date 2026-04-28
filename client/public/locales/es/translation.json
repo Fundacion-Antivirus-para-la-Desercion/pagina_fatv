@@ -149,9 +149,15 @@
       "alt": "Grupo de estudiantes participando activamente en una clase dentro del aula."
     },
     "description": {
+      "javi_text": "¡Hola!",
       "title": "OBJETIVO",
       "span": "ESTRATEGICO",
-      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el análisis de datos, la visualización de datos en PowerBI y el desarrollo de plataformas web."
+      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el , la  y el ",
+      "span_programs_description": {
+        "one": "análisis de Datos",
+        "two": "visualización de datos en PowerBI",
+        "three": "desarrollo de plataformas web."
+      }
     },
     "metrics": {
       "one": "Universidades con SEBU",
@@ -193,9 +199,9 @@
       }
     },
     "highlights": {
-      "badge": "Logros destacados",
-      "title": "Aspectos",
-      "titleHighlight": "Memorables",
+      "badge": "LOGROS DESTACADOS",
+      "title": "ASPECTOS",
+      "titleHighlight": "MEMORABLES",
       "description": "Productos y sistemas que generan impacto real en la permanencia estudiantil.",
       "cards": {
         "sebu": {

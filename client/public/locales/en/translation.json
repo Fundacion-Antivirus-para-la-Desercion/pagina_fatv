@@ -148,6 +148,7 @@
       "alt": "Group of students actively participating in a classroom lesson"
     },
     "description": {
+      "javi_text": "¡Hello!",
       "title": "STRATEGIC",
       "span": "OBJECTIVE",
       "paragraph": "Enhancing internal processes and decision-making for the foundation using data analytics, Power BI visualization, and custom web platforms."
@@ -192,9 +193,9 @@
       }
     },
     "highlights": {
-      "badge": "Featured achievements",
-      "title": "Memorable",
-      "titleHighlight": "Highlights",
+      "badge": "FEATURED ACHIEVEMENTS",
+      "title": "MEMORABLE",
+      "titleHighlight": "HIGHLIGHTS",
       "description": "Products and systems that generate real impact on student retention.",
       "cards": {
         "sebu": {

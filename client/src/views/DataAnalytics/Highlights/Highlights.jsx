@@ -45,12 +45,11 @@ function Highlights() {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
-        <motion.div
-          {...expandableTransition({ transition: { delay: 0.2 } })}
+        <div
           className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start"
         >
           <div>
-            <span className="inline-flex items-center rounded-full border border-primary-yellow/20 bg-primary-yellow/10 px-5 py-2 text-sm md:text-base font-semibold text-primary-yellow">
+            <span className="inline-flex items-center  font-impact rounded-full border border-primary-yellow/20 bg-primary-yellow/10 px-5 py-2 text-sm md:text-base text-primary-yellow">
               ✦ {t("dataAnalytics.highlights.badge")}
             </span>
 
@@ -64,10 +63,10 @@ function Highlights() {
             </h2>
           </div>
 
-          <p className="max-w-xl pt-2 text-lg md:text-2xl leading-relaxed text-white/45 lg:justify-self-end">
+          <p className="max-w-xl pt-2 text-lg md:text-xl leading-relaxed text-white/45 lg:justify-self-end">
             {t("dataAnalytics.highlights.description")}
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {highlightCards.map((card, index) => (
@@ -75,7 +74,7 @@ function Highlights() {
               key={card.id}
               {...expandableTransition({ transition: { delay: 0.3 + index * 0.12 } })}
             >
-              <div className="relative rounded-[30px] border border-white/10 bg-white/[0.03] p-6 md:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-sm">
+              <div className="relative rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-sm">
                 <div className="flex items-start justify-between gap-4">
                   <div className={`flex h-16 w-16 items-center justify-center rounded-3xl text-3xl ${variantStyles[card.variant].iconBox}`}>
                     {iconMap[card.icon]}

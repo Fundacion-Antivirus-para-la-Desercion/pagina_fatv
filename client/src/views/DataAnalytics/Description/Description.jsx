@@ -3,13 +3,14 @@ import { WiStars } from "react-icons/wi";
 import { FaLightbulb } from "react-icons/fa6";
 import { TbTargetArrow } from "react-icons/tb";
 import { IoIosFlash } from "react-icons/io";
+import { Icon } from "@iconify/react";
 
 import { motion } from "framer-motion";
 import { floatSnake } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
 
 function Description() {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <section>
@@ -33,7 +34,7 @@ function Description() {
               />
               <div className="absolute top-0 -right-2 md:-right-5 bg-white py-2 px-4 sm:py-3 sm:px-6 rounded-r-3xl rounded-tl-3xl">
                 <span className="text-dark-blue text-sm sm:text-base md:text-xl">
-                  ¡Hola! 🚀
+                  {t("dataAnalytics.description.javi_text")} 🚀
                 </span>
               </div>
 
@@ -58,12 +59,25 @@ function Description() {
             </div>
 
             <div className="relative text-center md:text-left">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-impact text-white mb-3 md:mb-5">
-                {t("dataAnalytics.description.title")}{" "}
-                <span className="text-primary-yellow">{t("dataAnalytics.description.span")}</span>
-              </h2>
-              <p className="text-white/85 text-base md:text-2xl tracking-tighter text-justify max-w-prose mx-auto">
+              <div className="flex gap-5 items-center justify-center md:justify-start mb-5">
+                <Icon
+                  icon="streamline-color:target-flat"
+                  height="48"
+                  width="48"
+                  className="bg-primary-yellow p-2 rounded-3xl"
+                />
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-impact text-white">
+                  {t("dataAnalytics.description.title")}{" "}
+                  <span className="text-primary-yellow">
+                    {t("dataAnalytics.description.span")}
+                  </span>
+                </h2>
+              </div>
+              <p className="text-white/85 text-base md:text-2xl text-justify max-w-prose mx-auto">
                 {t("dataAnalytics.description.paragraph")}
+                <span className="text-brand-teal-300">{t("dataAnalytics.description.span_programs_description.one")}</span>
+                <span className="text-brand-teal-300">{t("dataAnalytics.description.span_programs_description.two")}</span>
+                <span className="text-brand-teal-300">{t("dataAnalytics.description.span_programs_description.three")}</span>
               </p>
             </div>
           </section>
