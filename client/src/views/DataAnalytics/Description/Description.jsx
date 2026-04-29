@@ -6,8 +6,8 @@ import { IoIosFlash } from "react-icons/io";
 import { Icon } from "@iconify/react";
 
 import { motion } from "framer-motion";
-import { floatSnake } from "../../../components/motion/constants/Animations.js";
-import { useTranslation } from "react-i18next";
+import { floatSnake, expandableTransition } from "../../../components/motion/constants/Animations.js";
+import { useTranslation, Trans } from "react-i18next";
 
 function Description() {
   const { t } = useTranslation();
@@ -32,11 +32,14 @@ function Description() {
                 alt="Acompañamiento"
                 className="relative w-auto max-w-[350px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[400px] md:h-[550px] object-cover p-4 mx-auto"
               />
-              <div className="absolute top-0 -right-2 md:-right-5 bg-white py-2 px-4 sm:py-3 sm:px-6 rounded-r-3xl rounded-tl-3xl">
+              <motion.div
+                {...expandableTransition({ transition: { duration: 2 } })}
+                className="absolute top-0 -right-2 md:-right-5 bg-white py-2 px-4 sm:py-3 sm:px-6 rounded-r-3xl rounded-tl-3xl"
+              >
                 <span className="text-dark-blue text-sm sm:text-base md:text-xl">
                   {t("dataAnalytics.description.javi_text")} 🚀
                 </span>
-              </div>
+              </motion.div>
 
               <motion.div
                 {...floatSnake()}
@@ -74,10 +77,13 @@ function Description() {
                 </h2>
               </div>
               <p className="text-white/85 text-base md:text-2xl text-justify max-w-prose mx-auto">
-                {t("dataAnalytics.description.paragraph")}
-                <span className="text-brand-teal-300">{t("dataAnalytics.description.span_programs_description.one")}</span>
-                <span className="text-brand-teal-300">{t("dataAnalytics.description.span_programs_description.two")}</span>
-                <span className="text-brand-teal-300">{t("dataAnalytics.description.span_programs_description.three")}</span>
+                <Trans
+                  i18nKey="dataAnalytics.description.paragraph"
+                  components={{
+                    orange: <span className="text-primary-yellow font-bold" />,
+                    teal: <span className="text-brand-teal-200 font-bold" />,
+                  }}
+                />
               </p>
             </div>
           </section>

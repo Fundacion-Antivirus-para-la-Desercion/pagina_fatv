@@ -152,12 +152,7 @@
       "javi_text": "¡Hola!",
       "title": "OBJETIVO",
       "span": "ESTRATEGICO",
-      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el , la  y el ",
-      "span_programs_description": {
-        "one": "análisis de Datos",
-        "two": "visualización de datos en PowerBI",
-        "three": "desarrollo de plataformas web."
-      }
+      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el <orange>análisis de datos</orange>, la <teal>visualización de datos en PowerBI</teal> y el <teal>desarrollo de plataformas web.</teal>"
     },
     "metrics": {
       "one": "Universidades con SEBU",

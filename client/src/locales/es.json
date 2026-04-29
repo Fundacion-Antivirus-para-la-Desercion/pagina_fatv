@@ -152,14 +152,9 @@
       "javi_text": "¡Hola!",
       "title": "OBJETIVO",
       "span": "ESTRATEGICO",
-      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el , la  y el ",
-      "span_programs_description": {
-        "one": "análisis de Datos",
-        "two": "visualización de datos en PowerBI",
-        "three": "desarrollo de plataformas web."
-      }
+      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el <orange>análisis de datos</orange>, la <teal>visualización de datos en PowerBI</teal> y el <teal>desarrollo de plataformas web.</teal>"
     },
-    "metrics":{
+    "metrics": {
       "one": "Universidades con SEBU",
       "two": "Tableros en PowerBI",
       "three": "Plataformas web activas",
@@ -837,7 +832,6 @@
       }
     }
   },
-
   "qhfa": {
     "page_title": "lo que hacemos",
     "our_model": "NUESTRO MODELO",
@@ -933,11 +927,9 @@
       "scholarship_programs_description": "Seguimiento personalizado para maximizar el impacto de los programas de becas.",
       "description_general": "Brindamos acompañamiento continuo para que los estudiantes permanezcan en su proceso formativo, culminen sus estudios y eviten la deserción.",
       "btn_request_consulting": "Solicita consultoría",
-
       "imagesConsultingArray": {
         "link_see_more": "Ver más",
         "retention_figure": "Permanencia",
-
         "image_one": {
           "description": "Acompañamiento en el proceso de inscripción de Pines Universitarios",
           "alt": "Estudiante recibiendo asesoría de una colaboradora de la Fundación Antivirus durante la inscripción al PIN universitario"
@@ -1003,7 +995,6 @@
       "descriptionPillarThree": "Aplicamos las mejoras prácticas internacionales adaptadas a la realidad local, garantizando soluciones efectivas y sostenibles."
     }
   },
-
   "studentRetentionManagement": {
     "banner": {
       "h1": "Gestión de la",
@@ -1301,7 +1292,6 @@
     "testimonialsAtvConnect": {
       "span": "TESTIMONIOS",
       "title": "HISTORIAS REALES",
-
       "testimony_one": {
         "description": "“Estoy feliz con esta plataforma, ya que es un apoyo para seguir preparándome en mi carrera”",
         "role": "Estudiante",

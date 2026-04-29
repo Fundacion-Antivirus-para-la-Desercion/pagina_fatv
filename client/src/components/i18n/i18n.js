@@ -27,6 +27,9 @@ i18n
     },
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
+      requestOptions: {
+        cache: 'no-cache',
+      },
     },
     interpolation: {
       escapeValue: false, // React already escapes by default

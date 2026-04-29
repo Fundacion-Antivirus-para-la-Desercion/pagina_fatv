@@ -148,10 +148,10 @@
       "alt": "Group of students actively participating in a classroom lesson"
     },
     "description": {
-    "javi_text": "¡Hello!",
+      "javi_text": "¡Hello!",
       "title": "STRATEGIC",
       "span": "OBJECTIVE",
-      "paragraph": "Enhancing internal processes and decision-making for the foundation using data analytics, Power BI visualization, and custom web platforms."
+      "paragraph": "Enhancing internal processes and decision-making for the foundation using <orange>data analytics</orange>, <teal>Power BI visualization</teal>, and <teal>custom web platforms.</teal>"
     },
     "mestrics": {
       "one": "Universities with SEBU",
@@ -923,11 +923,9 @@
       "scholarship_programs_description": "Personalized Monitoring to Maximize the Impact of Scholarship Programs.",
       "description_general": "We provide continuous support to help students stay the course, navigate their academic journey, and reach graduation.",
       "btn_request_consulting": "Request Consulting",
-
       "imagesConsultingArray": {
         "link_see_more": "See More",
         "retention_figure": "Retention",
-
         "image_one": {
           "description": "Supporting students through university sign-ups",
           "alt": "Student getting help with university admissions from Fundación Antivirus"
@@ -993,7 +991,6 @@
       "descriptionPillarThree": "We apply international best practices adapted to the local context, guaranteeing effective and sustainable solutions."
     }
   },
-
   "studentRetentionManagement": {
     "banner": {
       "h1": "Student Retention",

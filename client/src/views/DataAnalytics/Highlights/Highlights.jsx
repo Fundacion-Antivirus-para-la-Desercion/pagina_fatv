@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FiDatabase } from "react-icons/fi";
-import { HiOutlineViewGrid } from "react-icons/hi";
+import { GoTable } from "react-icons/go";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import { RiBarChartBoxLine } from "react-icons/ri";
+import { FaChartLine } from "react-icons/fa6";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { highlightCards } from "./data.js";
 
 const iconMap = {
   database: <FiDatabase />,
-  chart: <RiBarChartBoxLine />,
+  chart: <FaChartLine />,
   check: <IoCheckmarkCircleOutline />,
-  grid: <HiOutlineViewGrid />,
+  grid: <GoTable />,
 };
 
 const variantStyles = {
