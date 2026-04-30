@@ -226,7 +226,7 @@ function Header() {
         >
           <ul className="flex items-center justify-center gap-16 p-10">
             <Link
-              to="/dataAnalyctis"
+              to="/dataAnalytics"
               onClick={handleNav}
               className="font-impact hover:text-primary-purple cursor-pointer"
             >
@@ -457,7 +457,7 @@ function Header() {
           {queHacemos && (
             <ul className="pl-4">
               <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link to="/dataAnalyctis" onClick={handleNav}>
+                <Link to="/dataAnalytics" onClick={handleNav}>
                   {t("header.sub_header.data_analytics")}
                 </Link>
               </li>

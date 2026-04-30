@@ -1,0 +1,18 @@
+.writing-text_cursor::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 0.08em;
+  animation: writing-cursor-blink 1s steps(1, end) infinite;
+}
+
+@keyframes writing-cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
