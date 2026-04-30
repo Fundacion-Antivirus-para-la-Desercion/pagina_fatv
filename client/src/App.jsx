@@ -4,7 +4,7 @@ import Home from "./views/Home";
 import DonationPay from "./views/DonationPay";
 import ContextData from "./components/ContextData/ContextData";
 import QHFA from "./views/QHFA";
-import DataAnalytics from "./views/DataAnalytics";
+import DataAnalytics from "./views/DataAnalytics/DataAnalytics.jsx";
 import Foundation from "./views/Foundation";
 import ContacUs from "./views/ContacUs";
 import Communications from "./views/Communications/Communications.jsx";
@@ -38,8 +38,7 @@ function App() {
             element={<QHFA />}
           />*/}
           <Route path="/social-intervention" element={<SocialIntervention />} />
-          <Route path="/dataAnalyctis" element={<DataAnalytics />} />
-          <Route path="/Comunicaciones" element={<Communications />} />
+          <Route path="/dataAnalytics" element={<DataAnalytics />} />          <Route path="/Comunicaciones" element={<Communications />} />
           <Route path="/fundacion" element={<Foundation />} />
           <Route path="/News" element={<News />} />
           <Route path="/ContactUs" element={<ContacUs />} />

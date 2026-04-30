@@ -148,6 +148,114 @@
       "h1": " Tecnología y Datos",
       "alt": "Grupo de estudiantes participando activamente en una clase dentro del aula."
     },
+    "description": {
+      "javi_text": "¡Hola!",
+      "title": "OBJETIVO",
+      "span": "ESTRATEGICO",
+      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el <orange>análisis de datos</orange>, la <teal>visualización de datos en PowerBI</teal> y el <teal>desarrollo de plataformas web.</teal>"
+    },
+    "metrics": {
+      "one": "Universidades con SEBU",
+      "two": "Tableros en PowerBI",
+      "three": "Plataformas web activas",
+      "four": "Registros analizados"
+    },
+    "mission": {
+      "badge": "Nuestra misión",
+      "title": "Datos que hablan,",
+      "titleHighlight": "código que transforma",
+      "paragraph": "Optimización de procesos internos y fortalecimiento en la toma de decisiones estratégicas para la fundación, mediante el análisis de datos, la visualización en PowerBI y el desarrollo de plataformas web.",
+      "pillar1": {
+        "label": "PILAR 01",
+        "title": "Análisis de Datos",
+        "description": "Recolectamos, procesamos y visualizamos datos para generar indicadores de seguimiento, resultados e impacto. Transformamos información compleja en decisiones estratégicas con reportes claros y tableros interactivos."
+      },
+      "pillar2": {
+        "label": "PILAR 02",
+        "title": "Desarrollo Web",
+        "description": "Diseñamos y desarrollamos plataformas web accesibles y funcionales que apoyan la permanencia estudiantil. Creamos herramientas digitales que conectan a estudiantes, instituciones y equipos de trabajo."
+      }
+    },
+    "stack": {
+      "badge": "Stack Tecnológico",
+      "title": "HERRAMIENTAS QUE",
+      "titleHighlight": "USAMOS",
+      "tabs": {
+        "all": "Todos",
+        "visualization": "Visualización",
+        "analysis": "Análisis",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "data": "Datos",
+        "design": "Diseño",
+        "devops": "DevOps",
+        "measurement": "Medición",
+        "aiDev": "AI Dev"
+      }
+    },
+    "highlights": {
+      "badge": "LOGROS DESTACADOS",
+      "title": "ASPECTOS",
+      "titleHighlight": "MEMORABLES",
+      "description": "Productos y sistemas que generan impacto real en la permanencia estudiantil.",
+      "cards": {
+        "sebu": {
+          "code": "SEBU",
+          "metric": "9+",
+          "metricLabel": "Universidades",
+          "title": "Sistema de Evaluación de Bienestar Universitario",
+          "description": "Plataforma implementada para la permanencia en más de 9 universidades, permitiendo evaluar y monitorear el bienestar integral de los estudiantes."
+        },
+        "lda": {
+          "code": "LDA",
+          "metric": "50+",
+          "metricLabel": "Tableros",
+          "title": "Laboratorio de Desempeño Académico",
+          "description": "Herramienta de identificación de materias y carreras críticas para los estudiantes, generando alertas tempranas y estrategias de intervención."
+        },
+        "isi": {
+          "code": "ISI",
+          "metric": "100%",
+          "metricLabel": "Basado en datos",
+          "title": "Indicadores de Seguimiento e Impacto",
+          "description": "Incorporación de indicadores de seguimiento, resultados e impacto en los procesos para una gestión basada en evidencia."
+        },
+        "rtd": {
+          "code": "RTD",
+          "metric": "∞",
+          "metricLabel": "Decisiones",
+          "title": "Reportes y Tableros de Decisión",
+          "description": "Fortalecimiento de la toma de decisiones mediante reportes claros y tableros de seguimiento para los equipos de la Fundación."
+        }
+      }
+    },
+    "team": {
+      "title": "NUESTRO EQUIPO",
+      "span": "Equipo de Tecnología y Datos",
+      "leader": {
+        "alt": "Coordinadora del equipo de tecnología y datos, sonriendo en un retrato profesional de medio cuerpo.",
+        "position": "LIDERAZGO",
+        "department": "Coordinadora del Área de Tecnología y Datos",
+        "description": "Coordina el área de análisis de datos y desarrollo tecnológico, diseñando soluciones que optimizan los procesos internos de la Fundación."
+      },
+      "members": {
+        "member_one": {
+          "alt": "Analista de datos posando con expresión alegre y profesional.",
+          "position": "Analista de Datos",
+          "description": "Encuentra en los datos las historias que nos ayudan a entender y mejorar lo que hacemos."
+        },
+        "member_two": {
+          "alt": "Desarrollador de software posando con una sonrisa alegre.",
+          "position": "Desarrollador de Software",
+          "description": "Convierte ideas en herramientas digitales que hacen posible nuestro trabajo."
+        },
+        "member_three": {
+          "alt": "Desarrolladora de software posando con una sonrisa cercana y actitud amable.",
+          "position": "Desarrolladora de Software",
+          "description": "Transforma necesidades en soluciones digitales funcionales y bien hechas."
+        }
+      }
+    },
     "contentDA": {
       "title": "Nuestro Modelo",
       "subtitle": "Analítica de Datos",
