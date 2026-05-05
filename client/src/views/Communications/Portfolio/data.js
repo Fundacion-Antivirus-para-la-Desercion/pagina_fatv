@@ -1,4 +1,8 @@
-import campanaSocial from "../../../assets/images/views/communications/portfolio/campana-social.webp";
+import campanaSocial from "../../../assets/images/views/communications/portfolio/socialCampaigns/poster-atv-conecta-javi.webp";
+import PiezaUnal from "../../../assets/images/views/communications/portfolio/socialCampaigns/pieza-us-unal.webp";
+import PiezaTutores from "../../../assets/images/views/communications/portfolio/socialCampaigns/pieza-unete-red-tutores.webp";
+
+
 import redesSociales from "../../../assets/images/views/communications/portfolio/redes-sociales.webp";
 import infografia from "../../../assets/images/views/communications/portfolio/infografia.webp";
 import cubrimiento from "../../../assets/images/views/communications/portfolio/cubrimiento.webp";
@@ -22,14 +26,14 @@ const portfolioData = [
   {
     id: 1,
     title: "communications.portfolio.opcions.two",
-    image: campanaSocial,
-    colSpan: 2,
+    image: PiezaTutores,
+    colSpan: 1,
     rowSpan: 2,
     // images: [{ src, colSpan, rowSpan }] — first image is featured (2×2), rest are 1×1
     images: [
-      { src: campanaSocial, colSpan: 2, rowSpan: 2 },
-      { src: campanaSocial,  colSpan: 1, rowSpan: 1 },
-      { src: campanaSocial,     colSpan: 1, rowSpan: 1 },
+      { src: campanaSocial, colSpan: 1, rowSpan: 2 },
+      { src: PiezaUnal,  colSpan: 1, rowSpan: 2 },
+      { src: PiezaTutores,     colSpan: 1, rowSpan: 2 },
       { src: campanaSocial,    colSpan: 1, rowSpan: 1 },
       { src: campanaSocial,     colSpan: 1, rowSpan: 1 },
     ],
