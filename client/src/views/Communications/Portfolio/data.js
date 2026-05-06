@@ -36,6 +36,7 @@ const portfolioData = [
       { src: PiezaTutores,     colSpan: 1, rowSpan: 2 },
       { src: campanaSocial,    colSpan: 1, rowSpan: 1 },
       { src: campanaSocial,     colSpan: 1, rowSpan: 1 },
+      { src: Fotografo,     colSpan: 1, rowSpan: 1 },
     ],
   },
   {

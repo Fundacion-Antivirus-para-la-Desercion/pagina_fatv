@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import data from "./data.js";
 import { motion, AnimatePresence } from "framer-motion";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { IoMdEye } from "react-icons/io";
 import { IoSearchCircle, IoCloseCircle } from "react-icons/io5";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
@@ -128,47 +129,52 @@ function Portfolio() {
           </motion.section>
         ) : (
           activeProject.images?.length > 0 && (
-            <motion.section
+            <motion.div
               id="portfolio-details"
               key={activeIndex}
               variants={cardVariants}
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="col-span-full grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
+              className="col-span-full mb-5"
             >
-              {activeProject.images.map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  variants={childVariants}
-                  
-
-                   className={`relative rounded-2xl shadow-2xl group cursor-pointer grid grid-flow-row-dense`}
-                  onClick={() =>
-                    openLightbox(
-                      activeProject.images.map((i) => i.src),
-                      idx,
-                    )
-                  }
-                >
-                  <img
-                    src={item.src}
-                    alt={`${t(activeProject.title)} ${idx + 1}`}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                  {idx === 0 && (
-                    <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
-                      {t(activeProject.title)}
-                    </span>
-                  )}
-                  <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
-                    <div className="translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-                      <IoSearchCircle className="w-10 h-10 text-white" />
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.section>
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{ 640: 2, 1024: 4 }}
+                gutterBreakPoints={{ 0: "0.75rem", 640: "1rem", 1024: "2rem" }}
+              >
+                <Masonry>
+                  {activeProject.images.map((item, idx) => (
+                    <motion.div
+                      key={idx}
+                      variants={childVariants}
+                      className="relative rounded-2xl shadow-2xl group cursor-pointer overflow-hidden"
+                      onClick={() =>
+                        openLightbox(
+                          activeProject.images.map((i) => i.src),
+                          idx,
+                        )
+                      }
+                    >
+                      <img
+                        src={item.src}
+                        alt={`${t(activeProject.title)} ${idx + 1}`}
+                        className="w-full h-auto rounded-2xl"
+                      />
+                      {idx === 0 && (
+                        <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                          {t(activeProject.title)}
+                        </span>
+                      )}
+                      <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
+                        <div className="translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                          <IoSearchCircle className="w-10 h-10 text-white" />
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </Masonry>
+              </ResponsiveMasonry>
+            </motion.div>
           )
         )}
       </AnimatePresence>
