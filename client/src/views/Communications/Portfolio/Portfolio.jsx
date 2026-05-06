@@ -139,7 +139,7 @@ function Portfolio() {
               className="col-span-full mb-5"
             >
               <ResponsiveMasonry
-                columnsCountBreakPoints={{ 640: 2, 1024: 4 }}
+                columnsCountBreakPoints={{ 640: 2, 1024: 5 }}
                 gutterBreakPoints={{ 0: "0.75rem", 640: "1rem", 1024: "2rem" }}
               >
                 <Masonry>
