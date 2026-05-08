@@ -178,10 +178,10 @@ function Portfolio() {
       {/* Lightbox */}
       {lightbox.index !== null && (
         <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden overscroll-none bg-black/80 p-4 touch-none md:p-6"
           onClick={closeLightbox}
         >
-          <div className="relative">
+          <div className="relative flex max-w-[90vw] flex-col items-center gap-4 md:max-w-none">
             {/* Prev */}
             <button
               className="hidden md:block absolute -left-12 bottom-1/2 text-white hover:text-primary-yellow transition-colors z-10"
@@ -211,6 +211,30 @@ function Portfolio() {
             >
               <IoChevronForward className="w-10 h-10" />
             </button>
+
+            <div
+              className="flex items-center justify-center gap-6 md:hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:text-primary-yellow"
+                onClick={prevImage}
+                aria-label="Anterior"
+              >
+                <IoChevronBack className="h-8 w-8" />
+              </button>
+              <button
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:text-primary-yellow"
+                onClick={nextImage}
+                aria-label="Siguiente"
+              >
+                <IoChevronForward className="h-8 w-8" />
+              </button>
+            </div>
+
+            <span className="text-white text-sm bg-black/50 px-3 py-1 rounded-full md:hidden">
+              {lightbox.index + 1} / {lightbox.images.length}
+            </span>
           </div>
 
           {/* Close */}
@@ -223,7 +247,7 @@ function Portfolio() {
           </button>
 
           {/* Counter */}
-          <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
+          <span className="absolute bottom-4 left-1/2 hidden -translate-x-1/2 rounded-full bg-black/50 px-3 py-1 text-sm text-white md:block">
             {lightbox.index + 1} / {lightbox.images.length}
           </span>
         </div>
