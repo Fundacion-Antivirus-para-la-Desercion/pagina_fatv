@@ -96,8 +96,8 @@ function Portfolio() {
             initial="hidden"
             whileInView="visible"
             exit="exit"
-            viewport={{ once: true, amount: 0.5 }}
-            className="col-span-full grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
+            viewport={{ once: true, amount: 0.1 }}
+            className="col-span-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 auto-rows-[250px] md:auto-rows-[250px] gap-5 mb-5"
           >
               {data
                 .filter((item) => item.image)
@@ -115,7 +115,7 @@ function Portfolio() {
                     alt={t(item.title)}
                     className="w-full h-full object-cover rounded-2xl"
                   />
-                  <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                  <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/60 rounded-3xl px-4 py-2 whitespace-nowrap">
                     {t(item.title)}
                   </span>
                   <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
@@ -135,7 +135,7 @@ function Portfolio() {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="col-span-full grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
+              className="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[300px] md:auto-rows-[250px] gap-5 mb-5"
             >
               {activeProject.images.map((item, idx) => (
                 <motion.div
@@ -159,7 +159,7 @@ function Portfolio() {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                   {idx === 0 && (
-                    <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                    <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/60 rounded-3xl px-4 py-2 whitespace-nowrap">
                       {t(activeProject.title)}
                     </span>
                   )}
