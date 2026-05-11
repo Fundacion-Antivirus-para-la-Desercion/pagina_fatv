@@ -11,6 +11,9 @@ function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightbox, setLightbox] = useState({ images: [], index: null });
 
+  const getMobileCardHeight = (rowSpan) =>
+    rowSpan === 2 ? "min-h-[420px] md:min-h-0" : "min-h-[250px] md:min-h-0";
+
   const cardVariants = {
     hidden: {},
     visible: {
@@ -97,17 +100,17 @@ function Portfolio() {
             whileInView="visible"
             exit="exit"
             viewport={{ once: true, amount: 0.1 }}
-            className="col-span-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 auto-rows-[250px] md:auto-rows-[250px] gap-5 mb-5"
+            className="col-span-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-auto md:auto-rows-[250px] gap-5 mb-5"
           >
-              {data
-                .filter((item) => item.image)
-                .map((item) => (
+            {data
+              .filter((item) => item.image)
+              .map((item) => (
                 <motion.div
                   variants={childVariants}
                   key={item.id}
                   className={`relative overflow-hidden rounded-2xl shadow-2xl group cursor-pointer ${
                     item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
-                  } ${item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"}`}
+                  } ${item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"} ${getMobileCardHeight(item.rowSpan)}`}
                   onClick={() => setActiveIndex(item.id)}
                 >
                   <img
@@ -135,17 +138,17 @@ function Portfolio() {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[300px] md:auto-rows-[250px] gap-5 mb-5"
+                className="col-span-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-auto md:auto-rows-[250px] gap-5 mb-5"
             >
               {activeProject.images.map((item, idx) => (
                 <motion.div
                   key={idx}
                   variants={childVariants}
                   className={`relative rounded-2xl group cursor-pointer overflow-hidden shadow-2xl ${
-                    item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
-                  } ${
+                    idx > 0 ? "hidden md:block" : "block"
+                  } ${item.colSpan === 2 ? "md:col-span-2" : "col-span-1"} ${
                     item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"
-                  }`}
+                  } ${getMobileCardHeight(item.rowSpan)}`}
                   onClick={() =>
                     openLightbox(
                       activeProject.images.map((i) => i.src),
@@ -174,8 +177,6 @@ function Portfolio() {
           )
         )}
       </AnimatePresence>
-
-      {/* Lightbox */}
       {lightbox.index !== null && (
         <div
           className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden overscroll-none bg-black/80 p-4 touch-none md:p-6"
