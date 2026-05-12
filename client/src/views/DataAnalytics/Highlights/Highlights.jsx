@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { FiDatabase } from "react-icons/fi";
-import { GoTable } from "react-icons/go";
+import { AiOutlineLaptop } from "react-icons/ai";
+import { MdQueryStats } from "react-icons/md";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import { FaChartLine } from "react-icons/fa6";
+import { GoTable } from "react-icons/go";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { highlightCards } from "./data.js";
 
 const iconMap = {
-  database: <FiDatabase />,
-  chart: <FaChartLine />,
+  database: <AiOutlineLaptop />,
+  chart: <MdQueryStats />,
   check: <IoCheckmarkCircleOutline />,
   grid: <GoTable />,
 };
@@ -33,11 +33,15 @@ function Highlights() {
   const { t } = useTranslation();
 
   return (
-    <section id="highlights" className="relative overflow-hidden bg-dark-blue py-16 md:py-24">
+    <section
+      id="highlights"
+      className="relative overflow-hidden bg-dark-blue py-16 md:py-24"
+    >
       <div
         className="absolute inset-0 opacity-30"
         style={{
-          backgroundImage: "radial-gradient(circle at center, rgba(255, 196, 61, 0.25) 1.2px, transparent 1.2px)",
+          backgroundImage:
+            "radial-gradient(circle at center, rgba(255, 196, 61, 0.25) 1.2px, transparent 1.2px)",
           backgroundSize: "38px 38px",
         }}
       />
@@ -45,9 +49,7 @@ function Highlights() {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
-        <div
-          className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start"
-        >
+        <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
           <div>
             <span className="inline-flex items-center  font-impact rounded-full border border-primary-yellow/20 bg-primary-yellow/10 px-5 py-2 text-sm md:text-base text-primary-yellow">
               ✦ {t("dataAnalytics.highlights.badge")}
@@ -72,25 +74,35 @@ function Highlights() {
           {highlightCards.map((card, index) => (
             <motion.div
               key={card.id}
-              {...expandableTransition({ transition: { delay: 0.3 + index * 0.12 } })}
+              {...expandableTransition({
+                transition: { delay: 0.3 + index * 0.12 },
+              })}
             >
               <div className="relative rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-sm">
                 <div className="flex items-start justify-between gap-4">
-                  <div className={`flex h-16 w-16 items-center justify-center rounded-3xl text-3xl ${variantStyles[card.variant].iconBox}`}>
+                  <div
+                    className={`flex h-16 w-16 items-center justify-center rounded-3xl text-3xl ${variantStyles[card.variant].iconBox}`}
+                  >
                     {iconMap[card.icon]}
                   </div>
 
                   <div className="text-right leading-none">
-                    <p className={`font-impact text-2xl md:text-3xl ${variantStyles[card.variant].metric}`}>
+                    <p
+                      className={`font-impact text-2xl md:text-3xl ${variantStyles[card.variant].metric}`}
+                    >
                       {t(card.metricKey)}
                     </p>
-                    <p className={`mt-2 text-xs md:text-sm font-semibold uppercase tracking-[0.18em] ${variantStyles[card.variant].metricLabel}`}>
+                    <p
+                      className={`mt-2 text-xs md:text-sm font-semibold uppercase tracking-[0.18em] ${variantStyles[card.variant].metricLabel}`}
+                    >
                       {t(card.metricLabelKey)}
                     </p>
                   </div>
                 </div>
 
-                <span className={`mt-6 inline-flex rounded-lg px-3 py-1.5 text-xs font-bold uppercase tracking-[0.24em] ${variantStyles[card.variant].badge}`}>
+                <span
+                  className={`mt-6 inline-flex rounded-lg px-3 py-1.5 text-xs md:text-base font-bold uppercase tracking-[0.24em] ${variantStyles[card.variant].badge}`}
+                >
                   {t(card.codeKey)}
                 </span>
 

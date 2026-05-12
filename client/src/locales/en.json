@@ -199,32 +199,32 @@
       "description": "Products and systems that generate real impact on student retention.",
       "cards": {
         "sebu": {
-          "code": "SEBU",
-          "metric": "9+",
+          "code": "ATVConnect",
+          "metric": "6+",
           "metricLabel": "Universities",
-          "title": "University Well-Being Evaluation System",
-          "description": "A platform implemented for student retention in more than 9 universities, making it possible to evaluate and monitor students' overall well-being."
+          "title": "Academic Tutoring Platform",
+          "description": "A platform connecting students with personalized tutoring to boost success and provide continuous support through their education."
         },
-        "lda": {
+        "two": {
           "code": "LDA",
-          "metric": "50+",
-          "metricLabel": "Dashboards",
+          "metric": "200+",
+          "metricLabel": "Records",
           "title": "Academic Performance Lab",
-          "description": "A tool for identifying critical subjects and degree paths for students, generating early alerts and intervention strategies."
+          "description": "Smart tool using Python and AI to identify critical subjects, providing early alerts and intervention strategies for student success."
         },
-        "isi": {
+        "three": {
           "code": "ISI",
           "metric": "100%",
           "metricLabel": "Data-driven",
-          "title": "Tracking and Impact Indicators",
-          "description": "Incorporation of tracking, results, and impact indicators into processes for evidence-based management."
+          "title": "Impact & Tracking Indicators",
+          "description": "Smart tracking and impact indicators integrated into every process to ensure results through evidence-based management."
         },
-        "rtd": {
+        "four": {
           "code": "RTD",
-          "metric": "∞",
-          "metricLabel": "Decisions",
-          "title": "Reports and Decision Dashboards",
-          "description": "Stronger decision-making through clear reports and tracking dashboards for the Foundation's teams."
+          "metric": "90+",
+          "metricLabel": "Dashboards",
+          "title": "Reports & Decision Dashboards",
+          "description": "Empowering decision-making with clear reports and tracking dashboards designed for the Foundation's teams."
         }
       }
     },

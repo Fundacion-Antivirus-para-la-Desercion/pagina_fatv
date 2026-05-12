@@ -199,31 +199,31 @@
       "titleHighlight": "MEMORABLES",
       "description": "Productos y sistemas que generan impacto real en la permanencia estudiantil.",
       "cards": {
-        "sebu": {
-          "code": "SEBU",
-          "metric": "9+",
+        "one": {
+          "code": "ATVConecta",
+          "metric": "6+",
           "metricLabel": "Universidades",
-          "title": "Sistema de Evaluación de Bienestar Universitario",
-          "description": "Plataforma implementada para la permanencia en más de 9 universidades, permitiendo evaluar y monitorear el bienestar integral de los estudiantes."
+          "title": "Plataforma de Tutorías Académicas",
+          "description": "Plataforma que conecta estudiantes con tutorías académicas personalizadas, promoviendo la permanencia y el éxito educativo a través del acompañamiento continuo."
         },
-        "lda": {
+        "two": {
           "code": "LDA",
-          "metric": "50+",
-          "metricLabel": "Tableros",
+          "metric": "200+",
+          "metricLabel": "Registros",
           "title": "Laboratorio de Desempeño Académico",
-          "description": "Herramienta de identificación de materias y carreras críticas para los estudiantes, generando alertas tempranas y estrategias de intervención."
+          "description": "Herramienta de identificación de materias y carreras críticas para los estudiantes, utilizando Python e inteligencia artificial para generar alertas tempranas y estrategias de intervención."
         },
-        "isi": {
+        "three": {
           "code": "ISI",
           "metric": "100%",
           "metricLabel": "Basado en datos",
           "title": "Indicadores de Seguimiento e Impacto",
           "description": "Incorporación de indicadores de seguimiento, resultados e impacto en los procesos para una gestión basada en evidencia."
         },
-        "rtd": {
+        "four": {
           "code": "RTD",
-          "metric": "∞",
-          "metricLabel": "Decisiones",
+          "metric": "90+",
+          "metricLabel": "Tableros",
           "title": "Reportes y Tableros de Decisión",
           "description": "Fortalecimiento de la toma de decisiones mediante reportes claros y tableros de seguimiento para los equipos de la Fundación."
         }

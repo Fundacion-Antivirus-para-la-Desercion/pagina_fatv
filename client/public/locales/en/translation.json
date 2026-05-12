@@ -199,11 +199,32 @@
       "description": "Products and systems that generate real impact on student retention.",
       "cards": {
         "sebu": {
-          "code": "SEBU",
-          "metric": "9+",
+          "code": "ATVConnect",
+          "metric": "6+",
           "metricLabel": "Universities",
-          "title": "University Well-Being Evaluation System",
-          "description": "A platform implemented for student retention in more than 9 universities, making it possible to evaluate and monitor students' overall well-being."
+          "title": "Academic Tutoring Platform",
+          "description": "A platform connecting students with personalized tutoring to boost success and provide continuous support through their education."
+        },
+        "two": {
+          "code": "LDA",
+          "metric": "200+",
+          "metricLabel": "Records",
+          "title": "Academic Performance Lab",
+          "description": "Smart tool using Python and AI to identify critical subjects, providing early alerts and intervention strategies for student success."
+        },
+        "three": {
+          "code": "ISI",
+          "metric": "100%",
+          "metricLabel": "Data-driven",
+          "title": "Impact & Tracking Indicators",
+          "description": "Smart tracking and impact indicators integrated into every process to ensure results through evidence-based management."
+        },
+        "four": {
+          "code": "RTD",
+          "metric": "90+",
+          "metricLabel": "Dashboards",
+          "title": "Reports & Decision Dashboards",
+          "description": "Empowering decision-making with clear reports and tracking dashboards designed for the Foundation's teams."
         },
         "lda": {
           "code": "LDA",
