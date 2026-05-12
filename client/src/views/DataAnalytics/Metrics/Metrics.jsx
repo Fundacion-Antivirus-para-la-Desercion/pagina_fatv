@@ -1,41 +1,41 @@
-import { FiDatabase } from "react-icons/fi";
-import { RiBarChartGroupedLine } from "react-icons/ri";
-import { FiGlobe } from "react-icons/fi";
-import { IoCodeSlash } from "react-icons/io5";
+import { LuHistory } from "react-icons/lu";
+import { HiOutlinePresentationChartBar } from "react-icons/hi";
+import { BsDatabaseCheck } from "react-icons/bs";
+import { FaRegStar } from "react-icons/fa";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
-import { t } from "i18next";
 
 function Metrics() {
+  const { t } = useTranslation();
   const techMetrics = [
     {
       id: "01",
-      icon: <FiDatabase />,
-      value: "9",
+      icon: <LuHistory />,
+      value: "3",
       sign: "+",
       title: t("dataAnalytics.metrics.one"),
     },
     {
       id: "02",
-      icon: <RiBarChartGroupedLine />,
-      value: "50",
+      icon: <HiOutlinePresentationChartBar />,
+      value: "90",
       sign: "+",
       title: t("dataAnalytics.metrics.two"),
     },
     {
       id: "03",
-      icon: <FiGlobe />,
-      value: "3",
+      icon: <BsDatabaseCheck />,
+      value: "500",
       sign: "+",
       title: t("dataAnalytics.metrics.three"),
     },
     {
       id: "04",
-      icon: <IoCodeSlash />,
-      value: "10",
-      sign: "k",
+      icon: <FaRegStar />,
+      value: "49",
+      sign: "/5.0",
       title: t("dataAnalytics.metrics.four"),
     },
   ];
@@ -49,7 +49,7 @@ function Metrics() {
     },
     yellow: {
       text: "text-dark-blue",
-      iconColor: "",
+      iconColor: "text-dark-blue",
       numberColor: "text-dark-blue",
       underline: "after:bg-dark-blue",
     },
@@ -65,7 +65,7 @@ function Metrics() {
           return (
             <motion.div
               {...expandableTransition({
-                transition: { delay: index * 0.2 }
+                transition: { delay: index * 0.2 },
               })}
               key={index}
               className={`flex flex-col items-center text-center p-5 m-2 bg-white rounded-2xl border-[1px] border-brand-blue-50 shadow-md transform hover:scale-105 transition-all duration-500`}
