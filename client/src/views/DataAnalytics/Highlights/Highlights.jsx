@@ -31,7 +31,7 @@ const variantStyles = {
 
 function Highlights() {
   const { t } = useTranslation();
-
+  const whatsAppNumber = "573173831481";
   return (
     <section
       id="highlights"
@@ -116,6 +116,16 @@ function Highlights() {
               </div>
             </motion.div>
           ))}
+        </div>
+        <div className="flex flex-wrap mt-10 gap-4 justify-center">
+          <a
+            className="px-4 py-2 bg-white text-blue-base border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
+            href={`https://wa.me/${whatsAppNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("dataAnalytics.highlights.viewMoreBtn")}
+          </a>
         </div>
       </div>
     </section>

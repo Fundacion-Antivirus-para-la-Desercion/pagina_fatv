@@ -247,7 +247,8 @@
           "title": "Reports and Decision Dashboards",
           "description": "Stronger decision-making through clear reports and tracking dashboards for the Foundation's teams."
         }
-      }
+      },
+      "viewMoreBtn": "Learn more"
     },
     "team": {
       "title": "OUR TEAM",

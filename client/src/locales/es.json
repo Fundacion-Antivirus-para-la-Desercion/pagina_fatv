@@ -227,7 +227,8 @@
           "title": "Reportes y Tableros de Decisión",
           "description": "Fortalecimiento de la toma de decisiones mediante reportes claros y tableros de seguimiento para los equipos de la Fundación."
         }
-      }
+      },
+      "viewMoreBtn": "Quiero saber más"
     },
     "team": {
       "title": "NUESTRO EQUIPO",
