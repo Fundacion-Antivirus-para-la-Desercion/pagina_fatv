@@ -4,6 +4,7 @@ import UNAL from "../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg"
 import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
 import SantiagoQ from "../../../public/img_OurTeam/santiago-quintero.webp";
 import MayerlinG from "../../../public/img_OurTeam/mayerlin-giraldo.webp";
+import EstefaniaG from "../../../public/img_OurTeam/estefania-gomez.webp";
 import DaliaB from "../../../public/img_OurTeam/dalia-bedoya.webp";
 import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
 
@@ -47,7 +48,7 @@ const projectsData = [
         description:"communications.team.members.member_two.description",
       },
       {
-        photo: MayerlinG,
+        photo: EstefaniaG,
         alt: "communications.team.members.member_three.alt",
         name: "Estefanía Gómez",
         areaLeader:

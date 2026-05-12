@@ -1,6 +1,6 @@
 import { VscDeviceCameraVideo } from "react-icons/vsc";
-import { MdOutlinePhotoCamera } from "react-icons/md";
-import { PiShareNetworkBold } from "react-icons/pi";
+import { BiSolidUserPin } from "react-icons/bi";
+import { MdCampaign } from "react-icons/md";
 import { LuPalette } from "react-icons/lu";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
@@ -8,28 +8,28 @@ import { useTranslation } from "react-i18next";
 const metricsData = [
   {
     icon: VscDeviceCameraVideo,
-    count: 300,
+    count: 550,
     suffix: "+",
     translationKey: "communications.metrics.one",
     variant: "dark",
   },
   {
-    icon: MdOutlinePhotoCamera,
-    count: 1500,
+    icon: MdCampaign,
+    count: 80,
     suffix: "+",
     translationKey: "communications.metrics.two",
     variant: "yellow",
   },
   {
-    icon: PiShareNetworkBold,
-    count: 15,
-    suffix: "k+",
+    icon: BiSolidUserPin,
+    count: 8200 ,
+    suffix: "+",
     translationKey: "communications.metrics.three",
     variant: "dark",
   },
   {
     icon: LuPalette,
-    count: 200,
+    count: 1400,
     suffix: "+",
     translationKey: "communications.metrics.four",
     variant: "yellow",
