@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import data from "./data.js";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdEye } from "react-icons/io";
-import { IoSearchCircle } from "react-icons/io5";
+import { IoSearchCircle, IoCloseCircle } from "react-icons/io5";
+import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
 function Portfolio() {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null); // State for modal image
+  const [lightbox, setLightbox] = useState({ images: [], index: null });
+
+  const getMobileCardHeight = (rowSpan) =>
+    rowSpan === 2 ? "min-h-[420px] md:min-h-0" : "min-h-[250px] md:min-h-0";
 
   const cardVariants = {
     hidden: {},
@@ -37,8 +41,32 @@ function Portfolio() {
 
   const activeProject = data[activeIndex];
 
+  const openLightbox = (images, index) => setLightbox({ images, index });
+  const closeLightbox = () => setLightbox({ images: [], index: null });
+  const prevImage = () =>
+    setLightbox((lb) => ({
+      ...lb,
+      index: (lb.index - 1 + lb.images.length) % lb.images.length,
+    }));
+  const nextImage = () =>
+    setLightbox((lb) => ({ ...lb, index: (lb.index + 1) % lb.images.length }));
+
+  useEffect(() => {
+    if (lightbox.index === null) return;
+    const handleKey = (e) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "ArrowRight") nextImage();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [lightbox.index]);
+
   return (
-    <section id="portfolio" className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-[4fr_6fr] auto-rows-mins gap-5 md:gap-10 items-start">
+    <section
+      id="portfolio"
+      className="p-5 md:p-10 lg:p-14 grid grid-cols-1 md:grid-cols-[4fr_6fr] auto-rows-mins gap-5 md:gap-10 items-start"
+    >
       <div className="text-center md:text-left">
         <span className="text-xl text-primary-yellow font-impact">
           {t("communications.portfolio.span")}
@@ -71,8 +99,8 @@ function Portfolio() {
             initial="hidden"
             whileInView="visible"
             exit="exit"
-            viewport={{ once: true, amount: 0.5 }}
-            className="col-span-full grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-5 mb-5"
+            viewport={{ once: true, amount: 0.1 }}
+            className="col-span-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-auto md:auto-rows-[250px] gap-5 mb-5"
           >
             {data
               .filter((item) => item.image)
@@ -82,7 +110,7 @@ function Portfolio() {
                   key={item.id}
                   className={`relative overflow-hidden rounded-2xl shadow-2xl group cursor-pointer ${
                     item.colSpan === 2 ? "md:col-span-2" : "col-span-1"
-                  } ${item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"}`}
+                  } ${item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"} ${getMobileCardHeight(item.rowSpan)}`}
                   onClick={() => setActiveIndex(item.id)}
                 >
                   <img
@@ -90,10 +118,9 @@ function Portfolio() {
                     alt={t(item.title)}
                     className="w-full h-full object-cover rounded-2xl"
                   />
-                  <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
+                  <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/60 rounded-3xl px-4 py-2 whitespace-nowrap">
                     {t(item.title)}
                   </span>
-
                   <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
                     <div className="translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
                       <IoMdEye className="w-10 h-10 text-white" />
@@ -103,49 +130,127 @@ function Portfolio() {
               ))}
           </motion.section>
         ) : (
-          activeProject.image && (
-            <motion.div
+          activeProject.images?.length > 0 && (
+            <motion.section
+              id="portfolio-details"
               key={activeIndex}
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.5 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex items-center justify-center mt-2 md:mt-10 mb-5"
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+                className="col-span-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-auto md:auto-rows-[250px] gap-5 mb-5"
             >
-              <div
-                className="relative inline-block group cursor-pointer"
-                onClick={() => setSelectedImage(activeProject.image)}
-              >
-                <img
-                  src={activeProject.image}
-                  alt={t(activeProject.title)}
-                  className="max-w-full h-auto rounded-2xl shadow-2xl object-contain"
-                />
-                <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/70 rounded-3xl px-4 py-2 whitespace-nowrap">
-                  {t(activeProject.title)}
-                </span>
-                <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
-                  <div className="translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-                    <IoSearchCircle className="w-10 h-10 text-white" />
+              {activeProject.images.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={childVariants}
+                  className={`relative rounded-2xl group cursor-pointer overflow-hidden shadow-2xl ${
+                    idx > 0 ? "hidden md:block" : "block"
+                  } ${item.colSpan === 2 ? "md:col-span-2" : "col-span-1"} ${
+                    item.rowSpan === 2 ? "md:row-span-2" : "row-span-1"
+                  } ${getMobileCardHeight(item.rowSpan)}`}
+                  onClick={() =>
+                    openLightbox(
+                      activeProject.images.map((i) => i.src),
+                      idx,
+                    )
+                  }
+                >
+                  <img
+                    src={item.src}
+                    alt={`${t(activeProject.title)} ${idx + 1}`}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                  {idx === 0 && (
+                    <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/60 rounded-3xl px-4 py-2 whitespace-nowrap">
+                      {t(activeProject.title)}
+                    </span>
+                  )}
+                  <div className="absolute inset-0 bg-dark-blue bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
+                    <div className="translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                      <IoSearchCircle className="w-10 h-10 text-white" />
+                    </div>
                   </div>
-                </div>
-              </div>
-            </motion.div>
+                </motion.div>
+              ))}
+            </motion.section>
           )
         )}
       </AnimatePresence>
-
-      {/* Modal for enlarged image */}
-      {selectedImage && (
+      {lightbox.index !== null && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-65 flex items-center justify-center z-50"
-          onClick={() => setSelectedImage(null)} // Close modal on click
+          className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden overscroll-none bg-black/80 p-4 touch-none md:p-6"
+          onClick={closeLightbox}
         >
-          <img
-            src={selectedImage}
-            alt="Enlarged"
-            className="max-w-full max-h-full object-contain rounded-lg"
-          />
+          <div className="relative flex max-w-[90vw] flex-col items-center gap-4 md:max-w-none">
+            {/* Prev */}
+            <button
+              className="hidden md:block absolute -left-12 bottom-1/2 text-white hover:text-primary-yellow transition-colors z-10"
+              onClick={(e) => {
+                e.stopPropagation();
+                prevImage();
+              }}
+              aria-label="Anterior"
+            >
+              <IoChevronBack className="w-10 h-10" />
+            </button>
+            {/* Image */}
+            <img
+              src={lightbox.images[lightbox.index]}
+              alt={`Imagen ${lightbox.index + 1}`}
+              className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+            {/* Next */}
+            <button
+              className="hidden md:block absolute -right-12 bottom-1/2 text-white hover:text-primary-yellow transition-colors z-10"
+              onClick={(e) => {
+                e.stopPropagation();
+                nextImage();
+              }}
+              aria-label="Siguiente"
+            >
+              <IoChevronForward className="w-10 h-10" />
+            </button>
+
+            <div
+              className="flex items-center justify-center gap-6 md:hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:text-primary-yellow"
+                onClick={prevImage}
+                aria-label="Anterior"
+              >
+                <IoChevronBack className="h-8 w-8" />
+              </button>
+              <button
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:text-primary-yellow"
+                onClick={nextImage}
+                aria-label="Siguiente"
+              >
+                <IoChevronForward className="h-8 w-8" />
+              </button>
+            </div>
+
+            <span className="text-white text-sm bg-black/50 px-3 py-1 rounded-full md:hidden">
+              {lightbox.index + 1} / {lightbox.images.length}
+            </span>
+          </div>
+
+          {/* Close */}
+          <button
+            className="absolute top-4 right-4 text-white hover:text-primary-yellow transition-colors z-10"
+            onClick={closeLightbox}
+            aria-label="Cerrar"
+          >
+            <IoCloseCircle className="w-10 h-10" />
+          </button>
+
+          {/* Counter */}
+          <span className="absolute bottom-4 left-1/2 hidden -translate-x-1/2 rounded-full bg-black/50 px-3 py-1 text-sm text-white md:block">
+            {lightbox.index + 1} / {lightbox.images.length}
+          </span>
         </div>
       )}
     </section>
