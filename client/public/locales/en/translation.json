@@ -153,11 +153,11 @@
       "span": "OBJECTIVE",
       "paragraph": "Enhancing internal processes and decision-making for the foundation using <orange>data analytics</orange>, <teal>Power BI visualization</teal>, and <teal>custom web platforms.</teal>"
     },
-    "mestrics": {
-      "one": "Universities with SEBU",
-      "two": "Power BI Dashboards",
-      "three": "Active web platforms",
-      "four": "Analyzed records"
+    "metrics": {
+      "one": "Years of experience in social analytics and tech",
+      "two": "Data dashboards",
+      "three": "Data with a purpose",
+      "four": "Platform satisfaction"
     },
     "mission": {
       "badge": "Our mission",
@@ -262,11 +262,11 @@
       "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
       "alt_image": "Data analytics chart"
     },
-    "metrics": {
-      "one": "Universities with SEBU",
-      "two": "Power BI Dashboards",
-      "three": "Active web platforms",
-      "four": "Analyzed records"
+    "mestrics": {
+      "one": "Years of experience in social analytics and tech",
+      "two": "Data dashboards",
+      "three": "Data with a purpose",
+      "four": "Platform satisfaction"
     }
   },
   "communications": {
