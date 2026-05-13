@@ -80,7 +80,7 @@ function Metrics() {
           })}
           className="will-change-transform"
         >
-          <RiMedal2Fill className="absolute hidden md:block top-0 left-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
+          <RiMedal2Fill className="absolute hidden lg:block top-0 left-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
         </motion.div>
         <motion.div
           {...slideFromTop({
@@ -89,7 +89,7 @@ function Metrics() {
           })}
           className="will-change-transform"
         >
-          <RiMedal2Fill className="absolute hidden md:block top-0 right-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
+          <RiMedal2Fill className="absolute hidden lg:block top-0 right-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
         </motion.div>
 
         <div className="flex flex-col text-center mt-10">
@@ -122,7 +122,7 @@ function Metrics() {
                 <figure className="text-3xl md:text-4xl text-center md:text-left text-dark-blue mt-2">
                   {metric.value}
                 </figure>
-                <span className="text-primary-yellow text-3xl md:text-4xl ml-1">
+                <span className="text-dark-blue text-3xl md:text-4xl ml-1">
                   {" "}
                   {metric.sign}
                 </span>
