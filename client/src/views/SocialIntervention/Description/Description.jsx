@@ -1,5 +1,4 @@
-import Estudiante from "../../../assets/images/views/socialIntervention/estudiante-en-acompanamiento.webp";
-
+import Talleres from "../../../assets/images/views/socialIntervention/talleres-instituciones .webp";
 import { TiHeart } from "react-icons/ti";
 import { RiFocus2Line } from "react-icons/ri";
 import { PiHeartStraight } from "react-icons/pi";
@@ -58,7 +57,7 @@ function Description() {
               <div className="relative w-fit">
                 <img
                   className="h-full max-h-[500px] md:max-h-[700px] mb-16 md:mb-0 border-[4px] border-solid border-white rounded-3xl shadow-2xl"
-                  src={Estudiante}
+                  src={Talleres}
                   alt=""
                 />
 
@@ -79,7 +78,7 @@ function Description() {
                     </div>
                     <div className="flex flex-col text-center">
                       <span className="text-md md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
-                        +500
+                        +7000
                       </span>
                       <h4 className="text-dark-blue font-semibold text-xs">
                         {t("socialIntervention.figure")}
