@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 
 const CounterNumeric = ({ countNumber = 0 }) => {
-  // Convertimos a número por si llega como string
+  // Convert to number in case it arrives as a string
   const targetNumber = parseFloat(countNumber);
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef();
 
-  const tieneDecimales = targetNumber % 1 !== 0;
+  const hasDecimals = targetNumber % 1 !== 0;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,9 +44,9 @@ const CounterNumeric = ({ countNumber = 0 }) => {
   return (
     <span ref={ref}>
       {count.toLocaleString("en-US", {
-        // Usamos en-US para asegurar el punto decimal
-        minimumFractionDigits: tieneDecimales ? 1 : 0,
-        maximumFractionDigits: tieneDecimales ? 1 : 0,
+        // Use en-US to ensure the decimal point
+        minimumFractionDigits: hasDecimals ? 1 : 0,
+        maximumFractionDigits: hasDecimals ? 1 : 0,
       })}
     </span>
   );
