@@ -17,14 +17,13 @@ import SocialMediaThree from "../../../assets/images/views/communications/portfo
 import SocialMediaFour from "../../../assets/images/views/communications/portfolio/socialMedia/dia-de-la-mujer-ingeniera.webp";
 import SocialMediaFive from "../../../assets/images/views/communications/portfolio/socialMedia/atv-conecta-unico.webp";
 
-import Cobranding from "../../../assets/images/views/communications/portfolio/cobranding/alianza-facultad-de-minas.webp";
 import CobrandingTwo from "../../../assets/images/views/communications/portfolio/cobranding/pieza-fundacion-felisa-johnson.webp";
 import CobrandingThree from "../../../assets/images/views/communications/portfolio/cobranding/invitacion-taller-udea.webp";
 import CobrandingFour from "../../../assets/images/views/communications/portfolio/cobranding/pieza-unete-red-tutores.webp";
 import CobrandingFive from "../../../assets/images/views/communications/portfolio/cobranding/ppt-fraternidad-medellin.webp";
 import CobrandingSix from "../../../assets/images/views/communications/portfolio/cobranding/invitacion-taller-cesi.webp";
 
-import Infographic from "../../../assets/images/views/communications/portfolio/infografia.webp";
+import Infographic from "../../../assets/images/views/communications/portfolio/infographics/infografia.webp";
 import InfographicTwo from "../../../assets/images/views/communications/portfolio/infographics/infografia-atv-conecta.webp";
 import InfographicThree from "../../../assets/images/views/communications/portfolio/infographics/equilibrio-mente-estudio.webp";
 import InfographicFour from "../../../assets/images/views/communications/portfolio/infographics/manejo-de-emociones-convocatoria-tutores.webp";
@@ -80,7 +79,7 @@ const portfolioData = [
   {
     id: 4,
     title: "communications.portfolio.opcions.five",
-    image: Cobranding,
+    image: CobrandingFive,
     colSpan: 1,
     rowSpan: 1,
     images: [
