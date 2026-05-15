@@ -1,46 +1,52 @@
 import { useState, useEffect, useRef } from "react";
 
 const CounterNumeric = ({ countNumber = 0 }) => {
+  // Convertimos a número por si llega como string
+  const targetNumber = parseFloat(countNumber);
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef();
 
+  const tieneDecimales = targetNumber % 1 !== 0;
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
     if (ref.current) observer.observe(ref.current);
-
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     if (!isVisible) return;
 
-    const duration = 800; // ms
-    const start = 0;
-    const increment = countNumber / (duration / 16); // ~60fps
+    const duration = 800;
+    const fps = 60;
+    const interval = 1000 / fps;
+    const totalFrames = duration / interval;
+    const increment = targetNumber / totalFrames;
 
-    let current = start;
+    let current = 0;
     const timer = setInterval(() => {
       current += increment;
-      if (current >= countNumber) {
+      if (current >= targetNumber) {
         clearInterval(timer);
-        current = countNumber;
+        setCount(targetNumber);
+      } else {
+        setCount(current);
       }
-      setCount(Math.floor(current));
-    }, 16);
+    }, interval);
 
     return () => clearInterval(timer);
-  }, [isVisible, countNumber]);
+  }, [isVisible, targetNumber]);
 
   return (
     <span ref={ref}>
-      {count.toLocaleString("es-CO", {
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0, 
-        style: "decimal",
+      {count.toLocaleString("en-US", {
+        // Usamos en-US para asegurar el punto decimal
+        minimumFractionDigits: tieneDecimales ? 1 : 0,
+        maximumFractionDigits: tieneDecimales ? 1 : 0,
       })}
     </span>
   );
