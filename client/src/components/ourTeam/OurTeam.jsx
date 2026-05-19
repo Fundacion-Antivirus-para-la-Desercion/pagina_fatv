@@ -99,15 +99,15 @@ function OurTeam() {
 
   return (
     <>
-      <div className="OurTeam-block">
-        <div className="absolute top-[-45px] mx-auto my-[10px] text-center">
-          <h3 className="text-5xl font-impact text-blue-base">
-            {t("ourTeam.title_part1")} <br />
+      <div className="relative flex justify-center  mt-36">
+        <div className="absolute flex top-[-45px] mx-auto my-[10px] text-center">
+          <h3 className="text-4xl md:text-6xl font-impact text-blue-base">
+            {t("ourTeam.title_part1")}
             {t("ourTeam.title_part2")}
           </h3>
         </div>
         <div className="w-full p-10 pb-20 bg-primary-yellow">
-          <div ref={containerRef} className="cards">
+          <div ref={containerRef} className="cards mx-auto mt-16 max-w-[1400px]">
             <Swiper
               breakpoints={{
                 320: {
@@ -146,17 +146,15 @@ function OurTeam() {
                   <img
                     src={card.image}
                     alt={card.name}
-                    className="h-[45vh] object-cover object-[50%_10%] w-full rounded-b-none rounded-3xl"
+                    className="h-[45vh] object-cover object-[50%_10%] w-full rounded-b-none "
                     style={{ backgroundColor: card.bagraundColor }}
                   />
-                  <div
-                    className="OurTeam-content bg-dark-blue rounded-r-3xl rounded-t-none"
-                  >
-                    <div className="OurTeam-content-info">
+                  <div className="flex items-center text-left bg-dark-blue rounded-br-[40px] rounded-t-none p-4 h-40">
+                    <div className="relative">
                       <h5 className="font-impact flex w-full uppercase text-white text-3xl leading-none mb-[10px] tracking-tight max-[480px]:text-[24px] max-[480px]:mb-[5px]">
                         {card.name}
                       </h5>
-                      <p className="content-info-role">{card.role}</p>
+                      <p className="text-white">{card.role}</p>
                     </div>
                   </div>
                 </SwiperSlide>
