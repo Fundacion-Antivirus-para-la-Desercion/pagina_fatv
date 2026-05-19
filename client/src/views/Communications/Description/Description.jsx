@@ -1,14 +1,78 @@
+import { useEffect, useState } from "react";
 import { HiSparkles } from "react-icons/hi2";
 import { BiRightArrow } from "react-icons/bi";
 import { MdArrowDownward } from "react-icons/md";
+import { IoCloseCircle } from "react-icons/io5";
 
 import { useTranslation } from "react-i18next";
 
 function Description() {
   const { t } = useTranslation();
+  const [isShowreelOpen, setIsShowreelOpen] = useState(false);
+  const showreelTitle = t("communications.description.ancla_one");
+
+  useEffect(() => {
+    if (!isShowreelOpen) return undefined;
+
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setIsShowreelOpen(false);
+      }
+    };
+
+    const { overflow } = document.body.style;
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.body.style.overflow = overflow;
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, [isShowreelOpen]);
 
   return (
     <section className="mx-auto mb-10">
+      {isShowreelOpen && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 px-4 py-6 backdrop-blur-sm"
+          onClick={() => setIsShowreelOpen(false)}
+          role="presentation"
+        >
+          <button
+            type="button"
+            onClick={() => setIsShowreelOpen(false)}
+            className="absolute right-4 top-4 z-10 text-white transition-colors duration-300 hover:text-primary-yellow"
+            aria-label={showreelTitle}
+          >
+            <IoCloseCircle className="h-10 w-10" />
+          </button>
+
+          <div
+            className="relative w-full max-w-4xl overflow-hidden rounded-xl bg-black shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="communications-showreel-title"
+          >
+            <h3 id="communications-showreel-title" className="sr-only">
+              {showreelTitle}
+            </h3>
+
+            <div className="aspect-video w-full">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/tBe6eG0tanE?autoplay=1&rel=0"
+                title={showreelTitle}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-5 md:p-10 lg:p-12 items-center">
         <div className="p-5 md:p-10 text-center md:text-left">
           <div className="flex items-center mb-2 md:mb-4 justify-center md:justify-start">
@@ -33,12 +97,15 @@ function Description() {
             <div className="group flex-1 sm:flex-none flex items-center justify-center sm:justify-start bg-primary-yellow rounded-3xl px-3 py-3 md:px-5 md:py-3 hover:bg-dark-blue transition-colors duration-300">
               <BiRightArrow className="text-dark-blue text-base sm:text-lg mr-1 transition-colors duration-300 group-hover:text-white" />
 
-              <a
+              <button
+                type="button"
                 className="text-sm sm:text-base md:text-lg lg:text-xl font-extrabold text-dark-blue transition-colors duration-300 group-hover:text-white whitespace-nowrap"
-                href=""
+                onClick={() => setIsShowreelOpen(true)}
+                aria-haspopup="dialog"
+                aria-expanded={isShowreelOpen}
               >
                 {t("communications.description.ancla_one")}
-              </a>
+              </button>
             </div>
 
             <div className="group flex-1 sm:flex-none flex items-center justify-center sm:justify-start">
