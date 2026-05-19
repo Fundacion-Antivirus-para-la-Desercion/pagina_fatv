@@ -22,42 +22,50 @@ function OurTeam() {
     {
       name: "Carlos vásquez restrepo",
       role: t("ourTeam.roles.president"),
-      image: "/img_OurTeam/CarlosVasquez.jpeg",
+      image: "/img_OurTeam/carlos-vasquez.webp",
+      bagraundColor: "#32526E",
     },
     {
       name: "astrid franco gonzalez",
       role: t("ourTeam.roles.social_intervention_coordinator"),
-      image: "/img_OurTeam/AstridFranco.webp",
+      image: "/img_OurTeam/astrid-franco-gonzalez.webp",
+      bagraundColor: "#D3C3E3",
     },
     {
       name: "luis fernando sánchez hurtado",
       role: t("ourTeam.roles.executive_director"),
-      image: "/img_OurTeam/LuisSanchez.webp",
+      image: "/img_OurTeam/luis-fernando-sanchez.webp",
+      bagraundColor: "#90C4F9",
     },
     {
       name: "karen gonzález alarcón",
       role: t("ourTeam.roles.technology_and_data_coordinator"),
-      image: "/img_OurTeam/KarenGonzales.jpg",
+      image: "/img_OurTeam/karen-gonzalez-alarcon.webp",
+      bagraundColor: "#81F0E7",
     },
     {
       name: "Víctor Manuel Valencia martínez",
       role: t("ourTeam.roles.deputy_director"),
-      image: "/img_OurTeam/VictorValencia.jpeg",
+      image: "/img_OurTeam/victor-valencia.webp",
+      bagraundColor: "#2C395B",
     },
     {
       name: "david santiago botero",
       role: t("ourTeam.roles.legal_area_coordinator"),
-      image: "/img_OurTeam/DavidBotero.webp",
+      image: "/img_OurTeam/david-botero.webp",
+      bagraundColor: "#90C4F9",
     },
     {
       name: "Manuela Correa Quintero",
       role: t("ourTeam.roles.communications_coordinator"),
-      image: "/img_OurTeam/ManuelaCorreaQuintero.webp",
+      image: "/img_OurTeam/manuela-correa.webp",
+      bagraundColor: "#765497",
     },
     {
       name: "luis fernando gonzález",
       role: t("ourTeam.roles.administrative_and_financial_coordinator"),
-      image: "/img_OurTeam/LuisGonzales.webp",
+      image: "/img_OurTeam/luis-gonzales.webp",
+      bagraundColor: "#0B8F84",
     },
   ];
 
@@ -92,13 +100,13 @@ function OurTeam() {
   return (
     <>
       <div className="OurTeam-block">
-        <div className="OurTeam-block-title">
+        <div className="absolute top-[-45px] mx-auto my-[10px] text-center">
           <h3 className="text-5xl font-impact text-blue-base">
             {t("ourTeam.title_part1")} <br />
             {t("ourTeam.title_part2")}
           </h3>
         </div>
-        <div className="OurTeam bg-primary-yellow">
+        <div className="w-full p-10 pb-20 bg-primary-yellow">
           <div ref={containerRef} className="cards">
             <Swiper
               breakpoints={{
@@ -138,11 +146,16 @@ function OurTeam() {
                   <img
                     src={card.image}
                     alt={card.name}
-                    className="h-[50vh] object-cover object-[50%_10%] w-full rounded-b-none rounded-3xl"
+                    className="h-[45vh] object-cover object-[50%_10%] w-full rounded-b-none rounded-3xl"
+                    style={{ backgroundColor: card.bagraundColor }}
                   />
-                  <div className="OurTeam-content bg-dark-blue rounded-r-3xl rounded-t-none">
+                  <div
+                    className="OurTeam-content bg-dark-blue rounded-r-3xl rounded-t-none"
+                  >
                     <div className="OurTeam-content-info">
-                      <h5 className="content-info-name font-impact">{card.name}</h5>
+                      <h5 className="font-impact flex w-full uppercase text-white text-3xl leading-none mb-[10px] tracking-tight max-[480px]:text-[24px] max-[480px]:mb-[5px]">
+                        {card.name}
+                      </h5>
                       <p className="content-info-role">{card.role}</p>
                     </div>
                   </div>

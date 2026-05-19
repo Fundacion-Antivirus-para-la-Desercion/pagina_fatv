@@ -8,25 +8,8 @@
   margin: 150px 0 0 0;
 }
 
-.OurTeam-block-title {
-  text-rendering: optimizeLegibility;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  line-height: 92%;
-  position: absolute;
-  margin: 10px auto;
-  top: -45px;
-}
-
-.OurTeam {
-  padding: 1rem;
-  padding-bottom: 100px;
-  width: 100%;
-}
-
 .cards {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -47,23 +30,6 @@
   align-items: flex-end;
 }
 
-.image img {
-  width: 314.66px;
-  height: 321.06px;
-  object-fit: cover;
-}
-
-.content-info-name {
-  text-rendering: optimizeLegibility;
-  width: 100%;
-  display: flex;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 34px;
-  line-height: 90.6666666667%;
-  margin-bottom: 10px;
-  letter-spacing: -0.03em;
-}
 
 .content-info-role {
   text-rendering: optimizeLegibility;
@@ -123,11 +89,6 @@
   .OurTeam-content {
     padding: 8px;
     height: 120px;
-  }
-
-  .content-info-name {
-    font-size: 24px;
-    margin-bottom: 5px;
   }
 
   .content-info-role {
