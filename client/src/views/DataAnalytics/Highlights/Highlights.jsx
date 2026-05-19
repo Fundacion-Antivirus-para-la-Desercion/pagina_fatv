@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { AiOutlineLaptop } from "react-icons/ai";
 import { MdQueryStats } from "react-icons/md";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
@@ -78,7 +79,7 @@ function Highlights() {
                 transition: { delay: 0.3 + index * 0.12 },
               })}
             >
-              <div className="relative rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-sm">
+              <div className="relative flex h-full flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 shadow-xl backdrop-blur-sm">
                 <div className="flex items-start justify-between gap-4">
                   <div
                     className={`flex h-16 w-16 items-center justify-center rounded-3xl text-3xl ${variantStyles[card.variant].iconBox}`}
@@ -106,13 +107,22 @@ function Highlights() {
                   {t(card.codeKey)}
                 </span>
 
-                <h3 className="mt-6 max-w-[26rem] font-impact text-base md:text-xl leading-tight text-white">
+                <h3 className="mt-6 max-w-[26rem] font-extrabold text-base md:text-xl text-white">
                   {t(card.titleKey)}
                 </h3>
 
-                <p className="mt-4 max-w-[38rem] text-base md:text-lg leading-relaxed text-white/65">
+                <p className="mt-4 max-w-[38rem] mb-2 text-base md:text-lg leading-relaxed text-white/65">
                   {t(card.descriptionKey)}
                 </p>
+
+                {card.id === "one" && (
+                  <Link
+                    to="/atvconnect"
+                    className="mt-auto inline-flex w-full justify-center rounded-3xl border border-primary-yellow/30 bg-primary-yellow px-10 py-3 font-bold text-dark-blue transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    {t("dataAnalytics.highlights.moreInfoBtn")}
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}

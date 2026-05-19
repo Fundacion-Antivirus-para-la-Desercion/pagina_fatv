@@ -78,7 +78,7 @@ function Description() {
                     </div>
                     <div className="flex flex-col text-center">
                       <span className="text-md md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
-                        +7000
+                        +5
                       </span>
                       <h4 className="text-dark-blue font-semibold text-xs">
                         {t("socialIntervention.figure")}
