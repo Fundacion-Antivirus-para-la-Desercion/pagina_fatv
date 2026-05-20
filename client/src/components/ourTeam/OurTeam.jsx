@@ -1,7 +1,5 @@
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./OurTeam.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
@@ -17,6 +15,7 @@ function OurTeam() {
   const { t } = useTranslation();
   const swiperRef = useRef(null);
   const containerRef = useRef(null);
+  const foundationLogo = "/logo.png";
 
   const cards = [
     {
@@ -91,8 +90,8 @@ function OurTeam() {
 
     return () => {
       if (containerRef.current) {
-        containerRef.current.addEventListener("mouseenter", stopAutoplay);
-        containerRef.current.addEventListener("mouseleave", startAutoplay);
+        containerRef.current.removeEventListener("mouseenter", stopAutoplay);
+        containerRef.current.removeEventListener("mouseleave", startAutoplay);
       }
     };
   }, []);
@@ -143,18 +142,31 @@ function OurTeam() {
             >
               {cards.map((card, index) => (
                 <SwiperSlide key={index}>
-                  <img
-                    src={card.image}
-                    alt={card.name}
-                    className="h-[45vh] object-cover object-[50%_10%] w-full rounded-b-none "
-                    style={{ backgroundColor: card.bagraundColor }}
-                  />
-                  <div className="flex items-center text-left bg-dark-blue rounded-br-[40px] rounded-t-none p-4 h-40">
-                    <div className="relative">
-                      <h5 className="font-impact flex w-full uppercase text-white text-3xl leading-none mb-[10px] tracking-tight max-[480px]:text-[24px] max-[480px]:mb-[5px]">
-                        {card.name}
-                      </h5>
-                      <p className="text-white">{card.role}</p>
+                  <div className="group transition-all duration-500rounded-xl">
+                    <div className="relative overflow-hidden rounded-xl rounded-b-none">
+                      <div className="pointer-events-none absolute inset-0 z-10 duration-500 group-hover:opacity-100" />
+                      <img
+                        src={card.image}
+                        alt={card.name}
+                        className="h-[45vh] w-full object-cover object-[50%_10%] transition-all duration-500 ease-out group-hover:scale-110"
+                        style={{ backgroundColor: card.bagraundColor }}
+                      />
+                      <img
+                        src={foundationLogo}
+                        alt=""
+                        aria-hidden="true"
+                        className="pointer-events-none absolute -bottom-36 -right-36 z-10 w-[130px] rotate-[-12deg] object-contain transition-all duration-700 group-hover:bottom-2 group-hover:right-2"
+                      />
+                    </div>
+                    <div className="flex h-40 items-center rounded-br-[40px] rounded-t-none bg-dark-blue p-4 text-left transition-colors duration-500">
+                      <div className="relative">
+                        <h5 className="font-impact flex w-full uppercase text-white text-3xl leading-none mb-[10px] tracking-tight max-[480px]:text-[24px] max-[480px]:mb-[5px]">
+                          {card.name}
+                        </h5>
+                        <p className="text-white transition-colors duration-500 group-hover:text-primary-yellow">
+                          {card.role}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
