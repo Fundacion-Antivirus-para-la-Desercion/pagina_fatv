@@ -667,8 +667,7 @@
     "read_more": "Read more"
   },
   "ourTeam": {
-    "title_part1": "ABOUT OUR",
-    "title_part2": "TEAM",
+    "title": "ABOUT OUR TEAM",
     "roles": {
       "president": "President",
       "social_intervention_coordinator": "Social Intervention Area Coordinator",

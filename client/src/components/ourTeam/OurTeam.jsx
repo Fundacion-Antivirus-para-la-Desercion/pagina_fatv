@@ -1,9 +1,12 @@
+import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
-
+import { motion } from "framer-motion";
+import { floatSnake } from "../motion/constants/Animations.js";
 import { useRef, useEffect } from "react";
 // Import Swiper styles
 import "swiper/css";
@@ -46,7 +49,7 @@ function OurTeam() {
       name: "Víctor Manuel Valencia martínez",
       role: t("ourTeam.roles.deputy_director"),
       image: "/img_OurTeam/victor-valencia.webp",
-      bagraundColor: "#2C395B",
+      bagraundColor: "#2C9Bc7",
     },
     {
       name: "david santiago botero",
@@ -98,15 +101,32 @@ function OurTeam() {
 
   return (
     <>
-      <div className="relative flex justify-center  mt-36">
-        <div className="absolute flex top-[-45px] mx-auto my-[10px] text-center">
-          <h3 className="text-4xl md:text-6xl font-impact text-blue-base">
-            {t("ourTeam.title_part1")}
-            {t("ourTeam.title_part2")}
+      <div className="relative flex-col justify-center mt-20 mb-10">
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at center, rgba(34, 45, 86) 1.5px, transparent 1.2px)",
+            backgroundSize: "38px 38px",
+          }}
+        />
+        <div className="flex items-center justify-center mx-auto text-center">
+          <motion.div {...floatSnake()}>
+            <img
+              className="h-20 md:h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
+              src={Javi}
+              alt="Javi Guinando"
+            />
+          </motion.div>
+          <h3 className="text-3xl md:text-5xl font-impact text-blue-base">
+            {t("ourTeam.title")}
           </h3>
         </div>
-        <div className="w-full p-10 pb-20 bg-primary-yellow">
-          <div ref={containerRef} className="cards mx-auto mt-16 max-w-[1400px]">
+        <div className="w-full p-10 pb-20">
+          <div
+            ref={containerRef}
+            className="cards mx-auto mt-5 max-w-[1400px]"
+          >
             <Swiper
               breakpoints={{
                 320: {
@@ -173,6 +193,23 @@ function OurTeam() {
               ))}
             </Swiper>
           </div>
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full top-0 right-5"
+          ></motion.div>
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full top-20 right-5"
+          ></motion.div>
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-primary-yellow bg-opacity-40 h-40 w-40 rounded-full -bottom-5 left-16"
+          ></motion.div>
+
+          <motion.div
+            {...floatSnake(0)}
+            className="absolute z-0 bg-dark-blue bg-opacity-40 h-16 w-16 rounded-full -bottom-16 left-5"
+          ></motion.div>
         </div>
       </div>
     </>

@@ -668,8 +668,7 @@
     "read_more": "Leer más"
   },
   "ourTeam": {
-    "title_part1": "SOBRE NUESTRO",
-    "title_part2": "EQUIPO",
+    "title": "SOBRE NUESTRO EQUIPO",
     "roles": {
       "president": "Presidente",
       "social_intervention_coordinator": "Coordinadora Área de intervención Social",

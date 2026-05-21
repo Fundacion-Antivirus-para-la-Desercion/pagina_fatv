@@ -696,8 +696,7 @@
     "read_more": "Leer más"
   },
   "ourTeam": {
-    "title_part1": "SOBRE NUESTRO",
-    "title_part2": "EQUIPO",
+    "title": "SOBRE NUESTRO EQUIPO",
     "roles": {
       "president": "Presidente",
       "social_intervention_coordinator": "Coordinadora Área de intervención Social",
@@ -707,7 +706,9 @@
       "legal_area_coordinator": "Coordinador Área Legal",
       "communications_coordinator": "Coordinadora Área Comunicaciones",
       "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
-    }
+    },
+    "title_part1": "SOBRE NUESTRO EQUIPO",
+    "title_part2": "EQUIPO"
   },
   "socialIntervention": {
     "banner": {
