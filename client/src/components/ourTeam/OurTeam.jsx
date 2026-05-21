@@ -1,4 +1,5 @@
 import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
+import JaviCard from "../../assets/images/views/javi/javi-sonriendo.webp";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -62,6 +63,12 @@ function OurTeam() {
       role: t("ourTeam.roles.communications_coordinator"),
       image: "/img_OurTeam/manuela-correa.webp",
       bagraundColor: "#765497",
+    },
+    {
+      name: "Javi",
+      role: t("ourTeam.roles.ambassador"),
+      image: JaviCard,
+      bagraundColor: "#2C395B",
     },
     {
       name: "luis fernando gonzález",
@@ -168,7 +175,7 @@ function OurTeam() {
                       <img
                         src={card.image}
                         alt={card.name}
-                        className="h-[45vh] w-full object-cover object-[50%_10%] transition-all duration-500 ease-out group-hover:scale-110"
+                        className="h-[45vh] w-full object-cover object-[50%_1%] transition-all duration-500 ease-out group-hover:scale-110"
                         style={{ backgroundColor: card.bagraundColor }}
                       />
                       <img

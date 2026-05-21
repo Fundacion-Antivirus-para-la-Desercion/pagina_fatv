@@ -676,7 +676,9 @@
       "deputy_director": "Deputy Director",
       "legal_area_coordinator": "Legal Area Coordinator",
       "communications_coordinator": "Communications Area Coordinator",
-      "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator"
+      "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator",
+      "ambassador": "FATV Ambassador"
+
     }
   },
   "socialIntervention": {
