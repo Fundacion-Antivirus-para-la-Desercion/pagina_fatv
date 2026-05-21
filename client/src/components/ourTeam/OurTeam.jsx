@@ -1,8 +1,5 @@
 import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
 import JaviCard from "../../assets/images/views/javi/javi-sonriendo.webp";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
@@ -11,7 +8,6 @@ import { floatSnake } from "../motion/constants/Animations.js";
 import { useRef, useEffect } from "react";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 
 // import required modules
 
@@ -23,58 +19,58 @@ function OurTeam() {
 
   const cards = [
     {
-      name: "Carlos vásquez restrepo",
+      name: "Carlos Vásquez Restrepo",
       role: t("ourTeam.roles.president"),
       image: "/img_OurTeam/carlos-vasquez.webp",
-      bagraundColor: "#32526E",
+      backgroundColor: "#32526E",
     },
     {
-      name: "astrid franco gonzalez",
+      name: "Astrid Franco Gonzalez",
       role: t("ourTeam.roles.social_intervention_coordinator"),
       image: "/img_OurTeam/astrid-franco-gonzalez.webp",
-      bagraundColor: "#D3C3E3",
+      backgroundColor: "#D3C3E3",
     },
     {
-      name: "luis fernando sánchez hurtado",
+      name: "Luis Fernando Sánchez Hurtado",
       role: t("ourTeam.roles.executive_director"),
       image: "/img_OurTeam/luis-fernando-sanchez.webp",
-      bagraundColor: "#90C4F9",
+      backgroundColor: "#90C4F9",
     },
     {
-      name: "karen gonzález alarcón",
+      name: "Karen González Alarcón",
       role: t("ourTeam.roles.technology_and_data_coordinator"),
       image: "/img_OurTeam/karen-gonzalez-alarcon.webp",
-      bagraundColor: "#81F0E7",
+      backgroundColor: "#81F0E7",
     },
     {
-      name: "Víctor Manuel Valencia martínez",
+      name: "Víctor Manuel Valencia Martínez",
       role: t("ourTeam.roles.deputy_director"),
       image: "/img_OurTeam/victor-valencia.webp",
-      bagraundColor: "#2C9Bc7",
+      backgroundColor: "#2C9Bc7",
     },
     {
-      name: "david santiago botero",
+      name: "David Santiago Botero",
       role: t("ourTeam.roles.legal_area_coordinator"),
       image: "/img_OurTeam/david-botero.webp",
-      bagraundColor: "#90C4F9",
+      backgroundColor: "#90C4F9",
     },
     {
       name: "Manuela Correa Quintero",
       role: t("ourTeam.roles.communications_coordinator"),
       image: "/img_OurTeam/manuela-correa.webp",
-      bagraundColor: "#765497",
+      backgroundColor: "#765497",
     },
     {
       name: "Javi",
       role: t("ourTeam.roles.ambassador"),
       image: JaviCard,
-      bagraundColor: "#2C395B",
+      backgroundColor: "#2C395B",
     },
     {
-      name: "luis fernando gonzález",
+      name: "Luis Fernando González",
       role: t("ourTeam.roles.administrative_and_financial_coordinator"),
       image: "/img_OurTeam/luis-gonzales.webp",
-      bagraundColor: "#0B8F84",
+      backgroundColor: "#0B8F84",
     },
   ];
 
@@ -169,14 +165,14 @@ function OurTeam() {
             >
               {cards.map((card, index) => (
                 <SwiperSlide key={index}>
-                  <div className="group transition-all duration-500rounded-xl">
+                  <div className="group transition-all duration-500 rounded-xl">
                     <div className="relative overflow-hidden rounded-xl rounded-b-none">
                       <div className="pointer-events-none absolute inset-0 z-10 duration-500 group-hover:opacity-100" />
                       <img
                         src={card.image}
                         alt={card.name}
                         className="h-[45vh] w-full object-cover object-[50%_1%] transition-all duration-500 ease-out group-hover:scale-110"
-                        style={{ backgroundColor: card.bagraundColor }}
+                        style={{ backgroundColor: card.backgroundColor }}
                       />
                       <img
                         src={foundationLogo}
