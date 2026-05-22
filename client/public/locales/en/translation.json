@@ -694,8 +694,7 @@
     "read_more": "Read more"
   },
   "ourTeam": {
-    "title_part1": "about our",
-    "title_part2": "team",
+    "title": "ABOUT OUR TEAM",
     "roles": {
       "president": "President",
       "social_intervention_coordinator": "Social Intervention Area Coordinator",
@@ -704,8 +703,11 @@
       "deputy_director": "Deputy Director",
       "legal_area_coordinator": "Legal Area Coordinator",
       "communications_coordinator": "Communications Area Coordinator",
-      "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator"
-    }
+      "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator",
+      "ambassador": "FATV Ambassador"
+    },
+    "title_part1": "ABOUT OUR",
+    "title_part2": "TEAM"
   },
   "socialIntervention": {
     "banner": {
