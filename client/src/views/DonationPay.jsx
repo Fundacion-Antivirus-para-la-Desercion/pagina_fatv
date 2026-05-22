@@ -61,7 +61,8 @@ function DonationPay() {
     const reference = document.createElement("input");
     reference.type = "hidden";
     reference.name = "reference";
-    reference.value = "REFERENCIA_DE_PAGO";
+    const uuid = crypto.randomUUID().replace(/-/g, "");
+    reference.value = uuid;
     form.appendChild(reference);
 
     form.submit();
