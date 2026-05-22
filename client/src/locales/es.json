@@ -668,8 +668,7 @@
     "read_more": "Leer más"
   },
   "ourTeam": {
-    "title_part1": "sobre nuestro",
-    "title_part2": "equipo",
+    "title": "SOBRE NUESTRO EQUIPO",
     "roles": {
       "president": "Presidente",
       "social_intervention_coordinator": "Coordinadora Área de intervención Social",
@@ -678,7 +677,8 @@
       "deputy_director": "Subdirector",
       "legal_area_coordinator": "Coordinador Área Legal",
       "communications_coordinator": "Coordinadora Área Comunicaciones",
-      "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera"
+      "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera",
+      "ambassador": "Embajador FATV"
     }
   },
   "socialIntervention": {
