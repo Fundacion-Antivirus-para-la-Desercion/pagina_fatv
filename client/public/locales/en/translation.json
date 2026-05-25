@@ -136,6 +136,7 @@
     "continue": "Continue",
     "secure_payments": "SECURE PAYMENTS BY",
     "other_amount": "Other amount",
+    "enter_amount_to_donate": "Enter the donation amount",
     "alt_text": "Student support",
     "amount_must_be_greater_than_zero": "Enter an amount greater than COP $0.",
     "amount_must_be_multiple_of_step": "Enter an amount in multiples of COP ${{step}}."

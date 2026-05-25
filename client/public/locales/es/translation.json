@@ -137,6 +137,7 @@
     "continue": "Continuar",
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",
+    "enter_amount_to_donate": "Ingresa el valor a donar",
     "alt_text": "Acompañamiento a estudiantes",
     "amount_must_be_greater_than_zero": "Ingresa un monto mayor a $0.",
     "amount_must_be_multiple_of_step": "Ingresa un monto en múltiplos de ${{step}}."
