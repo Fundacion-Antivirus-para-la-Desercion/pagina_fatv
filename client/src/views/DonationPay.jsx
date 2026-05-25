@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,11 +12,46 @@ import Acompañamiento4 from "../../src/assets/images/views/donationPay/acompañ
 import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
 import Pay from "../../src/assets/images/views/donationPay/pay.png";
 
+const DONATION_STEP = 1000;
+const ALLOWED_DONATION_CONTROL_KEYS = [
+  "Backspace",
+  "Delete",
+  "Tab",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowUp",
+  "ArrowDown",
+  "Home",
+  "End",
+];
+
 function DonationPay() {
   const { t } = useTranslation();
-  const [donationAmount, setDonationAmount] = useState(10000);
+  const [donationAmount, setDonationAmount] = useState("10000");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
+  const donationAmountText = donationAmount;
+  const donationAmountInputSize = Math.max(donationAmountText.length, 1);
+  const donationAmountInputWidth = `${donationAmountInputSize + 4}ch`;
+  const parsedDonationAmount = Number(donationAmount);
+  const hasOnlyDigits = /^\d+$/.test(donationAmountText);
+  const isDonationAmountValid =
+    donationAmount !== "" &&
+    hasOnlyDigits &&
+    Number.isInteger(parsedDonationAmount) &&
+    parsedDonationAmount > 0 &&
+    parsedDonationAmount % DONATION_STEP === 0;
+  const donationAmountError =
+    donationAmount === ""
+      ? ""
+      : parsedDonationAmount <= 0
+        ? t("donation.amount_must_be_greater_than_zero")
+        : !Number.isInteger(parsedDonationAmount) ||
+            parsedDonationAmount % DONATION_STEP !== 0
+          ? t("donation.amount_must_be_multiple_of_step", {
+              step: "1.000",
+            })
+          : "";
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -30,7 +65,7 @@ function DonationPay() {
   }, []);
 
   const handleClick = () => {
-    if (Number.isNaN(parseFloat(donationAmount)) || !acceptedTerms) {
+    if (!isDonationAmountValid || !acceptedTerms) {
       console.error("Monto de donación no válido o términos no aceptados");
       return;
     }
@@ -55,7 +90,7 @@ function DonationPay() {
     const amount = document.createElement("input");
     amount.type = "hidden";
     amount.name = "amount-in-cents";
-    amount.value = donationAmount * 100;
+    amount.value = parsedDonationAmount * 100;
     form.appendChild(amount);
 
     const reference = document.createElement("input");
@@ -69,7 +104,39 @@ function DonationPay() {
   };
 
   const handleChange = (e) => {
-    setDonationAmount(e.target.value);
+    const { value } = e.target;
+
+    if (value === "") {
+      setDonationAmount("");
+      return;
+    }
+
+    if (!/^\d+$/.test(value)) {
+      return;
+    }
+
+    const nextAmount = Number(value);
+
+    if (Number.isNaN(nextAmount) || nextAmount < 0) {
+      return;
+    }
+
+    setDonationAmount(value);
+  };
+
+  const handleDonationAmountKeyDown = (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      return;
+    }
+
+    if (
+      ALLOWED_DONATION_CONTROL_KEYS.includes(e.key) ||
+      /^\d$/.test(e.key)
+    ) {
+      return;
+    }
+
+    e.preventDefault();
   };
 
   const handleDonationTypeChange = (type) => {
@@ -79,7 +146,7 @@ function DonationPay() {
 
   return (
     <div className="lg:pt-[145px] flex  justify-center flex-wrap">
-      <div className="w-[80%] grid grid-cols-1 rounded-3xl lg:grid-cols-2 shadow-2xl justify-center">
+      <div className="w-[85%] grid grid-cols-1 rounded-3xl lg:grid-cols-2 shadow-2xl justify-center">
         <div className="flex flex-col flex-wrap gap-6 p-5 lg:p-10 rounded-l-3xl bg-[#EDEFF8] lg:border-r">
           <h1 className="text-xl md:text-2xl text-blue-base font-bold mb-5 leading-tight">
             {t("donation.foundation_name")}
@@ -156,18 +223,42 @@ function DonationPay() {
           <p className="text-base font-bold text-dark-blue">
             {t("donation.amount_to_donate")}
           </p>
-          <input
-            className="w-full h-10 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-5"
-            type="number"
-            step="1000"
-            value={donationAmount}
-            onChange={handleChange}
-          />
+          <div
+            className={`flex h-10 w-full items-center justify-center rounded-xl border px-4 ${
+              donationAmountError
+                ? "border-red-400 focus-within:border-red-500"
+                : "border-gray-300 hover:border-blue-300 focus-within:border-blue-300"
+            }`}
+          >
+            <span className="mr-1 font-semibold text-[#222D56]">
+              $
+            </span>
+            <input
+              className="h-full min-w-[6ch] bg-transparent text-left text-[#222D56] outline-none"
+              type="number"
+              min="0"
+              step={DONATION_STEP}
+              style={{ width: donationAmountInputWidth }}
+              value={donationAmount}
+              onChange={handleChange}
+              onKeyDown={handleDonationAmountKeyDown}
+              inputMode="numeric"
+              aria-invalid={Boolean(donationAmountError)}
+              aria-describedby={
+                donationAmountError ? "donation-amount-error" : undefined
+              }
+            />
+          </div>
+          {donationAmountError && (
+            <p id="donation-amount-error" className="mb-5 text-sm text-red-600">
+              {donationAmountError}
+            </p>
+          )}
           <div className="flex flex-wrap justify-center gap-2">
             <button
-              onClick={() => setDonationAmount(5000)}
+              onClick={() => setDonationAmount("5000")}
               className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 5000
+                donationAmount === "5000"
                   ? "bg-primary-purple text-white"
                   : "hover:bg-primary-purple hover:text-white"
               }`}
@@ -175,9 +266,9 @@ function DonationPay() {
               $5.000
             </button>
             <button
-              onClick={() => setDonationAmount(10000)}
+              onClick={() => setDonationAmount("10000")}
               className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 10000
+                donationAmount === "10000"
                   ? "bg-primary-yellow text-white"
                   : "hover:bg-primary-yellow hover:text-white"
               }`}
@@ -185,9 +276,9 @@ function DonationPay() {
               $10.000
             </button>
             <button
-              onClick={() => setDonationAmount(20000)}
+              onClick={() => setDonationAmount("20000")}
               className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 20000
+                donationAmount === "20000"
                   ? "bg-primary-purple text-white"
                   : "hover:bg-primary-purple hover:text-white"
               }`}
@@ -195,9 +286,9 @@ function DonationPay() {
               $20.000
             </button>
             <button
-              onClick={() => setDonationAmount(50000)}
+              onClick={() => setDonationAmount("50000")}
               className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 50000
+                donationAmount === "50000"
                   ? "bg-primary-yellow text-white"
                   : "hover:bg-primary-yellow hover:text-white"
               }`}
@@ -205,9 +296,9 @@ function DonationPay() {
               $50.000
             </button>
             <button
-              onClick={() => setDonationAmount(100000)}
+              onClick={() => setDonationAmount("100000")}
               className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 100000
+                donationAmount === "100000"
                   ? "bg-primary-purple text-white"
                   : "hover:bg-primary-purple hover:text-white"
               }`}
@@ -215,16 +306,16 @@ function DonationPay() {
               $100.000
             </button>
             <button
-              onClick={() => setDonationAmount(0)}
+              onClick={() => setDonationAmount("0")}
               className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 0
+                donationAmount === "0"
                   ? "bg-primary-yellow text-white"
                   : "hover:bg-primary-yellow hover:text-white"
               }`}
             >
               {t("donation.other_amount")}
             </button>
-            <p className="text-xs lg:text-sm m-2 font-semibold text-[#222D56] text-center">
+            <p className="text-xs lg:text-sm w-full mt-2 font-semibold text-[#222D56] text-center">
               {t("donation.cop")}
             </p>
           </div>
@@ -269,11 +360,11 @@ function DonationPay() {
 
           <button
             className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${
-              (!donationType || Number.isNaN(parseFloat(donationAmount))) &&
+              (!donationType || !isDonationAmountValid) &&
               "opacity-50 cursor-not-allowed"
             }`}
             onClick={handleClick}
-            disabled={!donationType || Number.isNaN(parseFloat(donationAmount))}
+            disabled={!donationType || !isDonationAmountValid}
           >
             {t("donation.continue")}
           </button>
