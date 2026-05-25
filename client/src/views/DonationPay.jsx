@@ -14,7 +14,7 @@ import Pay from "../../src/assets/images/views/donationPay/pay.png";
 
 function DonationPay() {
   const { t } = useTranslation();
-  const [donationAmount, setDonationAmount] = useState(100);
+  const [donationAmount, setDonationAmount] = useState(10000);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
 
@@ -159,12 +159,10 @@ function DonationPay() {
           <input
             className="w-full h-10 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-5"
             type="number"
-            min="100"
-            step="1"
+            step="1000"
             value={donationAmount}
             onChange={handleChange}
           />
-
           <div className="flex flex-wrap justify-center gap-2">
             <button
               onClick={() => setDonationAmount(5000)}
