@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,11 +12,48 @@ import Acompañamiento4 from "../../src/assets/images/views/donationPay/acompañ
 import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
 import Pay from "../../src/assets/images/views/donationPay/pay.png";
 
+const DONATION_STEP = 1000;
+const ALLOWED_DONATION_CONTROL_KEYS = [
+  "Backspace",
+  "Delete",
+  "Tab",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowUp",
+  "ArrowDown",
+  "Home",
+  "End",
+];
+
 function DonationPay() {
   const { t } = useTranslation();
-  const [donationAmount, setDonationAmount] = useState(100);
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
-  const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
+  const [donationAmount, setDonationAmount] = useState("10000");
+  const [isOtherAmountSelected, setIsOtherAmountSelected] = useState(false);
+  const donationAmountText = donationAmount;
+  const donationAmountInputSize = Math.max(donationAmountText.length, 1);
+  const donationAmountInputWidth =
+    isOtherAmountSelected && donationAmount === ""
+      ? "22ch"
+      : `${donationAmountInputSize + 4}ch`;
+  const parsedDonationAmount = Number(donationAmount);
+  const hasOnlyDigits = /^\d+$/.test(donationAmountText);
+  const isDonationAmountValid =
+    donationAmount !== "" &&
+    hasOnlyDigits &&
+    Number.isInteger(parsedDonationAmount) &&
+    parsedDonationAmount > 0 &&
+    parsedDonationAmount % DONATION_STEP === 0;
+  const donationAmountError =
+    donationAmount === ""
+      ? ""
+      : parsedDonationAmount <= 0
+        ? t("donation.amount_must_be_greater_than_zero")
+        : !Number.isInteger(parsedDonationAmount) ||
+            parsedDonationAmount % DONATION_STEP !== 0
+          ? t("donation.amount_must_be_multiple_of_step", {
+              step: "1.000",
+            })
+          : "";
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -30,8 +67,8 @@ function DonationPay() {
   }, []);
 
   const handleClick = () => {
-    if (Number.isNaN(parseFloat(donationAmount)) || !acceptedTerms) {
-      console.error("Monto de donación no válido o términos no aceptados");
+    if (!isDonationAmountValid) {
+      console.error("Monto de donación no válido");
       return;
     }
 
@@ -55,7 +92,7 @@ function DonationPay() {
     const amount = document.createElement("input");
     amount.type = "hidden";
     amount.name = "amount-in-cents";
-    amount.value = donationAmount * 100;
+    amount.value = parsedDonationAmount * 100;
     form.appendChild(amount);
 
     const reference = document.createElement("input");
@@ -69,222 +106,270 @@ function DonationPay() {
   };
 
   const handleChange = (e) => {
-    setDonationAmount(e.target.value);
+    const { value } = e.target;
+
+    if (value === "") {
+      setDonationAmount("");
+      return;
+    }
+
+    if (!/^\d+$/.test(value)) {
+      return;
+    }
+
+    const normalizedValue = value.replace(/^0+(?=\d)/, "");
+
+    const nextAmount = Number(normalizedValue);
+
+    if (Number.isNaN(nextAmount) || nextAmount < 0) {
+      return;
+    }
+
+    setDonationAmount(normalizedValue);
   };
 
-  const handleDonationTypeChange = (type) => {
-    setDonationType(type);
-    setAcceptedTerms(true);
+  const handleDonationAmountKeyDown = (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      return;
+    }
+
+    if (ALLOWED_DONATION_CONTROL_KEYS.includes(e.key) || /^\d$/.test(e.key)) {
+      return;
+    }
+
+    e.preventDefault();
   };
 
   return (
-    <div className="lg:pt-[145px] flex  justify-center flex-wrap">
-      <div className="w-[80%] grid grid-cols-1 rounded-3xl lg:grid-cols-2 shadow-2xl justify-center">
-        <div className="flex flex-col flex-wrap gap-6 p-5 lg:p-10 rounded-l-3xl bg-[#EDEFF8] lg:border-r">
-          <h1 className="text-xl md:text-2xl text-blue-base font-bold mb-5 leading-tight">
-            {t("donation.foundation_name")}
-          </h1>
+    <div className="flex justify-center px-4 pb-10 pt-12 lg:px-6 lg:pb-14 lg:pt-[145px]">
+      <div className="flex w-full max-w-5xl flex-col items-center gap-5">
+        <div className="grid w-full grid-cols-1 overflow-hidden rounded-3xl bg-white shadow-2xl lg:min-h-[760px] lg:grid-cols-2">
+          <div className="flex flex-col gap-6 bg-[#EDEFF8] p-6 text-center md:text-left lg:justify-center lg:p-10 lg:border-r">
+            <h1 className="text-xl md:text-2xl text-blue-base font-bold mb-5 leading-tight">
+              {t("donation.foundation_name")}
+            </h1>
 
-          <div>
-            <Swiper
-              effect={"cube"}
-              grabCursor={true}
-              cubeEffect={{
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
-              }}
-              modules={[EffectCube, Autoplay]}
-              className="mySwiper w-32 h-32 lg:w-60 lg:h-60 rounded-xl"
-              autoplay={{
-                delay: 3500,
-                disableOnInteraction: false,
-              }}
-            >
-              <SwiperSlide>
-                <img
-                  src={Acompañamiento1}
-                  alt={t("donation.alt_text")}
-                  className="block w-full h-full object-cover rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={Acompañamiento2}
-                  alt={t("donation.alt_text")}
-                  className="block w-full h-full object-cover rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={Acompañamiento3}
-                  alt={t("donation.alt_text")}
-                  className="block w-full h-full object-cover rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={Acompañamiento4}
-                  alt={t("donation.alt_text")}
-                  className="block w-full h-full object-cover rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={Acompañamiento5}
-                  alt={t("donation.alt_text")}
-                  className="block w-full h-full object-cover rounded-xl"
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
+            <div>
+              <Swiper
+                effect={"cube"}
+                grabCursor={true}
+                cubeEffect={{
+                  shadow: true,
+                  slideShadows: true,
+                  shadowOffset: 20,
+                  shadowScale: 0.94,
+                }}
+                modules={[EffectCube, Autoplay]}
+                className="mySwiper w-44 h-44 lg:w-64 lg:h-64 rounded-xl"
+                autoplay={{
+                  delay: 3500,
+                  disableOnInteraction: false,
+                }}
+              >
+                <SwiperSlide>
+                  <img
+                    src={Acompañamiento1}
+                    alt={t("donation.alt_text")}
+                    className="block w-full h-full object-cover rounded-xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={Acompañamiento2}
+                    alt={t("donation.alt_text")}
+                    className="block w-full h-full object-cover rounded-xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={Acompañamiento3}
+                    alt={t("donation.alt_text")}
+                    className="block w-full h-full object-cover rounded-xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={Acompañamiento4}
+                    alt={t("donation.alt_text")}
+                    className="block w-full h-full object-cover rounded-xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={Acompañamiento5}
+                    alt={t("donation.alt_text")}
+                    className="block w-full h-full object-cover rounded-xl"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
 
-          <p className="text-sm md:text-base lg:text-lg text-blue-base opacity-85 text-justify m-3 md:m-5 leading-relaxed md:leading-normal">
-            {t("donation.description")}
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-6 lg:pl-10 p-10">
-          <div className="flex items-center justify-center mb-5">
-            <img className="w-10 h-10" src={Pay} alt="" />
-            <h2 className="m-2 font-impact text-2xl text-center md:text-3xl text-primary-yellow">
-              {t("donation.be_part_solution")}
-            </h2>
-          </div>
-
-          <p className="text-base font-bold text-dark-blue">
-            {t("donation.amount_to_donate")}
-          </p>
-          <input
-            className="w-full h-10 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-5"
-            type="number"
-            min="100"
-            step="1"
-            value={donationAmount}
-            onChange={handleChange}
-          />
-
-          <div className="flex flex-wrap justify-center gap-2">
-            <button
-              onClick={() => setDonationAmount(5000)}
-              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 5000
-                  ? "bg-primary-purple text-white"
-                  : "hover:bg-primary-purple hover:text-white"
-              }`}
-            >
-              $5.000
-            </button>
-            <button
-              onClick={() => setDonationAmount(10000)}
-              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 10000
-                  ? "bg-primary-yellow text-white"
-                  : "hover:bg-primary-yellow hover:text-white"
-              }`}
-            >
-              $10.000
-            </button>
-            <button
-              onClick={() => setDonationAmount(20000)}
-              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 20000
-                  ? "bg-primary-purple text-white"
-                  : "hover:bg-primary-purple hover:text-white"
-              }`}
-            >
-              $20.000
-            </button>
-            <button
-              onClick={() => setDonationAmount(50000)}
-              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 50000
-                  ? "bg-primary-yellow text-white"
-                  : "hover:bg-primary-yellow hover:text-white"
-              }`}
-            >
-              $50.000
-            </button>
-            <button
-              onClick={() => setDonationAmount(100000)}
-              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 100000
-                  ? "bg-primary-purple text-white"
-                  : "hover:bg-primary-purple hover:text-white"
-              }`}
-            >
-              $100.000
-            </button>
-            <button
-              onClick={() => setDonationAmount(0)}
-              className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
-                donationAmount === 0
-                  ? "bg-primary-yellow text-white"
-                  : "hover:bg-primary-yellow hover:text-white"
-              }`}
-            >
-              {t("donation.other_amount")}
-            </button>
-            <p className="text-xs lg:text-sm m-2 font-semibold text-[#222D56] text-center">
-              {t("donation.cop")}
+            <p className="text-sm md:text-base lg:text-lg text-blue-base opacity-85 text-justify m-3 md:m-5 leading-relaxed md:leading-normal">
+              {t("donation.description")}
             </p>
           </div>
 
-          <div className="flex flex-col gap-5  border-gray-300">
-            <p className=" text-base text-dark-blue font-bold">
-              {t("donation.additional_comments")}
+          <div className="flex flex-col gap-6 p-6 lg:p-10">
+            <div className="flex items-center justify-center mb-5">
+              <img className="w-10 h-10" src={Pay} alt="" />
+              <h2 className="m-2 font-impact  text-xl md:text-3xl text-center text-primary-yellow">
+                {t("donation.be_part_solution")}
+              </h2>
+            </div>
+
+            <p className="text-base text-center md:text-left font-bold text-dark-blue">
+              {t("donation.amount_to_donate")}
             </p>
-            <textarea
-              className="w-full h-16 rounded-xl p-2 border border-gray-300 hover:border-blue-300"
-              placeholder={t("donation.comments_placeholder")}
-            />
-          </div>
+            <div
+              className={`flex h-10 w-full items-center justify-center rounded-xl border px-4 ${
+                donationAmountError
+                  ? "border-red-400 focus-within:border-red-500"
+                  : "border-gray-300 hover:border-blue-300 focus-within:border-blue-300"
+              }`}
+            >
+              <span className="mr-1 font-semibold text-[#222D56]">
+                $
+              </span>
+              <input
+                className={`h-full min-w-[6ch] bg-transparent text-[#222D56] outline-none ${
+                  isOtherAmountSelected && donationAmount === ""
+                    ? "text-center placeholder:text-center"
+                    : "text-left"
+                }`}
+                type="number"
+                min="0"
+                step={DONATION_STEP}
+                style={{ width: donationAmountInputWidth }}
+                value={donationAmount}
+                placeholder={
+                  isOtherAmountSelected
+                    ? t("donation.enter_amount_to_donate")
+                    : undefined
+                }
+                onChange={handleChange}
+                onKeyDown={handleDonationAmountKeyDown}
+                inputMode="numeric"
+                aria-invalid={Boolean(donationAmountError)}
+                aria-describedby={
+                  donationAmountError ? "donation-amount-error" : undefined
+                }
+              />
+            </div>
+            {donationAmountError && (
+              <p id="donation-amount-error" className="mb-5 text-sm text-red-600">
+                {donationAmountError}
+              </p>
+            )}
+            <div className="flex flex-wrap justify-center gap-2 mb-5 md:mb-10">
+              <button
+                onClick={() => {
+                  setDonationAmount("5000");
+                  setIsOtherAmountSelected(false);
+                }}
+                className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                  donationAmount === "5000"
+                    ? "bg-primary-purple text-white"
+                    : "hover:bg-primary-purple hover:text-white"
+                }`}
+              >
+                $5.000
+              </button>
+              <button
+                onClick={() => {
+                  setDonationAmount("10000");
+                  setIsOtherAmountSelected(false);
+                }}
+                className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                  donationAmount === "10000"
+                    ? "bg-primary-yellow text-white"
+                    : "hover:bg-primary-yellow hover:text-white"
+                }`}
+              >
+                $10.000
+              </button>
+              <button
+                onClick={() => {
+                  setDonationAmount("20000");
+                  setIsOtherAmountSelected(false);
+                }}
+                className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                  donationAmount === "20000"
+                    ? "bg-primary-purple text-white"
+                    : "hover:bg-primary-purple hover:text-white"
+                }`}
+              >
+                $20.000
+              </button>
+              <button
+                onClick={() => {
+                  setDonationAmount("50000");
+                  setIsOtherAmountSelected(false);
+                }}
+                className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                  donationAmount === "50000"
+                    ? "bg-primary-yellow text-white"
+                    : "hover:bg-primary-yellow hover:text-white"
+                }`}
+              >
+                $50.000
+              </button>
+              <button
+                onClick={() => {
+                  setDonationAmount("100000");
+                  setIsOtherAmountSelected(false);
+                }}
+                className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                  donationAmount === "100000"
+                    ? "bg-primary-purple text-white"
+                    : "hover:bg-primary-purple hover:text-white"
+                }`}
+              >
+                $100.000
+              </button>
+              <button
+                onClick={() => {
+                  setDonationAmount("");
+                  setIsOtherAmountSelected(true);
+                }}
+                className={`px-6 py-2 rounded-full border border-gray-300 text-gray-700 transition-colors duration-200 ${
+                  isOtherAmountSelected
+                    ? "bg-primary-yellow text-white"
+                    : "hover:bg-primary-yellow hover:text-white"
+                }`}
+              >
+                {t("donation.other_amount")}
+              </button>
+              <p className="text-xs lg:text-sm w-full mt-2 font-semibold text-[#222D56] text-center">
+                {t("donation.cop")}
+              </p>
+            </div>
 
-          <div className="flex items-center">
-            <input
-              type="radio"
-              id="monthlyDonation"
-              name="donationType"
-              className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
-              onChange={() => handleDonationTypeChange("monthly")}
-              checked={donationType === "monthly"}
-            />
-            <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">
-              {t("donation.monthly_payment")}
-            </label>
-          </div>
+            <div className="flex flex-col gap-5  border-gray-300">
+              <p className=" text-base text-dark-blue font-bold">
+                {t("donation.additional_comments")}
+              </p>
+              <textarea
+                className="w-full h-16 rounded-xl p-2 border border-gray-300 hover:border-blue-300"
+                placeholder={t("donation.comments_placeholder")}
+              />
+            </div>
 
-          <div className="flex items-center">
-            <input
-              type="radio"
-              id="oneTimeDonation"
-              name="donationType"
-              className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
-              onChange={() => handleDonationTypeChange("oneTime")}
-              checked={donationType === "oneTime"}
-            />
-            <label htmlFor="oneTimeDonation" className="ml-2 text-gray-700">
-              {t("donation.one_time_contribution")}
-            </label>
+            <button
+              className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${
+                !isDonationAmountValid && "opacity-50 cursor-not-allowed"
+              }`}
+              onClick={handleClick}
+              disabled={!isDonationAmountValid}
+            >
+              {t("donation.continue")}
+            </button>
           </div>
-
-          <button
-            className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${
-              (!donationType || Number.isNaN(parseFloat(donationAmount))) &&
-              "opacity-50 cursor-not-allowed"
-            }`}
-            onClick={handleClick}
-            disabled={!donationType || Number.isNaN(parseFloat(donationAmount))}
-          >
-            {t("donation.continue")}
-          </button>
         </div>
+        <p className="text-center text-sm text-blue-base lg:text-base">
+          {t("donation.secure_payments")}
+          <span className="font-bold"> Wompi</span>
+        </p>
       </div>
-      <p className="lg:ml-20">
-        {t("donation.secure_payments")}
-        <span className="font-bold"> Wompi</span>
-      </p>
     </div>
   );
 }

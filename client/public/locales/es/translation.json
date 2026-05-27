@@ -132,12 +132,13 @@
     "cop": "Todas las donaciones se procesan en pesos colombianos",
     "additional_comments": "Comentarios adicionales",
     "comments_placeholder": "Escribe tus comentarios aquí",
-    "monthly_payment": "Permitir que el pago sea mensual según el monto mencionado",
-    "one_time_contribution": "Contribución única",
     "continue": "Continuar",
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",
-    "alt_text": "Acompañamiento a estudiantes"
+    "enter_amount_to_donate": "Ingresa el valor a donar",
+    "alt_text": "Acompañamiento a estudiantes",
+    "amount_must_be_greater_than_zero": "Ingresa un monto mayor a $0.",
+    "amount_must_be_multiple_of_step": "Ingresa un monto en múltiplos de ${{step}}."
   },
   "ethicsTransparency": {
     "title": "ÉTICA Y TRANSPARENCIA EMPRESARIAL",
