@@ -8,29 +8,29 @@ import { useTranslation } from "react-i18next";
 const metricsData = [
   {
     icon: VscDeviceCameraVideo,
+    sign: "+",
     count: 550,
-    suffix: "+",
     translationKey: "communications.metrics.one",
     variant: "dark",
   },
   {
     icon: MdCampaign,
+    sign: "+",
     count: 80,
-    suffix: "+",
     translationKey: "communications.metrics.two",
     variant: "yellow",
   },
   {
     icon: BiSolidUserPin,
-    count: 8200 ,
-    suffix: "+",
+    sign: "+",
+    count: 8200,
     translationKey: "communications.metrics.three",
     variant: "dark",
   },
   {
     icon: LuPalette,
+    sign: "+",
     count: 1400,
-    suffix: "+",
     translationKey: "communications.metrics.four",
     variant: "yellow",
   },
@@ -68,7 +68,7 @@ function getCornerClass(index, total) {
 function MetricCard({
   icon: Icon,
   count,
-  suffix,
+  sign,
   translationKey,
   variant,
   className = "",
@@ -85,8 +85,8 @@ function MetricCard({
         <span
           className={`statistic-number text-4xl ${styles.numberColor} font-impact mb-3`}
         >
+          <span className="mr-1">{sign}</span>
           <CounterNumeric countNumber={count} />
-          {suffix}
         </span>
         <p className={`${underlineClasses} ${styles.underline}`}>
           {t(translationKey)}
