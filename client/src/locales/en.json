@@ -131,8 +131,6 @@
     "cop": "All donations are processed in Colombian Pesos",
     "additional_comments": "Additional comments",
     "comments_placeholder": "Write your comments here",
-    "monthly_payment": "Allow the payment to be monthly according to the mentioned amount",
-    "one_time_contribution": "One-time contribution",
     "continue": "Continue",
     "secure_payments": "SECURE PAYMENTS BY",
     "other_amount": "Other amount",

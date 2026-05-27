@@ -132,8 +132,6 @@
     "cop": "Todas las donaciones se procesan en pesos colombianos",
     "additional_comments": "Comentarios adicionales",
     "comments_placeholder": "Escribe tus comentarios aquí",
-    "monthly_payment": "Permitir que el pago sea mensual según el monto mencionado",
-    "one_time_contribution": "Contribución única",
     "continue": "Continuar",
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",

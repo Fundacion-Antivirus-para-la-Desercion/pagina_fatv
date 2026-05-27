@@ -28,8 +28,6 @@ const ALLOWED_DONATION_CONTROL_KEYS = [
 function DonationPay() {
   const { t } = useTranslation();
   const [donationAmount, setDonationAmount] = useState("10000");
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
-  const [donationType, setDonationType] = useState(""); // Estado para el tipo de donación
   const [isOtherAmountSelected, setIsOtherAmountSelected] = useState(false);
   const donationAmountText = donationAmount;
   const donationAmountInputSize = Math.max(donationAmountText.length, 1);
@@ -69,8 +67,8 @@ function DonationPay() {
   }, []);
 
   const handleClick = () => {
-    if (!isDonationAmountValid || !acceptedTerms) {
-      console.error("Monto de donación no válido o términos no aceptados");
+    if (!isDonationAmountValid) {
+      console.error("Monto de donación no válido");
       return;
     }
 
@@ -143,11 +141,6 @@ function DonationPay() {
     }
 
     e.preventDefault();
-  };
-
-  const handleDonationTypeChange = (type) => {
-    setDonationType(type);
-    setAcceptedTerms(true);
   };
 
   return (
@@ -363,41 +356,12 @@ function DonationPay() {
             />
           </div>
 
-          <div className="flex items-center">
-            <input
-              type="radio"
-              id="monthlyDonation"
-              name="donationType"
-              className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
-              onChange={() => handleDonationTypeChange("monthly")}
-              checked={donationType === "monthly"}
-            />
-            <label htmlFor="monthlyDonation" className="ml-2 text-gray-700">
-              {t("donation.monthly_payment")}
-            </label>
-          </div>
-
-          <div className="flex items-center">
-            <input
-              type="radio"
-              id="oneTimeDonation"
-              name="donationType"
-              className="rounded border-gray-300 text-zinc-900 focus:ring-zinc-900"
-              onChange={() => handleDonationTypeChange("oneTime")}
-              checked={donationType === "oneTime"}
-            />
-            <label htmlFor="oneTimeDonation" className="ml-2 text-gray-700">
-              {t("donation.one_time_contribution")}
-            </label>
-          </div>
-
           <button
             className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${
-              (!donationType || !isDonationAmountValid) &&
-              "opacity-50 cursor-not-allowed"
+              !isDonationAmountValid && "opacity-50 cursor-not-allowed"
             }`}
             onClick={handleClick}
-            disabled={!donationType || !isDonationAmountValid}
+            disabled={!isDonationAmountValid}
           >
             {t("donation.continue")}
           </button>
