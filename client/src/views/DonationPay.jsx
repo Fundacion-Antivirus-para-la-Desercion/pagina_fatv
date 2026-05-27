@@ -119,13 +119,15 @@ function DonationPay() {
       return;
     }
 
-    const nextAmount = Number(value);
+    const normalizedValue = value.replace(/^0+(?=\d)/, "");
+
+    const nextAmount = Number(normalizedValue);
 
     if (Number.isNaN(nextAmount) || nextAmount < 0) {
       return;
     }
 
-    setDonationAmount(value);
+    setDonationAmount(normalizedValue);
   };
 
   const handleDonationAmountKeyDown = (e) => {
