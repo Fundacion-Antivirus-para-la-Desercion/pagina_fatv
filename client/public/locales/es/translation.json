@@ -752,6 +752,30 @@
       "title": "CIFRAS QUE TRANSFORMAN REALIDADES",
       "description": "Cada número representa una historia de superación, una familia esperanzada y un futuro profesional construido con dedicación y apoyo integral.",
       "metricsData": {
+        "metric_one": {
+          "span": "PERMANENCIA",
+          "description": "Tasa de permanencia estudiantil lograda gracias a nuestras intervenciones de acompañamiento integral."
+        },
+        "metric_two": {
+          "span": "ESTUDIANTES",
+          "description": "Jóvenes apoyados a través de nuestros programas de intervención social y apoyo académico."
+        },
+        "metric_three": {
+          "span": "DECISIONES",
+          "description": "Decisiones sociovocacionales acompañadas para orientar el futuro profesional de nuestros estudiantes."
+        },
+        "metric_four": {
+          "span": "SATISFACCIÓN",
+          "description": "De los estudiantes reportan mejoras significativas en su bienestar académico y emocional."
+        },
+        "metric_five": {
+          "span": "GRADUADOS",
+          "description": "Estudiantes que completaron exitosamente sus estudios con nuestro acompañamiento."
+        },
+        "metric_six": {
+          "span": "ALIADOS",
+          "description": "Instituciones educativas y organizaciones aliadas en nuestra misión contra la deserción estudiantil."
+        },
         "metrict_one": {
           "span": "PERMANENCIA",
           "description": "Tasa de permanencia estudiantil lograda gracias a nuestras intervenciones de acompañamiento integral."

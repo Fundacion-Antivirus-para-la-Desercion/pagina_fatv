@@ -14,56 +14,56 @@ function Metrics() {
   const metricsData = [
     {
       icon: <HiMiniArrowTrendingUp />,
-      label: t("socialIntervention.metrics.metricsData.metrict_one.span"),
+      label: t("socialIntervention.metrics.metricsData.metric_one.span"),
       value: 91,
       sign: "%",
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_one.description",
+        "socialIntervention.metrics.metricsData.metric_one.description",
       ),
     },
     {
       icon: <GoPeople />,
-      label: t("socialIntervention.metrics.metricsData.metrict_two.span"),
+      label: t("socialIntervention.metrics.metricsData.metric_two.span"),
       value: 10512,
       sign: "+",
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_two.description",
+        "socialIntervention.metrics.metricsData.metric_two.description",
       ),
     },
     {
       icon: <LuCompass />,
-      label: t("socialIntervention.metrics.metricsData.metrict_three.span"),
+      label: t("socialIntervention.metrics.metricsData.metric_three.span"),
       sign: "+",
       value: 3834,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_three.description",
+        "socialIntervention.metrics.metricsData.metric_three.description",
       ),
     },
     {
       icon: <PiHeartStraight />,
-      label: t("socialIntervention.metrics.metricsData.metrict_four.span"),
+      label: t("socialIntervention.metrics.metricsData.metric_four.span"),
       sign: "%",
       value: 85,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_four.description",
+        "socialIntervention.metrics.metricsData.metric_four.description",
       ),
     },
     {
       icon: <LuGraduationCap />,
-      label: t("socialIntervention.metrics.metricsData.metrict_five.span"),
+      label: t("socialIntervention.metrics.metricsData.metric_five.span"),
       sign: "+",
       value: 2885,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_five.description",
+        "socialIntervention.metrics.metricsData.metric_five.description",
       ),
     },
     {
       icon: <PiPuzzlePieceBold />,
-      label: t("socialIntervention.metrics.metricsData.metrict_six.span"),
+      label: t("socialIntervention.metrics.metricsData.metric_six.span"),
       sign: "+",
       value: 26,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_six.description",
+        "socialIntervention.metrics.metricsData.metric_six.description",
       ),
     },
   ];
