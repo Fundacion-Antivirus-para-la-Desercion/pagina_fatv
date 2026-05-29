@@ -13,22 +13,22 @@ function Metrics() {
     {
       id: "01",
       icon: <LuHistory />,
-      value: 3,
       sign: "+",
+      value: 3,
       title: t("dataAnalytics.metrics.one"),
     },
     {
       id: "02",
       icon: <HiOutlinePresentationChartBar />,
-      value: 90,
       sign: "+",
+      value: 90,
       title: t("dataAnalytics.metrics.two"),
     },
     {
       id: "03",
       icon: <BsDatabaseCheck />,
-      value: 500,
       sign: "+",
+      value: 500,
       title: t("dataAnalytics.metrics.three"),
     },
     {
@@ -61,6 +61,7 @@ function Metrics() {
         {techMetrics.map((metric, index) => {
           const isDark = index % 2 === 0; // Alterna entre dark y yellow
           const styles = isDark ? variantStyles.dark : variantStyles.yellow;
+          const isPrefixSign = metric.sign === "+";
 
           return (
             <motion.div
@@ -82,10 +83,11 @@ function Metrics() {
               </div>
               <div>
                 <span
-                  className={`text-4xl md:text-5xl ${styles.numberColor} font-impact`}
+                  className={`inline-flex items-baseline text-4xl md:text-5xl ${styles.numberColor} font-impact`}
                 >
+                  {isPrefixSign && <span className="mr-1">{metric.sign}</span>}
                   <CounterNumeric countNumber={metric.value} />
-                  {metric.sign}
+                  {!isPrefixSign && <span className="ml-1">{metric.sign}</span>}
                 </span>
                 <p className={`text-sm md:text-base ${styles.text} mt-2`}>
                   {metric.title}

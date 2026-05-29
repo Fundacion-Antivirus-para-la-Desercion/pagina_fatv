@@ -1,9 +1,7 @@
 import { HiMiniArrowTrendingUp } from "react-icons/hi2";
 import { GoPeople } from "react-icons/go";
-import { LuCompass } from "react-icons/lu";
-import { PiHeartStraight } from "react-icons/pi";
-import { LuGraduationCap } from "react-icons/lu";
-import { PiPuzzlePieceBold } from "react-icons/pi";
+import { LuCompass, LuGraduationCap } from "react-icons/lu";
+import { PiHeartStraight, PiPuzzlePieceBold } from "react-icons/pi";
 import { RiMedal2Fill } from "react-icons/ri";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
@@ -16,95 +14,97 @@ function Metrics() {
   const metricsData = [
     {
       icon: <HiMiniArrowTrendingUp />,
-      span: t("socialIntervention.metrics.metricsData.metrict_one.span"),
-      value: <CounterNumeric countNumber={91} />,
+      label: t("socialIntervention.metrics.metricsData.metric_one.span"),
+      value: 91,
       sign: "%",
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_one.description",
+        "socialIntervention.metrics.metricsData.metric_one.description",
       ),
     },
     {
       icon: <GoPeople />,
-      span: t("socialIntervention.metrics.metricsData.metrict_two.span"),
-      value: <CounterNumeric countNumber={10512} />,
+      label: t("socialIntervention.metrics.metricsData.metric_two.span"),
+      value: 10512,
       sign: "+",
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_two.description",
+        "socialIntervention.metrics.metricsData.metric_two.description",
       ),
     },
     {
       icon: <LuCompass />,
-      span: t("socialIntervention.metrics.metricsData.metrict_three.span"),
-      value: <CounterNumeric countNumber={3834} />,
+      label: t("socialIntervention.metrics.metricsData.metric_three.span"),
       sign: "+",
+      value: 3834,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_three.description",
+        "socialIntervention.metrics.metricsData.metric_three.description",
       ),
     },
     {
       icon: <PiHeartStraight />,
-      span: t("socialIntervention.metrics.metricsData.metrict_four.span"),
-      value: <CounterNumeric countNumber={85} />,
+      label: t("socialIntervention.metrics.metricsData.metric_four.span"),
       sign: "%",
+      value: 85,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_four.description",
+        "socialIntervention.metrics.metricsData.metric_four.description",
       ),
     },
     {
       icon: <LuGraduationCap />,
-      span: t("socialIntervention.metrics.metricsData.metrict_five.span"),
-      value: <CounterNumeric countNumber={2885} />,
+      label: t("socialIntervention.metrics.metricsData.metric_five.span"),
       sign: "+",
+      value: 2885,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_five.description",
+        "socialIntervention.metrics.metricsData.metric_five.description",
       ),
     },
     {
       icon: <PiPuzzlePieceBold />,
-      span: t("socialIntervention.metrics.metricsData.metrict_six.span"),
-      value: <CounterNumeric countNumber={26} />,
+      label: t("socialIntervention.metrics.metricsData.metric_six.span"),
       sign: "+",
+      value: 26,
       description: t(
-        "socialIntervention.metrics.metricsData.metrict_six.description",
+        "socialIntervention.metrics.metricsData.metric_six.description",
       ),
     },
   ];
 
   return (
-    <>
-      <section className="relative bg-dark-blue mt-10 p-10">
-        <motion.div
-          {...slideFromTop({
-            transition: { delay: 2 },
-            viewport: { amount: 1 },
-          })}
-          className="will-change-transform"
-        >
-          <RiMedal2Fill className="absolute hidden lg:block top-0 left-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
-        </motion.div>
-        <motion.div
-          {...slideFromTop({
-            transition: { delay: 2 },
-            viewport: { amount: 1 },
-          })}
-          className="will-change-transform"
-        >
-          <RiMedal2Fill className="absolute hidden lg:block top-0 right-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
-        </motion.div>
+    <section className="relative bg-dark-blue mt-10 p-10">
+      <motion.div
+        {...slideFromTop({
+          transition: { delay: 2 },
+          viewport: { amount: 1 },
+        })}
+        className="will-change-transform"
+      >
+        <RiMedal2Fill className="absolute hidden lg:block top-0 left-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
+      </motion.div>
+      <motion.div
+        {...slideFromTop({
+          transition: { delay: 2 },
+          viewport: { amount: 1 },
+        })}
+        className="will-change-transform"
+      >
+        <RiMedal2Fill className="absolute hidden lg:block top-0 right-1 text-9xl m-5 text-[#ffffff93] -rotate-0" />
+      </motion.div>
 
-        <div className="flex flex-col text-center mt-10">
-          <span className="text-base md:text-lg text-primary-yellow font-impact uppercase text-center mt-4">
-            {t("socialIntervention.metrics.span")}
-          </span>
-          <h2 className="text-4xl md:text-5xl text-white font-impact">
-            {t("socialIntervention.metrics.title")}
-          </h2>
-          <p className="text-lg text-white p-5 mt-8">
-            {t("socialIntervention.metrics.description")}
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-3 md:p-0 max-w-7xl mx-auto mt-5 md:mt-10">
-          {metricsData.map((metric, index) => (
+      <div className="flex flex-col text-center mt-10">
+        <span className="text-base md:text-lg text-primary-yellow font-impact uppercase text-center mt-4">
+          {t("socialIntervention.metrics.span")}
+        </span>
+        <h2 className="text-4xl md:text-5xl text-white font-impact">
+          {t("socialIntervention.metrics.title")}
+        </h2>
+        <p className="text-lg text-white p-5 mt-8">
+          {t("socialIntervention.metrics.description")}
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-3 md:p-0 max-w-7xl mx-auto mt-5 md:mt-10">
+        {metricsData.map((metric, index) => {
+          const isPrefixSign = metric.sign === "+";
+
+          return (
             <div
               key={index}
               className="flex flex-col bg-white p-6 rounded-2xl transform hover:scale-105 transition-all duration-500"
@@ -114,28 +114,25 @@ function Metrics() {
                   {metric.icon}
                 </div>
                 <div>
-                  {" "}
-                  <span className="text-dark-blue text-lg">{metric.span}</span>
+                  <span className="text-dark-blue text-lg">{metric.label}</span>
                 </div>
               </div>
-              <div className="flex items-baseline font-impact">
-                <figure className="text-3xl md:text-4xl text-center md:text-left text-dark-blue mt-2">
-                  {metric.value}
-                </figure>
-                <span className="text-dark-blue text-3xl md:text-4xl ml-1">
-                  {" "}
-                  {metric.sign}
+              <div className="flex items-baseline font-impact text-3xl md:text-4xl text-dark-blue mt-2">
+                {isPrefixSign && <span className="mr-1">{metric.sign}</span>}
+                <span className="text-center md:text-left">
+                  <CounterNumeric countNumber={metric.value} />
                 </span>
+                {!isPrefixSign && <span className="ml-1">{metric.sign}</span>}
               </div>
 
               <p className="text-center md:text-left text-base text-dark-blue mt-3">
                 {metric.description}
               </p>
             </div>
-          ))}
-        </div>
-      </section>
-    </>
+          );
+        })}
+      </div>
+    </section>
   );
 }
 
