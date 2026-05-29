@@ -2,8 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import BannerRepositorioEn from "../../public/services_imgs/banner-services.jpg";
 import BannerRepositorioEs from "../../public/services_imgs/banner-services.jpg";
-import foto3 from "../../public/services_imgs/foto4.jpg";
-import foto4 from "../../public/services_imgs/foto3.jpg";
 import BannerView from "../components/Banner-views/BannerView";
 
 function Repositorio() {
@@ -38,7 +36,7 @@ function Repositorio() {
           </div>
           <div className="w-full md:w-1/2 relative">
             <img
-              src={foto3}
+              src=""
               alt="emocional 1"
               className="w-full h-auto object-cover"
             />
@@ -54,8 +52,8 @@ function Repositorio() {
           <div className="w-full md:w-1/2 relative ">
             <img
               className="w-full h-auto object-cover"
-              src={foto4}
-              alt="emocional 2"
+              src=""
+              alt=""
             />
 
             {/* <div className='absolute bottom-0 left-0-0 bg-dark-blue px-16 py-12'>

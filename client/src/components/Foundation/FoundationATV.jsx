@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import "boxicons";
-import imgFB from "../../../public/img_Foundation/imgF.webp";
 import FotoVideo from "../../../public/img_Foundation/foto-video.jpg";
 import Foundation1 from "../../../public/img_Foundation/foundation-1.jpg";
 import Foundation2 from "../../../public/img_Foundation/foundation-2.jpg";
