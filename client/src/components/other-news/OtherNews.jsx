@@ -9,7 +9,16 @@ function OtherNews({ newId }) {
 
   const getRelatedNews = () => {
     const arr = buildNewsArray(t);
-    return arr.filter((news) => news.id > newId).slice(0, 4);
+    const relatedNews = arr.filter((news) => news.id > newId).slice(0, 4);
+
+    if (relatedNews.length < 4) {
+      const additionalNews = arr
+        .filter((news) => news.id <= newId)
+        .slice(0, 4 - relatedNews.length);
+      return [...relatedNews, ...additionalNews];
+    }
+
+    return relatedNews;
   };
 
   const relatedNews = getRelatedNews();
