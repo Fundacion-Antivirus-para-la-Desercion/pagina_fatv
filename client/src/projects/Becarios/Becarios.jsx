@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BannerBecariosEn from "../../../public/services_imgs/banner-services.jpg";
 import BannerBecariosEs from "../../../public/services_imgs/banner-services.jpg";
 import aurelio from "../../../public/projects/Becarios/aurelio.webp";
-import becariosItagui from "../../../public/projects/Becarios/becarios-itagui.webp";
+import becariosItagui from "../../assets/Banner/becarios-itagui.webp";
 
 import BannerView from "../../components/Banner-views/BannerView";
 

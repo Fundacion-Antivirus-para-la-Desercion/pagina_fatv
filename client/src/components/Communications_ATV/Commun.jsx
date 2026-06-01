@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import CommunicationsTeam from "../../../public/img_Communications/communicationsTeam.webp";
 
 function Commun() {
   const { t } = useTranslation();
@@ -38,8 +37,8 @@ function Commun() {
 
         <div className="w-full lg:w-1/2">
           <img
-            src={CommunicationsTeam}
-            alt={t("communications.commun.subtitle")}
+            src=""
+            alt=""
             className="mx-auto w-full max-w-[700px] rounded-3xl border-[4px] border-solid border-white shadow-2xl"
           />
         </div>
