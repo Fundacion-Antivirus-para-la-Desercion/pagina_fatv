@@ -73,7 +73,7 @@ function NewsDetail() {
                 />
               );
             } else {
-              return <a href={content.url}>{content.value}</a>;
+              return <a key={index} href={content.url}>{content.value}</a>;
             }
           })}
         </div>

@@ -26,7 +26,6 @@ function OtherNews({ newId }) {
               <a
                 className="cursor-pointer"
                 onClick={() => {
-                  news.id = news.id;
                   navigate("/news/detail", { state: { news } });
                 }}
               >
@@ -42,12 +41,9 @@ function OtherNews({ newId }) {
                     <h4 className="text-blue-base text-base font-bold mb-1 leading-5">
                       {news.title}
                     </h4>
-                    <a
-                      href={news.link}
-                      className="text-blue-600 hover:text-blue-800 text-sm"
-                    >
+                    <span className="text-blue-600 hover:text-blue-800 text-sm">
                       {t("otherNews.read_more")}
-                    </a>
+                    </span>
                   </div>
                 </section>
               </a>
