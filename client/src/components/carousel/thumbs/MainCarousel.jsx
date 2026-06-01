@@ -9,10 +9,10 @@ import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import "./MainCarousel.css";
 
-import banner1 from "../../../assets/Banner/banner1c.jpeg";
-import banner2 from "../../../../public/projects/Becarios/becarios-itagui.webp";
-import banner3 from "../../../assets/Banner/banner5c.jpeg";
-import banner4 from "../../../assets/Banner/banner10c.jpeg";
+import banner1 from "../../../assets/Banner/colaboradores-fatv.jpeg";
+import banner2 from "../../../assets/Banner/becarios-itagui.webp";
+import banner3 from "../../../assets/Banner/evento-alianza-educacion-itagui.jpeg";
+import banner4 from "../../../assets/Banner/campana-social.webp";
 
 function MainCarousel() {
   const { t } = useTranslation(); // Inicializa el hook de traducción
@@ -67,7 +67,7 @@ function MainCarousel() {
         }}
         loop={true}
         modules={[Autoplay, Navigation, Thumbs]}
-        className="mySwiper"
+        className="mySwiper"g
         thumbs={{ swiper: thumbsSwiper }}
         onSlideChange={handleSlideChange}
       >
