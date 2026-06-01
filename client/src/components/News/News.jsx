@@ -40,7 +40,6 @@ function News() {
               <button
                 className="text-xl md:text-2xl text-primary-purple cursor-pointer"
                 onClick={() => {
-                  news.id = idx;
                   navigate("/news/detail", { state: { news } });
                 }}
               >

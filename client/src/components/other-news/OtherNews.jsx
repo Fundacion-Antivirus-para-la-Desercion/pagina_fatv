@@ -1,21 +1,26 @@
+import { useMemo } from "react";
 import buildNewsArray from "../News/newsArray.js";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function OtherNews({ newId }) {
-  const navigate = useNavigate(); // <-- Hook para navegar
-
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
-  const getRelatedNews = () => {
+  const relatedNews = useMemo(() => {
     const arr = buildNewsArray(t);
-    return arr.filter((news) => news.id !== newId).slice(0, 4);
-  };
-
-  const relatedNews = getRelatedNews();
+    const after = arr.filter((news) => news.id > newId).slice(0, 4);
+    if (after.length < 4) {
+      const before = arr
+        .filter((news) => news.id < newId)
+        .slice(0, 4 - after.length);
+      return [...after, ...before];
+    }
+    return after;
+  }, [newId, t]);
 
   return (
-    <div id="sidebar" className="lg:col-start-2">
+    <div className="lg:col-start-2">
       <div className="shadow-xl rounded-2xl sticky top-4 border border-dark-blue p-4">
         <h3 className="news-detail mb-4 text-center md:text-left text-3xl  font-impact text-blue-base max-md:text-2xl leading-8">
           {t("otherNews.title")}
@@ -23,12 +28,9 @@ function OtherNews({ newId }) {
         <ul className="p-4">
           {relatedNews.map((news) => (
             <li key={news.id} className="mb-2">
-              <a
-                className="cursor-pointer"
-                onClick={() => {
-                  news.id = news.id;
-                  navigate("/news/detail", { state: { news } });
-                }}
+              <button
+                className="w-full text-left cursor-pointer"
+                onClick={() => navigate("/news/detail", { state: { news } })}
               >
                 <section className="grid grid-cols-[4fr_6fr] gap-4 items-center">
                   <div>
@@ -42,15 +44,12 @@ function OtherNews({ newId }) {
                     <h4 className="text-blue-base text-base font-bold mb-1 leading-5">
                       {news.title}
                     </h4>
-                    <a
-                      href={news.link}
-                      className="text-blue-600 hover:text-blue-800 text-sm"
-                    >
+                    <span className="text-blue-600 hover:text-blue-800 text-sm">
                       {t("otherNews.read_more")}
-                    </a>
+                    </span>
                   </div>
                 </section>
-              </a>
+              </button>
             </li>
           ))}
         </ul>
