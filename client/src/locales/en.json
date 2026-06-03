@@ -125,7 +125,7 @@
   },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
-    "description": "At the Fundación Antivirus para la Deserción, we are a non-profit organization that seeks to reduce student dropout levels in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
+    "description": "It is a non-profit organization that seeks to reduce student dropout rates in Colombia, improve retention and graduation levels, and is our way of contributing to a country with more education and, consequently, more development.",
     "be_part_solution": "Be part of the solution",
     "amount_to_donate": "Amount to donate",
     "cop": "All donations are processed in Colombian Pesos",
@@ -677,7 +677,6 @@
       "communications_coordinator": "Communications Area Coordinator",
       "administrative_and_financial_coordinator": "Administrative and Financial Area Coordinator",
       "ambassador": "FATV Ambassador"
-
     }
   },
   "socialIntervention": {
@@ -749,7 +748,7 @@
     "projectsAndTeams": {
       "span": "WHAT WE OFFER",
       "title": "PROJECTS AND TEAMS",
-      "description": "We work across all educational levels with a team dedicated to transforming every student's life.",
+      "description": "We transform opportunities into life projects by managing student retention in universities, bootcamps, and scholarship programs, while providing vocational guidance in schools to lead every path toward success.",
       "projectsCards": {
         "label_stats": {
           "students": "Students",

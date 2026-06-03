@@ -126,7 +126,7 @@
   },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
-    "description": "En la Fundación Antivirus para la Deserción, somos una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+    "description": "Es una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
     "be_part_solution": "Sé parte de la solución",
     "amount_to_donate": "Monto a donar",
     "cop": "Todas las donaciones se procesan en pesos colombianos",
@@ -752,7 +752,7 @@
     "projectsAndTeams": {
       "span": "NUESTRO ALCANCE",
       "title": "PROYECTOS Y EQUIPOS",
-      "description": "Trabajamos en diferentes niveles educativos con un equipo comprometido en transformar la vida de cada estudiante.",
+      "description": "Transformamos oportunidades en proyectos de vida, gestionando la permanencia estudiantil en universidades, bootcamps y programas de becarios, y brindando orientación vocacional en colegios para guiar cada camino hacia el éxito.",
       "projectsCards": {
         "label_stats": {
           "students": "Estudiantes",
