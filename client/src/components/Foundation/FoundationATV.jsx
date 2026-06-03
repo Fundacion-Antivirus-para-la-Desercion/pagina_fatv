@@ -223,7 +223,7 @@ function FoundationATV() {
                   "foundation.foundationATV.organization_info.change_theory.title"
                 )}
               </h5>
-              <p className="text-base p-1 text-blue-base text-justify">
+              <p className="text-base md:text-lg p-1 text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.change_theory.description"
                 )}
@@ -239,7 +239,7 @@ function FoundationATV() {
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.values.title")}
               </h5>
-              <p className="text-base text-blue-base text-justify">
+              <p className="text-base md:text-lg text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.values.description"
                 )}
@@ -269,7 +269,7 @@ function FoundationATV() {
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.mission.title")}
               </h5>
-              <p className="text-base text-blue-base text-justify">
+              <p className="text-base md:text-lg text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.mission.description"
                 )}
@@ -287,7 +287,7 @@ function FoundationATV() {
                   "foundation.foundationATV.organization_info.target_audience.title"
                 )}
               </h5>
-              <p className="text-base text-blue-base text-justify">
+              <p className="text-base md:text-lg text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.target_audience.description"
                 )}
@@ -317,7 +317,7 @@ function FoundationATV() {
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.vision.title")}
               </h5>
-              <p className="text-base text-blue-base text-justify">
+              <p className="text-base md:text-lg text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.vision.description"
                 )}
@@ -333,7 +333,7 @@ function FoundationATV() {
               <h5 className="text-4xl font-impact text-blue-base mb-4">
                 {t("foundation.foundationATV.organization_info.purpose.title")}
               </h5>
-              <p className="text-base text-blue-base text-justify">
+              <p className="text-base md:text-lg text-blue-base text-justify">
                 {t(
                   "foundation.foundationATV.organization_info.purpose.description"
                 )}
@@ -352,7 +352,7 @@ function FoundationATV() {
       </section>
 
       <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
-        <h5 className="col-span-1 md:col-span-4 text-4xl font-impact text-center text-blue-base mb-8">
+        <h5 className="col-span-1 md:col-span-4 text-3xl md:text-5xl font-impact text-center text-blue-base mb-8">
           {t("foundation.foundationATV.organization_info.priorities.title")}
         </h5>
         <motion.div {...expandableTransition}>
@@ -360,7 +360,7 @@ function FoundationATV() {
             <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               1
             </span>
-            <p className="text-base text-justify mt-9 text-white">
+            <p className="text-base md:text-lg text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.consolidate_model"
               )}
@@ -373,7 +373,7 @@ function FoundationATV() {
             <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               2
             </span>
-            <p className="text-base text-justify mt-9 text-white">
+            <p className="text-base md:text-lg text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.explore_interventions"
               )}
@@ -386,7 +386,7 @@ function FoundationATV() {
             <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               3
             </span>
-            <p className="text-base text-justify mt-9 text-white">
+            <p className="text-base md:text-lg text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.involve_actors"
               )}
@@ -399,7 +399,7 @@ function FoundationATV() {
             <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
               4
             </span>
-            <p className="text-base text-justify mt-9 text-white">
+            <p className="text-base md:text-lg text-justify mt-9 text-white">
               {t(
                 "foundation.foundationATV.organization_info.priorities.items.reduce_dropout"
               )}
