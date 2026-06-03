@@ -752,7 +752,7 @@
     "projectsAndTeams": {
       "span": "NUESTRO ALCANCE",
       "title": "PROYECTOS Y EQUIPOS",
-      "description": "Transformamos oportunidades en proyectos de vida, gestionando la permanencia estudiantil en universidades, bootcamps y programas de becarios, y brindando orientación vocacional en colegios para guiar cada camino hacia el éxito.",
+      "description": "Transformamos oportunidades en proyectos de vida, gestionando la <dark>permanencia estudiantil</dark> en <dark>universidades</dark>, <dark>bootcamps</dark> y <dark>programas de becarios</dark>, y brindando <dark>orientación vocacional</dark> en <dark>colegios</dark> para guiar cada camino hacia el éxito.",
       "projectsCards": {
         "label_stats": {
           "students": "Estudiantes",

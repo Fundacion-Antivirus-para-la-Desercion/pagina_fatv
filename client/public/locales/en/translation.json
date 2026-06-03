@@ -803,7 +803,7 @@
     "projectsAndTeams": {
       "span": "WHAT WE OFFER",
       "title": "PROJECTS AND TEAMS",
-      "description": "We transform opportunities into life projects by managing student retention in universities, bootcamps, and scholarship programs, while providing vocational guidance in schools to lead every path toward success.",
+      "description": "We transform opportunities into life projects by managing <dark>student retention</dark> in <dark>universities</dark>, <dark>bootcamps</dark>, and <dark>scholarship programs</dark>, while providing <dark>vocational guidance</dark> in <dark>schools</dark> to lead every path toward success.",
       "projectsCards": {
         "label_stats": {
           "students": "Students",
