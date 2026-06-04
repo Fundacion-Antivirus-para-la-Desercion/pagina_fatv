@@ -49,10 +49,10 @@ function OurTeam() {
       backgroundColor: "#2C9Bc7",
     },
     {
-      name: "David Santiago Botero",
+      name: "Felipe Arango Franco",
       role: t("ourTeam.roles.legal_area_coordinator"),
-      image: "/img_OurTeam/david-botero.webp",
-      backgroundColor: "#90C4F9",
+      image: "/img_OurTeam/felipe-arango.webp",
+      backgroundColor: "#708BC6",
     },
     {
       name: "Manuela Correa Quintero",
@@ -64,7 +64,7 @@ function OurTeam() {
       name: "Javi",
       role: t("ourTeam.roles.ambassador"),
       image: JaviCard,
-      backgroundColor: "#2C395B",
+      backgroundColor: "#06407A",
     },
     {
       name: "Luis Fernando González",

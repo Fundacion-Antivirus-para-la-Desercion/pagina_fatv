@@ -85,9 +85,12 @@ const ServicesATV = () => {
               </section>
               <section>
                 <div className="">
-                  <button className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1">
+                  <Link
+                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
+                    to="/consultorias"
+                  >
                     {t("home.servicesATV.services.more_info")}
-                  </button>
+                  </Link>
                 </div>
               </section>
             </div>
