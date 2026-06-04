@@ -209,7 +209,7 @@ function DonationPay() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-6 p-6 lg:p-10">
+          <div className="flex justify-center flex-col gap-6 p-6 lg:p-10">
             <div className="flex items-center justify-center mb-5">
               <img className="w-10 h-10" src={Pay} alt="" />
               <h2 className="m-2 font-impact  text-xl md:text-3xl text-center text-primary-yellow">
@@ -344,15 +344,7 @@ function DonationPay() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-5  border-gray-300">
-              <p className=" text-base text-dark-blue font-bold">
-                {t("donation.additional_comments")}
-              </p>
-              <textarea
-                className="w-full h-16 rounded-xl p-2 border border-gray-300 hover:border-blue-300"
-                placeholder={t("donation.comments_placeholder")}
-              />
-            </div>
+            
 
             <button
               className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${

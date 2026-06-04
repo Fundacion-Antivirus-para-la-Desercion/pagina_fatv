@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { FaSchool } from "react-icons/fa";
 import { IoMdCode } from "react-icons/io";
 import { PiMedal } from "react-icons/pi";
@@ -83,8 +83,13 @@ function ProjectsAndTeams() {
           <h2 className="text-4xl md:text-5xl text-blue-base font-impact">
             {t("socialIntervention.projectsAndTeams.title")}
           </h2>
-          <p className="text-lg text-blue-base p-5 mt-5 text-center max-w-3xl mx-auto">
-            {t("socialIntervention.projectsAndTeams.description")}
+          <p className="text-base md:text-lg text-blue-base p-5 mt-5 text-justify md:text-center max-w-3xl mx-auto">
+              <Trans
+                  i18nKey="socialIntervention.projectsAndTeams.description"
+                  components={{
+                    dark: <span className="text-dark-blue font-extrabold" />,
+                  }}
+                />
           </p>
         </div>
 
