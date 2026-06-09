@@ -141,7 +141,62 @@
   },
   "ethicsTransparency": {
     "title": "Ethics & Transparency",
-    "description": "At Fundación Antivirus para la Deserción, we follow a strict ethics and transparency program. We have clear anti-corruption policies and internal guidelines to ensure every donation is managed responsibly and used solely to support our mission."
+    "description": "At Fundación Antivirus para la Deserción, we follow a strict ethics and transparency program. We have clear anti-corruption policies and internal guidelines to ensure every donation is managed responsibly and used solely to support our mission.",
+    "pdf": {
+      "title": "DOCUMENTS & REPORTS",
+      "download": "Download PDF",
+      "view": "View Document",
+      "tabs": {
+        "all": "All",
+        "tributario": "Tax Status",
+        "financiero": "Financial Statement",
+        "donaciones": "Donation Policy",
+        "reporte": "Annual Report",
+        "ptee": "PTEE",
+        "devops": "Transparency and Business Ethics Program"
+      },
+      "docs": {
+        "tributario2025": {
+          "title": "Tax Status 2025"
+        },
+        "financiero2025": {
+          "title": "Financial Statement 2025"
+        },
+        "donaciones2025": {
+          "title": "Donation Policy 2025"
+        },
+        "reporte2025": {
+          "title": "Annual Report 2025"
+        },
+        "reporte2026": {
+          "title": "Annual Report 2026"
+        },
+        "ptee2026": {
+          "title": "PTEE 2026"
+        },
+        "ptee2025": {
+          "title": "PTEE 2025"
+        },
+        "tributario2024": {
+          "title": "Tax Status 2024"
+        },
+        "financiero2024": {
+          "title": "Financial Statement 2024"
+        },
+        "financiero2023": {
+          "title": "Financial Statement 2023"
+        },
+        "donaciones2024": {
+          "title": "Donation Policy 2024"
+        },
+        "reporte2024": {
+          "title": "Annual Report 2024"
+        },
+        "reporte2023": {
+          "title": "Annual Report 2023"
+        }
+      }
+    }
   },
   "dataAnalytics": {
     "banner": {
