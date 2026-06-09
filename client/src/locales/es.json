@@ -147,19 +147,31 @@
       "view": "Ver Documento",
       "tabs": {
         "all": "Todos",
-        "tributario": "Régimen Tributario",
-        "financiero": "Estado Financiero",
-        "donaciones": "Reglamento Donaciones",
-        "reporte": "Reporte Anual",
-        "ptee": "PTEE"
+        "ptee": "PTEE",
+        "tax": "Régimen Tributario",
+        "financial": "Estado Financiero",
+        "donations": "Reglamento Donaciones",
+        "report": "Reporte Anual"
       },
       "docs": {
-        "tributario2025": { "title": "Régimen Tributario 2025" },
-        "financiero2025": { "title": "Estado Financiero 2025" },
-        "donaciones2025": { "title": "Reglamento de Donaciones 2025" },
-        "reporte2025": { "title": "Reporte Anual 2025" },
-        "reporte2026": { "title": "Reporte Anual 2026" },
-        "ptee2026": { "title": "PTEE 2026" }
+        "ptee2026": {
+          "title": "PTEE 2026"
+        },
+        "tax2025": {
+          "title": "Régimen Tributario 2025"
+        },
+        "financial2025": {
+          "title": "Estado Financiero 2025"
+        },
+        "donations2025": {
+          "title": "Reglamento de Donaciones 2025"
+        },
+        "report2025": {
+          "title": "Reporte Anual 2025"
+        },
+        "report2026": {
+          "title": "Reporte Anual 2026"
+        }
       }
     }
   },

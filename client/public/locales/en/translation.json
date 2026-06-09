@@ -148,14 +148,36 @@
       "view": "View Document",
       "tabs": {
         "all": "All",
+        "ptee": "PTEE",
+        "tax": "Tax Status",
+        "financial": "Financial Statement",
+        "donations": "Donation Policy",
+        "report": "Annual Report",
         "tributario": "Tax Status",
         "financiero": "Financial Statement",
         "donaciones": "Donation Policy",
         "reporte": "Annual Report",
-        "ptee": "PTEE",
         "devops": "Transparency and Business Ethics Program"
       },
       "docs": {
+        "ptee2026": {
+          "title": "PTEE 2026"
+        },
+        "tax2025": {
+          "title": "Tax Status 2025"
+        },
+        "financial2025": {
+          "title": "Financial Statement 2025"
+        },
+        "donations2025": {
+          "title": "Donation Policy 2025"
+        },
+        "report2025": {
+          "title": "Annual Report 2025"
+        },
+        "report2026": {
+          "title": "Annual Report 2026"
+        },
         "tributario2025": {
           "title": "Tax Status 2025"
         },
@@ -170,9 +192,6 @@
         },
         "reporte2026": {
           "title": "Annual Report 2026"
-        },
-        "ptee2026": {
-          "title": "PTEE 2026"
         },
         "ptee2025": {
           "title": "PTEE 2025"
