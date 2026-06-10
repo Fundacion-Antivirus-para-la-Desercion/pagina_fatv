@@ -504,7 +504,7 @@
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {
-      "0": {
+      "movimiento-2024": {
         "alt": "2024: Un año de movimiento, retos y transformación",
         "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
         "detail": {
@@ -520,7 +520,7 @@
           ]
         }
       },
-      "2": {
+      "desercion-universitaria": {
         "alt": "La deserción universitaria",
         "title": "LA DESERCIÓN UNIVERSITARIA",
         "detail": {
@@ -534,7 +534,7 @@
           ]
         }
       },
-      "3": {
+      "conversatorio-envigado": {
         "alt": "Conversatorio en universidad de Envigado",
         "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
         "detail": {
@@ -545,7 +545,7 @@
           ]
         }
       },
-      "4": {
+      "congreso-latinoamericano": {
         "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
         "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
         "detail": {
@@ -555,7 +555,7 @@
           ]
         }
       },
-      "5": {
+      "congreso-comunicaciones": {
         "alt": "Ponencia en congreso internacional de comunicaciones",
         "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
         "detail": {
@@ -565,7 +565,7 @@
           ]
         }
       },
-      "7": {
+      "mencion-honorifica": {
         "alt": "Recibimos mención honorífica",
         "title": "RECIBIMOS MENCIÓN HONORÍFICA",
         "detail": {
@@ -575,7 +575,7 @@
           ]
         }
       },
-      "14": {
+      "encuentro-colaboradores": {
         "alt": "La importacia de los datos para acabar con la deserción",
         "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
         "detail": {

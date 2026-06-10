@@ -503,7 +503,7 @@
     "read_more": "Read more",
     "see_more_alt": "See more",
     "items": {
-      "0": {
+      "movimiento-2024": {
         "alt": "2024: A year of movement, challenges and transformation",
         "title": "2024: A YEAR OF MOVEMENT, CHALLENGES AND TRANSFORMATION",
         "detail": {
@@ -519,7 +519,7 @@
           ]
         }
       },
-      "2": {
+      "desercion-universitaria": {
         "alt": "University dropout",
         "title": "UNIVERSITY DROPOUT",
         "detail": {
@@ -533,7 +533,7 @@
           ]
         }
       },
-      "3": {
+      "conversatorio-envigado": {
         "alt": "Colloquium at Envigado university",
         "title": "COLLOQUIUM AT ENVIADO UNIVERSITY",
         "detail": {
@@ -544,7 +544,7 @@
           ]
         }
       },
-      "4": {
+      "congreso-latinoamericano": {
         "alt": "Participation in the XI Latin American congress on dropout in higher education",
         "title": "PARTICIPATION IN THE XI LATIN AMERICAN CONGRESS ON DROPOUT IN HIGHER EDUCATION",
         "detail": {
@@ -554,7 +554,7 @@
           ]
         }
       },
-      "5": {
+      "congreso-comunicaciones": {
         "alt": "Presentation at the international communications congress",
         "title": "PRESENTATION AT THE INTERNATIONAL COMMUNICATIONS CONGRESS",
         "detail": {
@@ -564,7 +564,7 @@
           ]
         }
       },
-      "7": {
+      "mencion-honorifica": {
         "alt": "We received an honorable mention",
         "title": "WE RECEIVED AN HONORABLE MENTION",
         "detail": {
@@ -574,7 +574,7 @@
           ]
         }
       },
-      "14": {
+      "encuentro-colaboradores": {
         "alt": "The importance of data to end dropout",
         "title": "THE IMPORTANCE OF DATA TO END DROPOUT",
         "detail": {

@@ -3,21 +3,22 @@ import buildNewsArray from "../News/newsArray.js";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-function OtherNews({ newId }) {
+function OtherNews({ newSlug }) {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
   const relatedNews = useMemo(() => {
     const arr = buildNewsArray(t);
-    const after = arr.filter((news) => news.id > newId).slice(0, 4);
+    const currentIdx = arr.findIndex((n) => n.slug === newSlug);
+    const after = arr.filter((_, i) => i > currentIdx).slice(0, 4);
     if (after.length < 4) {
       const before = arr
-        .filter((news) => news.id < newId)
+        .filter((_, i) => i < currentIdx)
         .slice(0, 4 - after.length);
       return [...after, ...before];
     }
     return after;
-  }, [newId, t]);
+  }, [newSlug, t]);
 
   return (
     <div className="lg:col-start-2">
@@ -27,7 +28,7 @@ function OtherNews({ newId }) {
         </h3>
         <ul className="p-4">
           {relatedNews.map((news) => (
-            <li key={news.id} className="mb-2">
+            <li key={news.slug} className="mb-2">
               <button
                 className="w-full text-left cursor-pointer"
                 onClick={() => navigate("/news/detail", { state: { news } })}
