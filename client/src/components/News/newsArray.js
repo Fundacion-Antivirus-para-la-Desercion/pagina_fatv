@@ -1,5 +1,4 @@
 import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
-import Renovacion from "../../../src/assets/images/views/imagesNews/RUT.jpg";
 import Desercion from "../../../src/assets/images/views/imagesNews/desercion-universitaria.gif";
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
@@ -62,25 +61,6 @@ const buildNewsArray = (t) => [
           type: "link",
           value: t("news.items.0.detail.content.6"),
           url: "https://fundacionantivirus-my.sharepoint.com/personal/coordinaciontecnologiadatos_fundacionantivirusparaladesercion_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos%2FReporteAnual2024%5Ffinal%2Epdf&parent=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos&ga=1",
-        },
-      ],
-    },
-  },
-  {
-    id: 2,
-    img: Renovacion,
-    alt: t("news.items.1.alt"),
-    title: t("news.items.1.title"),
-    newDetailContent: {
-      title: t("news.items.1.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.1.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Renovacion,
         },
       ],
     },
