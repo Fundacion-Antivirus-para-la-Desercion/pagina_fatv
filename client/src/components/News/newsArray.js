@@ -5,7 +5,6 @@ import Participacion from "../../../src/assets/images/views/imagesNews/participa
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import VisionCompartida from "../../../src/assets/images/views/imagesNews/vision-compartida.jpeg";
 import NuestraInvestigacion from "../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp";
 import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
@@ -179,25 +178,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: Mencion,
-        },
-      ],
-    },
-  },
-  {
-    id: 10,
-    img: VisionCompartida,
-    alt: t("news.items.9.alt"),
-    title: t("news.items.9.title"),
-    newDetailContent: {
-      title: t("news.items.9.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.9.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: VisionCompartida,
         },
       ],
     },
