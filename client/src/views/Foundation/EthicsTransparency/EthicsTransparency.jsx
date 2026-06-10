@@ -5,11 +5,9 @@ import PdfCards from "./PdfCards";
 function EthicsTransparencyCard() {
   return (
     <>
-      <motion.section {...expandableTransition()}>
-        <div>
-          <PdfCards />
-        </div>
-      </motion.section>
+      <div>
+        <PdfCards />
+      </div>
     </>
   );
 }

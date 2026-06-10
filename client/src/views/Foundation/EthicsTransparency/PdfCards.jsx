@@ -45,10 +45,10 @@ function PdfCards() {
               key={tab.id}
               type="button"
               onClick={() => setActiveTab(tab.id)}
-              className={`rounded-3xl border px-5 py-3 text-sm md:text-lg transition-all duration-300 ease-out ${
+              className={`rounded-3xl px-4 py-3 min-w-20 text-sm md:text-lg hover:scale-105 transition-transform duration-500 cursor-pointer ${
                 activeTab === tab.id
-                  ? "border-dark-blue bg-dark-blue text-white shadow-lg shadow-dark-blue/20"
-                  : "cursor-pointer border-transparent bg-[#E6E7ED] text-dark-blue hover:scale-105 hover:bg-primary-yellow"
+                  ? " bg-dark-blue text-white shadow-lg shadow-dark-blue/20"
+                  : "cursor-pointer bg-[#E6E7ED] text-dark-blue hover:scale-105 hover:bg-primary-yellow"
               }`}
             >
               {t(tab.labelKey)}
