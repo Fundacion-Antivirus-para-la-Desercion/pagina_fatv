@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, transform } from "framer-motion";
 import { HiOutlineDocumentText, HiArrowRightCircle } from "react-icons/hi2";
 import { BsFiletypePdf } from "react-icons/bs";
 import javi from "../../../assets/images/views/javi/javi-corto.webp";
@@ -9,17 +9,26 @@ import { useTranslation } from "react-i18next";
 const containerVariants = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.1 },
+    transition: {
+      staggerChildren: 0.15,
+    },
   },
   exit: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    transition: {
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
   },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-  exit: { opacity: 0, y: -10, transition: { duration: 0.25 } },
+  hidden: { opacity: 0, scale: 0.5 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+  exit: { opacity: 0, scale: 0.5, transition: { duration: 0.3 } },
 };
 
 function PdfCards() {
@@ -62,9 +71,10 @@ function PdfCards() {
             key={activeTab}
             variants={containerVariants}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
             exit="exit"
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+            viewport={{ once: true, amount: 0.1 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:min-h-[320px] lg:content-start"
           >
             {filteredDocs.map((doc) => (
               <motion.a
@@ -73,7 +83,7 @@ function PdfCards() {
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={cardVariants}
-                className="group relative overflow-hidden rounded-2xl border-2 border-transparent bg-white p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-base block min-h-[140px]"
+                className="group relative overflow-hidden rounded-2xl border-2 border-transparent bg-white p-6 shadow-md transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:border-blue-base block min-h-[140px]"
               >
                 {/* Normal state — slides out upward */}
                 <div className="flex items-start gap-4 transition-all duration-500 ease-in-out group-hover:-translate-y-4 group-hover:opacity-0">
