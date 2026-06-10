@@ -5,7 +5,6 @@ import Participacion from "../../../src/assets/images/views/imagesNews/participa
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import NuestraInvestigacion from "../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp";
 import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 // buildNewsArray now receives the `t` translation function from the caller
@@ -178,45 +177,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: Mencion,
-        },
-      ],
-    },
-  },
-  {
-    id: 13,
-    img: NuestraInvestigacion,
-    alt: t("news.items.12.alt"),
-    title: t("news.items.12.title"),
-    newDetailContent: {
-      title: t("news.items.12.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: NuestraInvestigacion,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.3"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.4"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.5"),
         },
       ],
     },
