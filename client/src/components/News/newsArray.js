@@ -3,7 +3,6 @@ import Desercion from "../../../src/assets/images/views/imagesNews/desercion-uni
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
-import ValleDelSofware from "../../../src/assets/images/views/imagesNews/medellín-valle-del-software-MVS.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
 import VisionCompartida from "../../../src/assets/images/views/imagesNews/vision-compartida.jpeg";
@@ -163,29 +162,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: Ponencia,
-        },
-      ],
-    },
-  },
-  {
-    id: 7,
-    img: ValleDelSofware,
-    alt: t("news.items.6.alt"),
-    title: t("news.items.6.title"),
-    newDetailContent: {
-      title: t("news.items.6.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.6.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.6.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: ValleDelSofware,
         },
       ],
     },
