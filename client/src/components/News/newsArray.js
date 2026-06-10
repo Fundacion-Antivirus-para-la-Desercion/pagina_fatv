@@ -7,7 +7,6 @@ import Mencion from "../../../src/assets/images/views/imagesNews/mención-honor�
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
 import VisionCompartida from "../../../src/assets/images/views/imagesNews/vision-compartida.jpeg";
 import EstadoEducacion from "../../../src/assets/images/views/imagesNews/estado-de-la-educación-en-antioquia.jpeg";
-import DiseñoInterior from "../../../src/assets/images/views/imagesNews/nuestro-diseño-interior.jpeg";
 import NuestraInvestigacion from "../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp";
 import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
@@ -219,42 +218,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: EstadoEducacion,
-        },
-      ],
-    },
-  },
-  {
-    id: 12,
-    img: DiseñoInterior,
-    alt: t("news.items.11.alt"),
-    title: t("news.items.11.title"),
-    newDetailContent: {
-      title: t("news.items.11.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: DiseñoInterior,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.3"),
-        },
-        {
-          type: "img",
-          value:
-            "https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202023-07-04%20at%2014.19.28.jpeg",
         },
       ],
     },
