@@ -5,7 +5,6 @@ import Participacion from "../../../src/assets/images/views/imagesNews/participa
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 // buildNewsArray now receives the `t` translation function from the caller
 // to avoid running translations at module import time (i18n may not be
@@ -177,57 +176,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: Mencion,
-        },
-      ],
-    },
-  },
-  {
-    id: 14,
-    img: LlevandoEducacion,
-    alt: t("news.items.13.alt"),
-    title: t("news.items.13.title"),
-    newDetailContent: {
-      title: t("news.items.13.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: LlevandoEducacion,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.1"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.3"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.4"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.5"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.6"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.7"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.8"),
         },
       ],
     },
