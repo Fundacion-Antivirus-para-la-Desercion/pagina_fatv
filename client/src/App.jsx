@@ -5,7 +5,7 @@ import DonationPay from "./views/DonationPay";
 import ContextData from "./components/ContextData/ContextData";
 import QHFA from "./views/QHFA";
 import DataAnalytics from "./views/DataAnalytics/DataAnalytics.jsx";
-import Foundation from "./views/Foundation";
+import Foundation from "./views/Foundation/Foundation.jsx";
 import ContacUs from "./views/ContacUs";
 import Communications from "./views/Communications/Communications.jsx";
 import ApoyoAcademico from "./Services/ApoyoAcademico";
