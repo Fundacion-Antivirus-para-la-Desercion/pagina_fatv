@@ -575,7 +575,7 @@
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {
-      "0": {
+      "movimiento-2024": {
         "alt": "2024: Un año de movimiento, retos y transformación",
         "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
         "detail": {
@@ -591,17 +591,7 @@
           ]
         }
       },
-      "1": {
-        "alt": "Renovación del régimen especial por la transparencia",
-        "title": "RENOVACIÓN DEL RÉGIMEN ESPECIAL POR LA TRANSPARENCIA",
-        "detail": {
-          "title": "RENOVACIÓN DEL RÉGIMEN ESPECIAL POR LA TRANSPARENCIA",
-          "content": [
-            "Se verificó la presentación oportuna de la solicitud de actualización de reconocimiento como ESAL para gozar de la exención del impuesto de renta ante la DIAN de acuerdo a requisitos; quedando pendiente la publicación en la página web de la Fundación."
-          ]
-        }
-      },
-      "2": {
+      "desercion-universitaria": {
         "alt": "La deserción universitaria",
         "title": "LA DESERCIÓN UNIVERSITARIA",
         "detail": {
@@ -615,7 +605,7 @@
           ]
         }
       },
-      "3": {
+      "conversatorio-envigado": {
         "alt": "Conversatorio en universidad de Envigado",
         "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
         "detail": {
@@ -626,7 +616,7 @@
           ]
         }
       },
-      "4": {
+      "congreso-latinoamericano": {
         "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
         "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
         "detail": {
@@ -636,7 +626,7 @@
           ]
         }
       },
-      "5": {
+      "congreso-comunicaciones": {
         "alt": "Ponencia en congreso internacional de comunicaciones",
         "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
         "detail": {
@@ -646,18 +636,7 @@
           ]
         }
       },
-      "6": {
-        "alt": "Medellín valle del software",
-        "title": "MEDELLÍN VALLE DEL SOFTWARE-MVS",
-        "detail": {
-          "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
-          "content": [
-            "La primera versión de MVS se vivió en simultáneo al TechFest 2022, reuniendo expertos, empresarios, docentes, estudiantes y ciudadanos interesados en la tecnología. Este espacio lleno de talleres, experiencias interactivas y entretenimiento fue realizado por la Alcaldía de Medellín.",
-            "La Fundación Antivirus para la Deserción tuvo la oportunidad de participar durante los cuatro días del festival, dando a conocer la problemática de la deserción que se erige como una pandemia educativa en las carreras STEM; a la vez que su modelo de intervención, impulsando a más jóvenes a estudiar estas áreas."
-          ]
-        }
-      },
-      "7": {
+      "mencion-honorifica": {
         "alt": "Recibimos mención honorífica",
         "title": "RECIBIMOS MENCIÓN HONORÍFICA",
         "detail": {
@@ -667,83 +646,7 @@
           ]
         }
       },
-      "8": {
-        "alt": "Encuentro con colaboradores FATV",
-        "title": "ENCUENTRO CON COLABORADORES FATV",
-        "detail": {
-          "title": "ENCUENTRO CON COLABORADORES FATV",
-          "content": [
-            "¡Inspiración en cada mirada! Conoce a nuestro talentoso equipo de colaboradores, quienes con pasión y experiencia llevan a nuestra Fundación hacia la consecución de sus objetivos. ¡Juntos, enfrentaremos los retos del 2023!"
-          ]
-        }
-      },
-      "9": {
-        "alt": "Visión compartida",
-        "title": "VISIÓN COMPARTIDA",
-        "detail": {
-          "title": "VISIÓN COMPARTIDA",
-          "content": [
-            "¡El poder de una visión compartida no tiene precio! Gracias a nuestros amigos de Vélez reyes más por caminar con nosotros en la búsqueda de mejores alternativas para hacer de Colombia un país con una educación de calidad, con menores tasas de deserción, mejores niveles de permanencia y graduación."
-          ]
-        }
-      },
-      "10": {
-        "alt": "Estado de la educación en Antioquia",
-        "title": "ESTADO DE LA EDUCACIÓN EN ANTIOQUIA",
-        "detail": {
-          "title": "ESTADO DE LA EDUCACIÓN EN ANTIOQUIA",
-          "content": [
-            "En ProAntioquia hemos aportado con nuestra participación acerca del estado de la educación en Antioquia. Encuentro Temático Educación - Plataforma de Jóvenes y Empresarios. Proantioquia y Fundacion Antivirus para la Desercion unidas en pro de la calidad de la Educación."
-          ]
-        }
-      },
-      "11": {
-        "alt": "Nuestro diseño interior",
-        "title": "¡NUESTRO DISEÑO INTERIOR!",
-        "detail": {
-          "title": "¡NUESTRO DISEÑO INTERIOR!",
-          "content": [
-            "La Fundación Antivirus para la Deserción y su equipo de comunicaciones unen fuerzas para transformar el diseño interior de la oficina en el municipio de La Estrella. Ambas organizaciones colaboraron estrechamente para crear un ambiente inspirador y funcional que promueva la creatividad y el trabajo en equipo.",
-            "En Comunicaciones, se aportó el talento y conocimiento de los diseñadores y comunicadores para crear un espacio acogedor y estimulante. Se enfocaron en utilizar colores vibrantes y diseños familiares, así como el uso de Javi, con el objetivo de mejorar la productividad y el bienestar de los colaboradores en FATV.",
-            "El resultado es una oficina moderna y funcional, donde los miembros de la Fundación Antivirus para la Deserción pueden trabajar en un entorno inspirador y colaborativo. El nuevo diseño interior refleja la misión y los valores de la organización, creando un espacio acorde con su compromiso de brindar oportunidades de educación y desarrollo a jóvenes en situación de riesgo de deserción.",
-            "Todos estamos entusiasmados con el resultado de la construcción e instalación del visual interno de la oficina y esperamos que el nuevo diseño interior de la oficina en La Estrella inspire a los colaboradores y fortalezca aún más su labor en la comunidad. ¡El equipo de la Fundación Antivirus para la Deserción celebra el éxito del logro de esté objetivo y estamos emocionados por el futuro trabajo conjunto en proyectos que promuevan el bienestar y el desarrollo de la comunidad!"
-          ]
-        }
-      },
-      "12": {
-        "alt": "Nuestra investigación de mercados",
-        "title": "NUESTRA INVESTIGACIÓN DE MERCADOS",
-        "detail": {
-          "title": "NUESTRA INVESTIGACIÓN DE MERCADOS",
-          "content": [
-            "La Fundación Antivirus para la Deserción está comprometida con su misión de brindar oportunidades educativas a jóvenes en situación de riesgo. En ese sentido, el equipo de Comunicaciones ha iniciado una emocionante investigación de mercado para mejorar sus procesos comunicativos y lograr de manera efectiva la misión, visión y propósito de la organización.",
-            "El objetivo principal de esta investigación es comprender mejor las necesidades y preferencias de los diferentes públicos con los que se relaciona la fundación, tanto internos como externos. Mediante el análisis de datos y la contextualización del entorno, el equipo de Comunicaciones busca obtener información valiosa que les permita desarrollar estrategias de comunicación más efectivas y personalizadas.",
-            "Esta iniciativa demuestra el compromiso de la Fundación Antivirus para la Deserción de adaptarse a las necesidades cambiantes de su entorno y optimizar sus canales de comunicación. Al comprender a fondo a su audiencia, la organización podrá transmitir de manera clara y relevante su mensaje, generando un impacto positivo en la comunidad y acercando a más jóvenes a las oportunidades educativas.",
-            "El proceso de investigación de mercado involucra la participación activa de todo el equipo de Comunicaciones, quienes trabajan arduamente para recopilar, analizar y aplicar los datos obtenidos. Se espera que los resultados de esta investigación permitan identificar nuevas estrategias de comunicación, así como fortalecer las existentes, para alcanzar una mayor eficacia en la difusión de la labor y los programas de la fundación.",
-            "La Fundación Antivirus para la Deserción está emocionada por los avances de esta investigación de mercado y el impacto positivo que tendrá en su labor. A través de una comunicación más efectiva, la organización busca llegar a un mayor número de jóvenes en situación de riesgo y brindarles las oportunidades que merecen para un futuro mejor.",
-            "¡El equipo de Comunicaciones de la Fundación Antivirus para la Deserción continúa trabajando arduamente para llevar a cabo esta investigación y está ansioso por implementar las mejoras que surgirán de ella. Juntos, lograremos una comunicación más impactante y acercaremos aún más nuestra misión a aquellos que más lo necesitan!"
-          ]
-        }
-      },
-      "13": {
-        "alt": "Llevando la educación a nuevos horizontes en Colombia",
-        "title": "LLEVANDO LA EDUCACIÓN A NUEVOS HORIZONTES EN COLOMBIA",
-        "detail": {
-          "title": "LLEVANDO LA EDUCACIÓN A NUEVOS HORIZONTES EN COLOMBIA",
-          "content": [
-            "En un país donde la educación superior a menudo es un sueño esquivo para muchas personas, la Fundación Antivirus para la Deserción se embarca en un proyecto valiente y apasionante en colaboración con la Fundación Aurelio Llano Posada. Su misión es clara y poderosa: reducir la deserción estudiantil en Colombia, donde las cifras muestran un desafío del 50%.",
-            "Este proyecto busca no solo cambiar la realidad de la deserción, sino también mejorar la calidad de la permanencia educativa y mantener indicadores de graduación que inspiren a los demás. ¿El enfoque? Estrategias disruptivas que abarcan desde acompañamientos psicosociales hasta herramientas de la cuarta revolución industrial.",
-            "Más de 500 estudiantes campesinos, beneficiarios de las becas otorgadas por la Fundación Aurelio Llano Posada, se ven directamente impactados por este esfuerzo. Estos estudiantes se distribuyen en más de 27 instituciones de educación superior en todo Colombia.",
-            "El proyecto se despliega en dos líneas de acompañamiento igualmente poderosas. La primera, el Acompañamiento Socio-pedagógico, es guiada por trabajadores sociales que se sumergen en las realidades de estos estudiantes. Juntos, identifican obstáculos y trazan rutas de apoyo, conectando a los estudiantes con los servicios de Bienestar Universitario y otras estrategias del programa. Asesorías socio pedagógicas ofrecen espacios de escucha y conversación, creando puentes para abordar vulnerabilidades y desafíos.",
-            "La segunda línea, Acompañamiento Académico, está diseñada para fortalecer el conocimiento de los estudiantes en áreas críticas. Las mentorías académicas, sesiones individuales de repaso académico, son lideradas por estudiantes con un historial académico destacado, conocidos como mentores. Estos mentores brindan asesorías sobre temas específicos que a menudo presentan dificultades.",
-            "Los Talleres \"Nivélate con Antivirus\" son espacios colectivos donde se afianzan conocimientos en diversas asignaturas. Estos talleres están diseñados para asegurar que los estudiantes no solo comprendan los contenidos, sino que también aprueben sus materias. Son liderados por estudiantes con sólido desempeño académico y un dominio claro de las asignaturas.",
-            "\"Repasa Online\" es una iniciativa que ofrece talleres virtuales creados por la Fundación Antivirus para la Deserción. Estos talleres se centran en asignaturas con altas tasas de repitencia y cancelaciones. Los videos se comparten en la plataforma YouTube, lo que los convierte en un recurso valioso y accesible para todos los estudiantes de la Fundación Aurelio Llano Posada.",
-            "El impacto esperado es profundo y significativo: la reducción de los niveles de deserción y una mejora palpable en la calidad de la permanencia de estos jóvenes valientes. Este proyecto es un testimonio del compromiso inquebrantable de estas fundaciones con la educación superior en Colombia. En un país donde la educación superior sigue siendo un faro de esperanza para muchos, estas dos fundaciones trabajan incansablemente para transformar esos sueños en una realidad brillante y alcanzable para todos.",
-            "Un llamado a la acción se hace eco en cada paso de este proyecto, invitando a la comunidad y a posibles colaboradores a unirse a esta noble causa. El cierre de esta historia es el comienzo de un viaje, uno que promete un futuro educativo más brillante y accesible en Colombia."
-          ]
-        }
-      },
-      "14": {
+      "encuentro-colaboradores": {
         "alt": "La importacia de los datos para acabar con la deserción",
         "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
         "detail": {

@@ -1,34 +1,30 @@
 import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
-import Renovacion from "../../../src/assets/images/views/imagesNews/RUT.jpg";
 import Desercion from "../../../src/assets/images/views/imagesNews/desercion-universitaria.gif";
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
-import ValleDelSofware from "../../../src/assets/images/views/imagesNews/medellín-valle-del-software-MVS.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import VisionCompartida from "../../../src/assets/images/views/imagesNews/vision-compartida.jpeg";
-import EstadoEducacion from "../../../src/assets/images/views/imagesNews/estado-de-la-educación-en-antioquia.jpeg";
-import DiseñoInterior from "../../../src/assets/images/views/imagesNews/nuestro-diseño-interior.jpeg";
-import NuestraInvestigacion from "../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp";
-import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
-// buildNewsArray now receives the `t` translation function from the caller
-// to avoid running translations at module import time (i18n may not be
-// initialized yet). Call with buildNewsArray(t).
+// buildNewsArray recibe la función `t` de traducción para evitar ejecutar
+// traducciones en tiempo de importación (i18n puede no estar listo aún).
+// Llama con buildNewsArray(t).
+// Cada noticia usa un `slug` semántico como identificador único.
+// Para agregar/eliminar noticias: solo agrega/elimina el objeto del array
+// y su clave correspondiente en los archivos de traducción. No hay IDs que reordenar.
 
 const buildNewsArray = (t) => [
   {
-    id: 1,
+    slug: "movimiento-2024",
     img: Movimiento,
-    alt: t("news.items.0.alt"),
-    title: t("news.items.0.title"),
+    alt: t("news.items.movimiento-2024.alt"),
+    title: t("news.items.movimiento-2024.title"),
     newDetailContent: {
-      title: t("news.items.0.detail.title"),  
+      title: t("news.items.movimiento-2024.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.0.detail.content.0"),
+          value: t("news.items.movimiento-2024.detail.content.0"),
         },
         {
           type: "img",
@@ -36,11 +32,11 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.0.detail.content.1"),
+          value: t("news.items.movimiento-2024.detail.content.1"),
         },
         {
           type: "parrafo",
-          value: t("news.items.0.detail.content.2"),
+          value: t("news.items.movimiento-2024.detail.content.2"),
         },
         {
           type: "img",
@@ -48,54 +44,35 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.0.detail.content.3"),
+          value: t("news.items.movimiento-2024.detail.content.3"),
         },
         {
           type: "parrafo",
-          value: t("news.items.0.detail.content.4"),
+          value: t("news.items.movimiento-2024.detail.content.4"),
         },
         {
           type: "parrafo",
-          value: t("news.items.0.detail.content.5"),
+          value: t("news.items.movimiento-2024.detail.content.5"),
         },
         {
           type: "link",
-          value: t("news.items.0.detail.content.6"),
+          value: t("news.items.movimiento-2024.detail.content.6"),
           url: "https://fundacionantivirus-my.sharepoint.com/personal/coordinaciontecnologiadatos_fundacionantivirusparaladesercion_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos%2FReporteAnual2024%5Ffinal%2Epdf&parent=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos&ga=1",
         },
       ],
     },
   },
   {
-    id: 2,
-    img: Renovacion,
-    alt: t("news.items.1.alt"),
-    title: t("news.items.1.title"),
-    newDetailContent: {
-      title: t("news.items.1.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.1.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Renovacion,
-        },
-      ],
-    },
-  },
-  {
-    id: 3,
+    slug: "desercion-universitaria",
     img: Desercion,
-    alt: t("news.items.2.alt"),
-    title: t("news.items.2.title"),
+    alt: t("news.items.desercion-universitaria.alt"),
+    title: t("news.items.desercion-universitaria.title"),
     newDetailContent: {
-      title: t("news.items.2.detail.title"),
+      title: t("news.items.desercion-universitaria.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.2.detail.content.0"),
+          value: t("news.items.desercion-universitaria.detail.content.0"),
         },
         {
           type: "img",
@@ -104,11 +81,11 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.2.detail.content.1"),
+          value: t("news.items.desercion-universitaria.detail.content.1"),
         },
         {
           type: "parrafo",
-          value: t("news.items.2.detail.content.2"),
+          value: t("news.items.desercion-universitaria.detail.content.2"),
         },
         {
           type: "img",
@@ -117,30 +94,30 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.2.detail.content.3"),
+          value: t("news.items.desercion-universitaria.detail.content.3"),
         },
         {
           type: "parrafo",
-          value: t("news.items.2.detail.content.4"),
+          value: t("news.items.desercion-universitaria.detail.content.4"),
         },
       ],
     },
   },
   {
-    id: 4,
+    slug: "conversatorio-envigado",
     img: Conversatorio,
-    alt: t("news.items.3.alt"),
-    title: t("news.items.3.title"),
+    alt: t("news.items.conversatorio-envigado.alt"),
+    title: t("news.items.conversatorio-envigado.title"),
     newDetailContent: {
-      title: t("news.items.3.detail.title"),
+      title: t("news.items.conversatorio-envigado.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.3.detail.content.0"),
+          value: t("news.items.conversatorio-envigado.detail.content.0"),
         },
         {
           type: "parrafo",
-          value: t("news.items.3.detail.content.1"),
+          value: t("news.items.conversatorio-envigado.detail.content.1"),
         },
         {
           type: "img",
@@ -150,16 +127,16 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    id: 5,
+    slug: "congreso-latinoamericano",
     img: Participacion,
-    alt: t("news.items.4.alt"),
-    title: t("news.items.4.title"),
+    alt: t("news.items.congreso-latinoamericano.alt"),
+    title: t("news.items.congreso-latinoamericano.title"),
     newDetailContent: {
-      title: t("news.items.4.detail.title"),
+      title: t("news.items.congreso-latinoamericano.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.4.detail.content.0"),
+          value: t("news.items.congreso-latinoamericano.detail.content.0"),
         },
         {
           type: "img",
@@ -169,16 +146,16 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    id: 6,
+    slug: "congreso-comunicaciones",
     img: Ponencia,
-    alt: t("news.items.5.alt"),
-    title: t("news.items.5.title"),
+    alt: t("news.items.congreso-comunicaciones.alt"),
+    title: t("news.items.congreso-comunicaciones.title"),
     newDetailContent: {
-      title: t("news.items.5.detail.title"),
+      title: t("news.items.congreso-comunicaciones.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.5.detail.content.0"),
+          value: t("news.items.congreso-comunicaciones.detail.content.0"),
         },
         {
           type: "img",
@@ -188,39 +165,16 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    id: 7,
-    img: ValleDelSofware,
-    alt: t("news.items.6.alt"),
-    title: t("news.items.6.title"),
-    newDetailContent: {
-      title: t("news.items.6.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.6.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.6.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: ValleDelSofware,
-        },
-      ],
-    },
-  },
-  {
-    id: 8,
+    slug: "mencion-honorifica",
     img: Mencion,
-    alt: t("news.items.7.alt"),
-    title: t("news.items.7.title"),
+    alt: t("news.items.mencion-honorifica.alt"),
+    title: t("news.items.mencion-honorifica.title"),
     newDetailContent: {
-      title: t("news.items.7.detail.title"),
+      title: t("news.items.mencion-honorifica.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.7.detail.content.0"),
+          value: t("news.items.mencion-honorifica.detail.content.0"),
         },
         {
           type: "img",
@@ -230,199 +184,16 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    id: 9,
+    slug: "encuentro-colaboradores",
     img: EncuentroColaboradores,
-    alt: t("news.items.8.alt"),
-    title: t("news.items.8.title"),
+    alt: t("news.items.encuentro-colaboradores.alt"),
+    title: t("news.items.encuentro-colaboradores.title"),
     newDetailContent: {
-      title: t("news.items.8.detail.title"),
+      title: t("news.items.encuentro-colaboradores.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.8.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: EncuentroColaboradores,
-        },
-      ],
-    },
-  },
-  {
-    id: 10,
-    img: VisionCompartida,
-    alt: t("news.items.9.alt"),
-    title: t("news.items.9.title"),
-    newDetailContent: {
-      title: t("news.items.9.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.9.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: VisionCompartida,
-        },
-      ],
-    },
-  },
-  {
-    id: 11,
-    img: EstadoEducacion,
-    alt: t("news.items.10.alt"),
-    title: t("news.items.10.title"),
-    newDetailContent: {
-      title: t("news.items.10.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.10.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: EstadoEducacion,
-        },
-      ],
-    },
-  },
-  {
-    id: 12,
-    img: DiseñoInterior,
-    alt: t("news.items.11.alt"),
-    title: t("news.items.11.title"),
-    newDetailContent: {
-      title: t("news.items.11.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: DiseñoInterior,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.11.detail.content.3"),
-        },
-        {
-          type: "img",
-          value:
-            "https://www.fundacionantivirusparaladesercion.org/data/articles/WhatsApp%20Image%202023-07-04%20at%2014.19.28.jpeg",
-        },
-      ],
-    },
-  },
-  {
-    id: 13,
-    img: NuestraInvestigacion,
-    alt: t("news.items.12.alt"),
-    title: t("news.items.12.title"),
-    newDetailContent: {
-      title: t("news.items.12.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: NuestraInvestigacion,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.3"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.4"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.12.detail.content.5"),
-        },
-      ],
-    },
-  },
-  {
-    id: 14,
-    img: LlevandoEducacion,
-    alt: t("news.items.13.alt"),
-    title: t("news.items.13.title"),
-    newDetailContent: {
-      title: t("news.items.13.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: LlevandoEducacion,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.1"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.3"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.4"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.5"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.6"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.7"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.13.detail.content.8"),
-        },
-      ],
-    },
-  },
-  {
-    id: 15,
-    img: EncuentroColaboradores,
-    alt: t("news.items.14.alt"),
-    title: t("news.items.14.title"),
-    newDetailContent: {
-      title: t("news.items.14.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.14.detail.content.0"),
+          value: t("news.items.encuentro-colaboradores.detail.content.0"),
         },
         {
           type: "img",
@@ -430,15 +201,15 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.14.detail.content.1"),
+          value: t("news.items.encuentro-colaboradores.detail.content.1"),
         },
         {
           type: "parrafo",
-          value: t("news.items.14.detail.content.2"),
+          value: t("news.items.encuentro-colaboradores.detail.content.2"),
         },
         {
           type: "parrafo",
-          value: t("news.items.14.detail.content.3"),
+          value: t("news.items.encuentro-colaboradores.detail.content.3"),
         },
       ],
     },

@@ -18,14 +18,10 @@ function NewsDetail() {
   // the strings update when the language changes. Use the id from the
   // location state (or fall back to the id property on the object).
   const news = useMemo(() => {
-    const id = initialNews?.id ?? initialNews?.newsId ?? null;
-    if (id === null || id === undefined) return initialNews;
+    const slug = initialNews?.slug ?? null;
+    if (!slug) return initialNews;
     const arr = buildNewsArray(t);
-    // buildNewsArray typically uses numeric indexes as ids in other components
-    // but sometimes `news.id` was set to idx. Try numeric and string keys.
-    return (
-      arr.find((n) => n.id === id || String(n.id) === String(id)) || initialNews
-    );
+    return arr.find((n) => n.slug === slug) || initialNews;
   }, [initialNews, t]);
 
   if (!news) {
@@ -78,7 +74,7 @@ function NewsDetail() {
           })}
         </div>
 
-        <OtherNews newId={news.id} />
+        <OtherNews newSlug={news.slug} />
 
         <section>
           <div className="flex items-center">
