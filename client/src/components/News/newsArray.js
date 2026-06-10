@@ -230,25 +230,6 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    id: 9,
-    img: EncuentroColaboradores,
-    alt: t("news.items.8.alt"),
-    title: t("news.items.8.title"),
-    newDetailContent: {
-      title: t("news.items.8.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.8.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: EncuentroColaboradores,
-        },
-      ],
-    },
-  },
-  {
     id: 10,
     img: VisionCompartida,
     alt: t("news.items.9.alt"),
