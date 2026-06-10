@@ -6,7 +6,6 @@ import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-co
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
 import VisionCompartida from "../../../src/assets/images/views/imagesNews/vision-compartida.jpeg";
-import EstadoEducacion from "../../../src/assets/images/views/imagesNews/estado-de-la-educación-en-antioquia.jpeg";
 import NuestraInvestigacion from "../../../src/assets/images/views/imagesNews/nuestra-investigación-de-mercados.webp";
 import LlevandoEducacion from "../../../src/assets/images/views/imagesNews/llevando-la-educación-a-nuevos-horizontes -colombia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
@@ -199,25 +198,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: VisionCompartida,
-        },
-      ],
-    },
-  },
-  {
-    id: 11,
-    img: EstadoEducacion,
-    alt: t("news.items.10.alt"),
-    title: t("news.items.10.title"),
-    newDetailContent: {
-      title: t("news.items.10.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.10.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: EstadoEducacion,
         },
       ],
     },
