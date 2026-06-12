@@ -71,9 +71,26 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(24px) scale(0.97)" },
+          "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
+        },
+        coinSpin: {
+          "0%, 100%": { transform: "rotateY(0deg) scale(1)" },
+          "25%": { transform: "rotateY(180deg) scale(1.1)" },
+          "50%": { transform: "rotateY(360deg) scale(1)" },
+          "75%": { transform: "rotateY(180deg) scale(1.05)" },
+        },
       },
       animation: {
         scroll: "scroll linear infinite",
+        "fade-in": "fadeIn 0.3s ease-out forwards",
+        "slide-up": "slideUp 0.35s ease-out forwards",
+        "coin-spin": "coinSpin 2s ease-in-out infinite",
       },
     },
   },
