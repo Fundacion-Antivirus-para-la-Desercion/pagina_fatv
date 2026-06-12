@@ -9,7 +9,7 @@ import { useTranslation, Trans } from "react-i18next";
 
 const AUTO_CLOSE_MS = 11000;
 
-const DonationWelcomeModal = () => {
+const DonationWelcomePopUp = () => {
   const [visible, setVisible] = useState(false);
   const [progress, setProgress] = useState(100);
   const intervalRef = useRef(null);
@@ -131,4 +131,4 @@ const DonationWelcomeModal = () => {
   );
 };
 
-export default DonationWelcomeModal;
+export default DonationWelcomePopUp;
