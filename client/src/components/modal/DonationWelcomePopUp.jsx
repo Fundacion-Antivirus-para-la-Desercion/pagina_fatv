@@ -14,12 +14,29 @@ const DonationWelcomeModal = () => {
   const intervalRef = useRef(null);
   const timeoutRef = useRef(null);
 
+  const addDonationPopupCookie = () => {
+    const DATE_EXPIRATION_MS = 15 * 24 * 60 * 60 * 1000;
+
+    const expires = new Date(Date.now() + DATE_EXPIRATION_MS).toUTCString();
+
+    document.cookie = `donation_popup_shown=true; expires=${expires}; path=/; SameSite=Lax`;
+  };
+
+  const shouldShowDonationPopup = () => {
+    return !document.cookie
+      .split("; ")
+      .some((cookie) => cookie.startsWith("donation_popup_shown="));
+  };
+
   useEffect(() => {
-    // Small delay so the page renders first
+    if (!shouldShowDonationPopup()) {
+      return;
+    }
+
     const openDelay = setTimeout(() => {
+      addDonationPopupCookie();
       setVisible(true);
 
-      // Countdown progress bar
       const step = 100 / (AUTO_CLOSE_MS / 50);
       intervalRef.current = setInterval(() => {
         setProgress((prev) => {
@@ -81,9 +98,12 @@ const DonationWelcomeModal = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-2 mt-4 px-8 py-2 shadow-md bg-primary-purple text-white rounded-3xl cursor-pointer hover:bg-primary-purple/90 transition-colors">
+          <Link
+            to="/DonationPay"
+            className="flex items-center gap-2 mt-4 px-8 py-2 shadow-md bg-primary-purple text-white rounded-3xl cursor-pointer hover:bg-primary-purple/90 transition-colors"
+          >
             <div className="text-lg md:text-2xl text-white">Donar ahora</div>
-          </div>
+          </Link>
 
           {/* Javi + coin hero */}
           <div className="relative flex items-end justify-center w-full h-40">
