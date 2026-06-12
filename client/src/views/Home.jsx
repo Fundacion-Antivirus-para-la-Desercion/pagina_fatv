@@ -5,9 +5,11 @@ import OurTeam from "../components/ourTeam/OurTeam";
 import ContextData from "../components/ContextData/ContextData";
 import ServicesATV from "../components/Services_ATV/Services_ATV";
 import Carousel from "../components/carousel/thumbs/MainCarousel";
+import DonationWelcomePopUp from "../components/modal/DonationWelcomePopUp";
 function Home() {
   return (
     <div className="lg:pt-[145px]">
+      <DonationWelcomePopUp />
       <Carousel />
       <AboutUs />
       <ContextData />
