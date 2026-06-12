@@ -5,6 +5,7 @@ import IconDonation from "../../assets/images/views/donationPay/coin.png";
 import JaviCorto from "../../assets/images/views/javi/javi-corto.webp";
 import { floatSnake } from "../motion/constants/Animations.js";
 import { IoHeart } from "react-icons/io5";
+import { useTranslation, Trans } from "react-i18next";
 
 const AUTO_CLOSE_MS = 11000;
 
@@ -13,6 +14,8 @@ const DonationWelcomeModal = () => {
   const [progress, setProgress] = useState(100);
   const intervalRef = useRef(null);
   const timeoutRef = useRef(null);
+
+  const { t } = useTranslation();
 
   const addDonationPopupCookie = () => {
     const DATE_EXPIRATION_MS = 15 * 24 * 60 * 60 * 1000;
@@ -68,7 +71,6 @@ const DonationWelcomeModal = () => {
         className="relative bg-white rounded-2xl shadow-2xl w-[90%] max-w-lg mx-4 overflow-hidden animate-slide-up"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Progress bar – timeout countdown */}
         <div className="absolute top-0 left-0 h-2 bg-primary-purple/20 w-full">
           <div
             className="h-full bg-primary-purple transition-all ease-linear rounded-r-full"
@@ -76,7 +78,6 @@ const DonationWelcomeModal = () => {
           />
         </div>
 
-        {/* Close button */}
         <button
           onClick={close}
           aria-label="Cerrar"
@@ -85,16 +86,15 @@ const DonationWelcomeModal = () => {
           &times;
         </button>
 
-        {/* Content */}
         <div className="flex flex-col items-center text-center px-10 pt-12 gap-3">
           <div className="flex flex-col gap-1">
             <h2 className="text-xl md:text-2xl font-renogare text-primary-purple leading-tight mb-5">
               <IoHeart className="inline-block mr-2" />
-              Bienvenido a FATV
+              {t("donationWelcomePopUp.title")}
             </h2>
 
             <p className="text-gray-600 text-base md:text-xl leading-relaxed">
-              Usa este boton para donar <br /> siempre estará a tu lado derecho.
+              <Trans i18nKey="donationWelcomePopUp.message" components={{ 1: <br /> }} />
             </p>
           </div>
 
@@ -102,10 +102,11 @@ const DonationWelcomeModal = () => {
             to="/DonationPay"
             className="flex items-center gap-2 mt-4 px-8 py-2 shadow-md bg-primary-purple text-white rounded-3xl cursor-pointer hover:bg-primary-purple/90 transition-colors"
           >
-            <div className="text-lg md:text-2xl text-white">Donar ahora</div>
+            <div className="text-lg md:text-2xl text-white">
+              {t("donationWelcomePopUp.donateButton")}
+            </div>
           </Link>
 
-          {/* Javi + coin hero */}
           <div className="relative flex items-end justify-center w-full h-40">
             <motion.div
               {...floatSnake()}

@@ -120,6 +120,11 @@
       }
     }
   },
+  "donationWelcomePopUp": {
+    "title": "Bienvenido a FATV",
+    "message": "Usa este boton para donar <1/> siempre estará a tu lado derecho.",
+    "donateButton": "Donar ahora"
+  },
   "btns": {
     "donate": "Donar",
     "alt_donation_icon": "icono de Javi feliz"

@@ -119,6 +119,11 @@
       }
     }
   },
+  "donationWelcomePopUp": {
+    "title": "Welcome to FATV",
+    "message": "Use this button to donate <1/> it will always be on your right side.",
+    "donateButton": "Donate now"
+  },
   "btns": {
     "donate": "Donate",
     "alt_donation_icon": "happy Javi icon"
