@@ -128,6 +128,9 @@
     "donate": "Donate",
     "alt_donation_icon": "happy Javi icon"
   },
+  "whatsappMessage": {
+    "default": "Hello, I am interested in the services on the page and would like more information."
+  },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
     "description": "It is a non-profit organization that seeks to reduce student dropout rates in Colombia, improve retention and graduation levels, and is our way of contributing to a country with more education and, consequently, more development.",
@@ -1427,5 +1430,10 @@
     "title": "Oops!",
     "message": "Sorry, page not found",
     "button": "Back to Home"
+  },
+  "defaultMessage": {
+    "whatsapp": {
+      "default_message": "Hello, I am interested in the services on the page and would like more information."
+    }
   }
 }

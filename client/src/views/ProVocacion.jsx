@@ -188,7 +188,7 @@ function ProVocacion() {
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group">
           <a
             className={`flex items-center rounded-full bg-white p-2 shadow-lg ${styles.btnProvocation}`}
-            href={WhatsAppRedirect()}
+            href={WhatsAppRedirect(null, null, t)}
             target="_blank"
             rel="noopener noreferrer"
           >
