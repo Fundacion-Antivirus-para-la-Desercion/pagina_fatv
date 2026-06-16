@@ -32,7 +32,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic1.alt_image")}
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={11400} />
+              <CounterNumeric countNumber={26512} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold ">
               {t("home.contextData.statistic1.description")}
@@ -45,7 +45,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic2.alt_image")}
             />
             <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3 p-1">
-              <CounterNumeric countNumber={19641} />
+              <CounterNumeric countNumber={23356} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic2.description")}
@@ -58,7 +58,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic3.alt_image")}
             />
             <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={715} />
+              <CounterNumeric countNumber={1122} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic3.description")}
@@ -71,7 +71,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic4.alt_image")}
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={4605} />
+              <CounterNumeric countNumber={7211} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic4.description")}
@@ -97,7 +97,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic6.alt_image")}
             />
             <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={565} />
+              <CounterNumeric countNumber={613} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic6.description")}
@@ -110,7 +110,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic7.alt_image")}
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={3560} />
+              <CounterNumeric countNumber={2087} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic7.description")}
@@ -123,7 +123,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic8.alt_image")}
             />
             <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={221} />
+              <CounterNumeric countNumber={227} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic8.description")}
@@ -136,7 +136,7 @@ const ContextData = () => {
               alt={t("home.contextData.statistic9.alt_image")}
             />
             <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={129} />
+              <CounterNumeric countNumber={184} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic9.description")}
