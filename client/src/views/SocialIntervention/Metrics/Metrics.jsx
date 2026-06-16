@@ -24,7 +24,7 @@ function Metrics() {
     {
       icon: <GoPeople />,
       label: t("socialIntervention.metrics.metricsData.metric_two.span"),
-      value: 11400,
+      value: 26512,
       sign: "+",
       description: t(
         "socialIntervention.metrics.metricsData.metric_two.description",
