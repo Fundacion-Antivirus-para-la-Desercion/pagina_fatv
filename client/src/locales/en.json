@@ -130,7 +130,8 @@
   },
   "whatsappMessage": {
     "default": "Hello, I would like to request more information about the services on the page.",
-      "provocation": "Hello, I would like to request more information about the ProVocación service."
+    "provocation": "Hello, I would like to request more information about the ProVocación service.",
+    "studentRetention": "Hello, I would like to request more information about the Student Retention Management service."
   },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
