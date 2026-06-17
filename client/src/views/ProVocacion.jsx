@@ -17,6 +17,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "../components/modal/Modal";
 import emailjs from "emailjs-com";
+import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect";
 
 function ProVocacion() {
   const { t, i18n } = useTranslation();
@@ -121,7 +122,6 @@ function ProVocacion() {
     setSelectedImage(null);
   };
 
-  const whatsAppNumber = "573173831481";
   const [open, setOpen] = useState(false);
 
   // Limpia el formulario y errores
@@ -188,7 +188,7 @@ function ProVocacion() {
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group">
           <a
             className={`flex items-center rounded-full bg-white p-2 shadow-lg ${styles.btnProvocation}`}
-            href={`https://wa.me/${whatsAppNumber}`}
+            href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
             target="_blank"
             rel="noopener noreferrer"
           >

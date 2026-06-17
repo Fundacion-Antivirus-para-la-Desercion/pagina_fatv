@@ -10,6 +10,7 @@ import styles from "./StudentRetentionManagement.module.css";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
 import useImageByLanguage from "../hooks/useImageByLanguage.js";
 import BannerView from "../components/Banner-views/BannerView.jsx";
+import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect.js";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
@@ -45,8 +46,6 @@ function StudentRetentionManagement() {
       delay,
     },
   });
-
-  const whatsAppNumber = "573173831481";
 
   return (
     <section className="lg:pt-[145px]">
@@ -235,7 +234,7 @@ function StudentRetentionManagement() {
           <div>
             <a
               className="flex relative md:bottom-20 px-4 py-1 bg-white text-dark-blue border font-bold text-lg rounded-2xl shadow-2xl"
-              href={`https://wa.me/${whatsAppNumber}`}
+              href={WhatsAppRedirect(t("whatsappMessage.studentRetention"))}
               target="_blank"
               rel="noopener noreferrer"
             >

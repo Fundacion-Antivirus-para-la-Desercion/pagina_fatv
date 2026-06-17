@@ -6,6 +6,7 @@ import Testimonial4 from "../../assets/images/views/proVocacion/testimonials/tes
 import Testimonial5 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-05.jpg";
 import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 import { FaQuoteLeft } from "react-icons/fa6";
+import WhatsAppRedirect from "../../components/whatsAppRedirect/WhatsAppRedirect";
 
 import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,7 +38,6 @@ function Testimonials() {
     setActiveIndex(swiper.realIndex);
   };
 
-  const whatsAppNumber = "573173831481";
 
   const contentTestimonials = t(
     "provocacion.testimonials.testimonials_content",
@@ -98,7 +98,7 @@ function Testimonials() {
         <div className="flex gap-4 flex-wrap justify-center md:justify-end mt-10">
           <a
             className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-            href={`https://wa.me/${whatsAppNumber}`}
+            href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
             target="_blank"
             rel="noopener noreferrer"
           >
