@@ -16,8 +16,7 @@ import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
 
 import { useTranslation } from "react-i18next";
 import CardsCarousel from "../carousel/cards/CardsCarousel.jsx";
-
-const whatsAppNumber = "573173831481";
+import WhatsAppRedirect from "../../components/whatsAppRedirect/WhatsAppRedirect.js";
 
 function Information() {
   const { t } = useTranslation();
@@ -71,7 +70,7 @@ function Information() {
       >
         <a
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-          href={`https://wa.me/${whatsAppNumber}`}
+          href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -80,7 +79,7 @@ function Information() {
         </a>
       </motion.div>
     </section>,
- 
+
     <section className="grid grid-cols-1 xl:grid-cols-[3fr_7fr] justify-center mb-2 xl:mb-5">
       <div className="justify-self-center xl:justify-self-end">
         <img
@@ -135,7 +134,7 @@ function Information() {
       >
         <a
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-          href={`https://wa.me/${whatsAppNumber}`}
+          href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -234,7 +233,7 @@ function Information() {
       >
         <a
           className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-          href={`https://wa.me/${whatsAppNumber}`}
+          href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
           target="_blank"
           rel="noopener noreferrer"
         >

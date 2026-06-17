@@ -129,6 +129,11 @@
     "donate": "Donar",
     "alt_donation_icon": "icono de Javi feliz"
   },
+  "whatsappMessage": {
+    "default": "Hola, me gustaría solicitar más información sobre los servicios de la página.",
+    "provocation": "Hola, me gustaría solicitar más información acerca del servicio de ProVocación.",
+    "studentRetention": "Hola, me gustaría solicitar más información acerca del servicio de Gestión de la Permanencia Estudiantil."
+  },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
     "description": "Es una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
@@ -1432,5 +1437,10 @@
     "title": "Oops!",
     "message": "Lo sentimos, página no encontrada",
     "button": "Volver al Inicio"
+  },
+  "defaultMessage": {
+    "whatsapp": {
+      "default_message": "Hola, estoy interesado en los servicios de la página y me gustaría más información."
+    }
   }
 }
