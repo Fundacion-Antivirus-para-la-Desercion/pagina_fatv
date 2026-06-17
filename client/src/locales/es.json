@@ -130,7 +130,8 @@
     "alt_donation_icon": "icono de Javi feliz"
   },
   "whatsappMessage": {
-      "default": "Hola, estoy interesado en los servicios de la página y me gustaría más información."
+      "default": "Hola, me gustaría solicitar más información sobre los servicios de la página.",
+      "provocation": "Hola, me gustaría solicitar más información acerca del servicio de ProVocación."
     
   },
   "donation": {

@@ -129,7 +129,8 @@
     "alt_donation_icon": "happy Javi icon"
   },
   "whatsappMessage": {
-    "default": "Hello, I am interested in the services on the page and would like more information."
+    "default": "Hello, I would like to request more information about the services on the page.",
+      "provocation": "Hello, I would like to request more information about the ProVocación service."
   },
   "donation": {
     "foundation_name": "Fundación Antivirus para la Deserción",
