@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import "./MainCarousel.css";
+import WhatsAppRedirect from "../../whatsAppRedirect/WhatsAppRedirect";
 
 import banner1 from "../../../assets/Banner/colaboradores-fatv.jpeg";
 import banner2 from "../../../assets/Banner/becarios-itagui.webp";
@@ -49,8 +50,6 @@ function MainCarousel() {
     setActiveIndex(swiper.realIndex);
   };
 
-  const whatsAppNumber = "573173831481";
-
   return (
     <section className="relative overflow-hidden">
       <Swiper
@@ -86,7 +85,7 @@ function MainCarousel() {
                   <div className="flex flex-wrap mt-8 gap-4">
                     <a
                       className="px-4 py-2 bg-white text-blue-base border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
-                      href={`https://wa.me/${whatsAppNumber}`}
+                      href={WhatsAppRedirect()}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
