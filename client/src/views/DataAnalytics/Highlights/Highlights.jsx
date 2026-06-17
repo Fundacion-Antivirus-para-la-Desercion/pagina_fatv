@@ -7,6 +7,7 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { GoTable } from "react-icons/go";
 import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { highlightCards } from "./data.js";
+import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect.js";
 
 const iconMap = {
   database: <AiOutlineLaptop />,
@@ -32,7 +33,6 @@ const variantStyles = {
 
 function Highlights() {
   const { t } = useTranslation();
-  const whatsAppNumber = "573173831481";
   return (
     <section
       id="highlights"
@@ -130,7 +130,7 @@ function Highlights() {
         <div className="flex flex-wrap mt-10 gap-4 justify-center">
           <a
             className="px-4 py-2 bg-white text-blue-base border-2 rounded-xl font-bold text-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-center"
-            href={`https://wa.me/${whatsAppNumber}`}
+            href={WhatsAppRedirect()}
             target="_blank"
             rel="noopener noreferrer"
           >
