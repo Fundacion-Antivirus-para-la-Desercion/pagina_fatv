@@ -18,8 +18,6 @@ import { useTranslation } from "react-i18next";
 import CardsCarousel from "../carousel/cards/CardsCarousel.jsx";
 import WhatsAppRedirect from "../../components/whatsAppRedirect/WhatsAppRedirect.js";
 
-const whatsAppNumber = "573173831481";
-
 function Information() {
   const { t } = useTranslation();
 
