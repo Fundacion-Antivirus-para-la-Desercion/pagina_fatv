@@ -36,16 +36,14 @@ function News() {
               {news.title}
             </p>
             <hr className="mb-3" />
-            <div className="group flex">
+            <div className="groupflex">
               <button
-                className="text-xl md:text-2xl text-primary-purple cursor-pointer"
-                onClick={() => {
-                  navigate("/news/detail", { state: { news } });
-                }}
+                className="group flex items-center gap-2 text-xl md:text-2xl text-primary-purple cursor-pointer w-fit"
+                onClick={() => navigate("/news/detail", { state: { news } })}
               >
                 {t("news.read_more")}
+                <FaArrowRight className="text-lg transition-transform duration-300 group-hover:translate-x-1" />
               </button>
-              <FaArrowRight className="text-lg text-primary-purple ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>
         ))}
