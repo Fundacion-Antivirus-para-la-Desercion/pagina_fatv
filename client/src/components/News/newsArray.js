@@ -8,6 +8,7 @@ import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
+import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -219,7 +220,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "acompanamiento-becarios-rurales",
-    img:  NathaliaR,
+    img: NathaliaR,
     alt: t("news.items.acompanamiento-becarios-rurales.alt"),
     title: t("news.items.acompanamiento-becarios-rurales.title"),
     newDetailContent: {
@@ -227,7 +228,9 @@ const buildNewsArray = (t) => [
       content: [
         {
           type: "parrafo",
-          value: t("news.items.acompanamiento-becarios-rurales.detail.content.0"),
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.0",
+          ),
         },
         {
           type: "img",
@@ -235,23 +238,33 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.acompanamiento-becarios-rurales.detail.content.1"),
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.1",
+          ),
         },
         {
           type: "parrafo",
-          value: t("news.items.acompanamiento-becarios-rurales.detail.content.2"),
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.2",
+          ),
         },
         {
           type: "parrafo",
-          value: t("news.items.acompanamiento-becarios-rurales.detail.content.3"),
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.3",
+          ),
         },
         {
           type: "parrafo",
-          value: t("news.items.acompanamiento-becarios-rurales.detail.content.4"),
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.4",
+          ),
         },
         {
           type: "parrafo",
-          value: t("news.items.acompanamiento-becarios-rurales.detail.content.5"),
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.5",
+          ),
         },
       ],
     },
@@ -333,6 +346,41 @@ const buildNewsArray = (t) => [
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.9",
           ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "el-docente-hoy",
+    img: JhiselH,
+    alt: t("news.items.el-docente-hoy.alt"),
+    title: t("news.items.el-docente-hoy.title"),
+    newDetailContent: {
+      title: t("news.items.el-docente-hoy.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.el-docente-hoy.detail.content.0"),
+        },
+        {
+          type: "img",
+          value: JhiselH,
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.el-docente-hoy.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.el-docente-hoy.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.el-docente-hoy.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.el-docente-hoy.detail.content.4"),
         },
       ],
     },
