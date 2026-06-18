@@ -18,54 +18,7 @@ import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 // y su clave correspondiente en los archivos de traducción. No hay IDs que reordenar.
 
 const buildNewsArray = (t) => [
-  {
-    slug: "movimiento-2024",
-    img: Movimiento,
-    alt: t("news.items.movimiento-2024.alt"),
-    title: t("news.items.movimiento-2024.title"),
-    newDetailContent: {
-      title: t("news.items.movimiento-2024.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Movimiento,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.1"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.2"),
-        },
-        {
-          type: "img",
-          value: MovimientoDos,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.3"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.4"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.5"),
-        },
-        {
-          type: "link",
-          value: t("news.items.movimiento-2024.detail.content.6"),
-          url: "https://fundacionantivirus-my.sharepoint.com/personal/coordinaciontecnologiadatos_fundacionantivirusparaladesercion_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos%2FReporteAnual2024%5Ffinal%2Epdf&parent=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos&ga=1",
-        },
-      ],
-    },
-  },
+  
   {
     slug: "desercion-universitaria",
     img: Desercion,
@@ -381,6 +334,54 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.el-docente-hoy.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "movimiento-2024",
+    img: Movimiento,
+    alt: t("news.items.movimiento-2024.alt"),
+    title: t("news.items.movimiento-2024.title"),
+    newDetailContent: {
+      title: t("news.items.movimiento-2024.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.movimiento-2024.detail.content.0"),
+        },
+        {
+          type: "img",
+          value: Movimiento,
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.movimiento-2024.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.movimiento-2024.detail.content.2"),
+        },
+        {
+          type: "img",
+          value: MovimientoDos,
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.movimiento-2024.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.movimiento-2024.detail.content.4"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.movimiento-2024.detail.content.5"),
+        },
+        {
+          type: "link",
+          value: t("news.items.movimiento-2024.detail.content.6"),
+          url: "https://fundacionantivirus-my.sharepoint.com/personal/coordinaciontecnologiadatos_fundacionantivirusparaladesercion_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos%2FReporteAnual2024%5Ffinal%2Epdf&parent=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos&ga=1",
         },
       ],
     },

@@ -514,22 +514,7 @@
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {
-      "movimiento-2024": {
-        "alt": "2024: Un año de movimiento, retos y transformación",
-        "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
-        "detail": {
-          "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
-          "content": [
-            "El 2024 fue un año de retos, preguntas, movimiento y gestión para la Fundación Antivirus para la Deserción, un año que nos invitó a repensar el camino y las formas en las que, como organización social, aportamos a la sociedad. En medio de un entorno desafiante reafirmamos nuestro compromiso por la educación y el acompañamiento a de miles de jóvenes en el país.",
-            "En el informe de gestión se refleja la constancia, el amor, la innovación y la pasión, que movieron cada una de nuestras acciones para cumplir nuestro propósito misional. Movilizamos conversaciones, campañas y alianzas visibilizando las necesidades de los jóvenes para no desertar, invitamos a estudiantes, tutores, docentes, instituciones y aliados a ser parte de una red que abraza, escucha y camina con ellos.",
-            "Durante este período, reflexionamos sobre la problemática, pero, sobre todo, nos pusimos en acción, realizando gestión de la permanencia en la Universidad de Antioquia y la Universidad Nacional en la carrera de Ingeniería de sistemas. Acompañamos los estudiantes becados de la Fundación Aurelio Llano Posada, Fundación Nutresa, la plataforma filantrópica Ver+ Beca Tech y del municipio de Itagüí; con el cual, también tuvimos un proceso de orientación sociovocacional con los jóvenes del grado 10° en 12 de sus Instituciones educativas públicas. Tramitamos la permanencia en los Bootcamps Nodo EAFIT y Código C13. Finalmente, acompañamos y empoderamos a las estudiantes Linieras del proceso formativo de la Corporación Tener Futuro.",
-            "Este informe es un reflejo del camino recorrido, del apoyo realizado y el trayecto que nos falta; es la muestra fehaciente de que cuando se suman esfuerzos se construye país y se cambian historias. Cada estudiante que logramos acompañar y cada joven que se gradúa, es una promesa cumplida. Así como cada aliado que se suma, hace parte de una educación más justa, cercana y sostenible. En el 2024, no hablamos solo de deserción, hablamos de permanencia, de esperanza, de futuro y de transformación social.",
-            "Agradecemos a todos nuestros aliados, quienes de forma directa o indirecta apoyaron nuestro trabajo para construir un país más próspero, pacífico y armonioso, en donde los sueños cuentan y los triunfos se trabajan. A los estudiantes que creen en nuestro acompañamiento y nos permiten transitar el camino juntos. A nuestros colaboradores que día a día hacen posible un cambio y entregan su cinco por ciento para una sociedad más consciente; gracias por creer en la Fundación Antivirus para la Deserción y por creer que juntos podemos lograrlo.",
-            "Continuaremos en acción, con la convicción de que podemos seguir construyendo redes de apoyo que hacen posible los sueños de muchos jóvenes.",
-            "Léelo aquí: ReporteAnual2024_final"
-          ]
-        }
-      },
+      
       "desercion-universitaria": {
         "alt": "La deserción universitaria",
         "title": "LA DESERCIÓN UNIVERSITARIA",
@@ -643,6 +628,22 @@
             "Ahora, ¿Quién es ese otro que explicitamente asume el rol de enseñar? tal vez lo has llamado docente, maestro o profesor y cada uno con variantes conceptuales, que mutan según a quién le preguntes. Quien toma esta responsabilidad asume un segundo rol: el de intérprete de la realidad, quien, en un espacio formal, conecta con otros para compartir esos \"saberes\" necesarios para conocer, comprender y habitar en la vida social. Esto implica que, la educación debe responder a las condiciones y necesidades del contexto, y es trabajo del docente hacerlo más digerible. Por ello, en las monarquías se enseñaba de política y religión; y en la industrialización se enseñaba sobre máquinas y producción, porque era lo que ese contexto requería. Si partimos de esa noción, entonces, ¿Qué se enseña hoy? ¿El docente de hoy está siendo interprete de la realidad actual? ¿O sigue reproduciendo lo mismo de un siglo atrás, pero con nombres modernos?",
             "De Zubiría, (2013) decía \"Unos jóvenes que vivirán en el Siglo XXI formados con maestros del siglo XX, pero con modelos pedagógicos y currículos del siglo XIX.\" (P.3)",
             "La realidad actual está llena de influencers, de tecnología, de presiones sobre cómo hay que vivir, de Mindfulness y muchas otras nuevas formas de existencia que nos hablan de que siempre hay más y nunca es suficiente; de metas, a veces, inalcanzables e idealistas. Una sociedad que cada vez habla más del ser, pero sin herramientas aterrizadas para ello (o incluso, hay tantas que no se sabe por dónde empezar). Y muchos, no puedo afirmar que todos, pero sí es evidente que gran cantidad de docentes hacen o hacemos una \"traducción\" de la realidad, y como toda traducción deja de lado verdades, desconoce sentires y mensajes implícitos, centrándonos en contenidos. Antes valorábamos al otro según cuánto hacía, ahora, según cuánto sabe, y paradójicamente, se menosprecia el ser (aunque sea lo que la realidad más exige). Ahí, en esa paradoja, en esa contradicción es en donde se encuentra el lugar del docente, no el traductor de realidades, sino el intérprete que acompaña la autoconstrucción humana desde el ser, el saber y el hacer."
+          ]
+        }
+      },
+      "movimiento-2024": {
+        "alt": "2024: Un año de movimiento, retos y transformación",
+        "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
+        "detail": {
+          "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
+          "content": [
+            "El 2024 fue un año de retos, preguntas, movimiento y gestión para la Fundación Antivirus para la Deserción, un año que nos invitó a repensar el camino y las formas en las que, como organización social, aportamos a la sociedad. En medio de un entorno desafiante reafirmamos nuestro compromiso por la educación y el acompañamiento a de miles de jóvenes en el país.",
+            "En el informe de gestión se refleja la constancia, el amor, la innovación y la pasión, que movieron cada una de nuestras acciones para cumplir nuestro propósito misional. Movilizamos conversaciones, campañas y alianzas visibilizando las necesidades de los jóvenes para no desertar, invitamos a estudiantes, tutores, docentes, instituciones y aliados a ser parte de una red que abraza, escucha y camina con ellos.",
+            "Durante este período, reflexionamos sobre la problemática, pero, sobre todo, nos pusimos en acción, realizando gestión de la permanencia en la Universidad de Antioquia y la Universidad Nacional en la carrera de Ingeniería de sistemas. Acompañamos los estudiantes becados de la Fundación Aurelio Llano Posada, Fundación Nutresa, la plataforma filantrópica Ver+ Beca Tech y del municipio de Itagüí; con el cual, también tuvimos un proceso de orientación sociovocacional con los jóvenes del grado 10° en 12 de sus Instituciones educativas públicas. Tramitamos la permanencia en los Bootcamps Nodo EAFIT y Código C13. Finalmente, acompañamos y empoderamos a las estudiantes Linieras del proceso formativo de la Corporación Tener Futuro.",
+            "Este informe es un reflejo del camino recorrido, del apoyo realizado y el trayecto que nos falta; es la muestra fehaciente de que cuando se suman esfuerzos se construye país y se cambian historias. Cada estudiante que logramos acompañar y cada joven que se gradúa, es una promesa cumplida. Así como cada aliado que se suma, hace parte de una educación más justa, cercana y sostenible. En el 2024, no hablamos solo de deserción, hablamos de permanencia, de esperanza, de futuro y de transformación social.",
+            "Agradecemos a todos nuestros aliados, quienes de forma directa o indirecta apoyaron nuestro trabajo para construir un país más próspero, pacífico y armonioso, en donde los sueños cuentan y los triunfos se trabajan. A los estudiantes que creen en nuestro acompañamiento y nos permiten transitar el camino juntos. A nuestros colaboradores que día a día hacen posible un cambio y entregan su cinco por ciento para una sociedad más consciente; gracias por creer en la Fundación Antivirus para la Deserción y por creer que juntos podemos lograrlo.",
+            "Continuaremos en acción, con la convicción de que podemos seguir construyendo redes de apoyo que hacen posible los sueños de muchos jóvenes.",
+            "Léelo aquí: ReporteAnual2024_final"
           ]
         }
       }
