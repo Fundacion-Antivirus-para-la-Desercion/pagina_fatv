@@ -6,6 +6,7 @@ import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-co
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
+import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
 // Llama con buildNewsArray(t).
@@ -210,6 +211,87 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.encuentro-colaboradores.detail.content.3"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "la-crisis-en-educacion-superior",
+    img: MateoD,
+    alt: t("news.items.la-crisis-en-educacion-superior.alt"),
+    title: t("news.items.la-crisis-en-educacion-superior.title"),
+    newDetailContent: {
+      title: t("news.items.la-crisis-en-educacion-superior.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.0",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.2",
+          ),
+        },
+        {
+          type: "img",
+          value: MateoD,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.4",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.4",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.5",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.6",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.7",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.8",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.la-crisis-en-educacion-superior.detail.content.9",
+          ),
         },
       ],
     },
