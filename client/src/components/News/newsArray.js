@@ -7,6 +7,8 @@ import Mencion from "../../../src/assets/images/views/imagesNews/mención-honor�
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
+import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
+
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
 // Llama con buildNewsArray(t).
@@ -211,6 +213,45 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.encuentro-colaboradores.detail.content.3"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "acompanamiento-becarios-rurales",
+    img:  NathaliaR,
+    alt: t("news.items.acompanamiento-becarios-rurales.alt"),
+    title: t("news.items.acompanamiento-becarios-rurales.title"),
+    newDetailContent: {
+      title: t("news.items.acompanamiento-becarios-rurales.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.acompanamiento-becarios-rurales.detail.content.0"),
+        },
+        {
+          type: "img",
+          value: NathaliaR,
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.acompanamiento-becarios-rurales.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.acompanamiento-becarios-rurales.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.acompanamiento-becarios-rurales.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.acompanamiento-becarios-rurales.detail.content.4"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.acompanamiento-becarios-rurales.detail.content.5"),
         },
       ],
     },
