@@ -236,6 +236,10 @@ const buildNewsArray = (t) => [
           ),
         },
         {
+          type: "img",
+          value: MateoD,
+        },
+        {
           type: "parrafo",
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.1",
@@ -246,10 +250,6 @@ const buildNewsArray = (t) => [
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.2",
           ),
-        },
-        {
-          type: "img",
-          value: MateoD,
         },
         {
           type: "parrafo",

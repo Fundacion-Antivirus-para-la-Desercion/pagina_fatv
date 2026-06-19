@@ -1,11 +1,10 @@
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import Date from "../assets/Icons/date.svg";
 import BannerNews from "../assets/images/views/imagesNews/banner-news.webp";
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
 import buildNewsArray from "../components/News/newsArray";
-import { FaShareFromSquare } from "react-icons/fa6";
 
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
@@ -50,29 +49,55 @@ function NewsDetail() {
           <h1 className="mb-4 text-left text-4xl md:text-5xl text-blue-base  font-impact leading-10">
             {news.newDetailContent.title}
           </h1>
-          {news.newDetailContent.content.map((content, index) => {
-            if (content.type === "parrafo") {
-              return (
-                <p
-                  key={index}
-                  className="text-blue-base text-lg mb-6 mt-5 text-justify"
-                >
-                  {content.value}
-                </p>
-              );
-            } else if (content.type === "img") {
-              return (
-                <img
-                  key={index}
-                  src={content.value}
-                  alt=""
-                  className="w-[600px] h-[400px] mx-auto object-contain rounded-lg mb-2"
-                />
-              );
-            } else {
-              return <a key={index} href={content.url}>{content.value}</a>;
-            }
-          })}
+          {(() => {
+            const items = news.newDetailContent.content;
+            const paragraphCount = items.filter(
+              (c) => c.type === "parrafo",
+            ).length;
+            const useColumns = paragraphCount >= 2;
+
+            return (
+              <div
+                className={
+                  useColumns
+                    ? "columns-1 md:columns-2 gap-8"
+                    : ""
+                }
+              >
+                {items.map((content, index) => {
+                  if (content.type === "parrafo") {
+                    return (
+                      <div key={index} className="break-inside-avoid mb-6">
+                        <p className="text-blue-base text-lg text-justify">
+                          {content.value}
+                        </p>
+                      </div>
+                    );
+                  } else if (content.type === "img") {
+                    return (
+                      <figure key={index} className="break-inside-avoid mb-6">
+                        <img
+                          src={content.value}
+                          alt=""
+                          className="w-full max-h-[500px] mx-auto object-contain rounded-2xl"
+                        />
+                      </figure>
+                    );
+                  } else {
+                    return (
+                      <a
+                        key={index}
+                        href={content.url}
+                        className="break-inside-avoid block mb-6 text-primary-purple underline"
+                      >
+                        {content.value}
+                      </a>
+                    );
+                  }
+                })}
+              </div>
+            );
+          })()}
         </div>
 
         <OtherNews newSlug={news.slug} />
@@ -98,7 +123,10 @@ function NewsDetail() {
               target="_blank"
               className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold"
             >
-              <FaShareFromSquare className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1" />
+              <img
+                className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
+                src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/share.svg"
+              />
               {t("newsDetail.share")}
             </a>
           </div>
