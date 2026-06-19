@@ -5,6 +5,7 @@ import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
 import buildNewsArray from "../components/News/newsArray";
+import { FaShareFromSquare } from "react-icons/fa6";
 
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
@@ -97,10 +98,7 @@ function NewsDetail() {
               target="_blank"
               className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold"
             >
-              <img
-                className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
-                src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/share.svg"
-              />
+              <FaShareFromSquare className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1" />
               {t("newsDetail.share")}
             </a>
           </div>
