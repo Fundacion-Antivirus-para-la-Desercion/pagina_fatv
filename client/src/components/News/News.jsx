@@ -27,7 +27,7 @@ function News() {
       <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
         {buildNewsArray(t).map((news) => (
           <div key={news.slug} className="flex flex-col">
-            <img className="mb-3 aspect-ratio" src={news.img} alt={news.alt} />
+            <img className="mb-3 aspect-ratio rounded-2xl" src={news.img} alt={news.alt} />
             <p className="flex text-base md:text-lg font-impact text-primary-purple mb-2">
               <img className="mr-1" src={Date} />
               {t("news.category")}
@@ -38,14 +38,12 @@ function News() {
             <hr className="mb-3" />
             <div className="group flex">
               <button
-                className="text-xl md:text-2xl text-primary-purple cursor-pointer"
-                onClick={() => {
-                  navigate("/news/detail", { state: { news } });
-                }}
+                className="group flex items-center gap-2 text-xl md:text-2xl text-primary-purple cursor-pointer w-fit"
+                onClick={() => navigate("/news/detail", { state: { news } })}
               >
                 {t("news.read_more")}
+                <FaArrowRight className="text-lg transition-transform duration-300 group-hover:translate-x-1" />
               </button>
-              <FaArrowRight className="text-lg text-primary-purple ml-3 relative top-1 transform transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>
         ))}
