@@ -1,10 +1,11 @@
 import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
-import Desercion from "../../../src/assets/images/views/imagesNews/desercion-universitaria.gif";
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
+import Desercion from "../../assets/images/views/imagesNews/desercion-universitaria.webp";
+import Encuentro from "../../assets/images/views/imagesNews/encuentro-universitarios.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
@@ -33,8 +34,7 @@ const buildNewsArray = (t) => [
         },
         {
           type: "img",
-          value:
-            "https://www.fundacionantivirusparaladesercion.org/data/articles/foto-blog.gif",
+          value: Desercion,
         },
         {
           type: "parrafo",
@@ -46,8 +46,7 @@ const buildNewsArray = (t) => [
         },
         {
           type: "img",
-          value:
-            "https://www.fundacionantivirusparaladesercion.org/data/articles/blog1.gif",
+          value: Encuentro,
         },
         {
           type: "parrafo",
