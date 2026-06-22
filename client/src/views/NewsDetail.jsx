@@ -1,22 +1,42 @@
-import { useMemo } from "react";
+import { useMemo, useEffect, useRef, forwardRef, useState } from "react";
+import HTMLFlipBook from "react-pageflip";
 import Date from "../assets/Icons/date.svg";
 import BannerNews from "../assets/images/views/imagesNews/banner-news.webp";
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
 import { Link, useLocation } from "react-router-dom";
 import buildNewsArray from "../components/News/newsArray";
-
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
+
+const ITEMS_PER_PAGE = 2;
+
+/* react-pageflip requiere que cada página use forwardRef */
+const BookPage = forwardRef(({ items, renderItem }, ref) => (
+  <div
+    ref={ref}
+    className="bg-white h-full"
+    style={{
+      borderLeft: "3px solid rgba(34,45,86,0.12)",
+      boxShadow: "inset -4px 0 12px rgba(34,45,86,0.06)",
+      overflow: "hidden",
+    }}
+  >
+    <div className="p-6 h-full" style={{ overflow: "hidden" }}>
+      {items.map((content, index) => renderItem(content, index))}
+    </div>
+  </div>
+));
+BookPage.displayName = "BookPage";
 
 function NewsDetail() {
   const location = useLocation();
   const initialNews = location.state?.news;
   const { t } = useTranslation();
+  const bookRef = useRef(null);
+  const wrapperRef = useRef(null);
+  const [bookDims, setBookDims] = useState({ width: 420, height: 580 });
 
-  // Recompute the news object from the translation-aware factory so
-  // the strings update when the language changes. Use the id from the
-  // location state (or fall back to the id property on the object).
   const news = useMemo(() => {
     const slug = initialNews?.slug ?? null;
     if (!slug) return initialNews;
@@ -24,9 +44,101 @@ function NewsDetail() {
     return arr.find((n) => n.slug === slug) || initialNews;
   }, [initialNews, t]);
 
+  /* Calcula dimensiones del libro según el ancho del contenedor */
+  useEffect(() => {
+    const update = () => {
+      if (!wrapperRef.current) return;
+      const containerW = wrapperRef.current.offsetWidth;
+      const isPortrait = containerW < 600;
+      const pageW = isPortrait ? Math.min(containerW - 16, 380) : Math.min(Math.floor(containerW / 2) - 12, 480);
+      const pageH = Math.max(560, Math.round(pageW * 1.55));
+      setBookDims({ width: pageW, height: pageH });
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    if (wrapperRef.current) ro.observe(wrapperRef.current);
+    return () => ro.disconnect();
+  }, []);
+
   if (!news) {
     return <div className="p-10 text-2xl">{t("newsDetail.no_info")}</div>;
   }
+
+  const items = news.newDetailContent.content;
+  const isBookMode = items.length > ITEMS_PER_PAGE;
+
+  /* Divide contenido en páginas */
+  const pages = [];
+  if (isBookMode) {
+    for (let i = 0; i < items.length; i += ITEMS_PER_PAGE) {
+      pages.push(items.slice(i, i + ITEMS_PER_PAGE));
+    }
+  }
+
+  const isPortraitMode = bookDims.width < 400;
+
+  const renderItem = (content, index) => {
+    if (content.type === "parrafo") {
+      return (
+        <div key={index} className="mb-5">
+          <p className="text-blue-base text-base text-justify leading-relaxed">
+            {content.value}
+          </p>
+        </div>
+      );
+    } else if (content.type === "img") {
+      return (
+        <figure key={index} className="mb-5">
+          <img
+            src={content.value}
+            alt=""
+            className="w-full max-h-32 mx-auto object-cover rounded-xl"
+          />
+        </figure>
+      );
+    } else {
+      return (
+        <a
+          key={index}
+          href={content.url}
+          className="block mb-5 text-primary-purple underline text-base"
+        >
+          {content.value}
+        </a>
+      );
+    }
+  };
+
+  /* Fallback para noticias cortas: diseño original */
+  const renderShortContent = () => {
+    const paragraphCount = items.filter((c) => c.type === "parrafo").length;
+    const useColumns = paragraphCount >= 2;
+    return (
+      <div className={useColumns ? "columns-1 md:columns-2 gap-8" : ""}>
+        {items.map((content, index) => {
+          if (content.type === "parrafo") {
+            return (
+              <div key={index} className="break-inside-avoid mb-6">
+                <p className="text-blue-base text-lg text-justify">{content.value}</p>
+              </div>
+            );
+          } else if (content.type === "img") {
+            return (
+              <figure key={index} className="break-inside-avoid mb-6">
+                <img src={content.value} alt="" className="w-full max-h-[500px] mx-auto object-contain rounded-2xl" />
+              </figure>
+            );
+          } else {
+            return (
+              <a key={index} href={content.url} className="break-inside-avoid block mb-6 text-primary-purple underline">
+                {content.value}
+              </a>
+            );
+          }
+        })}
+      </div>
+    );
+  };
 
   return (
     <>
@@ -45,69 +157,73 @@ function NewsDetail() {
           className="absolute inset-0 z-1"
           style={{
             backgroundImage: `
-        linear-gradient(to right, #FFFFFF 1px, transparent 1px),
-        linear-gradient(to bottom, #FFFFFF 1px, transparent 1px)
-      `,
-            backgroundSize: "48px 48px, 48px 48px",
+              linear-gradient(to right, #FFFFFF 1px, transparent 1px),
+              linear-gradient(to bottom, #FFFFFF 1px, transparent 1px)
+            `,
+            backgroundSize: "48px 48px",
           }}
         />
+
         <div id="content" className="relative p-4 border border-dark-blue rounded-2xl">
-          <p className="flex  text-base md:text-lg font-impact m-2 text-primary-purple">
+          <p className="flex text-base md:text-lg font-impact m-2 text-primary-purple">
             <img className="mr-1" src={Date} />
             {t("newsDetail.news_label")}
           </p>
-          <h1 className="mb-4 text-left text-4xl md:text-5xl text-blue-base  font-impact leading-10">
+          <h1 className="mb-4 text-left text-4xl md:text-5xl text-blue-base font-impact leading-10">
             {news.newDetailContent.title}
           </h1>
-          {(() => {
-            const items = news.newDetailContent.content;
-            const paragraphCount = items.filter(
-              (c) => c.type === "parrafo",
-            ).length;
-            const useColumns = paragraphCount >= 2;
 
-            return (
+          {isBookMode ? (
+            <div className="flex flex-col items-center" ref={wrapperRef}>
+
+              {/* Libro */}
               <div
-                className={
-                  useColumns
-                    ? "columns-1 md:columns-2 gap-8"
-                    : ""
-                }
+                className="relative"
+                style={{
+                  filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.22))",
+                }}
               >
-                {items.map((content, index) => {
-                  if (content.type === "parrafo") {
-                    return (
-                      <div key={index} className="break-inside-avoid mb-6">
-                        <p className="text-blue-base text-lg text-justify">
-                          {content.value}
-                        </p>
-                      </div>
-                    );
-                  } else if (content.type === "img") {
-                    return (
-                      <figure key={index} className="break-inside-avoid mb-6">
-                        <img
-                          src={content.value}
-                          alt=""
-                          className="w-full max-h-[500px] mx-auto object-contain rounded-2xl"
-                        />
-                      </figure>
-                    );
-                  } else {
-                    return (
-                      <a
-                        key={index}
-                        href={content.url}
-                        className="break-inside-avoid block mb-6 text-primary-purple underline"
-                      >
-                        {content.value}
-                      </a>
-                    );
-                  }
-                })}
+                {bookDims.width > 0 && (
+                  <HTMLFlipBook
+                    ref={bookRef}
+                    width={bookDims.width}
+                    height={bookDims.height}
+                    size="fixed"
+                    minWidth={200}
+                    maxWidth={500}
+                    minHeight={400}
+                    maxHeight={800}
+                    drawShadow={true}
+                    flippingTime={700}
+                    usePortrait={isPortraitMode}
+                    startZIndex={0}
+                    autoSize={false}
+                    maxShadowOpacity={0.6}
+                    showCover={false}
+                    mobileScrollSupport={true}
+                    clickEventForward={true}
+                    useMouseEvents={true}
+                    swipeDistance={30}
+                    showPageCorners={true}
+                    disableFlipByClick={false}
+                    style={{ margin: "0 auto" }}
+                    className="flip-book"
+                    onFlip={undefined}
+                  >
+                    {pages.map((pageItems, i) => (
+                      <BookPage
+                        key={i}
+                        items={pageItems}
+                        renderItem={renderItem}
+                      />
+                    ))}
+                  </HTMLFlipBook>
+                )}
               </div>
-            );
-          })()}
+            </div>
+          ) : (
+            renderShortContent()
+          )}
         </div>
 
         <OtherNews className="relative" newSlug={news.slug} />
@@ -127,9 +243,7 @@ function NewsDetail() {
             </Link>
 
             <a
-              href={
-                "http://www.facebook.com/share.php?u=" + window.location.href
-              }
+              href={"http://www.facebook.com/share.php?u=" + window.location.href}
               target="_blank"
               className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold"
             >
