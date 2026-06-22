@@ -40,8 +40,18 @@ function NewsDetail() {
         />
       </div>
 
-      <section className="mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 relative p-4 mt-6">
-        <div id="content" className="p-4 border border-dark-blue rounded-2xl">
+      <section className="relative bg-[#F6F6F6] mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 p-4 mt-6">
+        <div
+          className="absolute inset-0 z-1"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, #FFFFFF 1px, transparent 1px),
+        linear-gradient(to bottom, #FFFFFF 1px, transparent 1px)
+      `,
+            backgroundSize: "48px 48px, 48px 48px",
+          }}
+        />
+        <div id="content" className="relative p-4 border border-dark-blue rounded-2xl">
           <p className="flex  text-base md:text-lg font-impact m-2 text-primary-purple">
             <img className="mr-1" src={Date} />
             {t("newsDetail.news_label")}
@@ -100,9 +110,9 @@ function NewsDetail() {
           })()}
         </div>
 
-        <OtherNews newSlug={news.slug} />
+        <OtherNews className="relative" newSlug={news.slug} />
 
-        <section>
+        <section className="relative">
           <div className="flex items-center">
             <Link
               to="/News"
