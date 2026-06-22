@@ -109,7 +109,7 @@ function NewsDetail() {
           <img
             src={content.value}
             alt=""
-            className="w-full max-h-28 mx-auto object-cover rounded-xl"
+            className="w-full max-h-[400px] mx-auto object-cover rounded-xl"
           />
         </figure>
       );
@@ -173,6 +173,18 @@ function NewsDetail() {
           className="relative border border-dark-blue rounded-2xl overflow-hidden"
           style={{ filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.20))" }}
         >
+          {/* Grid overlay sobre las páginas del libro — pointer-events-none para no bloquear el flip */}
+          <div
+            id="grid-overlay"
+            className="absolute inset-0 z-10 pointer-events-none rounded-2xl"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, rgba(34,45,86,0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(34,45,86,0.04) 1px, transparent 1px)
+              `,
+              backgroundSize: "48px 48px",
+            }}
+          />
           {bookDims.width > 0 && (
             <HTMLFlipBook
               ref={bookRef}
