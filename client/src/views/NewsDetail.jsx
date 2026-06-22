@@ -65,14 +65,11 @@ function NewsDetail() {
   }
 
   const items = news.newDetailContent.content;
-  const isBookMode = items.length > ITEMS_PER_PAGE;
 
-  /* Divide contenido en páginas */
+  /* Divide SIEMPRE en páginas — noticias cortas = 1 página, largas = varias */
   const pages = [];
-  if (isBookMode) {
-    for (let i = 0; i < items.length; i += ITEMS_PER_PAGE) {
-      pages.push(items.slice(i, i + ITEMS_PER_PAGE));
-    }
+  for (let i = 0; i < items.length; i += ITEMS_PER_PAGE) {
+    pages.push(items.slice(i, i + ITEMS_PER_PAGE));
   }
 
   const isPortraitMode = bookDims.width < 400;
@@ -109,37 +106,6 @@ function NewsDetail() {
     }
   };
 
-  /* Fallback para noticias cortas: diseño original */
-  const renderShortContent = () => {
-    const paragraphCount = items.filter((c) => c.type === "parrafo").length;
-    const useColumns = paragraphCount >= 2;
-    return (
-      <div className={useColumns ? "columns-1 md:columns-2 gap-8" : ""}>
-        {items.map((content, index) => {
-          if (content.type === "parrafo") {
-            return (
-              <div key={index} className="break-inside-avoid mb-6">
-                <p className="text-blue-base text-lg text-justify">{content.value}</p>
-              </div>
-            );
-          } else if (content.type === "img") {
-            return (
-              <figure key={index} className="break-inside-avoid mb-6">
-                <img src={content.value} alt="" className="w-full max-h-[500px] mx-auto object-contain rounded-2xl" />
-              </figure>
-            );
-          } else {
-            return (
-              <a key={index} href={content.url} className="break-inside-avoid block mb-6 text-primary-purple underline">
-                {content.value}
-              </a>
-            );
-          }
-        })}
-      </div>
-    );
-  };
-
   return (
     <>
       <div className="lg:pt-[145px]">
@@ -173,9 +139,7 @@ function NewsDetail() {
             {news.newDetailContent.title}
           </h1>
 
-          {isBookMode ? (
-            <div className="flex flex-col items-center" ref={wrapperRef}>
-
+          <div className="flex flex-col items-center" ref={wrapperRef}>
               {/* Libro */}
               <div
                 className="relative"
@@ -208,7 +172,6 @@ function NewsDetail() {
                     disableFlipByClick={false}
                     style={{ margin: "0 auto" }}
                     className="flip-book"
-                    onFlip={undefined}
                   >
                     {pages.map((pageItems, i) => (
                       <BookPage
@@ -221,9 +184,6 @@ function NewsDetail() {
                 )}
               </div>
             </div>
-          ) : (
-            renderShortContent()
-          )}
         </div>
 
         <OtherNews className="relative" newSlug={news.slug} />
