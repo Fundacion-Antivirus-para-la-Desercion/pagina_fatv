@@ -79,6 +79,12 @@ function NewsDetail() {
     return () => ro.disconnect();
   }, []);
 
+  /* Scroll al inicio de #content cada vez que cambia la noticia */
+  useEffect(() => {
+    if (!news?.slug) return;
+    contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [news?.slug]);
+
   if (!news) {
     return <div className="p-10 text-2xl">{t("newsDetail.no_info")}</div>;
   }
@@ -189,6 +195,7 @@ function NewsDetail() {
           />
           {bookDims.width > 0 && (
             <HTMLFlipBook
+              key={news.slug}
               ref={bookRef}
               width={bookDims.width}
               height={bookDims.height}
