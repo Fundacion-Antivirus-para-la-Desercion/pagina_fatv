@@ -178,7 +178,7 @@ function NewsDetail() {
         <div
           id="content"
           ref={contentRef}
-          className="relative border border-dark-blue rounded-2xl overflow-hidden"
+          className="relative rounded-2xl overflow-hidden"
           style={{ filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.20))" }}
         >
           {/* Grid overlay sobre las páginas del libro — pointer-events-none para no bloquear el flip */}

@@ -266,12 +266,6 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t(
-            "news.items.la-crisis-en-educacion-superior.detail.content.4",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.5",
           ),
         },
