@@ -16,13 +16,13 @@ const ITEMS_PER_PAGE = 2;
 const BookCoverPage = forwardRef(({ items, header, renderItem }, ref) => (
   <div
     ref={ref}
-    className="bg-white h-full p-1 md:p-2"
+    className="bg-white h-full"
     style={{
       borderRight: "2px solid rgba(34,45,86,0.10)",
       overflow: "hidden",
     }}
   >
-    <div className="p-6 h-full" style={{ overflow: "hidden" }}>
+    <div className="h-full" style={{ overflow: "hidden" }}>
       {header}
       {items.map((content, index) => renderItem(content, index))}
     </div>
@@ -30,7 +30,7 @@ const BookCoverPage = forwardRef(({ items, header, renderItem }, ref) => (
 ));
 BookCoverPage.displayName = "BookCoverPage";
 
-/* Páginas interiores */
+/* Páginas restantes */
 const BookPage = forwardRef(({ items, renderItem }, ref) => (
   <div
     ref={ref}
@@ -41,7 +41,7 @@ const BookPage = forwardRef(({ items, renderItem }, ref) => (
       overflow: "hidden",
     }}
   >
-    <div className="p-6 h-full" style={{ overflow: "hidden" }}>
+    <div className="h-full" style={{ overflow: "hidden" }}>
       {items.map((content, index) => renderItem(content, index))}
     </div>
   </div>
@@ -178,7 +178,7 @@ function NewsDetail() {
         <div
           id="content"
           ref={contentRef}
-          className="relative rounded-2xl overflow-hidden"
+          className="relative rounded-2xl"
           style={{ filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.20))" }}
         >
           {/* Grid overlay sobre las páginas del libro — pointer-events-none para no bloquear el flip */}
@@ -218,10 +218,12 @@ function NewsDetail() {
             >
               {/* Primera página: encabezado + primeros ítems */}
               <BookCoverPage
+              id="cover-page"
                 key={0}
                 items={pages[0] ?? []}
                 header={coverHeader}
                 renderItem={renderItem}
+                className="p-12"
               />
               {/* Páginas restantes */}
               {pages.slice(1).map((pageItems, i) => (
