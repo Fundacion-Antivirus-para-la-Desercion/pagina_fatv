@@ -91,8 +91,6 @@ function NewsDetail() {
     pages.push(items.slice(i, i + ITEMS_PER_PAGE));
   }
 
-  const isPortraitMode = bookDims.width > 0 && bookDims.width < 400;
-
   const renderItem = (content, index) => {
     if (content.type === "parrafo") {
       return (
@@ -197,7 +195,7 @@ function NewsDetail() {
               maxHeight={900}
               drawShadow={true}
               flippingTime={700}
-              usePortrait={isPortraitMode}
+              usePortrait={false}
               startZIndex={0}
               autoSize={false}
               maxShadowOpacity={0.6}
