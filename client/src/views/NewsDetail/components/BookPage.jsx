@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import PropTypes from "prop-types";
 
 /**
  * Renderiza una página del libro con contenido dinámico.
@@ -12,15 +11,31 @@ import PropTypes from "prop-types";
  * @returns {JSX.Element} Componente de página del libro
  */
 const BookPage = forwardRef(
-  ({ items = [], header, renderItem, className = "", ...props }, ref) => {
+  (
+    { items = [], header, renderItem, pageSide, className = "", ...props },
+    ref
+  ) => {
     const isCover = Boolean(header);
+    const shadingStyle = !isCover
+      ? pageSide === "left"
+        ? {
+            backgroundImage:
+              "linear-gradient(to right, rgba(34,45,86,0.07) 0%, rgba(34,45,86,0.03) 4%, #ffffff 12%, #ffffff 100%)",
+          }
+        : {
+            backgroundImage:
+              "linear-gradient(to left, rgba(34,45,86,0.07) 0%, rgba(34,45,86,0.03) 4%, #ffffff 12%, #ffffff 100%)",
+          }
+      : {};
+
     return (
       <div
         ref={ref}
-        className={`bg-white h-full ${isCover ? "border-r-2 border-r-gray-200" : "border-l-2 border-l-gray-200 shadow-inner"} ${className}`.trim()}
+        className={`bg-white h-full ${className}`.trim()}
+        style={shadingStyle}
         {...props}
       >
-        <div className="h-full overflow-hidden">
+        <div className="h-full overflow-hidden p-4 md:p-6">
           {isCover && header}
           {items.map((content, index) => renderItem(content, index))}
         </div>
@@ -29,11 +44,5 @@ const BookPage = forwardRef(
   }
 );
 BookPage.displayName = "BookPage";
-BookPage.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object),
-  header: PropTypes.node,
-  renderItem: PropTypes.func.isRequired,
-  className: PropTypes.string,
-};
 
 export default BookPage;

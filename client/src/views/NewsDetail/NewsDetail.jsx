@@ -109,7 +109,7 @@ const NewsDetail = () => {
               usePortrait={false}
               startZIndex={0}
               autoSize={false}
-              maxShadowOpacity={0.6}
+              maxShadowOpacity={0.45}
               showCover={false}
               mobileScrollSupport={true}
               clickEventForward={true}
@@ -125,7 +125,7 @@ const NewsDetail = () => {
                 items={pages[0]}
                 header={coverHeader}
                 renderItem={renderItem}
-                className="p-12"
+                pageSide="left"
               />
 
               {pages.slice(1).map((pageItems, i) => (
@@ -133,6 +133,7 @@ const NewsDetail = () => {
                   key={i + 1}
                   items={pageItems}
                   renderItem={renderItem}
+                  pageSide={(i + 1) % 2 === 0 ? "left" : "right"}
                 />
               ))}
             </HTMLFlipBook>
