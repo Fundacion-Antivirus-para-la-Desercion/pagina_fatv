@@ -90,6 +90,10 @@ function NewsDetail() {
   for (let i = 0; i < items.length; i += ITEMS_PER_PAGE) {
     pages.push(items.slice(i, i + ITEMS_PER_PAGE));
   }
+  /* Mínimo 2 páginas para mostrar el libro abierto */
+  if (pages.length < 2) pages.push([]);
+  /* Número par de páginas → efecto flip estándar en todas las noticias */
+  if (pages.length % 2 !== 0) pages.push([]);
 
   const renderItem = (content, index) => {
     if (content.type === "parrafo") {
