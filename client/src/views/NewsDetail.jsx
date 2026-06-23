@@ -200,10 +200,6 @@ function NewsDetail() {
               width={bookDims.width}
               height={bookDims.height}
               size="fixed"
-              minWidth={200}
-              maxWidth={800}
-              minHeight={400}
-              maxHeight={900}
               drawShadow={true}
               flippingTime={700}
               usePortrait={false}
