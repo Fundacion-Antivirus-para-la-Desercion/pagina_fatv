@@ -12,41 +12,34 @@ import { FaRegCalendarMinus } from "react-icons/fa6";
 
 const ITEMS_PER_PAGE = 2;
 
-/* Primera página: lleva el encabezado (fecha + título) + primeros ítems */
-const BookCoverPage = forwardRef(({ items, header, renderItem }, ref) => (
-  <div
-    ref={ref}
-    className="bg-white h-full"
-    style={{
-      borderRight: "2px solid rgba(34,45,86,0.10)",
-      overflow: "hidden",
-    }}
-  >
-    <div className="h-full" style={{ overflow: "hidden" }}>
-      {header}
-      {items.map((content, index) => renderItem(content, index))}
+/* Páginas del libro: portada y páginas internas (unificado) */
+const BookPage = forwardRef(({ items, renderItem, header, ...props }, ref) => {
+  const isCover = Boolean(header);
+  const commonStyle = { overflow: "hidden" };
+  const coverStyle = { borderRight: "2px solid rgba(34,45,86,0.10)" };
+  const innerStyle = {
+    borderLeft: "3px solid rgba(34,45,86,0.12)",
+    boxShadow: "inset -4px 0 12px rgba(34,45,86,0.06)"
+  };
+
+  return (
+    <div
+      ref={ref}
+      className="bg-white h-full"
+      style={{ ...(isCover ? coverStyle : innerStyle), ...commonStyle }}
+      {...props}
+    >
+      <div className="h-full" style={{ overflow: "hidden" }}>
+        {isCover && header}
+        {items.map((content, index) => renderItem(content, index))}
+      </div>
     </div>
-  </div>
-));
-BookCoverPage.displayName = "BookCoverPage";
+  );
+});
+BookPage.displayName = "BookPage";
+const BookCoverPage = BookPage; // alias para compatibilidad
 
 /* Páginas restantes */
-const BookPage = forwardRef(({ items, renderItem }, ref) => (
-  <div
-    ref={ref}
-    className="bg-white h-full"
-    style={{
-      borderLeft: "3px solid rgba(34,45,86,0.12)",
-      boxShadow: "inset -4px 0 12px rgba(34,45,86,0.06)",
-      overflow: "hidden",
-    }}
-  >
-    <div className="h-full" style={{ overflow: "hidden" }}>
-      {items.map((content, index) => renderItem(content, index))}
-    </div>
-  </div>
-));
-BookPage.displayName = "BookPage";
 
 function NewsDetail() {
   const location = useLocation();
