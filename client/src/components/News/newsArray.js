@@ -229,15 +229,15 @@ const buildNewsArray = (t) => [
     newDetailContent: {
       title: t("news.items.la-crisis-en-educacion-superior.detail.title"),
       content: [
+         {
+          type: "img",
+          value: MateoD,
+        },
         {
           type: "parrafo",
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.0",
           ),
-        },
-        {
-          type: "img",
-          value: MateoD,
         },
         {
           type: "parrafo",
@@ -310,13 +310,13 @@ const buildNewsArray = (t) => [
     newDetailContent: {
       title: t("news.items.el-docente-hoy.detail.title"),
       content: [
+         {
+          type: "img",
+          value: JhiselH,
+        },
         {
           type: "parrafo",
           value: t("news.items.el-docente-hoy.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: JhiselH,
         },
         {
           type: "parrafo",

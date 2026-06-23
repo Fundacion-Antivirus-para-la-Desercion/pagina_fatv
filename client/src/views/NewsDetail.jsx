@@ -16,7 +16,7 @@ const ITEMS_PER_PAGE = 2;
 const BookCoverPage = forwardRef(({ items, header, renderItem }, ref) => (
   <div
     ref={ref}
-    className="bg-white h-full"
+    className="bg-white h-full p-1 md:p-2"
     style={{
       borderRight: "2px solid rgba(34,45,86,0.10)",
       overflow: "hidden",
@@ -97,7 +97,7 @@ function NewsDetail() {
     if (content.type === "parrafo") {
       return (
         <div key={index} className="mb-4">
-          <p className="text-blue-base text-sm text-justify leading-relaxed">
+          <p className="text-blue-base text-base md:text-lg text-justify leading-relaxed">
             {content.value}
           </p>
         </div>
@@ -108,7 +108,7 @@ function NewsDetail() {
           <img
             src={content.value}
             alt=""
-            className="w-full max-h-[400px] mx-auto object-cover rounded-xl"
+            className="w-[90%] max-h-[600px] mx-auto object-cover rounded-xl"
           />
         </figure>
       );
