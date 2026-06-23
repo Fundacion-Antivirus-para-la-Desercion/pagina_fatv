@@ -1,6 +1,5 @@
 import { useMemo, useEffect, useRef, forwardRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
-import DateIcon from "../assets/Icons/date.svg";
 import BannerNews from "../assets/images/views/imagesNews/banner-news.webp";
 import Back from "../../src/assets/Icons/back.svg";
 import OtherNews from "../components/other-news/OtherNews";
@@ -8,6 +7,8 @@ import { Link, useLocation } from "react-router-dom";
 import buildNewsArray from "../components/News/newsArray";
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
+import { FaRegCalendarMinus } from "react-icons/fa6";
+
 
 const ITEMS_PER_PAGE = 2;
 
@@ -68,9 +69,7 @@ function NewsDetail() {
       if (!contentRef.current) return;
       const containerW = contentRef.current.offsetWidth;
       const isPortrait = containerW < 600;
-      const pageW = isPortrait
-        ? containerW
-        : Math.floor(containerW / 2);
+      const pageW = isPortrait ? containerW : Math.floor(containerW / 2);
       const pageH = Math.max(560, Math.round(pageW * 1.55));
       setBookDims({ width: pageW, height: pageH });
     };
@@ -128,13 +127,13 @@ function NewsDetail() {
 
   const coverHeader = (
     <div className="mb-4">
-      <p className="flex text-xs font-impact mb-2 text-primary-purple">
-        <img className="mr-1 w-4 h-4" src={DateIcon} />
-        {t("newsDetail.news_label")}
-      </p>
-      <h1 className="text-xl font-impact leading-tight text-blue-base mb-3">
+      <div className="flex  mb-2 text-primary-purple">
+        <FaRegCalendarMinus className="mr-1 w-6 h-6" />
+        <span className="font-impact text-lg">{t("newsDetail.news_label")}</span>
+      </div>
+      <h2 className="text-2xl md:text-5xl font-impact leading-tight text-blue-base mb-3">
         {news.newDetailContent.title}
-      </h1>
+      </h2>
       <div
         className="h-[2px] rounded-full mb-4"
         style={{ background: "linear-gradient(to right, #222D56, #7C76B5)" }}
@@ -155,7 +154,8 @@ function NewsDetail() {
       </div>
 
       <section className="relative bg-[#F6F6F6] mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 p-4 mt-6">
-        <div id="grid-overlay"
+        <div
+          id="grid-overlay"
           className="absolute inset-0 z-1"
           style={{
             backgroundImage: `
@@ -247,7 +247,9 @@ function NewsDetail() {
             </Link>
 
             <a
-              href={"http://www.facebook.com/share.php?u=" + window.location.href}
+              href={
+                "http://www.facebook.com/share.php?u=" + window.location.href
+              }
               target="_blank"
               className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold"
             >

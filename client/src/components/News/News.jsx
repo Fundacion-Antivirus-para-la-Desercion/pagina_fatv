@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./News.css";
 import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
-import Date from "../../../src/assets/Icons/date.svg";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray from "./newsArray";
 import { useTranslation } from "react-i18next";
 import BannerView from "../Banner-views/BannerView";
 import { FaArrowRight } from "react-icons/fa";
+import { FaRegCalendarMinus } from "react-icons/fa6";
 
 function News() {
   const navigate = useNavigate();
@@ -28,8 +28,8 @@ function News() {
         {buildNewsArray(t).map((news) => (
           <div key={news.slug} className="flex flex-col">
             <img className="mb-3 aspect-ratio rounded-2xl" src={news.img} alt={news.alt} />
-            <p className="flex text-base md:text-lg font-impact text-primary-purple mb-2">
-              <img className="mr-1" src={Date} />
+            <p className="flex items-center text-base md:text-lg font-impact text-primary-purple mb-2">
+              <FaRegCalendarMinus className="mr-1 w-7 h-7" />
               {t("news.category")}
             </p>
             <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base max-md:text-3xl leading-9 flex-grow">
