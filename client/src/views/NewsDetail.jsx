@@ -8,44 +8,38 @@ import buildNewsArray from "../components/News/newsArray";
 import { useTranslation } from "react-i18next";
 import BannerView from "../components/Banner-views/BannerView";
 import { FaRegCalendarMinus } from "react-icons/fa6";
-import PropTypes from "prop-types";
 
 
 const ITEMS_PER_PAGE = 2;
 
 /* Páginas del libro: portada y páginas internas (unificado) */
-const BookPage = forwardRef(
-  ({ items, renderItem, header, className = "", ...props }, ref) => {
-    const isCover = Boolean(header);
-    const commonStyle = { overflow: "hidden" };
-    const coverStyle = { borderRight: "2px solid rgba(34,45,86,0.10)" };
-    const innerStyle = {
-      borderLeft: "3px solid rgba(34,45,86,0.12)",
-      boxShadow: "inset -4px 0 12px rgba(34,45,86,0.06)",
-    };
+const BookPage = forwardRef(({ items, renderItem, header, ...props }, ref) => {
+  const isCover = Boolean(header);
+  const commonStyle = { overflow: "hidden" };
+  const coverStyle = { borderRight: "2px solid rgba(34,45,86,0.10)" };
+  const innerStyle = {
+    borderLeft: "3px solid rgba(34,45,86,0.12)",
+    boxShadow: "inset -4px 0 12px rgba(34,45,86,0.06)"
+  };
 
-    return (
-      <div
-        ref={ref}
-        className={`bg-white h-full ${className}`.trim()}
-        style={{ ...(isCover ? coverStyle : innerStyle), ...commonStyle }}
-        {...props}
-      >
-        <div className="h-full" style={{ overflow: "hidden" }}>
-          {isCover && header}
-          {items.map((content, index) => renderItem(content, index))}
-        </div>
+  return (
+    <div
+      ref={ref}
+      className="bg-white h-full"
+      style={{ ...(isCover ? coverStyle : innerStyle), ...commonStyle }}
+      {...props}
+    >
+      <div className="h-full" style={{ overflow: "hidden" }}>
+        {isCover && header}
+        {items.map((content, index) => renderItem(content, index))}
       </div>
-    );
-  }
-);
+    </div>
+  );
+});
 BookPage.displayName = "BookPage";
-BookPage.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  renderItem: PropTypes.func.isRequired,
-  header: PropTypes.node,
-  className: PropTypes.string,
-};
+const BookCoverPage = BookPage; // alias para compatibilidad
+
+/* Páginas restantes */
 
 function NewsDetail() {
   const location = useLocation();
@@ -216,8 +210,8 @@ function NewsDetail() {
               className="flip-book"
             >
               {/* Primera página: encabezado + primeros ítems */}
-              <BookPage
-                id="cover-page"
+              <BookCoverPage
+              id="cover-page"
                 key={0}
                 items={pages[0] ?? []}
                 header={coverHeader}
