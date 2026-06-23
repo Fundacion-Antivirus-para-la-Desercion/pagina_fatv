@@ -35,7 +35,7 @@ const BookPage = forwardRef(
         style={shadingStyle}
         {...props}
       >
-        <div className="h-full overflow-hidden p-4 md:p-6">
+        <div className="h-full overflow-hidden p-4 md:p-8">
           {isCover && header}
           {items.map((content, index) => renderItem(content, index))}
         </div>
