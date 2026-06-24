@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import OtherNews from "../../components/other-news/OtherNews";
@@ -20,7 +20,8 @@ import createPages from "./utils/createPages.js";
  * @returns {JSX.Element} Componente de detalle de noticias.
  */
 const NewsDetail = () => {
-  const ITEMS_PER_PAGE = 2;
+  const DEBUG_NEWS_DETAIL =
+    import.meta.env.DEV && import.meta.env.VITE_DEBUG_NEWS_DETAIL === "true";
   const location = useLocation();
   const initialNews = location.state?.news;
   const { t } = useTranslation();
@@ -30,17 +31,52 @@ const NewsDetail = () => {
   const news = useNews(initialNews, t);
 
   const bookDimensions = useBookDimensions(contentRef);
-
   useEffect(() => {
     if (!news?.slug) return;
     contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [news?.slug]);
 
+  const pages = useMemo(
+    () => {
+      const content = news?.newDetailContent?.content ?? [];
+      return createPages(content, {
+        pageWidth: bookDimensions.width,
+        usableHeight: bookDimensions.usableHeight,
+        firstPageUsableHeight: bookDimensions.firstPageUsableHeight,
+        safetyMargin: bookDimensions.safetyMargin,
+        debug: DEBUG_NEWS_DETAIL,
+      });
+    },
+    [
+      news?.newDetailContent?.content,
+      bookDimensions.width,
+      bookDimensions.usableHeight,
+      bookDimensions.firstPageUsableHeight,
+      bookDimensions.safetyMargin,
+      DEBUG_NEWS_DETAIL,
+    ]
+  );
+
+  useEffect(() => {
+    if (!DEBUG_NEWS_DETAIL || !news) return;
+
+    console.groupCollapsed("[NewsDetail] page distribution");
+    console.log("dimensions:", bookDimensions);
+    console.log(
+      "pages:",
+      pages.map((page, index) => ({
+        page: index + 1,
+        items: page.length,
+        paragraphs: page.filter((item) => item.type === "parrafo").length,
+        images: page.filter((item) => item.type === "img").length,
+      }))
+    );
+    console.groupEnd();
+  }, [DEBUG_NEWS_DETAIL, news, bookDimensions, pages]);
+
   if (!news) {
     return <div className="p-10 text-2xl">{t("newsDetail.no_info")}</div>;
   }
-
-  const pages = createPages(news.newDetailContent.content, ITEMS_PER_PAGE);
 
   const coverHeader = (
     <BookCoverHeader
