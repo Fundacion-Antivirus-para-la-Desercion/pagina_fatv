@@ -147,7 +147,7 @@ const NewsDetail = () => {
           }}
         />
       </div>
-
+      
       <section className="relative bg-[#F6F6F6] mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 p-4 mt-6">
         <div
           id="grid-overlay"
