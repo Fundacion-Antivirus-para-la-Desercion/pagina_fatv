@@ -149,10 +149,10 @@ const NewsDetail = () => {
               showCover={false}
               mobileScrollSupport={true}
               clickEventForward={true}
-              useMouseEvents={true}
-              swipeDistance={30}
+              useMouseEvents={bookDimensions.isPortrait ? false : true}
+              swipeDistance={bookDimensions.isPortrait ? 80 : 30}
               showPageCorners={true}
-              disableFlipByClick={false}
+              disableFlipByClick={bookDimensions.isPortrait}
               className="flip-book mx-auto "
             >
               <BookPage
