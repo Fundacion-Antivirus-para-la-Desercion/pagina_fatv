@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import OtherNews from "../../components/other-news/OtherNews";
@@ -27,6 +27,7 @@ const NewsDetail = () => {
   const { t } = useTranslation();
   const contentRef = useRef(null);
   const bookRef = useRef(null);
+  const [currentPage, setCurrentPage] = useState(0);
 
   const news = useNews(initialNews, t);
 
@@ -56,6 +57,38 @@ const NewsDetail = () => {
       DEBUG_NEWS_DETAIL,
     ]
   );
+  const totalPages = pages.length;
+  const isPortraitMode = bookDimensions.isPortrait;
+  const lastNavigablePage = isPortraitMode
+    ? Math.max(0, totalPages - 1)
+    : Math.max(0, totalPages - 2);
+  const clampedCurrentPage = Math.min(currentPage, lastNavigablePage);
+
+  const handlePrevPage = () => {
+    bookRef.current?.pageFlip()?.flipPrev();
+  };
+
+  const handleNextPage = () => {
+    bookRef.current?.pageFlip()?.flipNext();
+  };
+
+  const handleFlip = (event) => {
+    const pageIndex = Number(event?.data);
+    if (Number.isFinite(pageIndex)) {
+      setCurrentPage(Math.max(0, pageIndex));
+    }
+  };
+
+  const paginationLabel = isPortraitMode
+    ? `${clampedCurrentPage + 1} / ${totalPages}`
+    : `${clampedCurrentPage + 1}-${Math.min(
+        clampedCurrentPage + 2,
+        totalPages
+      )} / ${totalPages}`;
+
+  useEffect(() => {
+    setCurrentPage(0);
+  }, [news?.slug, totalPages, isPortraitMode]);
 
   useEffect(() => {
     if (!DEBUG_NEWS_DETAIL || !news) return;
@@ -142,17 +175,18 @@ const NewsDetail = () => {
               size="fixed"
               drawShadow={true}
               flippingTime={700}
-              usePortrait={bookDimensions.isPortrait}
+              usePortrait={isPortraitMode}
               startZIndex={0}
               autoSize={true}
               maxShadowOpacity={0.45}
               showCover={false}
-              mobileScrollSupport={true}
+              mobileScrollSupport={false}
               clickEventForward={true}
-              useMouseEvents={bookDimensions.isPortrait ? false : true}
-              swipeDistance={bookDimensions.isPortrait ? 80 : 30}
-              showPageCorners={true}
-              disableFlipByClick={bookDimensions.isPortrait}
+              useMouseEvents={!isPortraitMode}
+              swipeDistance={isPortraitMode ? 90 : 30}
+              showPageCorners={!isPortraitMode}
+              disableFlipByClick={isPortraitMode}
+              onFlip={handleFlip}
               className="flip-book mx-auto "
             >
               <BookPage
@@ -174,6 +208,29 @@ const NewsDetail = () => {
               ))}
             </HTMLFlipBook>
           )}
+          <div className="relative z-20 mt-4 flex items-center justify-center gap-3">
+            <button
+              type="button"
+              onClick={handlePrevPage}
+              disabled={clampedCurrentPage <= 0}
+              className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Anterior
+            </button>
+
+            <span className="min-w-24 text-center text-sm font-semibold text-blue-base">
+              {paginationLabel}
+            </span>
+
+            <button
+              type="button"
+              onClick={handleNextPage}
+              disabled={clampedCurrentPage >= lastNavigablePage}
+              className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Siguiente
+            </button>
+          </div>
         </div>
 
         <OtherNews className="relative" newSlug={news.slug} />
