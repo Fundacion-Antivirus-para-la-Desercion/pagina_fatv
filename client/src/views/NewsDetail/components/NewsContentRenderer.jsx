@@ -11,7 +11,7 @@ const NewsContentRenderer = ({ content, index }) => {
     case "parrafo":
       return (
         <div key={index} className="mb-4">
-          <p className="text-blue-base text-base md:text-lg text-justify leading-relaxed">
+          <p className="text-blue-base text-base md:text-lg text-wrap text-justify leading-relaxed">
             {content.value}
           </p>
         </div>
@@ -22,7 +22,7 @@ const NewsContentRenderer = ({ content, index }) => {
           <img
             src={content.value}
             alt=""
-            className="w-[90%] max-h-[600px] mx-auto object-cover rounded-xl"
+            className="w-[90%] max-h-[400px] mx-auto object-cover rounded-xl"
           />
         </figure>
       );
