@@ -108,7 +108,7 @@ const NewsDetail = () => {
               flippingTime={700}
               usePortrait={false}
               startZIndex={0}
-              autoSize={false}
+              autoSize={true}
               maxShadowOpacity={0.45}
               showCover={false}
               mobileScrollSupport={true}

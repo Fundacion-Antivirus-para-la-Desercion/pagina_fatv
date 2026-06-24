@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 const useBookDimensions = (contentRef) => {
   const [bookDimensions, setBookDimensions] = useState({
     width: 0,
-    height: 580,
+    height: 950,
   });
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const useBookDimensions = (contentRef) => {
       const pageWidth = isPortrait
         ? containerWidth
         : Math.floor(containerWidth / 2);
-      const pageHeight = Math.max(560, Math.round(pageWidth * 1.55));
+      const pageHeight = Math.max(950, Math.round(pageWidth * 1.55));
       setBookDimensions({ width: pageWidth, height: pageHeight });
     };
 
