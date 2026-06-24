@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import HTMLFlipBook from "react-pageflip";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { PageFlip } from "page-flip";
 import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import OtherNews from "../../components/other-news/OtherNews";
 import { useLocation } from "react-router-dom";
@@ -26,8 +26,11 @@ const NewsDetail = () => {
   const initialNews = location.state?.news;
   const { t } = useTranslation();
   const contentRef = useRef(null);
-  const bookRef = useRef(null);
+  const pageFlipRef = useRef(null);
+  const pageFlipHostRef = useRef(null);
+  const pageSourceRef = useRef(null);
   const [currentPage, setCurrentPage] = useState(0);
+  const [isBookReady, setIsBookReady] = useState(false);
 
   const news = useNews(initialNews, t);
 
@@ -64,33 +67,99 @@ const NewsDetail = () => {
     : Math.max(0, totalPages - 2);
   const clampedCurrentPage = Math.min(currentPage, lastNavigablePage);
 
-  const handlePrevPage = () => {
-    const pageFlip = bookRef.current?.pageFlip?.();
-    if (!pageFlip) return;
+  const destroyPageFlip = useCallback(() => {
+    if (!pageFlipRef.current) return;
+    pageFlipRef.current.destroy();
+    pageFlipRef.current = null;
+  }, []);
 
-    pageFlip.flipPrev();
+  const pageFlipSettings = useMemo(
+    () => ({
+      width: bookDimensions.width,
+      height: bookDimensions.height,
+      size: "fixed",
+      drawShadow: true,
+      flippingTime: 700,
+      usePortrait: isPortraitMode,
+      startZIndex: 0,
+      autoSize: true,
+      maxShadowOpacity: 0.45,
+      showCover: false,
+      mobileScrollSupport: false,
+      clickEventForward: true,
+      useMouseEvents: !isPortraitMode,
+      swipeDistance: isPortraitMode ? 90 : 30,
+      showPageCorners: !isPortraitMode,
+      disableFlipByClick: isPortraitMode,
+    }),
+    [bookDimensions.width, bookDimensions.height, isPortraitMode]
+  );
 
-    if (isPortraitMode) {
-      setCurrentPage((prevPage) => Math.max(0, prevPage - 1));
-    }
-  };
-
-  const handleNextPage = () => {
-    const pageFlip = bookRef.current?.pageFlip?.();
-    if (!pageFlip) return;
-
-    pageFlip.flipNext();
-
-    if (isPortraitMode) {
-      setCurrentPage((prevPage) => Math.min(lastNavigablePage, prevPage + 1));
-    }
-  };
-
-  const handleFlip = (event) => {
+  const handleFlip = useCallback((event) => {
     const pageIndex = Number(event?.data);
     if (Number.isFinite(pageIndex)) {
       setCurrentPage(Math.max(0, pageIndex));
     }
+  }, []);
+
+  useEffect(() => {
+    const host = pageFlipHostRef.current;
+    const pageSource = pageSourceRef.current;
+
+    if (
+      !host ||
+      !pageSource ||
+      bookDimensions.width <= 0 ||
+      bookDimensions.height <= 0
+    ) {
+      setIsBookReady(false);
+      return;
+    }
+
+    const pageNodes = Array.from(pageSource.children)
+      .map((node) => node.cloneNode(true))
+      .filter((node) => node instanceof HTMLElement);
+
+    if (pageNodes.length === 0) {
+      setIsBookReady(false);
+      return;
+    }
+
+    destroyPageFlip();
+    setIsBookReady(false);
+
+    const pageFlip = new PageFlip(host, pageFlipSettings);
+    pageFlip.on("flip", handleFlip);
+    pageFlip.loadFromHTML(pageNodes);
+    pageFlipRef.current = pageFlip;
+    setIsBookReady(true);
+
+    return () => {
+      if (pageFlipRef.current === pageFlip) {
+        destroyPageFlip();
+      } else {
+        pageFlip.destroy();
+      }
+      setIsBookReady(false);
+    };
+  }, [
+    news?.slug,
+    pages,
+    bookDimensions.width,
+    bookDimensions.height,
+    pageFlipSettings,
+    handleFlip,
+    destroyPageFlip,
+  ]);
+
+  useEffect(() => () => destroyPageFlip(), [destroyPageFlip]);
+
+  const handlePrevPage = () => {
+    pageFlipRef.current?.flipPrev();
+  };
+
+  const handleNextPage = () => {
+    pageFlipRef.current?.flipNext();
   };
 
   const paginationLabel = isPortraitMode
@@ -133,7 +202,11 @@ const NewsDetail = () => {
   );
 
   const renderItem = (content, index) => (
-    <NewsContentRenderer content={content} index={index} />
+    <NewsContentRenderer
+      key={`${content?.type ?? "item"}-${index}`}
+      content={content}
+      index={index}
+    />
   );
 
   return (
@@ -147,7 +220,7 @@ const NewsDetail = () => {
           }}
         />
       </div>
-      
+
       <section className="relative bg-[#F6F6F6] mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 p-4 mt-6">
         <div
           id="grid-overlay"
@@ -181,52 +254,38 @@ const NewsDetail = () => {
             }}
           />
           {bookDimensions.width > 0 && (
-            <HTMLFlipBook
-              key={news.slug}
-              ref={bookRef}
-              width={bookDimensions.width}
-              height={bookDimensions.height}
-              size="fixed"
-              drawShadow={true}
-              flippingTime={700}
-              usePortrait={isPortraitMode}
-              startZIndex={0}
-              autoSize={true}
-              maxShadowOpacity={0.45}
-              showCover={false}
-              mobileScrollSupport={false}
-              clickEventForward={true}
-              useMouseEvents={!isPortraitMode}
-              swipeDistance={isPortraitMode ? 90 : 30}
-              showPageCorners={!isPortraitMode}
-              disableFlipByClick={isPortraitMode}
-              onFlip={handleFlip}
-              className="flip-book mx-auto "
-            >
-              <BookPage
-                id="cover-page"
-                key={0}
-                items={pages[0]}
-                header={coverHeader}
-                renderItem={renderItem}
-                pageSide="left"
-              />
-
-              {pages.slice(1).map((pageItems, i) => (
+            <>
+              <div ref={pageFlipHostRef} className="mx-auto" />
+              <div
+                ref={pageSourceRef}
+                aria-hidden
+                className="pointer-events-none absolute inset-0 -z-10 opacity-0"
+              >
                 <BookPage
-                  key={i + 1}
-                  items={pageItems}
+                  id="cover-page"
+                  key={0}
+                  items={pages[0]}
+                  header={coverHeader}
                   renderItem={renderItem}
-                  pageSide={(i + 1) % 2 === 0 ? "left" : "right"}
+                  pageSide="left"
                 />
-              ))}
-            </HTMLFlipBook>
+
+                {pages.slice(1).map((pageItems, i) => (
+                  <BookPage
+                    key={i + 1}
+                    items={pageItems}
+                    renderItem={renderItem}
+                    pageSide={(i + 1) % 2 === 0 ? "left" : "right"}
+                  />
+                ))}
+              </div>
+            </>
           )}
           <div className="relative z-30 mt-4 flex items-center justify-center gap-3 pointer-events-auto">
             <button
               type="button"
               onClick={handlePrevPage}
-              disabled={clampedCurrentPage <= 0}
+              disabled={clampedCurrentPage <= 0 || !isBookReady}
               className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
             >
               Anterior
@@ -239,7 +298,7 @@ const NewsDetail = () => {
             <button
               type="button"
               onClick={handleNextPage}
-              disabled={clampedCurrentPage >= lastNavigablePage}
+              disabled={clampedCurrentPage >= lastNavigablePage || !isBookReady}
               className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
             >
               Siguiente

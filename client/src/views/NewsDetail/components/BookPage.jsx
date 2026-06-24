@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import PropTypes from "prop-types";
 
 /**
  * Renderiza una página del libro con contenido dinámico.
@@ -7,7 +8,7 @@ import { forwardRef } from "react";
  * @param {Function} renderItem - Función para renderizar cada ítem del contenido
  * @param {ReactNode} header - Encabezado opcional (solo para portada)
  * @param {Object} props - Props adicionales para el contenedor de la página
- * @param {React.Ref} ref - Ref para el contenedor de la página (para HTMLFlipBook)
+ * @param {React.Ref} ref - Ref opcional para el contenedor de la página
  * @returns {JSX.Element} Componente de página del libro
  */
 const BookPage = forwardRef(
@@ -44,5 +45,12 @@ const BookPage = forwardRef(
   }
 );
 BookPage.displayName = "BookPage";
+BookPage.propTypes = {
+  items: PropTypes.array,
+  header: PropTypes.node,
+  renderItem: PropTypes.func,
+  pageSide: PropTypes.oneOf(["left", "right"]),
+  className: PropTypes.string,
+};
 
 export default BookPage;
