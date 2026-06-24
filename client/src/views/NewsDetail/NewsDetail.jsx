@@ -142,7 +142,7 @@ const NewsDetail = () => {
               size="fixed"
               drawShadow={true}
               flippingTime={700}
-              usePortrait={false}
+              usePortrait={bookDimensions.isPortrait}
               startZIndex={0}
               autoSize={true}
               maxShadowOpacity={0.45}
