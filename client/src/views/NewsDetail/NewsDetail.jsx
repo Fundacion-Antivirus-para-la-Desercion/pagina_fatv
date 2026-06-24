@@ -65,11 +65,25 @@ const NewsDetail = () => {
   const clampedCurrentPage = Math.min(currentPage, lastNavigablePage);
 
   const handlePrevPage = () => {
-    bookRef.current?.pageFlip()?.flipPrev();
+    const pageFlip = bookRef.current?.pageFlip?.();
+    if (!pageFlip) return;
+
+    pageFlip.flipPrev();
+
+    if (isPortraitMode) {
+      setCurrentPage((prevPage) => Math.max(0, prevPage - 1));
+    }
   };
 
   const handleNextPage = () => {
-    bookRef.current?.pageFlip()?.flipNext();
+    const pageFlip = bookRef.current?.pageFlip?.();
+    if (!pageFlip) return;
+
+    pageFlip.flipNext();
+
+    if (isPortraitMode) {
+      setCurrentPage((prevPage) => Math.min(lastNavigablePage, prevPage + 1));
+    }
   };
 
   const handleFlip = (event) => {
@@ -208,7 +222,7 @@ const NewsDetail = () => {
               ))}
             </HTMLFlipBook>
           )}
-          <div className="relative z-20 mt-4 flex items-center justify-center gap-3">
+          <div className="relative z-30 mt-4 flex items-center justify-center gap-3 pointer-events-auto">
             <button
               type="button"
               onClick={handlePrevPage}
