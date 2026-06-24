@@ -4,12 +4,14 @@ import Participacion from "../../../src/assets/images/views/imagesNews/participa
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import Desercion from "../../assets/images/views/imagesNews/desercion-universitaria.webp";
+import Desercion from "../../assets/images/views/imagesNews/acompanar.webp";
 import Encuentro from "../../assets/images/views/imagesNews/encuentro-universitarios.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
+
+
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -33,16 +35,16 @@ const buildNewsArray = (t) => [
           value: t("news.items.desercion-universitaria.detail.content.0"),
         },
         {
-          type: "img",
-          value: Desercion,
-        },
-        {
           type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.1"),
         },
         {
           type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.2"),
+        },
+         {
+          type: "img",
+          value: Desercion,
         },
         {
           type: "img",
