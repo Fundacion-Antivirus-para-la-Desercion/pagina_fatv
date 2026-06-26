@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import BannerView from "../../components/Banner-views/BannerView";
 import useNews from "./hooks/useNews";
 import useBookDimensions from "./hooks/useBookDimensions";
+import { useMetaTags } from "../../hooks/useMetaTags";
 import BookCoverHeader from "./components/BookCoverHeader";
 import BackButton from "./components/BackButton";
 import ShareButton from "./components/ShareButton";
@@ -24,7 +25,11 @@ const NewsDetail = () => {
   const DEBUG_NEWS_DETAIL =
     import.meta.env.DEV && import.meta.env.VITE_DEBUG_NEWS_DETAIL === "true";
   const location = useLocation();
-  const initialNews = location.state?.news;
+  const initialNews = useMemo(() => {
+    if (location.state?.news) return location.state.news;
+    const slug = new URLSearchParams(location.search).get("slug");
+    return slug ? { slug } : undefined;
+  }, [location.state?.news, location.search]);
   const { t } = useTranslation();
   const contentRef = useRef(null);
   const pageFlipRef = useRef(null);
@@ -34,6 +39,15 @@ const NewsDetail = () => {
   const [isBookReady, setIsBookReady] = useState(false);
 
   const news = useNews(initialNews, t);
+
+  useMetaTags({
+    title: news?.newDetailContent?.title || "Antivirus para la Deserción",
+    description:
+      news?.newDetailContent?.content?.[0]?.value?.substring(0, 160) ||
+      "Noticias sobre deserción universitaria",
+    image: news?.img || "",
+    url: `${typeof window !== "undefined" ? window.location.origin : ""}/news/detail?slug=${news?.slug || ""}`,
+  });
 
   const bookDimensions = useBookDimensions(contentRef);
   useEffect(() => {
@@ -345,7 +359,7 @@ const NewsDetail = () => {
               alt={t("newsDetail.alt_back")}
             />
 
-            <ShareButton label={t("newsDetail.share")} />
+            <ShareButton label={t("newsDetail.share")} news={news} />
           </div>
         </section>
       </section>
