@@ -8,8 +8,11 @@ import Desercion from "../../assets/images/views/imagesNews/acompanar.webp";
 import Encuentro from "../../assets/images/views/imagesNews/encuentro-universitarios.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
+import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
+import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
+import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
 
 
 
@@ -174,7 +177,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "acompanamiento-becarios-rurales",
-    img: NathaliaR,
+    img: ArticleNathaliaR,
     alt: t("news.items.acompanamiento-becarios-rurales.alt"),
     title: t("news.items.acompanamiento-becarios-rurales.title"),
     newDetailContent: {
@@ -225,7 +228,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "la-crisis-en-educacion-superior",
-    img: MateoD,
+    img: ArticleMateoD,
     alt: t("news.items.la-crisis-en-educacion-superior.alt"),
     title: t("news.items.la-crisis-en-educacion-superior.title"),
     newDetailContent: {
@@ -300,7 +303,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "el-docente-hoy",
-    img: JhiselH,
+    img: ArticleJhiselH,
     alt: t("news.items.el-docente-hoy.alt"),
     title: t("news.items.el-docente-hoy.title"),
     newDetailContent: {
