@@ -136,9 +136,10 @@ const NewsDetail = () => {
     setIsBookReady(false);
 
     const pageFlip = new PageFlip(host, pageFlipSettings);
-    pageFlip.on("flip", handleFlip);
     pageFlip.loadFromHTML(pageNodes);
     pageFlipRef.current = pageFlip;
+    pageFlip.on("flip", handleFlip);
+    setCurrentPage(0);
     setIsBookReady(true);
 
     return () => {
@@ -279,7 +280,7 @@ const NewsDetail = () => {
               ) : (
                 // Desktop: usar PageFlip
                 <>
-                  <div ref={pageFlipHostRef} className="mx-auto" />
+                  <div key={news.slug} ref={pageFlipHostRef} className="mx-auto" />
                   <div
                     ref={pageSourceRef}
                     aria-hidden
