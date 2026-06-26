@@ -185,12 +185,7 @@ const NewsDetail = () => {
     pageFlipRef.current?.flipNext();
   };
 
-  const paginationLabel = isPortraitMode
-    ? `${clampedCurrentPage + 1} / ${totalPages}`
-    : `${clampedCurrentPage + 1}-${Math.min(
-        clampedCurrentPage + 2,
-        totalPages
-      )} / ${totalPages}`;
+  const paginationLabel = `${clampedCurrentPage + 1} / ${totalPages}`;
 
   useEffect(() => {
     setCurrentPage(0);
@@ -324,28 +319,34 @@ const NewsDetail = () => {
             </>
           )}
           {!isPortraitMode && (
-            <div className="relative z-30 mt-4 flex items-center justify-center gap-3 pointer-events-auto">
-              <button
-                type="button"
-                onClick={handlePrevPage}
-                disabled={clampedCurrentPage <= 0 || !isBookReady}
-                className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
-              >
-                Anterior
-              </button>
+            <div className="absolute bottom-4 left-0 right-0 z-30 flex flex-col items-center gap-2 pointer-events-auto">
+              <div className="flex items-center justify-center gap-3">
+                <button
+                  type="button"
+                  onClick={handlePrevPage}
+                  disabled={clampedCurrentPage <= 0 || !isBookReady}
+                  className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40 active:scale-95"
+                >
+                  Anterior
+                </button>
 
-              <span className="min-w-24 text-center text-sm font-semibold text-blue-base">
-                {paginationLabel}
+                <span className="min-w-24 text-center text-sm font-semibold text-blue-base">
+                  {paginationLabel}
+                </span>
+
+                <button
+                  type="button"
+                  onClick={handleNextPage}
+                  disabled={clampedCurrentPage >= lastNavigablePage || !isBookReady}
+                  className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40 active:scale-95"
+                >
+                  Siguiente
+                </button>
+              </div>
+
+              <span className="text-center text-xs text-gray-400">
+                Desliza para navegar
               </span>
-
-              <button
-                type="button"
-                onClick={handleNextPage}
-                disabled={clampedCurrentPage >= lastNavigablePage || !isBookReady}
-                className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
-              >
-                Siguiente
-              </button>
             </div>
           )}
         </div>
