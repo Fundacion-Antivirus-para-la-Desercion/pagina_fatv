@@ -12,6 +12,7 @@ import BackButton from "./components/BackButton";
 import ShareButton from "./components/ShareButton";
 import NewsContentRenderer from "./components/NewsContentRenderer";
 import BookPage from "./components/BookPage";
+import MobileNewsReader from "./components/MobileNewsReader";
 import createPages from "./utils/createPages.js";
 
 /**
@@ -103,6 +104,12 @@ const NewsDetail = () => {
   }, []);
 
   useEffect(() => {
+    if (isPortraitMode) {
+      // En mobile, no inicializar PageFlip — usar MobileNewsReader en su lugar
+      setIsBookReady(false);
+      return;
+    }
+
     const host = pageFlipHostRef.current;
     const pageSource = pageSourceRef.current;
 
@@ -150,6 +157,7 @@ const NewsDetail = () => {
     pageFlipSettings,
     handleFlip,
     destroyPageFlip,
+    isPortraitMode,
   ]);
 
   useEffect(() => () => destroyPageFlip(), [destroyPageFlip]);
@@ -239,7 +247,12 @@ const NewsDetail = () => {
           id="content"
           ref={contentRef}
           className="relative rounded-2xl"
-          style={{ filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.20))" }}
+          style={{
+            filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.20))",
+            ...(isPortraitMode && bookDimensions.height > 0
+              ? { height: bookDimensions.height }
+              : {}),
+          }}
         >
           {/* Grid overlay sobre las páginas del libro — pointer-events-none para no bloquear el flip */}
           <div
@@ -255,55 +268,70 @@ const NewsDetail = () => {
           />
           {bookDimensions.width > 0 && (
             <>
-              <div ref={pageFlipHostRef} className="mx-auto" />
-              <div
-                ref={pageSourceRef}
-                aria-hidden
-                className="pointer-events-none absolute inset-0 -z-10 opacity-0"
-              >
-                <BookPage
-                  id="cover-page"
-                  key={0}
-                  items={pages[0]}
-                  header={coverHeader}
+              {isPortraitMode ? (
+                // Mobile: usar Framer Motion reader
+                <MobileNewsReader
+                  pages={pages}
+                  totalPages={totalPages}
+                  coverHeader={coverHeader}
                   renderItem={renderItem}
-                  pageSide="left"
                 />
+              ) : (
+                // Desktop: usar PageFlip
+                <>
+                  <div ref={pageFlipHostRef} className="mx-auto" />
+                  <div
+                    ref={pageSourceRef}
+                    aria-hidden
+                    className="pointer-events-none absolute inset-0 -z-10 opacity-0"
+                  >
+                    <BookPage
+                      id="cover-page"
+                      key={0}
+                      items={pages[0]}
+                      header={coverHeader}
+                      renderItem={renderItem}
+                      pageSide="left"
+                    />
 
-                {pages.slice(1).map((pageItems, i) => (
-                  <BookPage
-                    key={i + 1}
-                    items={pageItems}
-                    renderItem={renderItem}
-                    pageSide={(i + 1) % 2 === 0 ? "left" : "right"}
-                  />
-                ))}
-              </div>
+                    {pages.slice(1).map((pageItems, i) => (
+                      <BookPage
+                        key={i + 1}
+                        items={pageItems}
+                        renderItem={renderItem}
+                        pageSide={(i + 1) % 2 === 0 ? "left" : "right"}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </>
           )}
-          <div className="relative z-30 mt-4 flex items-center justify-center gap-3 pointer-events-auto">
-            <button
-              type="button"
-              onClick={handlePrevPage}
-              disabled={clampedCurrentPage <= 0 || !isBookReady}
-              className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              Anterior
-            </button>
+          {!isPortraitMode && (
+            <div className="relative z-30 mt-4 flex items-center justify-center gap-3 pointer-events-auto">
+              <button
+                type="button"
+                onClick={handlePrevPage}
+                disabled={clampedCurrentPage <= 0 || !isBookReady}
+                className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Anterior
+              </button>
 
-            <span className="min-w-24 text-center text-sm font-semibold text-blue-base">
-              {paginationLabel}
-            </span>
+              <span className="min-w-24 text-center text-sm font-semibold text-blue-base">
+                {paginationLabel}
+              </span>
 
-            <button
-              type="button"
-              onClick={handleNextPage}
-              disabled={clampedCurrentPage >= lastNavigablePage || !isBookReady}
-              className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              Siguiente
-            </button>
-          </div>
+              <button
+                type="button"
+                onClick={handleNextPage}
+                disabled={clampedCurrentPage >= lastNavigablePage || !isBookReady}
+                className="rounded-full border border-blue-base px-4 py-2 text-sm font-semibold text-blue-base transition disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Siguiente
+              </button>
+            </div>
+          )}
         </div>
 
         <OtherNews className="relative" newSlug={news.slug} />
