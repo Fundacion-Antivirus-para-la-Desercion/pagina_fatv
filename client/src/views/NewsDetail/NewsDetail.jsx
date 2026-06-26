@@ -38,7 +38,7 @@ const NewsDetail = () => {
   const bookDimensions = useBookDimensions(contentRef);
   useEffect(() => {
     if (!news?.slug) return;
-    contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [news?.slug]);
 
   const pages = useMemo(
@@ -272,6 +272,7 @@ const NewsDetail = () => {
               {isPortraitMode ? (
                 // Mobile: usar Framer Motion reader
                 <MobileNewsReader
+                  key={news.slug}
                   pages={pages}
                   totalPages={totalPages}
                   coverHeader={coverHeader}
