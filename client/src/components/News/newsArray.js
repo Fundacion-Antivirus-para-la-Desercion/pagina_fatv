@@ -5,7 +5,6 @@ import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-co
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
-import Encuentro from "../../assets/images/views/imagesNews/fomentamos-permanencia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
@@ -13,8 +12,6 @@ import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
-
-
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -24,7 +21,6 @@ import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-
 // y su clave correspondiente en los archivos de traducción. No hay IDs que reordenar.
 
 const buildNewsArray = (t) => [
-  
   {
     slug: "desercion-universitaria",
     img: Desercion,
@@ -45,13 +41,9 @@ const buildNewsArray = (t) => [
           type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.2"),
         },
-         {
-          type: "img",
-          value: Desercion,
-        },
         {
           type: "img",
-          value: Encuentro,
+          value: Desercion,
         },
         {
           type: "parrafo",
@@ -234,7 +226,7 @@ const buildNewsArray = (t) => [
     newDetailContent: {
       title: t("news.items.la-crisis-en-educacion-superior.detail.title"),
       content: [
-         {
+        {
           type: "img",
           value: MateoD,
         },
@@ -309,7 +301,7 @@ const buildNewsArray = (t) => [
     newDetailContent: {
       title: t("news.items.el-docente-hoy.detail.title"),
       content: [
-         {
+        {
           type: "img",
           value: JhiselH,
         },
@@ -349,12 +341,12 @@ const buildNewsArray = (t) => [
           value: t("news.items.movimiento-2024.detail.content.0"),
         },
         {
-          type: "img",
-          value: Movimiento,
-        },
-        {
           type: "parrafo",
           value: t("news.items.movimiento-2024.detail.content.1"),
+        },
+        {
+          type: "img",
+          value: Movimiento,
         },
         {
           type: "parrafo",
