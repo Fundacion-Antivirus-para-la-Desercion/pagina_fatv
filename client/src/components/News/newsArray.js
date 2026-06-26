@@ -3,9 +3,9 @@ import Conversatorio from "../../../src/assets/images/views/imagesNews/conversat
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
-import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import Desercion from "../../assets/images/views/imagesNews/acompanar.webp";
-import Encuentro from "../../assets/images/views/imagesNews/encuentro-universitarios.webp";
+import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
+import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
+import Encuentro from "../../assets/images/views/imagesNews/fomentamos-permanencia.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";

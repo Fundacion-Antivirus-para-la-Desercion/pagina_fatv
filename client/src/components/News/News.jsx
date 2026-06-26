@@ -24,10 +24,10 @@ function News() {
         />
       </div>
 
-      <section className="noticias-content grid gap-12 p-8 md:p-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
+      <section className="noticias-content grid gap-12 p-8 md:p-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
         {buildNewsArray(t).map((news) => (
           <div key={news.slug} className="flex flex-col">
-            <img className="mb-3 aspect-ratio rounded-2xl" src={news.img} alt={news.alt} />
+            <img className="mb-3 aspect-ratio rounded-xl" src={news.img} alt={news.alt} />
             <p className="flex items-center text-base md:text-lg font-impact text-primary-purple mb-2">
               <FaRegCalendarMinus className="mr-1 w-7 h-7" />
               {t("news.category")}
