@@ -76,6 +76,7 @@ const NewsDetail = () => {
     ]
   );
   const totalPages = pages.length;
+  const contentPageCount = pages.filter((p) => p.length > 0).length;
   const isPortraitMode = bookDimensions.isPortrait;
   const lastNavigablePage = isPortraitMode
     ? Math.max(0, totalPages - 1)
@@ -185,7 +186,9 @@ const NewsDetail = () => {
     pageFlipRef.current?.flipNext();
   };
 
-  const paginationLabel = `${clampedCurrentPage + 1} / ${totalPages}`;
+  const contentSpreads = Math.ceil(contentPageCount / 2);
+  const currentSpread = Math.floor(clampedCurrentPage / 2) + 1;
+  const paginationLabel = `${currentSpread} / ${contentSpreads}`;
 
   useEffect(() => {
     setCurrentPage(0);
@@ -283,7 +286,7 @@ const NewsDetail = () => {
                 <MobileNewsReader
                   key={news.slug}
                   pages={pages}
-                  totalPages={totalPages}
+                  totalPages={contentPageCount}
                   coverHeader={coverHeader}
                   renderItem={renderItem}
                 />
