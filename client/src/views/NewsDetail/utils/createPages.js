@@ -103,12 +103,16 @@ const createPages = (items = [], optionsOrItemsPerPage = 2) => {
       const currentPageIsFullByCount =
         options.useItemCountFallback && pages[pageIndex].length >= maxItemsPerPage;
       const hasContent = pages[pageIndex].length > 0;
+      const isLastQueueItem = queue.length === 0;
       const paragraphTolerance =
         item?.type === "parrafo" ? (charsPerLine >= 48 ? 28 : 26) : 0;
+      const lastImageTolerance =
+        item?.type === "img" && isLastQueueItem ? Math.round(itemHeight * 0.3) : 0;
+      const tolerance = paragraphTolerance + lastImageTolerance;
 
       if (
         !currentPageIsFullByCount &&
-        (itemHeight <= remaining || itemHeight <= remaining + paragraphTolerance || !hasContent)
+        (itemHeight <= remaining || itemHeight <= remaining + tolerance || !hasContent)
       ) {
         pages[pageIndex].push(item);
         usedHeights[pageIndex] += itemHeight;
