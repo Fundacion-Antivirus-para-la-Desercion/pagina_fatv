@@ -293,6 +293,17 @@ const NewsDetail = () => {
               ) : (
                 // Desktop: usar PageFlip
                 <>
+                  {/* Título sobre ambas columnas */}
+                  <div
+                    className="bg-white px-9 pt-8 pb-2 mx-auto rounded-t-2xl"
+                    style={{ width: bookDimensions.width * 2 }}
+                  >
+                    <BookCoverHeader
+                      title={news.newDetailContent.title}
+                      newsLabel={t("newsDetail.news_label")}
+                    />
+                  </div>
+
                   <div key={news.slug} ref={pageFlipHostRef} className="mx-auto" />
                   <div
                     ref={pageSourceRef}
@@ -303,7 +314,6 @@ const NewsDetail = () => {
                       id="cover-page"
                       key={0}
                       items={pages[0]}
-                      header={coverHeader}
                       renderItem={renderItem}
                       pageSide="left"
                     />

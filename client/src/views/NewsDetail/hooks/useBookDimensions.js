@@ -35,10 +35,9 @@ const useBookDimensions = (contentRef) => {
       );
       const safetyMargin = 10;
       const usableHeight = Math.max(200, pageHeight - pagePaddingY - safetyMargin);
-      const firstPageUsableHeight = Math.max(
-        150,
-        usableHeight - coverHeaderHeight
-      );
+      const firstPageUsableHeight = isPortrait
+        ? Math.max(150, usableHeight - coverHeaderHeight)
+        : usableHeight;
 
       setBookDimensions({
         width: pageWidth,
