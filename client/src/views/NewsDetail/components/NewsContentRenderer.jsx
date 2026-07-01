@@ -5,7 +5,13 @@ const renderWithBold = (text) => {
   const parts = text.split(/(<bold>.*?<\/bold>)/gs);
   return parts.map((part, i) => {
     const match = part.match(/^<bold>(.*?)<\/bold>$/s);
-    return match ? <strong key={i} className="font-extrabold text-black">{match[1]}</strong> : part;
+    return match ? (
+      <strong key={i} className="font-extrabold text-black">
+        {match[1]}
+      </strong>
+    ) : (
+      part
+    );
   });
 };
 
@@ -22,14 +28,15 @@ const NewsContentRenderer = ({ content, index }) => {
     case "parrafo-quote":
       return (
         <div key={index} className="mb-4">
-          <FaQuoteLeft className="text-primary-yellow text-xl mb-1" />
-          <p className="text-blue-base text-base md:text-lg text-wrap text-justify leading-relaxed">
+          <FaQuoteLeft className="text-primary-yellow text-lg md:text-2xl mb-1" />
+          <p className="text-blue-base text-[13px] md:text-base font-renogare text-wrap text-justify leading-relaxed mb-4">
             {renderWithBold(content.value)}
-            <FaQuoteRight className="text-primary-yellow text-xl inline ml-5 align-middle" />
+
+            <FaQuoteRight className="absolute text-primary-yellow text-lg md:text-2xl inline ml-2 align-middle" />
           </p>
           {content.author && (
-            <p className="text-right text-base md:text-xl font-semibold text-blue-base mt-1">
-              &ldquo;{content.author}&rdquo;
+            <p className="text-right text-sm md:text-lg font-renogare text-dark-blue mb-5">
+              {content.author}
             </p>
           )}
         </div>
@@ -40,7 +47,7 @@ const NewsContentRenderer = ({ content, index }) => {
           <img
             src={content.value}
             alt=""
-            className="max-h-[420px] mx-auto object-contain rounded-xl"
+            className="max-h-[410px] mx-auto object-contain rounded-xl"
           />
         </figure>
       );
