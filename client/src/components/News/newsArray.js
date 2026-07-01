@@ -180,10 +180,11 @@ const buildNewsArray = (t) => [
           value: NathaliaR,
         },
         {
-          type: "parrafo",
+          type: "parrafo-quote",
           value: t(
             "news.items.acompanamiento-becarios-rurales.detail.content.0",
           ),
+          author: "Nathalia Revelo",
         },
         {
           type: "parrafo",
@@ -231,10 +232,11 @@ const buildNewsArray = (t) => [
           value: MateoD,
         },
         {
-          type: "parrafo",
+          type: "parrafo-quote",
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.0",
           ),
+          author: "Mateo Duque",
         },
         {
           type: "parrafo",
@@ -306,8 +308,9 @@ const buildNewsArray = (t) => [
           value: JhiselH,
         },
         {
-          type: "parrafo",
+          type: "parrafo-quote",
           value: t("news.items.el-docente-hoy.detail.content.0"),
+          author: "Jhisel Holguín",
         },
         {
           type: "parrafo",

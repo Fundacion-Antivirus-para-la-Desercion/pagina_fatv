@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const renderWithBold = (text) => {
   const parts = text.split(/(<bold>.*?<\/bold>)/gs);
@@ -18,13 +19,28 @@ const NewsContentRenderer = ({ content, index }) => {
           </p>
         </div>
       );
+    case "parrafo-quote":
+      return (
+        <div key={index} className="mb-4">
+          <FaQuoteLeft className="text-primary-yellow text-xl mb-1" />
+          <p className="text-blue-base text-base md:text-lg text-wrap text-justify leading-relaxed">
+            {renderWithBold(content.value)}
+            <FaQuoteRight className="text-primary-yellow text-xl inline ml-5 align-middle" />
+          </p>
+          {content.author && (
+            <p className="text-right text-base md:text-xl font-semibold text-blue-base mt-1">
+              &ldquo;{content.author}&rdquo;
+            </p>
+          )}
+        </div>
+      );
     case "img":
       return (
         <figure key={index} className="mb-4">
           <img
             src={content.value}
             alt=""
-            className="max-h-[480px] mx-auto object-contain rounded-xl"
+            className="max-h-[420px] mx-auto object-contain rounded-xl"
           />
         </figure>
       );
@@ -45,9 +61,10 @@ const NewsContentRenderer = ({ content, index }) => {
 
 NewsContentRenderer.propTypes = {
   content: PropTypes.shape({
-    type: PropTypes.string,
+    type: PropTypes.oneOf(["parrafo", "parrafo-quote", "img", "link"]),
     value: PropTypes.string,
     url: PropTypes.string,
+    author: PropTypes.string,
   }).isRequired,
   index: PropTypes.number.isRequired,
 };
