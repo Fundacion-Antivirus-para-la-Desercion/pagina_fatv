@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 
 /**
- * Hook para calcular las dimensiones del libro de noticias basado en el ancho del contenedor.
- * - Ancho de página: la mitad del ancho del contenedor (si es mayor a 600px) o el ancho completo (si es menor a 600px)
- * - Alto de página: mínimo 560px, o 1.55 veces el ancho de página
+ * Hook para calcular las dimensiones del libro de noticias según el ancho del contenedor.
+ * - Umbral: contenedor < 700px → modo una-página (portrait); >= 700px → spread de dos páginas.
+ * - Ancho de página: ancho completo del contenedor en portrait, la mitad en desktop.
+ * - Alto de página: entre 820 y 900px en desktop; al menos 1000px en portrait.
+ * El re-cálculo se dispara con un ResizeObserver sobre el contenedor.
  * @param {React.RefObject} contentRef Ref del contenedor del libro
- * @returns {{ width: number, height: number }} Un objeto con las dimensiones del libro: { width, height }
+ * @returns {{ width: number, height: number, isPortrait: boolean, isTwoPage: boolean }}
  */
 const useBookDimensions = (contentRef) => {
   const [bookDimensions, setBookDimensions] = useState({
@@ -17,6 +19,7 @@ const useBookDimensions = (contentRef) => {
     coverHeaderHeight: 0,
     safetyMargin: 16,
     isPortrait: false,
+    isTwoPage: false,
   });
 
   useEffect(() => {
@@ -48,6 +51,7 @@ const useBookDimensions = (contentRef) => {
         coverHeaderHeight,
         safetyMargin,
         isPortrait,
+        isTwoPage: !isPortrait,
         isMobile: isPortrait,
       });
     };

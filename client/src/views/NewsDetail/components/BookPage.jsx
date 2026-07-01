@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
  */
 const BookPage = forwardRef(
   (
-    { items = [], header, renderItem, pageSide, className = "", ...props },
+    { items = [], header, renderItem, pageSide, className = "", style, ...props },
     ref
   ) => {
     const isCover = Boolean(header);
@@ -33,10 +33,10 @@ const BookPage = forwardRef(
       <div
         ref={ref}
         className={`bg-white h-full ${className}`.trim()}
-        style={shadingStyle}
+        style={{ ...shadingStyle, ...style }}
         {...props}
       >
-        <div className="h-full overflow-hidden py-16 px-9 md:py-8 md:px-9">
+        <div className="h-full py-16 px-9 md:py-8 md:px-9">
           {isCover && header}
           {items.map((content, index) => renderItem(content, index))}
         </div>
@@ -51,6 +51,7 @@ BookPage.propTypes = {
   renderItem: PropTypes.func,
   pageSide: PropTypes.oneOf(["left", "right"]),
   className: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default BookPage;
