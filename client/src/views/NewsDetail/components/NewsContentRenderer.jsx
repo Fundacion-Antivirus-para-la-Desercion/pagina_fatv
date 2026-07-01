@@ -1,18 +1,20 @@
 import PropTypes from "prop-types";
 
-/**
- * Renderiza el contenido de la noticia según su tipo (párrafo, imagen o enlace).
- * @param {Array} param0.content Array de objetos de contenido de la noticia [{ type: "parrafo" | "img" | "link", value: string, url?: string }]
- * @param {number} param0.index Índice del contenido en el array
- * @returns {JSX.Element|null} Elemento JSX correspondiente al contenido de la noticia
- */
+const renderWithBold = (text) => {
+  const parts = text.split(/(<bold>.*?<\/bold>)/gs);
+  return parts.map((part, i) => {
+    const match = part.match(/^<bold>(.*?)<\/bold>$/s);
+    return match ? <strong key={i} className="font-extrabold text-black">{match[1]}</strong> : part;
+  });
+};
+
 const NewsContentRenderer = ({ content, index }) => {
   switch (content.type) {
     case "parrafo":
       return (
         <div key={index} className="mb-4">
           <p className="text-blue-base text-base md:text-lg text-wrap text-justify leading-relaxed">
-            {content.value}
+            {renderWithBold(content.value)}
           </p>
         </div>
       );
