@@ -55,6 +55,24 @@ const splitParagraphToFit = (splitterEl, text, maxHeight) => {
   }
 
   if (best >= words.length) return null; // cabe entero, no hace falta partir
+
+  // Ensure the split doesn't land inside a <bold>...</bold> tag.
+  const isTagBalanced = (count) => {
+    const h = words.slice(0, count).join(" ");
+    return (h.match(/<bold>/g) || []).length === (h.match(/<\/bold>/g) || []).length;
+  };
+
+  if (!isTagBalanced(best)) {
+    let safe = best - 1;
+    while (safe > 0 && !isTagBalanced(safe)) safe--;
+    if (safe === 0) {
+      safe = best + 1;
+      while (safe < words.length && !isTagBalanced(safe)) safe++;
+    }
+    best = safe;
+  }
+
+  if (best <= 0 || best >= words.length) return null;
   return {
     head: words.slice(0, best).join(" "),
     tail: words.slice(best).join(" "),
