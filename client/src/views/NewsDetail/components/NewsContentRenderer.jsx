@@ -22,7 +22,7 @@ const NewsContentRenderer = ({ content, index }) => {
           <img
             src={content.value}
             alt=""
-            className="w-[90%] max-h-[500px] mx-auto object-contain rounded-xl"
+            className="max-h-[480px] mx-auto object-contain rounded-xl"
           />
         </figure>
       );
