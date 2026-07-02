@@ -581,16 +581,6 @@
           ]
         }
       },
-      "congreso-latinoamericano": {
-        "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
-        "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
-        "detail": {
-          "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
-          "content": [
-            "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
-          ]
-        }
-      },
       "mencion-honorifica": {
         "alt": "Recibimos mención honorífica",
         "title": "RECIBIMOS MENCIÓN HONORÍFICA",
@@ -646,6 +636,16 @@
             "Ahora, ¿Quién es ese otro que explicitamente asume el rol de enseñar? tal vez lo has llamado docente, maestro o profesor y cada uno con variantes conceptuales, que mutan según a quién le preguntes. Quien toma esta responsabilidad asume un segundo rol: el de intérprete de la realidad, quien, en un espacio formal, conecta con otros para compartir esos \"saberes\" necesarios para conocer, comprender y habitar en la vida social. <bold>Esto implica que, la educación debe responder a las condiciones y necesidades del contexto, y es trabajo del docente hacerlo más digerible.</bold> Por ello, en las monarquías se enseñaba de política y religión; y en la industrialización se enseñaba sobre máquinas y producción, porque era lo que ese contexto requería. Si partimos de esa noción, entonces, ¿Qué se enseña hoy? ¿El docente de hoy está siendo interprete de la realidad actual? ¿O sigue reproduciendo lo mismo de un siglo atrás, pero con nombres modernos?",
             "<bold>De Zubiría, (2013) decía \"Unos jóvenes que vivirán en el Siglo XXI formados con maestros del siglo XX, pero con modelos pedagógicos y currículos del siglo XIX.\" (P.3)</bold>",
             "La realidad actual está llena de influencers, de tecnología, de presiones sobre cómo hay que vivir, de Mindfulness y muchas otras nuevas formas de existencia que nos hablan de que siempre hay más y nunca es suficiente; de metas, a veces, inalcanzables e idealistas. <bold>Una sociedad que cada vez habla más del ser, pero sin herramientas aterrizadas para ello (o incluso, hay tantas que no se sabe por dónde empezar).</bold> Y muchos, no puedo afirmar que todos, pero sí es evidente que gran cantidad de docentes hacen o hacemos una \"traducción\" de la realidad, y como toda traducción deja de lado verdades, desconoce sentires y mensajes implícitos, centrándonos en contenidos. Antes valorábamos al otro según cuánto hacía, ahora, según cuánto sabe, y paradójicamente, se menosprecia el ser (aunque sea lo que la realidad más exige). <bold>Ahí, en esa paradoja, en esa contradicción es en donde se encuentra el lugar del docente, no el traductor de realidades, sino el intérprete que acompaña la autoconstrucción humana desde el ser, el saber y el hacer.</bold>"
+          ]
+        }
+      },
+      "congreso-latinoamericano": {
+        "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
+        "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
+        "detail": {
+          "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
+          "content": [
+            "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
           ]
         }
       }

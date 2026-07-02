@@ -208,25 +208,6 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    slug: "congreso-latinoamericano",
-    img: Participacion,
-    alt: t("news.items.congreso-latinoamericano.alt"),
-    title: t("news.items.congreso-latinoamericano.title"),
-    newDetailContent: {
-      title: t("news.items.congreso-latinoamericano.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.congreso-latinoamericano.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Participacion,
-        },
-      ],
-    },
-  },
-  {
     slug: "mencion-honorifica",
     img: Mencion,
     alt: t("news.items.mencion-honorifica.alt"),
@@ -405,6 +386,25 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.el-docente-hoy.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "congreso-latinoamericano",
+    img: Participacion,
+    alt: t("news.items.congreso-latinoamericano.alt"),
+    title: t("news.items.congreso-latinoamericano.title"),
+    newDetailContent: {
+      title: t("news.items.congreso-latinoamericano.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.congreso-latinoamericano.detail.content.0"),
+        },
+        {
+          type: "img",
+          value: Participacion,
         },
       ],
     },
