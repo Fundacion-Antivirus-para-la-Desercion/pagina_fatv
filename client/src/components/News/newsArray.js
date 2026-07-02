@@ -1,6 +1,5 @@
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.webp";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
-import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
@@ -92,25 +91,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: Participacion,
-        },
-      ],
-    },
-  },
-  {
-    slug: "congreso-comunicaciones",
-    img: Ponencia,
-    alt: t("news.items.congreso-comunicaciones.alt"),
-    title: t("news.items.congreso-comunicaciones.title"),
-    newDetailContent: {
-      title: t("news.items.congreso-comunicaciones.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.congreso-comunicaciones.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Ponencia,
         },
       ],
     },
