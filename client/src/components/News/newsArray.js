@@ -1,15 +1,17 @@
 import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
-import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.jpg";
+import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.webp";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
-import Mencion from "../../../src/assets/images/views/imagesNews/mención-honorífica.jpg";
-import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/ENCUENTRO.jpeg";
-import Desercion from "../../assets/images/views/imagesNews/desercion-universitaria.webp";
-import Encuentro from "../../assets/images/views/imagesNews/encuentro-universitarios.webp";
+import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
+import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
+import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
 import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
+import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
+import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
+import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -19,7 +21,6 @@ import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 // y su clave correspondiente en los archivos de traducción. No hay IDs que reordenar.
 
 const buildNewsArray = (t) => [
-  
   {
     slug: "desercion-universitaria",
     img: Desercion,
@@ -33,20 +34,16 @@ const buildNewsArray = (t) => [
           value: t("news.items.desercion-universitaria.detail.content.0"),
         },
         {
+          type: "parrafo",
+          value: t("news.items.desercion-universitaria.detail.content.1"),
+        },
+        {
           type: "img",
           value: Desercion,
         },
         {
           type: "parrafo",
-          value: t("news.items.desercion-universitaria.detail.content.1"),
-        },
-        {
-          type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.2"),
-        },
-        {
-          type: "img",
-          value: Encuentro,
         },
         {
           type: "parrafo",
@@ -172,21 +169,22 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "acompanamiento-becarios-rurales",
-    img: NathaliaR,
+    img: ArticleNathaliaR,
     alt: t("news.items.acompanamiento-becarios-rurales.alt"),
     title: t("news.items.acompanamiento-becarios-rurales.title"),
     newDetailContent: {
       title: t("news.items.acompanamiento-becarios-rurales.detail.title"),
       content: [
         {
-          type: "parrafo",
+          type: "img",
+          value: NathaliaR,
+        },
+        {
+          type: "parrafo-quote",
           value: t(
             "news.items.acompanamiento-becarios-rurales.detail.content.0",
           ),
-        },
-        {
-          type: "img",
-          value: NathaliaR,
+          author: "Nathalia Revelo",
         },
         {
           type: "parrafo",
@@ -223,17 +221,22 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "la-crisis-en-educacion-superior",
-    img: MateoD,
+    img: ArticleMateoD,
     alt: t("news.items.la-crisis-en-educacion-superior.alt"),
     title: t("news.items.la-crisis-en-educacion-superior.title"),
     newDetailContent: {
       title: t("news.items.la-crisis-en-educacion-superior.detail.title"),
       content: [
         {
-          type: "parrafo",
+          type: "img",
+          value: MateoD,
+        },
+        {
+          type: "parrafo-quote",
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.0",
           ),
+          author: "Mateo Duque",
         },
         {
           type: "parrafo",
@@ -248,19 +251,9 @@ const buildNewsArray = (t) => [
           ),
         },
         {
-          type: "img",
-          value: MateoD,
-        },
-        {
           type: "parrafo",
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.3",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.la-crisis-en-educacion-superior.detail.content.4",
           ),
         },
         {
@@ -304,19 +297,20 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "el-docente-hoy",
-    img: JhiselH,
+    img: ArticleJhiselH,
     alt: t("news.items.el-docente-hoy.alt"),
     title: t("news.items.el-docente-hoy.title"),
     newDetailContent: {
       title: t("news.items.el-docente-hoy.detail.title"),
       content: [
         {
-          type: "parrafo",
-          value: t("news.items.el-docente-hoy.detail.content.0"),
-        },
-        {
           type: "img",
           value: JhiselH,
+        },
+        {
+          type: "parrafo-quote",
+          value: t("news.items.el-docente-hoy.detail.content.0"),
+          author: "Jhisel Holguín",
         },
         {
           type: "parrafo",
@@ -350,10 +344,6 @@ const buildNewsArray = (t) => [
           value: t("news.items.movimiento-2024.detail.content.0"),
         },
         {
-          type: "img",
-          value: Movimiento,
-        },
-        {
           type: "parrafo",
           value: t("news.items.movimiento-2024.detail.content.1"),
         },
@@ -362,13 +352,18 @@ const buildNewsArray = (t) => [
           value: t("news.items.movimiento-2024.detail.content.2"),
         },
         {
-          type: "img",
-          value: MovimientoDos,
-        },
-        {
           type: "parrafo",
           value: t("news.items.movimiento-2024.detail.content.3"),
         },
+        {
+          type: "img",
+          value: Movimiento,
+        },
+        {
+          type: "img",
+          value: MovimientoDos,
+        },
+
         {
           type: "parrafo",
           value: t("news.items.movimiento-2024.detail.content.4"),
