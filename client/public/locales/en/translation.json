@@ -580,16 +580,6 @@
           ]
         }
       },
-      "congreso-latinoamericano": {
-        "alt": "Participation in the XI Latin American congress on dropout in higher education",
-        "title": "PARTICIPATION IN THE XI LATIN AMERICAN CONGRESS ON DROPOUT IN HIGHER EDUCATION",
-        "detail": {
-          "title": "PARTICIPATION IN THE XI LATIN AMERICAN CONGRESS ON DROPOUT IN HIGHER EDUCATION",
-          "content": [
-            "The article \"Antivirus for Desertion Foundation: From the psychopedagogical to the sociopedagogical\" written and presented by collaborators Víctor Valencia, Jhisel Holguín and Gabriel Castellanos was the successful bet they developed for the presentation at the XI Latin American Congress on Dropout in Higher Education, held in Brasília, on November 16, 2022. This represented an achievement, since it allowed to chart new horizons, present the intervention model currently developed in the projects and share experiences with attendees from several countries in Latin America."
-          ]
-        }
-      },
       "mencion-honorifica": {
         "alt": "We received an honorable mention",
         "title": "WE RECEIVED AN HONORABLE MENTION",
@@ -645,6 +635,16 @@
             "Now, who is this 'other' who explicitly assumes the role of teaching? Perhaps you have called them a tutor, a master, or a professor—each term carries conceptual variations that change depending on whom you ask. Whoever takes on this responsibility assumes a second role: that of an interpreter of reality. Within a formal space, they connect with others to share the 'knowledge' necessary to understand and inhabit social life. <bold>This implies that education must respond to the conditions and needs of its context, and it is the teacher's job to make that context more digestible.</bold> Historically, monarchies taught politics and religion, while the industrial era focused on machinery and production because those were the requirements of the time. If we start from that notion, then what is being taught today? Is today's teacher acting as an interpreter of current reality? Or are they still reproducing the same models from a century ago, simply under modern names?",
             "<bold>De Zubiría (2013) stated: 'Young people who will live in the 21st century are being educated by teachers from the 20th century, but with pedagogical models and curricula from the 19th century.' (p. 3).</bold>",
             "Current reality is full of influencers, technology, pressure on how one should live, mindfulness, and many other new ways of existence that tell us there is always more and it is never enough—often involving unattainable and idealistic goals. <bold>We live in a society that talks more and more about the 'self,' yet lacks grounded tools to achieve it (or conversely, offers so many that one doesn't know where to start).</bold> Many teachers—I cannot claim all, but it is evident that a great number do—perform a 'translation' of reality. And like any translation, it omits truths, ignores feelings and implicit messages, and focuses solely on content. We used to value others based on what they did; now, we value them based on what they know. Paradoxically, the 'being' is undervalued, even though it is what reality demands most. <bold>Right there, in that paradox and contradiction, lies the place of the teacher: not as a mere translator of realities, but as an interpreter who accompanies human self-construction through being, knowing, and doing.</bold>"
+          ]
+        }
+      },
+      "congreso-latinoamericano": {
+        "alt": "Participation in the XI Latin American congress on dropout in higher education",
+        "title": "PARTICIPATION IN THE XI LATIN AMERICAN CONGRESS ON DROPOUT IN HIGHER EDUCATION",
+        "detail": {
+          "title": "PARTICIPATION IN THE XI LATIN AMERICAN CONGRESS ON DROPOUT IN HIGHER EDUCATION",
+          "content": [
+            "The article \"Antivirus for Desertion Foundation: From the psychopedagogical to the sociopedagogical\" written and presented by collaborators Víctor Valencia, Jhisel Holguín and Gabriel Castellanos was the successful bet they developed for the presentation at the XI Latin American Congress on Dropout in Higher Education, held in Brasília, on November 16, 2022. This represented an achievement, since it allowed to chart new horizons, present the intervention model currently developed in the projects and share experiences with attendees from several countries in Latin America."
           ]
         }
       }
