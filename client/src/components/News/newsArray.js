@@ -9,6 +9,8 @@ import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
+import LuisS from "../../assets/images/views/imagesNews/luiss.webp";
+import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
@@ -391,6 +393,58 @@ const buildNewsArray = (t) => [
     },
   },
   {
+    slug: "permanencia-educativa-de-calidad",
+    img: ArticleLuisS,
+    alt: t("news.items.permanencia-educativa-de-calidad.alt"),
+    title: t("news.items.permanencia-educativa-de-calidad.title"),
+    newDetailContent: {
+      title: t("news.items.permanencia-educativa-de-calidad.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: LuisS,
+        },
+        {
+          type: "parrafo-quote",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.0",
+          ),
+          author: "Luis Fernando Sánchez",
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.4",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.5",
+          ),
+        }
+      ],
+    },
+  },
+  {
     slug: "congreso-latinoamericano",
     img: Participacion,
     alt: t("news.items.congreso-latinoamericano.alt"),
@@ -409,6 +463,7 @@ const buildNewsArray = (t) => [
       ],
     },
   },
+  
 ];
 
 export default buildNewsArray;
