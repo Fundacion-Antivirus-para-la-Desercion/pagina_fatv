@@ -2,6 +2,8 @@ import Conversatorio from "../../../src/assets/images/views/imagesNews/conversat
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Oportunidad from "../../../src/assets/images/views/imagesNews/una-oportunidad.webp";
 import Estudiantes from "../../../src/assets/images/views/imagesNews/estudiantes-oportunidad.webp";
+import Reconocimiento from "../../../src/assets/images/views/imagesNews/reconocimiento-facultad-minas.webp";
+import ReconocimientoDos from "../../../src/assets/images/views/imagesNews/reconocimiento-facultad-minas-dos.webp";
 import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
@@ -132,6 +134,51 @@ const buildNewsArray = (t) => [
           type: "parrafo",
           value: t(
             "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.5",
+          ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "reconocidos-por-la-facultad-de-minas",
+    img: Reconocimiento,
+    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
+    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
+    newDetailContent: {
+      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
+          ),
+        },
+        {
+          type: "img",
+          value: ReconocimientoDos,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
           ),
         },
       ],
