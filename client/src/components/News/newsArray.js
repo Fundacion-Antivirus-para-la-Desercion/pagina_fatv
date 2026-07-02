@@ -35,12 +35,12 @@ const buildNewsArray = (t) => [
           value: t("news.items.desercion-universitaria.detail.content.1"),
         },
         {
-          type: "img",
-          value: Desercion,
-        },
-        {
           type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.2"),
+        },
+        {
+          type: "img",
+          value: Desercion,
         },
         {
           type: "parrafo",
@@ -49,6 +49,37 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "importancia-de-los-datos",
+    img: EncuentroColaboradores,
+    alt: t("news.items.importancia-de-los-datos.alt"),
+    title: t("news.items.importancia-de-los-datos.title"),
+    newDetailContent: {
+      title: t("news.items.importancia-de-los-datos.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.importancia-de-los-datos.detail.content.0"),
+        },
+        {
+          type: "img",
+          value: EncuentroColaboradores,
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.importancia-de-los-datos.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.importancia-de-los-datos.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.importancia-de-los-datos.detail.content.3"),
         },
       ],
     },
@@ -110,37 +141,6 @@ const buildNewsArray = (t) => [
         {
           type: "img",
           value: Mencion,
-        },
-      ],
-    },
-  },
-  {
-    slug: "encuentro-colaboradores",
-    img: EncuentroColaboradores,
-    alt: t("news.items.encuentro-colaboradores.alt"),
-    title: t("news.items.encuentro-colaboradores.title"),
-    newDetailContent: {
-      title: t("news.items.encuentro-colaboradores.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: EncuentroColaboradores,
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.1"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.3"),
         },
       ],
     },
