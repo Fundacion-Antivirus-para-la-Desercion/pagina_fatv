@@ -22,7 +22,7 @@ import Layout from "./components/layout/Layout";
 import ProVocacion from "./views/ProVocacion";
 import AtvConnect from "./views/atv_connect/AtvConnect.jsx";
 import News from "./components/News/News";
-import NewsDetail from "./views/NewsDetail.jsx";
+import NewsDetail from "./views/NewsDetail/NewsDetail.jsx";
 import StudentRetentionManagement from "./views/StudentRetentionManagement.jsx";
 import SocialIntervention from "./views/SocialIntervention/SocialIntervention.jsx";
 
