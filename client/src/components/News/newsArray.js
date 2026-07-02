@@ -1,11 +1,9 @@
-import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.webp";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
 import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
 import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
-import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
@@ -327,55 +325,6 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.el-docente-hoy.detail.content.4"),
-        },
-      ],
-    },
-  },
-  {
-    slug: "movimiento-2024",
-    img: Movimiento,
-    alt: t("news.items.movimiento-2024.alt"),
-    title: t("news.items.movimiento-2024.title"),
-    newDetailContent: {
-      title: t("news.items.movimiento-2024.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.1"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.3"),
-        },
-        {
-          type: "img",
-          value: Movimiento,
-        },
-        {
-          type: "img",
-          value: MovimientoDos,
-        },
-
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.4"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.5"),
-        },
-        {
-          type: "link",
-          value: t("news.items.movimiento-2024.detail.content.6"),
-          url: "https://fundacionantivirus-my.sharepoint.com/personal/coordinaciontecnologiadatos_fundacionantivirusparaladesercion_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos%2FReporteAnual2024%5Ffinal%2Epdf&parent=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos&ga=1",
         },
       ],
     },
