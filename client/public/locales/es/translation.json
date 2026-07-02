@@ -146,9 +146,7 @@
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",
     "enter_amount_to_donate": "Ingresa el valor a donar",
-    "alt_text": "Acompañamiento a estudiantes",
-    "amount_must_be_greater_than_zero": "Ingresa un monto mayor a $0.",
-    "amount_must_be_multiple_of_step": "Ingresa un monto en múltiplos de ${{step}}."
+    "alt_text": "Acompañamiento a estudiantes"
   },
   "ethicsTransparency": {
     "title": "ÉTICA Y TRANSPARENCIA EMPRESARIAL",
@@ -163,12 +161,7 @@
         "tax": "Régimen Tributario",
         "financial": "Estado Financiero",
         "donations": "Reglamento Donaciones",
-        "report": "Reporte Anual",
-        "tributario": "Régimen Tributario",
-        "financiero": "Estado Financiero",
-        "donaciones": "Reglamento Donaciones",
-        "reporte": "Reporte Anual",
-        "devops": "Programa de Transparencia y Ética Empresarial"
+        "report": "Reporte Anual"
       },
       "docs": {
         "ptee2026": {
@@ -188,42 +181,6 @@
         },
         "report2026": {
           "title": "Reporte Anual 2026"
-        },
-        "tributario2025": {
-          "title": "Régimen Tributario 2025"
-        },
-        "financiero2025": {
-          "title": "Estado Financiero 2025"
-        },
-        "donaciones2025": {
-          "title": "Reglamento de Donaciones 2025"
-        },
-        "reporte2025": {
-          "title": "Reporte Anual 2025"
-        },
-        "reporte2026": {
-          "title": "Reporte Anual 2026"
-        },
-        "ptee2025": {
-          "title": "PTEE 2025"
-        },
-        "tributario2024": {
-          "title": "Régimen Tributario 2024"
-        },
-        "financiero2024": {
-          "title": "Estado Financiero 2024"
-        },
-        "financiero2023": {
-          "title": "Estado Financiero 2023"
-        },
-        "donaciones2024": {
-          "title": "Reglamento de Donaciones 2024"
-        },
-        "reporte2024": {
-          "title": "Reporte Anual 2024"
-        },
-        "reporte2023": {
-          "title": "Reporte Anual 2023"
         }
       }
     }
@@ -306,34 +263,6 @@
           "description": "Incorporación de indicadores de seguimiento, resultados e impacto en los procesos para una gestión basada en evidencia."
         },
         "four": {
-          "code": "RTD",
-          "metric": "90+",
-          "metricLabel": "Tableros",
-          "title": "Reportes y Tableros de Decisión",
-          "description": "Fortalecimiento de la toma de decisiones mediante reportes claros y tableros de seguimiento para los equipos de la Fundación."
-        },
-        "sebu": {
-          "code": "ATVConecta",
-          "metric": "6+",
-          "metricLabel": "Universidades",
-          "title": "Plataforma de Tutorías Académicas",
-          "description": "Plataforma que conecta estudiantes con tutorías académicas personalizadas, promoviendo la permanencia y el éxito educativo a través del acompañamiento continuo."
-        },
-        "lda": {
-          "code": "LDA",
-          "metric": "200+",
-          "metricLabel": "Registros",
-          "title": "Laboratorio de Desempeño Académico",
-          "description": "Herramienta de identificación de materias y carreras críticas para los estudiantes, utilizando Python e inteligencia artificial para generar alertas tempranas y estrategias de intervención."
-        },
-        "isi": {
-          "code": "ISI",
-          "metric": "100%",
-          "metricLabel": "Basado en datos",
-          "title": "Indicadores de Seguimiento e Impacto",
-          "description": "Incorporación de indicadores de seguimiento, resultados e impacto en los procesos para una gestión basada en evidencia."
-        },
-        "rtd": {
           "code": "RTD",
           "metric": "90+",
           "metricLabel": "Tableros",
@@ -599,6 +528,34 @@
           ]
         }
       },
+      "importancia-de-los-datos": {
+        "alt": "La importacia de los datos para acabar con la deserción",
+        "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
+        "detail": {
+          "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
+          "content": [
+            "Los datos pueden ayudar a enriquecer historias y pueden proporcionar información valiosa sobre las cosas que vivimos cada día, proporcionando una fuente de sabiduría práctica y dándonos orientación sobre los asuntos humanos. Sabemos que hablar sobre algoritmos para tratar con vidas humanas puede parecer una yuxtaposición, ya que para muchas personas la palabra algoritmo evoca maquinarias arcanas y registrables de las grandes empresas. Pero, un algoritmo es simplemente una secuencia finita de pasos que se utilizan para resolver un problema, en el cual los datos proporcionan información valiosa para forjar cada paso dado.",
+            "Existe una idea reciente llamada: “diseño de algoritmos humanos”. Esta busca encontrar mejores soluciones a los desafíos que las personas enfrentan todos los días, ya sea para realizar un seguimiento del cambio climático en el mundo, agilizar los resultados de búsqueda de un apartamento o para acabar con la deserción universitaria. Si bien ahondaremos en lo último con más detalle, porque este es nuestro propósito, queremos mostrar primero como, hasta los problemas más mundanos, pueden resolverse con datos. Así las cosas, pensemos en el caso donde Pepita quiere comprar un apartamento. Cuando se le presentó esta situación Pepita intuyó que requería un equilibrio entre mirar apartamentos y elegir el que quisiera. De esta manera, ella entrevió que debía buscar los suficientes apartamentos para establecer un estándar y, luego de estos 11 días de búsqueda, comprometerse con el primer apartamento que vea que supere su estándar. Esto significa que se necesita un 37% del tiempo que se tiene para poder establecer objetivos. Este tipo de problemas pertenece a la clase de problemas denominados problema de parada óptimos.",
+            "El ejemplo anterior es solo una ilustración de la capacidad que tienen los datos y la estadística. La vida está llena de problemas que son, sencillamente, muy difíciles. Un ejemplo de esto es la alta tasa de deserción que tenemos en Colombia (50% en promedio en cualquier facultad y 70% en las facultades de ingeniería). Esta cifra tan escalofriante dice más de las dificultades intrínsecas de este problema que sobre la falibilidad del cerebro humano. Para resolver este problema necesitamos entender su estructura fundamental y para esto necesitamos datos. No obstante, el valor clave de los datos es la capacidad de aprovecharlos al máximo: encontrar asociaciones relevantes dentro de los datos, manipularlos en conjuntos manejables y luego crear aplicaciones para representar mejor lo que se descubre. Esto lo aprendió el “Campeón de la tasa de graduación” (Graduation Rate Champion) de la Universidad de Texas, cuando se le puso el desafío de aumentar la tasa de graduados de 51% en el 2021 al 70% en el 2016.",
+            "Para lograr su objetivo, el Campeón de la tasa de graduación reclutó un equipo de científicos de datos en la oficina de investigación institucional de la universidad, que estaba especializado en analítica predictiva. Al deconstruir los registros de decenas de miles de estudiantes recientes de esta Universidad, pudieron desarrollar una estadística modelo que combinó catorce variables separadas. Desde el ingreso familiar hasta el puntaje del SAT, el rango de la clase del colegio y el historial educativo de los padres, en un solo algoritmo que podría predecir de manera confiable la probabilidad de que un estudiante admitido se graduara. Este quipo llamó a esta nueva herramienta el Panel de índice de graduación de cuatro años. (Taugh, 2019) La ganancia que implica para una universidad aumentar el número de graduados se refleja en una tasa de movilidad social muy alta. El paso por una universidad forja el proceso de formación de la identidad de los adolescentes y realmente tiene un impacto positivo en la forma como resultan las vidas de las personas; cuan felices serán y que también van a negociar los desafíos del trabajo, la familia, la amistad y la comunidad."
+          ]
+        }
+      },
+      "una-oportunidad-que-cruzo-fronteras": {
+        "alt": "Una oportunidad que cruzó fronteras para los estudiantes",
+        "title": "UNA OPORTUNIDAD QUE CRUZO FRONTERAS",
+        "detail": {
+          "title": "UNA OPORTUNIDAD QUE CRUZO FRONTERAS",
+          "content": [
+            "Una oportunidad que cruzó fronteras, gracias a la colaboración de <bold>Fundación Gente Unida,</bold> <bold>Fundación Sofía Pérez de Soto,</bold> <bold>Fundación Antivirus para la Deserción y sus familias.</bold> 🇧🇷🇨🇴💻",
+            "¡Tres estudiantes, un mismo sueño! <bold>Libardo Navarro,</bold> <bold>Mateo Álvarez</bold> y <bold>Efraín Gómez,</bold> llevaron el talento de la <bold>Universidad Nacional,</bold> sede Medellín al <bold>Brazilian ICPC Summer School 2026,</bold> uno de los espacios más exigentes de programación competitiva en Latinoamérica.",
+            "Durante días se enfrentaron a algoritmos avanzados, nuevas estructuras de datos y al nivel de los mejores equipos del continente. Pero más allá del código, vivieron algo que no se aprende en clase: comunidad, disciplina y visión global. 🌎",
+            "Como Fundación Antivirus para la Deserción, creemos en el talento que persevera. Por eso apoyamos su participación en este encuentro internacional, convencidos de que acompañar también es abrir puertas.",
+            "Hoy regresan más preparados para su próximo desafío: la super regional de marzo, donde buscarán el pase al mundial. Y nosotros seguimos aquí, respaldando sus sueños hasta que se conviertan en logro.",
+            "Si tú también crees en el poder de la educación y el acompañamiento, camina con nosotros."
+          ]
+        }
+      },
       "conversatorio-envigado": {
         "alt": "Conversatorio en universidad de Envigado",
         "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
@@ -620,16 +577,6 @@
           ]
         }
       },
-      "congreso-comunicaciones": {
-        "alt": "Ponencia en congreso internacional de comunicaciones",
-        "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
-        "detail": {
-          "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
-          "content": [
-            "El pasado 2 de noviembre la Fundación Antivirus para la Deserción fue invitada al Congreso Internacional de Comunicaciones en la Universidad de Medellín, donde Daniela Correa, coordinadora de comunicaciones, estuvo a cargo de la ponencia de ‘La comunicación en emprendimientos sociales”. Este representó un logro para la Fundación y sus colaboradores, pues fue una oportunidad para dar a conocer el modelo transversal de las comunicaciones en un proyecto social y, a su vez, promocionar el propósito de aumentar los índices de permanencia."
-          ]
-        }
-      },
       "mencion-honorifica": {
         "alt": "Recibimos mención honorífica",
         "title": "RECIBIMOS MENCIÓN HONORÍFICA",
@@ -637,19 +584,6 @@
           "title": "RECIBIMOS MENCIÓN HONORÍFICA",
           "content": [
             "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
-          ]
-        }
-      },
-      "encuentro-colaboradores": {
-        "alt": "La importacia de los datos para acabar con la deserción",
-        "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
-        "detail": {
-          "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
-          "content": [
-            "Los datos pueden ayudar a enriquecer historias y pueden proporcionar información valiosa sobre las cosas que vivimos cada día, proporcionando una fuente de sabiduría práctica y dándonos orientación sobre los asuntos humanos. Sabemos que hablar sobre algoritmos para tratar con vidas humanas puede parecer una yuxtaposición, ya que para muchas personas la palabra algoritmo evoca maquinarias arcanas y registrables de las grandes empresas. Pero, un algoritmo es simplemente una secuencia finita de pasos que se utilizan para resolver un problema, en el cual los datos proporcionan información valiosa para forjar cada paso dado.",
-            "Existe una idea reciente llamada: “diseño de algoritmos humanos”. Esta busca encontrar mejores soluciones a los desafíos que las personas enfrentan todos los días, ya sea para realizar un seguimiento del cambio climático en el mundo, agilizar los resultados de búsqueda de un apartamento o para acabar con la deserción universitaria. Si bien ahondaremos en lo último con más detalle, porque este es nuestro propósito, queremos mostrar primero como, hasta los problemas más mundanos, pueden resolverse con datos. Así las cosas, pensemos en el caso donde Pepita quiere comprar un apartamento. Cuando se le presentó esta situación Pepita intuyó que requería un equilibrio entre mirar apartamentos y elegir el que quisiera. De esta manera, ella entrevió que debía buscar los suficientes apartamentos para establecer un estándar y, luego de estos 11 días de búsqueda, comprometerse con el primer apartamento que vea que supere su estándar. Esto significa que se necesita un 37% del tiempo que se tiene para poder establecer objetivos. Este tipo de problemas pertenece a la clase de problemas denominados problema de parada óptimos.",
-            "El ejemplo anterior es solo una ilustración de la capacidad que tienen los datos y la estadística. La vida está llena de problemas que son, sencillamente, muy difíciles. Un ejemplo de esto es la alta tasa de deserción que tenemos en Colombia (50% en promedio en cualquier facultad y 70% en las facultades de ingeniería). Esta cifra tan escalofriante dice más de las dificultades intrínsecas de este problema que sobre la falibilidad del cerebro humano. Para resolver este problema necesitamos entender su estructura fundamental y para esto necesitamos datos. No obstante, el valor clave de los datos es la capacidad de aprovecharlos al máximo: encontrar asociaciones relevantes dentro de los datos, manipularlos en conjuntos manejables y luego crear aplicaciones para representar mejor lo que se descubre. Esto lo aprendió el “Campeón de la tasa de graduación” (Graduation Rate Champion) de la Universidad de Texas, cuando se le puso el desafío de aumentar la tasa de graduados de 51% en el 2021 al 70% en el 2016.",
-            "Para lograr su objetivo, el Campeón de la tasa de graduación reclutó un equipo de científicos de datos en la oficina de investigación institucional de la universidad, que estaba especializado en analítica predictiva. Al deconstruir los registros de decenas de miles de estudiantes recientes de esta Universidad, pudieron desarrollar una estadística modelo que combinó catorce variables separadas. Desde el ingreso familiar hasta el puntaje del SAT, el rango de la clase del colegio y el historial educativo de los padres, en un solo algoritmo que podría predecir de manera confiable la probabilidad de que un estudiante admitido se graduara. Este quipo llamó a esta nueva herramienta el Panel de índice de graduación de cuatro años. (Taugh, 2019) La ganancia que implica para una universidad aumentar el número de graduados se refleja en una tasa de movilidad social muy alta. El paso por una universidad forja el proceso de formación de la identidad de los adolescentes y realmente tiene un impacto positivo en la forma como resultan las vidas de las personas; cuan felices serán y que también van a negociar los desafíos del trabajo, la familia, la amistad y la comunidad."
           ]
         }
       },
@@ -700,22 +634,6 @@
             "La realidad actual está llena de influencers, de tecnología, de presiones sobre cómo hay que vivir, de Mindfulness y muchas otras nuevas formas de existencia que nos hablan de que siempre hay más y nunca es suficiente; de metas, a veces, inalcanzables e idealistas. <bold>Una sociedad que cada vez habla más del ser, pero sin herramientas aterrizadas para ello (o incluso, hay tantas que no se sabe por dónde empezar).</bold> Y muchos, no puedo afirmar que todos, pero sí es evidente que gran cantidad de docentes hacen o hacemos una \"traducción\" de la realidad, y como toda traducción deja de lado verdades, desconoce sentires y mensajes implícitos, centrándonos en contenidos. Antes valorábamos al otro según cuánto hacía, ahora, según cuánto sabe, y paradójicamente, se menosprecia el ser (aunque sea lo que la realidad más exige). <bold>Ahí, en esa paradoja, en esa contradicción es en donde se encuentra el lugar del docente, no el traductor de realidades, sino el intérprete que acompaña la autoconstrucción humana desde el ser, el saber y el hacer.</bold>"
           ]
         }
-      },
-      "movimiento-2024": {
-        "alt": "2024: Un año de movimiento, retos y transformación",
-        "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
-        "detail": {
-          "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
-          "content": [
-            "El 2024 fue un año de retos, preguntas, movimiento y gestión para la Fundación Antivirus para la Deserción, un año que nos invitó a repensar el camino y las formas en las que, como organización social, aportamos a la sociedad. En medio de un entorno desafiante reafirmamos nuestro compromiso por la educación y el acompañamiento a de miles de jóvenes en el país.",
-            "En el informe de gestión se refleja la constancia, el amor, la innovación y la pasión, que movieron cada una de nuestras acciones para cumplir nuestro propósito misional. Movilizamos conversaciones, campañas y alianzas visibilizando las necesidades de los jóvenes para no desertar, invitamos a estudiantes, tutores, docentes, instituciones y aliados a ser parte de una red que abraza, escucha y camina con ellos.",
-            "Durante este período, reflexionamos sobre la problemática, pero, sobre todo, nos pusimos en acción, realizando gestión de la permanencia en la Universidad de Antioquia y la Universidad Nacional en la carrera de Ingeniería de sistemas. Acompañamos los estudiantes becados de la Fundación Aurelio Llano Posada, Fundación Nutresa, la plataforma filantrópica Ver+ Beca Tech y del municipio de Itagüí; con el cual, también tuvimos un proceso de orientación sociovocacional con los jóvenes del grado 10° en 12 de sus Instituciones educativas públicas. Tramitamos la permanencia en los Bootcamps Nodo EAFIT y Código C13. Finalmente, acompañamos y empoderamos a las estudiantes Linieras del proceso formativo de la Corporación Tener Futuro.",
-            "Este informe es un reflejo del camino recorrido, del apoyo realizado y el trayecto que nos falta; es la muestra fehaciente de que cuando se suman esfuerzos se construye país y se cambian historias. Cada estudiante que logramos acompañar y cada joven que se gradúa, es una promesa cumplida. Así como cada aliado que se suma, hace parte de una educación más justa, cercana y sostenible. En el 2024, no hablamos solo de deserción, hablamos de permanencia, de esperanza, de futuro y de transformación social.",
-            "Agradecemos a todos nuestros aliados, quienes de forma directa o indirecta apoyaron nuestro trabajo para construir un país más próspero, pacífico y armonioso, en donde los sueños cuentan y los triunfos se trabajan. A los estudiantes que creen en nuestro acompañamiento y nos permiten transitar el camino juntos. A nuestros colaboradores que día a día hacen posible un cambio y entregan su cinco por ciento para una sociedad más consciente; gracias por creer en la Fundación Antivirus para la Deserción y por creer que juntos podemos lograrlo.",
-            "Continuaremos en acción, con la convicción de que podemos seguir construyendo redes de apoyo que hacen posible los sueños de muchos jóvenes.",
-            "Léelo aquí: ReporteAnual2024_final"
-          ]
-        }
       }
     }
   },
@@ -743,9 +661,7 @@
       "communications_coordinator": "Coordinadora Área Comunicaciones",
       "administrative_and_financial_coordinator": "Coordinador Área Administrativa y Financiera",
       "ambassador": "Embajador FATV"
-    },
-    "title_part1": "SOBRE NUESTRO EQUIPO",
-    "title_part2": "EQUIPO"
+    }
   },
   "socialIntervention": {
     "banner": {
@@ -808,30 +724,6 @@
           "description": "Estudiantes que completaron exitosamente sus estudios con nuestro acompañamiento."
         },
         "metric_six": {
-          "span": "ALIADOS",
-          "description": "Instituciones educativas y organizaciones aliadas en nuestra misión contra la deserción estudiantil."
-        },
-        "metrict_one": {
-          "span": "PERMANENCIA",
-          "description": "Tasa de permanencia estudiantil lograda gracias a nuestras intervenciones de acompañamiento integral."
-        },
-        "metrict_two": {
-          "span": "ESTUDIANTES",
-          "description": "Jóvenes apoyados a través de nuestros programas de intervención social y apoyo académico."
-        },
-        "metrict_three": {
-          "span": "DECISIONES",
-          "description": "Decisiones sociovocacionales acompañadas para orientar el futuro profesional de nuestros estudiantes."
-        },
-        "metrict_four": {
-          "span": "SATISFACCIÓN",
-          "description": "De los estudiantes reportan mejoras significativas en su bienestar académico y emocional."
-        },
-        "metrict_five": {
-          "span": "GRADUADOS",
-          "description": "Estudiantes que completaron exitosamente sus estudios con nuestro acompañamiento."
-        },
-        "metrict_six": {
           "span": "ALIADOS",
           "description": "Instituciones educativas y organizaciones aliadas en nuestra misión contra la deserción estudiantil."
         }
@@ -1485,10 +1377,5 @@
     "title": "Oops!",
     "message": "Lo sentimos, página no encontrada",
     "button": "Volver al Inicio"
-  },
-  "defaultMessage": {
-    "whatsapp": {
-      "default_message": "Hola, estoy interesado en los servicios de la página y me gustaría más información."
-    }
   }
 }

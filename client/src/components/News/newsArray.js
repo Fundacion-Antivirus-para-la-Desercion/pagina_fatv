@@ -1,5 +1,7 @@
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.webp";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
+import Oportunidad from "../../../src/assets/images/views/imagesNews/una-oportunidad.webp";
+import Estudiantes from "../../../src/assets/images/views/imagesNews/estudiantes-oportunidad.webp";
 import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
@@ -80,6 +82,57 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.importancia-de-los-datos.detail.content.3"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "una-oportunidad-que-cruzo-fronteras",
+    img: Oportunidad,
+    alt: t("news.items.una-oportunidad-que-cruzo-fronteras.alt"),
+    title: t("news.items.una-oportunidad-que-cruzo-fronteras.title"),
+    newDetailContent: {
+      title: t("news.items.una-oportunidad-que-cruzo-fronteras.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.0",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.4",
+          ),
+        },
+        {
+          type: "img",
+          value: Estudiantes,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.5",
+          ),
         },
       ],
     },

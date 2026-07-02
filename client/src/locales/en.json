@@ -527,7 +527,7 @@
           ]
         }
       },
-        "importancia-de-los-datos": {
+      "importancia-de-los-datos": {
         "alt": "The importance of data to end dropout",
         "title": "THE IMPORTANCE OF DATA TO END DROPOUT",
         "detail": {
@@ -537,6 +537,21 @@
             "There is a recent idea called: “human algorithm design”. This seeks to find better solutions to the challenges that people face every day, whether to track climate change in the world, streamline the search results for an apartment or to end university dropout. While we will delve into the latter in more detail, because this is our purpose, we want to first show how even the most mundane problems can be solved with data. Thus, let's think about the case where Pepita wants to buy an apartment. When this situation was presented to her, Pepita intuited that she required a balance between looking at apartments and choosing the one she wanted. In this way, she foresaw that she should look for enough apartments to establish a standard and, then, commit to the first apartment she sees that exceeds her standard. This means that you need 37% of the time you have to be able to set goals. This type of problem belongs to the class of problems called optimal stopping problems.",
             "The previous example is just an illustration of the capacity of data and statistics. Life is full of problems that are, simply, very difficult. An example of this is the high dropout rate we have in Colombia (50% on average in any faculty and 70% in engineering faculties). This terrifying figure says more about the intrinsic difficulties of this problem than about the fallibility of the human brain. To solve this problem we need to understand its fundamental structure and for this we need data. However, the key value of data is the ability to make the most of it: find relevant associations within the data, manipulate it into manageable sets and then create applications to better represent what is discovered. This was learned by the “Graduation Rate Champion” of the University of Texas, when he was given the challenge of increasing the graduation rate from 51% in 2021 to 70% in 2016.",
             "To achieve his goal, the Graduation Rate Champion recruited a team of data scientists in the university's institutional research office, who were specialized in predictive analytics. By deconstructing the records of tens of thousands of recent students at this University, they were able to develop a model statistic that combined fourteen separate variables. From family income to SAT score, college class rank and parents' educational history, in a single algorithm that could reliably predict the probability that an admitted student would graduate. This team called this new tool the Four-Year Graduation Index Dashboard. (Taugh, 2019) The gain that increasing the number of graduates implies for a university is reflected in a very high social mobility rate. The passage through a university forges the identity formation process of adolescents and really has a positive impact on the way people's lives turn out; how happy they will be and how well they will negotiate the challenges of work, family, friendship and community."
+          ]
+        }
+      },
+      "una-oportunidad-que-cruzo-fronteras": {
+        "alt": "An opportunity that crossed borders for students",
+        "title": "AN OPPORTUNITY THAT CROSSED BORDERS",
+        "detail": {
+          "title": "AN OPPORTUNITY THAT CROSSED BORDERS",
+          "content": [
+            "An opportunity that crossed borders, thanks to the collaboration of <bold>Fundación Gente Unida,</bold> <bold>Fundación Sofía Pérez de Soto,</bold> <bold>Fundación Antivirus para la Deserción, and their families.</bold> 🇧🇷🇨🇴💻",
+            "Three students, one shared dream! <bold>Libardo Navarro,</bold> <bold>Mateo Álvarez,</bold> and <bold>Efraín Gómez</bold> took the talent of the <bold>Universidad Nacional,</bold> Medellín campus, to the <bold>Brazilian ICPC Summer School 2026,</bold> one of the most demanding competitive programming spaces in Latin America.",
+            "For days, they faced advanced algorithms, new data structures, and the level of the best teams on the continent. But beyond the code, they experienced something that cannot be learned in a classroom: community, discipline, and a global vision. 🌎",
+            "As the Antivirus Foundation for Dropout Prevention, we believe in talent that perseveres. That is why we supported their participation in this international event, convinced that supporting also means opening doors.",
+            "Today, they return better prepared for their next challenge: the Super Regional in March, where they will seek a ticket to the World Finals. And we remain here, backing their dreams until they become achievements.",
+            "If you also believe in the power of education and support, walk with us."
           ]
         }
       },
@@ -585,7 +600,7 @@
             "<bold>Comprehensive support not only promotes student persistence but also contributes to the development of their life projects. The training of rural scholars and their potential return to their territories benefits local development.</bold> Therefore, strengthening support programs for scholarship recipients should not be considered a supplement, but a structural component of education. Recognizing the inequalities of origin and acting upon them through contextualized interventions is a fundamental step toward equal opportunity in higher education in Colombia. Investing in support for rural students is an investment in the future of the country's territories."
           ]
         }
-        },
+      },
       "la-crisis-en-educacion-superior": {
         "alt": "Antivirus Foundation collaborator and students in their respective educational settings.",
         "title": "ON THE CRISIS IN HIGHER EDUCATION",

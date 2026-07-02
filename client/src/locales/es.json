@@ -514,7 +514,6 @@
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {
-      
       "desercion-universitaria": {
         "alt": "La deserción universitaria",
         "title": "LA DESERCIÓN UNIVERSITARIA",
@@ -539,6 +538,21 @@
             "Existe una idea reciente llamada: “diseño de algoritmos humanos”. Esta busca encontrar mejores soluciones a los desafíos que las personas enfrentan todos los días, ya sea para realizar un seguimiento del cambio climático en el mundo, agilizar los resultados de búsqueda de un apartamento o para acabar con la deserción universitaria. Si bien ahondaremos en lo último con más detalle, porque este es nuestro propósito, queremos mostrar primero como, hasta los problemas más mundanos, pueden resolverse con datos. Así las cosas, pensemos en el caso donde Pepita quiere comprar un apartamento. Cuando se le presentó esta situación Pepita intuyó que requería un equilibrio entre mirar apartamentos y elegir el que quisiera. De esta manera, ella entrevió que debía buscar los suficientes apartamentos para establecer un estándar y, luego de estos 11 días de búsqueda, comprometerse con el primer apartamento que vea que supere su estándar. Esto significa que se necesita un 37% del tiempo que se tiene para poder establecer objetivos. Este tipo de problemas pertenece a la clase de problemas denominados problema de parada óptimos.",
             "El ejemplo anterior es solo una ilustración de la capacidad que tienen los datos y la estadística. La vida está llena de problemas que son, sencillamente, muy difíciles. Un ejemplo de esto es la alta tasa de deserción que tenemos en Colombia (50% en promedio en cualquier facultad y 70% en las facultades de ingeniería). Esta cifra tan escalofriante dice más de las dificultades intrínsecas de este problema que sobre la falibilidad del cerebro humano. Para resolver este problema necesitamos entender su estructura fundamental y para esto necesitamos datos. No obstante, el valor clave de los datos es la capacidad de aprovecharlos al máximo: encontrar asociaciones relevantes dentro de los datos, manipularlos en conjuntos manejables y luego crear aplicaciones para representar mejor lo que se descubre. Esto lo aprendió el “Campeón de la tasa de graduación” (Graduation Rate Champion) de la Universidad de Texas, cuando se le puso el desafío de aumentar la tasa de graduados de 51% en el 2021 al 70% en el 2016.",
             "Para lograr su objetivo, el Campeón de la tasa de graduación reclutó un equipo de científicos de datos en la oficina de investigación institucional de la universidad, que estaba especializado en analítica predictiva. Al deconstruir los registros de decenas de miles de estudiantes recientes de esta Universidad, pudieron desarrollar una estadística modelo que combinó catorce variables separadas. Desde el ingreso familiar hasta el puntaje del SAT, el rango de la clase del colegio y el historial educativo de los padres, en un solo algoritmo que podría predecir de manera confiable la probabilidad de que un estudiante admitido se graduara. Este quipo llamó a esta nueva herramienta el Panel de índice de graduación de cuatro años. (Taugh, 2019) La ganancia que implica para una universidad aumentar el número de graduados se refleja en una tasa de movilidad social muy alta. El paso por una universidad forja el proceso de formación de la identidad de los adolescentes y realmente tiene un impacto positivo en la forma como resultan las vidas de las personas; cuan felices serán y que también van a negociar los desafíos del trabajo, la familia, la amistad y la comunidad."
+          ]
+        }
+      },
+      "una-oportunidad-que-cruzo-fronteras": {
+        "alt": "Una oportunidad que cruzó fronteras para los estudiantes",
+        "title": "UNA OPORTUNIDAD QUE CRUZO FRONTERAS",
+        "detail": {
+          "title": "UNA OPORTUNIDAD QUE CRUZO FRONTERAS",
+          "content": [
+            "Una oportunidad que cruzó fronteras, gracias a la colaboración de <bold>Fundación Gente Unida,</bold> <bold>Fundación Sofía Pérez de Soto,</bold> <bold>Fundación Antivirus para la Deserción y sus familias.</bold> 🇧🇷🇨🇴💻",
+            "¡Tres estudiantes, un mismo sueño! <bold>Libardo Navarro,</bold> <bold>Mateo Álvarez</bold> y <bold>Efraín Gómez,</bold> llevaron el talento de la <bold>Universidad Nacional,</bold> sede Medellín al <bold>Brazilian ICPC Summer School 2026,</bold> uno de los espacios más exigentes de programación competitiva en Latinoamérica.",
+            "Durante días se enfrentaron a algoritmos avanzados, nuevas estructuras de datos y al nivel de los mejores equipos del continente. Pero más allá del código, vivieron algo que no se aprende en clase: comunidad, disciplina y visión global. 🌎",
+            "Como Fundación Antivirus para la Deserción, creemos en el talento que persevera. Por eso apoyamos su participación en este encuentro internacional, convencidos de que acompañar también es abrir puertas.",
+            "Hoy regresan más preparados para su próximo desafío: la super regional de marzo, donde buscarán el pase al mundial. Y nosotros seguimos aquí, respaldando sus sueños hasta que se conviertan en logro.",
+            "Si tú también crees en el poder de la educación y el acompañamiento, camina con nosotros."
           ]
         }
       },
