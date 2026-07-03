@@ -207,7 +207,7 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
   }
 
   return (
-    <div className="relative flex flex-col items-center">
+    <div id="book-carousel" className="relative flex flex-col items-center">
       {isTwoPage && (
         <div
           className="bg-white px-9 pt-8 pb-2 mx-auto rounded-t-2xl"

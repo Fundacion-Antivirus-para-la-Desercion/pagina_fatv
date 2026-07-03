@@ -21,7 +21,7 @@ function OtherNews({ newSlug }) {
   }, [newSlug, t]);
 
   return (
-    <div className="lg:col-start-2">
+    <div className="xl:col-start-2">
       <div className="shadow-xl rounded-2xl sticky top-4 border border-dark-blue p-4">
         <h3 className="news-detail mb-4 text-center md:text-left text-3xl  font-impact text-blue-base max-md:text-2xl leading-8">
           {t("otherNews.title")}
