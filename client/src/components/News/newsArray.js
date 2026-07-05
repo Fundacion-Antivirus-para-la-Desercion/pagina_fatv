@@ -9,7 +9,7 @@ import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
-import LuisS from "../../assets/images/views/imagesNews/luiss.webp";
+import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
 import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
@@ -137,93 +137,6 @@ const buildNewsArray = (t) => [
           value: t(
             "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.5",
           ),
-        },
-      ],
-    },
-  },
-  {
-    slug: "reconocidos-por-la-facultad-de-minas",
-    img: Reconocimiento,
-    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
-    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
-    newDetailContent: {
-      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
-          ),
-        },
-        {
-          type: "img",
-          value: ReconocimientoDos,
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
-          ),
-        },
-      ],
-    },
-  },
-  {
-    slug: "conversatorio-envigado",
-    img: Conversatorio,
-    alt: t("news.items.conversatorio-envigado.alt"),
-    title: t("news.items.conversatorio-envigado.title"),
-    newDetailContent: {
-      title: t("news.items.conversatorio-envigado.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.conversatorio-envigado.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.conversatorio-envigado.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: Conversatorio,
-        },
-      ],
-    },
-  },
-  {
-    slug: "mencion-honorifica",
-    img: Mencion,
-    alt: t("news.items.mencion-honorifica.alt"),
-    title: t("news.items.mencion-honorifica.title"),
-    newDetailContent: {
-      title: t("news.items.mencion-honorifica.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.mencion-honorifica.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Mencion,
         },
       ],
     },
@@ -440,7 +353,94 @@ const buildNewsArray = (t) => [
           value: t(
             "news.items.permanencia-educativa-de-calidad.detail.content.5",
           ),
-        }
+        },
+      ],
+    },
+  },
+  {
+    slug: "reconocidos-por-la-facultad-de-minas",
+    img: Reconocimiento,
+    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
+    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
+    newDetailContent: {
+      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
+          ),
+        },
+        {
+          type: "img",
+          value: ReconocimientoDos,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
+          ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "conversatorio-envigado",
+    img: Conversatorio,
+    alt: t("news.items.conversatorio-envigado.alt"),
+    title: t("news.items.conversatorio-envigado.title"),
+    newDetailContent: {
+      title: t("news.items.conversatorio-envigado.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.conversatorio-envigado.detail.content.0"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.conversatorio-envigado.detail.content.1"),
+        },
+        {
+          type: "img",
+          value: Conversatorio,
+        },
+      ],
+    },
+  },
+  {
+    slug: "mencion-honorifica",
+    img: Mencion,
+    alt: t("news.items.mencion-honorifica.alt"),
+    title: t("news.items.mencion-honorifica.title"),
+    newDetailContent: {
+      title: t("news.items.mencion-honorifica.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.mencion-honorifica.detail.content.0"),
+        },
+        {
+          type: "img",
+          value: Mencion,
+        },
       ],
     },
   },
@@ -463,7 +463,6 @@ const buildNewsArray = (t) => [
       ],
     },
   },
-  
 ];
 
 export default buildNewsArray;

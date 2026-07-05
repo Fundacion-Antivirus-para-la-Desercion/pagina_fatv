@@ -556,41 +556,6 @@
           ]
         }
       },
-      "reconocidos-por-la-facultad-de-minas": {
-        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
-        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
-        "detail": {
-          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
-          "content": [
-            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
-            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
-            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
-            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
-            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
-          ]
-        }
-      },
-      "conversatorio-envigado": {
-        "alt": "Conversatorio en universidad de Envigado",
-        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
-        "detail": {
-          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
-          "content": [
-            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
-            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
-          ]
-        }
-      },
-      "mencion-honorifica": {
-        "alt": "Recibimos mención honorífica",
-        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
-        "detail": {
-          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
-          "content": [
-            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
-          ]
-        }
-      },
       "acompanamiento-becarios-rurales": {
         "alt": "La importacia de los datos para acabar con la deserción",
         "title": "ACOMPAÑAMIENTO INTEGRAL A BECARIOS RURALES EN COLOMBIA",
@@ -651,6 +616,41 @@
             "<bold>Currículo pertinente y flexible:</bold> diseñar un currículo que responda a las necesidades del mundo hoy, dinámico y ajustable, que fomente el pensamiento crítico, la creatividad y la resolución de problemas. <bold>Apoyo psicosocial:</bold> implementar estrategias para prevenir la deserción y tutorías, orientación socio vocacional y apoyo emocional. Programas de prevención del estrés, ansiedad y depresión, con enfoque en resiliencia y bienestar emocional.",
             "<bold>Apoyo económico:</bold> ofrecer programas de becas, subsidios y oportunidades de trabajo estudiantil para reducir la deserción por razones económicas. Brindar opciones de alimentación saludable a bajo costo y facilidades para el acceso a residencias universitarias asequibles. <bold>Fomento del emprendimiento:</bold> promover la creación de incubadoras de startups, formación en innovación y acceso a redes de contacto. Programas de formación en herramientas tecnológicas, ciberseguridad y gestión de datos Para adaptarse al mundo digital. <bold>Participación de la comunidad:</bold> implicar a las familias, docentes, organizaciones de la sociedad civil (OSC) y gobiernos para fortalecer el compromiso con la educación. <bold>Voluntariado y compromiso social:</bold> Vincular a los estudiantes con la comunidad, promoviendo la responsabilidad social y la ciudadanía activa.",
             "La permanencia educativa de calidad es esencial para reducir la desigualdad social y garantizar el desarrollo de ciudadanos preparados para contribuir al progreso de la sociedad. Garantizar la permanencia educativa con estándares de calidad es un desafío. En este contexto, la labor de las organizaciones de la sociedad civil se convierte en factor clave para fortalecer el acceso, la equidad y la excelencia. Ello supone que las universidades, tanto públicas como privadas, se abran a establecer alianzas focalizadas en la prevención de la deserción y mejoramiento de la permanencia. Que estén dispuestas a movilizar sus sistemas de bienestar para centrarlos en el individuo que presenta mayor vulnerabilidad académica, socioemocional, psicosocial y económica, de forma sistémica y articulada. La acción con las OSC refuerza el derecho a la educación, contribuye a la permanencia de calidad y coadyuva en la preparación de los estudiantes que enfrentarán los desafíos del futuro. "
+          ]
+        }
+      },
+      "reconocidos-por-la-facultad-de-minas": {
+        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
+        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+        "detail": {
+          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+          "content": [
+            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
+            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
+            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
+            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
+            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
+          ]
+        }
+      },
+      "conversatorio-envigado": {
+        "alt": "Conversatorio en universidad de Envigado",
+        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+        "detail": {
+          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+          "content": [
+            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
+            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
+          ]
+        }
+      },
+      "mencion-honorifica": {
+        "alt": "Recibimos mención honorífica",
+        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+        "detail": {
+          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+          "content": [
+            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
           ]
         }
       },
