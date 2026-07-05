@@ -31,7 +31,7 @@ function News() {
               <FaRegCalendarMinus className="mr-1 w-7 h-7" />
               {t("news.category")}
             </p>
-            <p className="mb-4 text-left text-4xl font-impact text-blue-base max-md:text-3xl leading-9 flex-grow">
+            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base leading-9 flex-grow">
               {news.title}
             </p>
             <hr className="mb-3" />
