@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Header/Header.css";
@@ -12,64 +12,49 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { MdTranslate } from "react-icons/md";
 
+const LANGUAGES = [
+  { code: "en", labelKey: "header.options_english" },
+  { code: "es", labelKey: "header.options_spanish" },
+];
+
 function Header() {
   const [isHidden, setIsHidden] = useState(false);
   const [nav, setNav] = useState(false);
-  const [queHacemos, setQueHacemos] = useState(false);
-  const [servicios, setServicios] = useState(false);
-  const [idioma, setIdioma] = useState(false);
-  const [students, setStudents] = useState(false);
-  const [popupPosition, setPopupPosition] = useState("9rem");
-  const [popupPositionStudents, setPopupPositionStudents] = useState("17rem");
+  const [openPopup, setOpenPopup] = useState(null); // "qh" | "services" | "idioma" | null
+  const [popupTop, setPopupTop] = useState(0);
+  const headerRef = useRef(null);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.resolvedLanguage || i18n.language || "es";
+
+  const closePopups = () => {
+    setOpenPopup(null);
+  };
 
   const handleNav = () => {
     setNav(!nav);
     closePopups();
   };
 
-  const handlePopupStudents = () => {
-    setStudents(!students);
-    setIdioma(false);
-    setQueHacemos(false);
+  const togglePopup = (key) => {
+    setOpenPopup((current) => (current === key ? null : key));
   };
 
-  const handleMouseEnter = () => {
-    setStudents(true);
+  const handleChangeLanguage = (langCode) => {
+    i18n.changeLanguage(langCode);
+    localStorage.setItem("i18nextLng", langCode);
+    handleNav();
   };
 
-  const handleMouseLeave = () => {
-    setStudents(false);
-  };
-
-  const handleClikPopupQH = () => {
-    setQueHacemos(!queHacemos);
-    setServicios(false);
-    setIdioma(false);
-    setStudents(false);
-  };
-
-  const handleClikPopupServices = () => {
-    setServicios(!servicios);
-    setQueHacemos(false);
-    setIdioma(false);
-    setStudents(false);
-  };
-
-  const handleClikPopupIdioma = () => {
-    setIdioma(!idioma);
-    setQueHacemos(false);
-    setServicios(false);
-    setStudents(false);
-  };
-
-  const closePopups = () => {
-    setQueHacemos(false);
-    setServicios(false);
-    setIdioma(false);
-    setStudents(false);
-  };
+  useEffect(() => {
+    const updateHeaderHeight = () => {
+      if (headerRef.current) {
+        setPopupTop(headerRef.current.getBoundingClientRect().height);
+      }
+    };
+    updateHeaderHeight();
+    window.addEventListener("resize", updateHeaderHeight);
+    return () => window.removeEventListener("resize", updateHeaderHeight);
+  }, []);
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -80,12 +65,10 @@ function Header() {
 
       if (isScrollingUp || currentScroll <= 0) {
         setIsHidden(false);
-        setPopupPosition("9rem");
-        setPopupPositionStudents("17rem");
+        setPopupTop(headerRef.current?.getBoundingClientRect().height ?? 0);
       } else {
         setIsHidden(true);
-        setPopupPosition("0");
-        setPopupPositionStudents("7rem");
+        setPopupTop(0);
       }
       lastScrollTop = currentScroll;
     };
@@ -106,7 +89,7 @@ function Header() {
   return (
     <>
       <header
-        onMouseLeave={handleMouseLeave}
+        ref={headerRef}
         className={`hidden z-50 lg:flex justify-between items-center py-3 px-16 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${
           isHidden ? "-translate-y-full" : "translate-y-0"
         }`}
@@ -129,7 +112,7 @@ function Header() {
           </Link>
           <span className="text-blue-base mx-1">|</span>
           <button
-            onClick={handleClikPopupQH}
+            onClick={() => togglePopup("qh")}
             className="group flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.what_we_do")}
@@ -145,7 +128,7 @@ function Header() {
             <span className="text-blue-base mx-1">|</span>
           </button>
           <button
-            onClick={handleClikPopupServices}
+            onClick={() => togglePopup("services")}
             className="group flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.services")}
@@ -188,7 +171,7 @@ function Header() {
           </Link>
           <span className="text-blue-base mx-1">|</span>
           <button
-            onClick={handleClikPopupIdioma}
+            onClick={() => togglePopup("idioma")}
             className="group flex items-center justify-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple"
           >
             {t("header.language")}
@@ -219,10 +202,10 @@ function Header() {
         </div>
       </header>
 
-      {queHacemos && (
+      {openPopup === "qh" && (
         <div
           className="hidden lg:block fixed left-0 right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
-          style={{ top: popupPosition }}
+          style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
             <Link
@@ -250,18 +233,12 @@ function Header() {
         </div>
       )}
 
-      {servicios && (
+      {openPopup === "services" && (
         <div
           className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
-          style={{ top: popupPosition }}
+          style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
-            {/* <li
-              onMouseEnter={handleMouseEnter}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.for_students")}
-            </li> */}
             <Link
               to={"/gestion-de-la-permanencia"}
               onClick={handleNav}
@@ -294,75 +271,30 @@ function Header() {
         </div>
       )}
 
-      {students && (
-        <div
-          className="hidden lg:block fixed left-0 top-0 items-center right-0  bg-primary-purple text-white z-50 popup-animation text-lg"
-          style={{ top: popupPositionStudents }}
-        >
-          <ul className="flex items-center justify-center gap-12 p-10 ">
-            <Link
-              to="/ApoyoAcademico"
-              onClick={handleNav}
-              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-            >
-              <span className="font-bold">01.</span>{" "}
-              {t("header.sub_header.academic_support")}
-            </Link>
-            {/* <Link
-              to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
-              onClick={handleNav}
-              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-            >
-              <span className="font-bold">02. </span>{" "}
-              {t("header.sub_header.boe")}
-            </Link>*/}
-            <Link
-              to="/AcompañamientoOrientacion"
-              onClick={handleNav}
-              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-            >
-              <span className="font-bold">02. </span>
-              {t("header.sub_header.accompaniment_and_guidance")}
-            </Link>
-            <Link
-              to="/Repositorio"
-              onClick={handleNav}
-              className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-            >
-              <span className="font-bold">03. </span>{" "}
-              {t("header.sub_header.repository")}
-            </Link>
-          </ul>
-        </div>
-      )}
-
-      {idioma && (
+      {openPopup === "idioma" && (
         <div
           className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
-          style={{ top: popupPosition }}
+          style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
-            <li
-              onClick={() => {
-                i18n.changeLanguage("en");
-                localStorage.setItem("i18nextLng", "en");
-                handleNav();
-              }}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.options_english")}
-            </li>
-            <li
-              onClick={() => {
-                i18n.changeLanguage("es");
-                localStorage.setItem("i18nextLng", "es");
-                handleNav();
-              }}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {" "}
-              {t("header.options_spanish")}{" "}
-            </li>
+            {LANGUAGES.map((lang) => (
+              <li
+                key={lang.code}
+                role="button"
+                tabIndex={0}
+                onClick={() => handleChangeLanguage(lang.code)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    handleChangeLanguage(lang.code);
+                  }
+                }}
+                aria-label={t(lang.labelKey)}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t(lang.labelKey)}
+              </li>
+            ))}
           </ul>
         </div>
       )}
@@ -442,7 +374,7 @@ function Header() {
               className="flex-shrink-0 relative -top-[3px]"
               size={20}
             />
-            <button type="button" onClick={handleClikPopupQH} className="group flex items-center">
+            <button type="button" onClick={() => togglePopup("qh")} className="group flex items-center">
               {t("header.what_we_do")}{" "}
               <svg
                 className="ml-1 text-blue-base group-hover:fill-primary-purple w-3 h-3"
@@ -454,7 +386,7 @@ function Header() {
             </button>
           </div>
 
-          {queHacemos && (
+          {openPopup === "qh" && (
             <ul className="pl-4">
               <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
                 <Link to="/dataAnalytics" onClick={handleNav}>
@@ -487,7 +419,7 @@ function Header() {
             />
             <button
               type="button"
-              onClick={handleClikPopupServices}
+              onClick={() => togglePopup("services")}
               className="group flex items-center"
             >
               {t("header.services")}{" "}
@@ -501,59 +433,8 @@ function Header() {
             </button>
           </div>
 
-          {servicios && (
+          {openPopup === "services" && (
             <ul className="pl-4">
-              {/*<li
-                onMouseEnter={handleMouseEnter}
-                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple"
-              >
-                {t("header.sub_header.for_students")}
-
-                {students && (
-                  <ul className="pl-4">
-                    <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out">
-                      <Link
-                        to="/ApoyoAcademico"
-                        onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-                      >
-                        <span className="font-bold">01.</span>{" "}
-                        {t("header.sub_header.academic_support")}
-                      </Link>
-                    </li>
-                    {/*<li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                      <Link
-                        to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd"
-                        onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-                      >
-                        <span className="font-bold">02. </span>{" "}
-                        {t("header.sub_header.boe")}
-                      </Link>
-                    </li> /*}
-                    <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
-                      <Link
-                        to="/AcompañamientoOrientacion"
-                        onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-                      >
-                        <span className="font-bold">02. </span>
-                        {t("header.sub_header.accompaniment_and_guidance")}
-                      </Link>
-                    </li>
-                    <li className="p-2 text-dark-blue font-impact uppercase leading-none transition duration-400 ease-in-out">
-                      <Link
-                        to="/Repositorio"
-                        onClick={handleNav}
-                        className=" hover:opacity-55 hover:text-dark-blue cursor-pointer"
-                      >
-                        <span className="font-bold">03. </span>{" "}
-                        {t("header.sub_header.repository")}
-                      </Link>
-                    </li>
-                  </ul>
-                )}
-              </li>*/}
               <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out">
                 <Link
                   to={"/gestion-de-la-permanencia"}
@@ -617,7 +498,7 @@ function Header() {
               className="flex-shrink-0 relative -top-[3px]"
               size={20}
             />
-            <button type="button" onClick={handleClikPopupIdioma} className="group flex items-center">
+            <button type="button" onClick={() => togglePopup("idioma")} className="group flex items-center">
               {t("header.language")}{" "}
               <svg
                 className="ml-1 text-blue-base group-hover:fill-primary-purple w-3 h-3"
@@ -629,28 +510,28 @@ function Header() {
             </button>
           </div>
 
-          {idioma && (
+          {openPopup === "idioma" && (
             <ul className="pl-4">
-              <li
-                onClick={() => {
-                  i18n.changeLanguage("en");
-                  localStorage.setItem("i18nextLng", "en");
-                  handleNav();
-                }}
-                className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer"
-              >
-                {t("header.options_english")}
-              </li>
-              <li
-                onClick={() => {
-                  i18n.changeLanguage("es");
-                  localStorage.setItem("i18nextLng", "es");
-                  handleNav();
-                }}
-                className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer"
-              >
-                {t("header.options_spanish")}
-              </li>
+              {LANGUAGES.map((lang, index) => (
+                <li
+                  key={lang.code}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => handleChangeLanguage(lang.code)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      handleChangeLanguage(lang.code);
+                    }
+                  }}
+                  aria-label={t(lang.labelKey)}
+                  className={`p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple cursor-pointer${
+                    index === 0 ? " mt-4" : ""
+                  }`}
+                >
+                  {t(lang.labelKey)}
+                </li>
+              ))}
             </ul>
           )}
         </li>
