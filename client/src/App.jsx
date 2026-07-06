@@ -13,7 +13,6 @@ import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
 import Repositorio from "./Services/Repositorio";
 import Consultorias from "./views/Consulting/Consultorias.jsx";
 import Projects_ATV from "./views/Projects_ATV";
-import Universidades from "./projects/Universidades/Universidades";
 import Bootcamps from "./projects/Bootcamps/Bootcamps";
 import Colegio from "./projects/Colegios/Colegio";
 import Becarios from "./projects/Becarios/Becarios";
@@ -53,7 +52,6 @@ function App() {
             element={<StudentRetentionManagement />}
           />
           <Route path="/consultorias" element={<Consultorias />} />
-          {/* <Route path="/Universidades" element={<Universidades />} /> */}
           {/*<Route path="/Bootcamps" element={<Bootcamps />} />  */}
           {/* <Route path="/Becarios" element={<Becarios />} /> */}
           {/* <Route path="/colegios" element={<Colegio />} /> */}
