@@ -143,6 +143,8 @@
     "additional_comments": "Comentarios adicionales",
     "comments_placeholder": "Escribe tus comentarios aquí",
     "continue": "Continuar",
+    "loading_payment": "Cargando pasarela...",
+    "payment_service_unavailable": "El servicio de pagos no está disponible en este momento. Por favor intenta más tarde.",
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",
     "enter_amount_to_donate": "Ingresa el valor a donar",

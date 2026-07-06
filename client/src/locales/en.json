@@ -142,6 +142,8 @@
     "additional_comments": "Additional comments",
     "comments_placeholder": "Write your comments here",
     "continue": "Continue",
+    "loading_payment": "Loading payment gateway...",
+    "payment_service_unavailable": "Payment service is currently unavailable. Please try again later.",
     "secure_payments": "SECURE PAYMENTS BY",
     "other_amount": "Other amount",
     "enter_amount_to_donate": "Enter the donation amount",

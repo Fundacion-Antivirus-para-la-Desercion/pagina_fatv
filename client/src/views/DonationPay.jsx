@@ -55,13 +55,28 @@ function DonationPay() {
             })
           : "";
 
+  const [wompiStatus, setWompiStatus] = useState("loading");
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://checkout.wompi.co/widget.js";
     script.async = true;
+
+    const timeout = setTimeout(() => setWompiStatus("error"), 10000);
+
+    script.onload = () => {
+      clearTimeout(timeout);
+      setWompiStatus("ready");
+    };
+    script.onerror = () => {
+      clearTimeout(timeout);
+      setWompiStatus("error");
+    };
+
     document.body.appendChild(script);
 
     return () => {
+      clearTimeout(timeout);
       document.body.removeChild(script);
     };
   }, []);
@@ -346,14 +361,23 @@ function DonationPay() {
 
             
 
+            {wompiStatus === "error" && (
+              <p className="text-sm text-red-600 text-center">
+                {t("donation.payment_service_unavailable")}
+              </p>
+            )}
+
             <button
               className={`bg-dark-blue text-white font-semibold rounded-2xl py-4 px-8 ${
-                !isDonationAmountValid && "opacity-50 cursor-not-allowed"
+                (!isDonationAmountValid || wompiStatus !== "ready") &&
+                "opacity-50 cursor-not-allowed"
               }`}
               onClick={handleClick}
-              disabled={!isDonationAmountValid}
+              disabled={!isDonationAmountValid || wompiStatus !== "ready"}
             >
-              {t("donation.continue")}
+              {wompiStatus === "loading"
+                ? t("donation.loading_payment")
+                : t("donation.continue")}
             </button>
           </div>
         </div>
