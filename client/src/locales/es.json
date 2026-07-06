@@ -514,7 +514,6 @@
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {
-      
       "desercion-universitaria": {
         "alt": "La deserción universitaria",
         "title": "LA DESERCIÓN UNIVERSITARIA",
@@ -529,48 +528,7 @@
           ]
         }
       },
-      "conversatorio-envigado": {
-        "alt": "Conversatorio en universidad de Envigado",
-        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
-        "detail": {
-          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
-          "content": [
-            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
-            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
-          ]
-        }
-      },
-      "congreso-latinoamericano": {
-        "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
-        "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
-        "detail": {
-          "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
-          "content": [
-            "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
-          ]
-        }
-      },
-      "congreso-comunicaciones": {
-        "alt": "Ponencia en congreso internacional de comunicaciones",
-        "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
-        "detail": {
-          "title": "PONENCIA EN CONGRESO INTERNACIONAL DE COMUNICACIONES",
-          "content": [
-            "El pasado 2 de noviembre la Fundación Antivirus para la Deserción fue invitada al Congreso Internacional de Comunicaciones en la Universidad de Medellín, donde Daniela Correa, coordinadora de comunicaciones, estuvo a cargo de la ponencia de ‘La comunicación en emprendimientos sociales”. Este representó un logro para la Fundación y sus colaboradores, pues fue una oportunidad para dar a conocer el modelo transversal de las comunicaciones en un proyecto social y, a su vez, promocionar el propósito de aumentar los índices de permanencia."
-          ]
-        }
-      },
-      "mencion-honorifica": {
-        "alt": "Recibimos mención honorífica",
-        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
-        "detail": {
-          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
-          "content": [
-            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
-          ]
-        }
-      },
-      "encuentro-colaboradores": {
+      "importancia-de-los-datos": {
         "alt": "La importacia de los datos para acabar con la deserción",
         "title": "LA IMPORTANCIA DE LOS DATOS PARA ACABAR CON LA DESERCIÓN",
         "detail": {
@@ -580,6 +538,21 @@
             "Existe una idea reciente llamada: “diseño de algoritmos humanos”. Esta busca encontrar mejores soluciones a los desafíos que las personas enfrentan todos los días, ya sea para realizar un seguimiento del cambio climático en el mundo, agilizar los resultados de búsqueda de un apartamento o para acabar con la deserción universitaria. Si bien ahondaremos en lo último con más detalle, porque este es nuestro propósito, queremos mostrar primero como, hasta los problemas más mundanos, pueden resolverse con datos. Así las cosas, pensemos en el caso donde Pepita quiere comprar un apartamento. Cuando se le presentó esta situación Pepita intuyó que requería un equilibrio entre mirar apartamentos y elegir el que quisiera. De esta manera, ella entrevió que debía buscar los suficientes apartamentos para establecer un estándar y, luego de estos 11 días de búsqueda, comprometerse con el primer apartamento que vea que supere su estándar. Esto significa que se necesita un 37% del tiempo que se tiene para poder establecer objetivos. Este tipo de problemas pertenece a la clase de problemas denominados problema de parada óptimos.",
             "El ejemplo anterior es solo una ilustración de la capacidad que tienen los datos y la estadística. La vida está llena de problemas que son, sencillamente, muy difíciles. Un ejemplo de esto es la alta tasa de deserción que tenemos en Colombia (50% en promedio en cualquier facultad y 70% en las facultades de ingeniería). Esta cifra tan escalofriante dice más de las dificultades intrínsecas de este problema que sobre la falibilidad del cerebro humano. Para resolver este problema necesitamos entender su estructura fundamental y para esto necesitamos datos. No obstante, el valor clave de los datos es la capacidad de aprovecharlos al máximo: encontrar asociaciones relevantes dentro de los datos, manipularlos en conjuntos manejables y luego crear aplicaciones para representar mejor lo que se descubre. Esto lo aprendió el “Campeón de la tasa de graduación” (Graduation Rate Champion) de la Universidad de Texas, cuando se le puso el desafío de aumentar la tasa de graduados de 51% en el 2021 al 70% en el 2016.",
             "Para lograr su objetivo, el Campeón de la tasa de graduación reclutó un equipo de científicos de datos en la oficina de investigación institucional de la universidad, que estaba especializado en analítica predictiva. Al deconstruir los registros de decenas de miles de estudiantes recientes de esta Universidad, pudieron desarrollar una estadística modelo que combinó catorce variables separadas. Desde el ingreso familiar hasta el puntaje del SAT, el rango de la clase del colegio y el historial educativo de los padres, en un solo algoritmo que podría predecir de manera confiable la probabilidad de que un estudiante admitido se graduara. Este quipo llamó a esta nueva herramienta el Panel de índice de graduación de cuatro años. (Taugh, 2019) La ganancia que implica para una universidad aumentar el número de graduados se refleja en una tasa de movilidad social muy alta. El paso por una universidad forja el proceso de formación de la identidad de los adolescentes y realmente tiene un impacto positivo en la forma como resultan las vidas de las personas; cuan felices serán y que también van a negociar los desafíos del trabajo, la familia, la amistad y la comunidad."
+          ]
+        }
+      },
+      "una-oportunidad-que-cruzo-fronteras": {
+        "alt": "Una oportunidad que cruzó fronteras para los estudiantes",
+        "title": "UNA OPORTUNIDAD QUE CRUZO FRONTERAS",
+        "detail": {
+          "title": "UNA OPORTUNIDAD QUE CRUZO FRONTERAS",
+          "content": [
+            "Una oportunidad que cruzó fronteras, gracias a la colaboración de <bold>Fundación Gente Unida,</bold> <bold>Fundación Sofía Pérez de Soto,</bold> <bold>Fundación Antivirus para la Deserción y sus familias.</bold> 🇧🇷🇨🇴💻",
+            "¡Tres estudiantes, un mismo sueño! <bold>Libardo Navarro,</bold> <bold>Mateo Álvarez</bold> y <bold>Efraín Gómez,</bold> llevaron el talento de la <bold>Universidad Nacional,</bold> sede Medellín al <bold>Brazilian ICPC Summer School 2026,</bold> uno de los espacios más exigentes de programación competitiva en Latinoamérica.",
+            "Durante días se enfrentaron a algoritmos avanzados, nuevas estructuras de datos y al nivel de los mejores equipos del continente. Pero más allá del código, vivieron algo que no se aprende en clase: comunidad, disciplina y visión global. 🌎",
+            "Como Fundación Antivirus para la Deserción, creemos en el talento que persevera. Por eso apoyamos su participación en este encuentro internacional, convencidos de que acompañar también es abrir puertas.",
+            "Hoy regresan más preparados para su próximo desafío: la super regional de marzo, donde buscarán el pase al mundial. Y nosotros seguimos aquí, respaldando sus sueños hasta que se conviertan en logro.",
+            "Si tú también crees en el poder de la educación y el acompañamiento, camina con nosotros."
           ]
         }
       },
@@ -631,19 +604,63 @@
           ]
         }
       },
-      "movimiento-2024": {
-        "alt": "2024: Un año de movimiento, retos y transformación",
-        "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
+      "permanencia-educativa-de-calidad": {
+        "alt": "La importacia de los datos para acabar con la deserción",
+        "title": "PERMANENCIA EDUCATIVA DE CALIDAD",
         "detail": {
-          "title": "2024: UN AÑO DE MOVIMIENTO, RETOS Y TRANSFORMACIÓN",
+          "title": "PERMANENCIA EDUCATIVA DE CALIDAD",
           "content": [
-            "El 2024 fue un año de retos, preguntas, movimiento y gestión para la Fundación Antivirus para la Deserción, un año que nos invitó a repensar el camino y las formas en las que, como organización social, aportamos a la sociedad. En medio de un entorno desafiante reafirmamos nuestro compromiso por la educación y el acompañamiento a de miles de jóvenes en el país.",
-            "En el informe de gestión se refleja la constancia, el amor, la innovación y la pasión, que movieron cada una de nuestras acciones para cumplir nuestro propósito misional. Movilizamos conversaciones, campañas y alianzas visibilizando las necesidades de los jóvenes para no desertar, invitamos a estudiantes, tutores, docentes, instituciones y aliados a ser parte de una red que abraza, escucha y camina con ellos.",
-            "Durante este período, reflexionamos sobre la problemática, pero, sobre todo, nos pusimos en acción, realizando gestión de la permanencia en la Universidad de Antioquia y la Universidad Nacional en la carrera de Ingeniería de sistemas. Acompañamos los estudiantes becados de la Fundación Aurelio Llano Posada, Fundación Nutresa, la plataforma filantrópica Ver+ Beca Tech y del municipio de Itagüí; con el cual, también tuvimos un proceso de orientación sociovocacional con los jóvenes del grado 10° en 12 de sus Instituciones educativas públicas. Tramitamos la permanencia en los Bootcamps Nodo EAFIT y Código C13. Finalmente, acompañamos y empoderamos a las estudiantes Linieras del proceso formativo de la Corporación Tener Futuro.",
-            "Este informe es un reflejo del camino recorrido, del apoyo realizado y el trayecto que nos falta; es la muestra fehaciente de que cuando se suman esfuerzos se construye país y se cambian historias. Cada estudiante que logramos acompañar y cada joven que se gradúa, es una promesa cumplida. Así como cada aliado que se suma, hace parte de una educación más justa, cercana y sostenible. En el 2024, no hablamos solo de deserción, hablamos de permanencia, de esperanza, de futuro y de transformación social.",
-            "Agradecemos a todos nuestros aliados, quienes de forma directa o indirecta apoyaron nuestro trabajo para construir un país más próspero, pacífico y armonioso, en donde los sueños cuentan y los triunfos se trabajan. A los estudiantes que creen en nuestro acompañamiento y nos permiten transitar el camino juntos. A nuestros colaboradores que día a día hacen posible un cambio y entregan su cinco por ciento para una sociedad más consciente; gracias por creer en la Fundación Antivirus para la Deserción y por creer que juntos podemos lograrlo.",
-            "Continuaremos en acción, con la convicción de que podemos seguir construyendo redes de apoyo que hacen posible los sueños de muchos jóvenes.",
-            "Léelo aquí: ReporteAnual2024_final"
+            "La permanencia educativa hace referencia a la continuidad de los estudiantes en el sistema educativo. Esta asegura que los estudiantes no solo permanezcan, sino que lo hagan en condiciones óptimas de aprendizaje.",
+            "No basta con que asistan a clase; es fundamental que reciban una educación significativa, inclusiva y equitativa, que les permita desarrollar habilidades y conocimientos de manera efectiva y que alcancen bienestar socioemocional. En un mundo en constante cambio, el bienestar universitario debe ser dinámico y centrado en la persona. Este concepto implica varios factores clave y la planificación de objetivos concretos:",
+            "<bold>Acceso y equidad: </bold>garantizar que todos los estudiantes puedan permanecer y recibir una educación de calidad. Implementar políticas contra la discriminación por cualquier razón, a la vez que activar tecnologías y opciones de asistencia que garanticen la plena participación en la vida universitaria. <bold>Condiciones adecuadas:</bold> ofrecer una infraestructura adecuada, materiales didácticos actualizados, docentes capacitados y un ambiente seguro y motivador.",
+            "<bold>Currículo pertinente y flexible:</bold> diseñar un currículo que responda a las necesidades del mundo hoy, dinámico y ajustable, que fomente el pensamiento crítico, la creatividad y la resolución de problemas. <bold>Apoyo psicosocial:</bold> implementar estrategias para prevenir la deserción y tutorías, orientación socio vocacional y apoyo emocional. Programas de prevención del estrés, ansiedad y depresión, con enfoque en resiliencia y bienestar emocional.",
+            "<bold>Apoyo económico:</bold> ofrecer programas de becas, subsidios y oportunidades de trabajo estudiantil para reducir la deserción por razones económicas. Brindar opciones de alimentación saludable a bajo costo y facilidades para el acceso a residencias universitarias asequibles. <bold>Fomento del emprendimiento:</bold> promover la creación de incubadoras de startups, formación en innovación y acceso a redes de contacto. Programas de formación en herramientas tecnológicas, ciberseguridad y gestión de datos Para adaptarse al mundo digital. <bold>Participación de la comunidad:</bold> implicar a las familias, docentes, organizaciones de la sociedad civil (OSC) y gobiernos para fortalecer el compromiso con la educación. <bold>Voluntariado y compromiso social:</bold> Vincular a los estudiantes con la comunidad, promoviendo la responsabilidad social y la ciudadanía activa.",
+            "La permanencia educativa de calidad es esencial para reducir la desigualdad social y garantizar el desarrollo de ciudadanos preparados para contribuir al progreso de la sociedad. Garantizar la permanencia educativa con estándares de calidad es un desafío. En este contexto, la labor de las organizaciones de la sociedad civil se convierte en factor clave para fortalecer el acceso, la equidad y la excelencia. Ello supone que las universidades, tanto públicas como privadas, se abran a establecer alianzas focalizadas en la prevención de la deserción y mejoramiento de la permanencia. Que estén dispuestas a movilizar sus sistemas de bienestar para centrarlos en el individuo que presenta mayor vulnerabilidad académica, socioemocional, psicosocial y económica, de forma sistémica y articulada. La acción con las OSC refuerza el derecho a la educación, contribuye a la permanencia de calidad y coadyuva en la preparación de los estudiantes que enfrentarán los desafíos del futuro. "
+          ]
+        }
+      },
+      "reconocidos-por-la-facultad-de-minas": {
+        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
+        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+        "detail": {
+          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+          "content": [
+            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
+            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
+            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
+            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
+            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
+          ]
+        }
+      },
+      "conversatorio-envigado": {
+        "alt": "Conversatorio en universidad de Envigado",
+        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+        "detail": {
+          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+          "content": [
+            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
+            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
+          ]
+        }
+      },
+      "mencion-honorifica": {
+        "alt": "Recibimos mención honorífica",
+        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+        "detail": {
+          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+          "content": [
+            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
+          ]
+        }
+      },
+      "congreso-latinoamericano": {
+        "alt": "Participación en el XI congreso latino americano sobre el abandono en educación superior",
+        "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
+        "detail": {
+          "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
+          "content": [
+            "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
           ]
         }
       }

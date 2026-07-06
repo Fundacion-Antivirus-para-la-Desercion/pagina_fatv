@@ -61,7 +61,7 @@ const NewsDetail = () => {
         />
       </div>
 
-      <section className="relative bg-[#F6F6F6] mb-5 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-4 p-4 mt-6">
+      <section className="relative bg-[#F6F6F6] mb-5 grid grid-cols-1 xl:grid-cols-[8fr_2fr] 2xl:grid-cols-[7fr_3fr] gap-4 p-4 mt-6">
         <div
           id="grid-overlay"
           className="absolute inset-0 z-1"
@@ -78,7 +78,7 @@ const NewsDetail = () => {
         <div
           id="content"
           ref={contentRef}
-          className="relative rounded-2xl"
+          className="relative rounded-2xl min-w-0"
           style={{
             filter: "drop-shadow(8px 8px 24px rgba(34,45,86,0.20))",
           }}

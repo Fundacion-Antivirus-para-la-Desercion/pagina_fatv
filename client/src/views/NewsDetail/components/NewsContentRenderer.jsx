@@ -47,7 +47,7 @@ const NewsContentRenderer = ({ content, index }) => {
           <img
             src={content.value}
             alt=""
-            className="max-h-[410px] mx-auto object-contain rounded-xl"
+            className="bg-brand-blue-100 max-h-[410px] mx-auto object-contain rounded-xl"
           />
         </figure>
       );
