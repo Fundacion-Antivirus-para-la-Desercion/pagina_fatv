@@ -299,13 +299,6 @@
           "description": "Transforma necesidades en soluciones digitales funcionales y bien hechas."
         }
       }
-    },
-    "contentDA": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
     }
   },
   "communications": {
