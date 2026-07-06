@@ -1,13 +1,16 @@
-import Movimiento from "../../../src/assets/images/views/imagesNews/2024-un-año-de-movimiento-retos-y-transformación.jpeg";
 import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.webp";
 import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
-import Ponencia from "../../../src/assets/images/views/imagesNews/ponencia-en-congreso-internacional-de-omunicaciones.jpg";
+import Oportunidad from "../../../src/assets/images/views/imagesNews/una-oportunidad.webp";
+import Estudiantes from "../../../src/assets/images/views/imagesNews/estudiantes.webp";
+import Reconocimiento from "../../../src/assets/images/views/imagesNews/reconocimiento-facultad-minas.webp";
+import ReconocimientoDos from "../../../src/assets/images/views/imagesNews/reconocimiento-facultad-minas-dos.webp";
 import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
 import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
 import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
-import MovimientoDos from "../../../src/assets/images/views/imagesNews/movimiento-2.jpeg";
 import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
+import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
+import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
@@ -38,12 +41,12 @@ const buildNewsArray = (t) => [
           value: t("news.items.desercion-universitaria.detail.content.1"),
         },
         {
-          type: "img",
-          value: Desercion,
-        },
-        {
           type: "parrafo",
           value: t("news.items.desercion-universitaria.detail.content.2"),
+        },
+        {
+          type: "img",
+          value: Desercion,
         },
         {
           type: "parrafo",
@@ -57,96 +60,16 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    slug: "conversatorio-envigado",
-    img: Conversatorio,
-    alt: t("news.items.conversatorio-envigado.alt"),
-    title: t("news.items.conversatorio-envigado.title"),
-    newDetailContent: {
-      title: t("news.items.conversatorio-envigado.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.conversatorio-envigado.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.conversatorio-envigado.detail.content.1"),
-        },
-        {
-          type: "img",
-          value: Conversatorio,
-        },
-      ],
-    },
-  },
-  {
-    slug: "congreso-latinoamericano",
-    img: Participacion,
-    alt: t("news.items.congreso-latinoamericano.alt"),
-    title: t("news.items.congreso-latinoamericano.title"),
-    newDetailContent: {
-      title: t("news.items.congreso-latinoamericano.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.congreso-latinoamericano.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Participacion,
-        },
-      ],
-    },
-  },
-  {
-    slug: "congreso-comunicaciones",
-    img: Ponencia,
-    alt: t("news.items.congreso-comunicaciones.alt"),
-    title: t("news.items.congreso-comunicaciones.title"),
-    newDetailContent: {
-      title: t("news.items.congreso-comunicaciones.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.congreso-comunicaciones.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Ponencia,
-        },
-      ],
-    },
-  },
-  {
-    slug: "mencion-honorifica",
-    img: Mencion,
-    alt: t("news.items.mencion-honorifica.alt"),
-    title: t("news.items.mencion-honorifica.title"),
-    newDetailContent: {
-      title: t("news.items.mencion-honorifica.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t("news.items.mencion-honorifica.detail.content.0"),
-        },
-        {
-          type: "img",
-          value: Mencion,
-        },
-      ],
-    },
-  },
-  {
-    slug: "encuentro-colaboradores",
+    slug: "importancia-de-los-datos",
     img: EncuentroColaboradores,
-    alt: t("news.items.encuentro-colaboradores.alt"),
-    title: t("news.items.encuentro-colaboradores.title"),
+    alt: t("news.items.importancia-de-los-datos.alt"),
+    title: t("news.items.importancia-de-los-datos.title"),
     newDetailContent: {
-      title: t("news.items.encuentro-colaboradores.detail.title"),
+      title: t("news.items.importancia-de-los-datos.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.0"),
+          value: t("news.items.importancia-de-los-datos.detail.content.0"),
         },
         {
           type: "img",
@@ -154,15 +77,66 @@ const buildNewsArray = (t) => [
         },
         {
           type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.1"),
+          value: t("news.items.importancia-de-los-datos.detail.content.1"),
         },
         {
           type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.2"),
+          value: t("news.items.importancia-de-los-datos.detail.content.2"),
         },
         {
           type: "parrafo",
-          value: t("news.items.encuentro-colaboradores.detail.content.3"),
+          value: t("news.items.importancia-de-los-datos.detail.content.3"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "una-oportunidad-que-cruzo-fronteras",
+    img: Oportunidad,
+    alt: t("news.items.una-oportunidad-que-cruzo-fronteras.alt"),
+    title: t("news.items.una-oportunidad-que-cruzo-fronteras.title"),
+    newDetailContent: {
+      title: t("news.items.una-oportunidad-que-cruzo-fronteras.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.0",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.4",
+          ),
+        },
+        {
+          type: "img",
+          value: Estudiantes,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.5",
+          ),
         },
       ],
     },
@@ -332,50 +306,159 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    slug: "movimiento-2024",
-    img: Movimiento,
-    alt: t("news.items.movimiento-2024.alt"),
-    title: t("news.items.movimiento-2024.title"),
+    slug: "permanencia-educativa-de-calidad",
+    img: ArticleLuisS,
+    alt: t("news.items.permanencia-educativa-de-calidad.alt"),
+    title: t("news.items.permanencia-educativa-de-calidad.title"),
     newDetailContent: {
-      title: t("news.items.movimiento-2024.detail.title"),
+      title: t("news.items.permanencia-educativa-de-calidad.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: LuisS,
+        },
+        {
+          type: "parrafo-quote",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.0",
+          ),
+          author: "Luis Fernando Sánchez",
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.4",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.permanencia-educativa-de-calidad.detail.content.5",
+          ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "reconocidos-por-la-facultad-de-minas",
+    img: Reconocimiento,
+    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
+    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
+    newDetailContent: {
+      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.0"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.1"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.2"),
-        },
-        {
-          type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.3"),
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
+          ),
         },
         {
           type: "img",
-          value: Movimiento,
+          value: ReconocimientoDos,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
+          ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "conversatorio-envigado",
+    img: Conversatorio,
+    alt: t("news.items.conversatorio-envigado.alt"),
+    title: t("news.items.conversatorio-envigado.title"),
+    newDetailContent: {
+      title: t("news.items.conversatorio-envigado.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.conversatorio-envigado.detail.content.0"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.conversatorio-envigado.detail.content.1"),
         },
         {
           type: "img",
-          value: MovimientoDos,
+          value: Conversatorio,
         },
-
+      ],
+    },
+  },
+  {
+    slug: "mencion-honorifica",
+    img: Mencion,
+    alt: t("news.items.mencion-honorifica.alt"),
+    title: t("news.items.mencion-honorifica.title"),
+    newDetailContent: {
+      title: t("news.items.mencion-honorifica.detail.title"),
+      content: [
         {
           type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.4"),
+          value: t("news.items.mencion-honorifica.detail.content.0"),
         },
+        {
+          type: "img",
+          value: Mencion,
+        },
+      ],
+    },
+  },
+  {
+    slug: "congreso-latinoamericano",
+    img: Participacion,
+    alt: t("news.items.congreso-latinoamericano.alt"),
+    title: t("news.items.congreso-latinoamericano.title"),
+    newDetailContent: {
+      title: t("news.items.congreso-latinoamericano.detail.title"),
+      content: [
         {
           type: "parrafo",
-          value: t("news.items.movimiento-2024.detail.content.5"),
+          value: t("news.items.congreso-latinoamericano.detail.content.0"),
         },
         {
-          type: "link",
-          value: t("news.items.movimiento-2024.detail.content.6"),
-          url: "https://fundacionantivirus-my.sharepoint.com/personal/coordinaciontecnologiadatos_fundacionantivirusparaladesercion_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos%2FReporteAnual2024%5Ffinal%2Epdf&parent=%2Fpersonal%2Fcoordinaciontecnologiadatos%5Ffundacionantivirusparaladesercion%5Forg%2FDocuments%2FDatos%20adjuntos&ga=1",
+          type: "img",
+          value: Participacion,
         },
       ],
     },

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./News.css";
 import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import { useNavigate } from "react-router-dom";
@@ -24,15 +23,15 @@ function News() {
         />
       </div>
 
-      <section className="noticias-content grid gap-12 p-8 md:p-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
+      <section className="noticias-content grid gap-20 max-w-[80%] py-24 mx-auto  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-stretch">
         {buildNewsArray(t).map((news) => (
           <div key={news.slug} className="flex flex-col">
-            <img className="mb-3 aspect-ratio rounded-xl" src={news.img} alt={news.alt} />
+            <img className="mb-3 aspect-ratio rounded-lg" src={news.img} alt={news.alt} />
             <p className="flex items-center text-base md:text-lg font-impact text-primary-purple mb-2">
               <FaRegCalendarMinus className="mr-1 w-7 h-7" />
               {t("news.category")}
             </p>
-            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base max-md:text-3xl leading-9 flex-grow">
+            <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base leading-9 flex-grow">
               {news.title}
             </p>
             <hr className="mb-3" />
