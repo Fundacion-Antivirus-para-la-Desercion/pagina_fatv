@@ -22,6 +22,7 @@ function ContactUs() {
 
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
+  const [sendError, setSendError] = useState(false);
 
   const validate = () => {
     let tempErrors = {};
@@ -60,8 +61,8 @@ function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      setOpen(true);
-      setIsSending(true); // Cambiar el estado a enviando
+      setIsSending(true);
+      setSendError(false);
       const emailParams = {
         from_name: formData.fullName,
         email_id: formData.email,
@@ -75,13 +76,12 @@ function ContactUs() {
 
       emailjs
         .send(
-          "service_ciqn2wp", //  service ID de EmailJS
-          "template_oacf6ns", //  template ID de EmailJS
+          "service_ciqn2wp",
+          "template_oacf6ns",
           emailParams,
-          "06in3EAhhtx15iDoZ", //  public key de EmailJS
+          "06in3EAhhtx15iDoZ",
         )
-        .then((response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        .then(() => {
           setFormData({
             fullName: "",
             email: "",
@@ -89,17 +89,14 @@ function ContactUs() {
             subject: "",
             message: "",
             terms: false,
-          }); // Limpiar el formulario
-          setIsSending(false); // Restablecer el estado de envío
+          });
+          setIsSending(false);
+          setOpen(true);
+          setTimeout(() => setOpen(false), 3000);
         })
-        .catch((err) => {
-          console.error("FAILED...", err);
-          setIsSending(false); // Restablecer el estado de envío incluso en caso de error
-        })
-        .finally(() => {
-          setTimeout(() => {
-            setOpen(false);
-          }, 3000);
+        .catch(() => {
+          setIsSending(false);
+          setSendError(true);
         });
     }
   };
@@ -302,14 +299,20 @@ function ContactUs() {
                   <p className="text-primary-yellow w-full">{errors.terms}</p>
                 )}
               </div>
+              {sendError && (
+                <p className="mt-2 text-sm text-primary-yellow text-center">
+                  {t("contactUs.validation.sendError")}
+                </p>
+              )}
               <div className="mt-4 flex justify-center">
                 <button
                   type="submit"
                   className={`w-full md:w-1/2 bg-white text-dark-blue font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
-                    isSending ? "cursor-not-allowed" : ""
+                    isSending ? "cursor-not-allowed opacity-60" : ""
                   }`}
+                  disabled={isSending}
                 >
-                  {t("contactUs.form.sendButton")}
+                  {isSending ? t("contactUs.form.sending") : t("contactUs.form.sendButton")}
                 </button>
               </div>
             </form>

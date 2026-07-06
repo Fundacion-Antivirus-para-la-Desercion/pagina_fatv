@@ -142,6 +142,8 @@
     "additional_comments": "Additional comments",
     "comments_placeholder": "Write your comments here",
     "continue": "Continue",
+    "loading_payment": "Loading payment gateway...",
+    "payment_service_unavailable": "Payment service is currently unavailable. Please try again later.",
     "secure_payments": "SECURE PAYMENTS BY",
     "other_amount": "Other amount",
     "enter_amount_to_donate": "Enter the donation amount",
@@ -907,16 +909,6 @@
       "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
     }
   },
-  "repositorio": {
-    "title": "Services",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Youtube Channel",
-      "description": "It is a digital academic space with different subjects, available for viewing on Youtube."
-    }
-  },
   "consultorias": {
     "banner": {
       "h1": "Student Retention",
@@ -1129,10 +1121,12 @@
       "phone_required": " Phone is required.",
       "subject_required": " Subject is required.",
       "message_required": " Message is required.",
-      "terms_required": " You must accept the terms and conditions."
+      "terms_required": " You must accept the terms and conditions.",
+      "send_error": "An error occurred while sending the message. Please try again."
     },
     "message_placeholder": "MESSAGE",
     "terms_label": "I accept the terms and conditions",
+    "sending": "Sending...",
     "submit_button": "Submit",
     "modal": {
       "title": "Message sent successfully!",
@@ -1368,7 +1362,8 @@
       "subject": "SUBJECT",
       "message": "MESSAGE",
       "termsConditions": "I accept the terms and conditions",
-      "sendButton": "Send"
+      "sendButton": "Send",
+      "sending": "Sending..."
     },
     "validation": {
       "fullNameRequired": " Full name is required.",
@@ -1376,7 +1371,8 @@
       "phoneRequired": " Phone is required.",
       "subjectRequired": " Subject is required.",
       "messageRequired": " Message is required.",
-      "termsRequired": " You must accept the terms and conditions."
+      "termsRequired": " You must accept the terms and conditions.",
+      "sendError": "An error occurred while sending the message. Please try again."
     },
     "modal": {
       "title": "Message sent",
@@ -1402,5 +1398,15 @@
     "title": "Oops!",
     "message": "Sorry, page not found",
     "button": "Back to Home"
+  },
+  "repositorio": {
+    "title": "Services",
+    "academic_repository": {
+      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
+    },
+    "youtube_channel": {
+      "title": "Link / Youtube Channel",
+      "description": "It is a digital academic space with different subjects, available for viewing on Youtube."
+    }
   }
 }

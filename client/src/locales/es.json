@@ -1108,7 +1108,8 @@
       "phone_required": " Teléfono es requerido.",
       "subject_required": " Asunto es requerido.",
       "message_required": " Mensaje es requerido.",
-      "terms_required": " Debes aceptar los términos y condiciones."
+      "terms_required": " Debes aceptar los términos y condiciones.",
+      "send_error": "Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo."
     },
     "message_placeholder": "MENSAJE",
     "terms_label": "Acepto los términos y condiciones",
@@ -1347,7 +1348,8 @@
       "subject": "ASUNTO",
       "message": "MENSAJE",
       "termsConditions": "Acepto los términos y condiciones",
-      "sendButton": "Enviar"
+      "sendButton": "Enviar",
+      "sending": "Enviando..."
     },
     "validation": {
       "fullNameRequired": " Nombre completo es requerido.",
@@ -1355,7 +1357,8 @@
       "phoneRequired": " Teléfono es requerido.",
       "subjectRequired": " Asunto es requerido.",
       "messageRequired": " Mensaje es requerido.",
-      "termsRequired": " Debes aceptar los términos y condiciones."
+      "termsRequired": " Debes aceptar los términos y condiciones.",
+      "sendError": "Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo."
     },
     "modal": {
       "title": "Mensaje enviado",
