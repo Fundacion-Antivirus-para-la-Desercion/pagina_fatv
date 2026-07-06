@@ -143,6 +143,8 @@
     "additional_comments": "Comentarios adicionales",
     "comments_placeholder": "Escribe tus comentarios aquí",
     "continue": "Continuar",
+    "loading_payment": "Cargando pasarela...",
+    "payment_service_unavailable": "El servicio de pagos no está disponible en este momento. Por favor intenta más tarde.",
     "secure_payments": "PAGOS SEGUROS POR",
     "other_amount": "Otro valor",
     "enter_amount_to_donate": "Ingresa el valor a donar",
@@ -299,13 +301,6 @@
           "description": "Transforma necesidades en soluciones digitales funcionales y bien hechas."
         }
       }
-    },
-    "contentDA": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
     }
   },
   "communications": {
@@ -423,16 +418,6 @@
           "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
         }
       }
-    },
-    "commun": {
-      "title_banner": "lo que hacemos",
-      "our_model": "NUESTRO MODELO",
-      "subtitle": "COMUNICACIONES",
-      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-      "alt_image": "Equipo de Comunicaciones"
     }
   },
   "foundation": {
@@ -556,41 +541,6 @@
           ]
         }
       },
-      "reconocidos-por-la-facultad-de-minas": {
-        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
-        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
-        "detail": {
-          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
-          "content": [
-            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
-            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
-            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
-            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
-            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
-          ]
-        }
-      },
-      "conversatorio-envigado": {
-        "alt": "Conversatorio en universidad de Envigado",
-        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
-        "detail": {
-          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
-          "content": [
-            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
-            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
-          ]
-        }
-      },
-      "mencion-honorifica": {
-        "alt": "Recibimos mención honorífica",
-        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
-        "detail": {
-          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
-          "content": [
-            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
-          ]
-        }
-      },
       "acompanamiento-becarios-rurales": {
         "alt": "La importacia de los datos para acabar con la deserción",
         "title": "ACOMPAÑAMIENTO INTEGRAL A BECARIOS RURALES EN COLOMBIA",
@@ -651,6 +601,41 @@
             "<bold>Currículo pertinente y flexible:</bold> diseñar un currículo que responda a las necesidades del mundo hoy, dinámico y ajustable, que fomente el pensamiento crítico, la creatividad y la resolución de problemas. <bold>Apoyo psicosocial:</bold> implementar estrategias para prevenir la deserción y tutorías, orientación socio vocacional y apoyo emocional. Programas de prevención del estrés, ansiedad y depresión, con enfoque en resiliencia y bienestar emocional.",
             "<bold>Apoyo económico:</bold> ofrecer programas de becas, subsidios y oportunidades de trabajo estudiantil para reducir la deserción por razones económicas. Brindar opciones de alimentación saludable a bajo costo y facilidades para el acceso a residencias universitarias asequibles. <bold>Fomento del emprendimiento:</bold> promover la creación de incubadoras de startups, formación en innovación y acceso a redes de contacto. Programas de formación en herramientas tecnológicas, ciberseguridad y gestión de datos Para adaptarse al mundo digital. <bold>Participación de la comunidad:</bold> implicar a las familias, docentes, organizaciones de la sociedad civil (OSC) y gobiernos para fortalecer el compromiso con la educación. <bold>Voluntariado y compromiso social:</bold> Vincular a los estudiantes con la comunidad, promoviendo la responsabilidad social y la ciudadanía activa.",
             "La permanencia educativa de calidad es esencial para reducir la desigualdad social y garantizar el desarrollo de ciudadanos preparados para contribuir al progreso de la sociedad. Garantizar la permanencia educativa con estándares de calidad es un desafío. En este contexto, la labor de las organizaciones de la sociedad civil se convierte en factor clave para fortalecer el acceso, la equidad y la excelencia. Ello supone que las universidades, tanto públicas como privadas, se abran a establecer alianzas focalizadas en la prevención de la deserción y mejoramiento de la permanencia. Que estén dispuestas a movilizar sus sistemas de bienestar para centrarlos en el individuo que presenta mayor vulnerabilidad académica, socioemocional, psicosocial y económica, de forma sistémica y articulada. La acción con las OSC refuerza el derecho a la educación, contribuye a la permanencia de calidad y coadyuva en la preparación de los estudiantes que enfrentarán los desafíos del futuro. "
+          ]
+        }
+      },
+      "reconocidos-por-la-facultad-de-minas": {
+        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
+        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+        "detail": {
+          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+          "content": [
+            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
+            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
+            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
+            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
+            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
+          ]
+        }
+      },
+      "conversatorio-envigado": {
+        "alt": "Conversatorio en universidad de Envigado",
+        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+        "detail": {
+          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+          "content": [
+            "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
+            "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
+          ]
+        }
+      },
+      "mencion-honorifica": {
+        "alt": "Recibimos mención honorífica",
+        "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+        "detail": {
+          "title": "RECIBIMOS MENCIÓN HONORÍFICA",
+          "content": [
+            "El premio Germán Saldarriaga del Valle 2022, entregado cada año por el Club Rotario de Medellín, se encargó de premiar a las instituciones sin ánimo de lucro cuyo aporte hubiese brindando solución a las dificultades y brechas educativas de la comunidad en tiempos de pandemia por Covid-19, adaptándose e innovando dentro de este campo. De las 102 propuestas presentadas desde 14 departamentos del país, cinco fueron las ganadoras del premio y tres recibieron una mención honorífica, entre ellas la Fundación Antivirus para la Deserción."
           ]
         }
       },
@@ -911,16 +896,6 @@
       "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
     }
   },
-  "repositorio": {
-    "title": "Servicios",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Canal youtube",
-      "description": "Es un espacio digital académico, de diferentes materias, disponibles para la consulta en Youtube."
-    }
-  },
   "consultorias": {
     "banner": {
       "h1": "Consultoría en Permanencia",
@@ -1133,7 +1108,8 @@
       "phone_required": " Teléfono es requerido.",
       "subject_required": " Asunto es requerido.",
       "message_required": " Mensaje es requerido.",
-      "terms_required": " Debes aceptar los términos y condiciones."
+      "terms_required": " Debes aceptar los términos y condiciones.",
+      "send_error": "Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo."
     },
     "message_placeholder": "MENSAJE",
     "terms_label": "Acepto los términos y condiciones",
@@ -1372,7 +1348,8 @@
       "subject": "ASUNTO",
       "message": "MENSAJE",
       "termsConditions": "Acepto los términos y condiciones",
-      "sendButton": "Enviar"
+      "sendButton": "Enviar",
+      "sending": "Enviando..."
     },
     "validation": {
       "fullNameRequired": " Nombre completo es requerido.",
@@ -1380,7 +1357,8 @@
       "phoneRequired": " Teléfono es requerido.",
       "subjectRequired": " Asunto es requerido.",
       "messageRequired": " Mensaje es requerido.",
-      "termsRequired": " Debes aceptar los términos y condiciones."
+      "termsRequired": " Debes aceptar los términos y condiciones.",
+      "sendError": "Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo."
     },
     "modal": {
       "title": "Mensaje enviado",
