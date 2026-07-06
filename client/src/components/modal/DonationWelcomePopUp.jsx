@@ -18,7 +18,7 @@ const DonationWelcomePopUp = () => {
   const { t } = useTranslation();
 
   const addDonationPopupCookie = () => {
-    const DATE_EXPIRATION_MS = 15 * 24 * 60 * 60 * 1000;
+    const DATE_EXPIRATION_MS = 7 * 24 * 60 * 60 * 1000;
 
     const expires = new Date(Date.now() + DATE_EXPIRATION_MS).toUTCString();
 
@@ -51,7 +51,11 @@ const DonationWelcomePopUp = () => {
       timeoutRef.current = setTimeout(() => close(), AUTO_CLOSE_MS);
     }, 800);
 
-    return () => clearTimeout(openDelay);
+    return () => {
+      clearTimeout(openDelay);
+      clearInterval(intervalRef.current);
+      clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   const close = () => {
