@@ -34,6 +34,7 @@ function ProVocacion() {
 
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
+  const [sendError, setSendError] = useState(false);
 
   const validate = () => {
     let tempErrors = {};
@@ -70,8 +71,8 @@ function ProVocacion() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      setOpen(true);
-      setIsSending(true); // Cambiar el estado a enviando
+      setIsSending(true);
+      setSendError(false);
       const emailParams = {
         from_name: formData.fullName,
         email_id: formData.email,
@@ -83,13 +84,12 @@ function ProVocacion() {
 
       emailjs
         .send(
-          "service_ciqn2wp", //  service ID de EmailJS
-          "template_oacf6ns", //  template ID de EmailJS
+          "service_ciqn2wp",
+          "template_oacf6ns",
           emailParams,
-          "06in3EAhhtx15iDoZ", //  public key de EmailJS
+          "06in3EAhhtx15iDoZ",
         )
-        .then((response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        .then(() => {
           setFormData({
             fullName: "",
             email: "",
@@ -97,17 +97,14 @@ function ProVocacion() {
             subject: "",
             message: "",
             terms: false,
-          }); // Limpiar el formulario
-          setIsSending(false); // Restablecer el estado de envío
+          });
+          setIsSending(false);
+          setOpen(true);
+          setTimeout(() => setOpen(false), 3000);
         })
-        .catch((err) => {
-          console.error("FAILED...", err);
-          setIsSending(false); // Restablecer el estado de envío incluso en caso de error
-        })
-        .finally(() => {
-          setTimeout(() => {
-            setOpen(false);
-          }, 3000);
+        .catch(() => {
+          setIsSending(false);
+          setSendError(true);
         });
     }
   };
@@ -403,14 +400,20 @@ function ProVocacion() {
                 <p className="w-full text-primary-yellow">{errors.terms}</p>
               )}
             </div>
+            {sendError && (
+              <p className="mt-2 text-sm text-primary-yellow text-center">
+                {t("provocacion.validation.send_error")}
+              </p>
+            )}
             <div className="mt-4 flex justify-center">
               <button
                 type="submit"
                 className={`w-full md:w-1/2 bg-white text-dark-blue font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg ${
-                  isSending ? "cursor-not-allowed" : ""
+                  isSending ? "cursor-not-allowed opacity-60" : ""
                 }`}
+                disabled={isSending}
               >
-                {t("provocacion.submit_button")}
+                {isSending ? t("provocacion.sending") : t("provocacion.submit_button")}
               </button>
             </div>
           </form>

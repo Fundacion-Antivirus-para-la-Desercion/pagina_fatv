@@ -142,6 +142,8 @@
     "additional_comments": "Additional comments",
     "comments_placeholder": "Write your comments here",
     "continue": "Continue",
+    "loading_payment": "Loading payment gateway...",
+    "payment_service_unavailable": "Payment service is currently unavailable. Please try again later.",
     "secure_payments": "SECURE PAYMENTS BY",
     "other_amount": "Other amount",
     "enter_amount_to_donate": "Enter the donation amount",
@@ -298,13 +300,6 @@
           "description": "Transforms needs into digital solutions that are functional and built to last."
         }
       }
-    },
-    "contentDA": {
-      "title": "Our Model",
-      "subtitle": "Data Analytics",
-      "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
-      "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
-      "alt_image": "Data analytics chart"
     }
   },
   "communications": {
@@ -422,16 +417,6 @@
           "description": "Builds meaningful connections that transform lives and unite the FATV community."
         }
       }
-    },
-    "commun": {
-      "title_banner": "what we do",
-      "our_model": "OUR MODEL",
-      "subtitle": "COMMUNICATIONS",
-      "paragraph_1": "This area is made up of social communicators and graphic designers.",
-      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
-      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
-      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-      "alt_image": "Communications Team"
     }
   },
   "foundation": {
@@ -907,16 +892,6 @@
       "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
     }
   },
-  "repositorio": {
-    "title": "Services",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Youtube Channel",
-      "description": "It is a digital academic space with different subjects, available for viewing on Youtube."
-    }
-  },
   "consultorias": {
     "banner": {
       "h1": "Student Retention",
@@ -1129,10 +1104,12 @@
       "phone_required": " Phone is required.",
       "subject_required": " Subject is required.",
       "message_required": " Message is required.",
-      "terms_required": " You must accept the terms and conditions."
+      "terms_required": " You must accept the terms and conditions.",
+      "send_error": "An error occurred while sending the message. Please try again."
     },
     "message_placeholder": "MESSAGE",
     "terms_label": "I accept the terms and conditions",
+    "sending": "Sending...",
     "submit_button": "Submit",
     "modal": {
       "title": "Message sent successfully!",
@@ -1368,7 +1345,8 @@
       "subject": "SUBJECT",
       "message": "MESSAGE",
       "termsConditions": "I accept the terms and conditions",
-      "sendButton": "Send"
+      "sendButton": "Send",
+      "sending": "Sending..."
     },
     "validation": {
       "fullNameRequired": " Full name is required.",
@@ -1376,7 +1354,8 @@
       "phoneRequired": " Phone is required.",
       "subjectRequired": " Subject is required.",
       "messageRequired": " Message is required.",
-      "termsRequired": " You must accept the terms and conditions."
+      "termsRequired": " You must accept the terms and conditions.",
+      "sendError": "An error occurred while sending the message. Please try again."
     },
     "modal": {
       "title": "Message sent",
