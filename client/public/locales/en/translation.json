@@ -300,13 +300,6 @@
           "description": "Transforms needs into digital solutions that are functional and built to last."
         }
       }
-    },
-    "contentDA": {
-      "title": "Our Model",
-      "subtitle": "Data Analytics",
-      "paragraph1": "The Data Analytics area is based on a comprehensive and open-source solution for student retention supported by technology, where Machine Learning and Big Data are used to respond to early warnings of student dropout risk and analyze the root causes that produce it.",
-      "paragraph2": "In addition, through a web application, intervention cases are managed to act on the data and support is provided for proper adoption from the wellness area with expert consultations on retention.",
-      "alt_image": "Data analytics chart"
     }
   },
   "communications": {
@@ -424,16 +417,6 @@
           "description": "Builds meaningful connections that transform lives and unite the FATV community."
         }
       }
-    },
-    "commun": {
-      "title_banner": "what we do",
-      "our_model": "OUR MODEL",
-      "subtitle": "COMMUNICATIONS",
-      "paragraph_1": "This area is made up of social communicators and graphic designers.",
-      "paragraph_2": "This team creates and promotes communication actions, adjusted to the characterization and built through the needs and segmentation of the students.",
-      "paragraph_3": "This area is responsible for disseminating information and creating audiovisual content and using technological means, platforms, and other interaction and information resources.",
-      "paragraph_4": "The Communication and Marketing area is also in charge of digital marketing and email marketing to the project's stakeholders, such as directors, teachers, students, and companies interested in the services provided by FATV.",
-      "alt_image": "Communications Team"
     }
   },
   "foundation": {
@@ -1398,15 +1381,5 @@
     "title": "Oops!",
     "message": "Sorry, page not found",
     "button": "Back to Home"
-  },
-  "repositorio": {
-    "title": "Services",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Youtube Channel",
-      "description": "It is a digital academic space with different subjects, available for viewing on Youtube."
-    }
   }
 }

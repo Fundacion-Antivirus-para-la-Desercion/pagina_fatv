@@ -301,13 +301,6 @@
           "description": "Transforma necesidades en soluciones digitales funcionales y bien hechas."
         }
       }
-    },
-    "contentDA": {
-      "title": "Nuestro Modelo",
-      "subtitle": "Analítica de Datos",
-      "paragraph1": "El área de Analítica de Datos se basa en una solución integral y open-source para la permanencia estudiantil apoyada en la tecnología, donde se usan el Machine Learning y la Big Data para responder a alertas tempranas de riesgo de abandono estudiantil y análisis de las causas raíces que lo producen.",
-      "paragraph2": "Además, por medio de una aplicación web se realiza la gestión de casos de intervención para accionar a los datos y se hace acompañamiento para una correcta adopción desde el área de bienestar con consultas de expertos en permanencia.",
-      "alt_image": "Gráfico de análisis de datos"
     }
   },
   "communications": {
@@ -425,16 +418,6 @@
           "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
         }
       }
-    },
-    "commun": {
-      "title_banner": "lo que hacemos",
-      "our_model": "NUESTRO MODELO",
-      "subtitle": "COMUNICACIONES",
-      "paragraph_1": "Esta área está conformada por comunicadores sociales y diseñadores gráficos.",
-      "paragraph_2": "Este equipo crea y promueve acciones comunicativas, ajustadas a la caracterización y construidas a través de las necesidades y segmentación de los estudiantes.",
-      "paragraph_3": "Esta área se encarga de difundir información y elaborar contenidos audiovisuales y utilizar medios tecnológicos, plataformas y otros recursos de interacción e información.",
-      "paragraph_4": "El área de Comunicación y Marketing también se encarga del marketing digital y marketing por correo electrónico a las partes interesadas del proyecto, como directores, profesores, estudiantes, empresas interesadas en los servicios prestados por FATV.",
-      "alt_image": "Equipo de Comunicaciones"
     }
   },
   "foundation": {
@@ -1401,15 +1384,5 @@
     "title": "Oops!",
     "message": "Lo sentimos, página no encontrada",
     "button": "Volver al Inicio"
-  },
-  "repositorio": {
-    "title": "Servicios",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Canal youtube",
-      "description": "Es un espacio digital académico, de diferentes materias, disponibles para la consulta en Youtube."
-    }
   }
 }
