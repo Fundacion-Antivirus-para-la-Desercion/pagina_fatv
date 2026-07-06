@@ -10,7 +10,6 @@ import ContacUs from "./views/ContacUs";
 import Communications from "./views/Communications/Communications.jsx";
 import ApoyoAcademico from "./Services/ApoyoAcademico";
 import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
-import Repositorio from "./Services/Repositorio";
 import Consultorias from "./views/Consulting/Consultorias.jsx";
 import Projects_ATV from "./views/Projects_ATV";
 import Bootcamps from "./projects/Bootcamps/Bootcamps";
@@ -46,7 +45,6 @@ function App() {
             path="/AcompañamientoOrientacion"
             element={<AcompañamientoOrientacion />}
           />
-          <Route path="/Repositorio" element={<Repositorio />} />
           <Route
             path="/gestion-de-la-permanencia"
             element={<StudentRetentionManagement />}

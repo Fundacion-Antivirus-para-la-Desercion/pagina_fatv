@@ -894,16 +894,6 @@
       "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
     }
   },
-  "repositorio": {
-    "title": "Servicios",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Canal youtube",
-      "description": "Es un espacio digital académico, de diferentes materias, disponibles para la consulta en Youtube."
-    }
-  },
   "consultorias": {
     "banner": {
       "h1": "Consultoría en Permanencia",

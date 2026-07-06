@@ -890,16 +890,6 @@
       "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
     }
   },
-  "repositorio": {
-    "title": "Services",
-    "academic_repository": {
-      "title": "https://www.youtube.com/@AntivirusparalaDesercion/videos"
-    },
-    "youtube_channel": {
-      "title": "Link / Youtube Channel",
-      "description": "It is a digital academic space with different subjects, available for viewing on Youtube."
-    }
-  },
   "consultorias": {
     "banner": {
       "h1": "Student Retention",
