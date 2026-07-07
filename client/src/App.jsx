@@ -7,7 +7,6 @@ import Foundation from "./views/Foundation/Foundation.jsx";
 import ContacUs from "./views/ContacUs";
 import Communications from "./views/Communications/Communications.jsx";
 import Consultorias from "./views/Consulting/Consultorias.jsx";
-import Projects_ATV from "./views/Projects_ATV";
 import NotFound from "./views/NotFound";
 import Layout from "./components/layout/Layout";
 import ProVocacion from "./views/ProVocacion";
