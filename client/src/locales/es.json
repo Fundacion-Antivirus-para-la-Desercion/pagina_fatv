@@ -830,28 +830,6 @@
       }
     }
   },
-  "qhfa": {
-    "page_title": "lo que hacemos",
-    "our_model": "NUESTRO MODELO",
-    "socio_emotional_intervention": "INTERVENCION SOCIO-EMOCIONAL",
-    "intervention_description": "Es el campo de acción de la fundación que pretende identificar y comprender las particularidades del contexto sociocultural y socioemocional de los estudiantes, para influir, transformar e impactar significativamente en sus condiciones y su proceso formativo, a través de herramientas y alternativas de acompañamiento socio pedagógico. El equipo social está compuesto por trabajadores sociales y psicólogos encargados de diseñar y ejecutar estrategias de fortalecimiento académico, apoyo psicoemocional y sociopedagógico. Esta área cuenta con las siguientes líneas de Intervención social:",
-    "academic_strengthening": "FORTALECIMIENTO ACADEMICO:",
-    "academic_description": "Búsqueda de tutores y mentores dispuestos recibir un módico estipendio por hora y ofrecer otra hora voluntaria. En este sentido, una vez encontrados los tutores, esta área es responsable de crear las citas para la tutoría uno a uno y talleres temáticos para un repaso complementario de clases y grupos de estudio.",
-    "psycho_emotional_support": "ACOMPAÑAMIENTO PSICOEMOCIONAL Y SOCIOPEDAGÓGICO:",
-    "support_intro": "Esta área está encargada de:",
-    "support_list": {
-      "mental_health": "Supervisar, orientar y atender a los estudiantes con problemas en su estado mental y salud emocional.",
-      "vocational_guidance": "Dar orientación a situaciones vocacionales o familiares,",
-      "strengthen_skills": "Ayudar a fortalecer las habilidades socioemocionales y la autoestima de los estudiantes.",
-      "organize_workshops": "Organizar talleres, encuentros y grupos focales para fortalecer las habilidades socioemocionales y vocacionales."
-    },
-    "alt_text": {
-      "banner": "Banner",
-      "emotional_1": "emocional 1",
-      "emotional_2": "emocional 2",
-      "emotional_3": "emocional 3"
-    }
-  },
   "apoyoAcademico": {
     "title": "Servicios",
     "section1": {
