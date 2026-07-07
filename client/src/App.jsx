@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./views/Home";
 import DonationPay from "./views/DonationPay";
-import ContextData from "./components/ContextData/ContextData";
 import DataAnalytics from "./views/DataAnalytics/DataAnalytics.jsx";
 import Foundation from "./views/Foundation/Foundation.jsx";
 import ContacUs from "./views/ContacUs";
