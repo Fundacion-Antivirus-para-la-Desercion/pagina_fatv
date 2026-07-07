@@ -12,7 +12,6 @@ import ApoyoAcademico from "./Services/ApoyoAcademico";
 import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
 import Consultorias from "./views/Consulting/Consultorias.jsx";
 import Projects_ATV from "./views/Projects_ATV";
-import Bootcamps from "./projects/Bootcamps/Bootcamps";
 import Becarios from "./projects/Becarios/Becarios";
 import NotFound from "./views/NotFound";
 import Layout from "./components/layout/Layout";
@@ -49,7 +48,6 @@ function App() {
             element={<StudentRetentionManagement />}
           />
           <Route path="/consultorias" element={<Consultorias />} />
-          {/*<Route path="/Bootcamps" element={<Bootcamps />} />  */}
           {/* <Route path="/Becarios" element={<Becarios />} /> */}
           <Route path="/provocacion" element={<ProVocacion />} />
           <Route path="/atvconnect" element={<AtvConnect />} />
