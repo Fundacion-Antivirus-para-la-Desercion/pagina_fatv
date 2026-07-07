@@ -6,7 +6,6 @@ import DataAnalytics from "./views/DataAnalytics/DataAnalytics.jsx";
 import Foundation from "./views/Foundation/Foundation.jsx";
 import ContacUs from "./views/ContacUs";
 import Communications from "./views/Communications/Communications.jsx";
-import AcompañamientoOrientacion from "./Services/AcompañamientoOrientacion";
 import Consultorias from "./views/Consulting/Consultorias.jsx";
 import Projects_ATV from "./views/Projects_ATV";
 import NotFound from "./views/NotFound";
@@ -31,10 +30,6 @@ function App() {
           <Route path="/fundacion" element={<Foundation />} />
           <Route path="/News" element={<News />} />
           <Route path="/ContactUs" element={<ContacUs />} />
-          <Route
-            path="/AcompañamientoOrientacion"
-            element={<AcompañamientoOrientacion />}
-          />
           <Route
             path="/gestion-de-la-permanencia"
             element={<StudentRetentionManagement />}
