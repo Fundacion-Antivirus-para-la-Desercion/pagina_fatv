@@ -830,34 +830,6 @@
       }
     }
   },
-  "apoyoAcademico": {
-    "title": "Servicios",
-    "section1": {
-      "subtitle1": "PRESTAMOS LOS SIGUIENTES SERVICIOS:",
-      "subtitle2": "A LOS ESTUDIANTES",
-      "subtitle3": "APOYO ACADÉMICO:",
-      "tutoring": {
-        "title": "Tutorías / Mentorías",
-        "description": "Las tutorías académicas son un espacio de repaso personalizado de aquellas materias que representan mayor dificultad."
-      },
-      "levelUp": {
-        "title": "Nivélate con Antivirus",
-        "description": "Es una estrategia que busca acompañar abiertamente a todos los estudiantes que se encuentran en estado de vulnerabilidad académica y buscan aprobar los cursos."
-      },
-      "studyGroups": {
-        "title": "Grupos de Estudio",
-        "description": "Es un espacio de encuentro para grupos pequeños de estudiantes enfocado en el repaso de materias específicas."
-      }
-    },
-    "imageSection1": {
-      "title": "Evento becados Itaguí",
-      "description": "Una alianza creada para acompañarte"
-    },
-    "imageSection2": {
-      "title": "Colegios Itaguí",
-      "description": "Charlas pedagógicas sobre el acompañamiento"
-    }
-  },
   "acompañamientoOrientacion": {
     "title": "Servicios",
     "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN",

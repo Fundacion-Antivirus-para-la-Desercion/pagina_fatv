@@ -826,34 +826,6 @@
       }
     }
   },
-  "apoyoAcademico": {
-    "title": "Services",
-    "section1": {
-      "subtitle1": "WE PROVIDE THE FOLLOWING SERVICES:",
-      "subtitle2": "FOR STUDENTS",
-      "subtitle3": "ACADEMIC SUPPORT:",
-      "tutoring": {
-        "title": "Tutoring / Mentoring",
-        "description": "Academic tutoring is a personalized review space for those subjects that present the most difficulty."
-      },
-      "levelUp": {
-        "title": "Level Up with Antivirus",
-        "description": "This is a strategy that seeks to openly support all students who are in a state of academic vulnerability and are looking to pass their courses."
-      },
-      "studyGroups": {
-        "title": "Study Groups",
-        "description": "This is a meeting space for small groups of students focused on reviewing specific subjects."
-      }
-    },
-    "imageSection1": {
-      "title": "Itagüí Scholarship Event",
-      "description": "An alliance created to support you"
-    },
-    "imageSection2": {
-      "title": "Itagüí Schools",
-      "description": "Pedagogical talks about support"
-    }
-  },
   "acompañamientoOrientacion": {
     "title": "Services",
     "main_title": "ACCOMPANIMENT AND GUIDANCE",
