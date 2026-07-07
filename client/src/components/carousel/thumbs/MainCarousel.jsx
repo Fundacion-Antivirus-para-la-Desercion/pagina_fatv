@@ -66,7 +66,7 @@ function MainCarousel() {
         }}
         loop={true}
         modules={[Autoplay, Navigation, Thumbs]}
-        className="mySwiper"g
+        className="mySwiper"
         thumbs={{ swiper: thumbsSwiper }}
         onSlideChange={handleSlideChange}
       >
