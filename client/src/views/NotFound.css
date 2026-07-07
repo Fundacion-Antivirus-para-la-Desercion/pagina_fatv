@@ -9,7 +9,6 @@
 }
 
 #errorNumber {
-  font-size: 10rem;
   overflow: hidden;
   white-space: nowrap;
   animation: writing 4s steps(40, end), blink-caret 0.75s step-end;
