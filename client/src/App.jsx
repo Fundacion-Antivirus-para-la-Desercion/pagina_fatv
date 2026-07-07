@@ -33,7 +33,8 @@ function App() {
             element={<QHFA />}
           />*/}
           <Route path="/social-intervention" element={<SocialIntervention />} />
-          <Route path="/dataAnalytics" element={<DataAnalytics />} />          <Route path="/Comunicaciones" element={<Communications />} />
+          <Route path="/dataAnalytics" element={<DataAnalytics />} />{" "}
+          <Route path="/Comunicaciones" element={<Communications />} />
           <Route path="/fundacion" element={<Foundation />} />
           <Route path="/News" element={<News />} />
           <Route path="/ContactUs" element={<ContacUs />} />
