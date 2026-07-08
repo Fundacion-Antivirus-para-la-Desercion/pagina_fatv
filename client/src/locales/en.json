@@ -656,7 +656,12 @@
     "news_label": "NEWS",
     "alt_back": "Back",
     "return_to_news": "Return to news",
-    "share": "Share"
+    "share": "Share",
+    "cardCarousel": {
+      "tbn_previous": "Previous",
+      "tbn_next": "Next",
+      "message": "Swipe to navigate"
+    }
   },
   "otherNews": {
     "title": "OTHER ARTICLES THAT MAY INTEREST YOU",

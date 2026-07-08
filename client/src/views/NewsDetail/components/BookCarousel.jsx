@@ -7,6 +7,7 @@ import NewsContentRenderer from "./NewsContentRenderer";
 import MeasureLayer from "./MeasureLayer";
 import PageLeaf from "./PageLeaf";
 import usePaginatedContent from "../hooks/usePaginatedContent";
+import { useTranslation } from "react-i18next";
 
 /**
  * Libro de noticias con efecto de "pasar hoja" hecho con Framer Motion + CSS 3D.
@@ -33,6 +34,7 @@ const mobileVariants = {
 };
 
 const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
+  const { t } = useTranslation();
   const { width, height, isPortrait, isTwoPage } = dimensions;
 
   const renderItem = useCallback(
@@ -43,12 +45,12 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
         index={i}
       />
     ),
-    []
+    [],
   );
 
   const coverHeader = useMemo(
     () => <BookCoverHeader title={title} newsLabel={newsLabel} />,
-    [title, newsLabel]
+    [title, newsLabel],
   );
 
   const { pages, measureRef, splitterRef } = usePaginatedContent({
@@ -87,7 +89,7 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
         style={{ width, height }}
       />
     ),
-    [pages, renderItem, width, height]
+    [pages, renderItem, width, height],
   );
 
   const goTo = useCallback(
@@ -102,7 +104,7 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
         setIndex(next);
       }
     },
-    [total, current, isFlipping, isTwoPage]
+    [total, current, isFlipping, isTwoPage],
   );
 
   const finishFlip = useCallback(() => {
@@ -117,7 +119,7 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
       if (info.offset.x < -SWIPE_THRESHOLD) goTo(current + 1);
       else if (info.offset.x > SWIPE_THRESHOLD) goTo(current - 1);
     },
-    [current, goTo]
+    [current, goTo],
   );
 
   const btnClass =
@@ -153,10 +155,20 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
       >
         {isFlipping ? (
           <>
-            <div style={{ position: "absolute", top: 0, left: 0, width, height }}>
+            <div
+              style={{ position: "absolute", top: 0, left: 0, width, height }}
+            >
               {bgLeft}
             </div>
-            <div style={{ position: "absolute", top: 0, left: width, width, height }}>
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: width,
+                width,
+                height,
+              }}
+            >
               {bgRight}
             </div>
             <PageLeaf
@@ -169,7 +181,10 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
             />
           </>
         ) : (
-          <div className="grid grid-cols-2" style={{ width: width * 2, height }}>
+          <div
+            className="grid grid-cols-2"
+            style={{ width: width * 2, height }}
+          >
             {renderPage(current * 2, "left")}
             {renderPage(current * 2 + 1, "right")}
           </div>
@@ -199,7 +214,11 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
             className="absolute inset-0 cursor-grab active:cursor-grabbing"
             style={{ transformOrigin: "left center" }}
           >
-            {renderPage(current, "left", current === 0 ? coverHeader : undefined)}
+            {renderPage(
+              current,
+              "left",
+              current === 0 ? coverHeader : undefined,
+            )}
           </motion.div>
         </AnimatePresence>
       </div>
@@ -225,9 +244,9 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
           onClick={() => goTo(current - 1)}
           disabled={current <= 0 || isFlipping}
           className={btnClass}
-          aria-label="Página anterior"
+          aria-label={t("newsDetail.cardCarousel.tbn_previous")}
         >
-          Anterior
+          {t("newsDetail.cardCarousel.tbn_previous")}
         </button>
 
         <span className="min-w-24 text-center text-sm font-semibold text-blue-base">
@@ -239,14 +258,14 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
           onClick={() => goTo(current + 1)}
           disabled={current >= total - 1 || isFlipping}
           className={btnClass}
-          aria-label="Página siguiente"
+          aria-label={t("newsDetail.cardCarousel.tbn_next")}
         >
-          Siguiente
+          {t("newsDetail.cardCarousel.tbn_next")}
         </button>
       </div>
 
-      <span className="text-center text-xs text-gray-400">
-        Desliza para navegar
+      <span className="text-center text-sm text-gray-400">
+        {t("newsDetail.cardCarousel.message")}
       </span>
 
       <MeasureLayer
