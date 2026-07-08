@@ -49,7 +49,8 @@
       "buttons": {
         "contact": "CONTÁCTENOS",
         "more": "Ver más"
-      }
+      },
+      "slide_alt": "{{title}} — estudiantes y colaboradores de la Fundación Antivirus para la Deserción"
     },
     "aboutUs": {
       "title": "acerca de nosotros",

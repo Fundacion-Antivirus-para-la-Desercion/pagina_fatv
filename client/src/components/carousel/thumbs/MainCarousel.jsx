@@ -106,7 +106,7 @@ function MainCarousel() {
                 <img
                   className="h-[45vh] md:h-[80vh] object-cover object-[50%_33%] w-full"
                   src={slide.image}
-                  alt={`Slide ${index + 1}`}
+                  alt={t("home.carousel.slide_alt", { title: t(slide.titleKey) })}
                 />
               </div>
             </section>
@@ -152,7 +152,7 @@ function MainCarousel() {
             >
               <img
                 src={slide.image}
-                alt={`Thumbnail ${index + 1}`}
+                alt={t("home.carousel.slide_alt", { title: t(slide.titleKey) })}
                 className="h-20 w-full object-cover"
               />
             </SwiperSlide>

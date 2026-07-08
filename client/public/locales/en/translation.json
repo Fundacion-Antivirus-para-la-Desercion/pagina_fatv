@@ -48,7 +48,8 @@
       "buttons": {
         "contact": "CONTACT US",
         "more": "See more"
-      }
+      },
+      "slide_alt": "{{title}} — students and collaborators of the Fundación Antivirus para la Deserción"
     },
     "aboutUs": {
       "title": "about us",
