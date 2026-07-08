@@ -122,7 +122,8 @@
   "donationWelcomePopUp": {
     "title": "Welcome to FATV",
     "message": "Use this button to donate <1/> it will always be on your right side.",
-    "donateButton": "Donate now"
+    "donateButton": "Donate now",
+    "alt_javi": "Javi pointing at a coin icon to make a donation to the Fundación Antivirus para la Deserción"
   },
   "btns": {
     "donate": "Donate",
