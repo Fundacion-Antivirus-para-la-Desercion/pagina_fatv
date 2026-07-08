@@ -48,7 +48,8 @@
       "buttons": {
         "contact": "CONTACT US",
         "more": "See more"
-      }
+      },
+      "slide_alt": "{{title}} — students and collaborators of the Fundación Antivirus para la Deserción"
     },
     "aboutUs": {
       "title": "about us",
@@ -100,7 +101,8 @@
       "statistic9": {
         "description": "Study groups",
         "alt_image": "Study groups"
-      }
+      },
+      "alt_javi": "Javi, the foundation character, pointing at the statistics"
     },
     "servicesATV": {
       "title": "OUR SERVICES",
@@ -122,7 +124,8 @@
   "donationWelcomePopUp": {
     "title": "Welcome to FATV",
     "message": "Use this button to donate <1/> it will always be on your right side.",
-    "donateButton": "Donate now"
+    "donateButton": "Donate now",
+    "alt_javi": "Javi pointing at a coin icon to make a donation to the Fundación Antivirus para la Deserción"
   },
   "btns": {
     "donate": "Donate",
@@ -379,7 +382,9 @@
         "four": "Social Media",
         "five": "Cobranding",
         "six": "Infographics"
-      }
+      },
+      "mobile_hint": "Tap the image to see more",
+      "lightbox_alt": "{{title}} — photo {{current}} of {{total}}"
     },
     "team": {
       "title": "OUR TEAM",
@@ -656,7 +661,12 @@
     "news_label": "NEWS",
     "alt_back": "Back",
     "return_to_news": "Return to news",
-    "share": "Share"
+    "share": "Share",
+    "cardCarousel": {
+      "tbn_previous": "Previous",
+      "tbn_next": "Next",
+      "message": "Swipe to navigate"
+    }
   },
   "otherNews": {
     "title": "OTHER ARTICLES THAT MAY INTEREST YOU",
@@ -824,72 +834,6 @@
           "description": "Leads the psychosocial and educational monitoring of Ver+ program scholars, strengthening their development in technological fields."
         }
       }
-    }
-  },
-  "qhfa": {
-    "page_title": "what we do",
-    "our_model": "OUR MODEL",
-    "socio_emotional_intervention": "SOCIO-EMOTIONAL INTERVENTION",
-    "intervention_description": "This is the foundation's field of action that aims to identify and understand the particularities of the sociocultural and socio-emotional context of students, to influence, transform and significantly impact their conditions and educational process, through tools and alternatives for socio-pedagogical support. The social team is composed of social workers and psychologists responsible for designing and implementing academic strengthening strategies, psycho-emotional and socio-pedagogical support. This area has the following social intervention lines:",
-    "academic_strengthening": "ACADEMIC STRENGTHENING:",
-    "academic_description": "Search for tutors and mentors willing to receive a modest hourly stipend and offer another voluntary hour. In this sense, once tutors are found, this area is responsible for creating appointments for one-on-one tutoring and thematic workshops for complementary class review and study groups.",
-    "psycho_emotional_support": "PSYCHO-EMOTIONAL AND SOCIO-PEDAGOGICAL SUPPORT:",
-    "support_intro": "This area is responsible for:",
-    "support_list": {
-      "mental_health": "Supervising, guiding and attending to students with problems in their mental state and emotional health.",
-      "vocational_guidance": "Providing guidance on vocational or family situations,",
-      "strengthen_skills": "Helping to strengthen students' socio-emotional skills and self-esteem.",
-      "organize_workshops": "Organizing workshops, meetings and focus groups to strengthen socio-emotional and vocational skills."
-    },
-    "alt_text": {
-      "banner": "Banner",
-      "emotional_1": "emotional 1",
-      "emotional_2": "emotional 2",
-      "emotional_3": "emotional 3"
-    }
-  },
-  "apoyoAcademico": {
-    "title": "Services",
-    "section1": {
-      "subtitle1": "WE PROVIDE THE FOLLOWING SERVICES:",
-      "subtitle2": "FOR STUDENTS",
-      "subtitle3": "ACADEMIC SUPPORT:",
-      "tutoring": {
-        "title": "Tutoring / Mentoring",
-        "description": "Academic tutoring is a personalized review space for those subjects that present the most difficulty."
-      },
-      "levelUp": {
-        "title": "Level Up with Antivirus",
-        "description": "This is a strategy that seeks to openly support all students who are in a state of academic vulnerability and are looking to pass their courses."
-      },
-      "studyGroups": {
-        "title": "Study Groups",
-        "description": "This is a meeting space for small groups of students focused on reviewing specific subjects."
-      }
-    },
-    "imageSection1": {
-      "title": "Itagüí Scholarship Event",
-      "description": "An alliance created to support you"
-    },
-    "imageSection2": {
-      "title": "Itagüí Schools",
-      "description": "Pedagogical talks about support"
-    }
-  },
-  "acompañamientoOrientacion": {
-    "title": "Services",
-    "main_title": "ACCOMPANIMENT AND GUIDANCE",
-    "socio_pedagogical": {
-      "title": "Socio-pedagogical Advising",
-      "description": "Socio-educational advising sessions are spaces for meeting, listening, and providing support to students in a state of vulnerability."
-    },
-    "plan_padrino": {
-      "title": "Sponsor Plan",
-      "description": "This is a strategy that seeks to establish contact between newly enrolled students and their peers from higher semesters and graduates, with the goal of having them accompany the new students based on their own university experience."
-    },
-    "occupational_support": {
-      "title": "Occupational Support",
-      "description": "These are meetings between new students and graduates of Systems Engineering with the purpose of talking about topics related to the professional world."
     }
   },
   "consultorias": {
@@ -1325,6 +1269,7 @@
       "h1": "Contact Us",
       "alt": "Smiling Antivirus Foundation team members, ready to support you."
     },
+    "image_alt": "Image of La Estrella city, Medellín - Antioquia - Colombia, where the Fundación Antivirus para la Deserción is based.",
     "title": "Contact Us",
     "startConversation": "LET'S START",
     "conversationTitle": "A CONVERSATION DO YOU HAVE ANY QUESTIONS? WE HAVE THE ANSWER!",
@@ -1334,7 +1279,7 @@
     "email": "Email",
     "emailAddress": "contactenos@fundacionantivirusparaladesercion.org",
     "whatsapp": "WhatsApp",
-    "whatsappNumber": "3206417053",
+    "whatsappNumber": "3173831481",
     "writeToUs": "WRITE TO US HERE",
     "googleMaps": "Google Maps",
     "findUsHere": "Find us here",
@@ -1375,7 +1320,8 @@
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Our social networks",
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
-    "dataProtection": "Data protection policy"
+    "dataProtection": "Data protection policy",
+    "logo_alt": "Fundación Antivirus para la Deserción logo"
   },
   "notFound": {
     "title": "Oops!",

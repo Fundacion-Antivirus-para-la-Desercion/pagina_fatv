@@ -21,7 +21,6 @@ const useImageByLanguage = ({ enImage, esImage, keyTitle = "" }) => {
     };
   }
 
-  currentLanguage === "es";
   return {
     src: esImage,
     alt: t(keyTitle),

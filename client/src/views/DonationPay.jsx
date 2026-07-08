@@ -13,6 +13,7 @@ import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
 import Pay from "../../src/assets/images/views/donationPay/pay.png";
 
 const DONATION_STEP = 1000;
+const EMPTY_DONATION_INPUT_WIDTH = "22ch";
 const ALLOWED_DONATION_CONTROL_KEYS = [
   "Backspace",
   "Delete",
@@ -33,7 +34,7 @@ function DonationPay() {
   const donationAmountInputSize = Math.max(donationAmountText.length, 1);
   const donationAmountInputWidth =
     isOtherAmountSelected && donationAmount === ""
-      ? "22ch"
+      ? EMPTY_DONATION_INPUT_WIDTH
       : `${donationAmountInputSize + 4}ch`;
   const parsedDonationAmount = Number(donationAmount);
   const hasOnlyDigits = /^\d+$/.test(donationAmountText);

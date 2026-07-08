@@ -49,96 +49,94 @@ function Description() {
     },
   ];
   return (
-    <>
-      <section className="container block mx-auto">
-        <div className="flex justify-center">
-          <section className="flex flex-col lg:flex-row justify-center gap-8 p-8 text-center md:p-10">
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-fit">
-                <img
-                  className="h-full max-h-[500px] md:max-h-[700px] mb-16 md:mb-0 border-[4px] border-solid border-white rounded-3xl shadow-2xl"
-                  src={Talleres}
-                  alt=""
-                />
-
-                <motion.div
-                  {...floatSnake({ transition: { delay: 1 } })}
-                  className="group z-10 absolute right-2 -bottom-6 md:-right-5 md:-bottom-10 lg:-bottom-2 xl:-bottom-10 w-24 md:w-40"
-                >
-                  <div className="bg-[#ffffff] p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
-                    <span
-                      className="absolute -top-10 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-all duration-200
-                      bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
-                    >
-                      FATV <TiHeart className="inline text-base" />
-                      <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
-                    </span>
-                    <div>
-                      <PiHeartStraight className="p-2 text-4xl md:text-5xl text-primary-yellow bg-yellow-100 rounded-xl" />
-                    </div>
-                    <div className="flex flex-col text-center">
-                      <span className="text-md md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
-                        +5
-                      </span>
-                      <h4 className="text-dark-blue font-semibold text-xs">
-                        {t("socialIntervention.figure")}
-                      </h4>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-
-            <div className="">
-              <section>
-                <span className="text-base md:text-lg text-primary-yellow font-impact text-center md:text-left mt-4">
-                  {t("socialIntervention.span")}
-                </span>
-                <h1 className="text-4xl md:text-5xl text-blue-base font-impact">
-                  {t("socialIntervention.title")}
-                </h1>
-                <p className="text-lg text-blue-base p-5 mt-5 text-justify max-w-3xl">
-                  {t("socialIntervention.description")}
-                </p>
-              </section>
+    <section className="container block mx-auto">
+      <div className="flex justify-center">
+        <section className="flex flex-col lg:flex-row justify-center gap-8 p-8 text-center md:p-10">
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative w-fit">
+              <img
+                className="h-full max-h-[500px] md:max-h-[700px] mb-16 md:mb-0 border-[4px] border-solid border-white rounded-3xl shadow-2xl"
+                src={Talleres}
+                alt=""
+              />
 
               <motion.div
-                className="will-change-transform"
-                {...slideFromRight({
-                  transition: { delay: 0.5 },
-                  viewport: { amount: 0.1 },
-                })}
+                {...floatSnake({ transition: { delay: 1 } })}
+                className="group z-10 absolute right-2 -bottom-6 md:-right-5 md:-bottom-10 lg:-bottom-2 xl:-bottom-10 w-24 md:w-40"
               >
-                <section className="grid grid-cols-1 justify-center lg:grid-cols-2 gap-3 mt-5">
-                  {socialData.map((socialData, index) => (
-                    <div
-                      key={index}
-                      className="bg-white max-w-sm block mx-auto p-2 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300"
-                    >
-                      <section className="group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly">
-                        <div className="flex items-center m-2 justify-center rounded-xl p-2 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
-                          <div className="text-xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors">
-                            {socialData.icon}
-                          </div>
-                        </div>
-                        <div className="flex flex-col m-2 text-center md:text-left">
-                          <h4 className="text-lg text-dark-blue font-extrabold">
-                            {socialData.title}{" "}
-                          </h4>
-                          <p className="text-base text-blue-base mt-2">
-                            {socialData.description}
-                          </p>
-                        </div>
-                      </section>
-                    </div>
-                  ))}
-                </section>
+                <div className="bg-[#ffffff] p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all">
+                  <span
+                    className="absolute -top-10 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-all duration-200
+                      bg-dark-blue text-white text-base py-1 px-3 rounded-lg shadow-xl flex items-center justify-center"
+                  >
+                    FATV <TiHeart className="inline text-base" />
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-dark-blue"></span>
+                  </span>
+                  <div>
+                    <PiHeartStraight className="p-2 text-4xl md:text-5xl text-primary-yellow bg-yellow-100 rounded-xl" />
+                  </div>
+                  <div className="flex flex-col text-center">
+                    <span className="text-md md:text-3xl text-dark-blue drop-shadow-2xl font-impact">
+                      +5
+                    </span>
+                    <h4 className="text-dark-blue font-semibold text-xs">
+                      {t("socialIntervention.figure")}
+                    </h4>
+                  </div>
+                </div>
               </motion.div>
             </div>
-          </section>
-        </div>
-      </section>
-    </>
+          </div>
+
+          <div className="">
+            <section>
+              <span className="text-base md:text-lg text-primary-yellow font-impact text-center md:text-left mt-4">
+                {t("socialIntervention.span")}
+              </span>
+              <h1 className="text-4xl md:text-5xl text-blue-base font-impact">
+                {t("socialIntervention.title")}
+              </h1>
+              <p className="text-lg text-blue-base p-5 mt-5 text-justify max-w-3xl">
+                {t("socialIntervention.description")}
+              </p>
+            </section>
+
+            <motion.div
+              className="will-change-transform"
+              {...slideFromRight({
+                transition: { delay: 0.5 },
+                viewport: { amount: 0.1 },
+              })}
+            >
+              <section className="grid grid-cols-1 justify-center lg:grid-cols-2 gap-3 mt-5">
+                {socialData.map((socialData, index) => (
+                  <div
+                    key={index}
+                    className="bg-white max-w-sm block mx-auto p-2 border-2 rounded-2xl border-gray-200 shadow-xl hover:scale-105 transition-transform duration-300"
+                  >
+                    <section className="group/icon flex flex-wrap md:flex-nowrap items-start justify-evenly">
+                      <div className="flex items-center m-2 justify-center rounded-xl p-2 bg-dark-blue group-hover/icon:bg-primary-yellow transition-colors">
+                        <div className="text-xl rounded-lg text-white group-hover/icon:text-dark-blue transition-colors">
+                          {socialData.icon}
+                        </div>
+                      </div>
+                      <div className="flex flex-col m-2 text-center md:text-left">
+                        <h4 className="text-lg text-dark-blue font-extrabold">
+                          {socialData.title}{" "}
+                        </h4>
+                        <p className="text-base text-blue-base mt-2">
+                          {socialData.description}
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                ))}
+              </section>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+    </section>
   );
 }
 

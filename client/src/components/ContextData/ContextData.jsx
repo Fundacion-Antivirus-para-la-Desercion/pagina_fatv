@@ -17,7 +17,7 @@ const ContextData = () => {
   return (
     <section className="context-data-container bg-dark-blue">
       <div className="md:grid md:grid-cols-1 bg-primary-yellow relative items-center mb-10 md:mb-32 p-2">
-        <img className="hidden md:block md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt="Javi feliz" />
+        <img className="hidden md:block md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt={t("home.contextData.alt_javi")} />
         <h1 className="col-start-2 md:col-start-1 p-2 context-data-title uppercase font-impact text-2xl md:text-3xl lg:text-5xl text-dark-blue text-center">
           {t("home.contextData.title")}
         </h1>

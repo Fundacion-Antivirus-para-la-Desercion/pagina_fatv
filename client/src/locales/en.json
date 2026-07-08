@@ -48,7 +48,8 @@
       "buttons": {
         "contact": "CONTACT US",
         "more": "See more"
-      }
+      },
+      "slide_alt": "{{title}} — students and collaborators of the Fundación Antivirus para la Deserción"
     },
     "aboutUs": {
       "title": "about us",
@@ -100,7 +101,8 @@
       "statistic9": {
         "description": "Study groups",
         "alt_image": "Study groups"
-      }
+      },
+      "alt_javi": "Javi, the foundation character, pointing at the statistics"
     },
     "servicesATV": {
       "title": "OUR SERVICES",
@@ -122,7 +124,8 @@
   "donationWelcomePopUp": {
     "title": "Welcome to FATV",
     "message": "Use this button to donate <1/> it will always be on your right side.",
-    "donateButton": "Donate now"
+    "donateButton": "Donate now",
+    "alt_javi": "Javi pointing at a coin icon to make a donation to the Fundación Antivirus para la Deserción"
   },
   "btns": {
     "donate": "Donate",
@@ -379,7 +382,9 @@
         "four": "Social Media",
         "five": "Cobranding",
         "six": "Infographics"
-      }
+      },
+      "mobile_hint": "Tap the image to see more",
+      "lightbox_alt": "{{title}} — photo {{current}} of {{total}}"
     },
     "team": {
       "title": "OUR TEAM",
@@ -656,7 +661,12 @@
     "news_label": "NEWS",
     "alt_back": "Back",
     "return_to_news": "Return to news",
-    "share": "Share"
+    "share": "Share",
+    "cardCarousel": {
+      "tbn_previous": "Previous",
+      "tbn_next": "Next",
+      "message": "Swipe to navigate"
+    }
   },
   "otherNews": {
     "title": "OTHER ARTICLES THAT MAY INTEREST YOU",
@@ -1259,6 +1269,7 @@
       "h1": "Contact Us",
       "alt": "Smiling Antivirus Foundation team members, ready to support you."
     },
+    "image_alt": "Image of La Estrella city, Medellín - Antioquia - Colombia, where the Fundación Antivirus para la Deserción is based.",
     "title": "Contact Us",
     "startConversation": "LET'S START",
     "conversationTitle": "A CONVERSATION DO YOU HAVE ANY QUESTIONS? WE HAVE THE ANSWER!",
@@ -1268,7 +1279,7 @@
     "email": "Email",
     "emailAddress": "contactenos@fundacionantivirusparaladesercion.org",
     "whatsapp": "WhatsApp",
-    "whatsappNumber": "3206417053",
+    "whatsappNumber": "3173831481",
     "writeToUs": "WRITE TO US HERE",
     "googleMaps": "Google Maps",
     "findUsHere": "Find us here",
@@ -1309,7 +1320,8 @@
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Our social networks",
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
-    "dataProtection": "Data protection policy"
+    "dataProtection": "Data protection policy",
+    "logo_alt": "Fundación Antivirus para la Deserción logo"
   },
   "notFound": {
     "title": "Oops!",

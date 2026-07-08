@@ -12,12 +12,10 @@ const WhatsAppRedirect = (message, whatsAppNumber) => {
   const { t } = useTranslation();
 
   const defaultMessage = t("whatsappMessage.default");
-  const finalMessage = message ? message : defaultMessage;
+  const finalMessage = message ?? defaultMessage;
 
-  const defaultWhatsAppNumber = "573173831481";
-  const finalWhatsAppNumber = whatsAppNumber
-    ? whatsAppNumber
-    : defaultWhatsAppNumber;
+  const defaultWhatsAppNumber = import.meta.env.VITE_WHATSAPP_NUMBER ?? "573173831481";
+  const finalWhatsAppNumber = whatsAppNumber ?? defaultWhatsAppNumber;
 
   return `https://wa.me/${finalWhatsAppNumber}?text=${encodeURIComponent(finalMessage)}`;
 };
