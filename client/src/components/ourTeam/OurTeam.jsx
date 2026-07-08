@@ -103,7 +103,6 @@ function OurTeam() {
   }, []);
 
   return (
-    <>
       <div className="relative flex-col justify-center mt-20 mb-10">
         <div
           className="absolute inset-0 opacity-30"
@@ -163,8 +162,8 @@ function OurTeam() {
               modules={[Autoplay]}
               className="mySwiper"
             >
-              {cards.map((card, index) => (
-                <SwiperSlide key={index}>
+              {cards.map((card) => (
+                <SwiperSlide key={card.name}>
                   <div className="group transition-all duration-500 rounded-xl">
                     <div className="relative overflow-hidden rounded-xl rounded-b-none">
                       <div className="pointer-events-none absolute inset-0 z-10 duration-500 group-hover:opacity-100" />
@@ -215,7 +214,6 @@ function OurTeam() {
           ></motion.div>
         </div>
       </div>
-    </>
   );
 }
 
