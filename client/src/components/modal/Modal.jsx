@@ -5,28 +5,27 @@ const Modal = ({ isOpen, onClose, title, children }) => {
   const [show, setShow] = useState(isOpen);
 
   useEffect(() => {
-    if (isOpen) {
-      setShow(true);
-      setTimeout(() => {
-        if (modalRef.current) {
-          modalRef.current.classList.add("opacity-100", "translate-y-0");
-          modalRef.current.classList.remove("opacity-0", "translate-y-8");
-        }
-      }, 10);
-    } else if (show) {
-      if (modalRef.current) {
-        modalRef.current.classList.remove("opacity-100", "translate-y-0");
-        modalRef.current.classList.add("opacity-0", "translate-y-8");
-      }
+    if (!isOpen) return;
+    setShow(true);
+    const timer = setTimeout(() => {
+      modalRef.current?.classList.add("opacity-100", "translate-y-0");
+      modalRef.current?.classList.remove("opacity-0", "translate-y-8");
+    }, 10);
+    return () => clearTimeout(timer);
+  }, [isOpen]);
 
-      const timeout = setTimeout(() => {
-        setShow(false);
-        onClose();
-        isOpen = false;
-      }, 300);
-      return () => clearTimeout(timeout);
-    }
-  }, [isOpen, show]);
+  useEffect(() => {
+    if (isOpen || !show) return;
+    modalRef.current?.classList.remove("opacity-100", "translate-y-0");
+    modalRef.current?.classList.add("opacity-0", "translate-y-8");
+    const timeout = setTimeout(() => {
+      setShow(false);
+      onClose();
+    }, 300);
+    return () => clearTimeout(timeout);
+    // show y onClose son estables en este punto; isOpen es el trigger real
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
 
   if (!show) return null;
 
