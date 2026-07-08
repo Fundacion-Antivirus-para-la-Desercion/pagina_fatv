@@ -202,7 +202,11 @@ function Portfolio() {
             {/* Image */}
             <img
               src={lightbox.images[lightbox.index]}
-              alt={`Imagen ${lightbox.index + 1}`}
+              alt={t("communications.portfolio.lightbox_alt", {
+                title: t(activeProject.title),
+                current: lightbox.index + 1,
+                total: lightbox.images.length,
+              })}
               className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />

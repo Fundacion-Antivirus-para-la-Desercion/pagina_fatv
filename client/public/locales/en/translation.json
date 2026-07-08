@@ -382,7 +382,8 @@
         "five": "Cobranding",
         "six": "Infographics"
       },
-      "mobile_hint": "Tap the image to see more"
+      "mobile_hint": "Tap the image to see more",
+      "lightbox_alt": "{{title}} — photo {{current}} of {{total}}"
     },
     "team": {
       "title": "OUR TEAM",
