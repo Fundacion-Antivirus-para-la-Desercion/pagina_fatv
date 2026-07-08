@@ -4,13 +4,14 @@ import Javicorto from "../../../assets/images/views/javi/javi-corto.webp";
 import FocusTransparent from "../../../assets/images/views/proVocacion/information/focus.webp";
 import { floatSnake, cardContainerVariants } from "../../motion/constants/Animations.js";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function CardsCarousel({
     slideData = [<div>No hay contenido</div>, <div>No hay contenido</div>, <div>No hay contenido</div>],
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { t } = useTranslation();
 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev <= 0 ? slideData.length - 1 : prev - 1));
@@ -21,7 +22,6 @@ function CardsCarousel({
   };
 
   return (
-    <>
       <section className="bg-[#06407A] py-10 md:py-12 lg:py-10">
         {/* Javi + Foco */}
         <div className="flex justify-center flex-shrink-0">
@@ -65,7 +65,7 @@ function CardsCarousel({
                 <button
                   onClick={handlePrev}
                   className="p-3 rounded-full bg-[#222D56] text-white hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
-                  aria-label="Anterior"
+                  aria-label= {t("newsDetail.cardCarousel.tbn_previous")}
                 >
                   <FaChevronLeft size={16} />
                 </button>
@@ -75,7 +75,7 @@ function CardsCarousel({
                 <button
                   onClick={handleNext}
                   className="p-3 rounded-full bg-[#222D56] text-white hover:bg-[#06407A] transition-all duration-200 hover:scale-110"
-                  aria-label="Siguiente"
+                  aria-label= {t("newsDetail.cardCarousel.tbn_next")}
                 >
                   <FaChevronRight size={16} />
                 </button>
@@ -84,7 +84,6 @@ function CardsCarousel({
           </div>
         </section>
       </section>
-    </>
   );
 }
 

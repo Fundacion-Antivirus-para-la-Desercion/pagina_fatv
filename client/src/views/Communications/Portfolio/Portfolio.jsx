@@ -177,6 +177,11 @@ function Portfolio() {
           )
         )}
       </AnimatePresence>
+
+      <p className="md:hidden col-span-full text-center text-lg text-blue-base/60 italic">
+        {t("communications.portfolio.mobile_hint")}
+      </p>
+
       {lightbox.index !== null && (
         <div
           className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden overscroll-none bg-black/80 p-4 touch-none md:p-6"
@@ -197,7 +202,11 @@ function Portfolio() {
             {/* Image */}
             <img
               src={lightbox.images[lightbox.index]}
-              alt={`Imagen ${lightbox.index + 1}`}
+              alt={t("communications.portfolio.lightbox_alt", {
+                title: t(activeProject.title),
+                current: lightbox.index + 1,
+                total: lightbox.images.length,
+              })}
               className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />

@@ -14,7 +14,7 @@ const RunningBanner = ({ items = [], speed = 40 }) => {
       >
         {duplicatedItems.map((item, index) => (
           <li
-            key={index}
+            key={`${item}-${index}`}
             className="list-disc font-extrabold cursor-pointer mx-6 whitespace-nowrap"
           >
             {item}

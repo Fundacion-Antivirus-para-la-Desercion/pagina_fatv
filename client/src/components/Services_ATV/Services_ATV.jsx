@@ -11,14 +11,13 @@ const ServicesATV = () => {
   const { t } = useTranslation();
 
   return (
-    <>
       <section
         id="services"
         className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
       >
         <div className="flex flex-col items-center">
           <section>
-            -
+            
             <div>
               <h1 className="font-impact text-center text-3xl md:text-5xl mb-10 md:mb-10 text-white">
                 {t("home.servicesATV.title")}
@@ -168,7 +167,6 @@ const ServicesATV = () => {
           </section>
         </div>
       </section>
-    </>
   );
 };
 

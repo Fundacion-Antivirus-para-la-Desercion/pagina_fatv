@@ -49,7 +49,8 @@
       "buttons": {
         "contact": "CONTÁCTENOS",
         "more": "Ver más"
-      }
+      },
+      "slide_alt": "{{title}} — estudiantes y colaboradores de la Fundación Antivirus para la Deserción"
     },
     "aboutUs": {
       "title": "acerca de nosotros",
@@ -101,7 +102,8 @@
       "statistic9": {
         "description": "Grupos de estudio",
         "alt_image": "Grupos de estudio"
-      }
+      },
+      "alt_javi": "Javi, personaje de la fundación, señalando las estadísticas"
     },
     "servicesATV": {
       "title": "NUESTROS SERVICIOS",
@@ -123,7 +125,8 @@
   "donationWelcomePopUp": {
     "title": "Bienvenido a FATV",
     "message": "Usa este boton para donar <1/> siempre estará a tu lado derecho.",
-    "donateButton": "Donar ahora"
+    "donateButton": "Donar ahora",
+    "alt_javi": "Javi señalando icono de moneda para realizar una donación a la Fundación Antivirus para la Deserción"
   },
   "btns": {
     "donate": "Donar",
@@ -380,7 +383,9 @@
         "four": "Redes Sociales",
         "five": "Cobranding",
         "six": "Infografía "
-      }
+      },
+      "mobile_hint": "Toca la imagen para ver más",
+      "lightbox_alt": "{{title}} — foto {{current}} de {{total}}"
     },
     "team": {
       "title": "NUESTRO EQUIPO",
@@ -657,7 +662,12 @@
     "news_label": "NOTICIAS",
     "alt_back": "Atras",
     "return_to_news": "Regresar a noticias",
-    "share": "Compartir"
+    "share": "Compartir",
+    "cardCarousel": {
+      "tbn_previous": "Anterior",
+      "tbn_next": "Siguiente",
+      "message": "Desliza para navegar"
+    }
   },
   "otherNews": {
     "title": "OTROS ARTÍCULOS QUE TE PUEDEN INTERESAR",
@@ -828,72 +838,6 @@
           "description": "Lidera el seguimiento psicosocial y formativo de los becarios del programa Ver+, fortaleciendo su desarrollo en áreas tecnológicas."
         }
       }
-    }
-  },
-  "qhfa": {
-    "page_title": "lo que hacemos",
-    "our_model": "NUESTRO MODELO",
-    "socio_emotional_intervention": "INTERVENCION SOCIO-EMOCIONAL",
-    "intervention_description": "Es el campo de acción de la fundación que pretende identificar y comprender las particularidades del contexto sociocultural y socioemocional de los estudiantes, para influir, transformar e impactar significativamente en sus condiciones y su proceso formativo, a través de herramientas y alternativas de acompañamiento socio pedagógico. El equipo social está compuesto por trabajadores sociales y psicólogos encargados de diseñar y ejecutar estrategias de fortalecimiento académico, apoyo psicoemocional y sociopedagógico. Esta área cuenta con las siguientes líneas de Intervención social:",
-    "academic_strengthening": "FORTALECIMIENTO ACADEMICO:",
-    "academic_description": "Búsqueda de tutores y mentores dispuestos recibir un módico estipendio por hora y ofrecer otra hora voluntaria. En este sentido, una vez encontrados los tutores, esta área es responsable de crear las citas para la tutoría uno a uno y talleres temáticos para un repaso complementario de clases y grupos de estudio.",
-    "psycho_emotional_support": "ACOMPAÑAMIENTO PSICOEMOCIONAL Y SOCIOPEDAGÓGICO:",
-    "support_intro": "Esta área está encargada de:",
-    "support_list": {
-      "mental_health": "Supervisar, orientar y atender a los estudiantes con problemas en su estado mental y salud emocional.",
-      "vocational_guidance": "Dar orientación a situaciones vocacionales o familiares,",
-      "strengthen_skills": "Ayudar a fortalecer las habilidades socioemocionales y la autoestima de los estudiantes.",
-      "organize_workshops": "Organizar talleres, encuentros y grupos focales para fortalecer las habilidades socioemocionales y vocacionales."
-    },
-    "alt_text": {
-      "banner": "Banner",
-      "emotional_1": "emocional 1",
-      "emotional_2": "emocional 2",
-      "emotional_3": "emocional 3"
-    }
-  },
-  "apoyoAcademico": {
-    "title": "Servicios",
-    "section1": {
-      "subtitle1": "PRESTAMOS LOS SIGUIENTES SERVICIOS:",
-      "subtitle2": "A LOS ESTUDIANTES",
-      "subtitle3": "APOYO ACADÉMICO:",
-      "tutoring": {
-        "title": "Tutorías / Mentorías",
-        "description": "Las tutorías académicas son un espacio de repaso personalizado de aquellas materias que representan mayor dificultad."
-      },
-      "levelUp": {
-        "title": "Nivélate con Antivirus",
-        "description": "Es una estrategia que busca acompañar abiertamente a todos los estudiantes que se encuentran en estado de vulnerabilidad académica y buscan aprobar los cursos."
-      },
-      "studyGroups": {
-        "title": "Grupos de Estudio",
-        "description": "Es un espacio de encuentro para grupos pequeños de estudiantes enfocado en el repaso de materias específicas."
-      }
-    },
-    "imageSection1": {
-      "title": "Evento becados Itaguí",
-      "description": "Una alianza creada para acompañarte"
-    },
-    "imageSection2": {
-      "title": "Colegios Itaguí",
-      "description": "Charlas pedagógicas sobre el acompañamiento"
-    }
-  },
-  "acompañamientoOrientacion": {
-    "title": "Servicios",
-    "main_title": "ACOMPAÑAMIENTO Y ORIENTACIÓN",
-    "socio_pedagogical": {
-      "title": "Asesorías Socio-pedagógicas",
-      "description": "Las asesorías socio-educativas son espacios de encuentro, escucha y apoyo a los estudiantes en estado de vulnerabilidad."
-    },
-    "plan_padrino": {
-      "title": "Plan Padrino",
-      "description": "Es una estrategia que busca establecer un contacto entre los estudiantes que recién ingresan y sus compañeros de semestres superiores y egresados, con el objetivo de que estos los acompañen de acuerdo a su experiencia recorrida en la universidad."
-    },
-    "occupational_support": {
-      "title": "Acompañamiento Ocupacional",
-      "description": "Son encuentros entre los estudiantes nuevos con egresados de Ingeniería de Sistemas con el propósito de conversar sobre temas relacionados con el mundo laboral."
     }
   },
   "consultorias": {
@@ -1329,6 +1273,7 @@
       "alt": "Integrantes del equipo de la Fundación Antivirus sonriendo, listos para brindarte apoyo y asesoría."
     },
     "title": "Contáctanos",
+    "image_alt": "imagen de la ciudad La Estrella, Medellín - Antioquia - Colombia donde se encuentra la sede de la Fundación Antivirus para la Deserción",
     "startConversation": "COMENCEMOS",
     "conversationTitle": "UNA CONVERSACIÓN ¿TIENES ALGUNA PREGUNTA? ¡TENEMOS LA RESPUESTA!",
     "mainHeadquarters": "Sede principal",
@@ -1337,7 +1282,7 @@
     "email": "Correo electrónico",
     "emailAddress": "contactenos@fundacionantivirusparaladesercion.org",
     "whatsapp": "WhatsApp",
-    "whatsappNumber": "3206417053",
+    "whatsappNumber": "3173831481",
     "writeToUs": "ESCRÍBENOS AQUÍ",
     "googleMaps": "Google Maps",
     "findUsHere": "Encuéntranos aquí",
@@ -1378,7 +1323,8 @@
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Nuestras redes sociales",
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
-    "dataProtection": "Política de protección de datos"
+    "dataProtection": "Política de protección de datos",
+    "logo_alt": "Logotipo de la Fundación Antivirus para la Deserción"
   },
   "notFound": {
     "title": "Oops!",

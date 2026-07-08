@@ -16,7 +16,7 @@ function Footer() {
       <footer className="bg-dark-blue">
         <div className="footer-content">
           <div className="logo-footer">
-            <img src={logo} alt="logo-footer" />
+            <img src={logo} alt={t("footer.logo_alt")} />
           </div>
           <div className="footer-info">
             <div className="footer-visitanos">

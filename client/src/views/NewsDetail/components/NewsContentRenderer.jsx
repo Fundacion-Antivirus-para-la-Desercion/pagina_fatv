@@ -32,7 +32,7 @@ const NewsContentRenderer = ({ content, index }) => {
           <p className="text-blue-base text-[13px] md:text-base font-renogare text-wrap text-justify leading-relaxed mb-4">
             {renderWithBold(content.value)}
 
-            <FaQuoteRight className="absolute text-primary-yellow text-lg md:text-2xl inline ml-2 align-middle" />
+            <FaQuoteRight className="text-primary-yellow text-lg md:text-2xl inline ml-2 align-middle" />
           </p>
           {content.author && (
             <p className="text-right text-sm md:text-lg font-renogare text-dark-blue mb-5">

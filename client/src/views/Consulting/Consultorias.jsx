@@ -1,7 +1,9 @@
-import React from "react";
 import BannerConsulting from "../../assets/images/views/consultorias/banner-consulting.webp";
 import BannerView from "../../components/Banner-views/BannerView";
-import { PiShootingStarFill } from "react-icons/pi";
+import { PiShootingStarFill} from "react-icons/pi";
+import { RiFocus2Line } from "react-icons/ri";
+import { FaLightbulb, FaStar,FaGraduationCap, FaUserFriends} from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
@@ -32,12 +34,14 @@ function Consultorias() {
     viewport: { once: true, amount: 0.6 },
   };
 
-  const slideFromLeft = {
-    initial: { opacity: 0, x: -100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
+  const cards = [
+    { icon: <FaStar />,          titleKey: "consultorias.whyChooseUs.cards.methodology_title",   descKey: "consultorias.whyChooseUs.cards.methodology_description" },
+    { icon: <RiFocus2Line />,    titleKey: "consultorias.whyChooseUs.cards.focus_title",         descKey: "consultorias.whyChooseUs.cards.focus_description" },
+    { icon: <FaUserFriends />,   titleKey: "consultorias.whyChooseUs.cards.accompaniment_title", descKey: "consultorias.whyChooseUs.cards.accompaniment_description" },
+    { icon: <FaGraduationCap />, titleKey: "consultorias.whyChooseUs.cards.experience_title",   descKey: "consultorias.whyChooseUs.cards.experience_description" },
+    { icon: <BsStars />,         titleKey: "consultorias.whyChooseUs.cards.solutions_title",    descKey: "consultorias.whyChooseUs.cards.solutions_description" },
+    { icon: <FaLightbulb />,     titleKey: "consultorias.whyChooseUs.cards.innovation_title",   descKey: "consultorias.whyChooseUs.cards.innovation_description" },
+  ];
 
   return (
     <>
@@ -54,118 +58,38 @@ function Consultorias() {
 
       <Description />
 
-      <section className="mt-10 md:mt-20">
+      <section className="mt-10 md:mt-20 max-w-screen-2xl mx-auto">
         <div className="text-center">
-          <motion.div {...slideFromLeft}>
+          <div>
             <h2 className="text-4xl md:text-5xl text-blue-base font-impact m-5">
               {t("consultorias.whyChooseUs.title")}
               <br />
               <span className="text-primary-yellow">
                 {t("consultorias.whyChooseUs.titlle_span")}
-              </span>
+              </span> 
             </h2>
-          </motion.div>
-          <p className="text-blue-base text-lg mt-10">
+          </div>
+          <p className="text-blue-base text-base md:text-lg mt-10">
             {t("consultorias.whyChooseUs.description")}
           </p>
         </div>
 
-        <section className="grid grid-cols-1 m-2 md:grid-cols-3 p-5 md:p-10 grid-rows-2 gap-8 md:gap-5  md:m-5">
-          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div className="flex items-start space-x-4 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span className="text-2xl">💛</span>
+        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 m-2 p-5 md:p-10 gap-8 md:gap-10">
+          {cards.map(({ icon, titleKey, descKey }) => (
+            <div key={titleKey} className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:border-primary-yellow border-2 hover:scale-105 transition-all duration-500 ease-in-out">
+              <div className="flex items-start space-x-4">
+                <div className="flex justify-center w-14 h-14 rounded-full bg-white">
+                  <span className="text-3xl text-primary-yellow">{icon}</span>
+                </div>
+                <h2 className="text-lg md:text-xl font-extrabold text-blue-base mt-1">
+                  {t(titleKey)}
+                </h2>
               </div>
-
-              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
-                {t("consultorias.whyChooseUs.cards.methodology_title")}
-              </h2>
+              <p className="text-base md:text-lg p-5 text-blue-base text-justify ">
+                {t(descKey)}
+              </p>
             </div>
-
-            <p className="text-base text-blue-base text-justify group-hover:text-white">
-              {t("consultorias.whyChooseUs.cards.methodology_description")}
-            </p>
-          </div>
-
-          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div className="flex items-start space-x-4 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span className="text-2xl">🎯</span>
-              </div>
-
-              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
-                {t("consultorias.whyChooseUs.cards.focus_title")}
-              </h2>
-            </div>
-
-            <p className="text-base text-blue-base text-justify group-hover:text-white">
-              {t("consultorias.whyChooseUs.cards.focus_description")}
-            </p>
-          </div>
-
-          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div className="flex items-start space-x-4 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span className="text-2xl">👥</span>
-              </div>
-
-              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
-                {t("consultorias.whyChooseUs.cards.accompaniment_title")}
-              </h2>
-            </div>
-
-            <p className="text-base text-blue-base text-justify group-hover:text-white">
-              {t("consultorias.whyChooseUs.cards.accompaniment_description")}
-            </p>
-          </div>
-
-          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div className="flex items-start space-x-4 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span className="text-2xl">🎓</span>
-              </div>
-
-              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
-                {t("consultorias.whyChooseUs.cards.experience_title")}
-              </h2>
-            </div>
-
-            <p className="text-base text-blue-base text-justify group-hover:text-white">
-              {t("consultorias.whyChooseUs.cards.experience_description")}
-            </p>
-          </div>
-
-          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div className="flex items-start space-x-4 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span className="text-2xl">✨</span>
-              </div>
-
-              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
-                {t("consultorias.whyChooseUs.cards.solutions_title")}
-              </h2>
-            </div>
-
-            <p className="text-base text-blue-base text-justify group-hover:text-white">
-              {t("consultorias.whyChooseUs.cards.solutions_description")}
-            </p>
-          </div>
-
-          <div className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:bg-primary-yellow transition duration-300">
-            <div className="flex items-start space-x-4 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-full">
-                <span className="text-2xl">💡</span>
-              </div>
-
-              <h2 className="group-hover:text-white ext-lg md:text-xl  font-extrabold text-blue-base mt-1">
-                {t("consultorias.whyChooseUs.cards.innovation_title")}
-              </h2>
-            </div>
-
-            <p className="text-base text-blue-base text-justify group-hover:text-white">
-              {t("consultorias.whyChooseUs.cards.innovation_description")}
-            </p>
-          </div>
+          ))}
         </section>
       </section>
       <section className="relative bg-blue-base justify-center items-center text-center  md:mt-10 p-5 md:p-14 bg-[url('/src/assets/images/views/consultorias/estudiantes-en-aula.webp')] bg-cover bg-center overflow-hidden">
@@ -185,21 +109,21 @@ function Consultorias() {
 
         <motion.div {...slideFromTop}>
           <div className="relative flex flex-wrap mt-10 gap-8 md:gap-5 mx-auto justify-center items-center">
-            {pillarsData.map((pillarsData, index) => (
-              <section className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 min-w-[300px] max-w-[450px] min-h-[280px]">
+            {pillarsData.map((pillar) => (
+              <section key={pillar.title} className="group relative flex flex-col p-10 justify-center rounded-3xl transition-all duration-500 hover:-translate-y-2 min-w-[300px] max-w-[450px] min-h-[280px]">
                 <img
                   src={card}
                   alt="Card background"
                   className="absolute inset-0 w-full h-full rounded-3xl"
                 />
                 <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
-                <div key={index} className="relative">
+                <div className="relative">
                   <h4 className="bg-dark-blue text-white rounded-3xl p-2 text-xl md:text-2xl mb-3">
-                    {pillarsData.title}
+                    {pillar.title}
                   </h4>
 
-                  <p className="text-base mb-3 text-white text-center p-3">
-                    {pillarsData.description}
+                  <p className="text-base md:text-lg mb-3 text-white text-center p-3">
+                    {pillar.description}
                   </p>
                 </div>
               </section>

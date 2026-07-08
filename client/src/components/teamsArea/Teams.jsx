@@ -38,9 +38,9 @@ const Teams = ({ teamsData }) => {
       <section className="relative grid grid-cols-1 xl:grid-cols-[3fr_7fr] gap-4 lg:gap-8 p-4 lg:p-12 items-center mb-10">
         <div className="z-10 flex flex-col">
           {teamsData.cardProjectLeader &&
-            teamsData.cardProjectLeader.map((leader, index) => (
+            teamsData.cardProjectLeader.map((leader) => (
               <div
-                key={index}
+                key={leader.name}
                 className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-t-[8px] border-primary-yellow w-full max-w-lg mx-auto hover:scale-105 transition-transform duration-300"
               >
                 <p className="text-sm md:text-lg font-bold text-primary-yellow uppercase tracking-wider mb-4 text-center md:text-left">
@@ -122,9 +122,9 @@ const Teams = ({ teamsData }) => {
             </span>
           )}
           {teamsData.cardAreaLead &&
-            teamsData.cardAreaLead.map((leader, index) => (
+            teamsData.cardAreaLead.map((leader) => (
               <div
-                key={index}
+                key={leader.name}
                 className="relative flex flex-col p-6 bg-white rounded-2xl shadow-lg border-t-[7px] border-primary-yellow  hover:scale-105 transition-transform duration-300 max-w-md w-full mx-auto min-w-0"
               >
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-4">

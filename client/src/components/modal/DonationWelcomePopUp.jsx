@@ -124,7 +124,7 @@ const DonationWelcomePopUp = () => {
             </motion.div>
             <img
               src={JaviCorto}
-              alt="Javi"
+              alt={t("donationWelcomePopUp.alt_javi")}
               className="relative z-10 h-36 md:h-44 w-auto drop-shadow-lg"
             />
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-8 bg-primary-purple/20 rounded-full blur-xl" />
