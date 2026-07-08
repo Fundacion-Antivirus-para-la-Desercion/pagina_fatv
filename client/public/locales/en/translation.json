@@ -379,7 +379,8 @@
         "four": "Social Media",
         "five": "Cobranding",
         "six": "Infographics"
-      }
+      },
+      "mobile_hint": "Tap the image to see more"
     },
     "team": {
       "title": "OUR TEAM",

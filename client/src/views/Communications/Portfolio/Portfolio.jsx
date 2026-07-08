@@ -177,6 +177,11 @@ function Portfolio() {
           )
         )}
       </AnimatePresence>
+
+      <p className="md:hidden col-span-full text-center text-lg text-blue-base/60 italic">
+        {t("communications.portfolio.mobile_hint")}
+      </p>
+
       {lightbox.index !== null && (
         <div
           className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden overscroll-none bg-black/80 p-4 touch-none md:p-6"

@@ -380,7 +380,8 @@
         "four": "Redes Sociales",
         "five": "Cobranding",
         "six": "Infografía "
-      }
+      },
+      "mobile_hint": "Toca la imagen para ver más"
     },
     "team": {
       "title": "NUESTRO EQUIPO",
@@ -658,17 +659,16 @@
     "alt_back": "Atras",
     "return_to_news": "Regresar a noticias",
     "share": "Compartir",
-    "cardCarousel":{
-      "tbn_previous" : "Anterior",
-      "tbn_next" : "Siguiente",
-      "message" : "Desliza para navegar"
+    "cardCarousel": {
+      "tbn_previous": "Anterior",
+      "tbn_next": "Siguiente",
+      "message": "Desliza para navegar"
     }
   },
   "otherNews": {
     "title": "OTROS ARTÍCULOS QUE TE PUEDEN INTERESAR",
     "read_more": "Leer más"
   },
-  
   "ourTeam": {
     "title": "SOBRE NUESTRO EQUIPO",
     "roles": {
