@@ -62,9 +62,6 @@ export default {
       width: {
         450: "28.125rem",
       },
-      animation: {
-        "spin-slower": "spin 25s linear infinite",
-      },
       // Animación para el texto desplazándose horizontalmente
       keyframes: {
         scroll: {
@@ -87,6 +84,7 @@ export default {
         },
       },
       animation: {
+        "spin-slower": "spin 25s linear infinite",
         scroll: "scroll linear infinite",
         "fade-in": "fadeIn 0.3s ease-out forwards",
         "slide-up": "slideUp 0.35s ease-out forwards",

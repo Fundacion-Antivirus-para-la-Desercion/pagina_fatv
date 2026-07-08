@@ -21,7 +21,6 @@ function CardsCarousel({
   };
 
   return (
-    <>
       <section className="bg-[#06407A] py-10 md:py-12 lg:py-10">
         {/* Javi + Foco */}
         <div className="flex justify-center flex-shrink-0">
@@ -84,7 +83,6 @@ function CardsCarousel({
           </div>
         </section>
       </section>
-    </>
   );
 }
 
