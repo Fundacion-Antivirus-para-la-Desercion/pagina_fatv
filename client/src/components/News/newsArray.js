@@ -25,6 +25,51 @@ import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-
 
 const buildNewsArray = (t) => [
   {
+    slug: "reconocidos-por-la-facultad-de-minas",
+    img: Reconocimiento,
+    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
+    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
+    newDetailContent: {
+      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
+          ),
+        },
+        {
+          type: "img",
+          value: ReconocimientoDos,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
+          ),
+        },
+      ],
+    },
+  },
+  {
     slug: "desercion-universitaria",
     img: Desercion,
     alt: t("news.items.desercion-universitaria.alt"),
@@ -352,51 +397,6 @@ const buildNewsArray = (t) => [
           type: "parrafo",
           value: t(
             "news.items.permanencia-educativa-de-calidad.detail.content.5",
-          ),
-        },
-      ],
-    },
-  },
-  {
-    slug: "reconocidos-por-la-facultad-de-minas",
-    img: Reconocimiento,
-    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
-    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
-    newDetailContent: {
-      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
-      content: [
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
-          ),
-        },
-        {
-          type: "img",
-          value: ReconocimientoDos,
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
           ),
         },
       ],

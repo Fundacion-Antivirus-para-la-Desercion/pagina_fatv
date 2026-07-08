@@ -503,6 +503,20 @@
     "read_more": "Read more",
     "see_more_alt": "See more",
     "items": {
+      "reconocidos-por-la-facultad-de-minas": {
+        "alt": "Recognized by the Faculty of Mines on its 139th anniversary",
+        "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
+        "detail": {
+          "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
+          "content": [
+            "A few years ago, we dreamed of more young people being able to stay in university. Today, that dream allows us to experience moments like this.",
+            "<bold>The Faculty of Mines of the National University of Colombia, Medellín campus,</bold> as part of the celebration of its <bold>139th anniversary,</bold> recognized us as <bold>strategic partners for our work in favor of student retention.</bold>",
+            "The recognition bears the name of the FATV, but it truly belongs to every student who decides not to give up, to every conversation held during difficult times, to every partner who believes, and to every person who is part of the journey.",
+            "<bold>Thank you to the Faculty of Mines for believing in the power of partnerships that transform lives and for allowing us to walk hand in hand in this purpose.</bold>",
+            "We are very proud to be recognized by the Faculty of Mines on its 139th anniversary. This synergy represents teamwork and the commitment to ensure that no young person has to abandon their studies."
+          ]
+        }
+      },
       "desercion-universitaria": {
         "alt": "University dropout",
         "title": "UNIVERSITY DROPOUT",
@@ -605,20 +619,6 @@
             "<bold>Relevant and flexible curriculum:</bold> designing a curriculum that responds to the needs of today's world—dynamic and adjustable—that fosters critical thinking, creativity, and problem-solving. <bold>Psychosocial support:</bold> implementing strategies to prevent dropout, such as tutoring, socio-vocational guidance, and emotional support. Programs for the prevention of stress, anxiety, and depression, with a focus on resilience and emotional well-being.",
             "<bold>Financial support:</bold> offering scholarship programs, subsidies, and student work opportunities to reduce dropout due to economic reasons. Providing healthy, low-cost food options and access to affordable university housing. <bold>Fostering entrepreneurship:</bold> promoting the creation of startup incubators, innovation training, and access to networking. Training programs in technological tools, cybersecurity, and data management to adapt to the digital world. <bold>Community participation:</bold> involving families, teachers, civil society organizations (CSOs), and governments to strengthen commitment to education. <bold>Volunteering and social commitment:</bold> connecting students with the community, promoting social responsibility and active citizenship.",
             "Quality educational persistence is essential to reduce social inequality and ensure the development of citizens prepared to contribute to the progress of society. Guaranteeing educational persistence with quality standards is a challenge. In this context, the work of civil society organizations becomes a key factor in strengthening access, equity, and excellence. This implies that universities, both public and private, must open themselves to establishing partnerships focused on dropout prevention and the improvement of persistence. They must be willing to mobilize their well-being systems to focus on the individual experiencing the greatest academic, socio-emotional, psychosocial, and economic vulnerability, in a systemic and articulated manner. Action with CSOs reinforces the right to education, contributes to quality persistence, and helps prepare students to face the challenges of the future."
-          ]
-        }
-      },
-      "reconocidos-por-la-facultad-de-minas": {
-        "alt": "Recognized by the Faculty of Mines on its 139th anniversary",
-        "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
-        "detail": {
-          "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
-          "content": [
-            "A few years ago, we dreamed of more young people being able to stay in university. Today, that dream allows us to experience moments like this.",
-            "<bold>The Faculty of Mines of the National University of Colombia, Medellín campus,</bold> as part of the celebration of its <bold>139th anniversary,</bold> recognized us as <bold>strategic partners for our work in favor of student retention.</bold>",
-            "The recognition bears the name of the FATV, but it truly belongs to every student who decides not to give up, to every conversation held during difficult times, to every partner who believes, and to every person who is part of the journey.",
-            "<bold>Thank you to the Faculty of Mines for believing in the power of partnerships that transform lives and for allowing us to walk hand in hand in this purpose.</bold>",
-            "We are very proud to be recognized by the Faculty of Mines on its 139th anniversary. This synergy represents teamwork and the commitment to ensure that no young person has to abandon their studies."
           ]
         }
       },
