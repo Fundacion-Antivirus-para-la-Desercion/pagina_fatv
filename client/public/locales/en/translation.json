@@ -1315,7 +1315,8 @@
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Our social networks",
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
-    "dataProtection": "Data protection policy"
+    "dataProtection": "Data protection policy",
+    "logo_alt": "Fundación Antivirus para la Deserción logo"
   },
   "notFound": {
     "title": "Oops!",
