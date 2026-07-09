@@ -11,6 +11,8 @@ import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
 import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
 import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
+import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
+import ArticleJuanaR from "../../assets/images/views/imagesNews/article-juana.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
@@ -186,6 +188,50 @@ const buildNewsArray = (t) => [
           value: t(
             "news.items.una-oportunidad-que-cruzo-fronteras.detail.content.5",
           ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "vincular-para-transformar",
+    img: ArticleJuanaR,
+    alt: t("news.items.vincular-para-transformar.alt"),
+    title: t("news.items.vincular-para-transformar.title"),
+    newDetailContent: {
+      title: t("news.items.vincular-para-transformar.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: JuanaR,
+        },
+        {
+          type: "parrafo-quote",
+          value: t("news.items.vincular-para-transformar.detail.content.0"),
+          author: "Juana Rueda",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.4"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.5"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.6"),
         },
       ],
     },
