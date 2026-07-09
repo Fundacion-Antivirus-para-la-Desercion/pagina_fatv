@@ -13,10 +13,12 @@ import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
 import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
-import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
-import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
+import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
+import ArticleManuela from "../../assets/images/views/imagesNews/article-manuela.webp";
+import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
+import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -348,6 +350,54 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.el-docente-hoy.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "retos-comunicativos",
+    img: ArticleManuela,
+    alt: t("news.items.retos-comunicativos.alt"),
+    title: t("news.items.retos-comunicativos.title"),
+    newDetailContent: {
+      title: t("news.items.retos-comunicativos.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: ManuelaC,
+        },
+        {
+          type: "parrafo-quote",
+          value: t("news.items.retos-comunicativos.detail.content.0"),
+          author: "Manuela Correa",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.4"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.5"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.6"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.7"),
         },
       ],
     },
