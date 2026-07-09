@@ -237,58 +237,6 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    slug: "acompanamiento-becarios-rurales",
-    img: ArticleNathaliaR,
-    alt: t("news.items.acompanamiento-becarios-rurales.alt"),
-    title: t("news.items.acompanamiento-becarios-rurales.title"),
-    newDetailContent: {
-      title: t("news.items.acompanamiento-becarios-rurales.detail.title"),
-      content: [
-        {
-          type: "img",
-          value: NathaliaR,
-        },
-        {
-          type: "parrafo-quote",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.0",
-          ),
-          author: "Nathalia Revelo",
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.1",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.2",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.3",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.4",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.5",
-          ),
-        },
-      ],
-    },
-  },
-  {
     slug: "la-crisis-en-educacion-superior",
     img: ArticleMateoD,
     alt: t("news.items.la-crisis-en-educacion-superior.alt"),
@@ -359,6 +307,58 @@ const buildNewsArray = (t) => [
           type: "parrafo",
           value: t(
             "news.items.la-crisis-en-educacion-superior.detail.content.9",
+          ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "acompanamiento-becarios-rurales",
+    img: ArticleNathaliaR,
+    alt: t("news.items.acompanamiento-becarios-rurales.alt"),
+    title: t("news.items.acompanamiento-becarios-rurales.title"),
+    newDetailContent: {
+      title: t("news.items.acompanamiento-becarios-rurales.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: NathaliaR,
+        },
+        {
+          type: "parrafo-quote",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.0",
+          ),
+          author: "Nathalia Revelo",
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.4",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.5",
           ),
         },
       ],
