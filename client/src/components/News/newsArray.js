@@ -13,6 +13,8 @@ import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
 import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
+import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
+import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
 
@@ -398,6 +400,42 @@ const buildNewsArray = (t) => [
           value: t(
             "news.items.permanencia-educativa-de-calidad.detail.content.5",
           ),
+        },
+      ],
+    },
+  },
+  {
+    slug: "desafios-fatv-en-tecnologia",
+    img: ArticleKaren,
+    alt: t("news.items.desafios-fatv-en-tecnologia.alt"),
+    title: t("news.items.desafios-fatv-en-tecnologia.title"),
+    newDetailContent: {
+      title: t("news.items.desafios-fatv-en-tecnologia.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: KarenG,
+        },
+        {
+          type: "parrafo-quote",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.0"),
+          author: "Karen González",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.4"),
         },
       ],
     },
