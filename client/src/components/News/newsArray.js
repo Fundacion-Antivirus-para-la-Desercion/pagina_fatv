@@ -23,6 +23,8 @@ import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
 import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
 import TejiendoRedes from "../../assets/images/views/imagesNews/mision-internacional.webp";
 import TejiendoRedesDos from "../../assets/images/views/imagesNews/mision-internacional-dos.webp";
+import Tisko from "../../assets/images/views/imagesNews/tisko-2025.webp";
+
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -534,6 +536,34 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.desafios-fatv-en-tecnologia.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "tikso-2025",
+    img: Tisko,
+    alt: t("news.items.tikso-2025.alt"),
+    title: t("news.items.tikso-2025.title"),
+    newDetailContent: {
+      title: t("news.items.tikso-2025.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.tikso-2025.detail.content.0"),
+          author: "Karen González",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.tikso-2025.detail.content.1"),
+        },
+        {
+          type: "img",
+          value: Tisko,
+        },
+         {
+          type: "parrafo",
+          value: t("news.items.tikso-2025.detail.content.2"),
         },
       ],
     },
