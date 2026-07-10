@@ -21,6 +21,8 @@ import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
 import ArticleManuela from "../../assets/images/views/imagesNews/article-manuela.webp";
 import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
 import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
+import TejiendoRedes from "../../assets/images/views/imagesNews/mision-internacional.webp";
+import TejiendoRedesDos from "../../assets/images/views/imagesNews/mision-internacional-dos.webp";
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -532,6 +534,30 @@ const buildNewsArray = (t) => [
         {
           type: "parrafo",
           value: t("news.items.desafios-fatv-en-tecnologia.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "tejiendo-redes",
+    img: TejiendoRedes,
+    alt: t("news.items.tejiendo-redes.alt"),
+    title: t("news.items.tejiendo-redes.title"),
+    newDetailContent: {
+      title: t("news.items.tejiendo-redes.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.tejiendo-redes.detail.content.0"),
+          author: "Karen González",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.tejiendo-redes.detail.content.1"),
+        },
+        {
+          type: "img",
+          value: TejiendoRedesDos,
         },
       ],
     },
