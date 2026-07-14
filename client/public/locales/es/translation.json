@@ -501,6 +501,11 @@
     },
     "title": "NOTICIAS",
     "category": "NOTICIAS",
+    "filters": {
+      "all": "Todos",
+      "articles": "Artículos",
+      "news": "Noticias"
+    },
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {

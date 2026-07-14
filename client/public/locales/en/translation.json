@@ -500,6 +500,11 @@
     },
     "title": "NEWS",
     "category": "NEWS",
+    "filters": {
+      "all": "All",
+      "articles": "Articles",
+      "news": "News"
+    },
     "read_more": "Read more",
     "see_more_alt": "See more",
     "items": {
@@ -671,7 +676,7 @@
       },
       "tikso-2025": {
         "alt": "Participation of the Fundación Antivirus para la Deserción in Tikso 2025, a space for learning.",
-        "title": "FATV'S PARTICIPATION IN TIKSO 2025",
+        "title": "FATV PARTICIPATION IN TIKSO 2025",
         "detail": {
           "title": "FATV'S PARTICIPATION IN TIKSO 2025",
           "content": [

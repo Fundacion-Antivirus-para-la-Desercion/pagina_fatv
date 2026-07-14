@@ -25,6 +25,11 @@ import TejiendoRedes from "../../assets/images/views/imagesNews/mision-internaci
 import TejiendoRedesDos from "../../assets/images/views/imagesNews/mision-internacional-dos.webp";
 import Tisko from "../../assets/images/views/imagesNews/tisko-2025.webp";
 
+export const filters = [
+  { id: "all", labelKey: "news.filters.all" },
+  { id: "articles", labelKey: "news.filters.articles" },
+  { id: "news", labelKey: "news.filters.news" },
+];
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -36,6 +41,7 @@ import Tisko from "../../assets/images/views/imagesNews/tisko-2025.webp";
 const buildNewsArray = (t) => [
   {
     slug: "reconocidos-por-la-facultad-de-minas",
+    type: "news",
     img: Reconocimiento,
     alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
     title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
@@ -81,6 +87,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "desercion-universitaria",
+    type: "news",
     img: Desercion,
     alt: t("news.items.desercion-universitaria.alt"),
     title: t("news.items.desercion-universitaria.title"),
@@ -116,6 +123,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "importancia-de-los-datos",
+    type: "news",
     img: EncuentroColaboradores,
     alt: t("news.items.importancia-de-los-datos.alt"),
     title: t("news.items.importancia-de-los-datos.title"),
@@ -147,6 +155,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "una-oportunidad-que-cruzo-fronteras",
+    type: "news",
     img: Oportunidad,
     alt: t("news.items.una-oportunidad-que-cruzo-fronteras.alt"),
     title: t("news.items.una-oportunidad-que-cruzo-fronteras.title"),
@@ -198,6 +207,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "vincular-para-transformar",
+    type: "articles",
     img: ArticleJuanaR,
     alt: t("news.items.vincular-para-transformar.alt"),
     title: t("news.items.vincular-para-transformar.title"),
@@ -242,6 +252,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "la-crisis-en-educacion-superior",
+    type: "articles",
     img: ArticleMateoD,
     alt: t("news.items.la-crisis-en-educacion-superior.alt"),
     title: t("news.items.la-crisis-en-educacion-superior.title"),
@@ -318,6 +329,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "acompanamiento-becarios-rurales",
+    type: "articles",
     img: ArticleNathaliaR,
     alt: t("news.items.acompanamiento-becarios-rurales.alt"),
     title: t("news.items.acompanamiento-becarios-rurales.title"),
@@ -370,6 +382,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "el-docente-hoy",
+    type: "articles",
     img: ArticleJhiselH,
     alt: t("news.items.el-docente-hoy.alt"),
     title: t("news.items.el-docente-hoy.title"),
@@ -406,6 +419,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "retos-comunicativos",
+    type: "articles",
     img: ArticleManuela,
     alt: t("news.items.retos-comunicativos.alt"),
     title: t("news.items.retos-comunicativos.title"),
@@ -454,6 +468,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "permanencia-educativa-de-calidad",
+    type: "articles",
     img: ArticleLuisS,
     alt: t("news.items.permanencia-educativa-de-calidad.alt"),
     title: t("news.items.permanencia-educativa-de-calidad.title"),
@@ -506,6 +521,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "desafios-fatv-en-tecnologia",
+    type: "articles",
     img: ArticleKaren,
     alt: t("news.items.desafios-fatv-en-tecnologia.alt"),
     title: t("news.items.desafios-fatv-en-tecnologia.title"),
@@ -542,6 +558,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "tikso-2025",
+    type: "news",
     img: Tisko,
     alt: t("news.items.tikso-2025.alt"),
     title: t("news.items.tikso-2025.title"),
@@ -570,6 +587,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "tejiendo-redes",
+    type: "news",
     img: TejiendoRedes,
     alt: t("news.items.tejiendo-redes.alt"),
     title: t("news.items.tejiendo-redes.title"),
@@ -594,6 +612,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "conversatorio-envigado",
+    type: "news",
     img: Conversatorio,
     alt: t("news.items.conversatorio-envigado.alt"),
     title: t("news.items.conversatorio-envigado.title"),
@@ -617,6 +636,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "mencion-honorifica",
+    type: "news",
     img: Mencion,
     alt: t("news.items.mencion-honorifica.alt"),
     title: t("news.items.mencion-honorifica.title"),
@@ -636,6 +656,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "congreso-latinoamericano",
+    type: "news",
     img: Participacion,
     alt: t("news.items.congreso-latinoamericano.alt"),
     title: t("news.items.congreso-latinoamericano.title"),

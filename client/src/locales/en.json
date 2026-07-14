@@ -500,6 +500,11 @@
     },
     "title": "NEWS",
     "category": "NEWS",
+    "filters": {
+      "all": "All",
+      "articles": "Articles",
+      "news": "News"
+    },
     "read_more": "Read more",
     "see_more_alt": "See more",
     "items": {
