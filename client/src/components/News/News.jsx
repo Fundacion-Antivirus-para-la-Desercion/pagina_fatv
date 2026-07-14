@@ -1,5 +1,6 @@
 import "./News.css";
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray, { filters } from "./newsArray";
@@ -7,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import BannerView from "../Banner-views/BannerView";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCalendarMinus } from "react-icons/fa6";
+import { newsContainerVariants, newsCardVariants } from "../motion/constants/Animations";
 
 function News() {
   const navigate = useNavigate();
@@ -45,9 +47,17 @@ function News() {
         ))}
       </div>
 
-      <section className="noticias-content grid gap-20 max-w-[80%] py-12 mx-auto  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-stretch">
+      <AnimatePresence mode="wait">
+        <motion.section
+          key={activeFilter}
+          variants={newsContainerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className="noticias-content grid gap-20 max-w-[80%] py-12 mx-auto grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-stretch"
+        >
         {visibleNews.map((news) => (
-          <div key={news.slug} className="flex flex-col">
+          <motion.div key={news.slug} variants={newsCardVariants} className="flex flex-col">
             <img
               className="mb-3 aspect-ratio rounded-lg"
               src={news.img}
@@ -70,9 +80,10 @@ function News() {
                 <FaArrowRight className="text-lg transition-transform duration-300 group-hover:translate-x-1" />
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </section>
+        </motion.section>
+      </AnimatePresence>
     </>
   );
 }
