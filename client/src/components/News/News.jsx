@@ -14,7 +14,7 @@ function News() {
   const [activeFilter, setActiveFilter] = useState("all");
 
   const visibleNews = buildNewsArray(t).filter(
-    (n) => activeFilter === "all" || n.type === activeFilter
+    (n) => activeFilter === "all" || n.type === activeFilter,
   );
 
   return (
@@ -34,10 +34,10 @@ function News() {
           <button
             key={f.id}
             onClick={() => setActiveFilter(f.id)}
-            className={`text-lg font-impact pb-1 border-b-2 transition-colors cursor-pointer ${
+            className={`rounded-3xl border min-w-20 px-5 py-3 text-sm md:text-lg transition-all duration-500 ease-out ${
               activeFilter === f.id
-                ? "text-primary-purple border-primary-purple"
-                : "text-blue-base border-transparent hover:border-blue-base"
+                ? "border-dark-blue bg-dark-blue text-white shadow-lg shadow-dark-blue/20"
+                : "cursor-pointer border-transparent bg-[#E6E7ED] text-dark-blue hover:scale-105 hover:bg-primary-yellow"
             }`}
           >
             {t(f.labelKey)}
@@ -48,7 +48,11 @@ function News() {
       <section className="noticias-content grid gap-20 max-w-[80%] py-12 mx-auto  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-stretch">
         {visibleNews.map((news) => (
           <div key={news.slug} className="flex flex-col">
-            <img className="mb-3 aspect-ratio rounded-lg" src={news.img} alt={news.alt} />
+            <img
+              className="mb-3 aspect-ratio rounded-lg"
+              src={news.img}
+              alt={news.alt}
+            />
             <p className="flex items-center text-base md:text-lg font-impact text-primary-purple mb-2">
               <FaRegCalendarMinus className="mr-1 w-7 h-7" />
               {t("news.category")}
