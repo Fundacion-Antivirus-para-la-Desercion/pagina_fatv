@@ -101,6 +101,7 @@ const NewsDetail = () => {
               content={news.newDetailContent.content ?? []}
               title={news.newDetailContent.title}
               newsLabel={t("newsDetail.news_label")}
+              date={news.date}
               dimensions={bookDimensions}
             />
           )}
