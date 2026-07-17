@@ -89,7 +89,7 @@ const buildNewsArray = (t) => [
   {
     slug: "desercion-universitaria",
     type: "articles",
-    date: "2026-02-11",
+    date: "2021-04-02",
     img: Desercion,
     alt: t("news.items.desercion-universitaria.alt"),
     title: t("news.items.desercion-universitaria.title"),
@@ -126,7 +126,7 @@ const buildNewsArray = (t) => [
   {
     slug: "importancia-de-los-datos",
     type: "articles",
-    date: "2026-02-11",
+    date: "2021-03-22",
     img: EncuentroColaboradores,
     alt: t("news.items.importancia-de-los-datos.alt"),
     title: t("news.items.importancia-de-los-datos.title"),
@@ -570,7 +570,7 @@ const buildNewsArray = (t) => [
   {
     slug: "tikso-2025",
     type: "news",
-    date: "2025-02-11",
+    date: "2025-09-23",
     img: Tisko,
     alt: t("news.items.tikso-2025.alt"),
     title: t("news.items.tikso-2025.title"),
@@ -626,7 +626,7 @@ const buildNewsArray = (t) => [
   {
     slug: "conversatorio-envigado",
     type: "news",
-    date: "2025-10-14",
+    date: "2022-11-14",
     img: Conversatorio,
     alt: t("news.items.conversatorio-envigado.alt"),
     title: t("news.items.conversatorio-envigado.title"),
