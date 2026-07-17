@@ -88,7 +88,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "desercion-universitaria",
-    type: "news",
+    type: "articles",
     date: "2026-02-11",
     img: Desercion,
     alt: t("news.items.desercion-universitaria.alt"),
@@ -125,7 +125,7 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "importancia-de-los-datos",
-    type: "news",
+    type: "articles",
     date: "2026-02-11",
     img: EncuentroColaboradores,
     alt: t("news.items.importancia-de-los-datos.alt"),
