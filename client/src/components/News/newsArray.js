@@ -42,7 +42,7 @@ const buildNewsArray = (t) => [
   {
     slug: "reconocidos-por-la-facultad-de-minas",
     type: "news",
-    date: "2026-02-11",
+    date: "2026-05-07",
     img: Reconocimiento,
     alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
     title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
@@ -159,7 +159,7 @@ const buildNewsArray = (t) => [
   {
     slug: "una-oportunidad-que-cruzo-fronteras",
     type: "news",
-    date: "2026-02-11",
+    date: "2026-02-13",
     img: Oportunidad,
     alt: t("news.items.una-oportunidad-que-cruzo-fronteras.alt"),
     title: t("news.items.una-oportunidad-que-cruzo-fronteras.title"),
@@ -212,7 +212,7 @@ const buildNewsArray = (t) => [
   {
     slug: "vincular-para-transformar",
     type: "articles",
-    date: "2026-02-11",
+    date: "2026-07-09",
     img: ArticleJuanaR,
     alt: t("news.items.vincular-para-transformar.alt"),
     title: t("news.items.vincular-para-transformar.title"),
@@ -258,7 +258,7 @@ const buildNewsArray = (t) => [
   {
     slug: "la-crisis-en-educacion-superior",
     type: "articles",
-    date: "2026-02-11",
+    date: "2026-05-11",
     img: ArticleMateoD,
     alt: t("news.items.la-crisis-en-educacion-superior.alt"),
     title: t("news.items.la-crisis-en-educacion-superior.title"),
@@ -336,7 +336,7 @@ const buildNewsArray = (t) => [
   {
     slug: "acompanamiento-becarios-rurales",
     type: "articles",
-    date: "2026-02-11",
+    date: "2026-04-23",
     img: ArticleNathaliaR,
     alt: t("news.items.acompanamiento-becarios-rurales.alt"),
     title: t("news.items.acompanamiento-becarios-rurales.title"),
@@ -428,7 +428,7 @@ const buildNewsArray = (t) => [
   {
     slug: "retos-comunicativos",
     type: "articles",
-    date: "2026-02-11",
+    date: "2025-04-10",
     img: ArticleManuela,
     alt: t("news.items.retos-comunicativos.alt"),
     title: t("news.items.retos-comunicativos.title"),
@@ -478,7 +478,7 @@ const buildNewsArray = (t) => [
   {
     slug: "permanencia-educativa-de-calidad",
     type: "articles",
-    date: "2026-02-11",
+    date: "2025-02-20",
     img: ArticleLuisS,
     alt: t("news.items.permanencia-educativa-de-calidad.alt"),
     title: t("news.items.permanencia-educativa-de-calidad.title"),
@@ -532,7 +532,7 @@ const buildNewsArray = (t) => [
   {
     slug: "desafios-fatv-en-tecnologia",
     type: "articles",
-    date: "2026-02-11",
+    date: "2025-01-30",
     img: ArticleKaren,
     alt: t("news.items.desafios-fatv-en-tecnologia.alt"),
     title: t("news.items.desafios-fatv-en-tecnologia.title"),
@@ -570,7 +570,7 @@ const buildNewsArray = (t) => [
   {
     slug: "tikso-2025",
     type: "news",
-    date: "2026-02-11",
+    date: "2025-02-11",
     img: Tisko,
     alt: t("news.items.tikso-2025.alt"),
     title: t("news.items.tikso-2025.title"),
@@ -600,7 +600,7 @@ const buildNewsArray = (t) => [
   {
     slug: "tejiendo-redes",
     type: "news",
-    date: "2026-02-11",
+    date: "2025-11-13",
     img: TejiendoRedes,
     alt: t("news.items.tejiendo-redes.alt"),
     title: t("news.items.tejiendo-redes.title"),
@@ -626,7 +626,7 @@ const buildNewsArray = (t) => [
   {
     slug: "conversatorio-envigado",
     type: "news",
-    date: "2026-02-11",
+    date: "2025-10-14",
     img: Conversatorio,
     alt: t("news.items.conversatorio-envigado.alt"),
     title: t("news.items.conversatorio-envigado.title"),
@@ -651,7 +651,7 @@ const buildNewsArray = (t) => [
   {
     slug: "mencion-honorifica",
     type: "news",
-    date: "2026-02-11",
+    date: "2022-09-22",
     img: Mencion,
     alt: t("news.items.mencion-honorifica.alt"),
     title: t("news.items.mencion-honorifica.title"),
@@ -672,7 +672,7 @@ const buildNewsArray = (t) => [
   {
     slug: "congreso-latinoamericano",
     type: "news",
-    date: "2026-02-11",
+    date: "2022-11-16",
     img: Participacion,
     alt: t("news.items.congreso-latinoamericano.alt"),
     title: t("news.items.congreso-latinoamericano.title"),

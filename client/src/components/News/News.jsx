@@ -65,7 +65,9 @@ function News() {
             />
             <p className="flex items-center text-base md:text-lg font-impact text-primary-purple mb-2">
               <FaRegCalendarMinus className="mr-1 w-7 h-7" />
-              {t("news.category")}
+              
+              {news.type === "news" ? t("news.category") : t("news.filters.articles")}
+              
             </p>
             <p className="mb-4 text-left text-[2.5rem] font-impact text-blue-base leading-9 flex-grow">
               {news.title}
