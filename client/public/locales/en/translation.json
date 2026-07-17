@@ -502,7 +502,7 @@
     "category": "NEWS",
     "filters": {
       "all": "All",
-      "articles": "Articles",
+      "articles": "ARTICLES",
       "news": "News"
     },
     "read_more": "Read more",
