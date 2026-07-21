@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
 import BookPage from "./BookPage";
 import BookCoverHeader from "./BookCoverHeader";
+import BookFooter from "./BookFooter";
 import NewsContentRenderer from "./NewsContentRenderer";
 import MeasureLayer from "./MeasureLayer";
 import PageLeaf from "./PageLeaf";
@@ -33,9 +34,17 @@ const mobileVariants = {
   exit: (dir) => ({ rotateY: dir >= 0 ? -92 : 92, opacity: 0 }),
 };
 
-const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
-  const { t } = useTranslation();
+const BookCarousel = ({ content, title, newsLabel, date, dimensions }) => {
+  const { t, i18n } = useTranslation();
   const { width, height, isPortrait, isTwoPage } = dimensions;
+
+  const formattedDate = useMemo(() => {
+    if (!date) return null;
+    return new Intl.DateTimeFormat(
+      i18n.language?.startsWith("en") ? "en-US" : "es-ES",
+      { day: "numeric", month: "long", year: "numeric" },
+    ).format(new Date(`${date}T00:00:00`));
+  }, [date, i18n.language]);
 
   const renderItem = useCallback(
     (item, i) => (
@@ -238,6 +247,15 @@ const BookCarousel = ({ content, title, newsLabel, dimensions }) => {
 
       {book}
 
+      {formattedDate && (
+        <div
+          className="bg-white px-9 pb-5 pt-3 mx-auto rounded-b-2xl"
+          style={{ width: isTwoPage ? width * 2 : width }}
+        >
+          <BookFooter formattedDate={formattedDate} />
+        </div>
+      )}
+
       <div className="relative z-30 mt-4 flex items-center justify-center gap-3 pb-4">
         <button
           type="button"
@@ -285,6 +303,7 @@ BookCarousel.propTypes = {
   content: PropTypes.array.isRequired,
   title: PropTypes.string,
   newsLabel: PropTypes.string,
+  date: PropTypes.string,
   dimensions: PropTypes.shape({
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,

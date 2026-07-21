@@ -30,7 +30,7 @@ const useBookDimensions = (contentRef) => {
       const pageWidth = isPortrait
         ? containerWidth
         : Math.floor(containerWidth / 2);
-      const pageHeight = Math.max(isPortrait ? 1000 : 820, Math.min(900, Math.round(pageWidth * 1.25)));
+      const pageHeight = Math.max(isPortrait ? 1100 : 850, Math.min(900, Math.round(pageWidth * 1.25)));
       const pagePaddingY = containerWidth >= 768 ? 64 : 32;
       const coverHeaderHeight = Math.max(
         200,

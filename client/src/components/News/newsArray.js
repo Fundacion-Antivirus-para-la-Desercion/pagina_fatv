@@ -11,10 +11,25 @@ import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
 import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
 import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
 import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
+import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
+import ArticleJuanaR from "../../assets/images/views/imagesNews/article-juana.webp";
 import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
 import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
 import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
 import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
+import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
+import ArticleManuela from "../../assets/images/views/imagesNews/article-manuela.webp";
+import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
+import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
+import TejiendoRedes from "../../assets/images/views/imagesNews/mision-internacional.webp";
+import TejiendoRedesDos from "../../assets/images/views/imagesNews/mision-internacional-dos.webp";
+import Tisko from "../../assets/images/views/imagesNews/tisko-2025.webp";
+
+export const filters = [
+  { id: "all", labelKey: "news.filters.all" },
+  { id: "articles", labelKey: "news.filters.articles" },
+  { id: "news", labelKey: "news.filters.news" },
+];
 
 // buildNewsArray recibe la función `t` de traducción para evitar ejecutar
 // traducciones en tiempo de importación (i18n puede no estar listo aún).
@@ -25,7 +40,56 @@ import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-
 
 const buildNewsArray = (t) => [
   {
+    slug: "reconocidos-por-la-facultad-de-minas",
+    type: "news",
+    date: "2026-05-07",
+    img: Reconocimiento,
+    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
+    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
+    newDetailContent: {
+      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
+          ),
+        },
+        {
+          type: "img",
+          value: ReconocimientoDos,
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
+          ),
+        },
+      ],
+    },
+  },
+  {
     slug: "desercion-universitaria",
+    type: "articles",
+    date: "2021-04-02",
     img: Desercion,
     alt: t("news.items.desercion-universitaria.alt"),
     title: t("news.items.desercion-universitaria.title"),
@@ -61,6 +125,8 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "importancia-de-los-datos",
+    type: "articles",
+    date: "2021-03-22",
     img: EncuentroColaboradores,
     alt: t("news.items.importancia-de-los-datos.alt"),
     title: t("news.items.importancia-de-los-datos.title"),
@@ -92,6 +158,8 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "una-oportunidad-que-cruzo-fronteras",
+    type: "news",
+    date: "2026-02-13",
     img: Oportunidad,
     alt: t("news.items.una-oportunidad-que-cruzo-fronteras.alt"),
     title: t("news.items.una-oportunidad-que-cruzo-fronteras.title"),
@@ -142,59 +210,55 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    slug: "acompanamiento-becarios-rurales",
-    img: ArticleNathaliaR,
-    alt: t("news.items.acompanamiento-becarios-rurales.alt"),
-    title: t("news.items.acompanamiento-becarios-rurales.title"),
+    slug: "vincular-para-transformar",
+    type: "articles",
+    date: "2026-07-09",
+    img: ArticleJuanaR,
+    alt: t("news.items.vincular-para-transformar.alt"),
+    title: t("news.items.vincular-para-transformar.title"),
     newDetailContent: {
-      title: t("news.items.acompanamiento-becarios-rurales.detail.title"),
+      title: t("news.items.vincular-para-transformar.detail.title"),
       content: [
         {
           type: "img",
-          value: NathaliaR,
+          value: JuanaR,
         },
         {
           type: "parrafo-quote",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.0",
-          ),
-          author: "Nathalia Revelo",
+          value: t("news.items.vincular-para-transformar.detail.content.0"),
+          author: "Juana Rueda",
         },
         {
           type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.1",
-          ),
+          value: t("news.items.vincular-para-transformar.detail.content.1"),
         },
         {
           type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.2",
-          ),
+          value: t("news.items.vincular-para-transformar.detail.content.2"),
         },
         {
           type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.3",
-          ),
+          value: t("news.items.vincular-para-transformar.detail.content.3"),
         },
         {
           type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.4",
-          ),
+          value: t("news.items.vincular-para-transformar.detail.content.4"),
         },
         {
           type: "parrafo",
-          value: t(
-            "news.items.acompanamiento-becarios-rurales.detail.content.5",
-          ),
+          value: t("news.items.vincular-para-transformar.detail.content.5"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.vincular-para-transformar.detail.content.6"),
         },
       ],
     },
   },
   {
     slug: "la-crisis-en-educacion-superior",
+    type: "articles",
+    date: "2026-05-11",
     img: ArticleMateoD,
     alt: t("news.items.la-crisis-en-educacion-superior.alt"),
     title: t("news.items.la-crisis-en-educacion-superior.title"),
@@ -270,7 +334,63 @@ const buildNewsArray = (t) => [
     },
   },
   {
+    slug: "acompanamiento-becarios-rurales",
+    type: "articles",
+    date: "2026-04-23",
+    img: ArticleNathaliaR,
+    alt: t("news.items.acompanamiento-becarios-rurales.alt"),
+    title: t("news.items.acompanamiento-becarios-rurales.title"),
+    newDetailContent: {
+      title: t("news.items.acompanamiento-becarios-rurales.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: NathaliaR,
+        },
+        {
+          type: "parrafo-quote",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.0",
+          ),
+          author: "Nathalia Revelo",
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.1",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.2",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.3",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.4",
+          ),
+        },
+        {
+          type: "parrafo",
+          value: t(
+            "news.items.acompanamiento-becarios-rurales.detail.content.5",
+          ),
+        },
+      ],
+    },
+  },
+  {
     slug: "el-docente-hoy",
+    type: "articles",
+    date: "2026-02-11",
     img: ArticleJhiselH,
     alt: t("news.items.el-docente-hoy.alt"),
     title: t("news.items.el-docente-hoy.title"),
@@ -306,7 +426,59 @@ const buildNewsArray = (t) => [
     },
   },
   {
+    slug: "retos-comunicativos",
+    type: "articles",
+    date: "2025-04-10",
+    img: ArticleManuela,
+    alt: t("news.items.retos-comunicativos.alt"),
+    title: t("news.items.retos-comunicativos.title"),
+    newDetailContent: {
+      title: t("news.items.retos-comunicativos.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: ManuelaC,
+        },
+        {
+          type: "parrafo-quote",
+          value: t("news.items.retos-comunicativos.detail.content.0"),
+          author: "Manuela Correa",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.4"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.5"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.6"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.retos-comunicativos.detail.content.7"),
+        },
+      ],
+    },
+  },
+  {
     slug: "permanencia-educativa-de-calidad",
+    type: "articles",
+    date: "2025-02-20",
     img: ArticleLuisS,
     alt: t("news.items.permanencia-educativa-de-calidad.alt"),
     title: t("news.items.permanencia-educativa-de-calidad.title"),
@@ -358,52 +530,103 @@ const buildNewsArray = (t) => [
     },
   },
   {
-    slug: "reconocidos-por-la-facultad-de-minas",
-    img: Reconocimiento,
-    alt: t("news.items.reconocidos-por-la-facultad-de-minas.alt"),
-    title: t("news.items.reconocidos-por-la-facultad-de-minas.title"),
+    slug: "desafios-fatv-en-tecnologia",
+    type: "articles",
+    date: "2025-01-30",
+    img: ArticleKaren,
+    alt: t("news.items.desafios-fatv-en-tecnologia.alt"),
+    title: t("news.items.desafios-fatv-en-tecnologia.title"),
     newDetailContent: {
-      title: t("news.items.reconocidos-por-la-facultad-de-minas.detail.title"),
+      title: t("news.items.desafios-fatv-en-tecnologia.detail.title"),
+      content: [
+        {
+          type: "img",
+          value: KarenG,
+        },
+        {
+          type: "parrafo-quote",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.0"),
+          author: "Karen González",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.1"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.2"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.3"),
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.desafios-fatv-en-tecnologia.detail.content.4"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "tikso-2025",
+    type: "news",
+    date: "2025-09-23",
+    img: Tisko,
+    alt: t("news.items.tikso-2025.alt"),
+    title: t("news.items.tikso-2025.title"),
+    newDetailContent: {
+      title: t("news.items.tikso-2025.detail.title"),
       content: [
         {
           type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.0",
-          ),
+          value: t("news.items.tikso-2025.detail.content.0"),
+          author: "Karen González",
+        },
+        {
+          type: "parrafo",
+          value: t("news.items.tikso-2025.detail.content.1"),
         },
         {
           type: "img",
-          value: ReconocimientoDos,
+          value: Tisko,
+        },
+         {
+          type: "parrafo",
+          value: t("news.items.tikso-2025.detail.content.2"),
+        },
+      ],
+    },
+  },
+  {
+    slug: "tejiendo-redes",
+    type: "news",
+    date: "2025-11-13",
+    img: TejiendoRedes,
+    alt: t("news.items.tejiendo-redes.alt"),
+    title: t("news.items.tejiendo-redes.title"),
+    newDetailContent: {
+      title: t("news.items.tejiendo-redes.detail.title"),
+      content: [
+        {
+          type: "parrafo",
+          value: t("news.items.tejiendo-redes.detail.content.0"),
+          author: "Karen González",
         },
         {
           type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.1",
-          ),
+          value: t("news.items.tejiendo-redes.detail.content.1"),
         },
         {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.2",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.3",
-          ),
-        },
-        {
-          type: "parrafo",
-          value: t(
-            "news.items.reconocidos-por-la-facultad-de-minas.detail.content.4",
-          ),
+          type: "img",
+          value: TejiendoRedesDos,
         },
       ],
     },
   },
   {
     slug: "conversatorio-envigado",
+    type: "news",
+    date: "2022-11-14",
     img: Conversatorio,
     alt: t("news.items.conversatorio-envigado.alt"),
     title: t("news.items.conversatorio-envigado.title"),
@@ -427,6 +650,8 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "mencion-honorifica",
+    type: "news",
+    date: "2022-09-22",
     img: Mencion,
     alt: t("news.items.mencion-honorifica.alt"),
     title: t("news.items.mencion-honorifica.title"),
@@ -446,6 +671,8 @@ const buildNewsArray = (t) => [
   },
   {
     slug: "congreso-latinoamericano",
+    type: "news",
+    date: "2022-11-16",
     img: Participacion,
     alt: t("news.items.congreso-latinoamericano.alt"),
     title: t("news.items.congreso-latinoamericano.title"),
