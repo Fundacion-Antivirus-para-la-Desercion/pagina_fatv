@@ -501,9 +501,28 @@
     },
     "title": "NOTICIAS",
     "category": "NOTICIAS",
+    "filters": {
+      "all": "Todos",
+      "articles": "ARTÍCULOS",
+      "news": "Noticias"
+    },
     "read_more": "Leer más",
     "see_more_alt": "Ver más",
     "items": {
+      "reconocidos-por-la-facultad-de-minas": {
+        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
+        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+        "detail": {
+          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+          "content": [
+            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
+            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
+            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
+            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
+            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
+          ]
+        }
+      },
       "desercion-universitaria": {
         "alt": "La deserción universitaria",
         "title": "LA DESERCIÓN UNIVERSITARIA",
@@ -546,18 +565,19 @@
           ]
         }
       },
-      "acompanamiento-becarios-rurales": {
-        "alt": "La importacia de los datos para acabar con la deserción",
-        "title": "ACOMPAÑAMIENTO INTEGRAL A BECARIOS RURALES EN COLOMBIA",
+      "vincular-para-transformar": {
+        "alt": "Articulo vincular para transformar: una mirada comunicativa a la educación",
+        "title": "VINCULAR PARA TRANSFORMAR: UNA MIRADA COMUNICATIVA A LA EDUCACIÓN",
         "detail": {
-          "title": "ACOMPAÑAMIENTO INTEGRAL A BECARIOS RURALES EN COLOMBIA",
+          "title": "VINCULAR PARA TRANSFORMAR: UNA MIRADA COMUNICATIVA A LA EDUCACIÓN",
           "content": [
-            "EL desplazamiento hacia contextos urbanos, la adaptación cultural, los retos académicos y, la distancia de sus redes de apoyo, configuran un escenario de vulnerabilidad que puede llegar a afectar su bienestar y permanencia en la educación superior.",
-            "El acceso a la educación superior en Colombia para 2026 continúa marcado por desigualdades estructurales; los estudiantes aspirantes a acceder a IES provenientes de contextos rurales <bold>se enfrentan no solo a los cambios culturales que presupone desplazarse de sus territorios, sino a brechas sistemáticas que trascienden lo económico, y afectan lo académico y lo emocional.</bold> En este contexto, los programas de becas con enfoque rural representan una oportunidad de movilidad social; sin embargo, su impacto depende en gran medida de la existencia de estrategias de acompañamiento que reconozcan las particularidades de esta población.",
-            "Los becarios rurales <bold>suelen transitar de instituciones educativas con limitaciones hacia entornos universitarios rigurosos. Esta transición implica un cambio en las dinámicas de aprendizaje,</bold> especialmente en áreas base del conocimiento, donde se evidencian vacíos acumulados que a mediano plazo pueden convertirse en objetivos inalcanzables, frustración y eventualmente riesgo de deserción.",
-            "<bold>El desplazamiento hacia contextos urbanos, la adaptación cultural, los retos académicos y, la distancia de sus redes de apoyo,</bold> configuran un escenario de vulnerabilidad que puede llegar a afectar su bienestar y permanencia en la educación superior. Por ello, desde la Fundación Antivirus para la Deserción apostamos por un acompañamiento interdisciplinario y un seguimiento personalizado y continuo.",
-            "Reconociendo que <bold>el acompañamiento integral</bold> y contextualizado que permita abordar los aspectos emocionales y académicos es un enfoque prioritario para mitigar estas brechas. El apoyo académico permite fortalecer competencias básicas, especialmente en áreas críticas, a través de tutorías personalizadas brindadas por pares, que ya han pasado por la experiencia universitaria, apostando a la construcción de redes de apoyo en su entorno actual, sin dejar de lado, el componente emocional ofreciendo herramientas que permitan la gestión de los retos que presupone esta etapa universitaria.",
-            "<bold>El acompañamiento integral no solo favorece la permanencia estudiantil, sino que también contribuye al desarrollo de sus proyectos de vida, la formación de becarios rurales y retorno potencial a sus territorios beneficia el desarrollo local,</bold> por tanto, fortalecer los programas de acompañamiento a becados no debe considerarse un complemento, sino un componente estructural en la educación; reconocer las desigualdades de origen y actuar sobre ellas mediante intervenciones contextualizadas es un paso fundamental hacia la igualdad de oportunidades en la educación superior en Colombia. Apostar por el acompañamiento a estudiantes rurales es una apuesta por el en el futuro de los territorios del país."
+            "Comunicar en el ámbito educativo y social no es solo transmitir información: es, sobre todo, un acto de responsabilidad hacia el futuro de quienes nos escuchan.",
+            "<bold>¿Cómo la comunicación puede convertirse en puente entre la orientación vocacional y el futuro que sueñan los estudiantes de colegios públicos?</bold> Hay proyectos que se viven desde el rol para el que fuimos contratados, y hay otros que terminan transformando la manera en que entendemos ese rol. Formar parte de un proyecto de orientación sociovocacional dirigido a estudiantes de décimo y once grado de colegios públicos ha sido, para mí, de este segundo tipo: una experiencia tan retadora como enriquecedora, sobre todo desde el lugar que ocupa la comunicación en un proceso que, en apariencia, parecería solo pedagógico.",
+            "Siempre he creído que <bold>la educación es la base de la transformación de las sociedades.</bold> Por eso es tan especial la oportunidad de sembrar en estos jóvenes esas semillas que, con el tiempo, den frutos y les permitan perseguir la vida que desean, proyectarse con criterio propio y aportar al país que los rodea. Pero toda semilla necesita algo más que tierra fértil para germinar: necesita riego constante. En un proyecto como este, ese riego es, en gran parte: <bold>la manera en que se le presenta una oportunidad, el lenguaje con el que se explica una decisión de vida, la cercanía con la que se acompaña a alguien que todavía no sabe muy bien qué quiere ser y hacer.</bold>",
+            "Actualmente, despertar interés genuino a través del lenguaje y los productos audiovisuales, está sujeto a numerosos obstáculos. La sobreestimulación y el exceso de información siguen reduciendo la capacidad de atención de las personas, y los jóvenes son una de las poblaciones más afectadas por esto.",
+            "A eso se suman las condiciones contextuales complejas que enfrentan muchos estudiantes de colegios públicos, lo que implica la necesidad de un enfoque diferenciador: <bold>una comunicación que no puede ser genérica ni estandarizada, sino capaz de reconocer esas realidades particulares y hablarles a los jóvenes desde donde efectivamente están.</bold>",
+            "Esa ha sido mi bandera y objetivo al asumir este rol como comunicadora audiovisual en la Fundación Antivirus: buscar y desarrollar estrategias para que el componente social de este proyecto se vea plenamente apoyado por el ejercicio comunicativo, permitiendo vincular a los jóvenes de manera auténtica, cercana e integral. Digo \"vincular\" y no solo \"informar\" porque ahí está la diferencia central entre una comunicación funcional y una transformadora. Se puede informar sobre programas técnicos, universidades o becas sin que ningún estudiante sienta que ese mensaje le pertenece. <bold>Pero cuando se logra construir un vínculo genuino, la información deja de ser un dato externo y se convierte en una posibilidad real para su propia vida.</bold>",
+            "Comunicar en el ámbito educativo y social no es solo transmitir información: es, sobre todo, un acto de responsabilidad hacia el futuro de quienes nos escuchan. Si la educación, y la orientación socio vocacional siembran las semillas del cambio, el propósito de la comunicación es ayudar a que encuentren la luz necesaria para crecer."
           ]
         }
       },
@@ -580,6 +600,21 @@
           ]
         }
       },
+      "acompanamiento-becarios-rurales": {
+        "alt": "La importacia de los datos para acabar con la deserción",
+        "title": "ACOMPAÑAMIENTO INTEGRAL A BECARIOS RURALES EN COLOMBIA",
+        "detail": {
+          "title": "ACOMPAÑAMIENTO INTEGRAL A BECARIOS RURALES EN COLOMBIA",
+          "content": [
+            "EL desplazamiento hacia contextos urbanos, la adaptación cultural, los retos académicos y, la distancia de sus redes de apoyo, configuran un escenario de vulnerabilidad que puede llegar a afectar su bienestar y permanencia en la educación superior.",
+            "El acceso a la educación superior en Colombia para 2026 continúa marcado por desigualdades estructurales; los estudiantes aspirantes a acceder a IES provenientes de contextos rurales <bold>se enfrentan no solo a los cambios culturales que presupone desplazarse de sus territorios, sino a brechas sistemáticas que trascienden lo económico, y afectan lo académico y lo emocional.</bold> En este contexto, los programas de becas con enfoque rural representan una oportunidad de movilidad social; sin embargo, su impacto depende en gran medida de la existencia de estrategias de acompañamiento que reconozcan las particularidades de esta población.",
+            "Los becarios rurales <bold>suelen transitar de instituciones educativas con limitaciones hacia entornos universitarios rigurosos. Esta transición implica un cambio en las dinámicas de aprendizaje,</bold> especialmente en áreas base del conocimiento, donde se evidencian vacíos acumulados que a mediano plazo pueden convertirse en objetivos inalcanzables, frustración y eventualmente riesgo de deserción.",
+            "<bold>El desplazamiento hacia contextos urbanos, la adaptación cultural, los retos académicos y, la distancia de sus redes de apoyo,</bold> configuran un escenario de vulnerabilidad que puede llegar a afectar su bienestar y permanencia en la educación superior. Por ello, desde la Fundación Antivirus para la Deserción apostamos por un acompañamiento interdisciplinario y un seguimiento personalizado y continuo.",
+            "Reconociendo que <bold>el acompañamiento integral</bold> y contextualizado que permita abordar los aspectos emocionales y académicos es un enfoque prioritario para mitigar estas brechas. El apoyo académico permite fortalecer competencias básicas, especialmente en áreas críticas, a través de tutorías personalizadas brindadas por pares, que ya han pasado por la experiencia universitaria, apostando a la construcción de redes de apoyo en su entorno actual, sin dejar de lado, el componente emocional ofreciendo herramientas que permitan la gestión de los retos que presupone esta etapa universitaria.",
+            "<bold>El acompañamiento integral no solo favorece la permanencia estudiantil, sino que también contribuye al desarrollo de sus proyectos de vida, la formación de becarios rurales y retorno potencial a sus territorios beneficia el desarrollo local,</bold> por tanto, fortalecer los programas de acompañamiento a becados no debe considerarse un complemento, sino un componente estructural en la educación; reconocer las desigualdades de origen y actuar sobre ellas mediante intervenciones contextualizadas es un paso fundamental hacia la igualdad de oportunidades en la educación superior en Colombia. Apostar por el acompañamiento a estudiantes rurales es una apuesta por el en el futuro de los territorios del país."
+          ]
+        }
+      },
       "el-docente-hoy": {
         "alt": "Colaborador de la Fundación Antivirus y estudiantes en sus respectivos entornos educativos.",
         "title": "EL PAPEL DEL DOCENTE EN LA EDUCACIÓN DE HOY",
@@ -591,6 +626,23 @@
             "Ahora, ¿Quién es ese otro que explicitamente asume el rol de enseñar? tal vez lo has llamado docente, maestro o profesor y cada uno con variantes conceptuales, que mutan según a quién le preguntes. Quien toma esta responsabilidad asume un segundo rol: el de intérprete de la realidad, quien, en un espacio formal, conecta con otros para compartir esos \"saberes\" necesarios para conocer, comprender y habitar en la vida social. <bold>Esto implica que, la educación debe responder a las condiciones y necesidades del contexto, y es trabajo del docente hacerlo más digerible.</bold> Por ello, en las monarquías se enseñaba de política y religión; y en la industrialización se enseñaba sobre máquinas y producción, porque era lo que ese contexto requería. Si partimos de esa noción, entonces, ¿Qué se enseña hoy? ¿El docente de hoy está siendo interprete de la realidad actual? ¿O sigue reproduciendo lo mismo de un siglo atrás, pero con nombres modernos?",
             "<bold>De Zubiría, (2013) decía \"Unos jóvenes que vivirán en el Siglo XXI formados con maestros del siglo XX, pero con modelos pedagógicos y currículos del siglo XIX.\" (P.3)</bold>",
             "La realidad actual está llena de influencers, de tecnología, de presiones sobre cómo hay que vivir, de Mindfulness y muchas otras nuevas formas de existencia que nos hablan de que siempre hay más y nunca es suficiente; de metas, a veces, inalcanzables e idealistas. <bold>Una sociedad que cada vez habla más del ser, pero sin herramientas aterrizadas para ello (o incluso, hay tantas que no se sabe por dónde empezar).</bold> Y muchos, no puedo afirmar que todos, pero sí es evidente que gran cantidad de docentes hacen o hacemos una \"traducción\" de la realidad, y como toda traducción deja de lado verdades, desconoce sentires y mensajes implícitos, centrándonos en contenidos. Antes valorábamos al otro según cuánto hacía, ahora, según cuánto sabe, y paradójicamente, se menosprecia el ser (aunque sea lo que la realidad más exige). <bold>Ahí, en esa paradoja, en esa contradicción es en donde se encuentra el lugar del docente, no el traductor de realidades, sino el intérprete que acompaña la autoconstrucción humana desde el ser, el saber y el hacer.</bold>"
+          ]
+        }
+      },
+      "retos-comunicativos": {
+        "alt": "articulo sobre los retos comunicativos de la FATV para la permanencia estudiantil",
+        "title": "RETOS COMUNICATIVOS DE LA FATV PARA LA PERMANENCIA ESTUDIANTIL",
+        "detail": {
+          "title": "RETOS COMUNICATIVOS DE LA FATV PARA LA PERMANENCIA ESTUDIANTIL",
+          "content": [
+            "La comunicación en la FATV debe ser estratégica, personalizada y centrada en crear contenido de valor. Superar la sobresaturación informativa y adaptar el mensaje a las necesidades reales de los públicos, algo esencial para generar un impacto positivo, contribuir a la permanencia educativa y consecuentemente, a la transformación social.",
+            "La comunicación juega un papel fundamental en cualquier ámbito social, especialmente en la Fundación Antivirus para la Deserción (FATV) que busca contribuir de manera positiva a la educación; ya que la calidad educativa no depende solo de recursos materiales, sino también de la forma en que los actores involucrados (estudiantes, docentes, familias y la sociedad en general) se conectan, interactúan y se comprometen.",
+            "Uno de los desafíos clave enfrentados como fundación, es comunicar de manera efectiva a las comunidades académicas y los estudiantes para fomentar su permanencia en la educación superior. La comunicación, en este contexto, no solo se trata de transmitir información, sino de crear un puente de confianza, motivación y apoyo continuo que impulse a los jóvenes a superar las dificultades y culminar sus estudios.",
+            "En primer lugar, para la comunicación con estudiantes, el reto es, la <bold>sobresaturación de información dada por la era digital,</bold> en la cual los jóvenes están constantemente bombardeados con mensajes de diversa índole, desde publicidad hasta mensajes institucionales, pasando por campañas de apoyo y programas gubernamentales; este exceso de información puede generar confusión, desinterés e incluso, que la información pertinente no llegue.",
+            "Para superar este reto, se busca hacer <bold>contenido de calidad y relevante.</bold> Crear contenido de valor implica proporcionar información útil, comprensible y motivadora, que realmente aborde las necesidades y preocupaciones. El contenido priorizado ha de ser <bold>personalizado y cercano,</bold> adaptado a las realidades socioeconómicas, académicas o socioemocionales de los estudiantes. Esto, también implica un proceso de <bold>comunicación bidireccional,</bold> donde los estudiantes no solo reciben información, sino que también tienen un espacio para expresar sus inquietudes, necesidades y aspiraciones. <bold>La escucha activa y la retroalimentación son fundamentales para construir un vínculo de apoyo que haga sentir al estudiante comprendido y respaldado.</bold>",
+            "Un segundo desafío, es llegar a comunidades académicas y organizaciones sociales interesadas en este propósito misional, por ello, se desarrolló un enfoque de visibilización del quehacer, logros, cifras y testimonios significativos de la fundación, que permitan conectar con más organizaciones, generar más oportunidades de intervención y, por lo tanto, más estudiantes acompañados.",
+            "Finalmente, a nivel general, el reto es la <bold>fragmentación de los canales de comunicación.</bold> Para llegar de manera efectiva a estos públicos, se deben gestionar los canales de forma coherente, con la seguridad de que el mensaje llegue de manera efectiva y no se pierda entre la multitud de información.",
+            "En conclusión, para este 2025, <bold>la comunicación en la FATV debe ser estratégica, personalizada y centrada en crear contenido de valor. Superar la sobresaturación informativa y adaptar el mensaje a las necesidades reales de los públicos, algo esencial para generar un impacto positivo, contribuir a la permanencia educativa y consecuentemente, a la transformación social.</bold>"
           ]
         }
       },
@@ -609,25 +661,48 @@
           ]
         }
       },
-      "reconocidos-por-la-facultad-de-minas": {
-        "alt": "Reconocidos por la Facultad de Minas en sus 139 años",
-        "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+      "desafios-fatv-en-tecnologia": {
+        "alt": "articulo sobre los desafios de la fundacion antivirus para la desercion en materia de tecnologia",
+        "title": "¿QUÉ DESAFÍOS ENFRENTA LA FATV EN MATERIA DE TECNOLOGÍA?",
         "detail": {
-          "title": "RECONOCIDOS POR LA FACULTAD DE MINAS EN SUS 139 AÑOS",
+          "title": "¿QUÉ DESAFÍOS ENFRENTA LA FATV EN MATERIA DE TECNOLOGÍA?",
           "content": [
-            "Hace algunos años soñábamos con que más jóvenes pudieran permanecer en la universidad. Hoy, ese sueño nos permite vivir momentos como este.",
-            "<bold>La Facultad de Minas de la Universidad Nacional de Colombia, sede Medellín,</bold> en el marco de la celebración de sus <bold>139 años,</bold> nos reconoció como <bold>aliados estratégicos por nuestro trabajo a favor de la permanencia estudiantil.</bold>",
-            "El reconocimiento lleva el nombre de la FATV pero realmente pertenece a cada estudiante que decide no rendirse, a cada conversación que sostiene en momentos difíciles, a cada aliado que cree y a cada persona que hace parte del camino.",
-            "<bold>Gracias a la Facultad de Minas por creer en el poder de las alianzas que transforman vidas y por permitirnos caminar de la mano en este propósito.</bold>",
-            "Muy orgullosos de ser reconocidos por la Facultad de Minas en sus 139 años. Este engranaje representa el trabajo en equipo y el compromiso de que ningún joven tenga que abandonar sus estudios."
+            "La Fundación Antivirus para la Deserción se compromete a liderar estos esfuerzos, asegurando que la tecnología y los datos se conviertan en aliados para construir un futuro educativo más inclusivo y equitativo.",
+            "La tecnología y los datos son esenciales para garantizar la calidad y equidad en la educación, pero también presentan desafíos para la Fundación Antivirus para la Deserción. Para este año, uno de los mayores retos es asegurar que la tecnología funcione como un puente hacia una educación de calidad, especialmente al implementar soluciones adaptadas al contexto de cada comunidad mediante enfoques innovadores y colaborativos.",
+            "La gestión y análisis de datos educativos, socioeconómicos y culturales es crucial para diseñar estrategias personalizadas. Sin embargo, consolidar esta información es complejo debido a restricciones de acceso y problemas de calidad, como datos incompletos o desactualizados. Para superar estos obstáculos, es fundamental establecer estándares claros, así como implementar procesos de validación y limpieza de datos.",
+            "El aprendizaje continuo en tecnologías emergentes, como inteligencia artificial y análisis predictivo, ofrece oportunidades para identificar necesidades y personalizar los procesos de aprendizaje. Además, el desarrollo web facilita el acceso a recursos educativos, la interacción entre estudiantes y docentes, y el monitoreo del rendimiento académico. Diseñar plataformas accesibles y centradas en el usuario maximiza su impacto.",
+            "La colaboración e innovación son claves para abordar estos retos. Al trabajar junto con áreas internas, aliados externos y comunidades educativas, <bold>La Fundación Antivirus para la Deserción se compromete a liderar estos esfuerzos, asegurando que la tecnología y los datos se conviertan en aliados para construir un futuro educativo más inclusivo y equitativo.</bold>"
+          ]
+        }
+      },
+      "tikso-2025": {
+        "alt": "Participación de la Fundación Antivirus para la Deserción en el Tikso 2025, un espacio de aprendizaje.",
+        "title": "PARTICIPACIÓN DE LA FATV EN EL TIKSO 2025",
+        "detail": {
+          "title": "PARTICIPACIÓN DE LA FATV EN EL TIKSO 2025",
+          "content": [
+            "Gracias a MAKAIA por hacer posible un Tikso 2025 tan inspirador. Fueron dos días de aprendizaje, conexiones y nuevas perspectivas para fortalecer el impacto de las organizaciones sociales.",
+            "Nos llevamos valiosos aprendizajes sobre estrategias de sostenibilidad, innovación y consecución de recursos, además de conocer experiencias que demuestran que la colaboración es clave para transformar realidades. También participamos en la rueda de negocios, un espacio que nos permitió presentar el trabajo de la Fundación Antivirus para la Deserción, compartir nuestra misión y conversar con posibles aliados con quienes esperamos construir asociaciones que generen un impacto duradero.",
+            "Este encuentro nos recordó la importancia de seguir innovando, aprender de otras organizaciones y fortalecer las redes de colaboración para responder a los desafíos sociales con soluciones más sostenibles y de mayor alcance. ¡Gracias a todas las personas que hicieron parte de esta experiencia! Ya esperamos con ilusión el Tikso 2026."
+          ]
+        }
+      },
+      "tejiendo-redes": {
+        "alt": "Nuestro subdirector Víctor Manuel Valencia Martínez asiste a la misión internacional sobre innovación social y sostenibilidad promovida por la Federación Antioqueña de ONG",
+        "title": "SEGUIMOS TEJIENDO REDES PARA LA TRANSFORMACIÓN SOCIAL",
+        "detail": {
+          "title": "SEGUIMOS TEJIENDO REDES PARA LA TRANSFORMACIÓN SOCIAL",
+          "content": [
+            "La Fundación Antivirus para la Deserción sigue ampliando horizontes, nuestro subdirector <bold>Víctor Manuel Valencia Martínez</bold> se encuentra representándonos en la misión internacional sobre innovación social y sostenibilidad promovida por la <bold>Federación Antioqueña de ONG</bold>, un espacio de aprendizaje, conexión y cooperación que nos permite, además de aprender, compartir nuestro modelo de acompañamiento sociopedagógico con aliados de otros países.",
+            "Esta experiencia nos impulsa a seguir creando redes globales de conocimiento y acción, reafirmando que los desafíos sociales y educativos se enfrentan mejor cuando se trabajan en conjunto."
           ]
         }
       },
       "conversatorio-envigado": {
         "alt": "Conversatorio en universidad de Envigado",
-        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+        "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIGADO",
         "detail": {
-          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIADO",
+          "title": "CONVERSATORIO EN UNIVERSIDAD DE ENVIGADO",
           "content": [
             "La Fundación Antivirus para la Deserción fue invitada al 1° Encuentro de Programas de Ingeniería Industrial y afines: Retos y tendencias.",
             "El director de nuestra Fundación, Luis Fernando Sánchez, estuvo el día 14 de octubre participando en este evento de formación docente realizado por la Red REDIN y ACOFI, donde se conversó sobre la práctica docente como un factor asociado a la permanencia o a la deserción y sobre alertas tempranas para atender la salud mental de ingenieros en formación."
@@ -651,6 +726,18 @@
           "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
           "content": [
             "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
+          ]
+        }
+      },
+      "tikso": {
+        "alt": "Participación de la Fundación Antivirus para la Deserción en el Tikso 2025, un espacio de aprendizaje.",
+        "title": "PARTICIPACIÓN DE LA FATV EN EL TIKSO 2025",
+        "detail": {
+          "title": "PARTICIPACIÓN DE LA FATV EN EL TIKSO 2025",
+          "content": [
+            "Gracias a MAKAIA por hacer posible un Tikso 2025 tan inspirador. Fueron dos días de aprendizaje, conexiones y nuevas perspectivas para fortalecer el impacto de las organizaciones sociales.",
+            "Nos llevamos valiosos aprendizajes sobre estrategias de sostenibilidad, innovación y consecución de recursos, además de conocer experiencias que demuestran que la colaboración es clave para transformar realidades. También participamos en la rueda de negocios, un espacio que nos permitió presentar el trabajo de la Fundación Antivirus para la Deserción, compartir nuestra misión y conversar con posibles aliados con quienes esperamos construir asociaciones que generen un impacto duradero.",
+            "Este encuentro nos recordó la importancia de seguir innovando, aprender de otras organizaciones y fortalecer las redes de colaboración para responder a los desafíos sociales con soluciones más sostenibles y de mayor alcance. ¡Gracias a todas las personas que hicieron parte de esta experiencia! Ya esperamos con ilusión el Tikso 2026."
           ]
         }
       }

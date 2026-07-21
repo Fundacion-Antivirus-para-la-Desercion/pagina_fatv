@@ -500,9 +500,28 @@
     },
     "title": "NEWS",
     "category": "NEWS",
+    "filters": {
+      "all": "All",
+      "articles": "ARTICLES",
+      "news": "News"
+    },
     "read_more": "Read more",
     "see_more_alt": "See more",
     "items": {
+      "reconocidos-por-la-facultad-de-minas": {
+        "alt": "Recognized by the Faculty of Mines on its 139th anniversary",
+        "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
+        "detail": {
+          "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
+          "content": [
+            "A few years ago, we dreamed of more young people being able to stay in university. Today, that dream allows us to experience moments like this.",
+            "<bold>The Faculty of Mines of the National University of Colombia, Medellín campus,</bold> as part of the celebration of its <bold>139th anniversary,</bold> recognized us as <bold>strategic partners for our work in favor of student retention.</bold>",
+            "The recognition bears the name of the FATV, but it truly belongs to every student who decides not to give up, to every conversation held during difficult times, to every partner who believes, and to every person who is part of the journey.",
+            "<bold>Thank you to the Faculty of Mines for believing in the power of partnerships that transform lives and for allowing us to walk hand in hand in this purpose.</bold>",
+            "We are very proud to be recognized by the Faculty of Mines on its 139th anniversary. This synergy represents teamwork and the commitment to ensure that no young person has to abandon their studies."
+          ]
+        }
+      },
       "desercion-universitaria": {
         "alt": "University dropout",
         "title": "UNIVERSITY DROPOUT",
@@ -545,18 +564,19 @@
           ]
         }
       },
-      "acompanamiento-becarios-rurales": {
-        "alt": "The importance of data in ending dropout rates",
-        "title": "COMPREHENSIVE SUPPORT FOR RURAL SCHOLARS IN COLOMBIA",
+      "vincular-para-transformar": {
+        "alt": "Article: Connecting to transform: a communicative perspective on education",
+        "title": "CONNECTING TO TRANSFORM: A COMMUNICATIVE PERSPECTIVE ON EDUCATION",
         "detail": {
-          "title": "COMPREHENSIVE SUPPORT FOR RURAL SCHOLARS IN COLOMBIA",
+          "title": "CONNECTING TO TRANSFORM: A COMMUNICATIVE PERSPECTIVE ON EDUCATION",
           "content": [
-            "Relocating to urban environments, cultural adaptation, academic challenges, and the distance from their support networks create a scenario of vulnerability that can affect their well-being and persistence in higher education.",
-            "Access to higher education in Colombia in 2026 continues to be marked by structural inequalities. Students from rural backgrounds aiming to enter Higher Education Institutions (HEIs) <bold>face not only the cultural shifts required by moving away from their territories but also systematic gaps that transcend economic factors, impacting both their academic performance and emotional well-being.</bold> In this context, scholarship programs with a rural focus represent an opportunity for social mobility; however, their impact largely depends on the existence of support strategies that recognize the particularities of this population.",
-            "Rural scholarship recipients <bold>often transition from schools with limited resources to rigorous university environments. This transition involves a shift in learning dynamics,</bold> especially in foundational areas of knowledge, where accumulated gaps become evident. In the medium term, these gaps can turn into unattainable goals, leading to frustration and, eventually, a risk of dropping out.",
-            "<bold>Relocating to urban environments, cultural adaptation, academic challenges, and the distance from their support networks,</bold> create a scenario of vulnerability that can affect their well-being and persistence in higher education. Therefore, at the Antivirus Foundation for Dropout Prevention, we are committed to interdisciplinary support and personalized, continuous follow-up.",
-            "We recognize that <bold>comprehensive, contextualized support</bold> that addresses both emotional and academic aspects is a priority approach to mitigating these gaps. Academic support allows for the strengthening of basic competencies, particularly in critical areas, through personalized peer-to-peer tutoring provided by students who have already navigated the university experience. We focus on building support networks within their current environment, while simultaneously offering an emotional component that provides tools for managing the challenges inherent in this university stage.",
-            "<bold>Comprehensive support not only promotes student persistence but also contributes to the development of their life projects. The training of rural scholars and their potential return to their territories benefits local development.</bold> Therefore, strengthening support programs for scholarship recipients should not be considered a supplement, but a structural component of education. Recognizing the inequalities of origin and acting upon them through contextualized interventions is a fundamental step toward equal opportunity in higher education in Colombia. Investing in support for rural students is an investment in the future of the country's territories."
+            "Communicating in the educational and social sphere is not just about transmitting information: above all, it is an act of responsibility toward the future of those who listen to us.",
+            "<bold>How can communication become a bridge between vocational guidance and the future that public school students dream of?</bold> There are projects that are lived simply through the role for which we were hired, and then there are others that end up transforming how we understand that role itself. Being part of a socio-vocational guidance project aimed at 10th and 11th-grade students in public schools has been, for me, the latter: an experience as challenging as it is enriching, especially considering the role communication plays in a process that, on the surface, might seem purely pedagogical.",
+            "I have always believed that <bold>education is the foundation of societal transformation.</bold> That is why the opportunity to plant seeds in these young people—seeds that will eventually bear fruit, allowing them to pursue the lives they desire, project themselves with sound judgment, and contribute to the country around them—is so special. But every seed needs more than just fertile soil to germinate: it needs constant watering. In a project like this, that watering consists, in large part, of: <bold>the way an opportunity is presented, the language used to explain a life decision, and the closeness with which we support someone who is still not quite sure what they want to be and do.</bold>",
+            "Currently, awakening genuine interest through language and audiovisual content is subject to numerous obstacles. Overstimulation and information overload continue to reduce people's attention spans, and young people are one of the populations most affected by this.",
+            "Added to this are the complex contextual conditions faced by many public school students, which implies the need for a differentiated approach: <bold>communication that cannot be generic or standardized, but rather capable of recognizing those particular realities and speaking to young people from where they truly are.</bold>",
+            "That has been my banner and goal since taking on this role as an audiovisual communicator at the Fundación Antivirus: to seek and develop strategies so that the social component of this project is fully supported by our communicative efforts, allowing us to connect with young people in an authentic, close, and comprehensive way. I say \"connect\" and not just \"inform\" because that is the central difference between functional communication and transformative communication. You can inform someone about technical programs, universities, or scholarships without any student feeling that the message belongs to them. <bold>But when you succeed in building a genuine connection, information ceases to be an external fact and becomes a real possibility for their own lives.</bold>",
+            "Communicating in the educational and social sphere is not just about transmitting information: above all, it is an act of responsibility toward the future of those who listen to us. If education and socio-vocational guidance plant the seeds of change, the purpose of communication is to help them find the light they need to grow."
           ]
         }
       },
@@ -579,6 +599,21 @@
           ]
         }
       },
+      "acompanamiento-becarios-rurales": {
+        "alt": "The importance of data in ending dropout rates",
+        "title": "COMPREHENSIVE SUPPORT FOR RURAL SCHOLARS IN COLOMBIA",
+        "detail": {
+          "title": "COMPREHENSIVE SUPPORT FOR RURAL SCHOLARS IN COLOMBIA",
+          "content": [
+            "Relocating to urban environments, cultural adaptation, academic challenges, and the distance from their support networks create a scenario of vulnerability that can affect their well-being and persistence in higher education.",
+            "Access to higher education in Colombia in 2026 continues to be marked by structural inequalities. Students from rural backgrounds aiming to enter Higher Education Institutions (HEIs) <bold>face not only the cultural shifts required by moving away from their territories but also systematic gaps that transcend economic factors, impacting both their academic performance and emotional well-being.</bold> In this context, scholarship programs with a rural focus represent an opportunity for social mobility; however, their impact largely depends on the existence of support strategies that recognize the particularities of this population.",
+            "Rural scholarship recipients <bold>often transition from schools with limited resources to rigorous university environments. This transition involves a shift in learning dynamics,</bold> especially in foundational areas of knowledge, where accumulated gaps become evident. In the medium term, these gaps can turn into unattainable goals, leading to frustration and, eventually, a risk of dropping out.",
+            "<bold>Relocating to urban environments, cultural adaptation, academic challenges, and the distance from their support networks,</bold> create a scenario of vulnerability that can affect their well-being and persistence in higher education. Therefore, at the Antivirus Foundation for Dropout Prevention, we are committed to interdisciplinary support and personalized, continuous follow-up.",
+            "We recognize that <bold>comprehensive, contextualized support</bold> that addresses both emotional and academic aspects is a priority approach to mitigating these gaps. Academic support allows for the strengthening of basic competencies, particularly in critical areas, through personalized peer-to-peer tutoring provided by students who have already navigated the university experience. We focus on building support networks within their current environment, while simultaneously offering an emotional component that provides tools for managing the challenges inherent in this university stage.",
+            "<bold>Comprehensive support not only promotes student persistence but also contributes to the development of their life projects. The training of rural scholars and their potential return to their territories benefits local development.</bold> Therefore, strengthening support programs for scholarship recipients should not be considered a supplement, but a structural component of education. Recognizing the inequalities of origin and acting upon them through contextualized interventions is a fundamental step toward equal opportunity in higher education in Colombia. Investing in support for rural students is an investment in the future of the country's territories."
+          ]
+        }
+      },
       "el-docente-hoy": {
         "alt": "Antivirus Foundation collaborator and students in their respective educational settings.",
         "title": "THE ROLE OF TEACHERS IN TODAY'S EDUCATION",
@@ -590,6 +625,23 @@
             "Now, who is this 'other' who explicitly assumes the role of teaching? Perhaps you have called them a tutor, a master, or a professor—each term carries conceptual variations that change depending on whom you ask. Whoever takes on this responsibility assumes a second role: that of an interpreter of reality. Within a formal space, they connect with others to share the 'knowledge' necessary to understand and inhabit social life. <bold>This implies that education must respond to the conditions and needs of its context, and it is the teacher's job to make that context more digestible.</bold> Historically, monarchies taught politics and religion, while the industrial era focused on machinery and production because those were the requirements of the time. If we start from that notion, then what is being taught today? Is today's teacher acting as an interpreter of current reality? Or are they still reproducing the same models from a century ago, simply under modern names?",
             "<bold>De Zubiría (2013) stated: 'Young people who will live in the 21st century are being educated by teachers from the 20th century, but with pedagogical models and curricula from the 19th century.' (p. 3).</bold>",
             "Current reality is full of influencers, technology, pressure on how one should live, mindfulness, and many other new ways of existence that tell us there is always more and it is never enough—often involving unattainable and idealistic goals. <bold>We live in a society that talks more and more about the 'self,' yet lacks grounded tools to achieve it (or conversely, offers so many that one doesn't know where to start).</bold> Many teachers—I cannot claim all, but it is evident that a great number do—perform a 'translation' of reality. And like any translation, it omits truths, ignores feelings and implicit messages, and focuses solely on content. We used to value others based on what they did; now, we value them based on what they know. Paradoxically, the 'being' is undervalued, even though it is what reality demands most. <bold>Right there, in that paradox and contradiction, lies the place of the teacher: not as a mere translator of realities, but as an interpreter who accompanies human self-construction through being, knowing, and doing.</bold>"
+          ]
+        }
+      },
+      "retos-comunicativos": {
+        "alt": "Article on the communicative challenges of the FATV for student persistence",
+        "title": "COMMUNICATIVE CHALLENGES OF THE FATV FOR STUDENT PERSISTENCE",
+        "detail": {
+          "title": "COMMUNICATIVE CHALLENGES OF THE FATV FOR STUDENT PERSISTENCE",
+          "content": [
+            "Communication at the FATV must be strategic, personalized, and centered on creating high-value content. Overcoming information overload and tailoring our messages to the real needs of our audiences is essential to driving a positive impact, fostering educational persistence, and, ultimately, contributing to social transformation.",
+            "Communication plays a vital role in any social endeavor, especially at the Fundación Antivirus para la Deserción (FATV), where we strive to contribute positively to education. Educational quality depends not only on material resources but also on how key stakeholders—students, teachers, families, and society at large—connect, interact, and engage.",
+            "One of the core challenges we face as a foundation is effectively engaging academic communities and students to promote persistence in higher education. In this context, communication is not just about sharing information; it is about building a bridge of trust, motivation, and ongoing support that empowers young people to overcome adversity and complete their degrees.",
+            "First, regarding our communication with students, the challenge is the <bold>information overload characteristic of the digital age,</bold> where young people are constantly bombarded with diverse messages—ranging from advertising and institutional alerts to support campaigns and government programs. This excess can lead to confusion, apathy, and even the loss of relevant information.",
+            "To overcome this, we focus on producing <bold>quality and relevant content.</bold> Creating value means providing useful, understandable, and motivating information that truly addresses students' needs. Our content must be <bold>personalized and relatable,</bold> tailored to the socioeconomic, academic, or socio-emotional realities of our students. This also requires a shift toward <bold>bidirectional communication,</bold> where students do not just receive information, but have a dedicated space to voice their concerns, needs, and aspirations. <bold>Active listening and feedback are fundamental to building a support bond that makes students feel understood and empowered.</bold>",
+            "A second challenge lies in reaching academic communities and social organizations that align with our mission. To address this, we have developed a strategy to increase the visibility of our work, achievements, metrics, and impactful testimonials. This allows us to connect with more organizations, create further intervention opportunities, and, in turn, support more students.",
+            "Finally, on a broader level, the challenge is the <bold>fragmentation of communication channels.</bold> To reach our audiences effectively, we must manage these channels coherently, ensuring our message is delivered successfully and does not get lost in the noise.",
+            "In conclusion, for 2025, <bold>communication at the FATV must be strategic, personalized, and centered on creating high-value content. Overcoming information overload and tailoring our messages to the real needs of our audiences is essential to driving a positive impact, fostering educational persistence, and, ultimately, contributing to social transformation.</bold>"
           ]
         }
       },
@@ -608,25 +660,48 @@
           ]
         }
       },
-      "reconocidos-por-la-facultad-de-minas": {
-        "alt": "Recognized by the Faculty of Mines on its 139th anniversary",
-        "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
+      "desafios-fatv-en-tecnologia": {
+        "alt": "Article on the challenges of the Fundación Antivirus para la Deserción regarding technology",
+        "title": "WHAT CHALLENGES DOES THE FATV FACE REGARDING TECHNOLOGY?",
         "detail": {
-          "title": "RECOGNIZED BY THE FACULTY OF MINES ON ITS 139TH ANNIVERSARY",
+          "title": "WHAT CHALLENGES DOES THE FATV FACE REGARDING TECHNOLOGY?",
           "content": [
-            "A few years ago, we dreamed of more young people being able to stay in university. Today, that dream allows us to experience moments like this.",
-            "<bold>The Faculty of Mines of the National University of Colombia, Medellín campus,</bold> as part of the celebration of its <bold>139th anniversary,</bold> recognized us as <bold>strategic partners for our work in favor of student retention.</bold>",
-            "The recognition bears the name of the FATV, but it truly belongs to every student who decides not to give up, to every conversation held during difficult times, to every partner who believes, and to every person who is part of the journey.",
-            "<bold>Thank you to the Faculty of Mines for believing in the power of partnerships that transform lives and for allowing us to walk hand in hand in this purpose.</bold>",
-            "We are very proud to be recognized by the Faculty of Mines on its 139th anniversary. This synergy represents teamwork and the commitment to ensure that no young person has to abandon their studies."
+            "The Fundación Antivirus para la Deserción is committed to leading these efforts, ensuring that technology and data become allies in building a more inclusive and equitable educational future.",
+            "Technology and data are essential to guarantee quality and equity in education, but they also present challenges for the Fundación Antivirus para la Deserción. For this year, one of the greatest challenges is ensuring that technology acts as a bridge toward quality education, especially when implementing solutions adapted to the context of each community through innovative and collaborative approaches.",
+            "The management and analysis of educational, socioeconomic, and cultural data are crucial for designing personalized strategies. However, consolidating this information is complex due to access restrictions and quality issues, such as incomplete or outdated data. To overcome these obstacles, it is fundamental to establish clear standards and implement data validation and cleaning processes.",
+            "Continuous learning in emerging technologies, such as artificial intelligence and predictive analytics, offers opportunities to identify needs and personalize learning processes. Furthermore, web development facilitates access to educational resources, interaction between students and teachers, and the monitoring of academic performance. Designing accessible, user-centered platforms maximizes their impact.",
+            "Collaboration and innovation are key to addressing these challenges. By working together with internal departments, external partners, and educational communities, <bold>the Fundación Antivirus para la Deserción is committed to leading these efforts, ensuring that technology and data become allies in building a more inclusive and equitable educational future.</bold>"
+          ]
+        }
+      },
+      "tikso-2025": {
+        "alt": "Participation of the Fundación Antivirus para la Deserción in Tikso 2025, a space for learning.",
+        "title": "FATV PARTICIPATION IN TIKSO 2025",
+        "detail": {
+          "title": "FATV'S PARTICIPATION IN TIKSO 2025",
+          "content": [
+            "Thanks to MAKAIA for making such an inspiring Tikso 2025 possible. It was two days filled with learning, networking, and new perspectives to strengthen the impact of social organizations.",
+            "We took away valuable insights on sustainability strategies, innovation, and resource mobilization, as well as experiences that prove collaboration is key to transforming realities. We also participated in the business matchmaking session, a space that allowed us to present the work of the Fundación Antivirus para la Deserción, share our mission, and converse with potential partners with whom we hope to build long-lasting impact.",
+            "This gathering reminded us of the importance of continuing to innovate, learning from other organizations, and strengthening collaborative networks to respond to social challenges with more sustainable and far-reaching solutions. Thank you to everyone who was part of this experience! We are already looking forward to Tikso 2026."
+          ]
+        }
+      },
+      "tejiendo-redes": {
+        "alt": "Our deputy director Víctor Manuel Valencia Martínez attends the international mission on social innovation and sustainability promoted by the Federación Antioqueña de ONG",
+        "title": "WE CONTINUE WEAVING NETWORKS FOR SOCIAL TRANSFORMATION",
+        "detail": {
+          "title": "WE CONTINUE WEAVING NETWORKS FOR SOCIAL TRANSFORMATION",
+          "content": [
+            "The Fundación Antivirus para la Deserción continues to expand its horizons. Our deputy director, <bold>Víctor Manuel Valencia Martínez,</bold> is representing us in the international mission on social innovation and sustainability promoted by the <bold>Federación Antioqueña de ONG.</bold> This is a space for learning, connection, and cooperation that allows us not only to learn but also to share our socio-pedagogical support model with partners from other countries.",
+            "This experience encourages us to continue creating global networks of knowledge and action, reaffirming that social and educational challenges are best faced when tackled together."
           ]
         }
       },
       "conversatorio-envigado": {
         "alt": "Colloquium at Envigado university",
-        "title": "COLLOQUIUM AT ENVIADO UNIVERSITY",
+        "title": "COLLOQUIUM AT ENVIGADO UNIVERSITY",
         "detail": {
-          "title": "COLLOQUIUM AT ENVIADO UNIVERSITY",
+          "title": "COLLOQUIUM AT ENVIGADO UNIVERSITY",
           "content": [
             "The Antivirus for Desertion Foundation was invited to the 1st Meeting of Industrial and Related Engineering Programs: Challenges and trends.",
             "The director of our Foundation, Luis Fernando Sánchez, was on October 14 participating in this teacher training event held by the REDIN and ACOFI Network, where they talked about teaching practice as a factor associated with permanence or dropout and about early warnings to address the mental health of engineers in training."

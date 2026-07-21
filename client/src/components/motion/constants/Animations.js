@@ -118,3 +118,38 @@ export const cardItemReveal = {
   animate: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
   exit: { opacity: 0, x: 20, transition: { duration: 0.2, ease: "easeIn" } },
 };
+
+/**
+ * Variants para el contenedor de noticias.
+ * Orquesta el stagger de las cards al entrar y salir.
+ * Usar con AnimatePresence mode="wait" en News.jsx.
+ */
+export const newsContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+  exit: {
+    transition: {
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+};
+
+/**
+ * Variants para cada card de noticia individual.
+ * Entra desde la izquierda y sale levemente hacia la derecha.
+ * Usar en motion.div con variants={newsCardVariants} dentro de AnimatePresence en News.jsx.
+ */
+export const newsCardVariants = {
+  hidden: { opacity: 0, scale: 0.5 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+  exit: { opacity: 0, scale: 0.5, transition: { duration: 0.3 } },
+};

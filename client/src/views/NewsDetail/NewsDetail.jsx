@@ -92,7 +92,7 @@ const NewsDetail = () => {
                 linear-gradient(to bottom, rgba(34,45,86,0.04) 1px, transparent 1px)
               `,
               backgroundSize: "48px 48px",
-            }}
+            }} 
           />
 
           {bookDimensions.width > 0 && (
@@ -100,7 +100,8 @@ const NewsDetail = () => {
               key={news.slug}
               content={news.newDetailContent.content ?? []}
               title={news.newDetailContent.title}
-              newsLabel={t("newsDetail.news_label")}
+              newsLabel={news.type == 'news' ? t("newsDetail.news_label") : t("news.filters.articles")}
+              date={news.date}
               dimensions={bookDimensions}
             />
           )}
