@@ -88,6 +88,7 @@ function goAtvConnect() {
             className="w-28 h-28 md:w-32 md:h-32 block mx-auto"
             src={LogoAtvConecta}
             alt=""
+            loading="lazy"
           />
           <p className="text-3xl md:text-5xl text-white font-impact m-5">
             {t("atvConnect.goAtv.start_now")}

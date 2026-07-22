@@ -27,6 +27,7 @@ const Teams = ({ teamsData }) => {
             className="h-20 md:h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
             src={Javi}
             alt="Javi Guinando"
+            loading="lazy"
           />
         </motion.div>
         <h6 className="text-3xl md:text-5xl m-5 text-blue-base text-center font-impact">
@@ -52,6 +53,7 @@ const Teams = ({ teamsData }) => {
                     src={leader.photo}
                     alt={t(leader.alt)}
                     className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-4 border-primary-yellow shadow-md"
+                    loading="lazy"
                   />
                   <div className="absolute bottom-2 right-2 bg-primary-yellow p-2 rounded-full shadow-lg">
                     <PiMedal className="text-2xl md:text-3xl text-dark-blue" />
@@ -132,6 +134,7 @@ const Teams = ({ teamsData }) => {
                     src={leader.photo}
                     alt={t(leader.alt)}
                     className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-gray-100 shadow-sm"
+                    loading="lazy"
                   />
                   <div className="text-center md:text-left break-words">
                     <span className="text-xl font-extrabold text-dark-blue leading-tight">

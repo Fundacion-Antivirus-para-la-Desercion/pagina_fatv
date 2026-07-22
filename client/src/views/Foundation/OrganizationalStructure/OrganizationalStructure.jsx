@@ -72,6 +72,7 @@ function OrganizationalStructure() {
             className="hidden lg:block md:h-[550px] lg:h-[600px] ml-2 bottom-0 absolute z-10"
             src={JaviSonrie}
             alt="Javi Sonrie"
+            loading="lazy"
           />
         </div>
         <section className="grid grid-cols-1 relative lg:grid-cols-2  max-w-[1000px] mx-auto items-center mb-10">

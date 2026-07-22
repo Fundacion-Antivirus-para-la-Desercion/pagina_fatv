@@ -35,6 +35,7 @@ function AboutUs() {
               className="w-[15px] align-middle ml-[5px] relative transform transition-transform duration-300 group-hover:translate-x-1"
               src={Arrow}
               alt={t("home.aboutUs.alt_arrow")}
+              loading="lazy"
             />
           </Link>
         </div>

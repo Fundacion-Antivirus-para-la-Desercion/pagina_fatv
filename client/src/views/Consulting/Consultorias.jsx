@@ -115,6 +115,7 @@ function Consultorias() {
                   src={card}
                   alt="Card background"
                   className="absolute inset-0 w-full h-full rounded-3xl"
+                  loading="lazy"
                 />
                 <PiShootingStarFill className="absolute top-0 left-0 text-primary-yellow text-4xl" />
                 <div className="relative">

@@ -32,6 +32,7 @@ function DescriptionAtvConnect() {
                 className=" md:max-h-[390px] border-8 border-white rounded-3xl justify-between shadow-2xl"
                 src={EstudianteUno}
                 alt=""
+                loading="lazy"
               />
             </div>
 
@@ -41,6 +42,7 @@ function DescriptionAtvConnect() {
                 className="min-w-20 w-20 md:w-32 rounded-full bg-brand-teal-400 p-3 mt-5 md:mt-6 xl:ml-6 block mx-auto"
                 src={LogoAtvConecta}
                 alt="Logo ATVConecta"
+                loading="lazy"
               />{" "}
             </motion.div>
 
@@ -51,6 +53,7 @@ function DescriptionAtvConnect() {
                 src={EstudianteDos}
                 alt="Student receiving academic guidance"
                 className="relative w-fit h-auto max-h-none sm:max-h-[370px] object-cover border-8 border-white rounded-3xl shadow-2xl mx-auto"
+                loading="lazy"
               />
             </div>
           </section>

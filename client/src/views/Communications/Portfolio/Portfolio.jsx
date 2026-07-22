@@ -117,6 +117,7 @@ function Portfolio() {
                     src={item.image}
                     alt={t(item.title)}
                     className="w-full h-full object-cover rounded-2xl"
+                    loading="lazy"
                   />
                   <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/60 rounded-3xl px-4 py-2 whitespace-nowrap">
                     {t(item.title)}
@@ -160,6 +161,7 @@ function Portfolio() {
                     src={item.src}
                     alt={`${t(activeProject.title)} ${idx + 1}`}
                     className="w-full h-full object-cover rounded-2xl"
+                    loading="lazy"
                   />
                   {idx === 0 && (
                     <span className="absolute top-4 left-4 z-20 text-white text-sm md:text-base font-bold bg-blue-base/60 rounded-3xl px-4 py-2 whitespace-nowrap">

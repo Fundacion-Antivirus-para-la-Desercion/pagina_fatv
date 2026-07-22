@@ -118,6 +118,7 @@ function OurTeam() {
               className="h-20 md:h-28 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
               src={Javi}
               alt="Javi Guinando"
+              loading="lazy"
             />
           </motion.div>
           <h3 className="text-3xl md:text-5xl font-impact text-blue-base">
@@ -172,12 +173,14 @@ function OurTeam() {
                         alt={card.name}
                         className="h-[45vh] w-full object-cover object-[50%_1%] transition-all duration-500 ease-out group-hover:scale-110"
                         style={{ backgroundColor: card.backgroundColor }}
+                        loading="lazy"
                       />
                       <img
                         src={foundationLogo}
                         alt=""
                         aria-hidden="true"
                         className="pointer-events-none absolute -bottom-36 -right-36 z-10 w-[130px] rotate-[-12deg] object-contain transition-all duration-700 group-hover:bottom-2 group-hover:right-2"
+                        loading="lazy"
                       />
                     </div>
                     <div className="flex h-40 items-center rounded-br-[40px] rounded-t-none bg-dark-blue p-4 text-left transition-colors duration-500">

@@ -31,6 +31,7 @@ function Description() {
                 src={Javi}
                 alt="Acompañamiento"
                 className="relative w-auto max-w-[350px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[400px] md:h-[550px] object-cover p-4 mx-auto"
+                loading="lazy"
               />
               <motion.div
                 {...expandableTransition({ transition: { duration: 2 } })}

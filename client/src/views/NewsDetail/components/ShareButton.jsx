@@ -27,6 +27,7 @@ const ShareButton = ({ label, news }) => {
         className="ml-3 transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
         src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/share.svg"
         alt="share"
+        loading="lazy"
       />
       {label}
     </a>

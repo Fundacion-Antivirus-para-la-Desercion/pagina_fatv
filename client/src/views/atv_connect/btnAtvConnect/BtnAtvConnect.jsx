@@ -32,6 +32,7 @@ function BtnAtvConnect() {
           src={IconATVConnect}
           alt={t("btns.alt_donation_icon")}
           className="w-12 h-12 rounded-full"
+          loading="lazy"
         />
         <p className="text-white text-base font-bold">ATVConecta</p>
       </div>

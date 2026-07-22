@@ -143,7 +143,7 @@ function ContactUs() {
         title={t("contactUs.modal.title")}
       >
         <div className="flex flex-col items-center text-center">
-          <img src={Javi} alt="Confirmación" className="w-32 h-32 mb-4" />
+          <img src={Javi} alt="Confirmación" className="w-32 h-32 mb-4" loading="lazy" />
 
           <h2 className="text-2xl font-bold  mb-2 text-center text-title">
             {t("contactUs.modal.successTitle")}
@@ -162,7 +162,7 @@ function ContactUs() {
         />
         <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
           <div className="relative">
-            <img src={imgContact} alt={t("contactUs.image_alt")} className="w-full lg:w-auto" />
+            <img src={imgContact} alt={t("contactUs.image_alt")} className="w-full lg:w-auto" loading="lazy" />
 
             <div className="absolute bg-dark-blue text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
               <div className="flex items-center justify-center gap-2">

@@ -187,6 +187,7 @@ function DonationPay() {
                     src={Acompañamiento1}
                     alt={t("donation.alt_text")}
                     className="block w-full h-full object-cover rounded-xl"
+                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -194,6 +195,7 @@ function DonationPay() {
                     src={Acompañamiento2}
                     alt={t("donation.alt_text")}
                     className="block w-full h-full object-cover rounded-xl"
+                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -201,6 +203,7 @@ function DonationPay() {
                     src={Acompañamiento3}
                     alt={t("donation.alt_text")}
                     className="block w-full h-full object-cover rounded-xl"
+                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -208,6 +211,7 @@ function DonationPay() {
                     src={Acompañamiento4}
                     alt={t("donation.alt_text")}
                     className="block w-full h-full object-cover rounded-xl"
+                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -215,6 +219,7 @@ function DonationPay() {
                     src={Acompañamiento5}
                     alt={t("donation.alt_text")}
                     className="block w-full h-full object-cover rounded-xl"
+                    loading="lazy"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -227,7 +232,7 @@ function DonationPay() {
 
           <div className="flex justify-center flex-col gap-6 p-6 lg:p-10">
             <div className="flex items-center justify-center mb-5">
-              <img className="w-10 h-10" src={Pay} alt="" />
+              <img className="w-10 h-10" src={Pay} alt="" loading="lazy" />
               <h2 className="m-2 font-impact  text-xl md:text-3xl text-center text-primary-yellow">
                 {t("donation.be_part_solution")}
               </h2>

@@ -19,6 +19,7 @@ function Description() {
             src={Collage}
             alt="Acompañamiento"
             className="w-auto max-w-[350px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[400px] md:h-[550px] object-cover rounded-3xl p-4 mx-auto shadow-lg transition-transform duration-500 hover:rotate-3"
+            loading="lazy"
           />
         </div>
       </section>
