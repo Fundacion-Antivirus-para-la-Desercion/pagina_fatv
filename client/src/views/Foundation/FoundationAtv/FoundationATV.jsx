@@ -130,7 +130,7 @@ function FoundationATV() {
           animate={isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img className="w-full object-cover" src={Foundation1} alt="" />
+          <img className="w-full object-cover" src={Foundation1} alt="" loading="lazy" />
         </motion.div>
         <motion.div
           className="relative z-10 flex justify-center items-center hover:cursor-pointer transform transition-transform duration-300 ease-out hover:scale-105"
@@ -142,6 +142,7 @@ function FoundationATV() {
             className={isPlaying ? "hidden" : "absolute inset-0 w-full h-full object-cover shadow-2xl"}
             src={FotoVideo}
             alt=""
+            loading="lazy"
           />
           {!isPlaying && (
             <button
@@ -188,7 +189,7 @@ function FoundationATV() {
           animate={isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img className="w-full object-cover relative right-10" src={Foundation2} alt="" />
+          <img className="w-full object-cover relative right-10" src={Foundation2} alt="" loading="lazy" />
         </motion.div>
       </section>
 

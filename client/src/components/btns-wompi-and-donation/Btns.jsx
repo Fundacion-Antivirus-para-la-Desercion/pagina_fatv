@@ -30,6 +30,7 @@ function Btns() {
           src={IconDonation}
           alt={t("btns.alt_donation_icon")}
           className="w-10 h-10"
+          loading="lazy"
         />
         <p className="text-white text-lg font-bold">{t("btns.donate")}</p>
       </div>

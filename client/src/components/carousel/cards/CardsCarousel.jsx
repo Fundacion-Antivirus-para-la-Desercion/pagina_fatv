@@ -30,12 +30,13 @@ function CardsCarousel({
               {...floatSnake(0)}
               className="absolute top-10 md:top-16 -left-5"
             >
-              <img className="h-16 md:h-24" src={FocusTransparent} alt="" />
+              <img className="h-16 md:h-24" src={FocusTransparent} alt="" loading="lazy" />
             </motion.div>
             <img
               className="w-[180px] md:w-[240px] xl:w-[250px]"
               src={Javicorto}
               alt="Javi señalando"
+              loading="lazy"
             />
           </div>
         </div>

@@ -106,6 +106,7 @@ function StudentRetentionManagement() {
               className="w-[150px] h-auto mb-4"
               src={Javi}
               alt={t("studentRetentionManagement.cardJavi.alt_img_javi")}
+              loading="lazy"
             />
           </motion.div>
           <p className="text-white text-2xl font-impact">
@@ -200,6 +201,7 @@ function StudentRetentionManagement() {
                     className="shadow-xl w-full border-4 border-white rounded-2xl md:min-h-[350px] object-cover"
                     src={Grupo}
                     alt={t("studentRetentionManagement.success.alt_img_group")}
+                    loading="lazy"
                   />
 
                   <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-b-xl">
@@ -211,6 +213,7 @@ function StudentRetentionManagement() {
                   <img
                     className="shadow-xl w-full border-4 border-white rounded-2xl"
                     src={Graduado}
+                    loading="lazy"
                     alt={t(
                       "studentRetentionManagement.success.alt_img_graduate"
                     )}
@@ -229,6 +232,7 @@ function StudentRetentionManagement() {
               className="relative md:bottom-20 w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
               src={JaviGuinandoOjo}
               alt=""
+              loading="lazy"
             />
           </motion.div>
           <div>

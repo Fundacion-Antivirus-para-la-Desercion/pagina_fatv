@@ -58,6 +58,7 @@ function Description() {
                 className="h-full max-h-[500px] md:max-h-[700px] mb-16 md:mb-0 border-[4px] border-solid border-white rounded-3xl shadow-2xl"
                 src={Talleres}
                 alt=""
+                loading="lazy"
               />
 
               <motion.div

@@ -118,6 +118,7 @@ function PdfCards() {
                       src={javi}
                       alt="Javi"
                       className="h-24 w-auto object-contain object-bottom transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
                     />
                   </div>
                 </div>

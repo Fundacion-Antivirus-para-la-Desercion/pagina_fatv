@@ -26,6 +26,7 @@ function Information() {
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+          loading="lazy"
           src={EstudiantesDiez}
           alt=""
         />
@@ -75,7 +76,7 @@ function Information() {
           rel="noopener noreferrer"
         >
           {t("provocacion.information.button_whatsapp")}
-          <img src={Focus} alt="icono" className="w-10 h-10" />
+          <img src={Focus} alt="icono" className="w-10 h-10" loading="lazy" />
         </a>
       </motion.div>
     </section>,
@@ -84,6 +85,7 @@ function Information() {
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+          loading="lazy"
           src={EstudiantesDieciseis}
           alt=""
         />
@@ -139,7 +141,7 @@ function Information() {
           rel="noopener noreferrer"
         >
           {t("provocacion.information.button_whatsapp")}
-          <img src={Focus} alt="icono" className="w-10 h-10" />
+          <img src={Focus} alt="icono" className="w-10 h-10" loading="lazy" />
         </a>
       </motion.div>
     </section>,
@@ -148,6 +150,7 @@ function Information() {
       <div className="justify-self-center xl:justify-self-end">
         <img
           className="w-[450px] rounded-xl mb-6 xl:mb-0 xl:mr-8"
+          loading="lazy"
           src={EstudiantesDos}
           alt=""
         />
@@ -238,7 +241,7 @@ function Information() {
           rel="noopener noreferrer"
         >
           {t("provocacion.information.button_whatsapp")}
-          <img src={Focus} alt="icono" className="w-10 h-10" />
+          <img src={Focus} alt="icono" className="w-10 h-10" loading="lazy" />
         </a>
       </motion.div>
     </section>,

@@ -81,6 +81,7 @@ function Testimonials() {
                     alt={`${t(
                       "provocacion.testimonials.alt_testimonial_img",
                     )} ${index + 1}`}
+                    loading="lazy"
                   />
                 </div>
                 <div className=" text-base md:text-lg space-y-4 text-justify max-w-xl">
@@ -107,6 +108,7 @@ function Testimonials() {
               src={Focus}
               alt={t("provocacion.testimonials.alt_focus")}
               className="w-10 h-10"
+              loading="lazy"
             />
           </a>
           <a

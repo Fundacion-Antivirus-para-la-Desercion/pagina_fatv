@@ -50,6 +50,7 @@ const OrganizationInfoSection = ({
         className="rounded-full w-full h-auto p-5 object-cover"
         src={image}
         alt={imgAlt}
+        loading="lazy"
       />
     </div>
   );
