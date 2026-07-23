@@ -120,49 +120,47 @@ function SchoolSubjectsAtvConnect() {
   ];
 
   return (
-    <>
-      <section className="grid grid-cols-1 md:grid-cols-[20%,80%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
-          className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
+    <section className="grid grid-cols-1 md:grid-cols-[20%,80%] bg-dark-blue p-5 md:p-10 md:pt-20 md:pb-[185px] relative mb-10">
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+        className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
+      />
+      <div className="m-10 md:m-2 relative text-center md:text-left">
+        <span className="text-lg text-primary-purple font-impact">
+          {t("atvConnect.subjects.span")}{" "}
+        </span>
+        <h6 className="text-4xl md:text-5xl text-white font-impact">
+          {t("atvConnect.subjects.title")}
+        </h6>
+      </div>
+
+      <div className="flex flex-wrap items-center relative">
+        <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
+          {subjects.map((subject, index) => (
+            <a
+              key={index}
+              href="https://atvconecta.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer hover:bg-white hover:bg-opacity-5 transition-colors"
+            >
+              {subject.subject}
+            </a>
+          ))}
+        </section>
+      </div>
+
+      <div className="relative">
+        <img
+          className="block mt-10 md:mt-0 mx-auto md:absolute md:top-[-50px] max-w-[210px] md:max-w-[200px] lg:top-[-20px] lg:max-w-[400px] "
+          src={JaviEstudioso}
+          alt={t("atvConnect.subjects.alt_image_subjects")}
+          loading="lazy"
         />
-        <div className="m-10 md:m-2 relative text-center md:text-left">
-          <span className="text-lg text-primary-purple font-impact">
-            {t("atvConnect.subjects.span")}{" "}
-          </span>
-          <h6 className="text-4xl md:text-5xl text-white font-impact">
-            {t("atvConnect.subjects.title")}
-          </h6>
-        </div>
-
-        <div className="flex flex-wrap items-center relative">
-          <section className="flex flex-wrap justify-center items-center text-white p-3 gap-4">
-            {subjects.map((subject, index) => (
-              <a
-                key={index}
-                href="https://atvconecta.com/login"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer hover:bg-white hover:bg-opacity-5 transition-colors"
-              >
-                {subject.subject}
-              </a>
-            ))}
-          </section>
-        </div>
-
-        <div className="relative">
-          <img
-            className="block mt-10 md:mt-0 mx-auto md:absolute md:top-[-50px] max-w-[210px] md:max-w-[200px] lg:top-[-20px] lg:max-w-[400px] "
-            src={JaviEstudioso}
-            alt={t("atvConnect.subjects.alt_image_subjects")}
-            loading="lazy"
-          />
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
