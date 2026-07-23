@@ -75,47 +75,45 @@ function goAtvConnect() {
   );
 
   return (
-    <>
-      <section className="flex flex-col items-center bg-brand-teal-400 p-10 relative overflow-hidden">
-        <Particles
-          id="tsparticles-testimonials"
-          particlesLoaded={particlesLoaded}
-          options={options}
-          className="absolute top-0 left-0 w-full h-full z-0 bg-brand-teal-400"
+    <section className="flex flex-col items-center bg-brand-teal-400 p-10 relative overflow-hidden">
+      <Particles
+        id="tsparticles-testimonials"
+        particlesLoaded={particlesLoaded}
+        options={options}
+        className="absolute top-0 left-0 w-full h-full z-0 bg-brand-teal-400"
+      />
+      <div className="relative flex flex-col text-center items-center">
+        <img
+          className="w-28 h-28 md:w-32 md:h-32 block mx-auto"
+          src={LogoAtvConecta}
+          alt=""
+          loading="lazy"
         />
-        <div className="relative flex flex-col text-center items-center">
-          <img
-            className="w-28 h-28 md:w-32 md:h-32 block mx-auto"
-            src={LogoAtvConecta}
-            alt=""
-            loading="lazy"
-          />
-          <p className="text-3xl md:text-5xl text-white font-impact m-5">
-            {t("atvConnect.goAtv.start_now")}
-          </p>
-          <p className="text-base text-white text-center">
-            {" "}
-            {t("atvConnect.goAtv.paragraph_start")}
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="https://atvconecta.com/login"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center group px-10 py-4 relative overflow-hidden w-full max-w-[310px] mt-8 text-dark-blue text-lg md:text-xl font-bold rounded-full shadow-xl bg-primary-yellow transform hover:scale-105 transition-all duration-500"
-              to="/"
-            >
-              <span className="relative">
-                {" "}
-                {t("atvConnect.goAtv.btn_start_free")}
-              </span>
-              <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
-              <IoIosArrowForward className="text-xl ml-2 text-dark-blue" />
-            </a>
-          </div>
+        <p className="text-3xl md:text-5xl text-white font-impact m-5">
+          {t("atvConnect.goAtv.start_now")}
+        </p>
+        <p className="text-base text-white text-center">
+          {" "}
+          {t("atvConnect.goAtv.paragraph_start")}
+        </p>
+        <div className="flex justify-center">
+          <a
+            href="https://atvconecta.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center group px-10 py-4 relative overflow-hidden w-full max-w-[310px] mt-8 text-dark-blue text-lg md:text-xl font-bold rounded-full shadow-xl bg-primary-yellow transform hover:scale-105 transition-all duration-500"
+            to="/"
+          >
+            <span className="relative">
+              {" "}
+              {t("atvConnect.goAtv.btn_start_free")}
+            </span>
+            <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+            <IoIosArrowForward className="text-xl ml-2 text-dark-blue" />
+          </a>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
