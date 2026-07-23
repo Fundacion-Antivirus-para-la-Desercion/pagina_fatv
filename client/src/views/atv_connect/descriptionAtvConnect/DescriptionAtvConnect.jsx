@@ -23,64 +23,60 @@ function DescriptionAtvConnect() {
     viewport: { once: true, amount: 0.6 },
   };
   return (
-    <>
-      <section className="bg-[#F6F6F6] grid grid-col-1 lg:grid-cols-2 items-center mb-20 p-2 lg:p-5">
-        <motion.div {...slideFromLeft} className="mb-5">
-          <section className="relative xl:left-[10%] grid grid-col-1 lg:grid-cols-[4fr_1fr_4fr]">
-            <div className="hidden lg:block">
-              <img
-                className=" md:max-h-[390px] border-8 border-white rounded-3xl justify-between shadow-2xl"
-                src={EstudianteUno}
-                alt=""
-                loading="lazy"
-              />
-            </div>
+    <section className="bg-[#F6F6F6] grid grid-col-1 lg:grid-cols-2 items-center mb-20 p-2 lg:p-5">
+      <motion.div {...slideFromLeft} className="mb-5">
+        <section className="relative xl:left-[10%] grid grid-col-1 lg:grid-cols-[4fr_1fr_4fr]">
+          <div className="hidden lg:block">
+            <img
+              className=" md:max-h-[390px] border-8 border-white rounded-3xl justify-between shadow-2xl"
+              src={EstudianteUno}
+              alt=""
+              loading="lazy"
+            />
+          </div>
 
-            <motion.div {...floatSnake()} className="mb-5 relative">
-              {" "}
-              <img
-                className="min-w-20 w-20 md:w-32 rounded-full bg-brand-teal-400 p-3 mt-5 md:mt-6 xl:ml-6 block mx-auto"
-                src={LogoAtvConecta}
-                alt="Logo ATVConecta"
-                loading="lazy"
-              />{" "}
-            </motion.div>
+          <motion.div {...floatSnake()} className="mb-5 relative">
+            {" "}
+            <img
+              className="min-w-20 w-20 md:w-32 rounded-full bg-brand-teal-400 p-3 mt-5 md:mt-6 xl:ml-6 block mx-auto"
+              src={LogoAtvConecta}
+              alt="Logo ATVConecta"
+              loading="lazy"
+            />{" "}
+          </motion.div>
 
-            <div
-              className="xl:relative xl:top-44 xl:right-[50%]"
-            >
-              <img
-                src={EstudianteDos}
-                alt="Student receiving academic guidance"
-                className="relative w-fit h-auto max-h-none sm:max-h-[370px] object-cover border-8 border-white rounded-3xl shadow-2xl mx-auto"
-                loading="lazy"
-              />
-            </div>
-          </section>
-        </motion.div>
+          <div className="xl:relative xl:top-44 xl:right-[50%]">
+            <img
+              src={EstudianteDos}
+              alt="Student receiving academic guidance"
+              className="relative w-fit h-auto max-h-none sm:max-h-[370px] object-cover border-8 border-white rounded-3xl shadow-2xl mx-auto"
+              loading="lazy"
+            />
+          </div>
+        </section>
+      </motion.div>
 
-        <motion.div
-          {...slideFromRight}
-          className="text-center max-w-[700px] block mx-auto"
-        >
-          <section>
-            <div>
-              {" "}
-              <h1 className="text-4xl md:text-5xl text-blue-base font-impact mb-5 md:mb-8">
-                ATVCONECTA
-              </h1>
-              <p className="text-center text-xl md:text-2xl  text-blue-base p-3">
-                {t("atvConnect.description_one")}
-                <span className="text-primary-yellow ">
-                  {t("atvConnect.description_span")}
-                </span>
-                {t("atvConnect.description_two")}
-              </p>
-            </div>
-          </section>
-        </motion.div>
-      </section>
-    </>
+      <motion.div
+        {...slideFromRight}
+        className="text-center max-w-[700px] block mx-auto"
+      >
+        <section>
+          <div>
+            {" "}
+            <h1 className="text-4xl md:text-5xl text-blue-base font-impact mb-5 md:mb-8">
+              ATVCONECTA
+            </h1>
+            <p className="text-center text-xl md:text-2xl  text-blue-base p-3">
+              {t("atvConnect.description_one")}
+              <span className="text-primary-yellow ">
+                {t("atvConnect.description_span")}
+              </span>
+              {t("atvConnect.description_two")}
+            </p>
+          </div>
+        </section>
+      </motion.div>
+    </section>
   );
 }
 

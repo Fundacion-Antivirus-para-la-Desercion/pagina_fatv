@@ -56,8 +56,7 @@ function Metrics() {
   };
 
   return (
-    <>
-      <section className="grid grid-cols-1 md:grid-cols-4 gap-8 p-3 md:p-0 max-w-7xl mx-auto mt-5 md:mt-10 md:mb-16">
+    <section className="grid grid-cols-1 md:grid-cols-4 gap-8 p-3 md:p-0 max-w-7xl mx-auto mt-5 md:mt-10 md:mb-16">
         {techMetrics.map((metric, index) => {
           const isDark = index % 2 === 0; // Alterna entre dark y yellow
           const styles = isDark ? variantStyles.dark : variantStyles.yellow;
@@ -97,7 +96,6 @@ function Metrics() {
           );
         })}
       </section>
-    </>
   );
 }
 
