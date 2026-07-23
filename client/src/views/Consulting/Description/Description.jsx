@@ -223,6 +223,7 @@ function Description() {
                     className="object-cover w-full h-[300px] sm:h-[380px] md:h-[460px] lg:h-[520px] xl:h-[650px] max-h-[650px] border-4 border-white rounded-3xl shadow-2xl block"
                     src={item.image}
                     alt={`Slide ${index}`}
+                    loading="lazy"
                   />
                   <p className="absolute text-sm md:text-lg bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-xl">
                     <PiShootingStarFill className="text-dark-yellow inline mr-2 text-xl" />

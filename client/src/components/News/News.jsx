@@ -72,6 +72,7 @@ function News() {
                   className="mb-3 aspect-ratio rounded-lg"
                   src={news.img}
                   alt={news.alt}
+                  loading="lazy"
                 />
                 <p className="flex items-center text-base md:text-lg font-impact text-primary-purple mb-2">
                   <FaRegCalendarMinus className="mr-1 w-7 h-7" />

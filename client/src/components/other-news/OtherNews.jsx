@@ -39,6 +39,7 @@ function OtherNews({ newSlug }) {
                       src={news.img}
                       alt={news.title}
                       className="w-full h-auto object-cover rounded-lg shadow-md mb-2"
+                      loading="lazy"
                     />
                   </div>
                   <div>

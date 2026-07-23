@@ -33,6 +33,7 @@ const ServicesATV = () => {
                     className="w-24 bg-primary-yellow rounded-full"
                     src={Graduados}
                     alt={t("home.servicesATV.image_alt_text")}
+                    loading="lazy"
                   />
                 </div>
               </section>
@@ -65,6 +66,7 @@ const ServicesATV = () => {
                     className="w-24 bg-dark-blue rounded-full"
                     src={Aliados}
                     alt={t("home.servicesATV.image_alt_text")}
+                    loading="lazy"
                   />
                 </div>
               </section>
@@ -101,6 +103,7 @@ const ServicesATV = () => {
                     className="w-24 bg-primary-purple rounded-full"
                     src={Focus}
                     alt={t("home.servicesATV.image_alt_text")}
+                    loading="lazy"
                   />
                 </div>
               </section>
@@ -137,6 +140,7 @@ const ServicesATV = () => {
                     className="w-24 bg-primary-yellow rounded-full"
                     src={LogoAtvConecta}
                     alt={t("home.servicesATV.image_alt_text")}
+                    loading="lazy"
                   />
                 </div>
               </section>

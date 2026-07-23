@@ -107,6 +107,8 @@ function MainCarousel() {
                   className="h-[45vh] md:h-[80vh] object-cover object-[50%_33%] w-full"
                   src={slide.image}
                   alt={t("home.carousel.slide_alt", { title: t(slide.titleKey) })}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchpriority={index === 0 ? "high" : "auto"}
                 />
               </div>
             </section>
@@ -154,6 +156,7 @@ function MainCarousel() {
                 src={slide.image}
                 alt={t("home.carousel.slide_alt", { title: t(slide.titleKey) })}
                 className="h-20 w-full object-cover"
+                loading="lazy"
               />
             </SwiperSlide>
           ))}

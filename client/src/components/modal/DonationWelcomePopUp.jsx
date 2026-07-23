@@ -120,12 +120,14 @@ const DonationWelcomePopUp = () => {
                 src={IconDonation}
                 alt="Moneda de donación"
                 className="w-12 h-12 drop-shadow-md"
+                loading="lazy"
               />
             </motion.div>
             <img
               src={JaviCorto}
               alt={t("donationWelcomePopUp.alt_javi")}
               className="relative z-10 h-36 md:h-44 w-auto drop-shadow-lg"
+              loading="lazy"
             />
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-8 bg-primary-purple/20 rounded-full blur-xl" />
           </div>

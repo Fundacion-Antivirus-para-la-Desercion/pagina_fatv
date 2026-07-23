@@ -40,6 +40,7 @@ function NotFound() {
           src={Javi}
           alt="Javi señalando el error 404"
           className="w-32 md:w-56 lg:w-64"
+          loading="lazy"
         />
       </div>
     </section>

@@ -19,6 +19,7 @@ const BackButton = ({ label, alt }) => {
         className="ml-3 relative transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
         src={Back}
         alt={alt}
+        loading="lazy"
       />
       {label}
     </Link>

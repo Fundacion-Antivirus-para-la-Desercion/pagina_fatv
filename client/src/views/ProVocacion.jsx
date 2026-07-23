@@ -164,7 +164,7 @@ function ProVocacion() {
         title={t("provocacion.modal.title")}
       >
         <div className="flex flex-col items-center text-center">
-          <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" />
+          <img src={Focus} alt="Confirmación" className="w-20 h-20 mb-4" loading="lazy" />
 
           <h2 className="text-2xl font-bold mb-2 text-center text-blue-base">
             {t("provocacion.modal.title")}
@@ -189,7 +189,7 @@ function ProVocacion() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Focus} alt="Botón fijo" className="w-10 h-10" />
+            <img src={Focus} alt="Botón fijo" className="w-10 h-10" loading="lazy" />
             <span className="text-blue-base font-bold">
               {t("provocacion.let_yourself_be_provoked")}
             </span>
@@ -205,6 +205,7 @@ function ProVocacion() {
           src={BannerPersuavivo}
           alt="Banner"
           className="w-full h-full object-cover"
+          loading="lazy"
         />
       </section>
 
@@ -223,6 +224,7 @@ function ProVocacion() {
               openImageModal(isEnglish ? EnAutoconocimiento : Autoconocimiento)
             }
             className="w-full h-full object-cover rounded-lg"
+            loading="lazy"
           />
         </div>
         <div className="cursor-pointer border-4 border-primary-yellow rounded-xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
@@ -234,6 +236,7 @@ function ProVocacion() {
               openImageModal(isEnglish ? EnMundoFormativo : MundoFormativo)
             }
             className="w-full h-full object-cover rounded-lg"
+            loading="lazy"
           />
         </div>
         <div className="cursor-pointer border-4 border-dark-blue rounded-xl transform transition duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-2xl">
@@ -245,6 +248,7 @@ function ProVocacion() {
               openImageModal(isEnglish ? EnMundoLaboral : MundoLaboral)
             }
             className="w-full h-full object-cover rounded-lg"
+            loading="lazy"
           />
         </div>
       </section>

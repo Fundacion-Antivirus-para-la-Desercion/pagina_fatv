@@ -17,7 +17,7 @@ const ContextData = () => {
   return (
     <section className="context-data-container bg-dark-blue">
       <div className="md:grid md:grid-cols-1 bg-primary-yellow relative items-center mb-10 md:mb-32 p-2">
-        <img className="hidden md:block md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt={t("home.contextData.alt_javi")} />
+        <img className="hidden md:block md:w-40 xl:w-64 h-auto ml-2 absolute top-0" src={JaviAbajo} alt={t("home.contextData.alt_javi")} loading="lazy" />
         <h1 className="col-start-2 md:col-start-1 p-2 context-data-title uppercase font-impact text-2xl md:text-3xl lg:text-5xl text-dark-blue text-center">
           {t("home.contextData.title")}
         </h1>
@@ -30,6 +30,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-primary-yellow p-2 mb-3"
               src={AcompanarImage}
               alt={t("home.contextData.statistic1.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={26512} />
@@ -43,6 +44,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-dark-blue p-2 object-cover mb-3"
               src={OrientacionImage}
               alt={t("home.contextData.statistic2.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3 p-1">
               <CounterNumeric countNumber={23356} />
@@ -56,6 +58,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-primary-purple p-2 object-cover mb-3"
               src={GrupoImage}
               alt={t("home.contextData.statistic3.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={1122} />
@@ -69,6 +72,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-primary-yellow p-2 object-cover mb-3"
               src={TutoriaImage}
               alt={t("home.contextData.statistic4.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={7211} />
@@ -82,6 +86,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-dark-blue p-2 object-cover mb-3"
               src={TutorImage}
               alt={t("home.contextData.statistic5.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={441} />
@@ -95,6 +100,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-primary-purple p-2 object-cover mb-3"
               src={PsicologiaImage}
               alt={t("home.contextData.statistic6.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={613} />
@@ -108,6 +114,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-primary-yellow p-2 object-cover mb-3"
               src={TallerImage}
               alt={t("home.contextData.statistic7.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={2087} />
@@ -121,6 +128,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-dark-blue p-2 object-cover mb-3"
               src={ComputerImage}
               alt={t("home.contextData.statistic8.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={227} />
@@ -134,6 +142,7 @@ const ContextData = () => {
               className="m-auto w-24 rounded-full bg-primary-purple p-2 object-cover mb-3"
               src={EstudioImage}
               alt={t("home.contextData.statistic9.alt_image")}
+              loading="lazy"
             />
             <p className="statistic-number3 text-3xl md:text-5xl font-impact mb-3">
               <CounterNumeric countNumber={184} />

@@ -63,6 +63,7 @@ function ProjectsAndTeams() {
           className="absolute h-[200px] md:h-[340px] mx-auto right-0 top-52 md:-top-16 z-0"
           src={JaviEsquina}
           alt=""
+          loading="lazy"
         />
 
         <div className="hidden lg:block">
@@ -180,6 +181,7 @@ function ProjectsAndTeams() {
                           src={ally.logo}
                           alt={t(ally.name)}
                           className="h-16 md:h-20 object-contain"
+                          loading="lazy"
                         />
                       </div>
                     ))}

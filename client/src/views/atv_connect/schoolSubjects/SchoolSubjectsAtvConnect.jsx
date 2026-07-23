@@ -158,6 +158,7 @@ function SchoolSubjectsAtvConnect() {
             className="block mt-10 md:mt-0 mx-auto md:absolute md:top-[-50px] max-w-[210px] md:max-w-[200px] lg:top-[-20px] lg:max-w-[400px] "
             src={JaviEstudioso}
             alt={t("atvConnect.subjects.alt_image_subjects")}
+            loading="lazy"
           />
         </div>
       </section>
