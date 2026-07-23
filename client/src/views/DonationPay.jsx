@@ -10,7 +10,7 @@ import Acompañamiento2 from "../../src/assets/images/views/donationPay/acompañ
 import Acompañamiento3 from "../../src/assets/images/views/donationPay/acompañamiento3.jpg";
 import Acompañamiento4 from "../../src/assets/images/views/donationPay/acompañamiento4.jpg";
 import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
-import Pay from "../../src/assets/images/views/donationPay/pay.png";
+import { MdOutlineAttachMoney } from "react-icons/md";
 
 const DONATION_STEP = 1000;
 const EMPTY_DONATION_INPUT_WIDTH = "22ch";
@@ -232,7 +232,7 @@ function DonationPay() {
 
           <div className="flex justify-center flex-col gap-6 p-6 lg:p-10">
             <div className="flex items-center justify-center mb-5">
-              <img className="w-10 h-10" src={Pay} alt="" loading="lazy" />
+              <MdOutlineAttachMoney className="text-white bg-primary-yellow rounded-full p-1" size={40} />
               <h2 className="m-2 font-impact  text-xl md:text-3xl text-center text-primary-yellow">
                 {t("donation.be_part_solution")}
               </h2>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Arrow from "../../../src/assets/Icons/arrow.svg";
+import { FaArrowRight } from "react-icons/fa";
 
 function AboutUs() {
   const { t } = useTranslation();
@@ -31,11 +31,10 @@ function AboutUs() {
             to="/fundacion"
           >
             {t("home.aboutUs.button")}
-            <img
-              className="w-[15px] align-middle ml-[5px] relative transform transition-transform duration-300 group-hover:translate-x-1"
-              src={Arrow}
-              alt={t("home.aboutUs.alt_arrow")}
-              loading="lazy"
+            <FaArrowRight
+              className="ml-[5px] relative transform transition-transform duration-300 group-hover:translate-x-1"
+              size={20}
+              aria-label={t("home.aboutUs.alt_arrow")}
             />
           </Link>
         </div>
