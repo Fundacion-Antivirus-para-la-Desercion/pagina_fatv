@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Back from "../../../assets/Icons/back.svg";
+import { FaArrowLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 /**
@@ -15,11 +15,10 @@ const BackButton = ({ label, alt }) => {
       to="/News"
       className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold mr-7"
     >
-      <img
+      <FaArrowLeft
         className="ml-3 relative transform transition-transform duration-300 group-hover:-translate-x-1 mr-1"
-        src={Back}
-        alt={alt}
-        loading="lazy"
+        size={20}
+        aria-label={alt}
       />
       {label}
     </Link>
