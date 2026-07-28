@@ -34,7 +34,10 @@ export const ACOMPANAMIENTO_4_IMG  = getImageUrl("https://res.cloudinary.com/bgm
 export const BANNER_6C_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784897628/banner6c_eg0fgp.jpg");
 
 // ── foundation ────────────────────────────────────────────────────────────────
-export const BANNER_FOUNDATION_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670371/banner-foundation_gfarwo.webp");
+export const BANNER_FOUNDATION_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670371/banner-foundation_gfarwo.webp"); 
+export const FOTO_IZQUIERDA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674122/foundation-1_drcfcv.jpg");
+export const FOTO_VIDEO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674121/foto-video_z0uhpw.jpg");
+export const FOTO_DERECHA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674122/foundation-2_jlft1y.jpg");
 export const TEORIA_CAMBIO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670348/entrega-pc_wg6i6l.webp");
 export const VALORES_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670379/valores_su7qvh.webp");
 export const MISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670366/pase-a-la-u_hcbtbm.webp");
