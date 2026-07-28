@@ -148,6 +148,7 @@ export const REUNION_SECRETARIA_IMG      = getImageUrl("https://res.cloudinary.c
 export const SOCIAL_FEST_IMG             = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671337/social-fest_vep5ck.webp");
 export const REUNION_FATV_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671343/reunion-colaboradores-FATV_o4zs4z.webp");
 export const ENCUENTRO_GOBERNACION_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671331/encuentro-gobernacion-antioquia-2_jiuwx3.webp");
+export const ESTUDIANTES_AULA_IMG        = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671303/estudiantes-en-aula_hv95dr.webp");
 
 // ── studentRetentionManagement ────────────────────────────────────────────────
 export const BANNER_RETENTION_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671868/banner-student-retention_eijchp.webp");
