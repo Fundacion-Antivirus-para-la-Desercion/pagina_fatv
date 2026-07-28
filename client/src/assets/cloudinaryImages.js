@@ -12,6 +12,12 @@ export const ESTUDIO_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8
 export const TALLER_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896671/academico_y92y1w.webp");
 export const COMPUTER_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896674/computer_ibjblk.webp");
 
+// ── mainCarousel ──────────────────────────────────────────────────────────────
+export const CAROUSEL_COLABORADORES_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274314/colaboradores-fatv_vpx0e3.jpg");
+export const CAROUSEL_BECARIOS_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274322/becarios-itagui_ankp7n.webp");
+export const CAROUSEL_EVENTO_ALIANZA_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274311/evento-alianza-educacion-itagui_wmb9kt.jpg");
+export const CAROUSEL_CAMPANA_SOCIAL_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274318/campana-social_ffnr1w.webp");
+
 // ── Compartidas — Javi (mascota usada en múltiples vistas) ────────────────────
 export const JAVI_SVG                 = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671490/javi-guina-el-ojo_q7foao.svg");
 export const JAVI_CORTO_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671468/javi-corto_zvokki.webp");
