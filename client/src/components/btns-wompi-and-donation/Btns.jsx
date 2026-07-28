@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./Btns.module.css";
-import IconDonation from "../../../src/assets/images/views/donationPay/coin.png";
+import { ICON_DONATION_IMG as IconDonation } from "../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
 
 function Btns() {

@@ -1,4 +1,4 @@
-import BannerCommun from "../../assets/images/views/communications/banner-communications.webp";
+import { BANNER_COMMUNICATIONS_IMG as BannerCommun } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import Description from "../Communications/Description/Description.jsx";
 import CommunicationSkills from "../Communications/CommunicationSkills/CommunicationSkills.jsx";

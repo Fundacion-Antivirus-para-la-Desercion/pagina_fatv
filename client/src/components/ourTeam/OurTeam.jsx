@@ -1,5 +1,7 @@
-import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
-import JaviCard from "../../assets/images/views/javi/javi-sonriendo.webp";
+import {
+  JAVI_SVG as Javi,
+  JAVI_SONRIENDO_IMG as JaviCard,
+} from "../../assets/cloudinaryImages";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";

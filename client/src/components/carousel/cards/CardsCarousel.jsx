@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-import Javicorto from "../../../assets/images/views/javi/javi-corto.webp";
-import FocusTransparent from "../../../assets/images/views/proVocacion/information/focus.webp";
+import {
+  JAVI_CORTO_IMG as Javicorto,
+  FOCUS_TRANSPARENT_IMG as FocusTransparent,
+} from "../../../assets/cloudinaryImages";
 import { floatSnake, cardContainerVariants } from "../../motion/constants/Animations.js";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";

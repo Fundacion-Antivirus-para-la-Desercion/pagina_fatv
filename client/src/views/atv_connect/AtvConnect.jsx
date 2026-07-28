@@ -1,4 +1,4 @@
-import BannerAtvConnect from "../../assets/images/views/atvConnect/banner-atv-connect.webp";
+import { BANNER_ATV_CONNECT_IMG as BannerAtvConnect } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
 import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";

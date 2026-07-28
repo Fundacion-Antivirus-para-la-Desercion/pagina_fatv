@@ -1,6 +1,6 @@
 import "boxicons";
 import BannerView from "../../components/Banner-views/BannerView";
-import BannerDataAnalytics from "../../assets/images/views/dataAnalytics/technology-and-data.webp";
+import { BANNER_DATA_ANALYTICS_IMG as BannerDataAnalytics } from "../../assets/cloudinaryImages";
 import Description from "../DataAnalytics/Description/Description.jsx";
 import Teams from "../../components/teamsArea/Teams.jsx";
 import data from "./data.js"

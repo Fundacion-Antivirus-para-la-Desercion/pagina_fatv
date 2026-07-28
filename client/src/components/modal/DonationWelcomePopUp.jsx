@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import IconDonation from "../../assets/images/views/donationPay/coin.png";
-import JaviCorto from "../../assets/images/views/javi/javi-corto.webp";
+import {
+  ICON_DONATION_IMG as IconDonation,
+  JAVI_CORTO_IMG as JaviCorto,
+} from "../../assets/cloudinaryImages";
 import { floatSnake } from "../motion/constants/Animations.js";
 import { IoHeart } from "react-icons/io5";
 import { useTranslation, Trans } from "react-i18next";

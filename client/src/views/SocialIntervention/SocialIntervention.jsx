@@ -1,4 +1,4 @@
-import BannerSocial from "../../assets/images/views/socialIntervention/banner-social-intervention.webp";
+import { BANNER_SOCIAL_IMG as BannerSocial } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description";

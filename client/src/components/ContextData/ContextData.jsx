@@ -1,16 +1,18 @@
 import "./ContextData.css";
 import { useTranslation } from "react-i18next";
 import CounterNumeric from "./CounterNumer.jsx";
-import AcompanarImage from "../../assets/images/views/home/acompanar.webp";
-import OrientacionImage from "../../assets/images/views/home/orientacion.webp";
-import GrupoImage from "../../assets/images/views/home/grupo.webp";
-import TutoriaImage from "../../assets/images/views/home/tutoria-academica.webp";
-import TutorImage from "../../assets/images/views/home/tutor.webp";
-import PsicologiaImage from "../../assets/images/views/home/psicologia.webp";
-import EstudioImage from "../../assets/images/views/home/grupo-estudio.webp";
-import TallerImage from "../../assets/images/views/home/academico.webp";
-import ComputerImage from "../../assets/images/views/home/computer.webp";
-import JaviAbajo from "../../assets/images/views/home/javi-abajo.webp";
+import {
+  ACOMPANAR_IMG as AcompanarImage,
+  ORIENTACION_IMG as OrientacionImage,
+  GRUPO_IMG as GrupoImage,
+  TUTORIA_IMG as TutoriaImage,
+  TUTOR_IMG as TutorImage,
+  PSICOLOGIA_IMG as PsicologiaImage,
+  ESTUDIO_IMG as EstudioImage,
+  TALLER_IMG as TallerImage,
+  COMPUTER_IMG as ComputerImage,
+  JAVI_ABAJO_IMG as JaviAbajo,
+} from "../../assets/cloudinaryImages";
 
 const ContextData = () => {
   const { t } = useTranslation();

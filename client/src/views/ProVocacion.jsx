@@ -1,15 +1,17 @@
 import styles from "./ProVocacion.module.css";
-import BannerProvocacion from "../../src/assets/images/views/proVocacion/banner-pro-vocacion.webp";
-import BannerPersuavivo from "../../src/assets/images/views/proVocacion/banner-persuasivo.webp";
-import Autoconocimiento from "../assets/images/views/proVocacion/componentes/autoconocimiento.webp";
-import MundoFormativo from "../assets/images/views/proVocacion/componentes/mundo-formativo.webp";
-import MundoLaboral from "../assets/images/views/proVocacion/componentes/mundo-laboral.webp";
-import EnMundoFormativo from "../assets/images/views/proVocacion/componentes/training-world.webp";
-import EnAutoconocimiento from "../assets/images/views/proVocacion/componentes/self-knowledge.webp";
-import EnMundoLaboral from "../assets/images/views/proVocacion/componentes/the-world-of-work.webp";
+import {
+  BANNER_PROVOCACION_IMG as BannerProvocacion,
+  BANNER_PERSUASIVO_IMG as BannerPersuavivo,
+  AUTOCONOCIMIENTO_IMG as Autoconocimiento,
+  MUNDO_FORMATIVO_IMG as MundoFormativo,
+  MUNDO_LABORAL_IMG as MundoLaboral,
+  EN_MUNDO_FORMATIVO_IMG as EnMundoFormativo,
+  EN_AUTOCONOCIMIENTO_IMG as EnAutoconocimiento,
+  EN_MUNDO_LABORAL_IMG as EnMundoLaboral,
+} from "../assets/cloudinaryImages";
 import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
-import Focus from "../assets/images/views/proVocacion/information/focus.svg";
+import { FOCUS_SVG as Focus } from "../assets/cloudinaryImages";
 import BannerView from "../components/Banner-views/BannerView";
 import Description from "./StudentProvocation/Description";
 

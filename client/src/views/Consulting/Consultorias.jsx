@@ -1,4 +1,4 @@
-import BannerConsulting from "../../assets/images/views/consultorias/banner-consulting.webp";
+import { BANNER_CONSULTING_IMG as BannerConsulting } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import { PiShootingStarFill} from "react-icons/pi";
 import { RiFocus2Line } from "react-icons/ri";
@@ -7,7 +7,7 @@ import { BsStars } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
-import card from "../../assets/images/views/consultorias/card-p.webp";
+import { CARD_CONSULTING_IMG as card } from "../../assets/cloudinaryImages";
 
 function Consultorias() {
   const { t } = useTranslation();

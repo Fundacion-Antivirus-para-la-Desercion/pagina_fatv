@@ -1,11 +1,13 @@
-import AcompanamientoColegio from "../../../assets/images/views/consultorias/acompanamiento-estudiante.webp";
-import AcompanamientoUdea from "../../../assets/images/views/consultorias/acompanamiento-u-de-a.webp";
-import FraternidadMedellin from "../../../assets/images/views/consultorias/aliados-fraternidad-medellin.webp";
-import AcompanamientoBecarios from "../../../assets/images/views/consultorias/becarios.webp";
-import ReunionSecretriaItagui from "../../../assets/images/views/consultorias/reunion-secretaria-itagui.webp";
-import SocialFest from "../../../assets/images/views/consultorias/social-fest.webp";
-import ReunionFavt from "../../../assets/images/views/consultorias/reunion-colaboradores-FATV.webp";
-import EncuentroGobernacion from "../../../assets/images/views/consultorias/encuentro-gobernacion-antioquia-2.webp";
+import {
+  ACOMPANAMIENTO_COLEGIO_IMG as AcompanamientoColegio,
+  ACOMPANAMIENTO_UDEA_IMG as AcompanamientoUdea,
+  FRATERNIDAD_MEDELLIN_IMG as FraternidadMedellin,
+  ACOMPANAMIENTO_BECARIOS_IMG as AcompanamientoBecarios,
+  REUNION_SECRETARIA_IMG as ReunionSecretriaItagui,
+  SOCIAL_FEST_IMG as SocialFest,
+  REUNION_FATV_IMG as ReunionFavt,
+  ENCUENTRO_GOBERNACION_IMG as EncuentroGobernacion,
+} from "../../../assets/cloudinaryImages";
 import { TiHeart } from "react-icons/ti";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { PiShootingStarFill } from "react-icons/pi";

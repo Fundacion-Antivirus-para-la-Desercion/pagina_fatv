@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import BannerContacUs from "../assets/images/views/contacUs/banner-contact-us.webp";
+import { BANNER_CONTACT_US_IMG as BannerContacUs } from "../assets/cloudinaryImages";
 import imgContact from "../../public/contactUs/contact-image.webp";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from "emailjs-com";
