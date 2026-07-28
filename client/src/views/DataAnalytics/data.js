@@ -1,7 +1,9 @@
-import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
-import SebastianH from "../../../public/img_OurTeam/sebastian-herrera.webp";
-import SebastianL from "../../../public/img_OurTeam/sebastian-lopez.webp";
-import LinaM from "../../../public/img_OurTeam/lina-marcela-marin.webp";
+import {
+  KAREN_GONZALEZ_IMG as KarenG,
+  SEBASTIAN_HERRERA_IMG as SebastianH,
+  SEBASTIAN_LOPEZ_IMG as SebastianL,
+  LINA_MARIN_IMG as LinaM,
+} from "../../assets/cloudinaryImages.js";
 
 
 const projectsData = [

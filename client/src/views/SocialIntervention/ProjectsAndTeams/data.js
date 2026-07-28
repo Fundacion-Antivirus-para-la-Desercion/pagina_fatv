@@ -1,14 +1,16 @@
 import UDEA from "../../../../public/logos_alianzas/udea-horizontal.webp";
 import FUDEA from "../../../../public/logos_alianzas/fundacion-universidad-de-antioquia.webp";
 import UNAL from "../../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg";
-import AstridF from "../../../../public/img_OurTeam/astrid-franco-gonzalez.webp";
-import DanielaA from "../../../../public/img_OurTeam/daniela-arias.webp";
-import JesicaC from "../../../../public/img_OurTeam/jesica-cano.webp";
-import SamaiderH from "../../../../public/img_OurTeam/samaider-hoyos.webp";
-import MateoD from "../../../../public/img_OurTeam/mateo-duque.webp";
-import CarolinaP from "../../../../public/img_OurTeam/carolina-perez.webp";
-import NathaliaR from "../../../../public/img_OurTeam/nathalia-revelo.webp";
-import JhiselH from "../../../../public/img_OurTeam/jhisel-holguin.webp";
+import {
+  ASTRID_FRANCO_IMG as AstridF,
+  DANIELA_ARIAS_IMG as DanielaA,
+  JESICA_CANO_IMG as JesicaC,
+  SAMAIDER_HOYOS_IMG as SamaiderH,
+  MATEO_DUQUE_IMG as MateoD,
+  CAROLINA_PEREZ_IMG as CarolinaP,
+  NATHALIA_REVELO_IMG as NathaliaR,
+  JHISEL_HOLGUIN_IMG as JhiselH,
+} from "../../../assets/cloudinaryImages.js";
 import AlcandiaITG from "../../../../public/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png";
 import CodigoC13 from "../../../../public/logos_alianzas/Logo-codigo-C13_Mesa de trabajo 1.png";
 import MisionTIC from "../../../../public/logos_alianzas/mision-tic-2.png";

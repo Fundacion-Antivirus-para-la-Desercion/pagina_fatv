@@ -8,26 +8,24 @@ import {
   MENCION_IMG as Mencion,
   ENCUENTRO_COLABORADORES_IMG as EncuentroColaboradores,
   DESERCION_IMG as Desercion,
-} from "../../assets/cloudinaryImages";
-import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
-import { ARTICLE_MATEO_D_IMG as ArticleMateoD } from "../../assets/cloudinaryImages";
-import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
-import { ARTICLE_LUIS_S_IMG as ArticleLuisS } from "../../assets/cloudinaryImages";
-import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
-import { ARTICLE_JUANA_R_IMG as ArticleJuanaR } from "../../assets/cloudinaryImages";
-import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
-import { ARTICLE_NATHALIA_R_IMG as ArticleNathaliaR } from "../../assets/cloudinaryImages";
-import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
-import { ARTICLE_JHISEL_H_IMG as ArticleJhiselH } from "../../assets/cloudinaryImages";
-import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
-import { ARTICLE_MANUELA_IMG as ArticleManuela } from "../../assets/cloudinaryImages";
-import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
-import {
+  ARTICLE_MATEO_D_IMG as ArticleMateoD,
+  ARTICLE_LUIS_S_IMG as ArticleLuisS,
+  ARTICLE_JUANA_R_IMG as ArticleJuanaR,
+  ARTICLE_NATHALIA_R_IMG as ArticleNathaliaR,
+  ARTICLE_JHISEL_H_IMG as ArticleJhiselH,
+  ARTICLE_MANUELA_IMG as ArticleManuela,
   ARTICLE_KAREN_IMG as ArticleKaren,
   TEJIENDO_REDES_IMG as TejiendoRedes,
   TEJIENDO_REDES_DOS_IMG as TejiendoRedesDos,
   TISKO_IMG as Tisko,
-} from "../../assets/cloudinaryImages";
+  MATEO_DUQUE_IMG as MateoD,
+  LUIS_SANCHEZ_IMG as LuisS,
+  JUANA_RUEDA_IMG as JuanaR,
+  NATHALIA_REVELO_IMG as NathaliaR,
+  JHISEL_HOLGUIN_IMG as JhiselH,
+  MANUELA_CORREA_IMG as ManuelaC,
+  KAREN_GONZALEZ_IMG as KarenG,
+} from "../../assets/cloudinaryImages.js";
 
 export const filters = [
   { id: "all", labelKey: "news.filters.all" },

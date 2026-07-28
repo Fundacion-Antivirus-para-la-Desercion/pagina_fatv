@@ -1,12 +1,11 @@
-import UDEA from "../../../public/logos_alianzas/udea-horizontal.webp";
-import FUDEA from "../../../public/logos_alianzas/fundacion-universidad-de-antioquia.webp";
-import UNAL from "../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg";
-import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
-import SantiagoQ from "../../../public/img_OurTeam/santiago-quintero.webp";
-import MayerlinG from "../../../public/img_OurTeam/mayerlin-giraldo.webp";
-import EstefaniaG from "../../../public/img_OurTeam/estefania-gomez.webp";
-import DaliaB from "../../../public/img_OurTeam/dalia-bedoya.webp";
-import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
+import {
+  MANUELA_CORREA_IMG as ManuelaC,
+  SANTIAGO_QUINTERO_IMG as SantiagoQ,
+  MAYERLIN_GIRALDO_IMG as MayerlinG,
+  ESTEFANIA_GOMEZ_IMG as EstefaniaG,
+  DALIA_BEDOYA_IMG as DaliaB,
+  JUANA_RUEDA_IMG as JuanaR,
+} from "../../assets/cloudinaryImages.js";
 
 
 const projectsData = [

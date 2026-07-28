@@ -25,6 +25,28 @@ export const JAVI_ESQUINA_IMG         = getImageUrl("https://res.cloudinary.com/
 export const JAVI_ABAJO_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784897410/javi-abajo_umilae.webp");
 export const JAVI_ATV_CONECTA_IMG     = getImageUrl("atvconnect/javiAtvConecta");
 
+
+// ── ourTeam ───────────────────────────────────────────────────────────────────
+export const ASTRID_FRANCO_IMG    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658539/astrid-franco-gonzalez_drunq8.webp");
+export const CAROLINA_PEREZ_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658541/carolina-perez_tfivia.webp");
+export const DALIA_BEDOYA_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658543/dalia-bedoya_zlckkc.webp");
+export const DANIELA_ARIAS_IMG    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658544/daniela-arias_fyipee.webp");
+export const ESTEFANIA_GOMEZ_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658545/estefania-gomez_r61jwb.webp");
+export const JESICA_CANO_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658548/jesica-cano_t7hcye.webp");
+export const JHISEL_HOLGUIN_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658549/jhisel-holguin_duth0e.webp");
+export const JUANA_RUEDA_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658550/juana-rueda_na2jnd.webp");
+export const KAREN_GONZALEZ_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658552/karen-gonzalez-alarcon_muwalg.webp");
+export const LINA_MARIN_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658553/lina-marcela-marin_p3kfuw.webp");
+export const LUIS_SANCHEZ_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658557/luis-sanchez_q3k2r1.webp");
+export const MANUELA_CORREA_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658558/manuela-correa_ccfz47.webp");
+export const MATEO_DUQUE_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658559/mateo-duque_g72sug.webp");
+export const MAYERLIN_GIRALDO_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658561/mayerlin-giraldo_bjlhds.webp");
+export const NATHALIA_REVELO_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658562/nathalia-revelo_dgf11l.webp");
+export const SAMAIDER_HOYOS_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658563/samaider-hoyos_fe4tee.webp");
+export const SANTIAGO_QUINTERO_IMG= getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658565/santiago-quintero_ijnwnz.webp");
+export const SEBASTIAN_HERRERA_IMG= getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658566/sebastian-herrera_zy9be2.webp");
+export const SEBASTIAN_LOPEZ_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658567/sebastian-lopez_qswhmh.webp");
+
 // ── donation (DonationPay + DonationWelcomePopUp + Btns) ─────────────────────
 export const ICON_DONATION_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671660/coin_f00rpk.png");
 export const ACOMPANAMIENTO_1_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671668/acompan%CC%83amiento1_fqftyx.jpg");
