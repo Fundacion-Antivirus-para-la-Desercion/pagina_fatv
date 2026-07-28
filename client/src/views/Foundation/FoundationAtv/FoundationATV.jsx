@@ -1,10 +1,10 @@
 import { useState, useRef } from "react";
 import "boxicons";
-import FotoVideo from "../../../../public/img_Foundation/foto-video.jpg";
-import Foundation1 from "../../../../public/img_Foundation/foundation-1.jpg";
-import Foundation2 from "../../../../public/img_Foundation/foundation-2.jpg";
 import {
   BANNER_FOUNDATION_IMG as BannerFoundation,
+  FOTO_VIDEO as FotoVideo,
+  FOTO_IZQUIERDA as Foundation1,
+  FOTO_DERECHA as Foundation2,
   TEORIA_CAMBIO_IMG as TeoriaCambio,
   VALORES_IMG as Valores,
   MISION_IMG as Mision,
