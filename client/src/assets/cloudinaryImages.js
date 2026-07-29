@@ -32,6 +32,35 @@ export const JAVI_ABAJO_IMG           = getImageUrl("https://res.cloudinary.com/
 export const JAVI_ATV_CONECTA_IMG     = getImageUrl("atvconnect/javiAtvConecta");
 
 
+// ── ourAllies (logos de aliados) ──────────────────────────────────────────────
+export const ALIADO_ALCALDIA_ITAGUI_IMG          = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672893/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial_ivbddd.png");
+export const ALIADO_MISION_TIC_IMG               = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673170/mision-tic-2_gdsmpd.png");
+export const ALIADO_AURELIO_LLANO_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673022/Logo_Aurelio_Llano_Mesa_de_trabajo_1_rvht0k.png");
+export const ALIADO_FUNDACION_FRATERNIDAD_MEDELLIN = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673137/logo-fraternidad_vtbdec.webp");
+export const ALIADO_EAFIT_IMG                    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673065/logo_EAFIT_ccapnr.png");
+export const ALIADO_NODO_A_IMG                   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673202/nodoa_ybxkwa.png");
+export const ALIADO_CODIGO_C13_IMG               = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673109/Logo-codigo-C13_Mesa_de_trabajo_1_fyokmj.png");
+export const ALIADO_THT_IMG                      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673223/THT_Logo_akozwg.png");
+export const ALIADO_SOFIA_PEREZ_SOTO_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673159/logo-sofia-perez-de-soto-fundacion_pgv1ou.webp");
+export const ALIADO_CELERIX_IMG                  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672925/celerix_rif1gx.png");
+export const ALIADO_UDEA_IMG                     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673245/udea_bxlosb.webp");
+export const ALIADO_FUNDACION_UDEA_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672990/fundacion-universidad-de-antioquia_ryrrle.webp");
+export const ALIADO_FUNDACION_NUTRESA_IMG        = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673148/Logo-fundacion-nutresa_ehosrd.webp");
+export const ALIADO_FIDELITY_CHARITABLE_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673127/logo-fidelity-charitable_rwh1wl.webp");
+export const ALIADO_FONDO_LIBRO_IMG              = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673266/unnamed_py3mch.png");
+export const ALIADO_VELEZ_REYES_IMG              = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673087/Logo_velezreyes_dqjadm.jpg");
+export const ALIADO_UNAL_MEDELLIN_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673257/UNAL_Aplicacio%CC%81n_Medelli%CC%81n_r6fegb.svg");
+export const ALIADO_BECA_TECH_IMG                = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673055/logo_Beca_Tech_Negro_ekd46l.png");
+export const ALIADO_RODRIGO_ARROYAVE_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672979/fundacion-rodrigo-arroyave_hfodig.jpg");
+export const ALIADO_GLOBANT_IMG                   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673000/globan_xfxyzh.png");
+export const ALIADO_WEB3FORU_IMG                 = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673277/web3foru_pyilcs.png");
+export const ALIADO_GENTE_UNIDA_IMG              = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673098/Logo-Autorizado-gente-unida_qovexe.png");
+export const ALIADO_ELEDE_IMG                    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672957/elede_gunjdx.png");
+export const ALIADO_GOLONDRINAS_IMG              = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673011/golondrinas_zjz50d.png");
+export const ALIADO_SURA_IMG                     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673076/logo_sura_bcgsvl.png");
+export const ALIADO_ISA_INTERCOLOMBIA_IMG        = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784673033/Isa_InterColombia_logo_ro9zph.png");
+export const ALIADO_AUTECO_IMG                   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672904/Auteco_logo_lkxudh.png");
+
 // ── ourTeam ───────────────────────────────────────────────────────────────────
 export const ASTRID_FRANCO_IMG    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658539/astrid-franco-gonzalez_drunq8.webp");
 export const CAROLINA_PEREZ_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658541/carolina-perez_tfivia.webp");
