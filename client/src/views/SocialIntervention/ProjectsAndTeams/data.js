@@ -1,6 +1,3 @@
-import UDEA from "../../../../public/logos_alianzas/udea-horizontal.webp";
-import FUDEA from "../../../../public/logos_alianzas/fundacion-universidad-de-antioquia.webp";
-import UNAL from "../../../../public/logos_alianzas/UNAL_Aplicación_Medellín.svg";
 import {
   ASTRID_FRANCO_IMG as AstridF,
   DANIELA_ARIAS_IMG as DanielaA,
@@ -10,16 +7,19 @@ import {
   CAROLINA_PEREZ_IMG as CarolinaP,
   NATHALIA_REVELO_IMG as NathaliaR,
   JHISEL_HOLGUIN_IMG as JhiselH,
+  ALIADO_UDEA_HORIZONTAL_IMG as UDEA,
+  ALIADO_FUNDACION_UDEA_IMG as FUDEA,
+  ALIADO_UNAL_MEDELLIN_IMG as UNAL,
+  ALIADO_ALCALDIA_ITAGUI_IMG as AlcandiaITG,
+  ALIADO_CODIGO_C13_IMG as CodigoC13,
+  ALIADO_MISION_TIC_IMG as MisionTIC,
+  ALIADO_ELEDE_IMG as Elede,
+  ALIADO_NODO_A_NEGRO_IMG as NodoEAFIT,
+  ALIADO_AURELIO_LLANO_IMG as AurelioLlano,
+  ALIADO_BECA_TECH_IMG as BecaTech,
+  ALIADO_FUNDACION_FRATERNIDAD_MEDELLIN as Fundation,
+  ALIADO_BECAS_NUTRESA_IMG as BecasNutresa,
 } from "../../../assets/cloudinaryImages.js";
-import AlcandiaITG from "../../../../public/logos_alianzas/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial.png";
-import CodigoC13 from "../../../../public/logos_alianzas/Logo-codigo-C13_Mesa de trabajo 1.png";
-import MisionTIC from "../../../../public/logos_alianzas/mision-tic-2.png";
-import Elede from "../../../../public/logos_alianzas/elede.png";
-import NodoEAFIT from "../../../../public/logos_alianzas/nodo-eafit.webp";
-import AurelioLlano from "../../../../public/logos_alianzas/Logo Aurelio Llano_Mesa de trabajo 1.png";
-import BecaTech from "../../../../public/logos_alianzas/logo_Beca Tech Negro.png";
-import Fundation from "../../../../public/logos_alianzas/logo-fraternidad.webp";
-import BecasNutresa from "../../../../public/logos_alianzas/becas-nutresa.webp";
 
 const projectsData = [
   {
