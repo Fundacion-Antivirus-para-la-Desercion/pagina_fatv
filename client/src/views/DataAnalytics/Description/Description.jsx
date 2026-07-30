@@ -1,4 +1,4 @@
-import Javi from "../../../assets/images/views/javi/javi-brazos-abiertos.webp";
+import { JAVI_BRAZOS_ABIERTOS_IMG as Javi } from "../../../assets/cloudinaryImages";
 import { WiStars } from "react-icons/wi";
 import { FaLightbulb } from "react-icons/fa6";
 import { TbTargetArrow } from "react-icons/tb";

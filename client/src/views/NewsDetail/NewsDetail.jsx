@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef } from "react";
-import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
+import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import OtherNews from "../../components/other-news/OtherNews";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";

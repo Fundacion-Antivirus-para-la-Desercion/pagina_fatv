@@ -1,29 +1,31 @@
-import Conversatorio from "../../../src/assets/images/views/imagesNews/conversatorio-universidad-envigado.webp";
-import Participacion from "../../../src/assets/images/views/imagesNews/participación-XI-congreso-latinoamericano.jpg";
-import Oportunidad from "../../../src/assets/images/views/imagesNews/una-oportunidad.webp";
-import Estudiantes from "../../../src/assets/images/views/imagesNews/estudiantes.webp";
-import Reconocimiento from "../../../src/assets/images/views/imagesNews/reconocimiento-facultad-minas.webp";
-import ReconocimientoDos from "../../../src/assets/images/views/imagesNews/reconocimiento-facultad-minas-dos.webp";
-import Mencion from "../../../src/assets/images/views/imagesNews/mencion.webp";
-import EncuentroColaboradores from "../../../src/assets/images/views/imagesNews/cifras.webp";
-import Desercion from "../../assets/images/views/imagesNews/dia-udea.webp";
-import MateoD from "../../../public/img_OurTeam/mateo-duque.webp";
-import ArticleMateoD from "../../assets/images/views/imagesNews/article-mateo-duque.webp";
-import LuisS from "../../../public/img_OurTeam/luis-sanchez.webp";
-import ArticleLuisS from "../../assets/images/views/imagesNews/article-luis-sanchez.webp";
-import JuanaR from "../../../public/img_OurTeam/juana-rueda.webp";
-import ArticleJuanaR from "../../assets/images/views/imagesNews/article-juana.webp";
-import NathaliaR from "../../../public/img_OurTeam/nathalia-revelo.webp";
-import ArticleNathaliaR from "../../assets/images/views/imagesNews/article-nathalia-revelo.webp";
-import JhiselH from "../../../public/img_OurTeam/jhisel-holguin.webp";
-import ArticleJhiselH from "../../assets/images/views/imagesNews/article-jhisel-holguin.webp";
-import ManuelaC from "../../../public/img_OurTeam/manuela-correa.webp";
-import ArticleManuela from "../../assets/images/views/imagesNews/article-manuela.webp";
-import KarenG from "../../../public/img_OurTeam/karen-gonzalez-alarcon.webp";
-import ArticleKaren from "../../assets/images/views/imagesNews/article-karen.webp";
-import TejiendoRedes from "../../assets/images/views/imagesNews/mision-internacional.webp";
-import TejiendoRedesDos from "../../assets/images/views/imagesNews/mision-internacional-dos.webp";
-import Tisko from "../../assets/images/views/imagesNews/tisko-2025.webp";
+import {
+  CONVERSATORIO_IMG as Conversatorio,
+  PARTICIPACION_IMG as Participacion,
+  OPORTUNIDAD_IMG as Oportunidad,
+  ESTUDIANTES_NEWS_IMG as Estudiantes,
+  RECONOCIMIENTO_IMG as Reconocimiento,
+  RECONOCIMIENTO_DOS_IMG as ReconocimientoDos,
+  MENCION_IMG as Mencion,
+  ENCUENTRO_COLABORADORES_IMG as EncuentroColaboradores,
+  DESERCION_IMG as Desercion,
+  ARTICLE_MATEO_D_IMG as ArticleMateoD,
+  ARTICLE_LUIS_S_IMG as ArticleLuisS,
+  ARTICLE_JUANA_R_IMG as ArticleJuanaR,
+  ARTICLE_NATHALIA_R_IMG as ArticleNathaliaR,
+  ARTICLE_JHISEL_H_IMG as ArticleJhiselH,
+  ARTICLE_MANUELA_IMG as ArticleManuela,
+  ARTICLE_KAREN_IMG as ArticleKaren,
+  TEJIENDO_REDES_IMG as TejiendoRedes,
+  TEJIENDO_REDES_DOS_IMG as TejiendoRedesDos,
+  TISKO_IMG as Tisko,
+  MATEO_DUQUE_IMG as MateoD,
+  LUIS_SANCHEZ_IMG as LuisS,
+  JUANA_RUEDA_IMG as JuanaR,
+  NATHALIA_REVELO_IMG as NathaliaR,
+  JHISEL_HOLGUIN_IMG as JhiselH,
+  MANUELA_CORREA_IMG as ManuelaC,
+  KAREN_GONZALEZ_IMG as KarenG,
+} from "../../assets/cloudinaryImages.js";
 
 export const filters = [
   { id: "all", labelKey: "news.filters.all" },

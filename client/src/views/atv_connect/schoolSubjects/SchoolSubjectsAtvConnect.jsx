@@ -1,5 +1,7 @@
-import Javi from "../../../assets/images/views/javi/Javi-4.png";
-import JaviEstudioso from "../../../assets/images/views/javi/javi-estudioso-11.webp";
+import {
+  JAVI_4_IMG as Javi,
+  JAVI_ESTUDIOSO_IMG as JaviEstudioso,
+} from "../../../assets/cloudinaryImages";
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";

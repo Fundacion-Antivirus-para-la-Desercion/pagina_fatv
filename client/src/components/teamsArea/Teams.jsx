@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { PiMedal } from "react-icons/pi";
 import { IoLogoLinkedin } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
-import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
+import { JAVI_SVG as Javi } from "../../assets/cloudinaryImages";
 
 const Teams = ({ teamsData }) => {
   const { t } = useTranslation();

@@ -1,10 +1,12 @@
 import "./Services_ATV.css";
 import "boxicons";
 import { useTranslation } from "react-i18next";
-import Focus from "../../assets/images/views/proVocacion/information/focus-blanco.webp";
-import Graduados from "../../assets/images/views/proVocacion/information/graduados.webp";
-import Aliados from "../../assets/images/views/proVocacion/information/aliados.webp";
-import LogoAtvConecta from "../../assets/images/views/proVocacion/information/logo-atv-conecta-blanco.webp";
+import {
+  FOCUS_BLANCO_IMG as Focus,
+  GRADUACION_EXITOSA_IMG as Graduados,
+  ALIADOS_PERMANENCIA_IMG as Aliados,
+  LOGO_ATV_CONECTA_IMG as LogoAtvConecta,
+} from "../../assets/cloudinaryImages";
 import { Link } from "react-router-dom";
 
 const ServicesATV = () => {

@@ -1,6 +1,8 @@
-import EstudianteUno from "../../../assets/images/views/atvConnect/estudiante-certificado-dos.webp";
-import EstudianteDos from "../../../assets/images/views/atvConnect/estudiante-certificado.webp";
-import LogoAtvConecta from "../../../assets/images/views/proVocacion/information/logo-atv-conecta-blanco.webp";
+import {
+  ESTUDIANTE_UNO_IMG as EstudianteUno,
+  ESTUDIANTE_DOS_IMG as EstudianteDos,
+  LOGO_ATV_CONECTA_IMG as LogoAtvConecta,
+} from "../../../assets/cloudinaryImages";
 import { floatSnake } from "../../../components/motion/constants/Animations.js";
 
 import { motion } from "framer-motion";

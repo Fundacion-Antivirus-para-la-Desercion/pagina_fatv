@@ -6,8 +6,10 @@ import { PiMedal } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLogoLinkedin } from "react-icons/io";
-import Javi from "../../../assets/images/views/javi/javi-guina-el-ojo.svg";
-import JaviEsquina from "../../../assets/images/views/javi/javi-esquina-derecha.webp";
+import {
+  JAVI_SVG as Javi,
+  JAVI_ESQUINA_IMG as JaviEsquina,
+} from "../../../assets/cloudinaryImages";
 
 import { motion, AnimatePresence } from "framer-motion";
 import data from "./data";

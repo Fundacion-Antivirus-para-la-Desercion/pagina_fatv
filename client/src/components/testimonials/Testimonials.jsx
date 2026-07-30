@@ -1,10 +1,12 @@
 import styles from "./Testimonials.module.css";
-import Testimonial1 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-01.jpg";
-import Testimonial2 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-02.jpg";
-import Testimonial3 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-03.jpg";
-import Testimonial4 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-04.jpg";
-import Testimonial5 from "../../assets/images/views/proVocacion/testimonials/testimonio-provocación-05.jpg";
-import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
+import {
+  TESTIMONIAL_1_IMG as Testimonial1,
+  TESTIMONIAL_2_IMG as Testimonial2,
+  TESTIMONIAL_3_IMG as Testimonial3,
+  TESTIMONIAL_4_IMG as Testimonial4,
+  TESTIMONIAL_5_IMG as Testimonial5,
+  FOCUS_SVG as Focus,
+} from "../../assets/cloudinaryImages";
 import { FaQuoteLeft } from "react-icons/fa6";
 import WhatsAppRedirect from "../../components/whatsAppRedirect/WhatsAppRedirect";
 
