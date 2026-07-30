@@ -220,7 +220,7 @@ export const TESTIMONIAL_5_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h
 export const ESTUDIANTES_DOS_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672253/estudiantes-dos_muy7nu.jpg");
 export const ESTUDIANTES_DIEZ_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672300/estudiantes-diez_ryrk1r.jpg");
 export const ESTUDIANTES_DIECISEIS_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672289/estudiantes-dieciseis_ufu008.jpg");
-export const FOCUS_SVG                 = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672382/focus-blanco_ebpt4c.webp");
+export const FOCUS_SVG                 = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672410/focus_usmquo.webp");
 export const FOCUS_TRANSPARENT_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672410/focus_usmquo.webp");
 
 // ── atvConnect ────────────────────────────────────────────────────────────────
