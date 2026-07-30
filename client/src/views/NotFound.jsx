@@ -1,7 +1,7 @@
 import "./NotFound.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Javi from "../assets/images/views/javi/javi-senala.webp";
+import { JAVI_SENALA_IMG as Javi } from "../assets/cloudinaryImages";
 
 function NotFound() {
   const { t } = useTranslation();

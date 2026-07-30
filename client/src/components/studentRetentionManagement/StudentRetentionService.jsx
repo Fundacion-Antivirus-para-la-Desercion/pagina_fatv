@@ -292,7 +292,7 @@ function StudentRetentionService() {
 
       <motion.div {...expandableTransition}>
         <section className="flex justify-center items-center mt-10 m-1 mb-10 md:m-10 md:mt-24 px-3">
-          <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-dark-blue via-[#0B8F84] to-primary-yellow w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
+          <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-dark-blue via-primary-purple to-primary-purple w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             <section className="bg-white text-center p-8 md:p-10 w-full h-full rounded-3xl flex flex-col justify-center">
               <div className="flex justify-center text-4xl md:text-6xl mt-8 md:mt-4">
                 <motion.span {...floatSnake(0)} className="mx-2">
@@ -328,7 +328,7 @@ function StudentRetentionService() {
               </p>
               <div className="flex justify-center">
                 <Link
-                  className="group px-16 py-6 relative overflow-hidden w-full max-w-[310px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-primary-yellow to-[#0B8F84]  transform hover:scale-105 transition-all duration-500"
+                  className="group px-16 py-6 relative overflow-hidden w-full max-w-[310px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-dark-blue to-primary-purple  transform hover:scale-105 transition-all duration-500"
                   to="/ContactUs"
                 >
                   <span className="relative">

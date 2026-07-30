@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import LogoAtvConecta from "../../../assets/images/views/proVocacion/information/logo-atv-conecta-blanco.webp";
+import { LOGO_ATV_CONECTA_IMG as LogoAtvConecta } from "../../../assets/cloudinaryImages";
 import { IoIosArrowForward } from "react-icons/io";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";

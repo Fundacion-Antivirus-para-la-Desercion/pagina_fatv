@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./BtnAtvConnect.module.css";
-import IconATVConnect from "../../../assets/images/views/atvConnect/javiAtvConecta.webp";
+import { JAVI_CARA_ATV_CONECTA_IMG as IconATVConnect } from "../../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
 
 function BtnAtvConnect() {

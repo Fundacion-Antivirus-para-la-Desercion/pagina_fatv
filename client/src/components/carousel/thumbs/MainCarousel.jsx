@@ -10,10 +10,12 @@ import "swiper/css/thumbs";
 import "./MainCarousel.css";
 import WhatsAppRedirect from "../../whatsAppRedirect/WhatsAppRedirect";
 
-import banner1 from "../../../assets/Banner/colaboradores-fatv.jpeg";
-import banner2 from "../../../assets/Banner/becarios-itagui.webp";
-import banner3 from "../../../assets/Banner/evento-alianza-educacion-itagui.jpeg";
-import banner4 from "../../../assets/Banner/campana-social.webp";
+import {
+  CAROUSEL_COLABORADORES_IMG as banner1,
+  CAROUSEL_BECARIOS_IMG as banner2,
+  CAROUSEL_EVENTO_ALIANZA_IMG as banner3,
+  CAROUSEL_CAMPANA_SOCIAL_IMG as banner4,
+} from "../../../assets/cloudinaryImages";
 
 function MainCarousel() {
   const { t } = useTranslation(); // Inicializa el hook de traducción
@@ -108,7 +110,7 @@ function MainCarousel() {
                   src={slide.image}
                   alt={t("home.carousel.slide_alt", { title: t(slide.titleKey) })}
                   loading={index === 0 ? "eager" : "lazy"}
-                  fetchpriority={index === 0 ? "high" : "auto"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
                 />
               </div>
             </section>

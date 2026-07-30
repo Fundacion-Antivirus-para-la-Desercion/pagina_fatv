@@ -1,4 +1,8 @@
-import BannerConsulting from "../../assets/images/views/consultorias/banner-consulting.webp";
+import {
+  BANNER_CONSULTING_IMG as BannerConsulting,
+  CARD_CONSULTING_IMG as card,
+  ESTUDIANTES_AULA_IMG as EstudiantesAula,
+} from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import { PiShootingStarFill} from "react-icons/pi";
 import { RiFocus2Line } from "react-icons/ri";
@@ -7,7 +11,6 @@ import { BsStars } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
-import card from "../../assets/images/views/consultorias/card-p.webp";
 
 function Consultorias() {
   const { t } = useTranslation();
@@ -92,7 +95,7 @@ function Consultorias() {
           ))}
         </section>
       </section>
-      <section className="relative bg-blue-base justify-center items-center text-center  md:mt-10 p-5 md:p-14 bg-[url('/src/assets/images/views/consultorias/estudiantes-en-aula.webp')] bg-cover bg-center overflow-hidden">
+      <section className="relative bg-blue-base justify-center items-center text-center md:mt-10 p-5 md:p-14 bg-cover bg-center overflow-hidden" style={{ backgroundImage: `url(${EstudiantesAula})` }}>
         <div className="absolute w-full h-full opacity-70 bg-dark-blue top-0 left-0"></div>
 
         <div className="relative mt-10">

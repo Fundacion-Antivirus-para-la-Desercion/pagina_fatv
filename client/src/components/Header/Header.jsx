@@ -148,7 +148,7 @@ function Header() {
             <img
               className="h-28 object-contain max-xl:h-24 max-lg:h-14"
               src="/logo.png"
-              alt="logo"
+              alt="Logo Fundación Antivirus para la Deserción"
             />
           </Link>
         </div>
@@ -309,7 +309,7 @@ function Header() {
             <img
               className="h-28 object-contain max-sm:h-16"
               src="/logo.png"
-              alt="logo"
+              alt="Logo Fundación Antivirus para la Deserción"
             />
           </Link>
         </div>

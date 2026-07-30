@@ -1,6 +1,8 @@
-import EstudiantesDos from "../../assets/images/views/proVocacion/information/estudiantes-dos.jpeg";
-import EstudiantesDiez from "../../assets/images/views/proVocacion/information/estudiantes-diez.jpeg";
-import EstudiantesDieciseis from "../../assets/images/views/proVocacion/information/estudiantes-dieciseis.jpg";
+import {
+  ESTUDIANTES_DOS_IMG as EstudiantesDos,
+  ESTUDIANTES_DIEZ_IMG as EstudiantesDiez,
+  ESTUDIANTES_DIECISEIS_IMG as EstudiantesDieciseis,
+} from "../../assets/cloudinaryImages";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
 import { BiCreditCardAlt } from "react-icons/bi";
@@ -12,7 +14,7 @@ import {
 } from "../../components/motion/constants/Animations.js";
 import { motion } from "framer-motion";
 
-import Focus from "../../assets/images/views/proVocacion/information/focus.svg";
+import { FOCUS_SVG as Focus } from "../../assets/cloudinaryImages";
 
 import { useTranslation } from "react-i18next";
 import CardsCarousel from "../carousel/cards/CardsCarousel.jsx";

@@ -1,15 +1,17 @@
 import { useState, useRef } from "react";
 import "boxicons";
-import FotoVideo from "../../../../public/img_Foundation/foto-video.jpg";
-import Foundation1 from "../../../../public/img_Foundation/foundation-1.jpg";
-import Foundation2 from "../../../../public/img_Foundation/foundation-2.jpg";
-import BannerFoundation from "../../../assets/images/views/foundation/banner-foundation.webp";
-import TeoriaCambio from "../../../assets/images/views/foundation/entrega-pc.webp";
-import Valores from "../../../assets/images/views/foundation/valores.webp";
-import Mision from "../../../assets/images/views/foundation/pase-a-la-u.webp";
-import Publico from "../../../assets/images/views/foundation/estudiantes-colegio.webp";
-import Vision from "../../../assets/images/views/foundation/estudiantes-universitarios.webp";
-import Proposito from "../../../assets/images/views/foundation/foundation-estudiantes.webp";
+import {
+  BANNER_FOUNDATION_IMG as BannerFoundation,
+  FOTO_VIDEO as FotoVideo,
+  FOTO_IZQUIERDA as Foundation1,
+  FOTO_DERECHA as Foundation2,
+  TEORIA_CAMBIO_IMG as TeoriaCambio,
+  VALORES_IMG as Valores,
+  MISION_IMG as Mision,
+  PUBLICO_IMG as Publico,
+  VISION_IMG as Vision,
+  PROPOSITO_IMG as Proposito,
+} from "../../../assets/cloudinaryImages";
 
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";

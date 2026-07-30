@@ -1,4 +1,4 @@
-import Collage from "../../assets/images/views/proVocacion/collage-provocacion.webp";
+import { COLLAGE_PROVOCACION_IMG as Collage } from "../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
 
 function Description() {

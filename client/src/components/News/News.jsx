@@ -1,7 +1,7 @@
 import "./News.css";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import BannerNews from "../../assets/images/views/imagesNews/banner-news.webp";
+import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray, { filters } from "./newsArray";
 import { useTranslation } from "react-i18next";

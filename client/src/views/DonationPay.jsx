@@ -5,11 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import { EffectCube, Autoplay } from "swiper/modules";
-import Acompañamiento1 from "../../src/assets/images/views/donationPay/acompañamiento1.jpg";
-import Acompañamiento2 from "../../src/assets/images/views/donationPay/acompañamiento2.jpg";
-import Acompañamiento3 from "../../src/assets/images/views/donationPay/acompañamiento3.jpg";
-import Acompañamiento4 from "../../src/assets/images/views/donationPay/acompañamiento4.jpg";
-import Acompañamiento5 from "../../src/assets/Banner/banner6c.jpeg";
+import {
+  ACOMPANAMIENTO_1_IMG as Acompañamiento1,
+  ACOMPANAMIENTO_2_IMG as Acompañamiento2,
+  ACOMPANAMIENTO_3_IMG as Acompañamiento3,
+  ACOMPANAMIENTO_4_IMG as Acompañamiento4,
+  BANNER_6C_IMG as Acompañamiento5,
+} from "../assets/cloudinaryImages";
 import { MdOutlineAttachMoney } from "react-icons/md";
 
 const DONATION_STEP = 1000;

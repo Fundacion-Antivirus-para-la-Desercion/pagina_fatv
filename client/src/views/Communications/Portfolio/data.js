@@ -1,33 +1,31 @@
-import Cubrimiento from "../../../assets/images/views/communications/portfolio/cubrimiento/fotografo.webp";
-import CubrimientoTwo from "../../../assets/images/views/communications/portfolio/cubrimiento/estudiantes-vr-mas.webp";
-import CubrimientoThree from "../../../assets/images/views/communications/portfolio/cubrimiento/encuentro-nutresa.webp";
-import CubrimientoFour from "../../../assets/images/views/communications/portfolio/cubrimiento/encuentro-colegios.webp";
-import CubrimientoFive from "../../../assets/images/views/communications/portfolio/cubrimiento/ffm1.webp";
-import CubrimientoSix from "../../../assets/images/views/communications/portfolio/cubrimiento/encuentro-becas-itagui.webp";
-
-import SocialCampaigns from "../../../assets/images/views/communications/portfolio/socialCampaigns/campana-social.webp";
-import SocialCampaignsTwo from "../../../assets/images/views/communications/portfolio/socialCampaigns/pieza-grupos-estudio-unal.webp";
-import SocialCampaignsThree from "../../../assets/images/views/communications/portfolio/socialCampaigns/pieza-us-unal.webp";
-import SocialCampaignsFour from "../../../assets/images/views/communications/portfolio/socialCampaigns/poster-atv-conecta-javi.webp";
-import SocialCampaignsFive from "../../../assets/images/views/communications/portfolio/socialCampaigns/poster-atv-conecta-javi-2.webp";
-
-import SocialMedia from "../../../assets/images/views/communications/portfolio/socialMedia/redes-sociales.webp";
-import SocialMediaTwo from "../../../assets/images/views/communications/portfolio/socialMedia/permanencia-unal.webp";
-import SocialMediaThree from "../../../assets/images/views/communications/portfolio/socialMedia/fatv-se-vio-asi.webp";
-import SocialMediaFour from "../../../assets/images/views/communications/portfolio/socialMedia/dia-de-la-mujer-ingeniera.webp";
-import SocialMediaFive from "../../../assets/images/views/communications/portfolio/socialMedia/atv-conecta-unico.webp";
-
-import CobrandingTwo from "../../../assets/images/views/communications/portfolio/cobranding/pieza-fundacion-felisa-johnson.webp";
-import CobrandingThree from "../../../assets/images/views/communications/portfolio/cobranding/invitacion-taller-udea.webp";
-import CobrandingFour from "../../../assets/images/views/communications/portfolio/cobranding/pieza-unete-red-tutores.webp";
-import CobrandingFive from "../../../assets/images/views/communications/portfolio/cobranding/ppt-fraternidad-medellin.webp";
-import CobrandingSix from "../../../assets/images/views/communications/portfolio/cobranding/invitacion-taller-cesi.webp";
-
-import Infographic from "../../../assets/images/views/communications/portfolio/infographics/infografia.webp";
-import InfographicTwo from "../../../assets/images/views/communications/portfolio/infographics/infografia-atv-conecta.webp";
-import InfographicThree from "../../../assets/images/views/communications/portfolio/infographics/equilibrio-mente-estudio.webp";
-import InfographicFour from "../../../assets/images/views/communications/portfolio/infographics/manejo-de-emociones-convocatoria-tutores.webp";
-import InfographicFive from "../../../assets/images/views/communications/portfolio/infographics/tutoria-udea.webp";
+import {
+  CUBRIMIENTO_IMG as Cubrimiento,
+  CUBRIMIENTO_TWO_IMG as CubrimientoTwo,
+  CUBRIMIENTO_THREE_IMG as CubrimientoThree,
+  CUBRIMIENTO_FOUR_IMG as CubrimientoFour,
+  CUBRIMIENTO_FIVE_IMG as CubrimientoFive,
+  CUBRIMIENTO_SIX_IMG as CubrimientoSix,
+  SOCIAL_CAMPAIGNS_IMG as SocialCampaigns,
+  SOCIAL_CAMPAIGNS_TWO_IMG as SocialCampaignsTwo,
+  SOCIAL_CAMPAIGNS_THREE_IMG as SocialCampaignsThree,
+  SOCIAL_CAMPAIGNS_FOUR_IMG as SocialCampaignsFour,
+  SOCIAL_CAMPAIGNS_FIVE_IMG as SocialCampaignsFive,
+  SOCIAL_MEDIA_IMG as SocialMedia,
+  SOCIAL_MEDIA_TWO_IMG as SocialMediaTwo,
+  SOCIAL_MEDIA_THREE_IMG as SocialMediaThree,
+  SOCIAL_MEDIA_FOUR_IMG as SocialMediaFour,
+  SOCIAL_MEDIA_FIVE_IMG as SocialMediaFive,
+  COBRANDING_TWO_IMG as CobrandingTwo,
+  COBRANDING_THREE_IMG as CobrandingThree,
+  COBRANDING_FOUR_IMG as CobrandingFour,
+  COBRANDING_FIVE_IMG as CobrandingFive,
+  COBRANDING_SIX_IMG as CobrandingSix,
+  INFOGRAPHIC_IMG as Infographic,
+  INFOGRAPHIC_TWO_IMG as InfographicTwo,
+  INFOGRAPHIC_THREE_IMG as InfographicThree,
+  INFOGRAPHIC_FOUR_IMG as InfographicFour,
+  INFOGRAPHIC_FIVE_IMG as InfographicFive,
+} from "../../../assets/cloudinaryImages";
 
 const portfolioData = [
   {

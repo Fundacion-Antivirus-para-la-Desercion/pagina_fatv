@@ -1,26 +1,20 @@
 import { useTranslation } from "react-i18next";
-import Javi from "../assets/images/views/javi/javi-feliz.svg";
-import JaviGuinandoOjo from "../assets/images/views/javi/javi-guina-el-ojo.svg";
-import BannerRetention from "../assets/images/views/studentretentionManagement/banner-student-retention.webp";
-import Grupo from "../assets/images/views/studentretentionManagement/manos.webp";
-import Graduado from "../assets/images/views/studentretentionManagement/graduado.webp";
-import { motion, useInView } from "framer-motion";
+import {
+  JAVI_FELIZ_SVG as Javi,
+  JAVI_SVG as JaviGuinandoOjo,
+  BANNER_RETENTION_IMG as BannerRetention,
+  MANOS_IMG as Grupo,
+  GRADUADO_IMG as Graduado,
+} from "../assets/cloudinaryImages";
+import { motion } from "framer-motion";
 import CounterNumeric from "../components/ContextData/CounterNumer.jsx";
 import styles from "./StudentRetentionManagement.module.css";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
-import useImageByLanguage from "../hooks/useImageByLanguage.js";
 import BannerView from "../components/Banner-views/BannerView.jsx";
 import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect.js";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
-
-  const expandableTransition = {
-    initial: { opacity: 0, scale: 0.5 },
-    whileInView: { opacity: 1, scale: 1 },
-    transition: { duration: 0.9, ease: "easeOut" },
-    viewport: { once: true },
-  };
 
   const slideFromLeft = {
     initial: { opacity: 0, x: -100 },

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import JaviSonrie from "../../../../src/assets/images/views/javi/javi-senala.webp";
+import { JAVI_SENALA_IMG as JaviSonrie } from "../../../assets/cloudinaryImages";
 //import style from "./OrganizationalStructure.css";
 import "./OrganizationalStructure.css";
 import { useTranslation } from "react-i18next";

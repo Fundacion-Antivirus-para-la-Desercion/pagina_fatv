@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion, transform } from "framer-motion";
 import { HiOutlineDocumentText, HiArrowRightCircle } from "react-icons/hi2";
 import { BsFiletypePdf } from "react-icons/bs";
-import javi from "../../../assets/images/views/javi/javi-corto.webp";
+import { JAVI_CORTO_IMG as javi } from "../../../assets/cloudinaryImages";
 import { pdfDocuments, pdfTabs } from "./data.js";
 import { useTranslation } from "react-i18next";
 

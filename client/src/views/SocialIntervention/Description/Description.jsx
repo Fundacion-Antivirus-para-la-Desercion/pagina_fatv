@@ -1,4 +1,4 @@
-import Talleres from "../../../assets/images/views/socialIntervention/talleres-instituciones .webp";
+import { TALLERES_IMG as Talleres } from "../../../assets/cloudinaryImages";
 import { TiHeart } from "react-icons/ti";
 import { RiFocus2Line } from "react-icons/ri";
 import { PiHeartStraight } from "react-icons/pi";

@@ -1,5 +1,15 @@
-import Javi from "../../assets/images/views/javi/javi-guina-el-ojo.svg";
-import JaviCard from "../../assets/images/views/javi/javi-sonriendo.webp";
+import {
+  JAVI_SVG as Javi,
+  JAVI_SONRIENDO_IMG as JaviCard,
+  ASTRID_FRANCO_IMG,
+  CARLOS_VASQUEZ_IMG,
+  FELIPE_ARANGO_IMG,
+  KAREN_GONZALEZ_IMG,
+  LUIS_GONZALES_IMG,
+  LUIS_SANCHEZ_IMG,
+  MANUELA_CORREA_IMG,
+  VICTOR_VALENCIA_IMG,
+} from "../../assets/cloudinaryImages";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
@@ -21,43 +31,43 @@ function OurTeam() {
     {
       name: "Carlos Vásquez Restrepo",
       role: t("ourTeam.roles.president"),
-      image: "/img_OurTeam/carlos-vasquez.webp",
+      image: CARLOS_VASQUEZ_IMG,
       backgroundColor: "#32526E",
     },
     {
       name: "Astrid Franco Gonzalez",
       role: t("ourTeam.roles.social_intervention_coordinator"),
-      image: "/img_OurTeam/astrid-franco-gonzalez.webp",
+      image: ASTRID_FRANCO_IMG,
       backgroundColor: "#D3C3E3",
     },
     {
       name: "Luis Fernando Sánchez Hurtado",
       role: t("ourTeam.roles.executive_director"),
-      image: "/img_OurTeam/luis-fernando-sanchez.webp",
+      image: LUIS_SANCHEZ_IMG,
       backgroundColor: "#90C4F9",
     },
     {
       name: "Karen González Alarcón",
       role: t("ourTeam.roles.technology_and_data_coordinator"),
-      image: "/img_OurTeam/karen-gonzalez-alarcon.webp",
+      image: KAREN_GONZALEZ_IMG,
       backgroundColor: "#81F0E7",
     },
     {
       name: "Víctor Manuel Valencia Martínez",
       role: t("ourTeam.roles.deputy_director"),
-      image: "/img_OurTeam/victor-valencia.webp",
+      image: VICTOR_VALENCIA_IMG,
       backgroundColor: "#2C9Bc7",
     },
     {
       name: "Felipe Arango Franco",
       role: t("ourTeam.roles.legal_area_coordinator"),
-      image: "/img_OurTeam/felipe-arango.webp",
+      image: FELIPE_ARANGO_IMG,
       backgroundColor: "#708BC6",
     },
     {
       name: "Manuela Correa Quintero",
       role: t("ourTeam.roles.communications_coordinator"),
-      image: "/img_OurTeam/manuela-correa.webp",
+      image: MANUELA_CORREA_IMG,
       backgroundColor: "#765497",
     },
     {
@@ -69,7 +79,7 @@ function OurTeam() {
     {
       name: "Luis Fernando González",
       role: t("ourTeam.roles.administrative_and_financial_coordinator"),
-      image: "/img_OurTeam/luis-gonzales.webp",
+      image: LUIS_GONZALES_IMG,
       backgroundColor: "#0B8F84",
     },
   ];
