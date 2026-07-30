@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   BANNER_CONTACT_US_IMG as BannerContacUs,
+  MAPS_CONTACT_US_IMG as Maps,
   JAVI_FELIZ_SVG as Javi,
 } from "../assets/cloudinaryImages";
 import { FaLocationDot } from "react-icons/fa6";
@@ -163,7 +164,7 @@ function ContactUs() {
         />
         <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
           <div className="relative">
-            <img src={BannerContacUs} alt={t("contactUs.image_alt")} className="w-full lg:w-auto" loading="lazy" />
+            <img src={Maps} alt={t("contactUs.image_alt")} className="w-full lg:w-auto" loading="lazy" />
 
             <div className="absolute bg-dark-blue text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
               <div className="flex items-center justify-center gap-2">

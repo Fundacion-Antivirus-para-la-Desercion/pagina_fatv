@@ -3,8 +3,8 @@ import "boxicons";
 import { useTranslation } from "react-i18next";
 import {
   FOCUS_BLANCO_IMG as Focus,
-  GRADUADOS_IMG as Graduados,
-  ALIADOS_IMG as Aliados,
+  GRADUACION_EXITOSA_IMG as Graduados,
+  ALIADOS_PERMANENCIA_IMG as Aliados,
   LOGO_ATV_CONECTA_IMG as LogoAtvConecta,
 } from "../../assets/cloudinaryImages";
 import { Link } from "react-router-dom";

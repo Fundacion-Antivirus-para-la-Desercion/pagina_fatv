@@ -2,6 +2,15 @@ import { getImageUrl } from "../utils/cloudinary";
 
 
 // ── home ──────────────────────────────────────────────────────────────────────
+
+
+// ── mainCarousel ──────────────────────────────────────────────────────────────
+export const CAROUSEL_COLABORADORES_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274314/colaboradores-fatv_vpx0e3.jpg");
+export const CAROUSEL_BECARIOS_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274322/becarios-itagui_ankp7n.webp");
+export const CAROUSEL_EVENTO_ALIANZA_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274311/evento-alianza-educacion-itagui_wmb9kt.jpg");
+export const CAROUSEL_CAMPANA_SOCIAL_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274318/campana-social_ffnr1w.webp");
+
+// - ContextaData
 export const ACOMPANAR_IMG    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896672/acompanar_wx5fyd.webp");
 export const ORIENTACION_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896670/orientacion_nl6ekj.webp");
 export const GRUPO_IMG        = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896669/grupo_isxirg.webp");
@@ -12,11 +21,12 @@ export const ESTUDIO_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8
 export const TALLER_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896671/academico_y92y1w.webp");
 export const COMPUTER_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784896674/computer_ibjblk.webp");
 
-// ── mainCarousel ──────────────────────────────────────────────────────────────
-export const CAROUSEL_COLABORADORES_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274314/colaboradores-fatv_vpx0e3.jpg");
-export const CAROUSEL_BECARIOS_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274322/becarios-itagui_ankp7n.webp");
-export const CAROUSEL_EVENTO_ALIANZA_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274311/evento-alianza-educacion-itagui_wmb9kt.jpg");
-export const CAROUSEL_CAMPANA_SOCIAL_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785274318/campana-social_ffnr1w.webp");
+// - Iconos Services ATV - (Home)
+export const GRADUACION_EXITOSA_IMG             = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672429/graduados_is1wxs.webp");
+export const ALIADOS_PERMANENCIA_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1785425306/aliados_jix6b2.webp");
+export const FOCUS_BLANCO_IMG          = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672382/focus-blanco_ebpt4c.webp");
+export const LOGO_ATV_CONECTA_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672456/logo-atv-conecta-blanco_enrll3.webp");
+
 
 // ── Compartidas — Javi (mascota usada en múltiples vistas) ────────────────────
 export const JAVI_SVG                 = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671490/javi-guina-el-ojo_q7foao.svg");
@@ -29,8 +39,6 @@ export const JAVI_4_IMG               = getImageUrl("https://res.cloudinary.com/
 export const JAVI_ESTUDIOSO_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671483/javi-estudioso-11_hx3lff.webp");
 export const JAVI_ESQUINA_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671476/javi-esquina-derecha_ix8zyi.webp");
 export const JAVI_ABAJO_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784897410/javi-abajo_umilae.webp");
-export const JAVI_ATV_CONECTA_IMG     = getImageUrl("atvconnect/javiAtvConecta");
-
 
 // ── ourAllies (logos de aliados) ──────────────────────────────────────────────
 export const ALIADO_ALCALDIA_ITAGUI_IMG          = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672893/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial_ivbddd.png");
@@ -214,17 +222,14 @@ export const ESTUDIANTES_DIEZ_IMG      = getImageUrl("https://res.cloudinary.com
 export const ESTUDIANTES_DIECISEIS_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672289/estudiantes-dieciseis_ufu008.jpg");
 export const FOCUS_SVG                 = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672382/focus-blanco_ebpt4c.webp");
 export const FOCUS_TRANSPARENT_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672410/focus_usmquo.webp");
-export const FOCUS_BLANCO_IMG          = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672382/focus-blanco_ebpt4c.webp");
-export const GRADUADOS_IMG             = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672429/graduados_is1wxs.webp");
-export const ALIADOS_IMG               = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672214/aliados_awintt.webp");
-export const LOGO_ATV_CONECTA_IMG      = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672456/logo-atv-conecta-blanco_enrll3.webp");
 
 // ── atvConnect ────────────────────────────────────────────────────────────────
 export const BANNER_ATV_CONNECT_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669951/banner-atv-connect_duvgjr.webp");
 export const ESTUDIANTE_UNO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669970/estudiante-certificado_oj3uk0.webp");
 export const ESTUDIANTE_DOS_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669953/estudiante-certificado-dos_atqewb.webp");
+export const JAVI_CARA_ATV_CONECTA_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669973/javiAtvConecta_l9eowa.webp");
 
 // ── contactUs ─────────────────────────────────────────────────────────────────
 export const BANNER_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671583/banner-contact-us_fy5djq.webp");
-
+export const MAPS_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674041/contact-image_kodr8u.webp");
 // ── notFound — usa JAVI_SENALA_IMG de la sección compartida ──────────────────
