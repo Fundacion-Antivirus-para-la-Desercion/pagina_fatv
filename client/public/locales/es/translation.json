@@ -8,6 +8,8 @@
     "contact_us": "CONTÁCTENOS",
     "button_volunteer": "Voluntariado",
     "language": "ESP",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú",
     "options_spanish": "ESPAÑOL",
     "options_english": "INGLÉS",
     "sub_header": {
@@ -438,6 +440,7 @@
     "foundationATV": {
       "header": "sobre nosotros",
       "title": "¿Quiénes Somos?",
+      "play_video": "Reproducir video",
       "subtitle": "Somos una organización sin ánimo de lucro que",
       "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
       "founders": {
@@ -1413,6 +1416,9 @@
       "termsNotAccepted": "No acepto"
     }
   },
+  "common": {
+    "close": "Cerrar"
+  },
   "footer": {
     "visitUs": "Visítanos",
     "address1": "Calle 79 sur # 50-165",
@@ -1422,6 +1428,14 @@
     "contactEmail": "contactenos@fundacionantivirusparaladesercion.org",
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Nuestras redes sociales",
+    "scroll_to_top": "Volver arriba",
+    "social_links": {
+      "facebook": "Visitar Facebook",
+      "instagram": "Visitar Instagram",
+      "youtube": "Visitar YouTube",
+      "tiktok": "Visitar TikTok",
+      "linkedin": "Visitar LinkedIn"
+    },
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
     "dataProtection": "Política de protección de datos",
     "logo_alt": "Logotipo de la Fundación Antivirus para la Deserción"

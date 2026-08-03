@@ -8,6 +8,8 @@
     "contact_us": "CONTACT US",
     "button_volunteer": "Volunteering",
     "language": "ENG",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
     "options_spanish": "SPANISH",
     "options_english": "ENGLISH",
     "sub_header": {
@@ -437,6 +439,7 @@
     "foundationATV": {
       "header": "About us",
       "title": "Who Are We?",
+      "play_video": "Play video",
       "subtitle": "We are a non-profit organization that",
       "description": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
       "founders": {
@@ -1410,6 +1413,9 @@
       "termsNotAccepted": "I don't accept"
     }
   },
+  "common": {
+    "close": "Close"
+  },
   "footer": {
     "visitUs": "Visit us",
     "address1": "79th South Street # 50-165",
@@ -1419,6 +1425,14 @@
     "contactEmail": "contactenos@fundacionantivirusparaladesercion.org",
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Our social networks",
+    "scroll_to_top": "Scroll to top",
+    "social_links": {
+      "facebook": "Visit Facebook",
+      "instagram": "Visit Instagram",
+      "youtube": "Visit YouTube",
+      "tiktok": "Visit TikTok",
+      "linkedin": "Visit LinkedIn"
+    },
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
     "dataProtection": "Data protection policy",
     "logo_alt": "Fundación Antivirus para la Deserción logo"
