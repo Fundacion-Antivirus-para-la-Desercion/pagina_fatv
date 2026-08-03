@@ -1,7 +1,7 @@
 import "./NotFound.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { JAVI_SENALA_IMG as Javi } from "../assets/cloudinaryImages";
+import { JAVI_SENALA_IMG as Javi, BACKGROUND_NOT_FOUND_IMG } from "../assets/cloudinaryImages";
 
 function NotFound() {
   const { t } = useTranslation();
@@ -9,6 +9,7 @@ function NotFound() {
     <section
       id="not-found"
       className="flex justify-center items-center h-screen bg-cover px-6"
+      style={{ backgroundImage: `url(${BACKGROUND_NOT_FOUND_IMG})` }}
     >
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div className="text-center">
