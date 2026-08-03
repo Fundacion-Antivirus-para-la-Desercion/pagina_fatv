@@ -30,10 +30,11 @@ function OtherNews({ newSlug }) {
           {relatedNews.map((news) => (
             <li key={news.slug} className="mb-2">
               <button
+                type="button"
                 className="w-full text-left cursor-pointer"
                 onClick={() => navigate("/news/detail", { state: { news } })}
               >
-                <section className="grid grid-cols-[4fr_6fr] gap-4 items-center">
+                <div className="grid grid-cols-[4fr_6fr] gap-4 items-center">
                   <div>
                     <img
                       src={news.img}
@@ -50,7 +51,7 @@ function OtherNews({ newSlug }) {
                       {t("otherNews.read_more")}
                     </span>
                   </div>
-                </section>
+                </div>
               </button>
             </li>
           ))}

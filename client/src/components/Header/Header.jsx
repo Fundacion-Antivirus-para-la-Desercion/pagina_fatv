@@ -216,27 +216,33 @@ function Header() {
           style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
-            <Link
-              to="/dataAnalytics"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.data_analytics")}
-            </Link>
-            <Link
-              to="/social-intervention"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.socio_emotional_intervention")}
-            </Link>
-            <Link
-              to="/comunicaciones"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.communications")}
-            </Link>
+            <li>
+              <Link
+                to="/dataAnalytics"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.data_analytics")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/social-intervention"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.socio_emotional_intervention")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/comunicaciones"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.communications")}
+              </Link>
+            </li>
           </ul>
         </div>
       )}
@@ -248,34 +254,42 @@ function Header() {
           style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
-            <Link
-              to={"/gestion-de-la-permanencia"}
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.permanence")}
-            </Link>
-            <Link
-              to="/consultorias"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.consulting")}
-            </Link>
-            <Link
-              to="/provocacion"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.pro_vocation")}
-            </Link>
-            <Link
-              to="/atvconnect"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.atv_connect")}
-            </Link>
+            <li>
+              <Link
+                to={"/gestion-de-la-permanencia"}
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.permanence")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/consultorias"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.consulting")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/provocacion"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.pro_vocation")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/atvconnect"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.atv_connect")}
+              </Link>
+            </li>
           </ul>
         </div>
       )}
@@ -359,16 +373,18 @@ function Header() {
         }
         style={{ zIndex: 30 }}
       >
-        <div className="header-navbar-responsive flex justify-between items-center">
-          <button
-            type="button"
-            onClick={handleNav}
-            aria-label={t("header.close_menu")}
-            className="absolute right-0 pr-2 text-blue-base"
-          >
-            <AiOutlineClose size={30} className="hover:cursor-pointer" />
-          </button>
-        </div>
+        <li className="list-none">
+          <div className="header-navbar-responsive flex justify-between items-center">
+            <button
+              type="button"
+              onClick={handleNav}
+              aria-label={t("header.close_menu")}
+              className="absolute right-0 pr-2 text-blue-base"
+            >
+              <AiOutlineClose size={30} className="hover:cursor-pointer" />
+            </button>
+          </div>
+        </li>
 
         <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase transition duration-400 ease-in-out hover:text-primary-purple">
           <TiHome className="flex-shrink-0 relative -top-[3px]" size={20} />
@@ -554,21 +570,25 @@ function Header() {
             </ul>
           )}
         </li>
-        <button
-          onClick={() =>
-            window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
-          }
-          className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-dark-yellow transition duration-700 transform hover:scale-105 max-xl:py-2"
-        >
-          <div className="flex items-center">
-            {t("header.button_volunteer")}
-            <FaHandSparkles
-              size={20}
-              name="gift"
-              color="#eae9e9"
-            ></FaHandSparkles>
-          </div>
-        </button>
+        <li className="list-none">
+          <button
+            type="button"
+            onClick={() =>
+              window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
+            }
+            aria-label={t("header.button_volunteer")}
+            className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-dark-yellow transition duration-700 transform hover:scale-105 max-xl:py-2"
+          >
+            <div className="flex items-center">
+              {t("header.button_volunteer")}
+              <FaHandSparkles
+                size={20}
+                name="gift"
+                color="#eae9e9"
+              ></FaHandSparkles>
+            </div>
+          </button>
+        </li>
       </ul>
     </>
   );
