@@ -17,6 +17,7 @@ import Description from "./StudentProvocation/Description";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import Modal from "../components/modal/Modal";
 import emailjs from "emailjs-com";
 import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect";
@@ -160,6 +161,10 @@ function ProVocacion() {
 
   return (
     <>
+      <Helmet>
+        <title>{t("provocacion.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <meta name="description" content={t("provocacion.metaDescription")} />
+      </Helmet>
       <Modal
         isOpen={open}
         onClose={() => cerrarModal()}

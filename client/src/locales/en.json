@@ -26,6 +26,7 @@
     }
   },
   "home": {
+    "metaDescription": "Fundación Antivirus para la Deserción: we support more than 26,000 students in Colombia to reduce dropout rates and strengthen educational retention.",
     "carousel": {
       "slides": {
         "slide1": {
@@ -137,6 +138,7 @@
     "studentRetention": "Hello, I would like to request more information about the Student Retention Management service."
   },
   "donation": {
+    "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
     "foundation_name": "Fundación Antivirus para la Deserción",
     "description": "It is a non-profit organization that seeks to reduce student dropout rates in Colombia, improve retention and graduation levels, and is our way of contributing to a country with more education and, consequently, more development.",
     "be_part_solution": "Be part of the solution",
@@ -190,6 +192,7 @@
     }
   },
   "dataAnalytics": {
+    "metaDescription": "Technology and Data: we optimize processes and strategic decisions through data analysis, Power BI visualization, and web platform development.",
     "banner": {
       "h1": "Technology and Data",
       "alt": "Group of students actively participating in a classroom lesson"
@@ -306,6 +309,7 @@
     }
   },
   "communications": {
+    "metaDescription": "We are the creative bridge between the Foundation's social impact and the audiences who need to know about it, with strategies that educate and inspire.",
     "banner": {
       "h1": "Communications",
       "alt": "The Communications Team smiling together."
@@ -425,6 +429,7 @@
     }
   },
   "foundation": {
+    "metaDescription": "Get to know Fundación Antivirus para la Deserción: who we are, our founders, board of directors, and the theory of change that guides our work.",
     "banner": {
       "h1": "About Us",
       "alt": "The Antivirus Foundation team working together."
@@ -494,6 +499,7 @@
     }
   },
   "news": {
+    "metaDescription": "Find out about the latest news and articles from Fundación Antivirus para la Deserción on our work for student retention in Colombia.",
     "banner": {
       "h1": "News",
       "alt": "Close-up of a hand with the institutional wristband over a group of young students, symbolizing a commitment to education."
@@ -731,6 +737,7 @@
     }
   },
   "newsDetail": {
+    "metaDescriptionFallback": "News and articles about student dropout and retention from Fundación Antivirus para la Deserción in Colombia.",
     "no_info": "No news information available.",
     "title": "NEWS",
     "news_label": "NEWS",
@@ -762,6 +769,7 @@
     }
   },
   "socialIntervention": {
+    "metaDescription": "Learn about the social intervention of Fundación Antivirus: we support every student according to their historical, social, economic, and academic context.",
     "banner": {
       "h1": "Social Intervention",
       "alt": "Antivirus Foundation staff member and students in their respective educational environments."
@@ -912,6 +920,7 @@
     }
   },
   "consultorias": {
+    "metaDescription": "We provide consulting and ongoing support to universities, schools, and bootcamps so their students stay enrolled and avoid dropping out.",
     "banner": {
       "h1": "Student Retention",
       "br": "Consulting",
@@ -999,6 +1008,7 @@
     }
   },
   "studentRetentionManagement": {
+    "metaDescription": "Student Retention Management: we support students throughout their academic journey to reduce dropout and help them graduate.",
     "banner": {
       "h1": "Student Retention",
       "br": "Management",
@@ -1096,6 +1106,7 @@
     }
   },
   "provocacion": {
+    "metaDescription": "ProVocación empowers young people's life projects through self-knowledge and exposure to higher education and the working world.",
     "banner": {
       "h1": "ProVocación",
       "alt": "High school students receiving guidance to define their life project and academic future."
@@ -1216,6 +1227,7 @@
     }
   },
   "atvConnect": {
+    "metaDescription": "ATVConnect is your one-on-one academic tutoring ally to overcome challenges, improve your performance, and reach your university goals.",
     "banner": {
       "h1": "ATVConecta:",
       "br": "Academic Tutoring",
@@ -1340,6 +1352,7 @@
     }
   },
   "contactUs": {
+    "metaDescription": "Contact us by WhatsApp, email, or visit us in La Estrella, Antioquia. We answer your questions about Fundación Antivirus para la Deserción.",
     "banner": {
       "h1": "Contact Us",
       "alt": "Smiling Antivirus Foundation team members, ready to support you."

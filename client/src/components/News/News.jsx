@@ -5,6 +5,7 @@ import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import { useNavigate } from "react-router-dom";
 import buildNewsArray, { filters } from "./newsArray";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import BannerView from "../Banner-views/BannerView";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCalendarMinus } from "react-icons/fa6";
@@ -24,6 +25,10 @@ function News() {
 
   return (
     <>
+      <Helmet>
+        <title>{t("news.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <meta name="description" content={t("news.metaDescription")} />
+      </Helmet>
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{

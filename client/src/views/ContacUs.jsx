@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import {
   BANNER_CONTACT_US_IMG as BannerContacUs,
   MAPS_CONTACT_US_IMG as Maps,
@@ -139,6 +140,10 @@ function ContactUs() {
 
   return (
     <>
+      <Helmet>
+        <title>{t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <meta name="description" content={t("contactUs.metaDescription")} />
+      </Helmet>
       <Modal
         isOpen={open}
         onClose={() => cerrarModal()}

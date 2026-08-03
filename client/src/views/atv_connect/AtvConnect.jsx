@@ -1,6 +1,7 @@
 import { BANNER_ATV_CONNECT_IMG as BannerAtvConnect } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
 import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";
 import DescriptionAtvConnect from "./descriptionAtvConnect/DescriptionAtvConnect.jsx";
@@ -15,6 +16,10 @@ function AtvConnect() {
 
   return (
     <>
+      <Helmet>
+        <title>{t("atvConnect.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <meta name="description" content={t("atvConnect.metaDescription")} />
+      </Helmet>
       <BtnAtv />
       <div className="lg:pt-[145px]">
         <BannerView
