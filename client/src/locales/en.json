@@ -1360,7 +1360,6 @@
       "h1": "Contact Us",
       "alt": "Smiling Antivirus Foundation team members, ready to support you."
     },
-    "image_alt": "Image of La Estrella city, Medellín - Antioquia - Colombia, where the Fundación Antivirus para la Deserción is based.",
     "title": "Contact Us",
     "startConversation": "LET'S START",
     "conversationTitle": "A CONVERSATION DO YOU HAVE ANY QUESTIONS? WE HAVE THE ANSWER!",
@@ -1374,6 +1373,7 @@
     "writeToUs": "WRITE TO US HERE",
     "googleMaps": "Google Maps",
     "findUsHere": "Find us here",
+    "altLocation": "Location of the Fundación Antivirus para la Deserción",
     "form": {
       "fullName": "FULL NAME",
       "email": "EMAIL",

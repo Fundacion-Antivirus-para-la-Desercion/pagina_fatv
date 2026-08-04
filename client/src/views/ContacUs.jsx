@@ -5,6 +5,7 @@ import {
   BANNER_CONTACT_US_IMG as BannerContacUs,
   MAPS_CONTACT_US_IMG as Maps,
   JAVI_FELIZ_SVG as Javi,
+  JAVI_SENALA_IMG as JaviSenala,
 } from "../assets/cloudinaryImages";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from "emailjs-com";
@@ -141,7 +142,9 @@ function ContactUs() {
   return (
     <>
       <Helmet>
-        <title>{t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <title>
+          {t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción
+        </title>
         <meta name="description" content={t("contactUs.metaDescription")} />
       </Helmet>
       <Modal
@@ -150,7 +153,12 @@ function ContactUs() {
         title={t("contactUs.modal.title")}
       >
         <div className="flex flex-col items-center text-center">
-          <img src={Javi} alt="Confirmación" className="w-32 h-32 mb-4" loading="lazy" />
+          <img
+            src={Javi}
+            alt="Confirmación"
+            className="w-32 h-32 mb-4"
+            loading="lazy"
+          />
 
           <h2 className="text-2xl font-bold  mb-2 text-center text-title">
             {t("contactUs.modal.successTitle")}
@@ -167,10 +175,17 @@ function ContactUs() {
             keyH1: "contactUs.banner.h1",
           }}
         />
-        <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
-          <div className="relative">
-            <img src={Maps} alt={t("contactUs.image_alt")} className="w-full lg:w-auto" loading="lazy" />
-
+        <div className="relative my-32 px-2 lg:px-10 flex flex-col lg:flex-row justify-center items-center gap-10">
+          <div className="relative lg:w-[700px] h-[500px] rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4762.25177817499!2d-75.62899159999999!3d6.154664400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468164563dd5f3%3A0xe4f4c0dbfe0be02e!2sFundacion%20Antivirus%20para%20la%20Desercion!5e1!3m2!1ses!2sco!4v1785759788967!5m2!1ses!2sco"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title={t("contactUs.altLocation")}
+              className="w-full h-full"
+            />
             <div className="absolute bg-dark-blue text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
               <div className="flex items-center justify-center gap-2">
                 <p className="text-2xl font-bold">
@@ -188,7 +203,14 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 text-center md:text-left">
+          <img
+            src={JaviSenala}
+            alt={t("contactUs.banner.alt")}
+            className="h-full max-h-[500px] hidden lg:block"
+            loading="lazy"
+          />
+
+          <div className="relative w-full lg:w-450 max-md:p-6 max-lg:p-6 text-center md:text-left">
             <p className="text-base md:text-lg text-primary-purple font-impact">
               {t("contactUs.startConversation")}
             </p>
@@ -319,7 +341,9 @@ function ContactUs() {
                   }`}
                   disabled={isSending}
                 >
-                  {isSending ? t("contactUs.form.sending") : t("contactUs.form.sendButton")}
+                  {isSending
+                    ? t("contactUs.form.sending")
+                    : t("contactUs.form.sendButton")}
                 </button>
               </div>
             </form>
