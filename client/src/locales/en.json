@@ -137,7 +137,8 @@
   "whatsappMessage": {
     "default": "Hello, I would like to request more information about the services on the page.",
     "provocation": "Hello, I would like to request more information about the ProVocación service.",
-    "studentRetention": "Hello, I would like to request more information about the Student Retention Management service."
+    "studentRetention": "Hello, I would like to request more information about the Student Retention Management service.",
+    "contactPage": "Hello, I came from the website and I would like to chat with you."
   },
   "donation": {
     "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
@@ -1361,8 +1362,9 @@
       "alt": "Smiling Antivirus Foundation team members, ready to support you."
     },
     "title": "Contact Us",
-    "startConversation": "LET'S START",
-    "conversationTitle": "A CONVERSATION DO YOU HAVE ANY QUESTIONS? WE HAVE THE ANSWER!",
+    "startConversation": "DO YOU HAVE ANY QUESTIONS?",
+    "conversationTitle": "WE HAVE THE ANSWER!",
+    "paragraphDescription": "At the Fundación Antivirus para la Deserción, we are ready to listen to you.",
     "mainHeadquarters": "Main headquarters",
     "address": "Cl 79 S 50-69 La Estrella",
     "city": "Medellín - Antioquia - Colombia",
