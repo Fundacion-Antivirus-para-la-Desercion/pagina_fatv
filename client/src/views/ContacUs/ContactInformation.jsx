@@ -9,7 +9,7 @@ function ContactInformation() {
   const { t } = useTranslation();
 
   return (
-    <div className="relative py-24 my-16 px-2 lg:px-10 flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-0">
+    <div className="relative py-10 md:py-24 my-8 md:my-16 px-2 lg:px-10 flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-0">
       <div className="relative w-full lg:w-450 max-md:p-6 max-lg:p-6 text-center md:text-left">
         <p className="text-base md:text-lg text-primary-purple font-impact">
           {t("contactUs.startConversation")}
@@ -56,7 +56,7 @@ function ContactInformation() {
               <span className="text-xs font-bold uppercase tracking-widest text-gray-400">
                 {t("contactUs.email")}
               </span>
-              <span className="text-dark-blue font-bold text-base truncate lg:whitespace-normal lg:overflow-visible">
+              <span className="text-dark-blue font-bold text-sm md:text-base truncate lg:whitespace-normal lg:overflow-visible">
                 {t("contactUs.emailAddress")}
               </span>
             </span>
@@ -89,7 +89,7 @@ function ContactInformation() {
         alt={t("contactUs.altLocation")}
       />
 
-      <div className="relative w-[450px] h-[400px] xl:w-[650px] xl:h-[500px] rounded-xl overflow-hidden shadow-xl">
+      <div className="relative w-full h-[280px] md:w-[450px] md:h-[400px] xl:w-[650px] xl:h-[500px] rounded-xl overflow-hidden shadow-xl">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4762.25177817499!2d-75.62899159999999!3d6.154664400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468164563dd5f3%3A0xe4f4c0dbfe0be02e!2sFundacion%20Antivirus%20para%20la%20Desercion!5e0!3m2!1ses!2sco!4v1785759788967!5m2!1ses!2sco"
           style={{ border: 0 }}
