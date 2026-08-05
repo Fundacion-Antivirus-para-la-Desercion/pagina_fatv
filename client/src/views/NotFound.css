@@ -14,7 +14,3 @@
   animation: writing 4s steps(40, end), blink-caret 0.75s step-end;
   animation-iteration-count: 1;
 }
-
-#not-found {
-  background-image: url(../assets/images/views/notFound/background-not-found.webp);
-}

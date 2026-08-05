@@ -232,4 +232,5 @@ export const JAVI_CARA_ATV_CONECTA_IMG = getImageUrl("https://res.cloudinary.com
 // ── contactUs ─────────────────────────────────────────────────────────────────
 export const BANNER_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671583/banner-contact-us_fy5djq.webp");
 export const MAPS_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674041/contact-image_kodr8u.webp");
-// ── notFound — usa JAVI_SENALA_IMG de la sección compartida ──────────────────
+// ── notFound ──────────────────────────────────────────────────────────────────
+export const BACKGROUND_NOT_FOUND_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671623/background-not-found_buxrxl.webp");
