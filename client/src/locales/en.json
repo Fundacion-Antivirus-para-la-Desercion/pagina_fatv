@@ -138,7 +138,8 @@
     "default": "Hello, I would like to request more information about the services on the page.",
     "provocation": "Hello, I would like to request more information about the ProVocación service.",
     "studentRetention": "Hello, I would like to request more information about the Student Retention Management service.",
-    "contactPage": "Hello, I came from the website and I would like to chat with you."
+    "contactPage": "Hello, I came from the website and I would like to chat with you.",
+    "atvConnect": "Hello, I saw the website and I would like to know more about AtvConecta academic tutoring"
   },
   "donation": {
     "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
