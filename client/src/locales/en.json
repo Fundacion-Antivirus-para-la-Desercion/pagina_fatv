@@ -1355,15 +1355,17 @@
       "badge_featured": "MOST POPULAR",
       "label_applies": "APPLIES TO",
       "label_ideal": "IDEAL FOR",
-      "btn_cta": "I want this plan",
+      "btn_cta": "I want more information",
       "social": {
         "subtitle": "Social",
         "description": "We offer free academic tutoring for students in academic vulnerability, as part of our social support processes.",
         "target": "FATV's CSR support processes.",
         "price_label": "Part of our CSR",
         "price_sub": "No cost",
+        "subtitle_two": "We deliver",
         "check_one": "Socially meaningful support",
-        "check_two": "Real and measurable impact"
+        "check_two": "Real and measurable impact",
+        "check_three": "Technical support"
       },
       "personas": {
         "subtitle": "Persons",
@@ -1371,8 +1373,10 @@
         "target": "Students seeking personalized support to improve their academic performance.",
         "price_label": "$60,000",
         "price_sub": "per session",
+        "subtitle_two": "We deliver",
         "check_one": "One-on-one tutoring",
-        "check_two": "Full schedule flexibility"
+        "check_two": "Full schedule flexibility",
+        "check_three": "Technical support"
       },
       "institucional": {
         "subtitle": "Institutional",
@@ -1380,9 +1384,11 @@
         "target": "Universities and scholarship programs.",
         "price_label": "To be agreed",
         "price_sub": "based on volume",
+        "subtitle_two": "We deliver",
         "check_one": "Service + platform",
         "check_two": "Tutor network",
-        "check_three": "Support and impact reports"
+        "check_three": "Support and impact reports",
+        "check_four": "Technical support"
       },
       "plataforma": {
         "subtitle": "Platform",
@@ -1390,9 +1396,11 @@
         "target": "Institutions that already have tutors and need a technological solution.",
         "price_label": "To be agreed",
         "price_sub": "based on volume",
-        "check_one": "Full platform",
-        "check_two": "Agile and secure management",
-        "check_three": "Impact reports"
+        "subtitle_two": "We deliver",
+        "check_one": "Service + platform",
+        "check_two": "Tutor network",
+        "check_three": "Support and impact reports",
+        "check_four": "Technical support"
       }
     },
     "goAtv": {

@@ -68,9 +68,9 @@ function PricingCardsAtvConnect() {
     <section className="py-16 px-4">
       <div className="max-w-screen-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-blue-base font-impact text-3xl md:text-5xl mt-2">
+          <h3 className="text-blue-base font-impact text-3xl md:text-5xl mt-2">
             {t("atvConnect.pricing.title")}
-          </h2>
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6">
