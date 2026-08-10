@@ -1350,6 +1350,51 @@
         "university": "University of Antioquia"
       }
     },
+    "pricing": {
+      "title": "A PURPOSE, <br /> FOUR WAYS TO SUPPORT",
+      "badge_featured": "MOST POPULAR",
+      "label_applies": "APPLIES TO",
+      "label_ideal": "IDEAL FOR",
+      "btn_cta": "I want this plan",
+      "social": {
+        "subtitle": "Social",
+        "description": "We offer free academic tutoring for students in academic vulnerability, as part of our social support processes.",
+        "target": "FATV's CSR support processes.",
+        "price_label": "Part of our CSR",
+        "price_sub": "No cost",
+        "check_one": "Socially meaningful support",
+        "check_two": "Real and measurable impact"
+      },
+      "personas": {
+        "subtitle": "Persons",
+        "description": "We connect students with our tutor network for individual review sessions in different subject areas, at their own pace and from anywhere.",
+        "target": "Students seeking personalized support to improve their academic performance.",
+        "price_label": "$60,000",
+        "price_sub": "per session",
+        "check_one": "One-on-one tutoring",
+        "check_two": "Full schedule flexibility"
+      },
+      "institucional": {
+        "subtitle": "Institutional",
+        "description": "We bring our tutoring and platform to institutions that need to strengthen academic support for their students.",
+        "target": "Universities and scholarship programs.",
+        "price_label": "To be agreed",
+        "price_sub": "based on volume",
+        "check_one": "Service + platform",
+        "check_two": "Tutor network",
+        "check_three": "Support and impact reports"
+      },
+      "plataforma": {
+        "subtitle": "Platform",
+        "description": "Our platform at the service of those who need a technological solution to manage tutoring in an agile, secure and effective way.",
+        "target": "Institutions that already have tutors and need a technological solution.",
+        "price_label": "To be agreed",
+        "price_sub": "based on volume",
+        "check_one": "Full platform",
+        "check_two": "Agile and secure management",
+        "check_three": "Impact reports"
+      }
+    },
     "goAtv": {
       "start_now": "Ready to get started?",
       "paragraph_start": "Join students who are boosting their academic results.",

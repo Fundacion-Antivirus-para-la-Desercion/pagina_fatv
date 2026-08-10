@@ -1365,6 +1365,52 @@
         "university": "Universidad de Antioquia"
       }
     },
+    "pricing": {
+      "title": "UN PROPOSITO, <br /> CUATRO FORMAS DE ACOMPAÑAR",
+      "badge_featured": "MÁS ELEGIDO",
+      "label_applies": "APLICA PARA",
+      "label_ideal": "IDEAL PARA",
+      "btn_cta": "Quiero esta modalidad",
+      "social": {
+        "subtitle": "Social",
+        "description": "Ofrecemos tutorías académicas gratuitas para jóvenes en vulnerabilidad académica, como parte de nuestros procesos de acompañamiento social.",
+        "target": "Procesos de acompañamiento de la RSE de la FATV.",
+        "price_label": "Hace parte de nuestra RSE",
+        "price_sub": "Sin costo",
+        "check_one": "Acompañamiento con sentido social",
+        "check_two": "Impacto real y medible"
+      },
+      "personas": {
+        "subtitle": "Personas",
+        "description": "Conectamos estudiantes con nuestra red de tutores para sesiones de repaso individual en diferentes áreas del conocimiento, a su ritmo y desde cualquier lugar.",
+        "target": "Estudiantes que buscan apoyo personalizado para mejorar su rendimiento académico.",
+        "price_label": "$60.000",
+        "price_sub": "por sesión",
+        "check_one": "Tutorías uno a uno",
+        "check_two": "Flexibilidad total de horario"
+      },
+      "institucional": {
+        "subtitle": "Institucional",
+        "description": "Llevamos nuestras tutorías y plataforma a instituciones que requieren fortalecer el acompañamiento académico de sus estudiantes.",
+        "target": "Universidades y programas de becarios.",
+        "price_label": "A convenir",
+        "price_sub": "de acuerdo a volumen",
+        "check_one": "Servicio + plataforma",
+        "check_two": "Red de tutores",
+        "check_three": "Acompañamiento y reportes de impacto"
+      },
+      "plataforma": {
+        "subtitle": "Plataforma",
+        "description": "Nuestra plataforma al servicio de quienes necesitan una solución tecnológica para gestionar tutorías de forma ágil, segura y efectiva.",
+        "target": "Instituciones que ya tienen tutores y necesitan una solución tecnológica.",
+        "price_label": "A convenir",
+        "price_sub": "de acuerdo a volumen",
+        "check_one": "Plataforma completa",
+        "check_two": "Gestión ágil y segura",
+        "check_three": "Reportes de impacto"
+      },
+      "span": "MODALIDADES"
+    },
     "goAtv": {
       "start_now": "¿Listo para empezar?",
       "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
