@@ -1,15 +1,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import {
-  BANNER_CONTACT_US_IMG as BannerContacUs,
-  MAPS_CONTACT_US_IMG as Maps,
-  JAVI_FELIZ_SVG as Javi,
-} from "../assets/cloudinaryImages";
-import { FaLocationDot } from "react-icons/fa6";
+import { JAVI_FELIZ_SVG as Javi, BANNER_CONTACT_US_IMG as BannerContacUs } from "../../assets/cloudinaryImages";
 import emailjs from "emailjs-com";
-import Modal from "../components/modal/Modal";
-import BannerView from "../components/Banner-views/BannerView";
+import Modal from "../../components/modal/Modal";
+import BannerView from "../../components/Banner-views/BannerView";
+import ContactInformation from "./ContactInformation";
 
 function ContactUs() {
   const { t } = useTranslation();
@@ -141,7 +137,9 @@ function ContactUs() {
   return (
     <>
       <Helmet>
-        <title>{t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <title>
+          {t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción
+        </title>
         <meta name="description" content={t("contactUs.metaDescription")} />
       </Helmet>
       <Modal
@@ -150,7 +148,12 @@ function ContactUs() {
         title={t("contactUs.modal.title")}
       >
         <div className="flex flex-col items-center text-center">
-          <img src={Javi} alt="Confirmación" className="w-32 h-32 mb-4" loading="lazy" />
+          <img
+            src={Javi}
+            alt="Confirmación"
+            className="w-32 h-32 mb-4"
+            loading="lazy"
+          />
 
           <h2 className="text-2xl font-bold  mb-2 text-center text-title">
             {t("contactUs.modal.successTitle")}
@@ -167,52 +170,7 @@ function ContactUs() {
             keyH1: "contactUs.banner.h1",
           }}
         />
-        <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
-          <div className="relative">
-            <img src={Maps} alt={t("contactUs.image_alt")} className="w-full lg:w-auto" loading="lazy" />
-
-            <div className="absolute bg-dark-blue text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
-              <div className="flex items-center justify-center gap-2">
-                <p className="text-2xl font-bold">
-                  {t("contactUs.googleMaps")}
-                </p>
-                <FaLocationDot />
-              </div>
-
-              <a
-                className="text-xl"
-                href="https://www.google.com/maps/place/Fundacion+Antivirus+para+la+Desercion/@6.1546087,-75.6316542,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468164563dd5f3:0xe4f4c0dbfe0be02e!8m2!3d6.1546034!4d-75.6290793!16s%2Fg%2F11vf1_zb9j?hl=es&entry=ttu"
-              >
-                {t("contactUs.findUsHere")}{" "}
-              </a>
-            </div>
-          </div>
-
-          <div className="w-full lg:w-450 max-md:p-6 max-lg:p-6 text-center md:text-left">
-            <p className="text-base md:text-lg text-primary-purple font-impact">
-              {t("contactUs.startConversation")}
-            </p>
-
-            <h1 className="lineSubtitle text-blue-base font-impact text-4xl md:text-5xl lg:text-5xl mb-2 mt-2">
-              {t("contactUs.conversationTitle")}
-            </h1>
-
-            <p className="text-dark-blue font-bold">
-              {t("contactUs.mainHeadquarters")}
-            </p>
-            <p className="text-blue-base">{t("contactUs.address")} </p>
-            <p className="text-blue-base">{t("contactUs.city")}</p>
-            <p className="text-dark-blue font-bold">{t("contactUs.email")}</p>
-            <p className="text-blue-base overflow-hidden whitespace-nowrap text-ellipsis">
-              {t("contactUs.emailAddress")}
-            </p>
-
-            <p className="text-dark-blue font-bold">
-              {t("contactUs.whatsapp")}
-            </p>
-            <p className="text-blue-base">{t("contactUs.whatsappNumber")}</p>
-          </div>
-        </div>
+        <ContactInformation />
         <div className="w-full  h-full  mb bg-white">
           <h3 className="text-5xl font-impact text-primary-yellow text-center -mt-6 absolute leading-none mx-auto left-0 right-0  xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl md:-mt-8 lg:-mt-10 sm:-mt-6 xl:-mt-12">
             {t("contactUs.writeToUs")}
@@ -319,7 +277,9 @@ function ContactUs() {
                   }`}
                   disabled={isSending}
                 >
-                  {isSending ? t("contactUs.form.sending") : t("contactUs.form.sendButton")}
+                  {isSending
+                    ? t("contactUs.form.sending")
+                    : t("contactUs.form.sendButton")}
                 </button>
               </div>
             </form>
