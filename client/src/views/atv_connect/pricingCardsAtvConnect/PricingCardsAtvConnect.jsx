@@ -1,12 +1,9 @@
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FaRegHeart, FaCheck } from "react-icons/fa";
 import { LuUser } from "react-icons/lu";
 import { RiBuilding4Line } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaDisplay } from "react-icons/fa6";
-
-import { expandableTransition } from "../../../components/motion/constants/Animations";
 import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
 
 const CARDS = [
@@ -73,20 +70,14 @@ function PricingCardsAtvConnect() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6">
-          {CARDS.map((card, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          {CARDS.map((card) => {
             const Icon = card.icon;
             const base = `atvConnect.pricing.${card.key}`;
-            const anim = expandableTransition({
-              transition: { delay: index * 0.12 },
-              viewport: { amount: 0.2 },
-            });
-
             return (
-              <motion.div
+              <div
                 key={card.key}
-                {...anim}
-                className="relative bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden"
+                className="relative bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden hover:translate-y-[-8px] transition-transform duration-300"
               >
                 <div className={`h-2 w-full ${card.bar}`} />
 
@@ -148,7 +139,7 @@ function PricingCardsAtvConnect() {
                     <IoIosArrowForward />
                   </a>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
