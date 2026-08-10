@@ -149,7 +149,10 @@ function FoundationATV() {
           {!isPlaying && (
             <button
               id="play-button"
+              type="button"
               onClick={() => setIsPlaying(true)}
+              aria-label={t("foundation.foundationATV.play_video")}
+              title={t("foundation.foundationATV.play_video")}
               className="absolute inset-0 flex justify-center items-center w-full h-full"
             >
               <box-icon

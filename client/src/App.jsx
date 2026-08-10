@@ -4,7 +4,7 @@ import Home from "./views/Home";
 import DonationPay from "./views/DonationPay";
 import DataAnalytics from "./views/DataAnalytics/DataAnalytics.jsx";
 import Foundation from "./views/Foundation/Foundation.jsx";
-import ContacUs from "./views/ContacUs";
+import ContacUs from "./views/ContacUs/ContacUs";
 import Communications from "./views/Communications/Communications.jsx";
 import Consultorias from "./views/Consulting/Consultorias.jsx";
 import NotFound from "./views/NotFound";

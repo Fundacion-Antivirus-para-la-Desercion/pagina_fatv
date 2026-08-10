@@ -8,6 +8,8 @@
     "contact_us": "CONTÁCTENOS",
     "button_volunteer": "Voluntariado",
     "language": "ESP",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú",
     "options_spanish": "ESPAÑOL",
     "options_english": "INGLÉS",
     "sub_header": {
@@ -27,6 +29,7 @@
     }
   },
   "home": {
+    "metaDescription": "Fundación Antivirus para la Deserción: acompañamos a más de 26.000 estudiantes en Colombia para reducir la deserción y fortalecer su permanencia educativa.",
     "carousel": {
       "slides": {
         "slide1": {
@@ -135,9 +138,11 @@
   "whatsappMessage": {
     "default": "Hola, me gustaría solicitar más información sobre los servicios de la página.",
     "provocation": "Hola, me gustaría solicitar más información acerca del servicio de ProVocación.",
-    "studentRetention": "Hola, me gustaría solicitar más información acerca del servicio de Gestión de la Permanencia Estudiantil."
+    "studentRetention": "Hola, me gustaría solicitar más información acerca del servicio de Gestión de la Permanencia Estudiantil.",
+    "contactPage": "Hola, vengo de la página web y me gustaría hablar con ustedes."
   },
   "donation": {
+    "metaDescription": "Dona a la Fundación Antivirus para la Deserción y ayuda a que más estudiantes en Colombia permanezcan en la universidad y logren graduarse.",
     "foundation_name": "Fundación Antivirus para la Deserción",
     "description": "Es una organización sin ánimo de lucro que busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
     "be_part_solution": "Sé parte de la solución",
@@ -191,6 +196,7 @@
     }
   },
   "dataAnalytics": {
+    "metaDescription": "Tecnología y Datos: optimizamos procesos y decisiones estratégicas mediante análisis de datos, visualización en PowerBI y desarrollo de plataformas web.",
     "banner": {
       "h1": " Tecnología y Datos",
       "alt": "Grupo de estudiantes participando activamente en una clase dentro del aula."
@@ -307,6 +313,7 @@
     }
   },
   "communications": {
+    "metaDescription": "Somos el puente creativo entre el impacto social de la Fundación y las audiencias que necesitan conocerlo, con estrategias que educan e inspiran.",
     "banner": {
       "h1": "Comunicaciones",
       "alt": "El equipo de comunicaciones sonriendo juntos."
@@ -426,6 +433,7 @@
     }
   },
   "foundation": {
+    "metaDescription": "Conoce a la Fundación Antivirus para la Deserción: quiénes somos, nuestros fundadores, junta directiva y la teoría del cambio que guía nuestro trabajo.",
     "banner": {
       "h1": "Sobre Nosotros",
       "alt": "Imagen con colaboradores de la fundacion antivirus para la deserción."
@@ -433,6 +441,7 @@
     "foundationATV": {
       "header": "sobre nosotros",
       "title": "¿Quiénes Somos?",
+      "play_video": "Reproducir video",
       "subtitle": "Somos una organización sin ánimo de lucro que",
       "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
       "founders": {
@@ -495,6 +504,7 @@
     }
   },
   "news": {
+    "metaDescription": "Entérate de las últimas noticias y artículos de la Fundación Antivirus para la Deserción sobre nuestro trabajo por la permanencia estudiantil en Colombia.",
     "banner": {
       "h1": "NOTICIAS",
       "alt": "Primer plano de una mano cerrada con la pulsera institucional sobre una imagen de jóvenes estudiando, simbolizando el compromiso con la educación."
@@ -744,6 +754,7 @@
     }
   },
   "newsDetail": {
+    "metaDescriptionFallback": "Noticias y artículos sobre deserción y permanencia estudiantil de la Fundación Antivirus para la Deserción en Colombia.",
     "no_info": "No hay información de la noticia.",
     "title": "NOTICIAS",
     "news_label": "NOTICIAS",
@@ -775,6 +786,7 @@
     }
   },
   "socialIntervention": {
+    "metaDescription": "Conoce la intervención social de la Fundación Antivirus: acompañamos a cada estudiante según su contexto histórico, social, económico y académico.",
     "banner": {
       "h1": "Intervención Social",
       "alt": "Colaborador de la Fundación Antivirus y estudiantes en sus respectivos entornos educativos."
@@ -928,6 +940,7 @@
     }
   },
   "consultorias": {
+    "metaDescription": "Brindamos consultoría y acompañamiento continuo a universidades, colegios y bootcamps para que sus estudiantes permanezcan y eviten la deserción.",
     "banner": {
       "h1": "Consultoría en Permanencia",
       "br": "Estudiantil",
@@ -1015,6 +1028,7 @@
     }
   },
   "studentRetentionManagement": {
+    "metaDescription": "Gestión de la Permanencia Estudiantil: acompañamos a los estudiantes en su proceso académico para reducir la deserción y lograr su graduación.",
     "banner": {
       "h1": "Gestión de la",
       "br": "Permanencia Estudiantil",
@@ -1112,6 +1126,7 @@
     }
   },
   "provocacion": {
+    "metaDescription": "ProVocación potencia el proyecto de vida de los jóvenes mediante autoconocimiento, acercamiento a la educación superior y al mundo laboral.",
     "banner": {
       "h1": "ProVocación",
       "alt": "Estudiantes de colegio recibiendo orientación para definir su proyecto de vida y futuro académico."
@@ -1231,6 +1246,7 @@
     }
   },
   "atvConnect": {
+    "metaDescription": "ATVConecta es tu aliado de tutorías académicas 1 a 1 para superar desafíos, mejorar tu rendimiento y alcanzar tus objetivos universitarios.",
     "banner": {
       "h1": "ATVConecta:",
       "br": "Tutorías Académicas",
@@ -1355,14 +1371,15 @@
     }
   },
   "contactUs": {
+    "metaDescription": "Contáctanos por WhatsApp, correo o visítanos en La Estrella, Antioquia. Resolvemos tus preguntas sobre la Fundación Antivirus para la Deserción.",
     "banner": {
       "h1": "Contáctanos",
       "alt": "Integrantes del equipo de la Fundación Antivirus sonriendo, listos para brindarte apoyo y asesoría."
     },
     "title": "Contáctanos",
-    "image_alt": "imagen de la ciudad La Estrella, Medellín - Antioquia - Colombia donde se encuentra la sede de la Fundación Antivirus para la Deserción",
-    "startConversation": "COMENCEMOS",
-    "conversationTitle": "UNA CONVERSACIÓN ¿TIENES ALGUNA PREGUNTA? ¡TENEMOS LA RESPUESTA!",
+    "startConversation": "¿TIENES ALGUNA PREGUNTA?",
+    "conversationTitle": "¡TENEMOS LA RESPUESTA!",
+    "paragraphDescription": "En la Fundación Antivirus para la Deserción, estamos listos para escucharte.",
     "mainHeadquarters": "Sede principal",
     "address": "Cl 79 S 50-69 La Estrella",
     "city": "Medellín - Antioquia - Colombia",
@@ -1373,6 +1390,7 @@
     "writeToUs": "ESCRÍBENOS AQUÍ",
     "googleMaps": "Google Maps",
     "findUsHere": "Encuéntranos aquí",
+    "altLocation": "Ubicación de la Fundación Antivirus para la Deserción",
     "form": {
       "fullName": "NOMBRE COMPLETO",
       "email": "CORREO ELECTRÓNICO",
@@ -1398,7 +1416,12 @@
       "thankYou": "Gracias por comunicarte con nosotros.",
       "termsAccepted": "Acepto",
       "termsNotAccepted": "No acepto"
-    }
+    },
+    "spanDescription": "En la Fundación Antivirus para la Deserción, estamos listos para escucharte.",
+    "image_alt": "imagen de la ciudad La Estrella, Medellín - Antioquia - Colombia donde se encuentra la sede de la Fundación Antivirus para la Deserción"
+  },
+  "common": {
+    "close": "Cerrar"
   },
   "footer": {
     "visitUs": "Visítanos",
@@ -1409,6 +1432,14 @@
     "contactEmail": "contactenos@fundacionantivirusparaladesercion.org",
     "contactWhatsapp": "WhatsApp: +57 3173831481",
     "socialNetworks": "Nuestras redes sociales",
+    "scroll_to_top": "Volver arriba",
+    "social_links": {
+      "facebook": "Visitar Facebook",
+      "instagram": "Visitar Instagram",
+      "youtube": "Visitar YouTube",
+      "tiktok": "Visitar TikTok",
+      "linkedin": "Visitar LinkedIn"
+    },
     "copyright": "Fundación Antivirus para la Deserción © 2024 all rights reserved",
     "dataProtection": "Política de protección de datos",
     "logo_alt": "Logotipo de la Fundación Antivirus para la Deserción"

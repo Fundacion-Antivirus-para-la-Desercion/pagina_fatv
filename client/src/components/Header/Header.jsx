@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Header/Header.css";
 import { useTranslation } from "react-i18next";
-import { FaHandSparkles } from "react-icons/fa";
+import { FaHandSparkles, FaHandHoldingHeart } from "react-icons/fa";
 import { TiHome } from "react-icons/ti";
-import { FaHandHoldingHeart } from "react-icons/fa";
 import { RiServiceLine } from "react-icons/ri";
-import { MdSupportAgent } from "react-icons/md";
+import { MdSupportAgent, MdEmail, MdTranslate } from "react-icons/md";
 import { IoNewspaperOutline } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { MdTranslate } from "react-icons/md";
 
 const LANGUAGES = [
   { code: "en", labelKey: "header.options_english" },
@@ -24,7 +21,6 @@ function Header() {
   const [popupTop, setPopupTop] = useState(0);
   const headerRef = useRef(null);
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.resolvedLanguage || i18n.language || "es";
 
   const closePopups = () => {
     setOpenPopup(null);
@@ -112,7 +108,10 @@ function Header() {
           </Link>
           <span className="text-blue-base mx-1">|</span>
           <button
+            type="button"
             onClick={() => togglePopup("qh")}
+            aria-expanded={openPopup === "qh"}
+            aria-controls="desktop-what-we-do-menu"
             className="group flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.what_we_do")}
@@ -128,7 +127,10 @@ function Header() {
             <span className="text-blue-base mx-1">|</span>
           </button>
           <button
+            type="button"
             onClick={() => togglePopup("services")}
+            aria-expanded={openPopup === "services"}
+            aria-controls="desktop-services-menu"
             className="group flex items-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.services")}
@@ -171,7 +173,10 @@ function Header() {
           </Link>
           <span className="text-blue-base mx-1">|</span>
           <button
+            type="button"
             onClick={() => togglePopup("idioma")}
+            aria-expanded={openPopup === "idioma"}
+            aria-controls="desktop-language-menu"
             className="group flex items-center justify-center text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple"
           >
             {t("header.language")}
@@ -185,9 +190,11 @@ function Header() {
           </button>
 
           <button
+            type="button"
             onClick={() =>
               window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
             }
+            aria-label={t("header.button_volunteer")}
             className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-dark-yellow transition duration-700 transform hover:scale-105 max-xl:py-2"
           >
             <div className="flex items-center">
@@ -204,75 +211,92 @@ function Header() {
 
       {openPopup === "qh" && (
         <div
+          id="desktop-what-we-do-menu"
           className="hidden lg:block fixed left-0 right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
-            <Link
-              to="/dataAnalytics"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.data_analytics")}
-            </Link>
-            <Link
-              to="/social-intervention"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.socio_emotional_intervention")}
-            </Link>
-            <Link
-              to="/comunicaciones"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.communications")}
-            </Link>
+            <li>
+              <Link
+                to="/dataAnalytics"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.data_analytics")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/social-intervention"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.socio_emotional_intervention")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/comunicaciones"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.communications")}
+              </Link>
+            </li>
           </ul>
         </div>
       )}
 
       {openPopup === "services" && (
         <div
+          id="desktop-services-menu"
           className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: `${popupTop}px` }}
         >
           <ul className="flex items-center justify-center gap-16 p-10">
-            <Link
-              to={"/gestion-de-la-permanencia"}
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.permanence")}
-            </Link>
-            <Link
-              to="/consultorias"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.consulting")}
-            </Link>
-            <Link
-              to="/provocacion"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.pro_vocation")}
-            </Link>
-            <Link
-              to="/atvconnect"
-              onClick={handleNav}
-              className="font-impact hover:text-primary-purple cursor-pointer"
-            >
-              {t("header.sub_header.atv_connect")}
-            </Link>
+            <li>
+              <Link
+                to={"/gestion-de-la-permanencia"}
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.permanence")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/consultorias"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.consulting")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/provocacion"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.pro_vocation")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/atvconnect"
+                onClick={handleNav}
+                className="font-impact hover:text-primary-purple cursor-pointer"
+              >
+                {t("header.sub_header.atv_connect")}
+              </Link>
+            </li>
           </ul>
         </div>
       )}
 
       {openPopup === "idioma" && (
         <div
+          id="desktop-language-menu"
           className="hidden lg:block fixed left-0 items-center right-0 bg-dark-blue text-white  z-50 popup-animation text-3xl"
           style={{ top: `${popupTop}px` }}
         >
@@ -314,7 +338,13 @@ function Header() {
           </Link>
         </div>
 
-        <button onClick={handleNav} className=" block lg:hidden">
+        <button
+          type="button"
+          onClick={handleNav}
+          aria-label={nav ? t("header.close_menu") : t("header.open_menu")}
+          aria-expanded={nav}
+          className=" block lg:hidden"
+        >
           {nav ? (
             <AiOutlineClose size={40} />
           ) : (
@@ -343,13 +373,18 @@ function Header() {
         }
         style={{ zIndex: 30 }}
       >
-        <div className="header-navbar-responsive flex justify-between items-center">
-          <AiOutlineClose
-            onClick={handleNav}
-            size={30}
-            className="hover:cursor-pointer absolute right-0 pr-2 text-blue-base"
-          />
-        </div>
+        <li className="list-none">
+          <div className="header-navbar-responsive flex justify-between items-center">
+            <button
+              type="button"
+              onClick={handleNav}
+              aria-label={t("header.close_menu")}
+              className="absolute right-0 pr-2 text-blue-base"
+            >
+              <AiOutlineClose size={30} className="hover:cursor-pointer" />
+            </button>
+          </div>
+        </li>
 
         <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase transition duration-400 ease-in-out hover:text-primary-purple">
           <TiHome className="flex-shrink-0 relative -top-[3px]" size={20} />
@@ -535,21 +570,25 @@ function Header() {
             </ul>
           )}
         </li>
-        <button
-          onClick={() =>
-            window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
-          }
-          className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-dark-yellow transition duration-700 transform hover:scale-105 max-xl:py-2"
-        >
-          <div className="flex items-center">
-            {t("header.button_volunteer")}
-            <FaHandSparkles
-              size={20}
-              name="gift"
-              color="#eae9e9"
-            ></FaHandSparkles>
-          </div>
-        </button>
+        <li className="list-none">
+          <button
+            type="button"
+            onClick={() =>
+              window.open("https://forms.gle/cepdWwfdcpFdcVNj8", "_blank")
+            }
+            aria-label={t("header.button_volunteer")}
+            className="flex items-center justify-center py-3 px-4 bg-primary-purple rounded-3xl text-white font-bold hover:bg-dark-yellow transition duration-700 transform hover:scale-105 max-xl:py-2"
+          >
+            <div className="flex items-center">
+              {t("header.button_volunteer")}
+              <FaHandSparkles
+                size={20}
+                name="gift"
+                color="#eae9e9"
+              ></FaHandSparkles>
+            </div>
+          </button>
+        </li>
       </ul>
     </>
   );

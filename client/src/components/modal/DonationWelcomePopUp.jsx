@@ -85,8 +85,9 @@ const DonationWelcomePopUp = () => {
         </div>
 
         <button
+          type="button"
           onClick={close}
-          aria-label="Cerrar"
+          aria-label={t("common.close")}
           className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-xl leading-none font-bold"
         >
           &times;

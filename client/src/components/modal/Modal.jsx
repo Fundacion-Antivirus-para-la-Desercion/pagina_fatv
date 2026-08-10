@@ -41,9 +41,10 @@ const Modal = ({ isOpen, onClose, title, children }) => {
       >
         <div className="flex justify-end items-center px-4 py-2">
           <button
+            type="button"
             className="text-gray-500 hover:text-[#7C78B3] text-2xl font-bold"
             onClick={onClose}
-            aria-label="Cerrar"
+            aria-label={"Cerrar"}
           >
             &times;
           </button>
