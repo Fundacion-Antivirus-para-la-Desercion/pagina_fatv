@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FaRegHeart, FaCheck } from "react-icons/fa";
-import { LuUser, LuMonitor } from "react-icons/lu";
-import { HiOfficeBuilding } from "react-icons/hi";
+import { LuUser } from "react-icons/lu";
+import { RiBuilding4Line } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaDisplay } from "react-icons/fa6";
+
 import { expandableTransition } from "../../../components/motion/constants/Animations";
 import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
 
@@ -11,7 +13,6 @@ const CARDS = [
   {
     key: "social",
     icon: FaRegHeart,
-    featured: false,
     labelKey: "label_applies",
     checks: ["check_one", "check_two"],
     bar: "bg-brand-teal-300",
@@ -19,47 +20,43 @@ const CARDS = [
     iconColor: "text-brand-teal-400",
     subtitleColor: "text-brand-teal-400",
     checkColor: "text-brand-teal-400",
-    btnBg: "bg-brand-teal-400 hover:bg-brand-teal-300",
+    btnBg: "bg-brand-teal-300 hover:bg-brand-teal-400",
   },
   {
     key: "personas",
     icon: LuUser,
-    featured: true,
     labelKey: "label_ideal",
     checks: ["check_one", "check_two"],
-    bar: "bg-green-600",
-    iconBg: "bg-green-50",
-    iconColor: "text-green-600",
-    subtitleColor: "text-green-700",
-    checkColor: "text-green-600",
-    btnBg: "bg-green-700 hover:bg-green-600",
-    badgeBg: "bg-green-600",
+    bar: "bg-brand-blue-100",
+    iconBg: "bg-brand-blue-50",
+    iconColor: "text-brand-blue-300",
+    subtitleColor: "text-brand-blue-400",
+    checkColor: "text-brand-blue-400",
+    btnBg: "bg-brand-blue-100 hover:bg-brand-blue-200",
   },
   {
     key: "institucional",
-    icon: HiOfficeBuilding,
-    featured: false,
+    icon: RiBuilding4Line,
     labelKey: "label_ideal",
     checks: ["check_one", "check_two", "check_three"],
-    bar: "bg-orange-500",
-    iconBg: "bg-orange-50",
-    iconColor: "text-orange-500",
-    subtitleColor: "text-orange-500",
-    checkColor: "text-orange-500",
-    btnBg: "bg-orange-500 hover:bg-orange-600",
+    bar: "bg-primary-yellow",
+    iconBg: "bg-primary-yellow/40",
+    iconColor: "text-dark-yellow",
+    subtitleColor: "text-dark-yellow",
+    checkColor: "text-primary-yellow",
+    btnBg: "bg-primary-yellow hover:bg-dark-yellow",
   },
   {
     key: "plataforma",
-    icon: LuMonitor,
-    featured: false,
+    icon: FaDisplay,
     labelKey: "label_ideal",
     checks: ["check_one", "check_two", "check_three"],
-    bar: "bg-brand-purple-300",
-    iconBg: "bg-brand-purple-50",
-    iconColor: "text-brand-purple-400",
-    subtitleColor: "text-brand-purple-400",
-    checkColor: "text-brand-purple-400",
-    btnBg: "bg-brand-purple-400 hover:bg-brand-purple-300",
+    bar: "bg-primary-purple",
+    iconBg: "bg-primary-purple/40",
+    iconColor: "text-primary-purple",
+    subtitleColor: "text-primary-purple",
+    checkColor: "text-primary-purple",
+    btnBg: "bg-brand-purple-100 hover:bg-brand-purple-200",
   },
 ];
 
@@ -70,7 +67,7 @@ function PricingCardsAtvConnect() {
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">         
+        <div className="text-center mb-12">
           <h2 className="text-dark-blue font-impact text-3xl md:text-4xl mt-2 uppercase">
             {t("atvConnect.pricing.title")}
           </h2>
@@ -89,21 +86,9 @@ function PricingCardsAtvConnect() {
               <motion.div
                 key={card.key}
                 {...anim}
-                className={`relative bg-white rounded-2xl shadow-md flex flex-col overflow-hidden${
-                  card.featured ? " ring-2 ring-green-600 shadow-xl" : ""
-                }`}
+                className="relative bg-white rounded-2xl shadow-md flex flex-col overflow-hidden"
               >
-                <div className={`h-1.5 w-full ${card.bar}`} />
-
-                {card.featured && (
-                  <div className="absolute top-4 right-4">
-                    <span
-                      className={`${card.badgeBg} text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide`}
-                    >
-                      {t("atvConnect.pricing.badge_featured")}
-                    </span>
-                  </div>
-                )}
+                <div className={`h-2 w-full ${card.bar}`} />
 
                 <div className="p-6 flex flex-col flex-1 gap-4">
                   <div
