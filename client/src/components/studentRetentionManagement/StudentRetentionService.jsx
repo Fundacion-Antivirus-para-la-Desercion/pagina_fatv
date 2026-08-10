@@ -294,20 +294,6 @@ function StudentRetentionService() {
         <section className="flex justify-center items-center mt-10 m-1 mb-10 md:m-10 md:mt-24 px-3">
           <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-dark-blue via-primary-purple to-primary-purple w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             <section className="bg-white text-center p-8 md:p-10 w-full h-full rounded-3xl flex flex-col justify-center">
-              <div className="flex justify-center text-4xl md:text-6xl mt-8 md:mt-4">
-                <motion.span {...floatSnake(0)} className="mx-2">
-                  🎯
-                </motion.span>
-                <motion.span {...floatSnake(0.3)} className="mx-2">
-                  💙
-                </motion.span>
-                <motion.span {...floatSnake(0.6)} className="mx-2">
-                  💰
-                </motion.span>
-                <motion.span {...floatSnake(0.9)} className="mx-2">
-                  📚
-                </motion.span>
-              </div>
               <h5 className="text-4xl md:text-5xl mt-6 font-impact text-primary-yellow px-3 leading-tight">
                 {t("studentRetentionManagement.studentRetentionCard.title")}
                 <span className="text-dark-blue">

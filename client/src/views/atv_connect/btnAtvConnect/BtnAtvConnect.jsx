@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "./BtnAtvConnect.module.css";
 import { JAVI_CARA_ATV_CONECTA_IMG as IconATVConnect } from "../../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
+import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
 
 function BtnAtvConnect() {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ function BtnAtvConnect() {
 
   return (
     <a
-      href="https://atvconecta.com/login"
+      href={WhatsAppRedirect(t("whatsappMessage.atvConnect"))}
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group ${

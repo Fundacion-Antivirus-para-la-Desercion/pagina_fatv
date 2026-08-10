@@ -10,6 +10,7 @@ import ServicesAtvConnect from "./servicesAtvConnect/ServicesAtvConnect.jsx";
 import StepsAtvConnect from "./stepsAtvConnect/StepsAtvConnect.jsx";
 import SchoolSubjectsAtvConnect from "./schoolSubjects/SchoolSubjectsAtvConnect.jsx";
 import GoAtvConnect from "./goAtvConnet/GoAtvConnect.jsx";
+import PricingCardsAtvConnect from "./pricingCardsAtvConnect/PricingCardsAtvConnect.jsx";
 
 function AtvConnect() {
   const { t } = useTranslation();
@@ -17,7 +18,9 @@ function AtvConnect() {
   return (
     <>
       <Helmet>
-        <title>{t("atvConnect.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <title>
+          {t("atvConnect.banner.h1")} | Fundación Antivirus para la Deserción
+        </title>
         <meta name="description" content={t("atvConnect.metaDescription")} />
       </Helmet>
       <BtnAtv />
@@ -50,6 +53,7 @@ function AtvConnect() {
       </section>
 
       <ServicesAtvConnect />
+      <PricingCardsAtvConnect />
       <StepsAtvConnect />
       <SchoolSubjectsAtvConnect />
       <TestimonialsAtvConnect />
