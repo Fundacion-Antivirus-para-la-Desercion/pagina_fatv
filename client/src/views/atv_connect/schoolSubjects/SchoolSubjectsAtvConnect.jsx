@@ -7,6 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { useTranslation } from "react-i18next";
+import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
 
 function SchoolSubjectsAtvConnect() {
   const [init, setInit] = useState(false);
@@ -143,7 +144,7 @@ function SchoolSubjectsAtvConnect() {
           {subjects.map((subject, index) => (
             <a
               key={index}
-              href="https://atvconecta.com/login"
+              href={WhatsAppRedirect(t("whatsappMessage.atvConnect"))}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-3xl border border-white border-opacity-35 text-base py-2 px-5 cursor-pointer hover:bg-white hover:bg-opacity-5 transition-colors"

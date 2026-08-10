@@ -138,7 +138,15 @@
     "default": "Hello, I would like to request more information about the services on the page.",
     "provocation": "Hello, I would like to request more information about the ProVocación service.",
     "studentRetention": "Hello, I would like to request more information about the Student Retention Management service.",
-    "contactPage": "Hello, I came from the website and I would like to chat with you."
+    "contactPage": "Hello, I came from the website and I would like to chat with you.",
+    "atvConnect": "Hello, I saw the website and I would like to know more about AtvConecta academic tutoring",
+    "atvConnect_social": "Hello, I saw the website and I would like to know more about ATVConecta Social",
+    "atvConnect_persons": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
+    "atvConnect_institutional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
+    "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform",
+    "atvConnect_personas": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
+    "atvConnect_institucional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
+    "atvConnect_plataforma": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
   },
   "donation": {
     "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
@@ -895,7 +903,7 @@
           "alt": "Astrid Franco, Social Coordinator, with a friendly smile.",
           "position": "LEADERSHIP",
           "department": "Social Area Coordinator",
-          "description": "Coordinates social intervention projects, ensuring comprehensive support for students through strategies focused on student retention."
+          "description": "Coordinates Social Intervention projects, ensuring comprehensive support for students through strategies focused on student retention."
         },
         "leader_two": {
           "alt": "Daniela Arias, FATV Leader - UNAL, with a friendly smile.",
@@ -1360,6 +1368,60 @@
         "role": "Student",
         "university": "University of Antioquia"
       }
+    },
+    "pricing": {
+      "title": "A PURPOSE, FOUR WAYS TO SUPPORT",
+      "badge_featured": "MOST POPULAR",
+      "label_applies": "APPLIES TO",
+      "label_ideal": "IDEAL FOR",
+      "btn_cta": "I want more information",
+      "social": {
+        "subtitle": "Social",
+        "description": "We offer free academic tutoring for students in academic vulnerability, as part of our social support processes.",
+        "target": "FATV's CSR support processes.",
+        "price_label": "Part of our CSR",
+        "price_sub": "No cost",
+        "subtitle_two": "We deliver",
+        "check_one": "Socially meaningful support",
+        "check_two": "Real and measurable impact",
+        "check_three": "Technical support"
+      },
+      "personas": {
+        "subtitle": "Persons",
+        "description": "We connect students with our tutor network for individual review sessions in different subject areas, at their own pace and from anywhere.",
+        "target": "Students seeking personalized support to improve their academic performance.",
+        "price_label": "$60,000",
+        "price_sub": "per session",
+        "subtitle_two": "We deliver",
+        "check_one": "One-on-one tutoring",
+        "check_two": "Full schedule flexibility",
+        "check_three": "Technical support"
+      },
+      "institucional": {
+        "subtitle": "Institutional",
+        "description": "We bring our tutoring and platform to institutions that need to strengthen academic support for their students.",
+        "target": "Universities and scholarship programs.",
+        "price_label": "To be agreed",
+        "price_sub": "based on volume",
+        "subtitle_two": "We deliver",
+        "check_one": "Service + platform",
+        "check_two": "Tutor network",
+        "check_three": "Support and impact reports",
+        "check_four": "Technical support"
+      },
+      "plataforma": {
+        "subtitle": "Platform",
+        "description": "Our platform at the service of those who need a technological solution to manage tutoring in an agile, secure and effective way.",
+        "target": "Institutions that already have tutors and need a technological solution.",
+        "price_label": "To be agreed",
+        "price_sub": "based on volume",
+        "subtitle_two": "We deliver",
+        "check_one": "Service + platform",
+        "check_two": "Tutor network",
+        "check_three": "Support and impact reports",
+        "check_four": "Technical support"
+      },
+      "span": "PLANS"
     },
     "goAtv": {
       "start_now": "Ready to get started?",

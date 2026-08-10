@@ -4,6 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useTranslation } from "react-i18next";
+import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
 
 function goAtvConnect() {
   const { t } = useTranslation();
@@ -98,7 +99,7 @@ function goAtvConnect() {
         </p>
         <div className="flex justify-center">
           <a
-            href="https://atvconecta.com/login"
+            href={WhatsAppRedirect(t("whatsappMessage.atvConnect"))}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center group px-10 py-4 relative overflow-hidden w-full max-w-[310px] mt-8 text-dark-blue text-lg md:text-xl font-bold rounded-full shadow-xl bg-primary-yellow transform hover:scale-105 transition-all duration-500"
