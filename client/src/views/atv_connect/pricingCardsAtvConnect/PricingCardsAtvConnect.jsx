@@ -9,6 +9,7 @@ import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedir
 const CARDS = [
   {
     key: "social",
+    whatsappMessageKey: "atvConnect_social",
     icon: FaRegHeart,
     labelKey: "label_applies",
     checks: ["check_one", "check_two" , "check_three"],
@@ -21,6 +22,7 @@ const CARDS = [
   },
   {
     key: "personas",
+    whatsappMessageKey: "atvConnect_persons",
     icon: LuUser,
     labelKey: "label_ideal",
     checks: ["check_one", "check_two", "check_three"],
@@ -33,6 +35,7 @@ const CARDS = [
   },
   {
     key: "institucional",
+    whatsappMessageKey: "atvConnect_institutional",
     icon: RiBuilding4Line,
     labelKey: "label_ideal",
     checks: ["check_one", "check_two", "check_three", "check_four"],
@@ -45,6 +48,7 @@ const CARDS = [
   },
   {
     key: "plataforma",
+    whatsappMessageKey: "atvConnect_platform",
     icon: FaDisplay,
     labelKey: "label_ideal",
     checks: ["check_one", "check_two", "check_three", "check_four"],
@@ -59,7 +63,6 @@ const CARDS = [
 
 function PricingCardsAtvConnect() {
   const { t } = useTranslation();
-  const whatsappHref = WhatsAppRedirect(t("whatsappMessage.atvConnect"));
 
   return (
     <section className="py-16 px-4">
@@ -74,6 +77,7 @@ function PricingCardsAtvConnect() {
           {CARDS.map((card) => {
             const Icon = card.icon;
             const base = `atvConnect.pricing.${card.key}`;
+            const whatsappHref = WhatsAppRedirect(t(`whatsappMessage.${card.whatsappMessageKey}`));
             return (
               <div
                 key={card.key}

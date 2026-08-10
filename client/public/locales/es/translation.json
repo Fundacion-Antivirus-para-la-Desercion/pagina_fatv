@@ -140,7 +140,14 @@
     "provocation": "Hola, me gustaría solicitar más información acerca del servicio de ProVocación.",
     "studentRetention": "Hola, me gustaría solicitar más información acerca del servicio de Gestión de la Permanencia Estudiantil.",
     "contactPage": "Hola, vengo de la página web y me gustaría hablar con ustedes.",
-    "atvConnect": "Hola, vi la página web y me gustaría saber más sobre las tutorías académicas de AtvConecta"
+    "atvConnect": "Hola, vi la página web y me gustaría saber más sobre las tutorías académicas de AtvConecta",
+    "atvConnect_social": "Hola, vi la página web y quiero más información sobre ATVConecta Social",
+    "atvConnect_persons": "Hola, vi la página web y quiero más información sobre ATVConecta Personas",
+    "atvConnect_institutional": "Hola, vi la página web y quiero más información sobre ATVConecta Institucional",
+    "atvConnect_platform": "Hola, vi la página web y quiero más información sobre ATVConecta Plataforma",
+    "atvConnect_personas": "Hola, vi la página web y quiero más información sobre ATVConecta Personas",
+    "atvConnect_institucional": "Hola, vi la página web y quiero más información sobre ATVConecta Institucional",
+    "atvConnect_plataforma": "Hola, vi la página web y quiero más información sobre ATVConecta Plataforma"
   },
   "donation": {
     "metaDescription": "Dona a la Fundación Antivirus para la Deserción y ayuda a que más estudiantes en Colombia permanezcan en la universidad y logren graduarse.",

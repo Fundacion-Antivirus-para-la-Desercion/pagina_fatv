@@ -139,7 +139,14 @@
     "provocation": "Hello, I would like to request more information about the ProVocación service.",
     "studentRetention": "Hello, I would like to request more information about the Student Retention Management service.",
     "contactPage": "Hello, I came from the website and I would like to chat with you.",
-    "atvConnect": "Hello, I saw the website and I would like to know more about AtvConecta academic tutoring"
+    "atvConnect": "Hello, I saw the website and I would like to know more about AtvConecta academic tutoring",
+    "atvConnect_social": "Hello, I saw the website and I would like to know more about ATVConecta Social",
+    "atvConnect_persons": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
+    "atvConnect_institutional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
+    "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform",
+    "atvConnect_personas": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
+    "atvConnect_institucional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
+    "atvConnect_plataforma": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
   },
   "donation": {
     "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
