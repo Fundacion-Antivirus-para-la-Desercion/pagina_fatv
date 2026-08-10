@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className="lg:pt-[145px]">
       <Helmet>
-        <title>{t("home.carousel.slides.slide1.title")} | Fundación Antivirus para la Deserción</title>
+        <title>Fundación Antivirus para la Deserción</title>
         <meta name="description" content={t("home.metaDescription")} />
       </Helmet>
       <DonationWelcomePopUp />
