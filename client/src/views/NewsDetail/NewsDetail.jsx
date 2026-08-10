@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import OtherNews from "../../components/other-news/OtherNews";
 import { useLocation } from "react-router-dom";
@@ -6,7 +7,6 @@ import { useTranslation } from "react-i18next";
 import BannerView from "../../components/Banner-views/BannerView";
 import useNews from "./hooks/useNews";
 import useBookDimensions from "./hooks/useBookDimensions";
-import { useMetaTags } from "../../hooks/useMetaTags";
 import BackButton from "./components/BackButton";
 import ShareButton from "./components/ShareButton";
 import BookCarousel from "./components/BookCarousel";
@@ -29,14 +29,13 @@ const NewsDetail = () => {
 
   const news = useNews(initialNews, t);
 
-  useMetaTags({
-    title: news?.newDetailContent?.title || "Antivirus para la Deserción",
-    description:
-      news?.newDetailContent?.content?.[0]?.value?.substring(0, 160) ||
-      "Noticias sobre deserción universitaria",
-    image: news?.img || "",
-    url: `${typeof window !== "undefined" ? window.location.origin : ""}/news/detail?slug=${news?.slug || ""}`,
-  });
+  const pageTitle = news?.newDetailContent?.title
+    ? `${news.newDetailContent.title} | Fundación Antivirus para la Deserción`
+    : "Fundación Antivirus para la Deserción";
+  const pageDescription =
+    news?.newDetailContent?.content?.[0]?.value?.substring(0, 155) ||
+    t("newsDetail.metaDescriptionFallback");
+  const pageUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/news/detail?slug=${news?.slug || ""}`;
 
   const bookDimensions = useBookDimensions(contentRef);
 
@@ -51,6 +50,14 @@ const NewsDetail = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        {news?.img && <meta property="og:image" content={news.img} />}
+        <meta property="og:url" content={pageUrl} />
+      </Helmet>
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{

@@ -6,28 +6,33 @@ import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 function BannerView({ imagesBannerMap }) {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   const socialMedia = [
     {
       href: "https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d",
       icon: <FaFacebook className="text-2xl text-white" />,
+      labelKey: "footer.social_links.facebook",
     },
     {
       href: "https://www.instagram.com/somosantivirus/",
       icon: <AiFillInstagram className="text-2xl text-white" />,
+      labelKey: "footer.social_links.instagram",
     },
     {
       href: "https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w",
       icon: <AiFillYoutube className="text-2xl text-white" />,
+      labelKey: "footer.social_links.youtube",
     },
     {
       href: "https://www.tiktok.com/@somosantivirus",
       icon: <FaTiktok className="text-2xl text-white" />,
+      labelKey: "footer.social_links.tiktok",
     },
     {
       href: "https://www.linkedin.com/company/antivirus-desercion/",
       icon: <FaLinkedin className="text-2xl text-white" />,
+      labelKey: "footer.social_links.linkedin",
     },
   ];
   return (
@@ -66,6 +71,8 @@ function BannerView({ imagesBannerMap }) {
               target="_blank"
               rel="noopener noreferrer"
               className="box-icon"
+              aria-label={t(social.labelKey)}
+              title={t(social.labelKey)}
             >
               {social.icon}
             </a>

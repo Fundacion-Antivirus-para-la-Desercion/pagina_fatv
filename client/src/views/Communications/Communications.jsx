@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import { BANNER_COMMUNICATIONS_IMG as BannerCommun } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import Description from "../Communications/Description/Description.jsx";
@@ -9,9 +11,14 @@ import data from "./data.js";
 import Teams from "../../components/teamsArea/Teams.jsx";
 
 function Communications() {
+  const { t } = useTranslation();
   const teamsData = data[0];
   return (
     <>
+      <Helmet>
+        <title>{t("communications.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <meta name="description" content={t("communications.metaDescription")} />
+      </Helmet>
       <div className="Communications lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{

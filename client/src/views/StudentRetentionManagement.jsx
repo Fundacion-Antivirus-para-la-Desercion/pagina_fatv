@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import {
   JAVI_FELIZ_SVG as Javi,
   JAVI_SVG as JaviGuinandoOjo,
@@ -43,6 +44,10 @@ function StudentRetentionManagement() {
 
   return (
     <section className="lg:pt-[145px]">
+      <Helmet>
+        <title>{t("studentRetentionManagement.banner.h1")} | Fundación Antivirus para la Deserción</title>
+        <meta name="description" content={t("studentRetentionManagement.metaDescription")} />
+      </Helmet>
       <BannerView
         imagesBannerMap={{
           image: BannerRetention,

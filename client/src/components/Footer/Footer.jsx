@@ -11,6 +11,34 @@ import logo from "../../../public/logo.png";
 function Footer() {
   const { t } = useTranslation("translation");
 
+  const socialLinks = [
+    {
+      href: "https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d",
+      icon: <FaFacebook className="text-2xl text-white" />,
+      labelKey: "footer.social_links.facebook",
+    },
+    {
+      href: "https://www.instagram.com/somosantivirus/",
+      icon: <AiFillInstagram className="text-2xl text-white" />,
+      labelKey: "footer.social_links.instagram",
+    },
+    {
+      href: "https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w",
+      icon: <AiFillYoutube className="text-2xl text-white" />,
+      labelKey: "footer.social_links.youtube",
+    },
+    {
+      href: "https://www.tiktok.com/@somosantivirus",
+      icon: <FaTiktok className="text-2xl text-white" />,
+      labelKey: "footer.social_links.tiktok",
+    },
+    {
+      href: "https://www.linkedin.com/company/antivirus-desercion/",
+      icon: <FaLinkedin className="text-2xl text-white" />,
+      labelKey: "footer.social_links.linkedin",
+    },
+  ];
+
   return (
     <div className="footer-container">
       <footer className="bg-dark-blue">
@@ -36,41 +64,18 @@ function Footer() {
             <div className="footer-redes">
               <h2 className="font-impact">{t("footer.socialNetworks")}</h2>
               <div className="mr-10 flex flex-wrap space-x-2 sm:space-x-4">
-                <a
-                  href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook className="text-2xl text-white" />
-                </a>
-                <a
-                  href="https://www.instagram.com/somosantivirus/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillInstagram className="text-2xl text-white" />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillYoutube className="text-2xl text-white" />
-                </a>
-                <a
-                  href="https://www.tiktok.com/@somosantivirus"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTiktok className="text-2xl text-white" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/antivirus-desercion/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin className="text-2xl text-white" />
-                </a>
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.labelKey}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={t(social.labelKey)}
+                    title={t(social.labelKey)}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
@@ -80,10 +85,15 @@ function Footer() {
           <p>{t("footer.dataProtection")}</p>
         </div>
         <div className="footer-redirecion">
-          <button className="btn-up" aria-label="Scroll to top">
+          <button
+            type="button"
+            className="btn-up"
+            aria-label={t("footer.scroll_to_top")}
+            title={t("footer.scroll_to_top")}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <svg
               className="svg"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="63"
