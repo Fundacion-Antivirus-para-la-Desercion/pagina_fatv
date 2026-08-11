@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import {
+  floatSnake,
+  slideFromLeft,
+} from "../../components/motion/constants/Animations.js";
 function StudentRetentionService() {
   const { t } = useTranslation();
 
@@ -21,24 +24,6 @@ function StudentRetentionService() {
     whileInView: { opacity: 1, scale: 1 },
     transition: { duration: 0.8, ease: "easeOut" },
     viewport: { once: true },
-  };
-
-  const floatSnake = (delay = 0) => ({
-    initial: { y: -5 },
-    animate: { y: [0, -20, 0] },
-    transition: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "linear",
-      delay,
-    },
-  });
-
-  const slideFromLeft = {
-    initial: { opacity: 0, x: -100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
   };
 
   return (
