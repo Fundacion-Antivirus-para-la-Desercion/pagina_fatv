@@ -11,7 +11,7 @@ import styles from "./StudentRetentionManagement.module.css";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
 import BannerView from "../components/Banner-views/BannerView.jsx";
 import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect.js";
-import PermanenceObjectives from "./StudentRetentionManagement/PermanenceObjectives/PermanenceObjectives.jsx";
+import PermanenceObjectives from "./StudentRetentionManagement/components/PermanenceObjectives/PermanenceObjectives";
 
 function StudentRetentionManagement() {
   const { t } = useTranslation();
@@ -44,8 +44,14 @@ function StudentRetentionManagement() {
   return (
     <section className="lg:pt-[145px]">
       <Helmet>
-        <title>{t("studentRetentionManagement.banner.h1")} | Fundación Antivirus para la Deserción</title>
-        <meta name="description" content={t("studentRetentionManagement.metaDescription")} />
+        <title>
+          {t("studentRetentionManagement.banner.h1")} | Fundación Antivirus para
+          la Deserción
+        </title>
+        <meta
+          name="description"
+          content={t("studentRetentionManagement.metaDescription")}
+        />
       </Helmet>
       <BannerView
         imagesBannerMap={{
@@ -56,8 +62,7 @@ function StudentRetentionManagement() {
         }}
       />
 
-     
-            <PermanenceObjectives />
+      <PermanenceObjectives />
 
       <section className="relative">
         <div className="transform origin-bottom mt-5 p-[0.05rem]">
@@ -86,7 +91,7 @@ function StudentRetentionManagement() {
                     {t("studentRetentionManagement.success.paragraph_one")}{" "}
                     <span className="text-primary-yellow font-bold">
                       {t(
-                        "studentRetentionManagement.success.paragraph_one_span"
+                        "studentRetentionManagement.success.paragraph_one_span",
                       )}
                     </span>{" "}
                   </p>
@@ -95,7 +100,7 @@ function StudentRetentionManagement() {
                     {t("studentRetentionManagement.success.paragraph_two")}{" "}
                     <span className="text-[#28A499] font-bold">
                       {t(
-                        "studentRetentionManagement.success.paragraph_two_span"
+                        "studentRetentionManagement.success.paragraph_two_span",
                       )}
                     </span>{" "}
                   </p>
@@ -124,7 +129,7 @@ function StudentRetentionManagement() {
                     src={Graduado}
                     loading="lazy"
                     alt={t(
-                      "studentRetentionManagement.success.alt_img_graduate"
+                      "studentRetentionManagement.success.alt_img_graduate",
                     )}
                   />
                   <p className="absolute bottom-1 left-0 right-0 w-[98%] mx-auto bg-black bg-opacity-50 text-white p-2 text-center rounded-xl">

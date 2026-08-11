@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
-import { JAVI_FELIZ_SVG as Javi } from "../../../assets/cloudinaryImages.js";
+import CounterNumeric from "../../../../components/ContextData/CounterNumer.jsx";
+import { JAVI_FELIZ_SVG as Javi } from "../../../../assets/cloudinaryImages.js";
 import { motion } from "framer-motion";
 import {
   floatSnake,
   slideFromLeft,
-} from "../../../components/motion/constants/Animations.js";
+} from "../../../../components/motion/constants/Animations.js";
 
 function PermanenceObjectives() {
   const { t } = useTranslation();
