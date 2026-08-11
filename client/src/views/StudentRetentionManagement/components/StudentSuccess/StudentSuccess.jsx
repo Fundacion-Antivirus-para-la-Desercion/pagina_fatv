@@ -7,34 +7,14 @@ import {
 } from "../../../../assets/cloudinaryImages";
 import styles from "../../../StudentRetentionManagement.module.css";
 import WhatsAppRedirect from "../../../../components/whatsAppRedirect/WhatsAppRedirect.js";
+import {
+  slideFromLeft,
+  slideFromRight,
+  floatSnake,
+} from "../../../../components/motion/constants/Animations.js";
 
 function StudentSuccess() {
   const { t } = useTranslation();
-
-  const slideFromLeft = {
-    initial: { opacity: 0, x: -100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
-  const slideFromRight = {
-    initial: { opacity: 0, x: 100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
-  const floatSnake = (delay = 0) => ({
-    initial: { y: -10 },
-    animate: { y: [0, -25, 0] },
-    transition: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "linear",
-      delay,
-    },
-  });
 
   return (
     <section id="student-success" className="relative">
@@ -80,7 +60,7 @@ function StudentSuccess() {
               </div>
             </section>
           </motion.div>
-          <motion.div className="will-change-transform" {...slideFromRight}>
+          <motion.div className="will-change-transform" {...slideFromRight({ transition: { delay: 0 } })}>
             {" "}
             <div className="content-center flex flex-col items-center md:items-start">
               <div className="mt-5 md:mt-0 relative flex flex-col w-[350px] md:w-[500px] md:-rotate-3 transition duration-500 ease-in-out md:hover:rotate-0">
@@ -114,7 +94,7 @@ function StudentSuccess() {
         </section>
       </div>
       <div className="absolute xl:-bottom-5 flex justify-center mt-10 md:mb-0 md:mt-0 md:justify-start items-center ml-2">
-        <motion.div {...floatSnake(0)}>
+        <motion.div {...floatSnake({ transition: { duration: 3, delay: 0 } })}>
           <img
             className="relative md:bottom-20 w-[100px] mr-2 drop-shadow-[0px_0px_6px_rgba(255,186,8,1)]"
             src={JaviGuinandoOjo}
