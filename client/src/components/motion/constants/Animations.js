@@ -154,3 +154,10 @@ export const newsCardVariants = {
   },
   exit: { opacity: 0, scale: 0.5, transition: { duration: 0.3 } },
 };
+
+export const createFlipInVariant = (delayValue = 0) => ({
+  initial: { opacity: 0, rotateY: -90, transformPerspective: 1000 },
+  whileInView: { opacity: 1, rotateY: 0 },
+  transition: { duration: 0.5, ease: "easeOut", delay: delayValue },
+  viewport: { once: true },
+});
