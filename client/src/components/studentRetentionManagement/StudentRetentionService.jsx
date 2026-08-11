@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function StudentRetentionService() {
@@ -36,13 +36,6 @@ function StudentRetentionService() {
 
   const slideFromLeft = {
     initial: { opacity: 0, x: -100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
-  const slideFromRight = {
-    initial: { opacity: 0, x: 100 },
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
     viewport: { once: true, amount: 0.6 },

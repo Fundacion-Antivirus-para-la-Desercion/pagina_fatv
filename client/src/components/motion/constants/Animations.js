@@ -16,6 +16,13 @@ export const floatSnake = ({
   viewport: { once: true, amount: 0.6, ...viewport },
 });
 
+export const slideFromLeft = {
+  initial: { opacity: 0, x: -100 },
+  whileInView: { opacity: 1, x: 0 },
+  transition: { duration: 0.8, ease: "easeOut" },
+  viewport: { once: true, amount: 0.6 },
+};
+
 export const slideFromRight = ({
   initial,
   whileInView,
@@ -45,8 +52,6 @@ export const slideFromTop = ({
   transition: { duration: 0.8, ease: "easeOut", delay: 0.3, ...transition },
   viewport: { once: true, amount: 0.6, ...viewport },
 });
-
-
 
 /**
  * Animación de expansión con opacidad y escala.
@@ -78,15 +83,11 @@ export const expandableTransition = ({
  * @param {Object} param0.viewport - Configuración del viewport (opcional).
  * @returns {Object} Configuración de la animación para Framer Motion.
  */
-export const slideFromTopBody = ({
-  initial,
-  animate,
-  transition,
-} = {}) => ({
+export const slideFromTopBody = ({ initial, animate, transition } = {}) => ({
   initial: { y: -75, opacity: 0, ...initial },
   animate: { y: 0, opacity: 1, ...animate },
-  transition: { 
-    duration: 0.4, 
+  transition: {
+    duration: 0.4,
     ease: "easeOut",
     opacity: { duration: 0.01 },
     ...transition,
