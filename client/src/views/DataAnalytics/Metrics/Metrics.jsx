@@ -4,8 +4,25 @@ import { BsDatabaseCheck } from "react-icons/bs";
 import { FaRegStar } from "react-icons/fa";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
-import { expandableTransition } from "../../../components/motion/constants/Animations.js";
 import { useTranslation } from "react-i18next";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.5 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 function Metrics() {
   const { t } = useTranslation();
@@ -56,19 +73,25 @@ function Metrics() {
   };
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-4 gap-8 p-3 md:p-0 max-w-7xl mx-auto mt-5 md:mt-10 md:mb-16">
+    <motion.section
+      className="grid grid-cols-1 md:grid-cols-4 gap-8 p-3 md:p-0 max-w-7xl mx-auto mt-5 md:mt-10 md:mb-16"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
         {techMetrics.map((metric, index) => {
-          const isDark = index % 2 === 0; // Alterna entre dark y yellow
+          const isDark = index % 2 === 0;
           const styles = isDark ? variantStyles.dark : variantStyles.yellow;
           const isPrefixSign = metric.sign === "+";
 
           return (
             <motion.div
-              {...expandableTransition({
-                transition: { delay: index * 0.2 },
-              })}
               key={index}
-              className={`flex flex-col items-center text-center p-5 m-2 bg-white rounded-2xl border-[1px] border-brand-blue-50 shadow-md transform hover:scale-105 transition-all duration-500`}
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="flex flex-col items-center text-center p-5 m-2 bg-white rounded-2xl border-[1px] border-brand-blue-50 shadow-md"
             >
               <div className="flex justify-end w-full">
                 <p className="text-sm md:text-base lg:text-lg text-gray-400 font-extrabold">
@@ -95,7 +118,7 @@ function Metrics() {
             </motion.div>
           );
         })}
-      </section>
+    </motion.section>
   );
 }
 
