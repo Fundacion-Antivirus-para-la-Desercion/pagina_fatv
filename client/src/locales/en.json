@@ -1279,19 +1279,19 @@
       "title": "4 STEPS:",
       "span_two": " AS SIMPLE AS THAT",
       "step_one": {
-        "title": "Sign up",
-        "description": "Sign up for free"
+        "title": "Apply",
+        "description": "Find the support you need"
       },
       "step_two": {
-        "title": "Pick a tutor",
-        "description": "Filter by class and schedule"
+        "title": "Attend",
+        "description": "Connect with your tutor"
       },
       "step_three": {
-        "title": "Start learning",
-        "description": "Book a session and improve your grades"
+        "title": "Learn",
+        "description": "Strengthen your knowledge"
       },
       "step_four": {
-        "title": "Rate",
+        "title": "Value",
         "description": "Share your experience"
       }
     },

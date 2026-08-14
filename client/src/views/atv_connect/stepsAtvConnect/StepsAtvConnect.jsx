@@ -17,7 +17,7 @@ function StepsAtvConnect() {
         <span className="text-primary-purple font-impact text-lg md:text-xl">
           {t("atvConnect.steps.span")}
         </span>
-        <h5 className="text-dark-blue font-impact text-4xl md:text-5xl">
+        <h5 className="text-blue-base font-impact text-4xl md:text-5xl">
           {t("atvConnect.steps.title")}
         </h5>
         <h6 className="text-primary-yellow font-impact text-4xl md:text-5xl">
