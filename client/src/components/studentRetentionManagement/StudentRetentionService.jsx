@@ -1,52 +1,161 @@
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import {
+  floatSnake,
+  slideFromLeft,
+  createFlipInVariant,
+  expandableTransition,
+} from "../../components/motion/constants/Animations.js";
+
+const SERVICES_DATA = [
+  {
+    key: "academic",
+    borderColor: "border-primary-yellow",
+    bgColor: "bg-[#FFF8E6]",
+    shadowColor: "hover:shadow-[0_10px_20px_0_#FFEBB8]",
+    iconBgColor: "bg-primary-yellow",
+    iconPosition: "-top-6 -left-5 ml-2",
+    titleColor: "text-primary-yellow",
+    gridAlign: "xl:justify-self-end",
+    emoji: "📚",
+    delay: 0,
+    items: [
+      { emoji: "📚", key: "itemOne" },
+      { emoji: "🎓", key: "itemTwo" },
+      { emoji: "👨‍👩‍👦", key: "itemThree" },
+      { emoji: "⚡", key: "itemFour" },
+      { emoji: "▶️", key: "itemFive" },
+    ],
+  },
+  {
+    key: "socioEmotional",
+    borderColor: "border-[#2C9BC7]",
+    bgColor: "bg-[#CCEDE8]",
+    shadowColor: "hover:shadow-[0_10px_20px_0_#CCEDE8]",
+    iconBgColor: "bg-[#2C9BC7]",
+    iconPosition: "-top-6 -right-3 ml-3",
+    titleColor: "text-[#2C9BC7]",
+    gridAlign: "xl:justify-self-start",
+    emoji: "💙",
+    delay: 0.15,
+    items: [
+      { emoji: "💬", key: "itemOne" },
+      { emoji: "🧠", key: "itemTwo" },
+      { emoji: "💚", key: "itemThree" },
+      { emoji: "🧰", key: "itemFour" },
+      { emoji: "😊", key: "itemFive" },
+    ],
+  },
+  {
+    key: "socioEconomic",
+    borderColor: "border-[#7C76B5]",
+    bgColor: "bg-[#D3C3E3]",
+    shadowColor: "hover:shadow-[0_10px_20px_0_#D3C3E3]",
+    iconBgColor: "bg-[#7C76B5]",
+    iconPosition: "-bottom-6 -left-5 ml-2",
+    titleColor: "text-[#7C76B5]",
+    gridAlign: "xl:justify-self-end",
+    emoji: "💰",
+    delay: 0.3,
+    items: [
+      { emoji: "💻", key: "itemOne" },
+      { emoji: "💰", key: "itemTwo" },
+      { emoji: "🤝", key: "itemThree" },
+      { emoji: "📊", key: "itemFour" },
+    ],
+  },
+  {
+    key: "socioVocational",
+    borderColor: "border-[#0B8F84]",
+    bgColor: "bg-[#CCEDE8]",
+    shadowColor: "hover:shadow-[0_10px_20px_0_#CCEDE8]",
+    iconBgColor: "bg-[#0B8F84]",
+    iconPosition: "-bottom-6 -right-3 ml-2",
+    titleColor: "text-[#0B8F84]",
+    gridAlign: "xl:justify-self-start",
+    emoji: "🎯",
+    delay: 0.45,
+    items: [
+      { emoji: "👥", key: "itemOne" },
+      { emoji: "🏛️", key: "itemTwo" },
+      { emoji: "🎯", key: "itemThree" },
+    ],
+  },
+];
+
+function ServiceCard({
+  borderColor,
+  bgColor,
+  shadowColor,
+  iconBgColor,
+  iconPosition,
+  titleColor,
+  gridAlign,
+  emoji,
+  delay,
+  serviceKey,
+  items,
+  t,
+}) {
+  return (
+    <motion.div
+      {...createFlipInVariant(delay)}
+      className={`group relative flex flex-col items-center border-4 p-5 ${borderColor} rounded-3xl ${bgColor} h-[460px] w-[350px] ${shadowColor} transition-all duration-500 hover:-translate-y-2 ${gridAlign}`}
+    >
+      <div
+        className={`absolute flex ${iconPosition} ${iconBgColor} p-3 rounded-xl shadow-lg items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300`}
+      >
+        <span className="text-3xl">{emoji}</span>
+      </div>
+      <span
+        className={`text-3xl block text-left font-impact m-5 ${titleColor}`}
+      >
+        {t(`studentRetentionManagement.services.${serviceKey}.title`)}
+      </span>
+      <p className="text-base mb-3 text-blue-base text-justify">
+        {t(`studentRetentionManagement.services.${serviceKey}.description`)}
+      </p>
+      <ul>
+        {items.map(({ emoji: itemEmoji, key }) => (
+          <li
+            key={key}
+            className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]"
+          >
+            <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
+              {itemEmoji}
+            </span>
+            {t(`studentRetentionManagement.services.${serviceKey}.${key}`)}
+          </li>
+        ))}
+      </ul>
+    </motion.div>
+  );
+}
+
+ServiceCard.propTypes = {
+  borderColor: PropTypes.string.isRequired,
+  bgColor: PropTypes.string.isRequired,
+  shadowColor: PropTypes.string.isRequired,
+  iconBgColor: PropTypes.string.isRequired,
+  iconPosition: PropTypes.string.isRequired,
+  titleColor: PropTypes.string.isRequired,
+  gridAlign: PropTypes.string.isRequired,
+  emoji: PropTypes.string.isRequired,
+  delay: PropTypes.number.isRequired,
+  serviceKey: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      emoji: PropTypes.string.isRequired,
+      key: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  t: PropTypes.func.isRequired,
+};
 
 function StudentRetentionService() {
   const { t } = useTranslation();
-
-  const createFlipInVariant = (delayValue) => ({
-    initial: { opacity: 0, rotateY: -90, transformPerspective: 1000 },
-    whileInView: { opacity: 1, rotateY: 0 },
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-      delay: delayValue,
-    },
-    viewport: { once: true },
-  });
-
-  const expandableTransition = {
-    initial: { opacity: 0, scale: 0.5 },
-    whileInView: { opacity: 1, scale: 1 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true },
-  };
-
-  const floatSnake = (delay = 0) => ({
-    initial: { y: -5 },
-    animate: { y: [0, -20, 0] },
-    transition: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "linear",
-      delay,
-    },
-  });
-
-  const slideFromLeft = {
-    initial: { opacity: 0, x: -100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
-  const slideFromRight = {
-    initial: { opacity: 0, x: 100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
 
   return (
     <>
@@ -78,52 +187,9 @@ function StudentRetentionService() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-1 gap-8 mt-16 place-items-center">
-        <motion.div
-          {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-primary-yellow rounded-3xl bg-[#FFF8E6] h-[460px] w-[350px] hover:shadow-[0_10px_20px_0_#FFEBB8] transition-all duration-500 hover:-translate-y-2 xl:justify-self-end"
-        >
-          <div className="absolute flex -top-6 -left-5 ml-2 bg-primary-yellow p-3 rounded-xl shadow-lg items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-            <span className="text-3xl">📚</span>
-          </div>
-          <span className="text-3xl block text-left font-impact m-5 text-primary-yellow">
-            {t("studentRetentionManagement.services.academic.title")}
-          </span>
-          <p className="text-base mb-3 text-blue-base text-justify">
-            {t("studentRetentionManagement.services.academic.description")}
-          </p>
-          <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                📚
-              </span>
-              {t("studentRetentionManagement.services.academic.itemOne")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                🎓
-              </span>
-              {t("studentRetentionManagement.services.academic.itemTwo")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                👨‍👩‍👦
-              </span>
-              {t("studentRetentionManagement.services.academic.itemThree")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                ⚡
-              </span>
-              {t("studentRetentionManagement.services.academic.itemFour")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                ▶️
-              </span>
-              {t("studentRetentionManagement.services.academic.itemFive")}
-            </li>
-          </ul>
-        </motion.div>
+        {SERVICES_DATA.slice(0, 1).map((card) => (
+          <ServiceCard key={card.key} {...card} serviceKey={card.key} t={t} />
+        ))}
 
         <div className="relative hidden xl:block row-span-2 inset-0 m-auto bg-[#DCEBF9] rounded-full h-[400px] w-[400px] z-[2]">
           <div id="lines" className="relative w-[400px] h-[400px]">
@@ -158,139 +224,12 @@ function StudentRetentionService() {
           </motion.div>
         </div>
 
-        <motion.div
-          {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#2C9BC7] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2 xl:justify-self-start"
-        >
-          <div className="absolute -top-6 -right-3 ml-3 bg-[#2C9BC7] p-3 rounded-xl shadow-lg flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-            <span className="text-3xl">💙</span>
-          </div>
-          <span className="text-3xl block text-left font-impact m-5 text-[#2C9BC7]">
-            {t("studentRetentionManagement.services.socioEmotional.title")}
-          </span>
-          <p className="text-base mb-3 text-blue-base text-justify">
-            {t(
-              "studentRetentionManagement.services.socioEmotional.description",
-            )}
-          </p>
-          <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                💬
-              </span>
-              {t("studentRetentionManagement.services.socioEmotional.itemOne")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                🧠
-              </span>
-              {t("studentRetentionManagement.services.socioEmotional.itemTwo")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                💚
-              </span>
-              {t(
-                "studentRetentionManagement.services.socioEmotional.itemThree",
-              )}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                🧰
-              </span>
-              {t("studentRetentionManagement.services.socioEmotional.itemFour")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                😊
-              </span>
-              {t("studentRetentionManagement.services.socioEmotional.itemFive")}
-            </li>
-          </ul>
-        </motion.div>
-
-        <motion.div
-          {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#7C76B5] rounded-3xl bg-[#D3C3E3] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#D3C3E3] transition-all duration-500 hover:-translate-y-2 xl:justify-self-end"
-        >
-          <div className="absolute  -bottom-6 -left-5 ml-2 bg-[#7C76B5] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-            <span className="text-3xl">💰</span>
-          </div>
-          <span className="text-3xl block text-left font-impact m-5 text-[#7C76B5]">
-            {t("studentRetentionManagement.services.socioEconomic.title")}
-          </span>
-          <p className="text-base mb-3 text-blue-base text-justify">
-            {t("studentRetentionManagement.services.socioEconomic.description")}
-          </p>
-          <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                💻
-              </span>
-              {t("studentRetentionManagement.services.socioEconomic.itemOne")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                💰
-              </span>
-              {t("studentRetentionManagement.services.socioEconomic.itemTwo")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                🤝
-              </span>
-              {t("studentRetentionManagement.services.socioEconomic.itemThree")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                📊
-              </span>
-              {t("studentRetentionManagement.services.socioEconomic.itemFour")}
-            </li>
-          </ul>
-        </motion.div>
-
-        <motion.div
-          {...createFlipInVariant(1)}
-          className="group relative flex flex-col items-center border-4 p-5 border-[#0B8F84] rounded-3xl bg-[#CCEDE8] h-[460px] w-[350px]  hover:shadow-[0_10px_20px_0_#CCEDE8] transition-all duration-500 hover:-translate-y-2 xl:justify-self-start"
-        >
-          <div className="absolute -bottom-6 -right-3 ml-2 bg-[#0B8F84] p-3 rounded-xl shadow-lg flex items-center justify-center  transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-            <span className="text-3xl">🎯</span>
-          </div>
-          <span className="text-3xl block text-left font-impact m-5 text-[#0B8F84]">
-            {t("studentRetentionManagement.services.socioVocational.title")}
-          </span>
-          <p className="text-base mb-3 text-blue-base text-justify">
-            {t(
-              "studentRetentionManagement.services.socioVocational.description",
-            )}
-          </p>
-          <ul className="">
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                👥
-              </span>
-              {t("studentRetentionManagement.services.socioVocational.itemOne")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                🏛️
-              </span>
-              {t("studentRetentionManagement.services.socioVocational.itemTwo")}
-            </li>
-            <li className="group/emoji bg-white p-2 m-2 text-sm font-bold text-blue-base rounded-lg w-[260px]">
-              <span className="text-lg mr-2 inline-block transition-transform duration-300 group-hover/emoji:scale-125">
-                🎯
-              </span>
-              {t(
-                "studentRetentionManagement.services.socioVocational.itemThree",
-              )}
-            </li>
-          </ul>
-        </motion.div>
+        {SERVICES_DATA.slice(1).map((card) => (
+          <ServiceCard key={card.key} {...card} serviceKey={card.key} t={t} />
+        ))}
       </section>
 
-      <motion.div {...expandableTransition}>
+      <motion.div {...expandableTransition()}>
         <section className="flex justify-center items-center mt-10 m-1 mb-10 md:m-10 md:mt-24 px-3">
           <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-dark-blue via-primary-purple to-primary-purple w-full max-w-[1020px] h-auto shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             <section className="bg-white text-center p-8 md:p-10 w-full h-full rounded-3xl flex flex-col justify-center">
