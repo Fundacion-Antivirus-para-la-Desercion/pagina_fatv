@@ -62,6 +62,18 @@ function StepsAtvConnect() {
               {t("atvConnect.steps.step_three.description")}
             </p>
           </motion.div>
+          <motion.div
+            {...expandableTransition(1.2)}
+            className="relative flex flex-col items-center mt-5"
+          >
+            <span className="text-8xl font-impact text-[#F0F1F5]">04</span>
+            <p className="absolute bottom-6 text-xl text-dark-blue font-extrabold">
+              {t("atvConnect.steps.step_four.title")}
+            </p>
+            <p className="text-gray-400">
+              {t("atvConnect.steps.step_four.description")}
+            </p>
+          </motion.div>
         </section>
       </div>
     </section>

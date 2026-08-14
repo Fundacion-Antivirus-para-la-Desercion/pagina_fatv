@@ -1257,9 +1257,8 @@
       "br": "Academic Tutoring",
       "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
     },
-    "description_one": "ATVConecta is more than just a tutoring platform. It is ",
-    "description_span": "your partner in overcoming academic challenges,",
-    "description_two": " boosting your performance, and reaching your university goals with confidence.",
+    "description_one": "ATVConecta is more than academic review. We accompany you in your process, drive your transformation, and connect you with tutors",
+    "description_span": " to strengthen your educational path and achieve your goals.",
     "span_title": "OUR IMPACT",
     "title": "THE NUMBERS SPEAK FOR THEMSELVES",
     "figures_impact": {
@@ -1292,7 +1291,7 @@
     },
     "steps": {
       "span": "HOW IT WORKS",
-      "title": "3 STEPS:",
+      "title": "4 STEPS:",
       "span_two": " AS SIMPLE AS THAT",
       "step_one": {
         "title": "Sign up",
@@ -1305,6 +1304,10 @@
       "step_three": {
         "title": "Start learning",
         "description": "Book a session and improve your grades"
+      },
+      "step_four": {
+        "title": "Rate",
+        "description": "Share your experience"
       }
     },
     "subjects": {
@@ -1427,7 +1430,8 @@
       "start_now": "Ready to get started?",
       "paragraph_start": "Join students who are boosting their academic results.",
       "btn_start_free": "Start"
-    }
+    },
+    "description_two": " boosting your performance, and reaching your university goals with confidence."
   },
   "contactUs": {
     "metaDescription": "Contact us by WhatsApp, email, or visit us in La Estrella, Antioquia. We answer your questions about Fundación Antivirus para la Deserción.",

@@ -1260,9 +1260,8 @@
       "br": "Tutorías Académicas",
       "alt": "Tutores académicos de ATVConecta sonrientes y preparados para acompañar tu proceso de aprendizaje."
     },
-    "description_one": "ATVConecta es más que una plataforma de tutorías. Es tu ",
-    "description_span": "aliado para superar desafíos académicos,",
-    "description_two": " mejorar tu rendimiento y alcanzar tus objetivos universitarios con confianza.",
+    "description_one": "ATVConecta es más que repaso académico. Te acompañamos en tu proceso, impulsamos tu transformación y te conectamos con tutores",
+    "description_span": " para fortalecer tu camino educativo y alcanzar tus metas.",
     "span_title": "NUESTRO IMPACTO",
     "title": "CIFRAS QUE HABLAN",
     "figures_impact": {
@@ -1295,7 +1294,7 @@
     },
     "steps": {
       "span": "PROCESO",
-      "title": "3 PASOS:",
+      "title": "4 PASOS:",
       "span_two": "ASÍ DE SIMPLE",
       "step_one": {
         "title": "Regístrate",
@@ -1308,6 +1307,10 @@
       "step_three": {
         "title": "Aprende",
         "description": "Agenda y mejora tus notas"
+      },
+      "step_four": {
+        "title": "Valora",
+        "description": "Comparte tu experiencia"
       }
     },
     "subjects": {
@@ -1430,7 +1433,8 @@
       "start_now": "¿Listo para empezar?",
       "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
       "btn_start_free": "Comenzar"
-    }
+    },
+    "description_two": " "
   },
   "contactUs": {
     "metaDescription": "Contáctanos por WhatsApp, correo o visítanos en La Estrella, Antioquia. Resolvemos tus preguntas sobre la Fundación Antivirus para la Deserción.",
