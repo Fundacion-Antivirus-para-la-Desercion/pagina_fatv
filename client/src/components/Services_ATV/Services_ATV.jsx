@@ -201,6 +201,7 @@ const ServicesATV = () => {
                 <Link
                   className="flex items-center gap-2 mx-auto w-fit bg-primary-purple text-white p-2 px-14 rounded-3xl text-lg duration-300 mt-auto"
                   to={service.route}
+                  aria-label={`${t("home.servicesATV.services.more_info")} — ${t(service.titleKey)}`}
                 >
                   {t("home.servicesATV.services.more_info")}
                   <IoIosArrowForward className="transition-transform duration-300 group-hover:translate-x-1" />
