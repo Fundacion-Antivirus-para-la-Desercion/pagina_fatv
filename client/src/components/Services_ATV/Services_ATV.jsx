@@ -13,6 +13,13 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { useEffect, useMemo, useState } from "react";
 
+const RING_COLOR_MAP = {
+  "bg-dark-blue": "ring-dark-blue",
+  "bg-primary-yellow": "ring-primary-yellow",
+  "bg-primary-purple": "ring-primary-purple",
+  "bg-brand-teal-300": "ring-brand-teal-300",
+};
+
 const SERVICES_DATA = [
   {
     id: "permanence",
@@ -143,14 +150,8 @@ const ServicesATV = () => {
 
       <div className="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
         {SERVICES_DATA.map((service) => {
-          const ringColorMap = {
-            "bg-dark-blue": "ring-dark-blue",
-            "bg-primary-yellow": "ring-primary-yellow",
-            "bg-primary-purple": "ring-primary-purple",
-            "bg-brand-teal-300": "ring-brand-teal-300",
-          };
           const ringColor =
-            ringColorMap[service.imageBg] ?? "ring-primary-purple";
+            RING_COLOR_MAP[service.imageBg] ?? "ring-primary-purple";
 
           return (
             <div
