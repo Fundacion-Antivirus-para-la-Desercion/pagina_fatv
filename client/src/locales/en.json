@@ -1242,9 +1242,8 @@
       "br": "Academic Tutoring",
       "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
     },
-    "description_one": "ATVConecta is more than just a tutoring platform. It is ",
-    "description_span": "your partner in overcoming academic challenges,",
-    "description_two": " boosting your performance, and reaching your university goals with confidence.",
+    "description_one": "ATVConecta is more than academic review. We accompany you in your process, drive your transformation, and connect you with tutors",
+    "description_span": " to strengthen your educational path and achieve your goals.",
     "span_title": "OUR IMPACT",
     "title": "THE NUMBERS SPEAK FOR THEMSELVES",
     "figures_impact": {
@@ -1277,19 +1276,23 @@
     },
     "steps": {
       "span": "HOW IT WORKS",
-      "title": "3 STEPS:",
+      "title": "4 STEPS:",
       "span_two": " AS SIMPLE AS THAT",
       "step_one": {
-        "title": "Sign up",
-        "description": "Sign up for free"
+        "title": "Apply",
+        "description": "Find the support you need"
       },
       "step_two": {
-        "title": "Pick a tutor",
-        "description": "Filter by class and schedule"
+        "title": "Attend",
+        "description": "Connect with your tutor"
       },
       "step_three": {
-        "title": "Start learning",
-        "description": "Book a session and improve your grades"
+        "title": "Learn",
+        "description": "Strengthen your knowledge"
+      },
+      "step_four": {
+        "title": "Value",
+        "description": "Share your experience"
       }
     },
     "subjects": {
@@ -1375,8 +1378,8 @@
         "subtitle": "Persons",
         "description": "We connect students with our tutor network for individual review sessions in different subject areas, at their own pace and from anywhere.",
         "target": "Students seeking personalized support to improve their academic performance.",
-        "price_label": "$60,000",
-        "price_sub": "per session",
+        "price_label": "Cost of $60,000",
+        "price_sub": "Per session",
         "subtitle_two": "We deliver",
         "check_one": "One-on-one tutoring",
         "check_two": "Full schedule flexibility",
