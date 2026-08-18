@@ -20,6 +20,7 @@ const SERVICES_DATA = [
     imageBg: "bg-dark-blue",
     titleKey: "home.servicesATV.services.permanence_title",
     descriptionKey: "home.servicesATV.services.permanence_description",
+    altKey: "home.servicesATV.services.permanence_icon_alt",
     route: "/gestion-de-la-permanencia",
   },
   {
@@ -29,6 +30,7 @@ const SERVICES_DATA = [
     titleKey: "home.servicesATV.services.persistence_consulting_title",
     descriptionKey:
       "home.servicesATV.services.persistence_consulting_description",
+    altKey: "home.servicesATV.services.consulting_icon_alt",
     route: "/consultorias",
   },
   {
@@ -38,6 +40,7 @@ const SERVICES_DATA = [
     titleKey: "home.servicesATV.services.socio_vocational_guidance_title",
     descriptionKey:
       "home.servicesATV.services.socio_vocational_guidance_description",
+    altKey: "home.servicesATV.services.vocational_icon_alt",
     route: "/provocacion",
   },
   {
@@ -47,6 +50,7 @@ const SERVICES_DATA = [
     titleKey: "home.servicesATV.services.atvconnect_title",
     titleKeyTwo: "home.servicesATV.services.atvconnect_title_two",
     descriptionKey: "home.servicesATV.services.atvconnect_description",
+    altKey: "home.servicesATV.services.atvconnect_icon_alt",
     route: "/atvconnect",
   },
 ];
@@ -72,8 +76,8 @@ const ServicesATV = () => {
   const options = useMemo(
     () => ({
       fullScreen: {
-        enable: false, // <--- ESTO ES LO MÁS IMPORTANTE
-        zIndex: 0, // Asegura un z-index bajo si es necesario
+        enable: false,
+        zIndex: 0,
       },
       fpsLimit: 120,
       particles: {
@@ -116,7 +120,7 @@ const ServicesATV = () => {
   return (
     <section
       id="services"
-      className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue "
+      className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
     >
       <Particles
         id="tsparticles"
@@ -138,49 +142,73 @@ const ServicesATV = () => {
       </div>
 
       <div className="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
-        {SERVICES_DATA.map((service) => (
-          <div
-            key={service.id}
-            className="group relative flex flex-col bg-white p-4 border-4 border-white rounded-2xl shadow-2xl hover:translate-y-[-8px] transition-transform duration-300"
-          >
+        {SERVICES_DATA.map((service) => {
+          const ringColorMap = {
+            "bg-dark-blue": "ring-dark-blue",
+            "bg-primary-yellow": "ring-primary-yellow",
+            "bg-primary-purple": "ring-primary-purple",
+            "bg-brand-teal-300": "ring-brand-teal-300",
+          };
+          const ringColor =
+            ringColorMap[service.imageBg] ?? "ring-primary-purple";
+
+          return (
             <div
-              className={`flex justify-center items-center w-14 h-14 mx-auto mb-5 md:mb-10 ${service.imageBg} rounded-2xl transition-all duration-300 group-hover:scale-110`}
+              key={service.id}
+              className="group relative flex flex-col pt-10 hover:translate-y-[-8px] transition-transform duration-300"
             >
-              {service.Icon ? (
-                <service.Icon size={40} className="text-white" />
-              ) : (
-                <img
-                  src={service.image}
-                  alt={t("home.servicesATV.image_alt_text")}
-                  loading="lazy"
-                  className="w-full h-full object-contain rounded-2xl p-1"
-                />
-              )}
+              <div
+                className={`absolute top-0 left-6 z-10 w-20 h-20 rounded-full ring-4 ring-offset-2 ${ringColor} transition-transform duration-300 group-hover:scale-105`}
+              >
+                <div
+                  className={`w-full h-full rounded-full ${service.imageBg} flex items-center justify-center`}
+                >
+                  {service.Icon ? (
+                    <service.Icon
+                      size={36}
+                      className="text-white"
+                      aria-label={t(service.altKey)}
+                      role="img"
+                    />
+                  ) : (
+                    <img
+                      src={service.image}
+                      alt={t(service.altKey)}
+                      loading="lazy"
+                      className="w-full h-full object-contain rounded-full p-2"
+                    />
+                  )}
+                </div>
+              </div>
+
+              <div className="relative flex flex-col flex-1 bg-white p-4 border-4 border-white rounded-2xl shadow-2xl">
+                <div className="h-12" />
+
+                <h3 className="mb-5 md:mb-10 text-dark-blue text-xl font-extrabold text-center">
+                  {t(service.titleKey)}
+                  {service.titleKeyTwo && (
+                    <>
+                      <br />
+                      {t(service.titleKeyTwo)}
+                    </>
+                  )}
+                </h3>
+
+                <p className="mb-5 md:mb-12 text-blue-base text-md leading-relaxed text-center">
+                  {t(service.descriptionKey)}
+                </p>
+
+                <Link
+                  className="flex items-center gap-2 mx-auto w-fit bg-primary-purple text-white p-2 px-14 rounded-3xl text-lg duration-300 mt-auto"
+                  to={service.route}
+                >
+                  {t("home.servicesATV.services.more_info")}
+                  <IoIosArrowForward className="transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
             </div>
-
-            <h3 className="mb-5 md:mb-10 text-dark-blue text-xl font-extrabold text-center">
-              {t(service.titleKey)}
-              {service.titleKeyTwo && (
-                <>
-                  <br />
-                  {t(service.titleKeyTwo)}
-                </>
-              )}
-            </h3>
-
-            <p className="mb-5 md:mb-12 text-blue-base text-md leading-relaxed text-center">
-              {t(service.descriptionKey)}
-            </p>
-
-            <Link
-              className="flex items-center gap-2 mx-auto w-fit bg-primary-purple text-white p-2 px-14 rounded-3xl text-lg duration-300 mt-auto"
-              to={service.route}
-            >
-              {t("home.servicesATV.services.more_info")}
-              <IoIosArrowForward className="transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
