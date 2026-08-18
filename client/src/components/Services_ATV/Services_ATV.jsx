@@ -9,7 +9,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import { PiHandshake } from "react-icons/pi";
 import { IoIosArrowForward } from "react-icons/io";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from "react";
 
 const RING_COLOR_MAP = {
@@ -74,11 +74,6 @@ const ServicesATV = () => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log("particles conatiner");
-    console.log(container);
-  };
-
   const options = useMemo(
     () => ({
       fullScreen: {
@@ -131,7 +126,6 @@ const ServicesATV = () => {
       {init && (
         <Particles
           id="tsparticles"
-          particlesLoaded={particlesLoaded}
           options={options}
           className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
         />
