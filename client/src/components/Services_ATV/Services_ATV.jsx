@@ -17,7 +17,7 @@ const SERVICES_DATA = [
   {
     id: "permanence",
     Icon: LuGraduationCap,
-    imageBg: "bg-primary-yellow",
+    imageBg: "bg-dark-blue",
     titleKey: "home.servicesATV.services.permanence_title",
     descriptionKey: "home.servicesATV.services.permanence_description",
     route: "/gestion-de-la-permanencia",
