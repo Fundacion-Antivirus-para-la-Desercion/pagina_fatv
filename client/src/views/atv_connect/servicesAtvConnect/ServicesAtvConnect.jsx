@@ -1,7 +1,6 @@
 import { IoMdTime } from "react-icons/io";
 import { FaMedal } from "react-icons/fa";
-import { BsRocketTakeoff } from "react-icons/bs";
-import { BsPersonCheckFill } from "react-icons/bs";
+import { BsRocketTakeoff, BsPersonCheckFill } from "react-icons/bs";
 import { DoodleLine } from "../../../assets/images/svg/Svg";
 import { useTranslation } from "react-i18next";
 import { LuBookOpen } from "react-icons/lu";
