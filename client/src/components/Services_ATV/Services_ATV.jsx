@@ -128,12 +128,14 @@ const ServicesATV = () => {
       id="services"
       className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
     >
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-        className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
-      />
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+          className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
+        />
+      )}
 
       <div className="relative text-center">
         <span className="inline-block mb-5 text-primary-purple text-xs tracking-nm bg-brand-purple-200/20 rounded-3xl py-2 px-4 border border-brand-purple-100">
