@@ -1,178 +1,213 @@
 import "./Services_ATV.css";
-import "boxicons";
 import { useTranslation } from "react-i18next";
 import {
   FOCUS_BLANCO_IMG as Focus,
-  GRADUACION_EXITOSA_IMG as Graduados,
-  ALIADOS_PERMANENCIA_IMG as Aliados,
-  LOGO_ATV_CONECTA_IMG as LogoAtvConecta,
+  JAVI_CARA_ATV_CONECTA_IMG as LogoAtvConecta,
 } from "../../assets/cloudinaryImages";
 import { Link } from "react-router-dom";
+import { LuGraduationCap } from "react-icons/lu";
+import { PiHandshake } from "react-icons/pi";
+import { IoIosArrowForward } from "react-icons/io";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+import { useEffect, useMemo, useState } from "react";
+
+const RING_COLOR_MAP = {
+  "bg-dark-blue": "ring-dark-blue",
+  "bg-primary-yellow": "ring-primary-yellow",
+  "bg-primary-purple": "ring-primary-purple",
+  "bg-brand-teal-300": "ring-brand-teal-300",
+};
+
+const SERVICES_DATA = [
+  {
+    id: "permanence",
+    Icon: LuGraduationCap,
+    imageBg: "bg-dark-blue",
+    titleKey: "home.servicesATV.services.permanence_title",
+    descriptionKey: "home.servicesATV.services.permanence_description",
+    altKey: "home.servicesATV.services.permanence_icon_alt",
+    route: "/gestion-de-la-permanencia",
+  },
+  {
+    id: "consulting",
+    Icon: PiHandshake,
+    imageBg: "bg-primary-purple",
+    titleKey: "home.servicesATV.services.persistence_consulting_title",
+    descriptionKey:
+      "home.servicesATV.services.persistence_consulting_description",
+    altKey: "home.servicesATV.services.consulting_icon_alt",
+    route: "/consultorias",
+  },
+  {
+    id: "vocational",
+    image: Focus,
+    imageBg: "bg-primary-yellow",
+    titleKey: "home.servicesATV.services.socio_vocational_guidance_title",
+    descriptionKey:
+      "home.servicesATV.services.socio_vocational_guidance_description",
+    altKey: "home.servicesATV.services.vocational_icon_alt",
+    route: "/provocacion",
+  },
+  {
+    id: "atvconnect",
+    image: LogoAtvConecta,
+    imageBg: "bg-brand-teal-300",
+    titleKey: "home.servicesATV.services.atvconnect_title",
+    titleKeyTwo: "home.servicesATV.services.atvconnect_title_two",
+    descriptionKey: "home.servicesATV.services.atvconnect_description",
+    altKey: "home.servicesATV.services.atvconnect_icon_alt",
+    route: "/atvconnect",
+  },
+];
 
 const ServicesATV = () => {
   const { t } = useTranslation();
 
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const options = useMemo(
+    () => ({
+      fullScreen: {
+        enable: false,
+        zIndex: 0,
+      },
+      fpsLimit: 120,
+      particles: {
+        number: {
+          value: 200,
+          density: {
+            enable: true,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+        },
+        opacity: {
+          value: 0.7,
+          random: true,
+        },
+        size: {
+          value: { min: 1, max: 3 },
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "bottom",
+          random: true,
+          straight: false,
+          outModes: {
+            default: "out",
+          },
+        },
+      },
+      detectRetina: true,
+    }),
+    [],
+  );
+
   return (
-      <section
-        id="services"
-        className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
-      >
-        <div className="flex flex-col items-center">
-          <section>
-            
-            <div>
-              <h1 className="font-impact text-center text-3xl md:text-5xl mb-10 md:mb-10 text-white">
-                {t("home.servicesATV.title")}
-              </h1>
-            </div>
-          </section>
+    <section
+      id="services"
+      className="relative text-blue-base p-5 py-10 md:py-16 bg-dark-blue"
+    >
+      {init && (
+        <Particles
+          id="tsparticles"
+          options={options}
+          className="absolute top-0 left-0 w-full h-full z-0 bg-dark-blue"
+        />
+      )}
 
-          <section className="container flex flex-wrap gap-10 md:gap-5 justify-center  items-stretch">
-            <div className="relative bg-white p-4 border-4 border-white rounded-xl shadow-2xl max-w-[300px] mb-5">
-              <section className="mb-5 md:mb-10">
-                <div className="flex justify-center">
-                  <img
-                    className="w-24 bg-primary-yellow rounded-full"
-                    src={Graduados}
-                    alt={t("home.servicesATV.image_alt_text")}
-                    loading="lazy"
-                  />
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
-                    {t("home.servicesATV.services.permanence_title")}
-                  </h3>
-                  <p className="mb-5 md:mb-8 text-justify">
-                    {t("home.servicesATV.services.permanence_description")}
-                  </p>
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <Link
-                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
-                    to="/gestion-de-la-permanencia"
-                  >
-                    {t("home.servicesATV.services.more_info")}
-                  </Link>
-                </div>
-              </section>
-            </div>
+      <div className="relative text-center">
+        <span className="inline-block mb-5 text-primary-purple text-xs tracking-nm bg-brand-purple-200/20 rounded-3xl py-2 px-4 border border-brand-purple-100">
+          FUNDACIÓN ATV
+        </span>
 
-            <div className="relative bg-white p-4 border-4 border-white rounded-xl shadow-2xl max-w-[300px] mb-5">
-              <section className="mb-5 md:mb-10">
-                <div className="flex justify-center">
-                  <img
-                    className="w-24 bg-dark-blue rounded-full"
-                    src={Aliados}
-                    alt={t("home.servicesATV.image_alt_text")}
-                    loading="lazy"
-                  />
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
-                    {t(
-                      "home.servicesATV.services.persistence_consulting_title"
-                    )}
-                  </h3>
-                  <p className="mb-5 md:mb-8 text-justify">
-                    {t(
-                      "home.servicesATV.services.persistence_consulting_description"
-                    )}
-                  </p>
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <Link
-                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
-                    to="/consultorias"
-                  >
-                    {t("home.servicesATV.services.more_info")}
-                  </Link>
-                </div>
-              </section>
-            </div>
+        <h2 className="font-impact text-3xl md:text-5xl mb-5 text-white">
+          {t("home.servicesATV.title")}
+        </h2>
 
-            <div className="relative bg-white p-4 border-4 border-white rounded-xl shadow-2xl max-w-[300px] mb-5">
-              <section className="mb-5 md:mb-10">
-                <div className="flex justify-center">
-                  <img
-                    className="w-24 bg-primary-purple rounded-full"
-                    src={Focus}
-                    alt={t("home.servicesATV.image_alt_text")}
-                    loading="lazy"
-                  />
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
-                    {t(
-                      "home.servicesATV.services.socio_vocational_guidance_title"
-                    )}
-                  </h3>
-                  <p className="mb-5 md:mb-8 text-justify">
-                    {t(
-                      "home.servicesATV.services.socio_vocational_guidance_description"
-                    )}
-                  </p>
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <Link
-                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
-                    to="/provocacion"
-                  >
-                    {t("home.servicesATV.services.more_info")}
-                  </Link>
-                </div>
-              </section>
-            </div>
+        <hr className="mx-auto border-2 border-primary-yellow max-w-32 mb-10 rounded-sm" />
+      </div>
 
-            <div className="relative bg-white p-4 border-4 border-white rounded-xl shadow-2xl max-w-[300px] mb-5">
-              <section className="mb-5 md:mb-10">
-                <div className="flex justify-center">
-                  <img
-                    className="w-24 bg-primary-yellow rounded-full"
-                    src={LogoAtvConecta}
-                    alt={t("home.servicesATV.image_alt_text")}
-                    loading="lazy"
-                  />
-                </div>
-              </section>
-              <section>
-                <div className="">
-                  <h3 className="mb-5 md:mb-10 text-blue-base text-lg text-center font-bold">
-                    {t("home.servicesATV.services.atvconnect_title")}
-                    <br />
-                    {t("home.servicesATV.services.atvconnect_title_two")}
-                  </h3>
+      <div className="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
+        {SERVICES_DATA.map((service) => {
+          const ringColor =
+            RING_COLOR_MAP[service.imageBg] ?? "ring-primary-purple";
 
-                  <p className="mb-5 md:mb-8 text-justify">
-                    {t("home.servicesATV.services.atvconnect_description")}
-                  </p>
+          return (
+            <div
+              key={service.id}
+              className="group relative flex flex-col pt-10 hover:translate-y-[-8px] transition-transform duration-300"
+            >
+              <div
+                className={`absolute top-0 left-6 z-10 w-20 h-20 rounded-full ring-4 ring-offset-2 ${ringColor} transition-transform duration-300 group-hover:scale-105`}
+              >
+                <div
+                  className={`w-full h-full rounded-full ${service.imageBg} flex items-center justify-center`}
+                >
+                  {service.Icon ? (
+                    <service.Icon
+                      size={36}
+                      className="text-white"
+                      aria-label={t(service.altKey)}
+                      role="img"
+                    />
+                  ) : (
+                    <img
+                      src={service.image}
+                      alt={t(service.altKey)}
+                      loading="lazy"
+                      className="w-full h-full object-contain rounded-full p-2"
+                    />
+                  )}
                 </div>
-              </section>
-              <section>
-                <div className="">
-                  <Link
-                    className="block m-auto w-fit bg-primary-yellow text-white p-4 px-8 rounded-xl text-lg absolute bottom-[-30px] left-0 right-0 duration-300 hover:-translate-y-1"
-                    to="/atvconnect"
-                  >
-                    {t("home.servicesATV.services.more_info")}
-                  </Link>
-                </div>
-              </section>
+              </div>
+
+              <div className="relative flex flex-col flex-1 bg-white p-4 border-4 border-white rounded-2xl shadow-2xl">
+                <div className="h-12" />
+
+                <h3 className="mb-5 md:mb-10 text-dark-blue text-xl font-extrabold text-center">
+                  {t(service.titleKey)}
+                  {service.titleKeyTwo && (
+                    <>
+                      <br />
+                      {t(service.titleKeyTwo)}
+                    </>
+                  )}
+                </h3>
+
+                <p className="mb-5 md:mb-12 text-blue-base text-md leading-relaxed text-center">
+                  {t(service.descriptionKey)}
+                </p>
+
+                <Link
+                  className="flex items-center gap-2 mx-auto w-fit bg-primary-purple text-white p-2 px-14 rounded-3xl text-lg duration-300 mt-auto"
+                  to={service.route}
+                  aria-label={`${t("home.servicesATV.services.more_info")} — ${t(service.titleKey)}`}
+                >
+                  {t("home.servicesATV.services.more_info")}
+                  <IoIosArrowForward className="transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
             </div>
-          </section>
-        </div>
-      </section>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 
