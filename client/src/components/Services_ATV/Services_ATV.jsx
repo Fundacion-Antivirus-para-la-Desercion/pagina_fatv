@@ -168,7 +168,7 @@ const ServicesATV = () => {
               )}
             </h3>
 
-            <p className="mb-5 md:mb-12 text-blue-base text-md leading-relaxed">
+            <p className="mb-5 md:mb-12 text-blue-base text-md leading-relaxed text-center">
               {t(service.descriptionKey)}
             </p>
 
