@@ -1,5 +1,4 @@
 import "./Services_ATV.css";
-import "boxicons";
 import { useTranslation } from "react-i18next";
 import {
   FOCUS_BLANCO_IMG as Focus,
