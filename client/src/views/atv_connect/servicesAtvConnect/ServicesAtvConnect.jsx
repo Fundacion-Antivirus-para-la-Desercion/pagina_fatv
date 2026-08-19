@@ -8,7 +8,7 @@ import { JAVI_CON_PORTATIL_IMG as Javi } from "../../../assets/cloudinaryImages"
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from "react";
-
+import { slideFromRight } from "../../../components/motion/constants/Animations.js";
 const SERVICE_ITEMS = [
   {
     Icon: FaUserFriends,
@@ -66,13 +66,6 @@ function ServicesAtvConnect() {
     [],
   );
 
-  const slideFromRight = {
-    initial: { opacity: 0, x: 100 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
   return (
     <section className="flex flex-wrap items-center justify-center gap-8 p-10">
       <div className="relative flex items-end justify-center md:mr-32">
@@ -111,7 +104,10 @@ function ServicesAtvConnect() {
           {SERVICE_ITEMS.map(({ Icon, titleKey, descKey }) => (
             <motion.article
               key={titleKey}
-              {...slideFromRight}
+              {...slideFromRight({
+                transition: { delay: 0.5 },
+                viewport: { amount: 0.1 },
+              })}
               className="h-full"
             >
               <div className="flex flex-col h-full bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-500">
