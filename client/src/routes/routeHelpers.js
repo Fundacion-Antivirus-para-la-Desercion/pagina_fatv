@@ -1,58 +1,91 @@
-import { DEFAULT_LANG, LANGS, ROUTE_SLUGS } from "./routes.config.js";
+import { DEFAULT_LANGUAGE, LANGUAGES, SLUGS_PAGES } from "./routes.config.js";
+
+/** Obtiene el idioma de la pagina; si recibe un lang que no es permitido, devuelve el idioma por defecto. */
+const getLanguage = (lang) =>
+  LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+
+/** Devuelve el slug de la página para el idioma indicado: "fundacion" en es, "foundation" en en. */
+const getSlugByKeyAndLanguage = (key, lang) => SLUGS_PAGES[key]?.[lang];
+
+/** Lo que se devuelve cuando la dirección no corresponde a ninguna página. */
+const NO_MATCH = Object.freeze({ key: null, lang: DEFAULT_LANGUAGE });
 
 /**
- * Helpers de rutas localizadas.
+ * Construye la URL completa de una página en el idioma indicado.
  *
- * Igual que `routes.config.js`, este archivo debe permanecer libre de JSX y de
- * dependencias de Vite: lo importa `scripts/generateSEO.js` desde Node.
- */
-
-const normalizeLang = (lang) => (LANGS.includes(lang) ? lang : DEFAULT_LANG);
-
-/**
- * Construye el path absoluto de una ruta en un idioma.
  * buildPath("foundation", "en") -> "/en/foundation"
+ * buildPath("foundation", "es") -> "/es/fundacion"
  * buildPath("home", "es")       -> "/es"
+ * buildPath("foundation", "pt") -> "/es/fundacion"   idioma no soportado: cae al español
+ *
+ * @throws {Error} Si la clave de página no existe en la configuración. Falla en el
+ *   primer render para detectar enlaces rotos en desarrollo, antes de que lleguen a producción.
  */
 export const buildPath = (key, lang) => {
-  const safeLang = normalizeLang(lang);
-  const slug = ROUTE_SLUGS[key]?.[safeLang];
+  const language = getLanguage(lang);
+  const slug = getSlugByKeyAndLanguage(key, language);
 
   if (slug === undefined) {
     throw new Error(
-      `[routes] La key "${key}" no existe en ROUTE_SLUGS (idioma "${safeLang}").`
+      `[routes] La key "${key}" no existe en ROUTE_SLUGS (idioma "${language}").`,
     );
   }
 
-  return slug ? `/${safeLang}/${slug}` : `/${safeLang}`;
+  return slug === "" ? `/${language}` : `/${language}/${slug}`;
 };
 
 /**
- * Lookup inverso: de un pathname a la key lógica y el idioma.
- * Devuelve `{ key: null }` si el pathname no corresponde a ninguna ruta
- * conocida (404, o una URL legacy todavía sin migrar).
+ * Separa una dirección en sus dos partes: el idioma y slug.
+ *
+ * "/es/fundacion"        -> { lang: "es", slug: "fundacion" }
+ * "/es/noticias/detalle" -> { lang: "es", slug: "noticias/detalle" }
+ * "/es"                  -> { lang: "es", slug: "" }
  */
-export const resolveRoute = (pathname) => {
+const splitPathnameByLanguageAndSlug = (pathname) => {
   const segments = String(pathname).toLowerCase().split("/").filter(Boolean);
-  const [maybeLang, ...rest] = segments;
 
-  if (!LANGS.includes(maybeLang)) return { key: null, lang: DEFAULT_LANG };
+  const [langSegment, ...slugSegments] = segments;
 
-  const slug = rest.join("/");
-  const key =
-    Object.keys(ROUTE_SLUGS).find(
-      (routeKey) => ROUTE_SLUGS[routeKey][maybeLang].toLowerCase() === slug
-    ) ?? null;
-
-  return { key, lang: maybeLang };
+  return { lang: langSegment, slug: slugSegments.join("/") };
 };
 
 /**
- * Idioma preferido para la redirección desde "/".
- * La URL es la fuente de verdad del idioma en el resto de la app; localStorage
- * solo decide a dónde entra alguien que llega a la raíz.
+ * Identifica qué página corresponde a una URL y en qué idioma está.
+ * Es la operación inversa de buildPath.
+ *
+ * resolveRoute("/es/fundacion")  -> { key: "foundation", lang: "es" }
+ * resolveRoute("/EN/Foundation") -> { key: "foundation", lang: "en" }
+ * resolveRoute("/fundacion")     -> { key: null,         lang: "es" }
+ *
+ * key es null cuando la URL no corresponde a ninguna página conocida: un 404
+ * o una dirección anterior a la migración. lang siempre devuelve un valor válido.
  */
-export const detectPreferredLang = () => {
-  if (typeof window === "undefined") return DEFAULT_LANG;
-  return normalizeLang(window.localStorage.getItem("i18nextLng")?.slice(0, 2));
+export const getPageFromURL = (pathname) => {
+  const { lang, slug } = splitPathnameByLanguageAndSlug(pathname);
+
+  if (!LANGUAGES.includes(lang)) return NO_MATCH;
+
+  return {
+    key:
+      Object.keys(SLUGS_PAGES).find(
+        (key) => getSlugByKeyAndLanguage(key, lang).toLowerCase() === slug,
+      ) ?? null,
+    lang,
+  };
+};
+
+/**
+ * Obtiene el idioma por defecto del usuario al entrar por la raíz (/).
+ *
+ * En todas las demás rutas el idioma viene en la URL (/es/..., /en/...).
+ * Aquí no hay URL que consultar, así que se lee del localStorage y del
+ * navegador para decidir a cuál versión redirigir.
+ */
+export const getDefaultLanguage = () => {
+  if (typeof window === "undefined") return DEFAULT_LANGUAGE;
+
+  const stored = window.localStorage.getItem("i18nextLng");
+  const langCode = stored?.slice(0, 2);
+
+  return getLanguage(langCode);
 };

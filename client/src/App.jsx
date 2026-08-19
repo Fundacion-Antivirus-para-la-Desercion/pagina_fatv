@@ -1,8 +1,8 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import LangLayout from "./components/layout/LangLayout";
-import { detectPreferredLang } from "./routes/routeHelpers";
-import { LANGS, ROUTE_SLUGS } from "./routes/routes.config";
+import { getDefaultLanguage } from "./routes/routeHelpers";
+import { LANGUAGES, SLUGS_PAGES } from "./routes/routes.config";
 import { PAGES } from "./routes/routes.pages.jsx";
 import NotFound from "./views/NotFound";
 
@@ -17,12 +17,12 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Navigate to={`/${detectPreferredLang()}`} replace />}
+          element={<Navigate to={`/${getDefaultLanguage()}`} replace />}
         />
 
-        {LANGS.map((lang) => (
+        {LANGUAGES.map((lang) => (
           <Route key={lang} path={lang} element={<LangLayout lang={lang} />}>
-            {Object.entries(ROUTE_SLUGS).map(([key, slugs]) =>
+            {Object.entries(SLUGS_PAGES).map(([key, slugs]) =>
               slugs[lang] === "" ? (
                 <Route key={key} index element={PAGES[key]} />
               ) : (

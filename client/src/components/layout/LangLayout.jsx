@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { LANGS } from "../../routes/routes.config";
+import { LANGUAGES } from "../../routes/routes.config";
 import Layout from "./Layout";
 
 /**
@@ -29,7 +29,7 @@ const LangLayout = ({ lang }) => {
 };
 
 LangLayout.propTypes = {
-  lang: PropTypes.oneOf(LANGS).isRequired,
+  lang: PropTypes.oneOf(LANGUAGES).isRequired,
 };
 
 export default LangLayout;

@@ -3,10 +3,10 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { buildPath } from "../../routes/routeHelpers";
 import {
-  DEFAULT_LANG,
-  LANGS,
+  DEFAULT_LANGUAGE,
+  LANGUAGES,
   ORIGIN,
-  ROUTE_SLUGS,
+  SLUGS_PAGES,
 } from "../../routes/routes.config";
 import { useRoute } from "../../routes/useRoute";
 
@@ -50,7 +50,7 @@ const SeoHead = ({
       {pageDescription && <meta name="description" content={pageDescription} />}
 
       <link rel="canonical" href={canonical} />
-      {LANGS.map((alternateLang) => (
+      {LANGUAGES.map((alternateLang) => (
         <link
           key={alternateLang}
           rel="alternate"
@@ -61,7 +61,7 @@ const SeoHead = ({
       <link
         rel="alternate"
         hrefLang="x-default"
-        href={`${ORIGIN}${buildPath(routeKey, DEFAULT_LANG)}${search}`}
+        href={`${ORIGIN}${buildPath(routeKey, DEFAULT_LANGUAGE)}${search}`}
       />
 
       <meta property="og:type" content="website" />
@@ -77,7 +77,7 @@ const SeoHead = ({
 };
 
 SeoHead.propTypes = {
-  routeKey: PropTypes.oneOf(Object.keys(ROUTE_SLUGS)).isRequired,
+  routeKey: PropTypes.oneOf(Object.keys(SLUGS_PAGES)).isRequired,
   titleKey: PropTypes.string,
   descriptionKey: PropTypes.string,
   title: PropTypes.string,

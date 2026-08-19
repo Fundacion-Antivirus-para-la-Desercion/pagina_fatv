@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { ROUTE_SLUGS } from "../../routes/routes.config";
+import { SLUGS_PAGES } from "../../routes/routes.config";
 import { useRoute } from "../../routes/useRoute";
 
 /**
@@ -22,7 +22,7 @@ const LocalizedLink = ({ routeKey, children, ...linkProps }) => {
 };
 
 LocalizedLink.propTypes = {
-  routeKey: PropTypes.oneOf(Object.keys(ROUTE_SLUGS)).isRequired,
+  routeKey: PropTypes.oneOf(Object.keys(SLUGS_PAGES)).isRequired,
   children: PropTypes.node,
 };
 

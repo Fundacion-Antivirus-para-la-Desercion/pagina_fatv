@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { buildPath, resolveRoute } from "./routeHelpers";
+import { buildPath, getPageFromURL } from "./routeHelpers";
 
 /**
  * Acceso a la ruta actual en términos de la key lógica, no del string de URL.
@@ -12,7 +12,7 @@ import { buildPath, resolveRoute } from "./routeHelpers";
  */
 export const useRoute = () => {
   const location = useLocation();
-  const { key: routeKey, lang } = resolveRoute(location.pathname);
+  const { key: routeKey, lang } = getPageFromURL(location.pathname);
 
   const to = (key) => buildPath(key, lang);
 

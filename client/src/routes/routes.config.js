@@ -7,8 +7,8 @@
  * script de sitemap se rompe. El mapa de componentes vive en `routes.pages.jsx`.
  */
 
-export const LANGS = ["es", "en"];
-export const DEFAULT_LANG = "es";
+export const LANGUAGES = ["es", "en"];
+export const DEFAULT_LANGUAGE = "es";
 
 export const ORIGIN = "https://pagina-web-antivirus.web.app";
 
@@ -19,7 +19,7 @@ export const ORIGIN = "https://pagina-web-antivirus.web.app";
  * `provocacion` y `atv-conecta/atv-connect` conservan el nombre del programa
  * en ambos idiomas: son marca, no texto traducible.
  */
-export const ROUTE_SLUGS = {
+export const SLUGS_PAGES = {
   home: { es: "", en: "" },
   foundation: { es: "fundacion", en: "foundation" },
   dataAnalytics: { es: "analitica-de-datos", en: "data-analytics" },
