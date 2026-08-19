@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocalizedLink from "../../../components/routing/LocalizedLink";
 import { FaArrowLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
 
@@ -11,8 +11,8 @@ import PropTypes from "prop-types";
  */
 const BackButton = ({ label, alt }) => {
   return (
-    <Link
-      to="/News"
+    <LocalizedLink
+      routeKey="news"
       className="group flex items-center text-xl text-primary-purple cursor-pointer font-bold mr-7"
     >
       <FaArrowLeft
@@ -21,7 +21,7 @@ const BackButton = ({ label, alt }) => {
         aria-label={alt}
       />
       {label}
-    </Link>
+    </LocalizedLink>
   );
 };
 

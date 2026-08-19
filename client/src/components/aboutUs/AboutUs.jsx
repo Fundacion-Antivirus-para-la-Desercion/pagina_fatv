@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocalizedLink from "../routing/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -26,9 +26,9 @@ function AboutUs() {
               {t("home.aboutUs.paragraph2_strong")}
             </strong>
           </p>
-          <Link
+          <LocalizedLink
             className="group flex mt-5 md:mt-2 justify-center md:justify-start font-bold items-center text-base text-primary-purple cursor-pointer"
-            to="/fundacion"
+            routeKey="foundation"
           >
             {t("home.aboutUs.button")}
             <FaArrowRight
@@ -36,7 +36,7 @@ function AboutUs() {
               size={20}
               aria-label={t("home.aboutUs.alt_arrow")}
             />
-          </Link>
+          </LocalizedLink>
         </div>
       </div>
     </div>

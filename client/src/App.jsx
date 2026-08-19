@@ -1,43 +1,36 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./views/Home";
-import DonationPay from "./views/DonationPay";
-import DataAnalytics from "./views/DataAnalytics/DataAnalytics.jsx";
-import Foundation from "./views/Foundation/Foundation.jsx";
-import ContacUs from "./views/ContacUs/ContacUs";
-import Communications from "./views/Communications/Communications.jsx";
-import Consultorias from "./views/Consulting/Consultorias.jsx";
+import LangLayout from "./components/layout/LangLayout";
+import { detectPreferredLang } from "./routes/routeHelpers";
+import { LANGS, ROUTE_SLUGS } from "./routes/routes.config";
+import { PAGES } from "./routes/routes.pages.jsx";
 import NotFound from "./views/NotFound";
-import Layout from "./components/layout/Layout";
-import ProVocacion from "./views/ProVocacion";
-import AtvConnect from "./views/atv_connect/AtvConnect.jsx";
-import News from "./components/News/News";
-import NewsDetail from "./views/NewsDetail/NewsDetail.jsx";
-import StudentRetentionManagement from "./views/StudentRetentionManagement.jsx";
-import SocialIntervention from "./views/SocialIntervention/SocialIntervention.jsx";
 
+/**
+ * Un subárbol de rutas por idioma, cada uno registrando SOLO sus propios slugs.
+ * Registrarlos todos bajo un "/:lang" genérico haría que /es/foundation también
+ * resolviera, generando contenido duplicado para los buscadores.
+ */
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/DonationPay" element={<DonationPay />} />
-          <Route path="/social-intervention" element={<SocialIntervention />} />
-          <Route path="/dataAnalytics" element={<DataAnalytics />} />{" "}
-          <Route path="/Comunicaciones" element={<Communications />} />
-          <Route path="/fundacion" element={<Foundation />} />
-          <Route path="/News" element={<News />} />
-          <Route path="/ContactUs" element={<ContacUs />} />
-          <Route
-            path="/gestion-de-la-permanencia"
-            element={<StudentRetentionManagement />}
-          />
-          <Route path="/consultorias" element={<Consultorias />} />
-          <Route path="/provocacion" element={<ProVocacion />} />
-          <Route path="/atvconnect" element={<AtvConnect />} />
-          <Route path="/news/detail" element={<NewsDetail />} />
-        </Route>
+        <Route
+          path="/"
+          element={<Navigate to={`/${detectPreferredLang()}`} replace />}
+        />
+
+        {LANGS.map((lang) => (
+          <Route key={lang} path={lang} element={<LangLayout lang={lang} />}>
+            {Object.entries(ROUTE_SLUGS).map(([key, slugs]) =>
+              slugs[lang] === "" ? (
+                <Route key={key} index element={PAGES[key]} />
+              ) : (
+                <Route key={key} path={slugs[lang]} element={PAGES[key]} />
+              )
+            )}
+          </Route>
+        ))}
 
         <Route path="*" element={<NotFound />} />
       </Routes>

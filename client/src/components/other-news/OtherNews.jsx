@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 import buildNewsArray from "../News/newsArray.js";
 import { useNavigate } from "react-router-dom";
+import { useRoute } from "../../routes/useRoute";
 import { useTranslation } from "react-i18next";
 
 function OtherNews({ newSlug }) {
   const navigate = useNavigate();
+  const { to } = useRoute();
   const { t } = useTranslation();
 
   const relatedNews = useMemo(() => {
@@ -32,7 +34,7 @@ function OtherNews({ newSlug }) {
               <button
                 type="button"
                 className="w-full text-left cursor-pointer"
-                onClick={() => navigate("/news/detail", { state: { news } })}
+                onClick={() => navigate(to("newsDetail"), { state: { news } })}
               >
                 <div className="grid grid-cols-[4fr_6fr] gap-4 items-center">
                   <div>

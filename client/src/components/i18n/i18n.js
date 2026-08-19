@@ -20,8 +20,11 @@ i18n
     ns: ['translation'],
     defaultNS: 'translation',
     detection: {
-      // Prefer persisted user choice; default to fallback 'es'
-      order: ['localStorage', 'querystring', 'cookie'],
+      // La URL manda: /en/... arranca en inglés sin flash de español.
+      // localStorage queda como memoria de la última elección, para decidir
+      // a dónde redirige "/" (ver detectPreferredLang en routes/routeHelpers).
+      order: ['path', 'localStorage', 'querystring', 'cookie'],
+      lookupFromPathIndex: 0,
       caches: ['localStorage'],
       lookupLocalStorage: 'i18nextLng',
     },

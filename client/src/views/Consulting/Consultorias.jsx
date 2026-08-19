@@ -1,3 +1,4 @@
+import SeoHead from "../../components/seo/SeoHead";
 import {
   BANNER_CONSULTING_IMG as BannerConsulting,
   CARD_CONSULTING_IMG as card,
@@ -9,7 +10,6 @@ import { RiFocus2Line } from "react-icons/ri";
 import { FaLightbulb, FaStar,FaGraduationCap, FaUserFriends} from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
 
@@ -49,10 +49,11 @@ function Consultorias() {
 
   return (
     <>
-      <Helmet>
-        <title>{t("consultorias.banner.h1")} | Fundación Antivirus para la Deserción</title>
-        <meta name="description" content={t("consultorias.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="consulting"
+        titleKey="consultorias.banner.h1"
+        descriptionKey="consultorias.metaDescription"
+      />
       <div className="relative lg:pt-[145px] ">
         <BannerView
           imagesBannerMap={{

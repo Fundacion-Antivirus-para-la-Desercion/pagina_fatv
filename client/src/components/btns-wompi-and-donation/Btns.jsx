@@ -1,26 +1,23 @@
-import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import LocalizedLink from "../routing/LocalizedLink";
 import styles from "./Btns.module.css";
 import { ICON_DONATION_IMG as IconDonation } from "../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
+import { useRoute } from "../../routes/useRoute";
+
+// Estas dos páginas tienen su propio CTA fijo en la misma posición de la
+// pantalla, así que el botón flotante de donación se oculta ahí.
+const HIDDEN_ON = ["provocacion", "atvConnect"];
 
 function Btns() {
   const { t } = useTranslation();
-  const location = useLocation();
-  const [showDonationPay, setShowDonationPay] = useState(false);
-
-  useEffect(() => {
-    const sessionStorageValue =
-      location.pathname.toLowerCase() === "/provocacion" || location.pathname.toLowerCase() === "/atvconnect" ? false : true;
-
-    setShowDonationPay(sessionStorageValue);
-  }, [location.pathname]);
+  const { routeKey } = useRoute();
+  const showDonationPay = !HIDDEN_ON.includes(routeKey);
 
   return (
-    <Link
-      to="/DonationPay"
+    <LocalizedLink
+      routeKey="donation"
       className={`fixed top-1/2 right-4 transform -translate-y-1/2 z-50 group ${
-        showDonationPay === true ? "block" : "hidden"
+        showDonationPay ? "block" : "hidden"
       }`}
     >
       <div
@@ -34,7 +31,7 @@ function Btns() {
         />
         <p className="text-white text-lg font-bold">{t("btns.donate")}</p>
       </div>
-    </Link>
+    </LocalizedLink>
   );
 }
 

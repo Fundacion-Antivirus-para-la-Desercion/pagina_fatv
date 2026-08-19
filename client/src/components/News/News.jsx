@@ -1,11 +1,12 @@
+import SeoHead from "../seo/SeoHead";
 import "./News.css";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import { useNavigate } from "react-router-dom";
+import { useRoute } from "../../routes/useRoute";
 import buildNewsArray, { filters } from "./newsArray";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import BannerView from "../Banner-views/BannerView";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCalendarMinus } from "react-icons/fa6";
@@ -16,6 +17,7 @@ import {
 
 function News() {
   const navigate = useNavigate();
+  const { to } = useRoute();
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -25,10 +27,11 @@ function News() {
 
   return (
     <>
-      <Helmet>
-        <title>{t("news.banner.h1")} | Fundación Antivirus para la Deserción</title>
-        <meta name="description" content={t("news.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="news"
+        titleKey="news.banner.h1"
+        descriptionKey="news.metaDescription"
+      />
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{
@@ -94,7 +97,7 @@ function News() {
                   <button
                     className="group flex items-center gap-2 text-xl md:text-2xl text-primary-purple cursor-pointer w-fit"
                     onClick={() =>
-                      navigate("/news/detail", { state: { news } })
+                      navigate(to("newsDetail"), { state: { news } })
                     }
                   >
                     {t("news.read_more")}

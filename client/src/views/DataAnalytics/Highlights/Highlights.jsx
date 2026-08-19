@@ -1,6 +1,6 @@
+import LocalizedLink from "../../../components/routing/LocalizedLink";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { AiOutlineLaptop } from "react-icons/ai";
 import { MdQueryStats } from "react-icons/md";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
@@ -116,12 +116,12 @@ function Highlights() {
                 </p>
 
                 {card.id === "one" && (
-                  <Link
-                    to="/atvconnect"
+                  <LocalizedLink
+                    routeKey="atvConnect"
                     className="mt-auto inline-flex w-full justify-center rounded-3xl border border-primary-yellow/30 bg-primary-yellow px-10 py-3 font-bold text-dark-blue transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
                   >
                     {t("dataAnalytics.highlights.moreInfoBtn")}
-                  </Link>
+                  </LocalizedLink>
                 )}
               </div>
             </motion.div>

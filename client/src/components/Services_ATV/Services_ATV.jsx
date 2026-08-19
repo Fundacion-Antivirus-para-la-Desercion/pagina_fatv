@@ -1,10 +1,10 @@
+import LocalizedLink from "../routing/LocalizedLink";
 import "./Services_ATV.css";
 import { useTranslation } from "react-i18next";
 import {
   FOCUS_BLANCO_IMG as Focus,
   JAVI_CARA_ATV_CONECTA_IMG as LogoAtvConecta,
 } from "../../assets/cloudinaryImages";
-import { Link } from "react-router-dom";
 import { LuGraduationCap } from "react-icons/lu";
 import { PiHandshake } from "react-icons/pi";
 import { IoIosArrowForward } from "react-icons/io";
@@ -27,7 +27,7 @@ const SERVICES_DATA = [
     titleKey: "home.servicesATV.services.permanence_title",
     descriptionKey: "home.servicesATV.services.permanence_description",
     altKey: "home.servicesATV.services.permanence_icon_alt",
-    route: "/gestion-de-la-permanencia",
+    routeKey: "retention",
   },
   {
     id: "consulting",
@@ -37,7 +37,7 @@ const SERVICES_DATA = [
     descriptionKey:
       "home.servicesATV.services.persistence_consulting_description",
     altKey: "home.servicesATV.services.consulting_icon_alt",
-    route: "/consultorias",
+    routeKey: "consulting",
   },
   {
     id: "vocational",
@@ -47,7 +47,7 @@ const SERVICES_DATA = [
     descriptionKey:
       "home.servicesATV.services.socio_vocational_guidance_description",
     altKey: "home.servicesATV.services.vocational_icon_alt",
-    route: "/provocacion",
+    routeKey: "provocacion",
   },
   {
     id: "atvconnect",
@@ -57,7 +57,7 @@ const SERVICES_DATA = [
     titleKeyTwo: "home.servicesATV.services.atvconnect_title_two",
     descriptionKey: "home.servicesATV.services.atvconnect_description",
     altKey: "home.servicesATV.services.atvconnect_icon_alt",
-    route: "/atvconnect",
+    routeKey: "atvConnect",
   },
 ];
 
@@ -194,14 +194,14 @@ const ServicesATV = () => {
                   {t(service.descriptionKey)}
                 </p>
 
-                <Link
+                <LocalizedLink
                   className="flex items-center gap-2 mx-auto w-fit bg-primary-purple text-white p-2 px-14 rounded-3xl text-lg duration-300 mt-auto"
-                  to={service.route}
+                  routeKey={service.routeKey}
                   aria-label={`${t("home.servicesATV.services.more_info")} — ${t(service.titleKey)}`}
                 >
                   {t("home.servicesATV.services.more_info")}
                   <IoIosArrowForward className="transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           );

@@ -1,8 +1,10 @@
+import LocalizedLink from "../routing/LocalizedLink";
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Header/Header.css";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { useRoute } from "../../routes/useRoute";
 import { FaHandSparkles, FaHandHoldingHeart } from "react-icons/fa";
 import { TiHome } from "react-icons/ti";
 import { RiServiceLine } from "react-icons/ri";
@@ -20,7 +22,9 @@ function Header() {
   const [openPopup, setOpenPopup] = useState(null); // "qh" | "services" | "idioma" | null
   const [popupTop, setPopupTop] = useState(0);
   const headerRef = useRef(null);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { pathForLang } = useRoute();
 
   const closePopups = () => {
     setOpenPopup(null);
@@ -35,10 +39,13 @@ function Header() {
     setOpenPopup((current) => (current === key ? null : key));
   };
 
+  // Cambiar de idioma es navegar: la URL es la fuente de verdad y LangLayout
+  // se encarga de avisarle a i18next. Así el usuario queda en la MISMA página,
+  // no en la home.
   const handleChangeLanguage = (langCode) => {
-    i18n.changeLanguage(langCode);
-    localStorage.setItem("i18nextLng", langCode);
-    handleNav();
+    navigate(pathForLang(langCode));
+    setNav(false);
+    closePopups();
   };
 
   useEffect(() => {
@@ -91,21 +98,21 @@ function Header() {
         }`}
       >
         <div className="Links-left flex gap-1 items-center">
-          <Link
-            to="/"
+          <LocalizedLink
+            routeKey="home"
             onClick={handleNav}
             className="text-lg text-blue-base font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain hover:text-primary-purple"
           >
             {t("header.home")}
-          </Link>
+          </LocalizedLink>
           <span className="text-dark-blue mx-1">|</span>
-          <Link
-            to="/Fundacion"
+          <LocalizedLink
+            routeKey="foundation"
             onClick={handleNav}
             className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm hover:text-primary-purple"
           >
             {t("header.foundation")}
-          </Link>
+          </LocalizedLink>
           <span className="text-blue-base mx-1">|</span>
           <button
             type="button"
@@ -146,31 +153,31 @@ function Header() {
         </div>
 
         <div className="logo">
-          <Link to="/" onClick={() => closePopups()}>
+          <LocalizedLink routeKey="home" onClick={() => closePopups()}>
             <img
               className="h-28 object-contain max-xl:h-24 max-lg:h-14"
               src="/logo.png"
               alt="Logo Fundación Antivirus para la Deserción"
             />
-          </Link>
+          </LocalizedLink>
         </div>
 
         <div className="Links-right flex gap-3 items-center">
-          <Link
-            to="/News"
+          <LocalizedLink
+            routeKey="news"
             onClick={handleNav}
             className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm  hover:text-primary-purple"
           >
             {t("header.news")}
-          </Link>
+          </LocalizedLink>
           <span className="text-blue-base mx-1">|</span>
-          <Link
-            to="/ContactUs"
+          <LocalizedLink
+            routeKey="contact"
             onClick={handleNav}
             className="text-lg text-blue-base font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm  hover:text-primary-purple"
           >
             {t("header.contact_us")}
-          </Link>
+          </LocalizedLink>
           <span className="text-blue-base mx-1">|</span>
           <button
             type="button"
@@ -217,31 +224,31 @@ function Header() {
         >
           <ul className="flex items-center justify-center gap-16 p-10">
             <li>
-              <Link
-                to="/dataAnalytics"
+              <LocalizedLink
+                routeKey="dataAnalytics"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.data_analytics")}
-              </Link>
+              </LocalizedLink>
             </li>
             <li>
-              <Link
-                to="/social-intervention"
+              <LocalizedLink
+                routeKey="socialIntervention"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.socio_emotional_intervention")}
-              </Link>
+              </LocalizedLink>
             </li>
             <li>
-              <Link
-                to="/comunicaciones"
+              <LocalizedLink
+                routeKey="communications"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.communications")}
-              </Link>
+              </LocalizedLink>
             </li>
           </ul>
         </div>
@@ -255,40 +262,40 @@ function Header() {
         >
           <ul className="flex items-center justify-center gap-16 p-10">
             <li>
-              <Link
-                to={"/gestion-de-la-permanencia"}
+              <LocalizedLink
+                routeKey="retention"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.permanence")}
-              </Link>
+              </LocalizedLink>
             </li>
             <li>
-              <Link
-                to="/consultorias"
+              <LocalizedLink
+                routeKey="consulting"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.consulting")}
-              </Link>
+              </LocalizedLink>
             </li>
             <li>
-              <Link
-                to="/provocacion"
+              <LocalizedLink
+                routeKey="provocacion"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.pro_vocation")}
-              </Link>
+              </LocalizedLink>
             </li>
             <li>
-              <Link
-                to="/atvconnect"
+              <LocalizedLink
+                routeKey="atvConnect"
                 onClick={handleNav}
                 className="font-impact hover:text-primary-purple cursor-pointer"
               >
                 {t("header.sub_header.atv_connect")}
-              </Link>
+              </LocalizedLink>
             </li>
           </ul>
         </div>
@@ -329,13 +336,13 @@ function Header() {
         className={`flex justify-between bg-white items-center px-6 py-2 lg:hidden`}
       >
         <div className="logo-responsive-menu">
-          <Link to="/" onClick={() => closePopups()}>
+          <LocalizedLink routeKey="home" onClick={() => closePopups()}>
             <img
               className="h-28 object-contain max-sm:h-16"
               src="/logo.png"
               alt="Logo Fundación Antivirus para la Deserción"
             />
-          </Link>
+          </LocalizedLink>
         </div>
 
         <button
@@ -388,9 +395,9 @@ function Header() {
 
         <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase transition duration-400 ease-in-out hover:text-primary-purple">
           <TiHome className="flex-shrink-0 relative -top-[3px]" size={20} />
-          <Link to="/" onClick={handleNav} className="leading-none">
+          <LocalizedLink routeKey="home" onClick={handleNav} className="leading-none">
             {t("header.home")}
-          </Link>
+          </LocalizedLink>
         </li>
 
         <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
@@ -398,9 +405,9 @@ function Header() {
             className="flex-shrink-0 relative -top-[3px]"
             size={20}
           />
-          <Link to="/Fundacion" onClick={handleNav} className="leading-none">
+          <LocalizedLink routeKey="foundation" onClick={handleNav} className="leading-none">
             {t("header.foundation")}
-          </Link>
+          </LocalizedLink>
         </li>
 
         <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
@@ -424,23 +431,23 @@ function Header() {
           {openPopup === "qh" && (
             <ul className="pl-4">
               <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link to="/dataAnalytics" onClick={handleNav}>
+                <LocalizedLink routeKey="dataAnalytics" onClick={handleNav}>
                   {t("header.sub_header.data_analytics")}
-                </Link>
+                </LocalizedLink>
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link to="/social-intervention" onClick={handleNav}>
+                <LocalizedLink routeKey="socialIntervention" onClick={handleNav}>
                   {t("header.sub_header.socio_emotional_intervention")}
-                </Link>
+                </LocalizedLink>
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link
-                  to="/comunicaciones"
+                <LocalizedLink
+                  routeKey="communications"
                   onClick={handleNav}
                   className=" hover:opacity-55 hover:text-primary-purple cursor-pointer"
                 >
                   {t("header.sub_header.communications")}
-                </Link>
+                </LocalizedLink>
               </li>
             </ul>
           )}
@@ -471,40 +478,40 @@ function Header() {
           {openPopup === "services" && (
             <ul className="pl-4">
               <li className="p-2 text-dark-blue font-extrabold mt-4 uppercase leading-none transition duration-400 ease-in-out">
-                <Link
-                  to={"/gestion-de-la-permanencia"}
+                <LocalizedLink
+                  routeKey="retention"
                   onClick={handleNav}
                   className="hover:text-primary-purple cursor-pointer"
                 >
                   {t("header.sub_header.permanence")}
-                </Link>
+                </LocalizedLink>
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link
-                  to="/consultorias"
+                <LocalizedLink
+                  routeKey="consulting"
                   onClick={handleNav}
                   className="hover:text-primary-purple cursor-pointer"
                 >
                   {t("header.sub_header.consulting")}
-                </Link>
+                </LocalizedLink>
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link
-                  to="/provocacion"
+                <LocalizedLink
+                  routeKey="provocacion"
                   onClick={handleNav}
                   className=" hover:text-primary-purple cursor-pointer"
                 >
                   {t("header.sub_header.pro_vocation")}
-                </Link>
+                </LocalizedLink>
               </li>
               <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
-                <Link
-                  to="/atvconnect"
+                <LocalizedLink
+                  routeKey="atvConnect"
                   onClick={handleNav}
                   className="hover:text-primary-purple cursor-pointer"
                 >
                   {t("header.sub_header.atv_connect")}
-                </Link>
+                </LocalizedLink>
               </li>
             </ul>
           )}
@@ -515,16 +522,16 @@ function Header() {
             className="flex-shrink-0 relative -top-[3px]"
             size={20}
           />
-          <Link to="/News" onClick={handleNav}>
+          <LocalizedLink routeKey="news" onClick={handleNav}>
             {t("header.news")}
-          </Link>
+          </LocalizedLink>
         </li>
 
         <li className="flex items-center gap-1 p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">
           <MdEmail className="flex-shrink-0 relative -top-[3px]" size={20} />
-          <Link to="/ContactUs" onClick={handleNav}>
+          <LocalizedLink routeKey="contact" onClick={handleNav}>
             {t("header.contact_us")}
-          </Link>
+          </LocalizedLink>
         </li>
 
         <li className="p-2 text-dark-blue font-extrabold uppercase leading-none transition duration-400 ease-in-out hover:text-primary-purple">

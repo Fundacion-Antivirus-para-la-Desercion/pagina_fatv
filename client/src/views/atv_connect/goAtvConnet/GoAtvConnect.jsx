@@ -103,7 +103,6 @@ function goAtvConnect() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center group px-10 py-4 relative overflow-hidden w-full max-w-[310px] mt-8 text-dark-blue text-lg md:text-xl font-bold rounded-full shadow-xl bg-primary-yellow transform hover:scale-105 transition-all duration-500"
-            to="/"
           >
             <span className="relative">
               {" "}
