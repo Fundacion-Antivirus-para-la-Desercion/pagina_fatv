@@ -66,24 +66,6 @@ function ServicesAtvConnect() {
     [],
   );
 
-  const slideFromTop = {
-    initial: { opacity: 0, y: -100 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-    viewport: { once: true, amount: 0.6 },
-  };
-
-  const floatSnake = (delay = 0) => ({
-    initial: { y: -10 },
-    animate: { y: [0, -25, 0] },
-    transition: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "linear",
-      delay,
-    },
-  });
-
   const slideFromRight = {
     initial: { opacity: 0, x: 100 },
     whileInView: { opacity: 1, x: 0 },
