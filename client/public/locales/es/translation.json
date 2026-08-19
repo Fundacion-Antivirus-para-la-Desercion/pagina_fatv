@@ -1293,7 +1293,11 @@
       },
       "item_hours": {
         "title": "Horarios Flexibles",
-        "description": "Agenda segun tu disponibilidad. Mañana, tarde o noche, siempre hay un tutor para ti."
+        "description": "Agenda según tu disponibilidad. Mañana, tarde o noche, hay un tutor para ti."
+      },
+      "comprehensive_support": {
+        "title": "Acompañamiento Integral",
+        "description": "Estamos contigo antes, durante y después, brindándote orientación y apoyo en cada etapa de tu proceso."
       }
     },
     "steps": {

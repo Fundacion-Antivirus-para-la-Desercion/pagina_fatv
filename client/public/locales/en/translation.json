@@ -1290,7 +1290,11 @@
       },
       "item_hours": {
         "title": "Flexible Hours",
-        "description": "Book sessions that fit your schedule. Morning, afternoon, or night—there's always a tutor ready for you."
+        "description": "Book sessions that fit your schedule. Morning, afternoon, or evening—there’s a tutor ready for you."
+      },
+      "comprehensive_support": {
+        "title": "Comprehensive Support",
+        "description": "We are with you before, during, and after, providing guidance and support at every stage of your journey."
       }
     },
     "steps": {
