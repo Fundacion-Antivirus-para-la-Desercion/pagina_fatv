@@ -1,7 +1,7 @@
 import { SitemapStream, streamToPromise } from "sitemap";
 import fs from "node:fs";
 import { buildPath } from "../src/routes/routeHelpers.js";
-import { LANGS, ORIGIN, ROUTE_SLUGS } from "../src/routes/routes.config.js";
+import { LANGUAGES, ORIGIN, SLUGS_PAGES } from "../src/routes/routes.config.js";
 import { NEWS_SLUGS } from "../src/components/News/newsSlugs.js";
 
 /**
@@ -21,7 +21,10 @@ const EXCLUDED_FROM_SITEMAP = ["newsDetail"];
 const sitemap = new SitemapStream({ hostname: ORIGIN });
 
 const alternatesFor = (key, search = "") =>
-  LANGS.map((lang) => ({ lang, url: `${ORIGIN}${buildPath(key, lang)}${search}` }));
+  LANGUAGES.map((lang) => ({
+    lang,
+    url: `${ORIGIN}${buildPath(key, lang)}${search}`,
+  }));
 
 let urlCount = 0;
 
@@ -37,10 +40,10 @@ const writeUrl = ({ key, lang, search = "", priority, lastmod }) => {
 };
 
 // Páginas estáticas, una URL por idioma.
-Object.keys(ROUTE_SLUGS)
+Object.keys(SLUGS_PAGES)
   .filter((key) => !EXCLUDED_FROM_SITEMAP.includes(key))
   .forEach((key) => {
-    LANGS.forEach((lang) => {
+    LANGUAGES.forEach((lang) => {
       writeUrl({ key, lang, priority: key === "home" ? 1.0 : 0.8 });
     });
   });
@@ -48,7 +51,7 @@ Object.keys(ROUTE_SLUGS)
 // Cada noticia, en vez de la URL suelta de newsDetail: son las páginas con
 // contenido real y las que conviene que los buscadores indexen.
 NEWS_SLUGS.forEach(({ slug, date }) => {
-  LANGS.forEach((lang) => {
+  LANGUAGES.forEach((lang) => {
     writeUrl({
       key: "newsDetail",
       lang,

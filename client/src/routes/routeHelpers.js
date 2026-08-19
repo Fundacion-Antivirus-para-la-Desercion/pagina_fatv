@@ -27,7 +27,7 @@ export const buildPath = (key, lang) => {
 
   if (slug === undefined) {
     throw new Error(
-      `[routes] La key "${key}" no existe en ROUTE_SLUGS (idioma "${language}").`,
+      `[routes] La key "${key}" no existe en SLUGS_PAGES (idioma "${language}").`,
     );
   }
 
@@ -53,9 +53,9 @@ const splitPathnameByLanguageAndSlug = (pathname) => {
  * Identifica qué página corresponde a una URL y en qué idioma está.
  * Es la operación inversa de buildPath.
  *
- * resolveRoute("/es/fundacion")  -> { key: "foundation", lang: "es" }
- * resolveRoute("/EN/Foundation") -> { key: "foundation", lang: "en" }
- * resolveRoute("/fundacion")     -> { key: null,         lang: "es" }
+ * getPageFromURL("/es/fundacion")  -> { key: "foundation", lang: "es" }
+ * getPageFromURL("/EN/Foundation") -> { key: "foundation", lang: "en" }
+ * getPageFromURL("/fundacion")     -> { key: null,         lang: "es" }
  *
  * key es null cuando la URL no corresponde a ninguna página conocida: un 404
  * o una dirección anterior a la migración. lang siempre devuelve un valor válido.
@@ -78,8 +78,8 @@ export const getPageFromURL = (pathname) => {
  * Obtiene el idioma por defecto del usuario al entrar por la raíz (/).
  *
  * En todas las demás rutas el idioma viene en la URL (/es/..., /en/...).
- * Aquí no hay URL que consultar, así que se lee del localStorage y del
- * navegador para decidir a cuál versión redirigir.
+ * Aquí no hay URL que consultar, así que se lee del localStorage para decidir
+ * a cuál versión redirigir.
  */
 export const getDefaultLanguage = () => {
   if (typeof window === "undefined") return DEFAULT_LANGUAGE;
