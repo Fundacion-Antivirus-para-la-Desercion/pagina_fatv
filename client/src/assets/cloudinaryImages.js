@@ -39,6 +39,8 @@ export const JAVI_4_IMG               = getImageUrl("https://res.cloudinary.com/
 export const JAVI_ESTUDIOSO_IMG       = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671483/javi-estudioso-11_hx3lff.webp");
 export const JAVI_ESQUINA_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671476/javi-esquina-derecha_ix8zyi.webp");
 export const JAVI_ABAJO_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784897410/javi-abajo_umilae.webp");
+export const JAVI_CON_PORTATIL_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1786485302/javi-estudioso-12_fuog6s.webp");
+
 
 // ── ourAllies (logos de aliados) ──────────────────────────────────────────────
 export const ALIADO_ALCALDIA_ITAGUI_IMG          = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672893/alcaldia-de-Itagui-Antioquia-para-descargar-impuesto-predial_ivbddd.png");
