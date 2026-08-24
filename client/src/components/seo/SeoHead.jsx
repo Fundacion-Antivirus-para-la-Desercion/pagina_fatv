@@ -8,7 +8,7 @@ import {
   ORIGIN,
   SLUGS_PAGES,
 } from "../../routes/routes.config";
-import { useRoute } from "../../routes/useRoute";
+import { useRoute } from "../../hooks/useRoute";
 
 const SITE_NAME = "Fundación Antivirus para la Deserción";
 

@@ -2,7 +2,7 @@ import LocalizedLink from "../routing/LocalizedLink";
 import styles from "./Btns.module.css";
 import { ICON_DONATION_IMG as IconDonation } from "../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
-import { useRoute } from "../../routes/useRoute";
+import { useRoute } from "../../hooks/useRoute";
 
 // Estas dos páginas tienen su propio CTA fijo en la misma posición de la
 // pantalla, así que el botón flotante de donación se oculta ahí.

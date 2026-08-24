@@ -2,7 +2,7 @@ import styles from "./BtnAtvConnect.module.css";
 import { JAVI_CARA_ATV_CONECTA_IMG as IconATVConnect } from "../../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
 import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
-import { useRoute } from "../../../routes/useRoute";
+import { useRoute } from "../../../hooks/useRoute";
 
 const HIDDEN_ON = ["provocacion"];
 

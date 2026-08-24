@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { buildPath, getPageFromURL } from "./routeHelpers";
+import { buildPath, getPageFromURL } from "../routes/routeHelpers";
 
 /**
  * Acceso a la ruta actual en términos de la key lógica, no del string de URL.

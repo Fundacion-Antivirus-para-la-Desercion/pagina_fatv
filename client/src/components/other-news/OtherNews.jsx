@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import buildNewsArray from "../News/newsArray.js";
 import { useNavigate } from "react-router-dom";
-import { useRoute } from "../../routes/useRoute";
+import { useRoute } from "../../hooks/useRoute.js";
 import { useTranslation } from "react-i18next";
 
 function OtherNews({ newSlug }) {

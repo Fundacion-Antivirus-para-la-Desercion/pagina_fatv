@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { FaShareFromSquare } from "react-icons/fa6";
-import { useRoute } from "../../../routes/useRoute";
+import { useRoute } from "../../../hooks/useRoute";
 
 const ShareButton = ({ label, news }) => {
   const { to } = useRoute();

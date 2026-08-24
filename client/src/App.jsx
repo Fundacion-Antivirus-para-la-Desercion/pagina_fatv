@@ -27,7 +27,7 @@ function App() {
                 <Route key={key} index element={PAGES[key]} />
               ) : (
                 <Route key={key} path={slugs[lang]} element={PAGES[key]} />
-              )
+              ),
             )}
           </Route>
         ))}

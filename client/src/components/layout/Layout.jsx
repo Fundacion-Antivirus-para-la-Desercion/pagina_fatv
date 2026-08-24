@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { slideFromTopBody } from "../motion/constants/Animations.js";
-import { useRoute } from "../../routes/useRoute";
+import { useRoute } from "../../hooks/useRoute";
 
 function Layout() {
   // Se depende de `routeKey` y no del pathname: la key lógica es la misma en

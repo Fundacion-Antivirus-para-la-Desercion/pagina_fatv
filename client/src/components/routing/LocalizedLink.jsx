@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { SLUGS_PAGES } from "../../routes/routes.config";
-import { useRoute } from "../../routes/useRoute";
+import { useRoute } from "../../hooks/useRoute";
 
 /**
  * Reemplaza a `<Link to="/ruta-literal">`.

@@ -34,23 +34,3 @@ export const SLUGS_PAGES = {
   contact: { es: "contacto", en: "contact" },
   donation: { es: "donaciones", en: "donate" },
 };
-
-/**
- * URLs previas a la migración -> key.
- * Se usan para generar los 301 de `firebase.json` y para no perder el
- * posicionamiento acumulado por esas URLs.
- */
-export const LEGACY_PATHS = {
-  "/DonationPay": "donation",
-  "/social-intervention": "socialIntervention",
-  "/dataAnalytics": "dataAnalytics",
-  "/Comunicaciones": "communications",
-  "/fundacion": "foundation",
-  "/News": "news",
-  "/ContactUs": "contact",
-  "/gestion-de-la-permanencia": "retention",
-  "/consultorias": "consulting",
-  "/provocacion": "provocacion",
-  "/atvconnect": "atvConnect",
-  "/news/detail": "newsDetail",
-};

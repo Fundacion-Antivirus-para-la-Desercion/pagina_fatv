@@ -4,7 +4,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import { useNavigate } from "react-router-dom";
-import { useRoute } from "../../routes/useRoute";
+import { useRoute } from "../../hooks/useRoute";
 import buildNewsArray, { filters } from "./newsArray";
 import { useTranslation } from "react-i18next";
 import BannerView from "../Banner-views/BannerView";
