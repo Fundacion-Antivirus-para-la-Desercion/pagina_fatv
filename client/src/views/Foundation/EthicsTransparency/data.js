@@ -34,6 +34,22 @@ export const pdfDocuments = [
     file: "https://fundacionantivirus-my.sharepoint.com/:b:/g/personal/desarrolladora_fundacionantivirusparaladesercion_org/IQCVhr1ZMrtoQ5lgcgF1VXojAcC3X6GJbPeHDEGWWSDS25Q?e=JGCMvG&download=1",
   },
   {
+    id: "report-2023",
+    titleKey: "ethicsTransparency.pdf.docs.report2023.title",
+    category: "report",
+    categoryLabelKey: "ethicsTransparency.pdf.tabs.report",
+    year: "2023",
+    file: "https://fundacionantivirus-my.sharepoint.com/:b:/g/personal/desarrolladora_fundacionantivirusparaladesercion_org/IQArsH_ELgKhRrarzHbu74xYAVwz3zSk7KuCrCVonMD8cXg?e=a6y6G6",
+  },
+  {
+    id: "report-2024",
+    titleKey: "ethicsTransparency.pdf.docs.report2024.title",
+    category: "report",
+    categoryLabelKey: "ethicsTransparency.pdf.tabs.report",
+    year: "2024",
+    file: "https://fundacionantivirus-my.sharepoint.com/:b:/g/personal/desarrolladora_fundacionantivirusparaladesercion_org/IQBWejgRxqxqTqCSjEMydK1kAfFkiLwyMI-uXD2HGipxtWQ?e=ZH5e3k",
+  },
+  {
     id: "report-2025",
     titleKey: "ethicsTransparency.pdf.docs.report2025.title",
     category: "report",
