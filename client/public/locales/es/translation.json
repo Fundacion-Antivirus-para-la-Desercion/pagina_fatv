@@ -531,7 +531,7 @@
     "category": "NOTICIAS",
     "filters": {
       "all": "Todos",
-      "articles": "ARTÍCULOS",
+      "articles": "Artículos",
       "news": "Noticias"
     },
     "read_more": "Leer más",
@@ -1422,7 +1422,7 @@
         "description": "Llevamos nuestras tutorías y plataforma a instituciones que requieren fortalecer el acompañamiento académico de sus estudiantes.",
         "target": "Universidades y programas de becarios.",
         "price_label": "Costo: A convenir",
-        "price_sub": "de acuerdo a volumen",
+        "price_sub": "De acuerdo a volumen",
         "subtitle_two": "Entregamos",
         "check_one": "Servicio + plataforma",
         "check_two": "Red de tutores",
@@ -1434,7 +1434,7 @@
         "description": "Nuestra plataforma al servicio de quienes necesitan una solución tecnológica para gestionar tutorías de forma ágil, segura y efectiva.",
         "target": "Instituciones que ya tienen tutores y necesitan una solución tecnológica.",
         "price_label": "Costo: A convenir",
-        "price_sub": "de acuerdo a volumen",
+        "price_sub": "De acuerdo a volumen",
         "subtitle_two": "Entregamos",
         "check_one": "Servicio + plataforma",
         "check_two": "Red de tutores",

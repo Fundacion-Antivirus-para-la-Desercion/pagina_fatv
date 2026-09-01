@@ -530,7 +530,7 @@
     "category": "NEWS",
     "filters": {
       "all": "All",
-      "articles": "ARTICLES",
+      "articles": "Articles",
       "news": "News"
     },
     "read_more": "Read more",
@@ -1419,7 +1419,7 @@
         "description": "We bring our tutoring and platform to institutions that need to strengthen academic support for their students.",
         "target": "Universities and scholarship programs.",
         "price_label": "To be agreed",
-        "price_sub": "based on volume",
+        "price_sub": "Based on volume",
         "subtitle_two": "We deliver",
         "check_one": "Service + platform",
         "check_two": "Tutor network",
@@ -1431,7 +1431,7 @@
         "description": "Our platform at the service of those who need a technological solution to manage tutoring in an agile, secure and effective way.",
         "target": "Institutions that already have tutors and need a technological solution.",
         "price_label": "To be agreed",
-        "price_sub": "based on volume",
+        "price_sub": "Based on volume",
         "subtitle_two": "We deliver",
         "check_one": "Service + platform",
         "check_two": "Tutor network",
