@@ -5,6 +5,7 @@ import { FaTiktok } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 import "./Footer.css";
 import logo from "../../../public/logo.png";
+import WhatsAppRedirect from "../whatsAppRedirect/WhatsAppRedirect";
 
 function Footer() {
   const { t } = useTranslation("translation");
@@ -72,7 +73,7 @@ function Footer() {
                 </div>
                 <br />
                 <a
-                  href="https://wa.me/573173831481"
+                  href={WhatsAppRedirect()}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
