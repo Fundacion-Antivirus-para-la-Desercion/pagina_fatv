@@ -55,9 +55,17 @@ function Footer() {
           <div className="footer-info">
             <div className="footer-visitanos">
               <h2 className="font-impact">{t("footer.visitUs")}</h2>
-              <p>{t("footer.address1")}</p>
-              <p>{t("footer.address2")}</p>
-              <p>{t("footer.address3")}</p>
+              <a
+                href="https://www.google.com/maps/place/Fundacion+Antivirus+para+la+Desercion/@6.1546087,-75.6316542,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468164563dd5f3:0xe4f4c0dbfe0be02e!8m2!3d6.1546034!4d-75.6290793!16s%2Fg%2F11vf1_zb9j?hl=es&entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t("footer.visitUs")}
+                className="hover:text-primary-yellow transition-colors"
+              >
+                <p>{t("footer.address1")}</p>
+                <p>{t("footer.address2")}</p>
+                <p>{t("footer.address3")}</p>
+              </a>
             </div>
             <div className="footer-contacto">
               <h2 className="font-impact">{t("footer.contact")}</h2>
