@@ -210,7 +210,7 @@ function ContactUs() {
                 </div>
                 <div>
                   <input
-                    type="text"
+                    type="tel"
                     placeholder={t("contactUs.form.phone")}
                     className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                     name="phone"

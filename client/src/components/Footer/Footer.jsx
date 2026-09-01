@@ -60,11 +60,27 @@ function Footer() {
             </div>
             <div className="footer-contacto">
               <h2 className="font-impact">{t("footer.contact")}</h2>
-              <div className="email">
-                <p>{t("footer.contactEmail")}</p>
-              </div>
-              <br />
-              <p>{t("footer.contactWhatsapp")}</p>
+              <address className="not-italic">
+                <div className="email">
+                  <a
+                    href={`mailto:${t("footer.contactEmail")}`}
+                    aria-label={t("footer.contactEmail")}
+                    className="hover:text-primary-yellow transition-colors"
+                  >
+                    {t("footer.contactEmail")}
+                  </a>
+                </div>
+                <br />
+                <a
+                  href="https://wa.me/573173831481"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="hover:text-primary-yellow transition-colors"
+                >
+                  {t("footer.contactWhatsapp")}
+                </a>
+              </address>
             </div>
             <div className="footer-redes">
               <h2 className="font-impact">{t("footer.socialNetworks")}</h2>
