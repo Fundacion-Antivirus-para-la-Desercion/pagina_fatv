@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
 
 function TestimonialsAtvConnect() {
   const { t } = useTranslation();
@@ -130,29 +131,29 @@ function TestimonialsAtvConnect() {
         }}
       >
         {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id} className="flex items-stretch h-auto">
+          <SwiperSlide
+            key={testimonial.id}
+            className="flex items-stretch h-auto"
+          >
             <motion.div {...slideFromTop} className="w-full h-full">
               <div className="bg-white rounded-3xl shadow-md p-6 min-h-[340px] flex flex-col h-full">
-                <span className="text-6xl text-brand-teal-300 font-serif leading-none select-none">
-                  &ldquo;
-                </span>
-
-                <p className="text-blue-base text-base leading-relaxed mt-2 flex-1">
-                  {testimonial.testimony}
-                </p>
-
-                <div className="flex items-center gap-3 mt-6 pt-5 border-t border-gray-100">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold text-lg">
-                    {testimonial.photo ? (
-                      <img
-                        src={testimonial.photo}
-                        alt={testimonial.role}
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                      />
-                    ) : (
-                      testimonial.initial
-                    )}
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="relative flex items-center flex-shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-primary-purple flex items-center justify-center">
+                      <BiSolidQuoteAltLeft className="text-white text-3xl" />
+                    </div>
+                    <div className="w-20 h-20 rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold text-lg -ml-4 border-2 border-white flex-shrink-0">
+                      {testimonial.photo ? (
+                        <img
+                          src={testimonial.photo}
+                          alt={testimonial.role}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      ) : (
+                        testimonial.initial
+                      )}
+                    </div>
                   </div>
                   <div className="flex flex-col">
                     <p className="text-blue-base font-semibold text-sm">
@@ -163,6 +164,10 @@ function TestimonialsAtvConnect() {
                     </p>
                   </div>
                 </div>
+
+                <p className="text-blue-base text-base leading-relaxed flex-1">
+                  {testimonial.testimony}
+                </p>
               </div>
             </motion.div>
           </SwiperSlide>
