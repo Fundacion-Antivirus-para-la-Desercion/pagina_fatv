@@ -6,8 +6,8 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import { GoStarFill } from "react-icons/go";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { TESTIMONIAL_GISELA_PATINO as GiselaPatino } from "../../../assets/cloudinaryImages";
 import { floatSnake } from "../../../components/motion/constants/Animations.js";
+import { getTestimonials } from "./testimonialsData";
 
 function StarRating() {
   return (
@@ -154,138 +154,7 @@ function TestimonialsAtvConnect() {
     },
   });
 
-  const testimonials = [
-    {
-      id: "testimony-one",
-      key: "small-left",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_one.description",
-      ),
-      initial: "E",
-      photo: GiselaPatino,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_one.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_one.university",
-      ),
-    },
-    {
-      id: "testimony-two",
-      key: "small-right",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_two.description",
-      ),
-      initial: "T",
-      photo: null,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_two.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_two.university",
-      ),
-    },
-    {
-      id: "testimony-three",
-      key: "small-left",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_three.description",
-      ),
-      initial: "E",
-      photo: null,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_three.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_three.university",
-      ),
-    },
-    {
-      id: "testimony-four",
-      key: "small-right",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_four.description",
-      ),
-      initial: "E",
-      photo: GiselaPatino,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_four.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_four.university",
-      ),
-    },
-    {
-      id: "testimony-five",
-      key: "small-left",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_five.description",
-      ),
-      initial: "E",
-      photo: null,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_five.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_five.university",
-      ),
-    },
-    {
-      id: "testimony-six",
-      key: "small-right",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_six.description",
-      ),
-      initial: "E",
-      photo: null,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_six.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_six.university",
-      ),
-    },
-    {
-      id: "testimony-seven",
-      key: "small-left",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_seven.description",
-      ),
-      initial: "E",
-      photo: null,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_seven.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_seven.university",
-      ),
-    },
-    {
-      id: "testimony-eight",
-      key: "large",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_eight.description",
-      ),
-      initial: "E",
-      photo: GiselaPatino,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_eight.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_eight.university",
-      ),
-    },
-    {
-      id: "testimony-eight",
-      key: "large",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_eight.description",
-      ),
-      initial: "E",
-      photo: GiselaPatino,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_eight.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_eight.university",
-      ),
-    },
-    {
-      id: "testimony-eight",
-      key: "large",
-      testimony: t(
-        "atvConnect.testimonialsAtvConnect.testimony_eight.description",
-      ),
-      initial: "E",
-      photo: GiselaPatino,
-      role: t("atvConnect.testimonialsAtvConnect.testimony_eight.role"),
-      university: t(
-        "atvConnect.testimonialsAtvConnect.testimony_eight.university",
-      ),
-    }
-  ];
+  const testimonials = getTestimonials(t);
 
   const largeTestimonials = testimonials.filter((item) => item.key === "large");
   const smallLeftTestimonials = testimonials.filter(
