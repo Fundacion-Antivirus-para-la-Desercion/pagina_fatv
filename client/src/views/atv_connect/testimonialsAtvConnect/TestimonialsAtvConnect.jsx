@@ -197,11 +197,14 @@ function TestimonialsAtvConnect() {
   const { t } = useTranslation();
   const [activeTestimonial, setActiveTestimonial] = useState(null);
 
-  const slideFromTop = {
-    initial: { opacity: 0, y: -60 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, ease: "easeOut" },
-    viewport: { once: true, amount: 0.4 },
+  const cardVariants = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.15 } },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
   };
 
   const testimonials = getTestimonials(t);
@@ -242,7 +245,12 @@ function TestimonialsAtvConnect() {
 
       <div className="max-w-6xl mx-auto w-full flex flex-col gap-8 relative z-10">
         {/* Large testimonial — full width, carousel fade */}
-        <motion.div {...slideFromTop}>
+        <motion.div
+          variants={cardVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <Swiper
             modules={[Autoplay, EffectFade]}
             effect="fade"
@@ -263,18 +271,25 @@ function TestimonialsAtvConnect() {
           >
             {largeTestimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id} className="!h-auto">
-                <LargeTestimonialCard
-                  testimonial={testimonial}
-                  readMoreLabel={readMoreLabel}
-                  onReadMore={setActiveTestimonial}
-                />
+                <motion.div variants={childVariants}>
+                  <LargeTestimonialCard
+                    testimonial={testimonial}
+                    readMoreLabel={readMoreLabel}
+                    onReadMore={setActiveTestimonial}
+                  />
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>
         </motion.div>
 
         {/* Small testimonials — single row, 1/2/3 cols responsive */}
-        <motion.div {...slideFromTop} className="relative">
+        <motion.div
+          variants={cardVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
@@ -292,11 +307,13 @@ function TestimonialsAtvConnect() {
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
-            className="relative w-full py-3 -my-3 cursor-grab active:cursor-grabbing"
+            className="w-full py-3 -my-3 cursor-grab active:cursor-grabbing"
           >
             {smallTestimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id} className="relative !h-auto">
-                <SmallTestimonialCard testimonial={testimonial} />
+              <SwiperSlide key={testimonial.id} className="!h-auto">
+                <motion.div variants={childVariants} className="h-full">
+                  <SmallTestimonialCard testimonial={testimonial} />
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>
