@@ -3,6 +3,9 @@ import { HiBadgeCheck } from "react-icons/hi";
 import { FaRegHeart } from "react-icons/fa";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
+import { DotsPattern } from "../../../assets/images/svg/Svg.jsx";
+import { motion } from "framer-motion";
+import { floatSnake } from "../../../components/motion/constants/Animations.js";
 
 const figuresData = [
   {
@@ -59,7 +62,7 @@ function FiguresAtvConnect() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-blue-base/5 py-16">
+    <section className="relative bg-blue-base/5 py-16">
       <section className="flex flex-col items-center pt-8 px-4 md:p-10 mb-10">
         <span className="text-base md:text-lg font-impact text-brand-teal-400 mb-2 md:mb-4 text-center">
           {t("atvConnect.span_title")}
@@ -68,11 +71,15 @@ function FiguresAtvConnect() {
           {t("atvConnect.title")}
         </h2>
       </section>
-
+      <motion.div {...floatSnake(0)}>
+        <DotsPattern classNames="absolute size-24 -top-24 left-16" />
+      </motion.div>
+      <motion.div {...floatSnake(0)}>
+        <DotsPattern classNames="absolute size-24 -top-24 right-16" />
+      </motion.div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto gap-6 md:gap-8 px-5 pb-8 md:pb-10">
         {figuresData.map((figure) => {
           const Icon = figure.icon;
-
           return (
             <div
               key={figure.id}
