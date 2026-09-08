@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { GoStarFill } from "react-icons/go";
 import { LuQuote } from "react-icons/lu";
+import { FaQuoteLeft } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -37,7 +38,7 @@ function Avatar({ testimonial, size = "md" }) {
     ? "w-16 h-16 text-xl"
     : "w-16 h-16 text-base";
   return (
-    <div className={`${sizeClass} rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold border-2 border-white flex-shrink-0`}>
+    <div className={`${sizeClass} rounded-full overflow-hidden bg-brand-teal-400 flex items-center justify-center text-white font-semibold border-2 border-white flex-shrink-0`}>
       {testimonial.photo ? (
         <img
           src={testimonial.photo}
@@ -125,7 +126,7 @@ function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
   
       {/* Quote icon + texto: apilado en mobile, lado a lado en sm+ */}
       <div className="flex flex-col sm:flex-row sm:items-start sm:gap-4 flex-1">
-        <LuQuote className="text-brand-teal-300 text-4xl flex-shrink-0 mb-4 sm:mb-0 sm:mt-1" />
+        <LuQuote className="text-brand-teal-400 text-4xl flex-shrink-0 mb-4 sm:mb-0 sm:mt-1" />
         <p className="text-blue-base text-xl leading-relaxed line-clamp-4">
           {testimonial.testimony}
         </p>
@@ -146,7 +147,7 @@ function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
           <StarRating />
           <button
             onClick={() => onReadMore(testimonial)}
-            className="bg-brand-teal-300 text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap hover:bg-brand-teal-400 transition-colors"
+            className="bg-brand-teal-400 text-white text-base font-semibold px-4 py-2 rounded-full whitespace-nowrap hover:bg-brand-teal-400 transition-colors"
           >
             {readMoreLabel}
           </button>
@@ -169,7 +170,7 @@ function SmallTestimonialCard({ testimonial }) {
       <div className="absolute top-0 right-0 w-20 h-20 rounded-full bg-brand-teal-50 translate-x-6 -translate-y-6 pointer-events-none" />
 
       {/* Quote icon */}
-      <LuQuote className="text-brand-teal-300 text-xl mb-3 flex-shrink-0" />
+      <FaQuoteLeft className="text-brand-teal-400 text-xl mb-3 flex-shrink-0" />
 
       {/* Testimony text */}
       <p className="text-blue-base text-base leading-relaxed flex-1">
