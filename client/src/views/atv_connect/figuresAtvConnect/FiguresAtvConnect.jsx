@@ -15,6 +15,7 @@ const figuresData = [
     iconColor: "text-dark-blue",
     iconBg: "bg-dark-blue/10",
     accentBg: "bg-dark-blue",
+    lineColor: "bg-dark-blue",
   },
   {
     id: "figure-two",
@@ -26,6 +27,7 @@ const figuresData = [
     iconColor: "text-brand-teal-400",
     iconBg: "bg-brand-teal-50",
     accentBg: "bg-brand-teal-400",
+    lineColor: "bg-brand-teal-400",
   },
   {
     id: "figure-three",
@@ -37,6 +39,7 @@ const figuresData = [
     iconColor: "text-dark-blue",
     iconBg: "bg-dark-blue/10",
     accentBg: "bg-dark-blue",
+    lineColor: "bg-dark-blue",
   },
   {
     id: "figure-four",
@@ -48,6 +51,7 @@ const figuresData = [
     iconColor: "text-brand-teal-400",
     iconBg: "bg-brand-teal-50",
     accentBg: "bg-brand-teal-400",
+    lineColor: "bg-brand-teal-400",
   },
 ];
 
@@ -55,7 +59,7 @@ function FiguresAtvConnect() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-blue-base/5 mt-52">
+    <section className="bg-blue-base/5 py-16">
       <section className="flex flex-col items-center pt-8 px-4 md:p-10 mb-10">
         <span className="text-base md:text-lg font-impact text-brand-teal-400 mb-2 md:mb-4 text-center">
           {t("atvConnect.span_title")}
@@ -65,14 +69,14 @@ function FiguresAtvConnect() {
         </h2>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto gap-3 md:gap-4 px-4 md:px-5 pb-8 md:pb-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto gap-6 md:gap-8 px-5 pb-8 md:pb-10">
         {figuresData.map((figure) => {
           const Icon = figure.icon;
 
           return (
             <div
               key={figure.id}
-              className={`flex flex-col items-center text-center md:flex-row md:text-left md:items-center gap-3 md:gap-4 bg-white rounded-2xl px-4 py-5 md:px-5 md:py-4 w-full ${figure.accentShadow}`}
+              className={`relative flex flex-col items-center text-center md:flex-row md:text-left md:items-center gap-3 md:gap-4 bg-white rounded-2xl px-4 py-5 md:px-5 md:py-4 w-full overflow-hidden hover:translate-y-[-8px] transition-transform duration-300 shadow min-h-36`}
             >
               <div
                 className={`flex-shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full ${figure.iconBg}`}
@@ -95,6 +99,10 @@ function FiguresAtvConnect() {
                   {t(figure.translationKey)}
                 </p>
               </div>
+              {/* Línea indicadora inferior adaptada */}
+              <div
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-1 rounded-full ${figure.lineColor}`}
+              ></div>{" "}
             </div>
           );
         })}
