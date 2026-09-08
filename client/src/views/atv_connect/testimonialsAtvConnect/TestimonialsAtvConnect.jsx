@@ -29,20 +29,21 @@ const testimonialShape = PropTypes.shape({
   testimony: PropTypes.string,
   initial: PropTypes.string,
   photo: PropTypes.string,
+  photoAlt: PropTypes.string,
   role: PropTypes.string,
   university: PropTypes.string,
 });
 
 function Avatar({ testimonial, size = "md" }) {
-  const sizeClass = size === "lg"
-    ? "w-16 h-16 text-xl"
-    : "w-16 h-16 text-base";
+  const sizeClass = size === "lg" ? "w-16 h-16 text-xl" : "w-16 h-16 text-base";
   return (
-    <div className={`${sizeClass} rounded-full overflow-hidden bg-brand-teal-400 flex items-center justify-center text-white font-semibold border-2 border-white flex-shrink-0`}>
+    <div
+      className={`${sizeClass} rounded-full overflow-hidden bg-brand-teal-400 flex items-center justify-center text-white font-semibold border-2 border-white flex-shrink-0`}
+    >
       {testimonial.photo ? (
         <img
           src={testimonial.photo}
-          alt={testimonial.role}
+          alt={testimonial.photoAlt || testimonial.role}
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -60,7 +61,9 @@ Avatar.propTypes = {
 
 function TestimonyModal({ testimonial, onClose }) {
   useEffect(() => {
-    const handleKey = (e) => { if (e.key === "Escape") onClose(); };
+    const handleKey = (e) => {
+      if (e.key === "Escape") onClose();
+    };
     document.addEventListener("keydown", handleKey);
     document.body.style.overflow = "hidden";
     return () => {
@@ -75,7 +78,9 @@ function TestimonyModal({ testimonial, onClose }) {
       tabIndex={0}
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
       onClick={onClose}
-      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onClose(); }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onClose();
+      }}
       aria-label="Cerrar modal"
     >
       <div
@@ -99,7 +104,9 @@ function TestimonyModal({ testimonial, onClose }) {
           <Avatar testimonial={testimonial} size="lg" />
           <div>
             <p className="text-blue-base font-semibold">{testimonial.role}</p>
-            <p className="text-blue-base opacity-60 text-sm">{testimonial.university}</p>
+            <p className="text-blue-base opacity-60 text-sm">
+              {testimonial.university}
+            </p>
           </div>
         </div>
 
@@ -123,7 +130,6 @@ TestimonyModal.propTypes = {
 function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
   return (
     <div className="relative overflow-hidden bg-[#f3faf9] rounded-3xl p-8 md:p-10 flex flex-col h-full border border-brand-teal-300/40">
-  
       {/* Quote icon + texto: apilado en mobile, lado a lado en sm+ */}
       <div className="flex flex-col sm:flex-row sm:items-start sm:gap-4 flex-1">
         <LuQuote className="text-brand-teal-400 text-4xl flex-shrink-0 mb-4 sm:mb-0 sm:mt-1" />
@@ -137,8 +143,12 @@ function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
         <div className="flex items-center gap-3">
           <Avatar testimonial={testimonial} />
           <div className="flex flex-col">
-            <p className="text-blue-base font-semibold text-sm">{testimonial.role}</p>
-            <p className="text-blue-base opacity-60 text-xs">{testimonial.university}</p>
+            <p className="text-blue-base font-semibold text-sm">
+              {testimonial.role}
+            </p>
+            <p className="text-blue-base opacity-60 text-xs">
+              {testimonial.university}
+            </p>
           </div>
         </div>
 
@@ -180,8 +190,12 @@ function SmallTestimonialCard({ testimonial }) {
       <div className="border-t border-gray-200 mt-4 pt-3 flex items-center gap-3">
         <Avatar testimonial={testimonial} />
         <div className="flex flex-col flex-1 min-w-0">
-          <p className="text-blue-base font-semibold text-sm truncate">{testimonial.role}</p>
-          <p className="text-blue-base opacity-60 text-xs truncate">{testimonial.university}</p>
+          <p className="text-blue-base font-semibold text-sm truncate">
+            {testimonial.role}
+          </p>
+          <p className="text-blue-base opacity-60 text-xs truncate">
+            {testimonial.university}
+          </p>
         </div>
         <StarRating />
       </div>
@@ -204,7 +218,11 @@ function TestimonialsAtvConnect() {
 
   const childVariants = {
     hidden: { opacity: 0, scale: 0.5 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   const testimonials = getTestimonials(t);
