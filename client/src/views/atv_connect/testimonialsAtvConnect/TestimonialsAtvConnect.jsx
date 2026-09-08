@@ -104,7 +104,7 @@ function TestimonyModal({ testimonial, onClose }) {
         </div>
 
         {/* Full testimony */}
-        <p className="text-blue-base text-base leading-relaxed mb-6">
+        <p className="text-blue-base text-base leading-relaxed mb-6 whitespace-pre-line">
           {testimonial.testimony}
         </p>
 
@@ -122,12 +122,12 @@ TestimonyModal.propTypes = {
 
 function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
   return (
-    <div className="relative overflow-hidden bg-brand-teal-50/20 rounded-3xl p-8 md:p-10 flex flex-col h-full border border-brand-teal-300/40">
+    <div className="relative overflow-hidden bg-[#f3faf9] rounded-3xl p-8 md:p-10 flex flex-col h-full border border-brand-teal-300/40">
   
       {/* Quote icon + texto: apilado en mobile, lado a lado en sm+ */}
       <div className="flex flex-col sm:flex-row sm:items-start sm:gap-4 flex-1">
         <LuQuote className="text-brand-teal-400 text-4xl flex-shrink-0 mb-4 sm:mb-0 sm:mt-1" />
-        <p className="text-blue-base text-xl leading-relaxed line-clamp-4">
+        <p className="text-blue-base text-xl leading-relaxed line-clamp-4 whitespace-pre-line">
           {testimonial.testimony}
         </p>
       </div>
@@ -147,7 +147,7 @@ function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
           <StarRating />
           <button
             onClick={() => onReadMore(testimonial)}
-            className="bg-brand-teal-400 text-white text-base font-semibold px-4 py-2 rounded-full whitespace-nowrap hover:bg-brand-teal-400 transition-colors"
+            className="bg-brand-teal-400 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-full whitespace-nowrap hover:bg-brand-teal-400 transition-colors"
           >
             {readMoreLabel}
           </button>
@@ -211,7 +211,7 @@ function TestimonialsAtvConnect() {
   const readMoreLabel = t("atvConnect.testimonialsAtvConnect.readMore");
 
   return (
-    <section className="relative p-5 md:p-10">
+    <section className="relative p-5 md:p-10 mb-20">
       {/* Decorative blobs */}
       <motion.div
         {...floatSnake(0)}
@@ -274,7 +274,7 @@ function TestimonialsAtvConnect() {
         </motion.div>
 
         {/* Small testimonials — single row, 1/2/3 cols responsive */}
-        <motion.div {...slideFromTop}>
+        <motion.div {...slideFromTop} className="relative">
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
@@ -292,10 +292,10 @@ function TestimonialsAtvConnect() {
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
-            className="w-full py-3 -my-3 cursor-grab active:cursor-grabbing"
+            className="relative w-full py-3 -my-3 cursor-grab active:cursor-grabbing"
           >
             {smallTestimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id} className="!h-auto">
+              <SwiperSlide key={testimonial.id} className="relative !h-auto">
                 <SmallTestimonialCard testimonial={testimonial} />
               </SwiperSlide>
             ))}

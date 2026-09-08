@@ -1356,7 +1356,7 @@
         "university": "Aurelio Llano Scholar"
       },
       "testimony_two": {
-        "description": "“intuitive platform makes it easy for students to find a tutor and for tutors to track every session”",
+        "description": "The platform is educational and user-friendly, which makes it easy for students to select a tutor and for tutors to track the requested sessions.”",
         "role": "Tutor",
         "university": "University of Antioquia"
       },
@@ -1370,8 +1370,13 @@
         "role": "Student",
         "university": "Aurelio Llano Scholar"
       },
+      "testimony_eight": {
+        "description": "“I started the semester feeling very nervous and constantly on edge, since my foundations in mathematics weren't as solid as I thought. So, instead of continuing to complain, I decided to look for solutions to properly keep up with my academic journey.\n\nFortunately, I have the support of FATV, who helped me manage and schedule tutoring sessions right from the first week. I started with Calculus and I remember spending that entire week in classes with the foundation's tutors.\n\nI really like it because I can receive the tutoring sessions from the comfort of my home and, what's more, I can choose the time that suits me best, depending on the tutor's availability. On top of that, the teachers really know their stuff. The most incredible thing is that they are students who understand our needs and, of course, they have the digital tools necessary to run the classes effectively.\n\nBy the end of the semester, I had done a ton of tutoring sessions, but I realized I came out as a completely different Gisela from the one who entered with so much fear of the unknown. The tutoring provided by FATV helped me build foundations that I didn't have when the semester began.\n\nAnd I'm not just talking about the academic side. They also helped me feel much more confident in my progress.”",
+        "role": "Gisela Patiño Bedoya",
+        "university": "Systems Engineering Student"
+      },
       "testimony_nine": {
-        "description": "“I have had the opportunity to know ATV's strategy since its beginnings and also to see how it has evolved with the implementation of the ATVconecta platform. It has been a very meaningful strategy, especially because it has made the tutoring process more organized and centralized. Currently, the process is much simpler. From the platform, we can view the tutors' schedules and availability and easily find a tutoring session that fits our needs. Furthermore, it is very intuitive and easy to use. For me, it has been very valuable to see that before and after, and to notice how a strategy that was already a great help has grown much stronger with the platform. 💙”",
+        "description": "“I have had the opportunity to know ATV's strategy since its beginnings and also to see how it has evolved with the implementation of the ATVconecta platform. It has been a very meaningful strategy, especially because it has made the tutoring process more organized and centralized.\n\nCurrently, the process is much simpler. From the platform, we can view the tutors' schedules and availability and easily find a tutoring session that fits our needs. Furthermore, it is very intuitive and easy to use.\n\nFor me, it has been very valuable to see that before and after, and to notice how a strategy that was already a great help has grown much stronger with the platform. 💙”",
         "role": "Isabella Sánchez Mejía",
         "university": "Student"
       },
@@ -1409,11 +1414,6 @@
       },
       "testimony_seven": {
         "description": "“Excellent tool”",
-        "role": "Student",
-        "university": "University of Antioquia"
-      },
-      "testimony_eight": {
-        "description": "“I think this is a great initiative, and I hope it continues to grow”",
         "role": "Student",
         "university": "University of Antioquia"
       }
