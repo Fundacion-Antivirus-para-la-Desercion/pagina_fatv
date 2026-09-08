@@ -175,7 +175,7 @@ LargeTestimonialCard.propTypes = {
 
 function SmallTestimonialCard({ testimonial }) {
   return (
-    <div className="relative overflow-hidden bg-white rounded-2xl p-6 flex flex-col h-full border border-brand-teal-300/40">
+    <div className="relative overflow-hidden bg-white rounded-2xl p-6 flex flex-col h-full border border-brand-teal-300/40 hover:border-brand-teal-400 hover:shadow-md hover:translate-y-[-8px] transition-all duration-300">
       {/* Decorative blob top-right */}
       <div className="absolute top-0 right-0 w-20 h-20 rounded-full bg-brand-teal-50 translate-x-6 -translate-y-6 pointer-events-none" />
 
