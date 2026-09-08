@@ -40,15 +40,6 @@ export function getTestimonials(t) {
       university: t(`${base}.testimony_two.university`),
     },
     {
-      id: "testimony-three",
-      key: "small-left",
-      testimony: t(`${base}.testimony_three.description`),
-      initial: "E",
-      photo: null,
-      role: t(`${base}.testimony_three.role`),
-      university: t(`${base}.testimony_three.university`),
-    },
-    {
       id: "testimony-four",
       key: "small-right",
       testimony: t(`${base}.testimony_four.description`),
@@ -58,15 +49,6 @@ export function getTestimonials(t) {
       university: t(`${base}.testimony_four.university`),
     },
     {
-      id: "testimony-five",
-      key: "small-left",
-      testimony: t(`${base}.testimony_five.description`),
-      initial: "E",
-      photo: null,
-      role: t(`${base}.testimony_five.role`),
-      university: t(`${base}.testimony_five.university`),
-    },
-    {
       id: "testimony-six",
       key: "small-right",
       testimony: t(`${base}.testimony_six.description`),
@@ -74,15 +56,6 @@ export function getTestimonials(t) {
       photo: null,
       role: t(`${base}.testimony_six.role`),
       university: t(`${base}.testimony_six.university`),
-    },
-    {
-      id: "testimony-seven",
-      key: "small-left",
-      testimony: t(`${base}.testimony_seven.description`),
-      initial: "E",
-      photo: null,
-      role: t(`${base}.testimony_seven.role`),
-      university: t(`${base}.testimony_seven.university`),
     },
     {
       id: "testimony-eight",

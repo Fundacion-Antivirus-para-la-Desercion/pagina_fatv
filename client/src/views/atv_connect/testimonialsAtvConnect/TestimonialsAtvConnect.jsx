@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { GoStarFill } from "react-icons/go";
 import { FaQuoteLeft } from "react-icons/fa";
+import { LuQuote } from "react-icons/lu";
+
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { floatSnake } from "../../../components/motion/constants/Animations.js";
@@ -51,19 +53,19 @@ Avatar.propTypes = { testimonial: testimonialShape.isRequired };
 
 function LargeTestimonialCard({ testimonial, readMoreLabel }) {
   return (
-    <div className="relative overflow-hidden bg-brand-teal-50/20 rounded-3xl p-8 min-h-[280px] flex flex-col h-full border border-brand-teal-300/40">
+    <div className="relative overflow-hidden bg-brand-teal-50/20 rounded-3xl p-10 max-h-[300px] flex flex-col h-full border border-brand-teal-300/40">
       {/* Decorative blob top-right */}
-      <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-brand-teal-50 translate-x-8 -translate-y-8 pointer-events-none" />
+      <div className="absolute  top-0 right-0 w-24 h-24 rounded-full bg-brand-teal-50 translate-x-8 -translate-y-8 pointer-events-none" />
 
-      {/* Quote icon */}
-      <FaQuoteLeft className="text-brand-teal-300 text-4xl mb-4 flex-shrink-0" />
+      {/* Quote icon + Testimony text */}
+      <div className="flex items-start gap-3 flex-1">
+        <LuQuote className="text-brand-teal-300 text-4xl flex-shrink-0 mt-1" />
+        <p className="text-blue-base text-lg sm:text-xl leading-relaxed">
+          {testimonial.testimony}
+        </p>
+      </div>
 
-      {/* Testimony text */}
-      <p className="text-blue-base text-lg sm:text-xl leading-relaxed flex-1">
-        {testimonial.testimony}
-      </p>
-
-      <div className="border-t border-gray-100 mt-6 pt-4 flex items-center justify-between gap-4 flex-wrap">
+      <div className="border-t border-gray-200 mt-6 pt-4 flex items-center justify-between gap-4 flex-wrap">
         {/* Author */}
         <div className="flex items-center gap-3">
           <Avatar testimonial={testimonial} />
@@ -104,7 +106,7 @@ function SmallTestimonialCard({ testimonial }) {
         {testimonial.testimony}
       </p>
 
-      <div className="border-t border-gray-100 mt-4 pt-3 flex items-center gap-3">
+      <div className="border-t border-gray-200 mt-4 pt-3 flex items-center gap-3">
         <Avatar testimonial={testimonial} />
         <div className="flex flex-col flex-1 min-w-0">
           <p className="text-blue-base font-semibold text-sm truncate">{testimonial.role}</p>
