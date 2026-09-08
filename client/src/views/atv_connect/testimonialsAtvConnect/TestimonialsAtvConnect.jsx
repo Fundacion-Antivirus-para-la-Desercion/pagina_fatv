@@ -39,7 +39,7 @@ function LargeTestimonialCard({ testimonial }) {
 
       <div className="flex items-center gap-4">
         <div className="relative flex items-center flex-shrink-0">
-          <div className="w-14 h-14 mt-10 rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold text-lg border-2 border-white flex-shrink-0">
+          <div className="w-14 h-14 mt-10 mb-10 rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold text-lg border-2 border-white flex-shrink-0">
             {testimonial.photo ? (
               <img
                 src={testimonial.photo}

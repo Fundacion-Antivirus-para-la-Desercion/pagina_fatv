@@ -231,10 +231,13 @@ export const ESTUDIANTE_UNO_IMG     = getImageUrl("https://res.cloudinary.com/bg
 export const ESTUDIANTE_DOS_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669953/estudiante-certificado-dos_atqewb.webp");
 export const JAVI_CARA_ATV_CONECTA_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669973/javiAtvConecta_l9eowa.webp");
 // - testimonials AtvConnect ────────────────────────────────────────────────────────────────
-export const TESTIMONIAL_GISELA_PATINO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788294186/gisela-atino-bedoya_xizal7.jpg");
-
-
-// ── contactUs ─────────────────────────────────────────────────────────────────
+export const TESTIMONIAL_ANGEL_PARRA_ARRETA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/angel-parra-arrieta_d8zvgl.webp");
+export const TESTIMONIAL_JUAN_CAMILO_TOVAR = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/juan-camilo-tovar_brazen.webp");
+export const TESTIMONIAL_ISABELLA_NAVARRO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/isabella-navarro_dfze8n.webp");
+export const TESTIMONIAL_GISELA_PATINO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/gisela-atino-bedoya_siqwpv.webp");
+export const TESTIMONIAL_ISABELLA_SANCHEZ_MEJIA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/isabella-sanchez-mejia_oeargb.webp");
+export const TESTIMONIAL_MATIAS_MAPATA_ROJAS = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358426/matias-mapata-rojas_qnygo1.webp");
+// ── contactUs ──────────────────────────────────────────
 export const BANNER_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671583/banner-contact-us_fy5djq.webp");
 export const MAPS_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674041/contact-image_kodr8u.webp");
 // ── notFound ──────────────────────────────────────────────────────────────────

@@ -1,4 +1,10 @@
-import { TESTIMONIAL_GISELA_PATINO as GiselaPatino } from "../../../assets/cloudinaryImages";
+import { TESTIMONIAL_GISELA_PATINO as GiselaPatino,
+  TESTIMONIAL_ISABELLA_SANCHEZ_MEJIA as IsabellaSanchezMejia,
+  TESTIMONIAL_ISABELLA_NAVARRO as IsabellaNavarro,
+  TESTIMONIAL_JUAN_CAMILO_TOVAR as JuanCamiloTovar,
+  TESTIMONIAL_MATIAS_MAPATA_ROJAS as MatiasMapataRojas,
+  TESTIMONIAL_ANGEL_PARRA_ARRETA as AngelParraArreta
+ } from "../../../assets/cloudinaryImages";
 
 /**
  * @typedef {Object} Testimonial
@@ -20,7 +26,7 @@ export function getTestimonials(t) {
       key: "small-left",
       testimony: t(`${base}.testimony_one.description`),
       initial: "E",
-      photo: GiselaPatino,
+      photo: null,
       role: t(`${base}.testimony_one.role`),
       university: t(`${base}.testimony_one.university`),
     },
@@ -47,7 +53,7 @@ export function getTestimonials(t) {
       key: "small-right",
       testimony: t(`${base}.testimony_four.description`),
       initial: "E",
-      photo: GiselaPatino,
+      photo: null,
       role: t(`${base}.testimony_four.role`),
       university: t(`${base}.testimony_four.university`),
     },
@@ -82,10 +88,55 @@ export function getTestimonials(t) {
       id: "testimony-eight",
       key: "large",
       testimony: t(`${base}.testimony_eight.description`),
-      initial: "E",
+      initial: "G",
       photo: GiselaPatino,
       role: t(`${base}.testimony_eight.role`),
       university: t(`${base}.testimony_eight.university`),
+    },
+    {
+      id: "testimony-nine",
+      key: "large",
+      testimony: t(`${base}.testimony_nine.description`),
+      initial: "I",
+      photo: IsabellaSanchezMejia,
+      role: t(`${base}.testimony_nine.role`),
+      university: t(`${base}.testimony_nine.university`),
+    },
+    {
+      id: "testimony-ten",
+      key: "large",
+      testimony: t(`${base}.testimony_ten.description`),
+      initial: "J",
+      photo: JuanCamiloTovar,
+      role: t(`${base}.testimony_ten.role`),
+      university: t(`${base}.testimony_ten.university`),
+    },
+    {
+      id: "testimony-eleven",
+      key: "large",
+      testimony: t(`${base}.testimony_eleven.description`),
+      initial: "M",
+      photo: MatiasMapataRojas,
+      role: t(`${base}.testimony_eleven.role`),
+      university: t(`${base}.testimony_eleven.university`),
+    },
+    {
+      id: "testimony-twelve",
+      key: "small-left",
+      testimony: t(`${base}.testimony_twelve.description`),
+      initial: "A",
+      photo: AngelParraArreta,
+      role: t(`${base}.testimony_twelve.role`),
+      university: t(`${base}.testimony_twelve.university`),
+    },
+    {
+      id: "testimony-thirteen",
+      key: "large",
+      testimony: t(`${base}.testimony_thirteen.description`),
+      initial: "I",
+      photo: IsabellaNavarro,
+      role: t(`${base}.testimony_thirteen.role`),
+      university: t(`${base}.testimony_thirteen.university`),
     },
   ];
 }

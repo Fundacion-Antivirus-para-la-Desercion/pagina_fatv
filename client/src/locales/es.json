@@ -1348,35 +1348,45 @@
         "role": "Tutor",
         "university": "Universidad de Antioquia"
       },
-      "testimony_three": {
-        "description": "“Me parece una buena idea la implementación de una plataforma, gracias”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
-      },
       "testimony_four": {
         "description": "“Los felicito por esta web, de verdad uno no saben lo útil que es hasta que lo prueba y queda con la boca abierta sobre lo fácil que es tener contacto con compas como nosotros dispuestos a ayudar”",
         "role": "Estudiante",
         "university": "Becario Aurelio Llano"
-      },
-      "testimony_five": {
-        "description": "“Me parece una alternativa muy innovadora y útil”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
       },
       "testimony_six": {
         "description": "“En general me gustó mucho, muchas gracias por siempre pensar en nuestro bienestar”",
         "role": "Estudiante",
         "university": "Becario Aurelio Llano"
       },
-      "testimony_seven": {
-        "description": "“Excelente herramienta”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
-      },
       "testimony_eight": {
         "description": "“Entré con muchos nervios al semestre y siempre estaba a la expectativa, ya que mis bases en las áreas matemáticas no estaban tan estructuradas como yo pensaba. Fue así como, en vez de seguir quejándome, decidí buscar soluciones para continuar de manera óptima con mi proceso académico. Afortunadamente, cuento con el apoyo de FATV, quienes desde la primera semana me colaboraron con la gestión para agendar tutorías. Empecé con Cálculo y recuerdo que toda esa semana me la pasé en clases con los tutores de la fundación. Me gusta mucho porque puedo recibir las tutorías desde la comodidad de mi casa y, además, puedo elegir el horario que más me convenga, dependiendo de la disponibilidad del tutor. Por otra parte, los profesores son personas que saben del tema. Lo más increíble es que son estudiantes que conocen cuáles son nuestras necesidades y, por supuesto, cuentan con las herramientas digitales necesarias para desarrollar las clases de manera efectiva. Al finalizar el semestre, hice un montón de tutorías, pero me di cuenta de que salí como una Gisela totalmente diferente a la que entró con mucho miedo a las novedades. Las tutorías brindadas por FATV me ayudaron a crear cimientos que, al comenzar el semestre, no tenía. No solo hablo de la parte académica. También me ayudaron a sentirme mucho más segura de mi proceso.”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
+        "role": "Gisela Patiño Bedoya",
+        "university": "Estudiante de Ingeniería de Sistemas"
+      },
+      "testimony_nine": {
+        "description": "“He tenido la oportunidad de conocer la estrategia de ATV desde sus inicios y también de ver cómo ha ido evolucionando con la implementación de la plataforma ATVconecta. Ha sido una estrategia bastante significativa, especialmente porque ha facilitado que el proceso de las tutorías sea más organizado y centralizado. Actualmente, el proceso es mucho más sencillo. Desde la plataforma podemos ver los horarios y la disponibilidad de los tutores y encontrar fácilmente una tutoría que se ajuste a nuestras necesidades. Además, es muy intuitiva y fácil de usar. Para mí ha sido muy valioso poder ver ese antes y después y notar cómo una estrategia que ya era de gran ayuda se ha fortalecido mucho más con la plataforma.💙 ”",
+        "role": "Isabella Sánchez Mejía",
+        "university": "Estudiante"
+      },
+      "testimony_ten": {
+        "description": "“Las tutorías de la Fundación Antivirus fueron clave para llegar muy bien preparado a mis clases. Solicitar las tutorías antes de empezar el semestre en álgebra, cálculo, física y programación hizo que el ritmo de la universidad fuera mucho más fácil de asimilar. No solo reforcé lo que ya sabía, sino que logré adaptarme rápidamente sin sentirme abrumado. Al combinar este gran apoyo con una buena organización de mi tiempo, todo fluyó muchísimo mejor. Todo este proceso me ayudó a entender realmente los temas y a destacar con un promedio excelente.”",
+        "role": "Juan Camilo Tovar",
+        "university": "Estudiante de Ingeniería de Sistemas"
+      },
+      "testimony_eleven": {
+        "description": "“En esta experiencia como monitor he aprendido bastante y me he podido nutrir de distintos aprendizajes, tanto recibiendo como dando tutorias. Seguir estos procesos en simultáneo me ha permitido entender la perspectiva y los problemas mas comunes al recibir estas tutorías de esta modalidad, así mismo, he aprendido de las distintas maneras de enseñar y compartir el conocimiento respecto a cada persona. Ha sido un proceso muy gratificante y valioso para mi crecimiento personal y académico.”",
+        "role": "Matías Zapata Rojas",
+        "university": "Estudiante y tutor - Ingeniería de Sistemas"
+      },
+      "testimony_twelve": {
+        "description": "“Mi experiencia con Atvconecta ha sido muy buena, ya que es una plataforma muy fácil e intuitiva. Agendar tutorías es sencillo y rápido, y no he tenido dificultades para utilizarla.”",
+        "role": "Ángel Parra Arrieta",
+        "university": "Estudiante"
+      },
+      "testimony_thirteen": {
+        "description": "“Aprovechar las tutorías me sirvió muchísimo para resolver las dudas que tenía y entender mejor los temas difíciles. Ese apoyo me dio más seguridad al estudiar y me ha ayudado progresivamente a sacar mejores notas en materias complicadas para aumentar mi promedio.”",
+        "role": "Isabella Navarro",
+        "university": "Estudiante de Ingeniería de Sistemas"
       }
     },
     "pricing": {

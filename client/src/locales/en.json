@@ -1369,6 +1369,31 @@
         "description": "“Excellent tool”",
         "role": "Student",
         "university": "University of Antioquia"
+      },
+      "testimony_nine": {
+        "description": "“I have had the opportunity to know ATV's strategy since its beginnings and also to see how it has evolved with the implementation of the ATVconecta platform. It has been a very meaningful strategy, especially because it has made the tutoring process more organized and centralized. Currently, the process is much simpler. From the platform, we can view the tutors' schedules and availability and easily find a tutoring session that fits our needs. Furthermore, it is very intuitive and easy to use. For me, it has been very valuable to see that before and after, and to notice how a strategy that was already a great help has grown much stronger with the platform. 💙”",
+        "role": "Isabella Sánchez Mejía",
+        "university": "Student"
+      },
+      "testimony_ten": {
+        "description": "“The Antivirus Foundation's tutoring sessions were key to arriving very well prepared for my classes. Requesting tutoring before the semester started in algebra, calculus, physics, and programming made the university pace much easier to assimilate. Not only did I reinforce what I already knew, but I managed to adapt quickly without feeling overwhelmed. By combining this great support with good time management, everything flowed much better. This whole process helped me truly understand the topics and stand out with an excellent GPA.”",
+        "role": "Juan Camilo Tovar",
+        "university": "Systems Engineering Student"
+      },
+      "testimony_eleven": {
+        "description": "“In this experience as a tutor, I have learned a lot and been able to feed on different lessons, both by receiving and giving tutoring. Following these processes simultaneously has allowed me to understand the perspective and the most common problems when receiving tutoring in this modality; likewise, I have learned different ways of teaching and sharing knowledge regarding each person. It has been a very rewarding and valuable process for my personal and academic growth.”",
+        "role": "Matías Zapata Rojas",
+        "university": "Student and Tutor - Systems Engineering"
+      },
+      "testimony_twelve": {
+        "description": "“My experience with ATVconecta has been very good, since it is a very easy and intuitive platform. Scheduling tutoring sessions is simple and fast, and I haven't had any difficulties using it.”",
+        "role": "Ángel Parra Arrieta",
+        "university": "Student"
+      },
+      "testimony_thirteen": {
+        "description": "“Taking advantage of the tutoring sessions helped me a lot to resolve my doubts and better understand difficult topics. That support gave me more confidence when studying and has progressively helped me get better grades in complicated subjects to raise my GPA.”",
+        "role": "Isabella Navarro",
+        "university": "Systems Engineering Student"
       }
     },
     "pricing": {
