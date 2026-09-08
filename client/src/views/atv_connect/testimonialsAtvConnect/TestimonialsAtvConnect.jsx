@@ -16,8 +16,8 @@ import { getTestimonials } from "./testimonialsData";
 function StarRating() {
   return (
     <div className="flex gap-0.5">
-      {[...Array(5)].map((_, i) => (
-        <span key={i}>
+      {[...Array(5)].map((index) => (
+        <span key={index}>
           <GoStarFill className="text-primary-yellow" />
         </span>
       ))}
