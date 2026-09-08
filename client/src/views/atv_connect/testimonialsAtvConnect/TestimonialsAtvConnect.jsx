@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { GoStarFill } from "react-icons/go";
-import { FaQuoteLeft } from "react-icons/fa";
 import { LuQuote } from "react-icons/lu";
-
+import { IoClose } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { floatSnake } from "../../../components/motion/constants/Animations.js";
@@ -32,9 +32,12 @@ const testimonialShape = PropTypes.shape({
   university: PropTypes.string,
 });
 
-function Avatar({ testimonial }) {
+function Avatar({ testimonial, size = "md" }) {
+  const sizeClass = size === "lg"
+    ? "w-16 h-16 text-xl"
+    : "w-16 h-16 text-base";
   return (
-    <div className="w-12 h-12 rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold text-base border-2 border-white flex-shrink-0">
+    <div className={`${sizeClass} rounded-full overflow-hidden bg-brand-teal-300 flex items-center justify-center text-white font-semibold border-2 border-white flex-shrink-0`}>
       {testimonial.photo ? (
         <img
           src={testimonial.photo}
@@ -49,23 +52,86 @@ function Avatar({ testimonial }) {
   );
 }
 
-Avatar.propTypes = { testimonial: testimonialShape.isRequired };
+Avatar.propTypes = {
+  testimonial: testimonialShape.isRequired,
+  size: PropTypes.oneOf(["md", "lg"]),
+};
 
-function LargeTestimonialCard({ testimonial, readMoreLabel }) {
+function TestimonyModal({ testimonial, onClose }) {
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
   return (
-    <div className="relative overflow-hidden bg-brand-teal-50/20 rounded-3xl p-10 max-h-[300px] flex flex-col h-full border border-brand-teal-300/40">
-      {/* Decorative blob top-right */}
-      <div className="absolute  top-0 right-0 w-24 h-24 rounded-full bg-brand-teal-50 translate-x-8 -translate-y-8 pointer-events-none" />
+    <div
+      role="button"
+      tabIndex={0}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
+      onClick={onClose}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onClose(); }}
+      aria-label="Cerrar modal"
+    >
+      <div
+        role="dialog"
+        aria-modal="true"
+        className="bg-white rounded-2xl max-w-2xl w-full p-8 relative max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+        onKeyDown={(e) => e.stopPropagation()}
+      >
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:bg-gray-100 transition-colors"
+          aria-label="Cerrar"
+        >
+          <IoClose className="text-lg" />
+        </button>
 
-      {/* Quote icon + Testimony text */}
-      <div className="flex items-start gap-3 flex-1">
-        <LuQuote className="text-brand-teal-300 text-4xl flex-shrink-0 mt-1" />
-        <p className="text-blue-base text-lg sm:text-xl leading-relaxed">
+        {/* Author row */}
+        <div className="flex items-center gap-4 mb-6">
+          <Avatar testimonial={testimonial} size="lg" />
+          <div>
+            <p className="text-blue-base font-semibold">{testimonial.role}</p>
+            <p className="text-blue-base opacity-60 text-sm">{testimonial.university}</p>
+          </div>
+        </div>
+
+        {/* Full testimony */}
+        <p className="text-blue-base text-base leading-relaxed mb-6">
+          {testimonial.testimony}
+        </p>
+
+        {/* Stars */}
+        <StarRating />
+      </div>
+    </div>
+  );
+}
+
+TestimonyModal.propTypes = {
+  testimonial: testimonialShape.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
+function LargeTestimonialCard({ testimonial, readMoreLabel, onReadMore }) {
+  return (
+    <div className="relative overflow-hidden bg-brand-teal-50/20 rounded-3xl p-8 md:p-10 flex flex-col h-full border border-brand-teal-300/40">
+  
+      {/* Quote icon + texto: apilado en mobile, lado a lado en sm+ */}
+      <div className="flex flex-col sm:flex-row sm:items-start sm:gap-4 flex-1">
+        <LuQuote className="text-brand-teal-300 text-4xl flex-shrink-0 mb-4 sm:mb-0 sm:mt-1" />
+        <p className="text-blue-base text-xl leading-relaxed line-clamp-4">
           {testimonial.testimony}
         </p>
       </div>
 
-      <div className="border-t border-gray-200 mt-6 pt-4 flex items-center justify-between gap-4 flex-wrap">
+      <div className="mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:pl-[3.25rem]">
         {/* Author */}
         <div className="flex items-center gap-3">
           <Avatar testimonial={testimonial} />
@@ -78,7 +144,10 @@ function LargeTestimonialCard({ testimonial, readMoreLabel }) {
         {/* Stars + button */}
         <div className="flex items-center gap-4">
           <StarRating />
-          <button className="bg-brand-teal-300 text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap hover:bg-brand-teal-400 transition-colors">
+          <button
+            onClick={() => onReadMore(testimonial)}
+            className="bg-brand-teal-300 text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap hover:bg-brand-teal-400 transition-colors"
+          >
             {readMoreLabel}
           </button>
         </div>
@@ -90,6 +159,7 @@ function LargeTestimonialCard({ testimonial, readMoreLabel }) {
 LargeTestimonialCard.propTypes = {
   testimonial: testimonialShape.isRequired,
   readMoreLabel: PropTypes.string.isRequired,
+  onReadMore: PropTypes.func.isRequired,
 };
 
 function SmallTestimonialCard({ testimonial }) {
@@ -99,7 +169,7 @@ function SmallTestimonialCard({ testimonial }) {
       <div className="absolute top-0 right-0 w-20 h-20 rounded-full bg-brand-teal-50 translate-x-6 -translate-y-6 pointer-events-none" />
 
       {/* Quote icon */}
-      <FaQuoteLeft className="text-brand-teal-300 text-xl mb-3 flex-shrink-0" />
+      <LuQuote className="text-brand-teal-300 text-xl mb-3 flex-shrink-0" />
 
       {/* Testimony text */}
       <p className="text-blue-base text-base leading-relaxed flex-1">
@@ -124,6 +194,7 @@ SmallTestimonialCard.propTypes = {
 
 function TestimonialsAtvConnect() {
   const { t } = useTranslation();
+  const [activeTestimonial, setActiveTestimonial] = useState(null);
 
   const slideFromTop = {
     initial: { opacity: 0, y: -60 },
@@ -194,6 +265,7 @@ function TestimonialsAtvConnect() {
                 <LargeTestimonialCard
                   testimonial={testimonial}
                   readMoreLabel={readMoreLabel}
+                  onReadMore={setActiveTestimonial}
                 />
               </SwiperSlide>
             ))}
@@ -229,6 +301,14 @@ function TestimonialsAtvConnect() {
           </Swiper>
         </motion.div>
       </div>
+
+      {/* Modal */}
+      {activeTestimonial && (
+        <TestimonyModal
+          testimonial={activeTestimonial}
+          onClose={() => setActiveTestimonial(null)}
+        />
+      )}
     </section>
   );
 }

@@ -1403,7 +1403,8 @@
         "role": "Isabella Navarro",
         "university": "Estudiante de Ingeniería de Sistemas"
       },
-      "readMore": "Leer historia completa",
+      "readMore": "Leer testimonio completo",
+      "modalTitle": "Testimonio de",
       "testimony_three": {
         "description": "“Me parece una buena idea la implementación de una plataforma, gracias”",
         "role": "Estudiante",

@@ -1395,7 +1395,8 @@
         "role": "Isabella Navarro",
         "university": "Systems Engineering Student"
       },
-      "readMore": "Read full story",
+      "readMore": "Read full testimony",
+      "modalTitle": "Testimony of",
       "testimony_three": {
         "description": "“I think implementing this platform is a great idea, thank you!”",
         "role": "Student",
