@@ -72,10 +72,10 @@ function FiguresAtvConnect() {
         </h2>
       </section>
       <motion.div {...floatSnake(0)}>
-        <DotsPattern classNames="absolute size-24 -top-24 left-16" />
+        <DotsPattern classNames="absolute hidden md:block size-24 -top-24 left-16" />
       </motion.div>
       <motion.div {...floatSnake(0)}>
-        <DotsPattern classNames="absolute size-24 -top-24 right-16" />
+        <DotsPattern classNames="absolute hidden md:block size-24 -top-24 right-16" />
       </motion.div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto gap-6 md:gap-8 px-5 pb-8 md:pb-10">
         {figuresData.map((figure) => {
