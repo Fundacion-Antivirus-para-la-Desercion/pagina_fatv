@@ -25,7 +25,7 @@ function DescriptionAtvConnect() {
     viewport: { once: true, amount: 0.6 },
   };
   return (
-    <section className="bg-[#F6F6F6] grid grid-col-1 lg:grid-cols-2 items-center mb-20 p-2 lg:p-5">
+    <section className="grid grid-col-1 lg:grid-cols-2 items-center mb-20 p-2 lg:p-5">
       <motion.div {...slideFromLeft} className="mb-5">
         <section className="relative xl:left-[10%] grid grid-col-1 lg:grid-cols-[4fr_1fr_4fr]">
           <div className="hidden lg:block">
@@ -40,7 +40,7 @@ function DescriptionAtvConnect() {
           <motion.div {...floatSnake()} className="mb-5 relative">
             {" "}
             <img
-              className="min-w-20 w-20 md:w-32 rounded-full bg-brand-teal-400 p-3 mt-5 md:mt-6 xl:ml-6 block mx-auto"
+              className="min-w-20 w-20 md:w-36 rounded-full bg-brand-teal-400 p-3 mt-5 md:mt-6 xl:ml-6 block mx-auto"
               src={LogoAtvConecta}
               alt="Logo ATVConecta"
               loading="lazy"
@@ -63,14 +63,20 @@ function DescriptionAtvConnect() {
         className="text-center max-w-[700px] block mx-auto"
       >
         <section>
-          <div>
-            {" "}
-            <h1 className="text-4xl md:text-5xl text-blue-base font-impact mb-5 md:mb-8">
+          <div className="text-center xl:text-left">
+            <span className="inline-block mb-5 text-white text-sm tracking-nm bg-brand-teal-400 rounded-3xl py-2 px-4">
               ATVCONECTA
-            </h1>
-            <p className="text-center text-xl md:text-2xl  text-blue-base p-3">
+            </span>{" "}
+            <h2 className=" text-blue-base text-3xl md:text-6xl font-impact mb-5">
+              {t("atvConnect.h2")}
+              <br />
+              <span className="text-brand-teal-400">
+                {t("atvConnect.br_h2")}
+              </span>
+            </h2>
+            <p className="text-lg md:text-2xl text-blue-base">
               {t("atvConnect.description_one")}
-              <span className="text-primary-yellow ">
+              <span className="text-brand-teal-400">
                 {t("atvConnect.description_span")}
               </span>
               {t("atvConnect.description_two")}
