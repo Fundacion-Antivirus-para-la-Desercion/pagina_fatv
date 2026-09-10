@@ -134,7 +134,7 @@ function DescriptionAtvConnect() {
                     className="flex flex-col items-center gap-3"
                   >
                     <div
-                      className={`w-16 h-16 rounded-full ${goal.iconBg} text-white flex items-center justify-center`}
+                      className={`w-16 h-16 rounded-full ${goal.iconBg} text-white flex items-center justify-center transition-transform duration-300 hover:scale-105 `}
                     >
                       <Icon size={32} />
                     </div>
