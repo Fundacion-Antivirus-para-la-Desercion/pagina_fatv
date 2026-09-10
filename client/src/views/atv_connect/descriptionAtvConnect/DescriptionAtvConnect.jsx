@@ -106,14 +106,14 @@ function DescriptionAtvConnect() {
             <span className="inline-block mb-5 text-white text-sm tracking-nm bg-brand-teal-400 rounded-3xl py-2 px-4">
               ATVCONECTA
             </span>
-            <h2 className="text-blue-base text-3xl md:text-6xl font-impact mb-5">
+            <h2 className="text-blue-base text-3xl md:text-5xl xl:text-6xl font-impact mb-5">
               {t("atvConnect.h2")}
               <br />
               <span className="text-brand-teal-400">
                 {t("atvConnect.br_h2")}
               </span>
             </h2>
-            <p className="text-lg md:text-xl text-blue-base max-w-xl mx-auto xl:mx-0">
+            <p className="text-lg md:text-xl text-blue-base">
               {t("atvConnect.description_one")}
               <span className="text-brand-teal-400">
                 {t("atvConnect.description_span")}
@@ -122,7 +122,7 @@ function DescriptionAtvConnect() {
             </p>
           </div>
 
-          <div className="relative mt-8 max-w-xl mx-auto xl:mx-0">
+          <div className="relative mt-8">
             <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-brand-teal-300 opacity-65 z-0" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
               {goals.map((goal) => {
