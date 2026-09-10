@@ -4,6 +4,7 @@ import {
   LOGO_ATV_CONECTA_IMG as LogoAtvConecta,
 } from "../../../assets/cloudinaryImages";
 import { floatSnake } from "../../../components/motion/constants/Animations.js";
+import { DotsPattern } from "../../../assets/images/svg/Svg.jsx";
 import { GoPeople } from "react-icons/go";
 import { LuLink } from "react-icons/lu";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
@@ -56,37 +57,46 @@ function DescriptionAtvConnect() {
     viewport: { once: true, amount: 0.6 },
   };
   return (
-    <section className="grid grid-col-1 lg:grid-cols-2 items-center mb-20 p-2 lg:p-5">
-      <motion.div {...slideFromLeft} className="mb-5">
-        <section className="relative xl:left-[10%] grid grid-col-1 lg:grid-cols-[4fr_1fr_4fr]">
-          <div className="hidden lg:block">
-            <img
-              className=" md:max-h-[390px] border-8 border-white rounded-3xl justify-between shadow-2xl"
-              src={EstudianteUno}
-              alt=""
-              loading="lazy"
-            />
-          </div>
+    <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20 px-8 py-16 md:px-16 md:py-12 lg:px-24 lg:py-24">
+      <motion.div {...slideFromLeft} className="mb-5 lg:mb-0">
+        <div className="relative w-full h-[280px] md:h-[450px] lg:h-[500px]">
+          {/* Blob naranja - esquina superior izquierda */}
+          <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-primary-yellow z-0 opacity-80" />
 
-          <motion.div {...floatSnake()} className="mb-5 relative">
-            {" "}
+          {/* Blob azul claro - esquina superior derecha */}
+          <div className="absolute top-6 right-10 w-24 h-16 rounded-2xl bg-blue-200 z-0" />
+
+          {/* Dots pattern - zona inferior izquierda */}
+          <DotsPattern classNames="absolute bottom-0 left-0 z-0 opacity-60" />
+
+          {/* Foto 1 — grande, arriba-izquierda */}
+          <img
+            src={EstudianteUno}
+            alt="Estudiante con certificado ATV Conecta"
+            className="absolute top-0 left-0 w-[62%] h-[70%] object-cover rounded-2xl shadow-md z-10"
+            loading="lazy"
+          />
+
+          {/* Foto 2 — superpuesta, abajo-derecha */}
+          <img
+            src={EstudianteDos}
+            alt="Estudiante con certificado ATV Conecta"
+            className="absolute bottom-0 right-0 w-[58%] h-[68%] object-cover rounded-2xl shadow-lg z-20"
+            loading="lazy"
+          />
+
+          {/* Logo circular flotante - arriba-derecha */}
+          <motion.div
+            {...floatSnake()}
+            className="absolute top-0 right-0 z-30 w-20 h-20 md:w-24 md:h-24 rounded-full bg-brand-teal-400 flex items-center justify-center p-3 shadow-lg"
+          >
             <img
-              className="min-w-20 w-20 md:w-28 rounded-full bg-brand-teal-400 p-3 mt-5 md:mt-6 xl:ml-6 block mx-auto"
               src={LogoAtvConecta}
-              alt="Logo ATVConecta"
-              loading="lazy"
-            />{" "}
-          </motion.div>
-
-          <div className="xl:relative xl:top-44 xl:right-[50%]">
-            <img
-              src={EstudianteDos}
-              alt="Student receiving academic guidance"
-              className="relative w-fit h-auto max-h-none sm:max-h-[370px] object-cover border-8 border-white rounded-3xl shadow-2xl mx-auto"
-              loading="lazy"
+              alt="Logo ATV Conecta"
+              className="w-full"
             />
-          </div>
-        </section>
+          </motion.div>
+        </div>
       </motion.div>
 
       <motion.div {...slideFromRight}>
@@ -99,29 +109,41 @@ function DescriptionAtvConnect() {
             <h2 className="text-blue-base text-3xl md:text-6xl font-impact mb-5">
               {t("atvConnect.h2")}
               <br />
-              <span className="text-brand-teal-400">{t("atvConnect.br_h2")}</span>
+              <span className="text-brand-teal-400">
+                {t("atvConnect.br_h2")}
+              </span>
             </h2>
-            <p className="text-lg md:text-xl text-blue-base">
+            <p className="text-lg md:text-xl text-blue-base max-w-xl mx-auto xl:mx-0">
               {t("atvConnect.description_one")}
-              <span className="text-brand-teal-400">{t("atvConnect.description_span")}</span>
+              <span className="text-brand-teal-400">
+                {t("atvConnect.description_span")}
+              </span>
               {t("atvConnect.description_two")}
             </p>
           </div>
 
-          {/* Goals con línea punteada */}
-          <div className="relative mt-8">
+          <div className="relative mt-8 max-w-xl mx-auto xl:mx-0">
             <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-brand-teal-300 opacity-65 z-0" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
               {goals.map((goal) => {
                 const Icon = goal.icon;
                 return (
-                  <div key={goal.title} className="flex flex-col items-center gap-3">
-                    <div className={`w-16 h-16 rounded-full ${goal.iconBg} text-white flex items-center justify-center`}>
+                  <div
+                    key={goal.title}
+                    className="flex flex-col items-center gap-3"
+                  >
+                    <div
+                      className={`w-16 h-16 rounded-full ${goal.iconBg} text-white flex items-center justify-center`}
+                    >
                       <Icon size={32} />
                     </div>
                     <div className="text-center">
-                      <p className="font-bold text-blue-base text-sm md:text-base">{goal.title}</p>
-                      <p className="text-xs md:text-sm text-blue-base opacity-70">{goal.description}</p>
+                      <p className="font-bold text-blue-base text-sm md:text-base">
+                        {goal.title}
+                      </p>
+                      <p className="text-xs md:text-sm text-blue-base opacity-70">
+                        {goal.description}
+                      </p>
                     </div>
                   </div>
                 );
