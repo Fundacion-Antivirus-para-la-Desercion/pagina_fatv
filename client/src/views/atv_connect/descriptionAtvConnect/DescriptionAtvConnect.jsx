@@ -57,7 +57,7 @@ function DescriptionAtvConnect() {
     viewport: { once: true, amount: 0.6 },
   };
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20 px-8 py-16 md:px-16 md:py-12 lg:px-24 lg:py-24">
+    <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20 px-8 py-16 md:px-16 md:py-12 lg:px-24 lg:py-20">
       <motion.div {...slideFromLeft} className="mb-5 lg:mb-0">
         <div className="relative w-full h-[280px] sm:h-[450px] lg:h-[500px]">
           <DotsPattern classNames="absolute top-0 right-40 z-0 opacity-60" />
@@ -74,7 +74,7 @@ function DescriptionAtvConnect() {
           {/* Foto 1 — grande, arriba-izquierda */}
           <img
             src={EstudianteUno}
-            alt="Estudiante con certificado ATV Conecta"
+            alt="atvConnect.description.alt_img_one"
             className="absolute top-0 left-0 w-[62%] h-[70%] object-cover rounded-2xl shadow-md z-10"
             loading="lazy"
           />
@@ -82,7 +82,7 @@ function DescriptionAtvConnect() {
           {/* Foto 2 — superpuesta, abajo-derecha */}
           <img
             src={EstudianteDos}
-            alt="Estudiante con certificado ATV Conecta"
+            alt={t("atvConnect.description.alt_img_two")}
             className="absolute -bottom-2 right-0 w-[58%] h-[68%] object-cover rounded-2xl shadow-lg z-20"
             loading="lazy"
           />
