@@ -59,12 +59,14 @@ function DescriptionAtvConnect() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20 px-8 py-16 md:px-16 md:py-12 lg:px-24 lg:py-24">
       <motion.div {...slideFromLeft} className="mb-5 lg:mb-0">
-        <div className="relative w-full h-[280px] md:h-[450px] lg:h-[500px]">
+        <div className="relative w-full h-[280px] sm:h-[450px] lg:h-[500px]">
+          <DotsPattern classNames="absolute top-0 right-40 z-0 opacity-60" />
+
           {/* Blob naranja - esquina superior izquierda */}
-          <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-primary-yellow z-0 opacity-80" />
+          <div className="absolute top-6 md:top-24 -left-5 md:-left-5 w-16 h-28 rounded-3xl bg-primary-yellow z-0 opacity-80" />
 
           {/* Blob azul claro - esquina superior derecha */}
-          <div className="absolute top-6 right-10 w-24 h-16 rounded-2xl bg-blue-200 z-0" />
+          <div className="absolute top-20 md:top-20 left-24 md:right-48 w-36 md:w-72 h-48 md:h-80 rounded-3xl bg-blue-100 z-0" />
 
           {/* Dots pattern - zona inferior izquierda */}
           <DotsPattern classNames="absolute bottom-0 left-0 z-0 opacity-60" />
@@ -81,14 +83,14 @@ function DescriptionAtvConnect() {
           <img
             src={EstudianteDos}
             alt="Estudiante con certificado ATV Conecta"
-            className="absolute bottom-0 right-0 w-[58%] h-[68%] object-cover rounded-2xl shadow-lg z-20"
+            className="absolute -bottom-2 right-0 w-[58%] h-[68%] object-cover rounded-2xl shadow-lg z-20"
             loading="lazy"
           />
 
           {/* Logo circular flotante - arriba-derecha */}
           <motion.div
             {...floatSnake()}
-            className="absolute top-0 right-0 z-30 w-20 h-20 md:w-24 md:h-24 rounded-full bg-brand-teal-400 flex items-center justify-center p-3 shadow-lg"
+            className="hidden md:flex absolute top-0 right-5 md:right-10 z-30 w-20 h-20 md:w-24 md:h-24 rounded-full bg-brand-teal-400 items-center justify-center p-3 shadow-lg"
           >
             <img
               src={LogoAtvConecta}
