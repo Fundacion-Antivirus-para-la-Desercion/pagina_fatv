@@ -1252,13 +1252,34 @@
       "br": "Academic Tutoring",
       "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
     },
-    "h2": "MORE THAN LEARNING.",
-    "br_h2": "IT'S ABOUT CONNECTING.",
-    "description_one": "We walk with you through your journey, boost your training, and connect you with tutors ",
-    "description_span": "to strengthen your educational path and help you reach your goals.",
-    "span_title": "OUR IMPACT",
-    "title": "THE NUMBERS SPEAK FOR THEMSELVES",
+    "description": {
+      "h2": "MORE THAN LEARNING.",
+      "br_h2": "IT'S ABOUT CONNECTING.",
+      "paragraph": "We walk with you through your journey, boost your training, and connect you with tutors ",
+      "span": "to strengthen your educational path and help you reach your goals.",
+      "goals": {
+        "one": {
+          "title": "We accompany",
+          "description": "your journey"
+        },
+        "two": {
+          "title": "We connect",
+          "description": "you with tutors"
+        },
+        "three": {
+          "title": "We boost",
+          "description": "your education"
+        },
+        "four": {
+          "title": "You achieve",
+          "description": "your goals"
+        }
+      }
+    },
+
     "figures_impact": {
+      "span_title": "OUR IMPACT",
+      "title": "THE NUMBERS SPEAK FOR THEMSELVES",
       "figure_one": "Active students",
       "figure_two": "Passed their classes",
       "figure_three": "Sessions completed",

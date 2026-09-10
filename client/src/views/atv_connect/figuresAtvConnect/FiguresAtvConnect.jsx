@@ -65,10 +65,10 @@ function FiguresAtvConnect() {
     <section className="relative bg-blue-base/5 py-16">
       <section className="flex flex-col items-center pt-8 px-4 md:p-10 mb-10">
         <span className="text-base md:text-lg font-impact text-brand-teal-400 mb-2 md:mb-4 text-center">
-          {t("atvConnect.span_title")}
+          {t("atvConnect.figures_impact.span_title")}
         </span>
         <h2 className="text-3xl md:text-5xl font-impact text-blue-base text-center">
-          {t("atvConnect.title")}
+          {t("atvConnect.figures_impact.title")}
         </h2>
       </section>
       <motion.div {...floatSnake(0)}>

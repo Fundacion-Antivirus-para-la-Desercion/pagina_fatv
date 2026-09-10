@@ -147,10 +147,7 @@
     "atvConnect_social": "Hello, I saw the website and I would like to know more about ATVConecta Social",
     "atvConnect_persons": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
     "atvConnect_institutional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
-    "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform",
-    "atvConnect_personas": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
-    "atvConnect_institucional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
-    "atvConnect_plataforma": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
+    "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
   },
   "donation": {
     "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
@@ -755,18 +752,6 @@
             "The article \"Antivirus for Desertion Foundation: From the psychopedagogical to the sociopedagogical\" written and presented by collaborators Víctor Valencia, Jhisel Holguín and Gabriel Castellanos was the successful bet they developed for the presentation at the XI Latin American Congress on Dropout in Higher Education, held in Brasília, on November 16, 2022. This represented an achievement, since it allowed to chart new horizons, present the intervention model currently developed in the projects and share experiences with attendees from several countries in Latin America."
           ]
         }
-      },
-      "tikso": {
-        "alt": "Participation of the Fundación Antivirus para la Deserción in Tikso 2025, a space for learning.",
-        "title": "FATV'S PARTICIPATION IN TIKSO 2025",
-        "detail": {
-          "title": "FATV'S PARTICIPATION IN TIKSO 2025",
-          "content": [
-            "Thanks to MAKAIA for making such an inspiring Tikso 2025 possible. It was two days filled with learning, networking, and new perspectives to strengthen the impact of social organizations.",
-            "We took away valuable insights on sustainability strategies, innovation, and resource mobilization, as well as experiences that prove collaboration is key to transforming realities. We also participated in the business matchmaking session, a space that allowed us to present the work of the Fundación Antivirus para la Deserción, share our mission, and converse with potential partners with whom we hope to build long-lasting impact.",
-            "This gathering reminded us of the importance of continuing to innovate, learning from other organizations, and strengthening collaborative networks to respond to social challenges with more sustainable and far-reaching solutions. Thank you to everyone who was part of this experience! We are already looking forward to Tikso 2026."
-          ]
-        }
       }
     }
   },
@@ -1267,13 +1252,33 @@
       "br": "Academic Tutoring",
       "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
     },
-    "h2": "MORE THAN LEARNING.",
-    "br_h2": "IT'S ABOUT CONNECTING.",
-    "description_one": "We walk with you through your journey, boost your training, and connect you with tutors ",
-    "description_span": "to strengthen your educational path and help you reach your goals.",
-    "span_title": "OUR IMPACT",
-    "title": "THE NUMBERS SPEAK FOR THEMSELVES",
+    "description": {
+      "h2": "MORE THAN LEARNING.",
+      "br_h2": "IT'S ABOUT CONNECTING.",
+      "paragraph": "We walk with you through your journey, boost your training, and connect you with tutors ",
+      "span": "to strengthen your educational path and help you reach your goals.",
+      "goals": {
+        "one": {
+          "title": "We accompany",
+          "description": "your journey"
+        },
+        "two": {
+          "title": "We connect",
+          "description": "you with tutors"
+        },
+        "three": {
+          "title": "We boost",
+          "description": "your education"
+        },
+        "four": {
+          "title": "You achieve",
+          "description": "your goals"
+        }
+      }
+    },
     "figures_impact": {
+      "span_title": "OUR IMPACT",
+      "title": "THE NUMBERS SPEAK FOR THEMSELVES",
       "figure_one": "Active students",
       "figure_two": "Passed their classes",
       "figure_three": "Sessions completed",
@@ -1408,23 +1413,7 @@
         "university": "Systems Engineering Student",
         "photoAlt": "Photo of Isabella Navarro, Systems Engineering Student"
       },
-      "readMore": "Read full testimony",
-      "modalTitle": "Testimony of",
-      "testimony_three": {
-        "description": "“I think implementing this platform is a great idea, thank you!”",
-        "role": "Student",
-        "university": "University of Antioquia"
-      },
-      "testimony_five": {
-        "description": "“I find it to be a very innovative and useful alternative”",
-        "role": "Student",
-        "university": "University of Antioquia"
-      },
-      "testimony_seven": {
-        "description": "“Excellent tool”",
-        "role": "Student",
-        "university": "University of Antioquia"
-      }
+      "readMore": "Read full testimony"
     },
     "pricing": {
       "title": "A PURPOSE, FOUR WAYS TO SUPPORT",
@@ -1477,15 +1466,13 @@
         "check_two": "Tutor network",
         "check_three": "Support and impact reports",
         "check_four": "Technical support"
-      },
-      "span": "PLANS"
+      }
     },
     "goAtv": {
       "start_now": "Ready to get started?",
       "paragraph_start": "Join students who are boosting their academic results.",
       "btn_start_free": "Start"
-    },
-    "description_two": " boosting your performance, and reaching your university goals with confidence."
+    }
   },
   "contactUs": {
     "metaDescription": "Contact us by WhatsApp, email, or visit us in La Estrella, Antioquia. We answer your questions about Fundación Antivirus para la Deserción.",
@@ -1533,8 +1520,7 @@
       "thankYou": "Thank you for contacting us.",
       "termsAccepted": "I accept",
       "termsNotAccepted": "I don't accept"
-    },
-    "image_alt": "Image of La Estrella city, Medellín - Antioquia - Colombia, where the Fundación Antivirus para la Deserción is based."
+    }
   },
   "common": {
     "close": "Close"

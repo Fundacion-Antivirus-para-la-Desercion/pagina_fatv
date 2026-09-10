@@ -13,35 +13,35 @@ import { TbTargetArrow } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+const goals = [
+  {
+    icon: GoPeople,
+    titleKey: "atvConnect.description.goals.one.title",
+    descriptionKey: "atvConnect.description.goals.one.description",
+    iconBg: "bg-brand-teal-300",
+  },
+  {
+    icon: LuLink,
+    titleKey: "atvConnect.description.goals.two.title",
+    descriptionKey: "atvConnect.description.goals.two.description",
+    iconBg: "bg-primary-purple",
+  },
+  {
+    icon: HiOutlineRocketLaunch,
+    titleKey: "atvConnect.description.goals.three.title",
+    descriptionKey: "atvConnect.description.goals.three.description",
+    iconBg: "bg-brand-blue-100",
+  },
+  {
+    icon: TbTargetArrow,
+    titleKey: "atvConnect.description.goals.four.title",
+    descriptionKey: "atvConnect.description.goals.four.description",
+    iconBg: "bg-primary-yellow",
+  },
+];
+
 function DescriptionAtvConnect() {
   const { t } = useTranslation();
-
-  const goals = [
-    {
-      icon: GoPeople,
-      title: "Acompañamos",
-      description: "tu proceso",
-      iconBg: "bg-brand-teal-300",
-    },
-    {
-      icon: LuLink,
-      title: "Conectamos",
-      description: "con tutores",
-      iconBg: "bg-primary-purple",
-    },
-    {
-      icon: HiOutlineRocketLaunch,
-      title: "Impulsamos",
-      description: "tu transformación",
-      iconBg: "bg-brand-blue-100",
-    },
-    {
-      icon: TbTargetArrow,
-      title: "Alcanzas",
-      description: "tus metas",
-      iconBg: "bg-primary-yellow",
-    },
-  ];
 
   const slideFromRight = {
     initial: { opacity: 0, x: 100 },
@@ -109,18 +109,17 @@ function DescriptionAtvConnect() {
               ATVCONECTA
             </span>
             <h2 className="text-blue-base text-3xl md:text-5xl xl:text-6xl font-impact mb-5">
-              {t("atvConnect.h2")}
+              {t("atvConnect.description.h2")}
               <br />
               <span className="text-brand-teal-400">
-                {t("atvConnect.br_h2")}
+                {t("atvConnect.description.br_h2")}
               </span>
             </h2>
             <p className="text-lg md:text-xl text-blue-base">
-              {t("atvConnect.description_one")}
+              {t("atvConnect.description.paragraph")}
               <span className="text-brand-teal-400">
-                {t("atvConnect.description_span")}
+                {t("atvConnect.description.span")}
               </span>
-              {t("atvConnect.description_two")}
             </p>
           </div>
 
@@ -131,7 +130,7 @@ function DescriptionAtvConnect() {
                 const Icon = goal.icon;
                 return (
                   <div
-                    key={goal.title}
+                    key={goal.titleKey}
                     className="flex flex-col items-center gap-3"
                   >
                     <div
@@ -141,10 +140,10 @@ function DescriptionAtvConnect() {
                     </div>
                     <div className="text-center">
                       <p className="font-bold text-blue-base text-sm md:text-base">
-                        {goal.title}
+                        {t(goal.titleKey)}
                       </p>
                       <p className="text-xs md:text-sm text-blue-base opacity-70">
-                        {goal.description}
+                        {t(goal.descriptionKey)}
                       </p>
                     </div>
                   </div>
