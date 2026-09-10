@@ -89,55 +89,39 @@ function DescriptionAtvConnect() {
         </section>
       </motion.div>
 
-      <motion.div
-        {...slideFromRight}
-        className="text-center max-w-[700px] block mx-auto"
-      >
-        <section>
+      <motion.div {...slideFromRight}>
+        <section className="text-center">
+          {/* Bloque de texto */}
           <div className="text-center xl:text-left mb-10">
             <span className="inline-block mb-5 text-white text-sm tracking-nm bg-brand-teal-400 rounded-3xl py-2 px-4">
               ATVCONECTA
-            </span>{" "}
-            <h2 className=" text-blue-base text-3xl md:text-6xl font-impact mb-5">
+            </span>
+            <h2 className="text-blue-base text-3xl md:text-6xl font-impact mb-5">
               {t("atvConnect.h2")}
               <br />
-              <span className="text-brand-teal-400">
-                {t("atvConnect.br_h2")}
-              </span>
+              <span className="text-brand-teal-400">{t("atvConnect.br_h2")}</span>
             </h2>
             <p className="text-lg md:text-xl text-blue-base">
               {t("atvConnect.description_one")}
-              <span className="text-brand-teal-400">
-                {t("atvConnect.description_span")}
-              </span>
+              <span className="text-brand-teal-400">{t("atvConnect.description_span")}</span>
               {t("atvConnect.description_two")}
             </p>
           </div>
 
+          {/* Goals con línea punteada */}
           <div className="relative mt-8">
-            {/* Línea punteada — solo en desktop, a la altura del centro de los círculos (top-8 = 2rem = la mitad de h-16) */}
-            <div className="hidden md:block absolute top-8 left-12 right-12 border-t-2 border-dashed border-brand-teal-300 opacity-65 z-0" />
-
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-brand-teal-300 opacity-65 z-0" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
               {goals.map((goal) => {
                 const Icon = goal.icon;
                 return (
-                  <div
-                    key={goal.title}
-                    className="flex flex-col items-center gap-3"
-                  >
-                    <div
-                      className={`w-16 h-16 rounded-full ${goal.iconBg} text-white flex items-center justify-center`}
-                    >
+                  <div key={goal.title} className="flex flex-col items-center gap-3">
+                    <div className={`w-16 h-16 rounded-full ${goal.iconBg} text-white flex items-center justify-center`}>
                       <Icon size={32} />
                     </div>
                     <div className="text-center">
-                      <p className="font-bold text-blue-base text-sm md:text-base">
-                        {goal.title}
-                      </p>
-                      <p className="text-xs md:text-sm text-blue-base opacity-70">
-                        {goal.description}
-                      </p>
+                      <p className="font-bold text-blue-base text-sm md:text-base">{goal.title}</p>
+                      <p className="text-xs md:text-sm text-blue-base opacity-70">{goal.description}</p>
                     </div>
                   </div>
                 );
