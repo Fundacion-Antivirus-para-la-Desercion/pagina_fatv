@@ -1,10 +1,11 @@
-import { TESTIMONIAL_GISELA_PATINO as GiselaPatino,
+import {
+  TESTIMONIAL_GISELA_PATINO as GiselaPatino,
   TESTIMONIAL_ISABELLA_SANCHEZ_MEJIA as IsabellaSanchezMejia,
   TESTIMONIAL_ISABELLA_NAVARRO as IsabellaNavarro,
   TESTIMONIAL_JUAN_CAMILO_TOVAR as JuanCamiloTovar,
   TESTIMONIAL_MATIAS_MAPATA_ROJAS as MatiasMapataRojas,
-  TESTIMONIAL_ANGEL_PARRA_ARRETA as AngelParraArreta
- } from "../../../assets/cloudinaryImages";
+  TESTIMONIAL_ANGEL_PARRA_ARRETA as AngelParraArreta,
+} from "../../../assets/cloudinaryImages";
 
 /**
  * @typedef {Object} Testimonial
@@ -23,7 +24,7 @@ export function getTestimonials(t) {
   return [
     {
       id: "testimony-one",
-      key: "small-left",
+      key: "small",
       testimony: t(`${base}.testimony_one.description`),
       initial: "E",
       photo: null,
@@ -32,7 +33,7 @@ export function getTestimonials(t) {
     },
     {
       id: "testimony-two",
-      key: "small-right",
+      key: "small",
       testimony: t(`${base}.testimony_two.description`),
       initial: "T",
       photo: null,
@@ -40,8 +41,18 @@ export function getTestimonials(t) {
       university: t(`${base}.testimony_two.university`),
     },
     {
+      id: "testimony-three",
+      key: "small",
+      testimony: t(`${base}.testimony_three.description`),
+      initial: "D",
+      photo: null,
+      photoAlt: t(`${base}.testimony_three.photoAlt`),
+      role: t(`${base}.testimony_three.role`),
+      university: t(`${base}.testimony_three.university`),
+    },
+    {
       id: "testimony-four",
-      key: "small-right",
+      key: "small",
       testimony: t(`${base}.testimony_four.description`),
       initial: "E",
       photo: null,
@@ -50,7 +61,7 @@ export function getTestimonials(t) {
     },
     {
       id: "testimony-six",
-      key: "small-right",
+      key: "small",
       testimony: t(`${base}.testimony_six.description`),
       initial: "E",
       photo: null,
@@ -99,7 +110,7 @@ export function getTestimonials(t) {
     },
     {
       id: "testimony-twelve",
-      key: "small-left",
+      key: "small",
       testimony: t(`${base}.testimony_twelve.description`),
       initial: "A",
       photo: AngelParraArreta,

@@ -1369,6 +1369,11 @@
         "role": "Tutor",
         "university": "University of Antioquia"
       },
+      "testimony_three": {
+        "description": "“For me, the platform is very easy to use. It has a clean, well-organized design that is clear at a glance, and scheduling tutoring sessions is not complicated at all: it's intuitive, fast, and simple to do. Plus, I like that notifications arrive via Gmail, because they are easy to see and don't get lost so easily.”",
+        "role": "Dahiana Noreña Gómez",
+        "university": "Student"
+      },
       "testimony_four": {
         "description": "“Congrats on this site! You don't realize how useful it is until you try it. I was blown away by how easy it is to connect with peers who are ready to help”",
         "role": "Student",

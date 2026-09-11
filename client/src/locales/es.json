@@ -1373,6 +1373,11 @@
         "role": "Tutor",
         "university": "Universidad de Antioquia"
       },
+      "testimony_three": {
+        "description": "“Para mí, la plataforma es muy fácil de usar. Tiene un diseño limpio y ordenado que se entiende a simple vista, y agendar las tutorías no es nada complicado: es intuitivo, rápido y sencillo de realizar. Además, me gusta que las notificaciones lleguen por Gmail, porque son fáciles de ver y no se pierden tan fácil.”",
+        "role": "Dahiana Noreña Gómez",
+        "university": "Estudiante"
+      },
       "testimony_four": {
         "description": "“Los felicito por esta web, de verdad uno no saben lo útil que es hasta que lo prueba y queda con la boca abierta sobre lo fácil que es tener contacto con compas como nosotros dispuestos a ayudar”",
         "role": "Estudiante",
