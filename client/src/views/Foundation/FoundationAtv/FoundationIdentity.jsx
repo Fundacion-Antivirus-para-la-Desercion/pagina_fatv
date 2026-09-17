@@ -49,8 +49,8 @@ const identityItems = [
     imgAlt: "foundation.foundationIdentity.alt_vision",
     icon: IoMdEye,
     iconBg: "bg-dark-blue text-white",
-    titleKey: "foundation.foundationATV.foundationIdentity.vision.title",
-    descKey: "foundation.foundationATV.foundationIdentity.vision.description",
+    titleKey: "foundation.foundationIdentity.vision.title",
+    descKey: "foundation.foundationIdentity.vision.description",
     accentColor: "blue",
   },
   {
