@@ -12,6 +12,14 @@ import SchoolSubjectsAtvConnect from "./schoolSubjects/SchoolSubjectsAtvConnect.
 import GoAtvConnect from "./goAtvConnet/GoAtvConnect.jsx";
 import PricingCardsAtvConnect from "./pricingCardsAtvConnect/PricingCardsAtvConnect.jsx";
 
+
+const LIST_KEYS = [
+  "atvConnect.list.item_one",
+  "atvConnect.list.item_two",
+  "atvConnect.list.item_three",
+  "atvConnect.list.item_four",
+];
+
 function AtvConnect() {
   const { t } = useTranslation();
 
@@ -39,16 +47,12 @@ function AtvConnect() {
       <FiguresAtvConnect />
 
       <section className="bg-dark-blue p-5">
-        <ol className="md:flex justify-center list-none text-white text-justify text-lg md:text-base">
-          <li className="m-5 md:m-0 md:mr-8">
-            {t("atvConnect.list.item_one")}
-          </li>
-          <li className="m-5 md:m-0 md:mr-8">
-            {t("atvConnect.list.item_two")}
-          </li>
-          <li className="m-5 md:m-0 md:mr-8">
-            {t("atvConnect.list.item_three")}
-          </li>
+        <ol className="flex flex-col items-center md:flex-row flex-wrap md:justify-center list-none text-white text-justify text-base md:text-lg">
+          {LIST_KEYS.map((key) => (
+            <li key={key} className="m-3 md:m-0 md:mr-8">
+              {t(key)}
+            </li>
+          ))}
         </ol>
       </section>
 
