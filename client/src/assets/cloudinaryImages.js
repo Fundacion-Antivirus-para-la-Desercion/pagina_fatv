@@ -112,12 +112,14 @@ export const BANNER_FOUNDATION_IMG = getImageUrl("https://res.cloudinary.com/bgm
 export const FOTO_IZQUIERDA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674122/foundation-1_drcfcv.jpg");
 export const FOTO_VIDEO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674121/foto-video_z0uhpw.jpg");
 export const FOTO_DERECHA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674122/foundation-2_jlft1y.jpg");
+// ── FoundationIdentity ────────────────────────────────────────────────────────────────
+export const MISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1789584245/estudiante-con-diploma_awpenn.webp");
+export const VISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1789584110/participacion-mi-beca_gztwen.webp");
+export const VALORES_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1789584102/colaboradoras-felices_rimu23.webp");
 export const TEORIA_CAMBIO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670348/entrega-pc_wg6i6l.webp");
-export const VALORES_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670379/valores_su7qvh.webp");
-export const MISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670366/pase-a-la-u_hcbtbm.webp");
 export const PUBLICO_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670353/estudiantes-colegio_yqqnca.webp");
-export const VISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670363/estudiantes-universitarios_igvkvl.webp");
 export const PROPOSITO_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670358/foundation-estudiantes_a2viz9.webp");
+
 
 // ── dataAnalytics ─────────────────────────────────────────────────────────────
 export const BANNER_DATA_ANALYTICS_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670450/technology-and-data_mciozi.webp");

@@ -453,12 +453,57 @@
       "h1": "Sobre Nosotros",
       "alt": "Imagen con colaboradores de la fundacion antivirus para la deserción."
     },
+    "foundationIdentity": {
+      "title": "LO QUE NOS MUEVE",
+      "description": "Conoce nuestra esencia, nuestro propósito y la forma en que trabajamos para transformar la educación y construir nuevas oportunidades.",
+      "mission": {
+        "title": "MISIÓN",
+        "description": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción."
+      },
+      "vision": {
+        "title": "VISIÓN",
+        "description": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente."
+      },
+      "values": {
+        "title": "VALORES",
+        "description": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio."
+      },
+      "change_theory": {
+        "title": "TEORÍA DEL CAMBIO",
+        "description": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia."
+      },
+      "target_audience": {
+        "title": "PÚBLICO OBJETIVO",
+        "description": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción."
+      },
+      "purpose": {
+        "title": "PROPÓSITO",
+        "description": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+      },
+      "images": {
+        "alt_mision": "Daniel Tabares, estudiante de la Universidad de Antioquia que recibió acompañamiento de la Fundación ATV en su trayectoria universitaria, recibe su título.",
+        "alt_vision": "Víctor Valencia, subdirector de la Fundación ATV, participando en el encuentro 'Mi beca, mi meta'.",
+        "alt_values": "Colaboradoras de la Fundación ATV sonriendo, reflejando el entusiasmo del equipo.",
+        "alt_change_theory": "Estudiante recibe un computador como donación por parte de la Fundación ATV.",
+        "alt_target_audience": "Estudiantes de secundaria reciben acompañamiento por parte de la Fundación ATV.",
+        "alt_purpose": "Colaboradores de la Fundación ATV brindan un espacio de acompañamiento a estudiantes universitarios."
+      }
+    },
     "foundationATV": {
       "header": "sobre nosotros",
       "title": "¿Quiénes Somos?",
       "play_video": "Reproducir video",
       "subtitle": "Somos una organización sin ánimo de lucro que",
       "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
+      "priorities": {
+        "title": "PRIORIDADES",
+        "items": {
+          "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+          "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+          "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+          "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+        }
+      },
       "founders": {
         "subtitle": "NUESTROS",
         "title": "FUNDADORES"
