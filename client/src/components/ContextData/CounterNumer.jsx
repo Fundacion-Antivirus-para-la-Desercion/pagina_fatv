@@ -8,6 +8,9 @@ const CounterNumeric = ({ countNumber = 0 }) => {
   const ref = useRef();
 
   const hasDecimals = targetNumber % 1 !== 0;
+  const decimalPlaces = hasDecimals
+    ? (targetNumber.toString().split(".")[1] || "").length
+    : 0;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,9 +47,8 @@ const CounterNumeric = ({ countNumber = 0 }) => {
   return (
     <span ref={ref}>
       {count.toLocaleString("en-US", {
-        // Use en-US to ensure the decimal point
-        minimumFractionDigits: hasDecimals ? 1 : 0,
-        maximumFractionDigits: hasDecimals ? 1 : 0,
+        minimumFractionDigits: decimalPlaces,
+        maximumFractionDigits: decimalPlaces,
       })}
     </span>
   );
