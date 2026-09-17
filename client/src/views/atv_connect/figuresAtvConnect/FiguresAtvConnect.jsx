@@ -1,6 +1,7 @@
 import { LuGraduationCap, LuBookOpen } from "react-icons/lu";
 import { HiBadgeCheck } from "react-icons/hi";
 import { FaRegHeart } from "react-icons/fa";
+import { PiChalkboardTeacher } from "react-icons/pi";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
 import { DotsPattern } from "../../../assets/images/svg/Svg.jsx";
@@ -24,7 +25,7 @@ const figuresData = [
     id: "figure-two",
     icon: HiBadgeCheck,
     suffix: "%",
-    value: 85,
+    value: 91,
     valueColor: "text-brand-teal-400",
     translationKey: "atvConnect.figures_impact.figure_two",
     iconColor: "text-brand-teal-400",
@@ -36,7 +37,7 @@ const figuresData = [
     id: "figure-three",
     icon: LuBookOpen,
     prefix: "+",
-    value: 700,
+    value: 8355,
     valueColor: "text-dark-blue",
     translationKey: "atvConnect.figures_impact.figure_three",
     iconColor: "text-dark-blue",
@@ -48,13 +49,25 @@ const figuresData = [
     id: "figure-four",
     icon: FaRegHeart,
     suffix: "%",
-    value: 98,
+    value: 4.88 ,
     valueColor: "text-brand-teal-400",
     translationKey: "atvConnect.figures_impact.figure_four",
     iconColor: "text-brand-teal-400",
     iconBg: "bg-brand-teal-50",
     accentBg: "bg-brand-teal-400",
     lineColor: "bg-brand-teal-400",
+  },
+   {
+    id: "figure-five",
+    icon: PiChalkboardTeacher,
+    prefix: "+",
+    value: 599,
+    valueColor: "text-dark-blue",
+    translationKey: "atvConnect.figures_impact.figure_five",
+    iconColor: "text-dark-blue",
+    iconBg: "bg-dark-blue/10",
+    accentBg: "bg-dark-blue",
+    lineColor: "bg-dark-blue",
   },
 ];
 
@@ -77,7 +90,7 @@ function FiguresAtvConnect() {
       <motion.div {...floatSnake(0)}>
         <DotsPattern classNames="absolute hidden md:block size-24 -top-24 right-16" />
       </motion.div>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto gap-6 md:gap-8 px-5 pb-8 md:pb-10">
+      <section className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-full px-5 md:px-10 lg:px-16 pb-8 md:pb-10 gap-6 md:gap-5">
         {figuresData.map((figure) => {
           const Icon = figure.icon;
           return (
@@ -102,7 +115,7 @@ function FiguresAtvConnect() {
                     <span className="ml-0.5">{figure.suffix}</span>
                   )}
                 </span>
-                <p className="text-sm text-dark-blue mt-1 leading-tight">
+                <p className="text-base text-dark-blue mt-1 leading-tight">
                   {t(figure.translationKey)}
                 </p>
               </div>
