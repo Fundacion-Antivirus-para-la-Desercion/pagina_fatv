@@ -5,76 +5,13 @@ import {
   FOTO_VIDEO as FotoVideo,
   FOTO_IZQUIERDA as Foundation1,
   FOTO_DERECHA as Foundation2,
-  TEORIA_CAMBIO_IMG as TeoriaCambio,
-  VALORES_IMG as Valores,
-  MISION_IMG as Mision,
-  PUBLICO_IMG as Publico,
-  VISION_IMG as Vision,
-  PROPOSITO_IMG as Proposito,
 } from "../../../assets/cloudinaryImages";
-
 
 import FoundationIdentity from "./FoundationIdentity";
 
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 import BannerView from "../../../components/Banner-views/BannerView";
-import OrganizationInfoSection from "./OrganizationInfoSection";
-
-const INFO_SECTIONS = [
-  {
-    image: TeoriaCambio,
-    imgAlt: "Teoría de cambio",
-    bgColor: "bg-[#CCEDE8]",
-    titleKey: "foundation.foundationATV.organization_info.change_theory.title",
-    descKey: "foundation.foundationATV.organization_info.change_theory.description",
-    reverse: false,
-    showTopDecorator: true,
-  },
-  {
-    image: Valores,
-    imgAlt: "Valores",
-    bgColor: "bg-[#D3C3E3]",
-    titleKey: "foundation.foundationATV.organization_info.values.title",
-    descKey: "foundation.foundationATV.organization_info.values.description",
-    reverse: true,
-  },
-  {
-    image: Mision,
-    imgAlt: "Misión",
-    bgColor: "bg-primary-yellow",
-    titleKey: "foundation.foundationATV.organization_info.mission.title",
-    descKey: "foundation.foundationATV.organization_info.mission.description",
-    reverse: false,
-  },
-  {
-    image: Publico,
-    imgAlt: "Público objetivo",
-    bgColor: "bg-[#CCEDE8]",
-    titleKey: "foundation.foundationATV.organization_info.target_audience.title",
-    descKey: "foundation.foundationATV.organization_info.target_audience.description",
-    reverse: true,
-  },
-  {
-    image: Vision,
-    imgAlt: "Visión",
-    bgColor: "bg-[#D3C3E3]",
-    titleKey: "foundation.foundationATV.organization_info.vision.title",
-    descKey: "foundation.foundationATV.organization_info.vision.description",
-    reverse: false,
-    wide: true,
-  },
-  {
-    image: Proposito,
-    imgAlt: "Propósito",
-    bgColor: "bg-primary-yellow",
-    titleKey: "foundation.foundationATV.organization_info.purpose.title",
-    descKey: "foundation.foundationATV.organization_info.purpose.description",
-    reverse: true,
-    wide: true,
-    showDecorator: false,
-  },
-];
 
 const PRIORITY_KEYS = [
   "consolidate_model",
@@ -132,19 +69,34 @@ function FoundationATV() {
         <motion.div
           className="hidden md:block relative left-10"
           initial={{ opacity: 0, x: -30 }}
-          animate={isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+          animate={
+            isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }
+          }
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img className="w-full object-cover" src={Foundation1} alt="" loading="lazy" />
+          <img
+            className="w-full object-cover"
+            src={Foundation1}
+            alt=""
+            loading="lazy"
+          />
         </motion.div>
         <motion.div
           className="relative z-10 flex justify-center items-center hover:cursor-pointer transform transition-transform duration-300 ease-out hover:scale-105"
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={isVideoInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+          animate={
+            isVideoInView
+              ? { opacity: 1, scale: 1 }
+              : { opacity: 0, scale: 0.9 }
+          }
           transition={{ duration: 0.8 }}
         >
           <img
-            className={isPlaying ? "hidden" : "absolute inset-0 w-full h-full object-cover shadow-2xl"}
+            className={
+              isPlaying
+                ? "hidden"
+                : "absolute inset-0 w-full h-full object-cover shadow-2xl"
+            }
             src={FotoVideo}
             alt=""
             loading="lazy"
@@ -197,18 +149,16 @@ function FoundationATV() {
           animate={isVideoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img className="w-full object-cover relative right-10" src={Foundation2} alt="" loading="lazy" />
+          <img
+            className="w-full object-cover relative right-10"
+            src={Foundation2}
+            alt=""
+            loading="lazy"
+          />
         </motion.div>
       </section>
 
-      <section className="relative mb-14">
-        {INFO_SECTIONS.map((section) => (
-          <OrganizationInfoSection key={section.titleKey} {...section} />
-        ))}
-      </section>
-
-
-<FoundationIdentity/>
+      <FoundationIdentity />
       <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
         <h5 className="col-span-1 md:col-span-4 text-3xl md:text-5xl font-impact text-center text-blue-base mb-8">
           {t("foundation.foundationATV.organization_info.priorities.title")}
@@ -220,7 +170,9 @@ function FoundationATV() {
                 {i + 1}
               </span>
               <p className="text-base md:text-lg text-justify mt-9 text-white">
-                {t(`foundation.foundationATV.organization_info.priorities.items.${key}`)}
+                {t(
+                  `foundation.foundationATV.organization_info.priorities.items.${key}`,
+                )}
               </p>
             </div>
           </motion.div>

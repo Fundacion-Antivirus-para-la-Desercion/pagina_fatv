@@ -526,26 +526,6 @@
         "title": "ACCOUNTANT"
       },
       "organization_info": {
-        "change_theory": {
-          "title": "THEORY OF CHANGE",
-          "description": "Identify students with vulnerabilities and provide comprehensive support through an ecosystem of strategies focused on academic, economic and socio-emotional aspects for retention."
-        },
-        "values": {
-          "title": "VALUES",
-          "description": "At the Antivirus Foundation for Dropout Prevention, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment and camaraderie. We are supportive and innovative and have a great vocation for service."
-        },
-        "mission": {
-          "title": "MISSION",
-          "description": "Increase graduation rates of students in technology careers and programs, through strategies to promote retention and prevent dropout."
-        },
-        "target_audience": {
-          "title": "TARGET AUDIENCE",
-          "description": "We work with students from IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout."
-        },
-        "vision": {
-          "title": "VISION",
-          "description": "In 5 years we will have a national presence, in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50 to 40%). Additionally, we will be replicating a reference model, whose success can be measured qualitatively and quantitatively."
-        },
         "priorities": {
           "title": "PRIORITIES",
           "items": {
@@ -554,38 +534,6 @@
             "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
             "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
           }
-        },
-        "purpose": {
-          "title": "PURPOSE",
-          "description": "Build a prosperous, peaceful, harmonious, technological and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a reference for development."
-        }
-      },
-      "foundationIdentity": {
-        "title": "WHAT DRIVES US",
-        "description": "Discover our essence, our purpose, and the way we work to transform education and build new opportunities.",
-        "mission": {
-          "title": "MISSION",
-          "description": "Increase graduation rates of students in technology careers and programs, through strategies to promote retention and prevent dropout."
-        },
-        "vision": {
-          "title": "VISION",
-          "description": "In 5 years we will have a national presence, in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50 to 40%). Additionally, we will be replicating a reference model, whose success can be measured qualitatively and quantitatively."
-        },
-        "values": {
-          "title": "VALUES",
-          "description": "At the Antivirus Foundation for Dropout Prevention, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment and camaraderie. We are supportive and innovative and have a great vocation for service."
-        },
-        "change_theory": {
-          "title": "THEORY OF CHANGE",
-          "description": "Identify students with vulnerabilities and provide comprehensive support through an ecosystem of strategies focused on academic, economic and socio-emotional aspects for retention."
-        },
-        "target_audience": {
-          "title": "TARGET AUDIENCE",
-          "description": "We work with students from IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout."
-        },
-        "purpose": {
-          "title": "PURPOSE",
-          "description": "Build a prosperous, peaceful, harmonious, technological and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a reference for development."
         }
       }
     }
