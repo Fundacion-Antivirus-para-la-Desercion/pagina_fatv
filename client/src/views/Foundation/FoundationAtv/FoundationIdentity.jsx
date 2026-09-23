@@ -14,6 +14,7 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import { LuSprout } from "react-icons/lu";
 import { LiaGraduationCapSolid } from "react-icons/lia";
 import { HiOutlineGlobe } from "react-icons/hi";
+import { expandableTransition } from "../../../components/motion/constants/Animations";
 
 const IMG_SHAPE = "60% 20% 60% 30% / 30% 30% 40% 70%";
 
@@ -91,6 +92,34 @@ const identityItems = [
   },
 ];
 
+const priorityKeys = [
+  {
+    id: "01",
+    number: "1",
+    spanKey: "foundation.foundationIdentity.priorities.span",
+    descKey: "foundation.foundationIdentity.priorities.items.consolidate_model",
+  },
+  {
+    id: "02",
+    number: "2",
+    spanKey: "foundation.foundationIdentity.priorities.span",
+    descKey:
+      "foundation.foundationIdentity.priorities.items.explore_interventions",
+  },
+  {
+    id: "03",
+    number: "3",
+    spanKey: "foundation.foundationIdentity.priorities.span",
+    descKey: "foundation.foundationIdentity.priorities.items.involve_actors",
+  },
+  {
+    id: "04",
+    number: "4",
+    spanKey: "foundation.foundationIdentity.priorities.span",
+    descKey: "foundation.foundationIdentity.priorities.items.reduce_dropout",
+  },
+];
+
 function FoundationIdentity() {
   const { t } = useTranslation();
 
@@ -110,7 +139,7 @@ function FoundationIdentity() {
       </div>
 
       <motion.section
-        className="grid grid-cols-1 xl:grid-cols-2 gap-6"
+        className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-32 md:mb-32"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -177,6 +206,60 @@ function FoundationIdentity() {
           );
         })}
       </motion.section>
+
+      <section className="m-5 md:m-10">
+        <div className="mb-14 text-center">
+          <h4 className="text-3xl md:text-5xl font-impact text-blue-base mb-4">
+            {t("foundation.foundationIdentity.priorities.title")}
+          </h4>
+          <p className="text-xl text-blue-base max-w-xl mx-auto">
+            {t("foundation.foundationIdentity.priorities.description")}
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+          {priorityKeys.map((item) => (
+            <motion.div
+              key={item.id}
+              className="h-full"
+              {...expandableTransition}
+            >
+              <div
+                className="group relative flex flex-col bg-dark-blue h-full overflow-hidden cursor-pointer hover:translate-y-[-8px] transition-transform duration-300"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(255,186,8,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,186,8,0.08) 1px, transparent 1px)`,
+                  backgroundSize: "40px 40px",
+                }}
+              >
+                <span className="absolute -top-3 -right-1 text-white font-impact text-9xl leading-none opacity-10 group-hover:translate-y-3 group-hover:-translate-x-3 transition-transform duration-300 select-none pointer-events-none">
+                  {item.id}
+                </span>
+
+                <div className="relative z-10 flex items-center justify-start gap-4 p-1">
+                  <span className="bg-primary-yellow text-dark-blue font-bold w-14 h-14 flex items-center justify-center text-3xl shadow-md flex-shrink-0">
+                    {item.number}
+                  </span>
+                  <span className="text-primary-yellow text-xs font-bold uppercase tracking-widest">
+                    {t(item.spanKey)}
+                  </span>
+                </div>
+
+                <div className="flex-1 min-h-[80px]" />
+                <div className="p-5">
+                  <span className="relative z-10 block h-[1px] w-16 bg-primary-yellow group-hover:w-full transition-[width] duration-1000" />
+
+                  {item.descKey && (
+                    <p className="relative z-10 text-white text-lg mt-2 leading-relaxed">
+                      {t(item.descKey)}
+                    </p>
+                  )}
+                </div>
+
+                <span className="absolute bottom-3 right-3 w-8 h-8 border border-primary-yellow opacity-40" />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </section>
   );
 }

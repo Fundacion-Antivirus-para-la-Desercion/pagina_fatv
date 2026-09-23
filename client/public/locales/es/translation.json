@@ -487,6 +487,17 @@
         "alt_change_theory": "Estudiante recibe un computador como donación por parte de la Fundación ATV.",
         "alt_target_audience": "Estudiantes de secundaria reciben acompañamiento por parte de la Fundación ATV.",
         "alt_purpose": "Colaboradores de la Fundación ATV brindan un espacio de acompañamiento a estudiantes universitarios."
+      },
+      "priorities": {
+        "title": "PRIORIDADES",
+        "description": "Cuatro compromisos que guían nuestro trabajo por la permanencia estudiantil y la reducción de la deserción.",
+        "span": "prioridad",
+        "items": {
+          "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+          "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+          "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+          "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+        }
       }
     },
     "foundationATV": {
@@ -495,15 +506,6 @@
       "play_video": "Reproducir video",
       "subtitle": "Somos una organización sin ánimo de lucro que",
       "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo.",
-      "priorities": {
-        "title": "PRIORIDADES",
-        "items": {
-          "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
-          "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
-          "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
-          "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
-        }
-      },
       "founders": {
         "subtitle": "NUESTROS",
         "title": "FUNDADORES"
@@ -525,17 +527,6 @@
       "accountant": {
         "subtitle": "NUESTRA",
         "title": "CONTADORA"
-      },
-      "organization_info": {
-        "priorities": {
-          "title": "PRIORIDADES",
-          "items": {
-            "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
-            "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
-            "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
-            "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
-          }
-        }
       }
     }
   },

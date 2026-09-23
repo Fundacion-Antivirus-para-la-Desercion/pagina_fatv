@@ -486,6 +486,17 @@
         "alt_change_theory": "Student receiving a laptop as a donation from the ATV Foundation.",
         "alt_target_audience": "High school students receiving support from the foundation.",
         "alt_purpose": "ATV Foundation team members providing a support space for university students."
+      },
+      "priorities": {
+        "title": "PRIORITIES",
+        "description": "Four commitments that guide our work for student retention and dropout reduction.",
+        "span": "PRIORITY",
+        "items": {
+          "consolidate_model": "Consolidate a model with processes for identifying vulnerabilities, intervention and result indicators.",
+          "explore_interventions": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
+          "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
+          "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
+        }
       }
     },
     "foundationATV": {
@@ -494,15 +505,6 @@
       "play_video": "Play video",
       "subtitle": "We are a non-profit organization that",
       "description": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, this being our way of contributing to achieving a country with more education and consequently more development.",
-      "priorities": {
-        "title": "PRIORITIES",
-        "items": {
-          "consolidate_model": "Consolidate a model with processes for identifying vulnerabilities, intervention and result indicators.",
-          "explore_interventions": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
-          "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
-          "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
-        }
-      },
       "founders": {
         "subtitle": "OUR",
         "title": "FOUNDERS"
@@ -524,17 +526,6 @@
       "accountant": {
         "subtitle": "OUR",
         "title": "ACCOUNTANT"
-      },
-      "organization_info": {
-        "priorities": {
-          "title": "PRIORITIES",
-          "items": {
-            "consolidate_model": "Consolidate a model with processes for identifying vulnerabilities, intervention and result indicators.",
-            "explore_interventions": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
-            "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
-            "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
-          }
-        }
       }
     }
   },

@@ -159,6 +159,9 @@ function FoundationATV() {
       </section>
 
       <FoundationIdentity />
+
+      
+
       <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
         <h5 className="col-span-1 md:col-span-4 text-3xl md:text-5xl font-impact text-center text-blue-base mb-8">
           {t("foundation.foundationATV.organization_info.priorities.title")}
