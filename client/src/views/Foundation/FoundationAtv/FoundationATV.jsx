@@ -8,24 +8,9 @@ import {
 } from "../../../assets/cloudinaryImages";
 
 import FoundationIdentity from "./FoundationIdentity";
-
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 import BannerView from "../../../components/Banner-views/BannerView";
-
-const PRIORITY_KEYS = [
-  "consolidate_model",
-  "explore_interventions",
-  "involve_actors",
-  "reduce_dropout",
-];
-
-const expandableTransition = {
-  initial: { opacity: 0, scale: 0.5 },
-  whileInView: { opacity: 1, scale: 1 },
-  transition: { duration: 0.8, ease: "easeOut" },
-  viewport: { once: true },
-};
 
 function FoundationATV() {
   const { t } = useTranslation();
@@ -159,28 +144,6 @@ function FoundationATV() {
       </section>
 
       <FoundationIdentity />
-
-      
-
-      <section className="grid grid-cols-1 m-5 gap-10 md:grid md:grid-cols-4 md:gap-5 md:mb-28 md:mt-28 md:m-10 items-stretch">
-        <h5 className="col-span-1 md:col-span-4 text-3xl md:text-5xl font-impact text-center text-blue-base mb-8">
-          {t("foundation.foundationATV.organization_info.priorities.title")}
-        </h5>
-        {PRIORITY_KEYS.map((key, i) => (
-          <motion.div key={key} {...expandableTransition}>
-            <div className="relative flex flex-wrap justify-center items-center rounded-xl bg-dark-blue p-6 hover:-translate-y-2 transition-transform duration-300 h-full">
-              <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-yellow text-dark-blue font-bold w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-md">
-                {i + 1}
-              </span>
-              <p className="text-base md:text-lg text-justify mt-9 text-white">
-                {t(
-                  `foundation.foundationATV.organization_info.priorities.items.${key}`,
-                )}
-              </p>
-            </div>
-          </motion.div>
-        ))}
-      </section>
     </div>
   );
 }
