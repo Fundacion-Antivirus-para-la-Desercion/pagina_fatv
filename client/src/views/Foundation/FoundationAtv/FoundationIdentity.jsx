@@ -221,7 +221,7 @@ function FoundationIdentity() {
             <motion.div
               key={item.id}
               className="h-full"
-              {...expandableTransition}
+              {...expandableTransition(0)}
             >
               <div
                 className="group relative flex flex-col bg-dark-blue h-full overflow-hidden cursor-pointer hover:translate-y-[-8px] transition-transform duration-300"
