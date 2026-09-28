@@ -1,6 +1,6 @@
+import SeoHead from "../../components/seo/SeoHead";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import { JAVI_FELIZ_SVG as Javi, BANNER_CONTACT_US_IMG as BannerContacUs } from "../../assets/cloudinaryImages";
 import emailjs from "emailjs-com";
 import Modal from "../../components/modal/Modal";
@@ -136,12 +136,11 @@ function ContactUs() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción
-        </title>
-        <meta name="description" content={t("contactUs.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="contact"
+        titleKey="contactUs.banner.h1"
+        descriptionKey="contactUs.metaDescription"
+      />
       <Modal
         isOpen={open}
         onClose={() => cerrarModal()}

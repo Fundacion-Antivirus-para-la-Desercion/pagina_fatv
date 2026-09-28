@@ -1,3 +1,4 @@
+import LocalizedLink from "../../../components/routing/LocalizedLink";
 import {
   ACOMPANAMIENTO_COLEGIO_IMG as AcompanamientoColegio,
   ACOMPANAMIENTO_UDEA_IMG as AcompanamientoUdea,
@@ -20,7 +21,6 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectFade, Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 function Description() {
   const { t } = useTranslation();
@@ -237,8 +237,8 @@ function Description() {
             {...floatSnake(0)}
             className="group z-10 md:absolute md:-left-11 md:bottom-14 w-20 md:w-36"
           >
-            <Link
-              to="/ContactUs"
+            <LocalizedLink
+              routeKey="contact"
               className="bg-white p-3 flex flex-col md:flex-row items-center justify-between rounded-xl shadow-2xl transition-all"
             >
               <span
@@ -260,7 +260,7 @@ function Description() {
                   )}
                 </h4>
               </div>
-            </Link>
+            </LocalizedLink>
           </motion.div>
         </div>
       </section>

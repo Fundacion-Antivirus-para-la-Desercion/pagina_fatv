@@ -17,6 +17,78 @@
         ]
       }
     ],
+    "redirects": [
+      {
+        "source": "/Comunicaciones",
+        "destination": "/es/comunicaciones",
+        "type": 301
+      },
+      {
+        "source": "/ContactUs",
+        "destination": "/es/contacto",
+        "type": 301
+      },
+      {
+        "source": "/DonationPay",
+        "destination": "/es/donaciones",
+        "type": 301
+      },
+      {
+        "source": "/Fundacion",
+        "destination": "/es/fundacion",
+        "type": 301
+      },
+      {
+        "source": "/News",
+        "destination": "/es/noticias",
+        "type": 301
+      },
+      {
+        "source": "/atvconnect",
+        "destination": "/es/atv-conecta",
+        "type": 301
+      },
+      {
+        "source": "/comunicaciones",
+        "destination": "/es/comunicaciones",
+        "type": 301
+      },
+      {
+        "source": "/consultorias",
+        "destination": "/es/consultorias",
+        "type": 301
+      },
+      {
+        "source": "/dataAnalytics",
+        "destination": "/es/analitica-de-datos",
+        "type": 301
+      },
+      {
+        "source": "/fundacion",
+        "destination": "/es/fundacion",
+        "type": 301
+      },
+      {
+        "source": "/gestion-de-la-permanencia",
+        "destination": "/es/gestion-de-la-permanencia",
+        "type": 301
+      },
+      {
+        "source": "/news/detail",
+        "destination": "/es/noticias/detalle",
+        "type": 301
+      },
+      {
+        "source": "/provocacion",
+        "destination": "/es/provocacion",
+        "type": 301
+      },
+      {
+        "source": "/social-intervention",
+        "destination": "/es/intervencion-social",
+        "type": 301
+      }
+    ],
     "rewrites": [
       {
         "source": "**",

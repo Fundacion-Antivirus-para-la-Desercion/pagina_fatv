@@ -1,6 +1,5 @@
+import SeoHead from "../../components/seo/SeoHead";
 import "boxicons";
-import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import BannerView from "../../components/Banner-views/BannerView";
 import { BANNER_DATA_ANALYTICS_IMG as BannerDataAnalytics } from "../../assets/cloudinaryImages";
 import Description from "../DataAnalytics/Description/Description.jsx";
@@ -13,14 +12,14 @@ import TechStack from "./TechStack/TechStack.jsx";
 
 
 function DataAnalytics() {
-  const { t } = useTranslation();
   const teamsData = data[0];
   return (
     <div className="data-analytics-container lg:pt-[145px]">
-      <Helmet>
-        <title>{t("dataAnalytics.banner.h1")} | Fundación Antivirus para la Deserción</title>
-        <meta name="description" content={t("dataAnalytics.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="dataAnalytics"
+        titleKey="dataAnalytics.banner.h1"
+        descriptionKey="dataAnalytics.metaDescription"
+      />
       <div className="relative w-full">
         <BannerView
           imagesBannerMap={{

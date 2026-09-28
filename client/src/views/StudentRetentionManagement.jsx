@@ -1,5 +1,4 @@
-import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
+import SeoHead from "../components/seo/SeoHead";
 import { BANNER_RETENTION_IMG as BannerRetention } from "../assets/cloudinaryImages";
 import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
 import BannerView from "../components/Banner-views/BannerView.jsx";
@@ -7,20 +6,14 @@ import PermanenceObjectives from "./StudentRetentionManagement/components/Perman
 import StudentSuccess from "./StudentRetentionManagement/components/StudentSuccess/StudentSuccess";
 
 function StudentRetentionManagement() {
-  const { t } = useTranslation();
 
   return (
     <section className="lg:pt-[145px]">
-      <Helmet>
-        <title>
-          {t("studentRetentionManagement.banner.h1")} | Fundación Antivirus para
-          la Deserción
-        </title>
-        <meta
-          name="description"
-          content={t("studentRetentionManagement.metaDescription")}
-        />
-      </Helmet>
+      <SeoHead
+        routeKey="retention"
+        titleKey="studentRetentionManagement.banner.h1"
+        descriptionKey="studentRetentionManagement.metaDescription"
+      />
       <BannerView
         imagesBannerMap={{
           image: BannerRetention,
