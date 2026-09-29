@@ -60,7 +60,7 @@ function CardsCarousel({ slides = [], aside = null }) {
     <section className="bg-white py-10 md:py-12">
       <div
         id="slide-content"
-        className="mx-auto grid w-[90%] max-w-[1500px] grid-cols-1 overflow-hidden rounded-3xl border border-[#EDEFF6] bg-[#FCFDFE] text-dark-blue shadow-[0_10px_30px_-12px_rgba(7,60,114,0.18)] xl:min-h-[300px] xl:grid-cols-[34.28%_1fr_19.1%]"
+        className="mx-auto grid w-[90%] max-w-[1600px] grid-cols-1 overflow-hidden rounded-3xl border border-[#EDEFF6] bg-[#FCFDFE] text-dark-blue shadow-[0_10px_30px_-12px_rgba(7,60,114,0.18)] xl:min-h-[300px] xl:grid-cols-[34.28%_1fr_19.1%]"
       >
         {/* Panel izquierdo: Javi + foco + título del slide */}
         <div className="relative min-h-[260px] overflow-hidden bg-brand-blue-300 xl:min-h-0">

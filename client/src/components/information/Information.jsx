@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import {
   MdOutlineAttachMoney,
   MdPayment,
-  MdOutlineAccountBalanceWallet,
 } from "react-icons/md";
 import { BiCreditCardAlt } from "react-icons/bi";
 import {
@@ -18,14 +17,12 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
-import { PiCurrencyCircleDollarBold } from "react-icons/pi";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoWalletOutline } from "react-icons/io5";
-
+import { AiOutlineBank } from "react-icons/ai";
 
 import { cardItemReveal } from "../../components/motion/constants/Animations.js";
 import { motion } from "framer-motion";
-
 
 import { useTranslation } from "react-i18next";
 import CardsCarousel from "../carousel/cards/CardsCarousel.jsx";
@@ -67,7 +64,7 @@ const FOCUS_KEYS = [
 ];
 
 const PAYMENT_METHODS = [
-  { key: "one", Icon: MdOutlineAttachMoney },
+  { key: "one", Icon: AiOutlineBank },
   { key: "two", Icon: MdPayment },
   { key: "three", Icon: BiCreditCardAlt },
 ];
@@ -219,49 +216,57 @@ function Information() {
   ];
 
   const aside = (
-    <div className="flex flex-col">
-      <ul className="-mt-[2px] flex flex-col gap-[3.7px] rounded-2xl bg-primary-ice pb-[5px] pl-[19px] pt-[8.6px]">
-        <div className="flex items-center gap-2">
-          <IoWalletOutline className="size-7 p-1 bg-brand-blue-50 rounded-full" />
-          <h4 className="font-extrabold text-lg text-dark-blue">
+    <div className="flex flex-col gap-2">
+      <ul className="flex flex-col rounded-2xl bg-primary-ice px-5 pb-4 pt-3">
+        <div className="flex items-center gap-3 mb-3">
+          <IoWalletOutline className="size-10 flex-shrink-0 rounded-full bg-brand-blue-50 p-2 text-dark-blue" />
+          <h4 className="text-xl font-extrabold text-dark-blue">
             {t(`${base}.four.title`)}
           </h4>
         </div>
-        {PAYMENT_METHODS.map(({ key, Icon }) => (
-          <li
-            key={key}
-            className="flex items-center gap-[12px] text-base text-[#1B2A5C]"
-          >
-            <Icon className="h-[18.5px] w-[18.5px] flex-shrink-0 rounded-full bg-[#20295C] p-[3px] text-white" />
-            <span>{t(`${base}.four.${key}`)}</span>
-          </li>
-        ))}
+        <div className="ml-[19px] flex flex-col gap-3 border-l-2 border-primary-mediumblue/40 pl-5">
+          {PAYMENT_METHODS.map(({ key, Icon }) => (
+            <li
+              key={key}
+              className="flex items-center gap-3 text-base text-dark-blue"
+            >
+              <Icon className="size-5 flex-shrink-0 text-dark-blue" />
+              <span>{t(`${base}.four.${key}`)}</span>
+            </li>
+          ))}
+        </div>
       </ul>
 
-      <div className="mt-[5.5px] flex items-start gap-[9px] rounded-2xl bg-primary-ice pb-[6px] pl-[16px] pt-[6px]">
-        <MdOutlineAccountBalanceWallet className="-mt-[3px] h-[25px] w-[25px] flex-shrink-0 rounded-full bg-dark-blue p-[4px] text-white" />
-        <div className="flex flex-col text-xl">
-          <h4 className=" leading-[16px] text-dark-blue">
+      <div className="flex items-start gap-2.5 rounded-3xl bg-primary-ice px-4 py-2">
+        <MdOutlineAttachMoney className="mt-0.5 size-8 flex-shrink-0 rounded-full  p-[4px] text-dark-blue bg-white" />
+        <div className="flex flex-col">
+          <h4 className="text-xl font-extrabold leading-tight text-dark-blue">
             {t(`${base}.four.title_two`)}
           </h4>
           <PriceLine text={t(`${base}.four.price`)} />
-          <span className="mt-[2px] leading-base text-[#1B2A5C]">
-            {t(`${base}.four.final_price`)}
+          <span className="mt-1 text-xl text-dark-blue">
+            $ {t(`${base}.four.final_price`)}{" "}
+            <span className="text-xs font-semibold tracking-wide text-dark-blue">COP</span>
           </span>
         </div>
       </div>
 
-      <a
-        className="group mx-auto mt-[5px] flex items-center gap-[12px] xl:ml-auto xl:mr-[26px]"
-        href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className="flex px-8 py-3 items-center justify-center gap-2 rounded-3xl font-renogare bg-primary-yellow text-lg text-brand-blue-300 transition-transform duration-300 group-hover:-translate-y-0.5">
+      <div className="mt-1 flex items-center gap-2 xl:ml-auto xl:mr-4">
+        <a
+          className="group flex items-center justify-center gap-2 rounded-3xl bg-primary-yellow px-8 py-3 font-renogare text-lg text-brand-blue-300"
+          href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {t("provocacion.information.button_whatsapp")}
-          <FaArrowRight className="size-5" />
-        </span>
-      </a>
+          <FaArrowRight className="size-5  group-hover:translate-x-1 duration-300" />
+        </a>
+        <div className="flex flex-col gap-3" aria-hidden="true">
+          <span className="h-[4px] w-4 -rotate-[30deg] rounded-full bg-primary-yellow" />
+          <span className="h-[4px] w-4 -rotate-[5deg] rounded-full bg-primary-yellow" />
+          <span className="h-[4px] w-4 rotate-[25deg] rounded-full bg-primary-yellow" />
+        </div>
+      </div>
     </div>
   );
 
@@ -272,9 +277,9 @@ function Information() {
 function PriceLine({ text }) {
   const [amount, ...suffix] = text.split(" ");
   return (
-    <p className="mt-[1px] leading-[20px] text-dark-blue">
-      <span className="text-xl font-bold">{amount}</span>{" "}
-      <span className="text-xl">{suffix.join(" ")}</span>
+    <p className="mt-[1px] leading-[20px] text-blue-base">
+      <span className="text-base">{amount}</span>{" "}
+      <span className="text-base">{suffix.join(" ")}</span>
     </p>
   );
 }
