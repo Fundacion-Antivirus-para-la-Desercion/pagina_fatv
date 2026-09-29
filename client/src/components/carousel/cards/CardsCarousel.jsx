@@ -31,7 +31,7 @@ function SlideTitle({ text }) {
       <span className="block text-white first-letter:uppercase">
         {words.slice(0, cut).join(" ")}
       </span>
-      <span className="block text-[#FEC623]">{words.slice(cut).join(" ")}</span>
+      <span className="block text-primary-yellow">{words.slice(cut).join(" ")}</span>
     </motion.h3>
   );
 }
@@ -60,17 +60,17 @@ function CardsCarousel({ slides = [], aside = null }) {
     <section className="bg-white py-10 md:py-12">
       <div
         id="slide-content"
-        className="mx-auto grid w-[92%] max-w-[1400px] grid-cols-1 overflow-hidden rounded-[18px] border border-[#EDEFF6] bg-[#FCFDFE] text-[#1B2A5C] shadow-[0_10px_30px_-12px_rgba(7,60,114,0.18)] xl:min-h-[272px] xl:grid-cols-[34.28%_1fr_19.1%]"
+        className="mx-auto grid w-[90%] max-w-[1500px] grid-cols-1 overflow-hidden rounded-3xl border border-[#EDEFF6] bg-[#FCFDFE] text-dark-blue shadow-[0_10px_30px_-12px_rgba(7,60,114,0.18)] xl:min-h-[300px] xl:grid-cols-[34.28%_1fr_19.1%]"
       >
         {/* Panel izquierdo: Javi + foco + título del slide */}
-        <div className="relative min-h-[260px] overflow-hidden bg-[#073C72] xl:min-h-0">
+        <div className="relative min-h-[260px] overflow-hidden bg-brand-blue-300 xl:min-h-0">
           <svg
             className="absolute inset-0 h-full w-full"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            <path d="M0,73.5 C18,102 50,102 100,71.7 L100,100 L0,100 Z" fill="#FEC623" />
+            <path d="M0,73.5 C18,102 50,102 100,71.7 L100,100 L0,100 Z" fill="#FFBA08" />
           </svg>
 
           <motion.img
@@ -82,7 +82,7 @@ function CardsCarousel({ slides = [], aside = null }) {
           />
           {/* El PNG de Javi trae margen transparente arriba: se posiciona por top para alinear la cabeza */}
           <img
-            className="absolute left-[1%] top-[22%] h-[72%] w-auto xl:left-[5%] xl:top-[13%] xl:h-[80%] 2xl:left-[6.7%] 2xl:top-[7%] 2xl:h-[86.7%]"
+            className="absolute left-[1%] top-[22%] h-[72%] w-auto xl:left-[5%] xl:top-[13%] xl:h-[80%] 2xl:left-[6.7%] 2xl:top-[7%] 2xl:h-[87%]"
             src={Javicorto}
             alt="Javi señalando"
             loading="lazy"
@@ -136,9 +136,9 @@ function CardsCarousel({ slides = [], aside = null }) {
               className={navButtonClass}
               aria-label={t("newsDetail.cardCarousel.tbn_previous")}
             >
-              <FaChevronLeft size={10} />
+              <FaChevronLeft size={16} />
             </button>
-            <span className="select-none text-[11px] text-[#304882]">
+            <span className="select-none text-[11px] text-dark-blue">
               {activeIndex + 1} / {slides.length}
             </span>
             <button
@@ -146,7 +146,7 @@ function CardsCarousel({ slides = [], aside = null }) {
               className={navButtonClass}
               aria-label={t("newsDetail.cardCarousel.tbn_next")}
             >
-              <FaChevronRight size={10} />
+              <FaChevronRight size={16} />
             </button>
           </nav>
         </aside>
