@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
-import {
-  MdOutlineAttachMoney,
-  MdPayment,
-} from "react-icons/md";
+import { MdOutlineAttachMoney, MdPayment } from "react-icons/md";
 import { BiCreditCardAlt } from "react-icons/bi";
 import {
   FaUsers,
@@ -11,15 +8,14 @@ import {
   FaBolt,
   FaExchangeAlt,
   FaWhatsapp,
-  FaUserGraduate,
-  FaRegClock,
-  FaRegCompass,
-  FaChevronRight,
 } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoWalletOutline } from "react-icons/io5";
 import { AiOutlineBank } from "react-icons/ai";
+import { PiStudentFill } from "react-icons/pi";
+import { MdOutlineAccessTime } from "react-icons/md";
+import { FaPersonCircleQuestion } from "react-icons/fa6";
 
 import { cardItemReveal } from "../../components/motion/constants/Animations.js";
 import { motion } from "framer-motion";
@@ -44,12 +40,20 @@ const SERVICES_RIGHT = [
 ];
 
 const AUDIENCE_LEFT = [
-  { question: "questionOne", answer: "answerOne", Icon: FaUserGraduate },
+  { question: "questionOne", answer: "answerOne", Icon: PiStudentFill },
 ];
 
 const AUDIENCE_RIGHT = [
-  { question: "questionTwo", answer: "answerTwo", Icon: FaRegClock },
-  { question: "questionThree", answer: "answerThree", Icon: FaRegCompass },
+  {
+    question: "questionTwo",
+    answer: "answerTwo",
+    Icon: MdOutlineAccessTime,
+  },
+  {
+    question: "questionThree",
+    answer: "answerThree",
+    Icon: FaPersonCircleQuestion,
+  },
 ];
 
 const FOCUS_KEYS = [
@@ -96,8 +100,8 @@ function IconItem({
       variants={cardItemReveal}
       className={`flex ${align === "start" ? "items-start" : "items-center"} ${className}`}
     >
-      <span className={`${iconCircleClass} h-10 w-10`}>
-        <Icon size={20} />
+      <span className={`${iconCircleClass} h-12 w-12`}>
+        <Icon size={32} />
       </span>
       {children}
     </motion.li>
@@ -117,8 +121,8 @@ function Information() {
 
   const renderAudience = ({ question, answer, Icon }) => (
     <IconItem key={question} Icon={Icon} align="start">
-      <div className="text-base leading-[17px]">
-        <strong className="mb-1 block text-dark-blue">
+      <div className="text-base text-blue-base leading-[17px]">
+        <strong className="mb-1 text-lg block text-dark-blue">
           {t(`${base}.one.${question}`)}
         </strong>
         <p>{t(`${base}.one.${answer}`)}</p>
@@ -167,7 +171,7 @@ function Information() {
       id: "audience",
       title: t(`${base}.one.title`),
       content: (
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-x-6 xl:pt-[26px]">
+        <div className="p-5">
           <ul className="flex flex-col gap-5">
             {AUDIENCE_LEFT.map(renderAudience)}
           </ul>
@@ -230,7 +234,7 @@ function Information() {
               key={key}
               className="flex items-center gap-3 text-base text-dark-blue"
             >
-              <Icon className="size-5 flex-shrink-0 text-dark-blue" />
+              <Icon className="size- flex-shrink-0 text-dark-blue" />
               <span>{t(`${base}.four.${key}`)}</span>
             </li>
           ))}
@@ -246,14 +250,16 @@ function Information() {
           <PriceLine text={t(`${base}.four.price`)} />
           <span className="mt-1 text-xl text-dark-blue">
             $ {t(`${base}.four.final_price`)}{" "}
-            <span className="text-xs font-semibold tracking-wide text-dark-blue">COP</span>
+            <span className="text-xs font-semibold tracking-wide text-dark-blue">
+              COP
+            </span>
           </span>
         </div>
       </div>
 
-      <div className="mt-1 flex items-center gap-2 xl:ml-auto xl:mr-4">
+      <div className="mt-1 flex items-center gap-2 xl:ml-auto xl:mr-4 p-3 justify-center">
         <a
-          className="group flex items-center justify-center gap-2 rounded-3xl bg-primary-yellow px-8 py-3 font-renogare text-lg text-brand-blue-300"
+          className="group flex items-center justify-center gap-2 rounded-3xl bg-primary-yellow py-3 px-8 xl:px-5 xl:py-2 font-renogare text-base text-brand-blue-300"
           href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
           target="_blank"
           rel="noopener noreferrer"

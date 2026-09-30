@@ -75,14 +75,14 @@ function CardsCarousel({ slides = [], aside = null }) {
 
           <motion.img
             {...floatSnake({ initial: { y: 0 }, animate: { y: [0, -6, 0] } })}
-            className="absolute left-[6.7%] top-[17.3%] w-[14%]"
+            className="absolute h-20 bottom-36 left-2"
             src={FocusTransparent}
             alt=""
             loading="lazy"
           />
           {/* El PNG de Javi trae margen transparente arriba: se posiciona por top para alinear la cabeza */}
           <img
-            className="absolute left-[1%] top-[22%] h-[72%] w-auto xl:left-[5%] xl:top-[13%] xl:h-[80%] 2xl:left-[6.7%] 2xl:top-[7%] 2xl:h-[87%]"
+            className="absolute h-[200px] xl:h-[300px] bottom-0 left-5"
             src={Javicorto}
             alt="Javi señalando"
             loading="lazy"
@@ -126,31 +126,31 @@ function CardsCarousel({ slides = [], aside = null }) {
           </AnimatePresence>
         </div>
 
-        {/* Sidebar: contenido fijo + navegación */}
-        <aside className="flex flex-col bg-[#F5F9FC] px-4 pt-4 xl:pl-[12px] xl:pr-[14px] xl:pt-[7px]">
+        {/* Sidebar: contenido fijo */}
+        <aside className="flex flex-col bg-white px-4 pt-4 xl:pl-[12px] xl:pr-[14px] xl:pt-[7px]">
           {aside}
-
-          <nav className="mt-auto flex h-[42px] items-center justify-center gap-[13px]">
-            <button
-              onClick={handlePrev}
-              className={navButtonClass}
-              aria-label={t("newsDetail.cardCarousel.tbn_previous")}
-            >
-              <FaChevronLeft size={16} />
-            </button>
-            <span className="select-none text-[11px] text-dark-blue">
-              {activeIndex + 1} / {slides.length}
-            </span>
-            <button
-              onClick={handleNext}
-              className={navButtonClass}
-              aria-label={t("newsDetail.cardCarousel.tbn_next")}
-            >
-              <FaChevronRight size={16} />
-            </button>
-          </nav>
         </aside>
       </div>
+
+      <nav className="mt-4 flex items-center justify-center gap-[13px]">
+        <button
+          onClick={handlePrev}
+          className={navButtonClass}
+          aria-label={t("newsDetail.cardCarousel.tbn_previous")}
+        >
+          <FaChevronLeft size={16} />
+        </button>
+        <span className="select-none text-[11px] text-dark-blue">
+          {activeIndex + 1} / {slides.length}
+        </span>
+        <button
+          onClick={handleNext}
+          className={navButtonClass}
+          aria-label={t("newsDetail.cardCarousel.tbn_next")}
+        >
+          <FaChevronRight size={16} />
+        </button>
+      </nav>
     </section>
   );
 }
