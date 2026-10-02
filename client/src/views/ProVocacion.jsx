@@ -19,7 +19,7 @@ import Description from "./StudentProvocation/Description";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "../components/modal/Modal";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect";
 
 function ProVocacion() {
@@ -90,7 +90,7 @@ function ProVocacion() {
           "service_ciqn2wp",
           "template_oacf6ns",
           emailParams,
-          "06in3EAhhtx15iDoZ",
+          { publicKey: "06in3EAhhtx15iDoZ" },
         )
         .then(() => {
           setFormData({

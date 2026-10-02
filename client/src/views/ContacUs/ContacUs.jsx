@@ -2,7 +2,7 @@ import SeoHead from "../../components/seo/SeoHead";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { JAVI_FELIZ_SVG as Javi, BANNER_CONTACT_US_IMG as BannerContacUs } from "../../assets/cloudinaryImages";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Modal from "../../components/modal/Modal";
 import BannerView from "../../components/Banner-views/BannerView";
 import ContactInformation from "./ContactInformation";
@@ -78,7 +78,7 @@ function ContactUs() {
           "service_ciqn2wp",
           "template_oacf6ns",
           emailParams,
-          "06in3EAhhtx15iDoZ",
+          { publicKey: "06in3EAhhtx15iDoZ" },
         )
         .then(() => {
           setFormData({
