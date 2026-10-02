@@ -1,7 +1,7 @@
+import SeoHead from "../../components/seo/SeoHead";
 import { BANNER_ATV_CONNECT_IMG as BannerAtvConnect } from "../../assets/cloudinaryImages";
 import BannerView from "../../components/Banner-views/BannerView";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
 import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";
 import DescriptionAtvConnect from "./descriptionAtvConnect/DescriptionAtvConnect.jsx";
@@ -12,17 +12,24 @@ import SchoolSubjectsAtvConnect from "./schoolSubjects/SchoolSubjectsAtvConnect.
 import GoAtvConnect from "./goAtvConnet/GoAtvConnect.jsx";
 import PricingCardsAtvConnect from "./pricingCardsAtvConnect/PricingCardsAtvConnect.jsx";
 
+
+const LIST_KEYS = [
+  "atvConnect.list.item_one",
+  "atvConnect.list.item_two",
+  "atvConnect.list.item_three",
+  "atvConnect.list.item_four",
+];
+
 function AtvConnect() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("atvConnect.banner.h1")} | Fundación Antivirus para la Deserción
-        </title>
-        <meta name="description" content={t("atvConnect.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="atvConnect"
+        titleKey="atvConnect.banner.h1"
+        descriptionKey="atvConnect.metaDescription"
+      />
       <BtnAtv />
       <div className="lg:pt-[145px]">
         <BannerView
@@ -39,16 +46,12 @@ function AtvConnect() {
       <FiguresAtvConnect />
 
       <section className="bg-dark-blue p-5">
-        <ol className="md:flex justify-center list-none text-white text-justify text-lg md:text-base">
-          <li className="m-5 md:m-0 md:mr-8">
-            {t("atvConnect.list.item_one")}
-          </li>
-          <li className="m-5 md:m-0 md:mr-8">
-            {t("atvConnect.list.item_two")}
-          </li>
-          <li className="m-5 md:m-0 md:mr-8">
-            {t("atvConnect.list.item_three")}
-          </li>
+        <ol className="flex flex-col items-center md:flex-row flex-wrap md:justify-center list-none text-white text-justify text-base md:text-lg">
+          {LIST_KEYS.map((key) => (
+            <li key={key} className="m-3 md:m-0 md:mr-8">
+              {t(key)}
+            </li>
+          ))}
         </ol>
       </section>
 

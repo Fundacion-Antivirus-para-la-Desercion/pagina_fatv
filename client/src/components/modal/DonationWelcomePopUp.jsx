@@ -1,5 +1,5 @@
+import LocalizedLink from "../routing/LocalizedLink";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ICON_DONATION_IMG as IconDonation,
@@ -105,14 +105,14 @@ const DonationWelcomePopUp = () => {
             </p>
           </div>
 
-          <Link
-            to="/DonationPay"
+          <LocalizedLink
+            routeKey="donation"
             className="flex items-center gap-2 mt-4 px-8 py-2 shadow-md bg-primary-purple text-white rounded-3xl cursor-pointer hover:bg-primary-purple/90 transition-colors"
           >
             <div className="text-lg md:text-2xl text-white">
               {t("donationWelcomePopUp.donateButton")}
             </div>
-          </Link>
+          </LocalizedLink>
 
           <div className="relative flex items-end justify-center w-full h-40">
             <motion.div

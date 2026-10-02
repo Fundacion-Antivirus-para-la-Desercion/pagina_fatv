@@ -101,3 +101,40 @@ export const DoodleLine = () => {
     </svg>
   );
 };
+
+export const DotsPattern = ({ classNames = "" }) => {
+  const cols = 6;
+  const rows = 4;
+  const spacing = 12;
+  const r = 2;
+  const dots = [];
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      dots.push(
+        <circle
+          key={`${row}-${col}`}
+          cx={r + col * spacing}
+          cy={r + row * spacing}
+          r={r}
+          fill="#28A499"
+        />,
+      );
+    }
+  }
+
+  const w = r * 2 + (cols - 1) * spacing;
+  const h = r * 2 + (rows - 1) * spacing;
+
+  return (
+    <svg
+      viewBox={`0 0 ${w} ${h}`}
+      width={w}
+      height={h}
+      className={`pointer-events-none ${classNames}`}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {dots}
+    </svg>
+  );
+};

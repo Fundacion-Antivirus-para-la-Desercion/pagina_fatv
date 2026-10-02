@@ -147,10 +147,7 @@
     "atvConnect_social": "Hello, I saw the website and I would like to know more about ATVConecta Social",
     "atvConnect_persons": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
     "atvConnect_institutional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
-    "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform",
-    "atvConnect_personas": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
-    "atvConnect_institucional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
-    "atvConnect_plataforma": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
+    "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
   },
   "donation": {
     "metaDescription": "Donate to Fundación Antivirus para la Deserción and help more students in Colombia stay in university and achieve their graduation.",
@@ -196,6 +193,12 @@
         },
         "donations2025": {
           "title": "Donation Policy 2025"
+        },
+        "report2023": {
+          "title": "Annual Report 2023"
+        },
+        "report2024": {
+          "title": "Annual Report 2024"
         },
         "report2025": {
           "title": "Annual Report 2025"
@@ -437,7 +440,7 @@
         },
         "member_five": {
           "alt": "Team Communicator posing with a warm smile and a friendly expression.",
-          "position": "Communications Specialist",
+          "position": "Audiovisual Communicator",
           "description": "Builds meaningful connections that transform lives and unite the FATV community."
         }
       }
@@ -448,6 +451,53 @@
     "banner": {
       "h1": "About Us",
       "alt": "The Antivirus Foundation team working together."
+    },
+    "foundationIdentity": {
+      "title": "WHAT DRIVES US",
+      "description": "Discover our essence, our purpose, and the way we work to transform education and build new opportunities.",
+      "mission": {
+        "title": "MISSION",
+        "description": "Increase graduation rates of students in technology careers and programs, through strategies to promote retention and prevent dropout."
+      },
+      "vision": {
+        "title": "VISION",
+        "description": "In 5 years we will have a national presence, in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50 to 40%). Additionally, we will be replicating a reference model, whose success can be measured qualitatively and quantitatively."
+      },
+      "values": {
+        "title": "VALUES",
+        "description": "At the Antivirus Foundation for Dropout Prevention, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment and camaraderie. We are supportive and innovative and have a great vocation for service."
+      },
+      "change_theory": {
+        "title": "THEORY OF CHANGE",
+        "description": "Identify students with vulnerabilities and provide comprehensive support through an ecosystem of strategies focused on academic, economic and socio-emotional aspects for retention."
+      },
+      "target_audience": {
+        "title": "TARGET AUDIENCE",
+        "description": "We work with students from IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout."
+      },
+      "purpose": {
+        "title": "PURPOSE",
+        "description": "Build a prosperous, peaceful, harmonious, technological and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a reference for development."
+      },
+      "images": {
+        "alt_mision": "Daniel Tabares, a student at the University of Antioquia who received support from the ATV Foundation throughout his university journey, receives his degree.",
+        "alt_vision": "Víctor Valencia, deputy director of the ATV Foundation, participating in the 'My Scholarship, My Goal' gathering.",
+        "alt_values": "ATV Foundation team members smiling, reflecting the team's enthusiasm.",
+        "alt_change_theory": "Student receiving a laptop as a donation from the ATV Foundation.",
+        "alt_target_audience": "High school students receiving support from the foundation.",
+        "alt_purpose": "ATV Foundation team members providing a support space for university students."
+      },
+      "priorities": {
+        "title": "PRIORITIES",
+        "description": "Four commitments that guide our work for student retention and dropout reduction.",
+        "span": "PRIORITY",
+        "items": {
+          "consolidate_model": "Consolidate a model with processes for identifying vulnerabilities, intervention and result indicators.",
+          "explore_interventions": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
+          "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
+          "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
+        }
+      }
     },
     "foundationATV": {
       "header": "About us",
@@ -476,41 +526,6 @@
       "accountant": {
         "subtitle": "OUR",
         "title": "ACCOUNTANT"
-      },
-      "organization_info": {
-        "change_theory": {
-          "title": "THEORY OF CHANGE",
-          "description": "Identify students with vulnerabilities and provide comprehensive support through an ecosystem of strategies focused on academic, economic and socio-emotional aspects for retention."
-        },
-        "values": {
-          "title": "VALUES",
-          "description": "At the Antivirus Foundation for Dropout Prevention, we do our work collaboratively, with passion, integrity, autonomy, empathy, commitment and camaraderie. We are supportive and innovative and have a great vocation for service."
-        },
-        "mission": {
-          "title": "MISSION",
-          "description": "Increase graduation rates of students in technology careers and programs, through strategies to promote retention and prevent dropout."
-        },
-        "target_audience": {
-          "title": "TARGET AUDIENCE",
-          "description": "We work with students from IT careers and programs in Secondary and Post-secondary Education. We focus our intervention on students vulnerable to dropout."
-        },
-        "vision": {
-          "title": "VISION",
-          "description": "In 5 years we will have a national presence, in the 10 best universities in the country, where we will have reduced the dropout rate by 10 percentage points (from 50 to 40%). Additionally, we will be replicating a reference model, whose success can be measured qualitatively and quantitatively."
-        },
-        "priorities": {
-          "title": "PRIORITIES",
-          "items": {
-            "consolidate_model": "Consolidate a model with processes for identifying vulnerabilities, intervention and result indicators.",
-            "explore_interventions": "Explore intervention models from schools to contribute to reducing dropout in higher education.",
-            "involve_actors": "Know and involve other actors in retention work (Rectors, Deans, MEN, Companies, among others).",
-            "reduce_dropout": "Help reduce dropout in other universities and programs to refine our model and generate income that contributes to the sustainability of the Antivirus Foundation."
-          }
-        },
-        "purpose": {
-          "title": "PURPOSE",
-          "description": "Build a prosperous, peaceful, harmonious, technological and competitive country, in which all young people have access to education and are good human beings, with goals and empowered in their lives. Thanks to this, we will overcome poverty and become a reference for development."
-        }
       }
     }
   },
@@ -524,7 +539,7 @@
     "category": "NEWS",
     "filters": {
       "all": "All",
-      "articles": "ARTICLES",
+      "articles": "Articles",
       "news": "News"
     },
     "read_more": "Read more",
@@ -747,18 +762,6 @@
           "title": "PARTICIPATION IN THE XI LATIN AMERICAN CONGRESS ON DROPOUT IN HIGHER EDUCATION",
           "content": [
             "The article \"Antivirus for Desertion Foundation: From the psychopedagogical to the sociopedagogical\" written and presented by collaborators Víctor Valencia, Jhisel Holguín and Gabriel Castellanos was the successful bet they developed for the presentation at the XI Latin American Congress on Dropout in Higher Education, held in Brasília, on November 16, 2022. This represented an achievement, since it allowed to chart new horizons, present the intervention model currently developed in the projects and share experiences with attendees from several countries in Latin America."
-          ]
-        }
-      },
-      "tikso": {
-        "alt": "Participation of the Fundación Antivirus para la Deserción in Tikso 2025, a space for learning.",
-        "title": "FATV'S PARTICIPATION IN TIKSO 2025",
-        "detail": {
-          "title": "FATV'S PARTICIPATION IN TIKSO 2025",
-          "content": [
-            "Thanks to MAKAIA for making such an inspiring Tikso 2025 possible. It was two days filled with learning, networking, and new perspectives to strengthen the impact of social organizations.",
-            "We took away valuable insights on sustainability strategies, innovation, and resource mobilization, as well as experiences that prove collaboration is key to transforming realities. We also participated in the business matchmaking session, a space that allowed us to present the work of the Fundación Antivirus para la Deserción, share our mission, and converse with potential partners with whom we hope to build long-lasting impact.",
-            "This gathering reminded us of the importance of continuing to innovate, learning from other organizations, and strengthening collaborative networks to respond to social challenges with more sustainable and far-reaching solutions. Thank you to everyone who was part of this experience! We are already looking forward to Tikso 2026."
           ]
         }
       }
@@ -1174,11 +1177,12 @@
       "description": "Thank you for contacting us."
     },
     "information": {
-      "button_whatsapp": "I want it",
+      "button_whatsapp": "I want it!",
       "cards": {
         "one": {
-          "title": "DIRECTED TO:",
+          "title": "Directed to:",
           "questionOne": "Who is it for?",
+          "description": "Young people building their life projects.",
           "answerOne": "Young people who are about to make important decisions about their lives, especially in relation to their life project. Final year students, high school graduates, or young people in transition.",
           "questionTwo": "When?",
           "answerTwo": "When they need to make decisions about their academic and professional future.",
@@ -1186,22 +1190,23 @@
           "answerThree": "Feelings of disorientation, confusion, or insecurity about the future."
         },
         "two": {
-          "title": "INSTALLED CAPABILITIES",
+          "title": "Installed capabilities",
           "description": "We promote the development of personal and emotional skills that allow young people to know themselves, value themselves, and project themselves.",
           "titleTwo": "FOCUS ON THE SELF",
           "studentFocus": {
-            "autoperception": "🧠 Self-perception: Recognize who I am and how I see myself.",
-            "autobservacion": "👁️ Self-observation: Identify my emotions and behaviors.",
-            "autoestima": "❤️ Self-esteem: Value myself and recognize my own worth.",
-            "autoconcepto": "🔍 Self-concept: Understand how I define myself.",
-            "autonomia": "🧭 Autonomy: Make conscious and responsible decisions.",
-            "autoconfianza": "💪 Self-confidence: Believe in my abilities and potential.",
-            "automotivacion": "🔥 Self-motivation: Drive myself from within.",
-            "autoevaluacion": "📊 Self-evaluation: Learn from my actions and experiences."
+            "autoperception": "Self-perception: Recognize who I am and how I see myself.",
+            "autobservacion": "Self-observation: Identify my emotions and behaviors.",
+            "autoestima": "Self-esteem: Value myself and recognize my own worth.",
+            "autoconcepto": "Self-concept: Understand how I define myself.",
+            "autonomia": "Autonomy: Make conscious and responsible decisions.",
+            "autoconfianza": "Self-confidence: Believe in my abilities and potential.",
+            "automotivacion": "Self-motivation: Drive myself from within.",
+            "autoevaluacion": "Self-evaluation: Learn from my actions and experiences."
           }
         },
         "three": {
-          "title": "WHAT DOES THE SERVICE INCLUDE?",
+          "title": "What does the service include?",
+          "description": "A space to learn, connect, and advance.",
           "listServices": {
             "one": "5 group and/or individual sessions",
             "two": "1 individual socio-vocational counseling (on demand)",
@@ -1261,20 +1266,46 @@
       "br": "Academic Tutoring",
       "alt": "Smiling ATVConecta academic tutors, ready to support your learning journey."
     },
-    "description_one": "ATVConecta is more than academic review. We accompany you in your process, drive your transformation, and connect you with tutors",
-    "description_span": " to strengthen your educational path and achieve your goals.",
-    "span_title": "OUR IMPACT",
-    "title": "THE NUMBERS SPEAK FOR THEMSELVES",
+    "description": {
+      "h2": "MORE THAN LEARNING.",
+      "br_h2": "IT'S ABOUT CONNECTING.",
+      "paragraph": "We walk with you through your journey, boost your training, and connect you with tutors ",
+      "span": "to strengthen your educational path and help you reach your goals.",
+      "goals": {
+        "one": {
+          "title": "We accompany",
+          "description": "your journey"
+        },
+        "two": {
+          "title": "We connect",
+          "description": "you with tutors"
+        },
+        "three": {
+          "title": "We boost",
+          "description": "your education"
+        },
+        "four": {
+          "title": "You achieve",
+          "description": "your goals"
+        }
+      },
+      "alt_img_one": "Student Roberth Castillo holding his {ódigo/C13} course certificate alongside a team member from the Fundación Antivirus para la Deserción.",
+      "alt_img_two": "Student Juliana Hoyos holding her {ódigo/C13} course certificate alongside a team member from the Fundación Antivirus para la Deserción."
+    },
     "figures_impact": {
+      "span_title": "OUR IMPACT",
+      "title": "THE NUMBERS SPEAK FOR THEMSELVES",
       "figure_one": "Active students",
-      "figure_two": "Passed their classes",
-      "figure_three": "Sessions completed",
-      "figure_four": "Student satisfaction"
+      "figure_two": "of students passed the subject with 2 tutoring sessions",
+      "figure_three": "Completed tutoring sessions",
+      "figure_four": "Average tutoring rating",
+      "figure_five": "Historical tutors"
     },
     "list": {
-      "item_one": "⭐ 4.9/5 Average rating",
-      "item_two": "📅 Release year 2024",
-      "item_three": "✨ 24-hour turnaround"
+      "item_one": "👤 +800 Active students on the platform",
+      "item_two": "⭐ 4.9/5 Average rating",
+      "item_three": "📅 Release year 2024",
+      "item_four": "✨ 24-hour turnaround"
     },
     "services": {
       "span": "SERVICES",
@@ -1319,8 +1350,8 @@
       }
     },
     "subjects": {
-      "span": "SUBJECTS",
-      "title": "ALL FIELDS",
+      "span": "AVAILABLE SUBJECTS",
+      "title": "CORE AREAS",
       "alt_image_subjects": "Javi from FATV, analyzing data and statistical charts at a digital workstation.",
       "subject_list": {
         "calculus": "Calculus",
@@ -1350,35 +1381,62 @@
         "university": "Aurelio Llano Scholar"
       },
       "testimony_two": {
-        "description": "“intuitive platform makes it easy for students to find a tutor and for tutors to track every session”",
+        "description": "The platform is educational and user-friendly, which makes it easy for students to select a tutor and for tutors to track the requested sessions.”",
         "role": "Tutor",
         "university": "University of Antioquia"
       },
       "testimony_three": {
-        "description": "“I think implementing this platform is a great idea, thank you!”",
-        "role": "Student",
-        "university": "University of Antioquia"
+        "description": "“For me, the platform is very easy to use. It has a clean, well-organized design that is clear at a glance, and scheduling tutoring sessions is not complicated at all: it's intuitive, fast, and simple to do. Plus, I like that notifications arrive via Gmail, because they are easy to see and don't get lost so easily.”",
+        "role": "Dahiana Noreña Gómez",
+        "university": "Student"
       },
       "testimony_four": {
         "description": "“Congrats on this site! You don't realize how useful it is until you try it. I was blown away by how easy it is to connect with peers who are ready to help”",
         "role": "Student",
         "university": "Aurelio Llano Scholar"
       },
-      "testimony_five": {
-        "description": "“I find it to be a very innovative and useful alternative”",
-        "role": "Student",
-        "university": "University of Antioquia"
-      },
       "testimony_six": {
         "description": "“I really liked it! Thank you for always thinking about our well-being”",
         "role": "Student",
         "university": "Aurelio Llano Scholar"
       },
-      "testimony_seven": {
-        "description": "“Excellent tool”",
-        "role": "Student",
-        "university": "University of Antioquia"
-      }
+      "testimony_eight": {
+        "description": "“I started the semester feeling very nervous and constantly on edge, since my foundations in mathematics weren't as solid as I thought. So, instead of continuing to complain, I decided to look for solutions to properly keep up with my academic journey.\n\nFortunately, I have the support of FATV, who helped me manage and schedule tutoring sessions right from the first week. I started with Calculus and I remember spending that entire week in classes with the foundation's tutors.\n\nI really like it because I can receive the tutoring sessions from the comfort of my home and, what's more, I can choose the time that suits me best, depending on the tutor's availability. On top of that, the teachers really know their stuff. The most incredible thing is that they are students who understand our needs and, of course, they have the digital tools necessary to run the classes effectively.\n\nBy the end of the semester, I had done a ton of tutoring sessions, but I realized I came out as a completely different Gisela from the one who entered with so much fear of the unknown. The tutoring provided by FATV helped me build foundations that I didn't have when the semester began.\n\nAnd I'm not just talking about the academic side. They also helped me feel much more confident in my progress.”",
+        "role": "Gisela Patiño Bedoya",
+        "university": "Systems Engineering Student",
+        "photoAlt": "Photo of Gisela Patiño Bedoya, Systems Engineering Student"
+      },
+      "testimony_nine": {
+        "description": "“I have had the opportunity to know ATV's strategy since its beginnings and also to see how it has evolved with the implementation of the ATVconecta platform. It has been a very meaningful strategy, especially because it has made the tutoring process more organized and centralized.\n\nCurrently, the process is much simpler. From the platform, we can view the tutors' schedules and availability and easily find a tutoring session that fits our needs. Furthermore, it is very intuitive and easy to use.\n\nFor me, it has been very valuable to see that before and after, and to notice how a strategy that was already a great help has grown much stronger with the platform. 💙”",
+        "role": "Isabella Sánchez Mejía",
+        "university": "Student",
+        "photoAlt": "Photo of Isabella Sánchez Mejía, Student"
+      },
+      "testimony_ten": {
+        "description": "“The Antivirus Foundation's tutoring sessions were key to arriving very well prepared for my classes. Requesting tutoring before the semester started in algebra, calculus, physics, and programming made the university pace much easier to assimilate. Not only did I reinforce what I already knew, but I managed to adapt quickly without feeling overwhelmed. By combining this great support with good time management, everything flowed much better. This whole process helped me truly understand the topics and stand out with an excellent GPA.”",
+        "role": "Juan Camilo Tovar",
+        "university": "Systems Engineering Student",
+        "photoAlt": "Photo of Juan Camilo Tovar, Systems Engineering Student"
+      },
+      "testimony_eleven": {
+        "description": "“In this experience as a tutor, I have learned a lot and been able to feed on different lessons, both by receiving and giving tutoring. Following these processes simultaneously has allowed me to understand the perspective and the most common problems when receiving tutoring in this modality; likewise, I have learned different ways of teaching and sharing knowledge regarding each person. It has been a very rewarding and valuable process for my personal and academic growth.”",
+        "role": "Matías Zapata Rojas",
+        "university": "Student and Tutor - Systems Engineering",
+        "photoAlt": "Photo of Matías Zapata Rojas, Student and Tutor - Systems Engineering"
+      },
+      "testimony_twelve": {
+        "description": "“My experience with ATVconecta has been very good, since it is a very easy and intuitive platform. Scheduling tutoring sessions is simple and fast, and I haven't had any difficulties using it.”",
+        "role": "Ángel Parra Arrieta",
+        "university": "Student",
+        "photoAlt": "Photo of Ángel Parra Arrieta, Student"
+      },
+      "testimony_thirteen": {
+        "description": "“Taking advantage of the tutoring sessions helped me a lot to resolve my doubts and better understand difficult topics. That support gave me more confidence when studying and has progressively helped me get better grades in complicated subjects to raise my GPA.”",
+        "role": "Isabella Navarro",
+        "university": "Systems Engineering Student",
+        "photoAlt": "Photo of Isabella Navarro, Systems Engineering Student"
+      },
+      "readMore": "Read full testimony"
     },
     "pricing": {
       "title": "A PURPOSE, FOUR WAYS TO SUPPORT",
@@ -1401,7 +1459,7 @@
         "subtitle": "Persons",
         "description": "We connect students with our tutor network for individual review sessions in different subject areas, at their own pace and from anywhere.",
         "target": "Students seeking personalized support to improve their academic performance.",
-        "price_label": "Cost of $60,000",
+        "price_label": "Price: 58,000 COP + VAT",
         "price_sub": "Per session",
         "subtitle_two": "We deliver",
         "check_one": "One-on-one tutoring",
@@ -1413,7 +1471,7 @@
         "description": "We bring our tutoring and platform to institutions that need to strengthen academic support for their students.",
         "target": "Universities and scholarship programs.",
         "price_label": "To be agreed",
-        "price_sub": "based on volume",
+        "price_sub": "Based on volume",
         "subtitle_two": "We deliver",
         "check_one": "Service + platform",
         "check_two": "Tutor network",
@@ -1425,21 +1483,19 @@
         "description": "Our platform at the service of those who need a technological solution to manage tutoring in an agile, secure and effective way.",
         "target": "Institutions that already have tutors and need a technological solution.",
         "price_label": "To be agreed",
-        "price_sub": "based on volume",
+        "price_sub": "Based on volume",
         "subtitle_two": "We deliver",
         "check_one": "Service + platform",
         "check_two": "Tutor network",
         "check_three": "Support and impact reports",
         "check_four": "Technical support"
-      },
-      "span": "PLANS"
+      }
     },
     "goAtv": {
       "start_now": "Ready to get started?",
       "paragraph_start": "Join students who are boosting their academic results.",
       "btn_start_free": "Start"
-    },
-    "description_two": " boosting your performance, and reaching your university goals with confidence."
+    }
   },
   "contactUs": {
     "metaDescription": "Contact us by WhatsApp, email, or visit us in La Estrella, Antioquia. We answer your questions about Fundación Antivirus para la Deserción.",
@@ -1487,15 +1543,14 @@
       "thankYou": "Thank you for contacting us.",
       "termsAccepted": "I accept",
       "termsNotAccepted": "I don't accept"
-    },
-    "image_alt": "Image of La Estrella city, Medellín - Antioquia - Colombia, where the Fundación Antivirus para la Deserción is based."
+    }
   },
   "common": {
     "close": "Close"
   },
   "footer": {
     "visitUs": "Visit us",
-    "address1": "79th South Street # 50-165",
+    "address1": "79 S St #50-69",
     "address2": "Offices 301 and 401 La Estrella",
     "address3": "Antioquia - Colombia",
     "contact": "Call or write us",

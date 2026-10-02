@@ -1,7 +1,7 @@
+import LocalizedLink from "../routing/LocalizedLink";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import {
   floatSnake,
   slideFromLeft,
@@ -252,9 +252,9 @@ function StudentRetentionService() {
                 </strong>
               </p>
               <div className="flex justify-center">
-                <Link
+                <LocalizedLink
                   className="group px-16 py-6 relative overflow-hidden w-full max-w-[310px] mt-8 text-white text-xl md:text-2xl font-impact rounded-full shadow-xl bg-gradient-to-r from-dark-blue to-primary-purple  transform hover:scale-105 transition-all duration-500"
-                  to="/ContactUs"
+                  routeKey="contact"
                 >
                   <span className="relative">
                     {" "}
@@ -263,7 +263,7 @@ function StudentRetentionService() {
                     )}
                   </span>
                   <div className="absolute inset-0 bg-[#ffffff3a] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
-                </Link>
+                </LocalizedLink>
               </div>
             </section>
           </div>

@@ -1,5 +1,5 @@
+import LocalizedLink from "../components/routing/LocalizedLink";
 import "./NotFound.css";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { JAVI_SENALA_IMG as Javi, BACKGROUND_NOT_FOUND_IMG } from "../assets/cloudinaryImages";
 
@@ -26,7 +26,7 @@ function NotFound() {
             <br />
             {t("notFound.message")}
           </p>
-          <Link to="/">
+          <LocalizedLink routeKey="home">
             <button
               id="volver-inicio"
               className="group relative overflow-hidden w-full max-w-[200px] text-base md:text-xl p-3 border-2 rounded-3xl text-dark-blue font-bold shadow-2xl shadow-[#222D56] transform hover:scale-105 transition-all duration-500"
@@ -34,7 +34,7 @@ function NotFound() {
               {t("notFound.button")}
               <div className="absolute inset-0 bg-[#222d562f] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
             </button>
-          </Link>
+          </LocalizedLink>
         </div>
 
         <img

@@ -94,7 +94,7 @@ export const MATEO_DUQUE_IMG      = getImageUrl("https://res.cloudinary.com/bgmd
 export const MAYERLIN_GIRALDO_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658561/mayerlin-giraldo_bjlhds.webp");
 export const NATHALIA_REVELO_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658562/nathalia-revelo_dgf11l.webp");
 export const SAMAIDER_HOYOS_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658563/samaider-hoyos_fe4tee.webp");
-export const SANTIAGO_QUINTERO_IMG= getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658565/santiago-quintero_ijnwnz.webp");
+export const ALEJANDRA_LONDONO_IMG= getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1790567499/alejandra-londono_lasuh5.webp");
 export const SEBASTIAN_HERRERA_IMG= getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658566/sebastian-herrera_zy9be2.webp");
 export const SEBASTIAN_LOPEZ_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658567/sebastian-lopez_qswhmh.webp");
 export const VICTOR_VALENCIA_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658568/victor-valencia_b6axwi.webp");
@@ -112,12 +112,14 @@ export const BANNER_FOUNDATION_IMG = getImageUrl("https://res.cloudinary.com/bgm
 export const FOTO_IZQUIERDA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674122/foundation-1_drcfcv.jpg");
 export const FOTO_VIDEO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674121/foto-video_z0uhpw.jpg");
 export const FOTO_DERECHA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674122/foundation-2_jlft1y.jpg");
+// ── FoundationIdentity ────────────────────────────────────────────────────────────────
+export const MISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1789584245/estudiante-con-diploma_awpenn.webp");
+export const VISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1789584110/participacion-mi-beca_gztwen.webp");
+export const VALORES_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1789584102/colaboradoras-felices_rimu23.webp");
 export const TEORIA_CAMBIO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670348/entrega-pc_wg6i6l.webp");
-export const VALORES_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670379/valores_su7qvh.webp");
-export const MISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670366/pase-a-la-u_hcbtbm.webp");
 export const PUBLICO_IMG           = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670353/estudiantes-colegio_yqqnca.webp");
-export const VISION_IMG            = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670363/estudiantes-universitarios_igvkvl.webp");
 export const PROPOSITO_IMG         = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670358/foundation-estudiantes_a2viz9.webp");
+
 
 // ── dataAnalytics ─────────────────────────────────────────────────────────────
 export const BANNER_DATA_ANALYTICS_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784670450/technology-and-data_mciozi.webp");
@@ -230,8 +232,14 @@ export const BANNER_ATV_CONNECT_IMG = getImageUrl("https://res.cloudinary.com/bg
 export const ESTUDIANTE_UNO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669970/estudiante-certificado_oj3uk0.webp");
 export const ESTUDIANTE_DOS_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669953/estudiante-certificado-dos_atqewb.webp");
 export const JAVI_CARA_ATV_CONECTA_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669973/javiAtvConecta_l9eowa.webp");
-
-// ── contactUs ─────────────────────────────────────────────────────────────────
+// - testimonials AtvConnect ────────────────────────────────────────────────────────────────
+export const TESTIMONIAL_ANGEL_PARRA_ARRETA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/angel-parra-arrieta_d8zvgl.webp");
+export const TESTIMONIAL_JUAN_CAMILO_TOVAR = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/juan-camilo-tovar_brazen.webp");
+export const TESTIMONIAL_ISABELLA_NAVARRO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/isabella-navarro_dfze8n.webp");
+export const TESTIMONIAL_GISELA_PATINO = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/gisela-atino-bedoya_siqwpv.webp");
+export const TESTIMONIAL_ISABELLA_SANCHEZ_MEJIA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/isabella-sanchez-mejia_oeargb.webp");
+export const TESTIMONIAL_MATIAS_MAPATA_ROJAS = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358426/matias-mapata-rojas_qnygo1.webp");
+// ── contactUs ──────────────────────────────────────────
 export const BANNER_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671583/banner-contact-us_fy5djq.webp");
 export const MAPS_CONTACT_US_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784674041/contact-image_kodr8u.webp");
 // ── notFound ──────────────────────────────────────────────────────────────────

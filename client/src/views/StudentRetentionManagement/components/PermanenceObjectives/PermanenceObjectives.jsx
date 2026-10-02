@@ -45,7 +45,7 @@ function PermanenceObjectives() {
           </p>
         </motion.div>
       </div>
-      <div className="flex flex-col justify-center items-center bg-dark-blue rounded-3xl m-3 p-8 text-center max-w-[540px] lg:mx-[700]">
+      <div className="flex flex-col justify-center items-center bg-dark-blue rounded-3xl m-3 p-8 text-center max-w-[540px]">
         <motion.div
           {...floatSnake(0)}
           className="self-start relative ml-auto -top-10 w-[55px] h-[55px] rounded-full bg-[#ffffff13]  z-[2]"
