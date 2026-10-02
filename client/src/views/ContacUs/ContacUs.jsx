@@ -1,8 +1,8 @@
+import SeoHead from "../../components/seo/SeoHead";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import { JAVI_FELIZ_SVG as Javi, BANNER_CONTACT_US_IMG as BannerContacUs } from "../../assets/cloudinaryImages";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Modal from "../../components/modal/Modal";
 import BannerView from "../../components/Banner-views/BannerView";
 import ContactInformation from "./ContactInformation";
@@ -78,7 +78,7 @@ function ContactUs() {
           "service_ciqn2wp",
           "template_oacf6ns",
           emailParams,
-          "06in3EAhhtx15iDoZ",
+          { publicKey: "06in3EAhhtx15iDoZ" },
         )
         .then(() => {
           setFormData({
@@ -136,12 +136,11 @@ function ContactUs() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("contactUs.banner.h1")} | Fundación Antivirus para la Deserción
-        </title>
-        <meta name="description" content={t("contactUs.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="contact"
+        titleKey="contactUs.banner.h1"
+        descriptionKey="contactUs.metaDescription"
+      />
       <Modal
         isOpen={open}
         onClose={() => cerrarModal()}
@@ -210,7 +209,7 @@ function ContactUs() {
                 </div>
                 <div>
                   <input
-                    type="text"
+                    type="tel"
                     placeholder={t("contactUs.form.phone")}
                     className="w-full p-2 bg-dark-blue text-white placeholder-white border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none"
                     name="phone"

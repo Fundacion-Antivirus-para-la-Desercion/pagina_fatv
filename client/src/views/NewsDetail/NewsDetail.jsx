@@ -1,5 +1,5 @@
+import SeoHead from "../../components/seo/SeoHead";
 import { useEffect, useMemo, useRef } from "react";
-import { Helmet } from "react-helmet-async";
 import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import OtherNews from "../../components/other-news/OtherNews";
 import { useLocation } from "react-router-dom";
@@ -35,7 +35,6 @@ const NewsDetail = () => {
   const pageDescription =
     news?.newDetailContent?.content?.[0]?.value?.substring(0, 155) ||
     t("newsDetail.metaDescriptionFallback");
-  const pageUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/news/detail?slug=${news?.slug || ""}`;
 
   const bookDimensions = useBookDimensions(contentRef);
 
@@ -50,14 +49,13 @@ const NewsDetail = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
-        {news?.img && <meta property="og:image" content={news.img} />}
-        <meta property="og:url" content={pageUrl} />
-      </Helmet>
+      <SeoHead
+        routeKey="newsDetail"
+        title={pageTitle}
+        description={pageDescription}
+        image={news?.img}
+        search={news?.slug ? `?slug=${news.slug}` : ""}
+      />
       <div className="lg:pt-[145px]">
         <BannerView
           imagesBannerMap={{

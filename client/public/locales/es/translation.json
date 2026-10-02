@@ -148,10 +148,7 @@
     "atvConnect_social": "Hola, vi la página web y quiero más información sobre ATVConecta Social",
     "atvConnect_persons": "Hola, vi la página web y quiero más información sobre ATVConecta Personas",
     "atvConnect_institutional": "Hola, vi la página web y quiero más información sobre ATVConecta Institucional",
-    "atvConnect_platform": "Hola, vi la página web y quiero más información sobre ATVConecta Plataforma",
-    "atvConnect_personas": "Hola, vi la página web y quiero más información sobre ATVConecta Personas",
-    "atvConnect_institucional": "Hola, vi la página web y quiero más información sobre ATVConecta Institucional",
-    "atvConnect_plataforma": "Hola, vi la página web y quiero más información sobre ATVConecta Plataforma"
+    "atvConnect_platform": "Hola, vi la página web y quiero más información sobre ATVConecta Plataforma"
   },
   "donation": {
     "metaDescription": "Dona a la Fundación Antivirus para la Deserción y ayuda a que más estudiantes en Colombia permanezcan en la universidad y logren graduarse.",
@@ -197,6 +194,12 @@
         },
         "donations2025": {
           "title": "Reglamento de Donaciones 2025"
+        },
+        "report2023": {
+          "title": "Reporte Anual 2023"
+        },
+        "report2024": {
+          "title": "Reporte Anual 2024"
         },
         "report2025": {
           "title": "Reporte Anual 2025"
@@ -417,8 +420,8 @@
       },
       "members": {
         "member_one": {
-          "alt": "Comunicador audiovisual posando con expresión alegre y profesional.",
-          "position": "Comunicador Audiovisual",
+          "alt": "Comunicadora audiovisual posando con expresión alegre y profesional.",
+          "position": "Comunicadora Audiovisual",
           "description": "Cuenta historias que conectan los sueños de los estudiantes con nuestro propósito misional."
         },
         "member_two": {
@@ -437,8 +440,8 @@
           "description": "Da forma visible a los sueños, creando imágenes que inspiran y dejan huella de transformación."
         },
         "member_five": {
-          "alt": "Comunicadora del equipo posando con una sonrisa cálida y expresión amable.",
-          "position": "Comunicadora",
+          "alt": "Comunicadora Audiovisual del equipo posando con una sonrisa cálida y expresión amable.",
+          "position": "Comunicadora Audiovisual",
           "description": "Construye puentes de sentido que transforman realidades y articulan la comunidad FATV."
         }
       }
@@ -449,6 +452,53 @@
     "banner": {
       "h1": "Sobre Nosotros",
       "alt": "Imagen con colaboradores de la fundacion antivirus para la deserción."
+    },
+    "foundationIdentity": {
+      "title": "LO QUE NOS MUEVE",
+      "description": "Conoce nuestra esencia, nuestro propósito y la forma en que trabajamos para transformar la educación y construir nuevas oportunidades.",
+      "mission": {
+        "title": "MISIÓN",
+        "description": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción."
+      },
+      "vision": {
+        "title": "VISIÓN",
+        "description": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente."
+      },
+      "values": {
+        "title": "VALORES",
+        "description": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio."
+      },
+      "change_theory": {
+        "title": "TEORÍA DEL CAMBIO",
+        "description": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia."
+      },
+      "target_audience": {
+        "title": "PÚBLICO OBJETIVO",
+        "description": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción."
+      },
+      "purpose": {
+        "title": "PROPÓSITO",
+        "description": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
+      },
+      "images": {
+        "alt_mision": "Daniel Tabares, estudiante de la Universidad de Antioquia que recibió acompañamiento de la Fundación ATV en su trayectoria universitaria, recibe su título.",
+        "alt_vision": "Víctor Valencia, subdirector de la Fundación ATV, participando en el encuentro 'Mi beca, mi meta'.",
+        "alt_values": "Colaboradoras de la Fundación ATV sonriendo, reflejando el entusiasmo del equipo.",
+        "alt_change_theory": "Estudiante recibe un computador como donación por parte de la Fundación ATV.",
+        "alt_target_audience": "Estudiantes de secundaria reciben acompañamiento por parte de la Fundación ATV.",
+        "alt_purpose": "Colaboradores de la Fundación ATV brindan un espacio de acompañamiento a estudiantes universitarios."
+      },
+      "priorities": {
+        "title": "PRIORIDADES",
+        "description": "Cuatro compromisos que guían nuestro trabajo por la permanencia estudiantil y la reducción de la deserción.",
+        "span": "prioridad",
+        "items": {
+          "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
+          "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
+          "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
+          "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
+        }
+      }
     },
     "foundationATV": {
       "header": "sobre nosotros",
@@ -477,41 +527,6 @@
       "accountant": {
         "subtitle": "NUESTRA",
         "title": "CONTADORA"
-      },
-      "organization_info": {
-        "change_theory": {
-          "title": "TEORÍA DEL CAMBIO",
-          "description": "Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia."
-        },
-        "values": {
-          "title": "VALORES",
-          "description": "En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio."
-        },
-        "mission": {
-          "title": "MISIÓN",
-          "description": "Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción."
-        },
-        "target_audience": {
-          "title": "PÚBLICO OBJETIVO",
-          "description": "Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción."
-        },
-        "vision": {
-          "title": "VISIÓN",
-          "description": "En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente."
-        },
-        "priorities": {
-          "title": "PRIORIDADES",
-          "items": {
-            "consolidate_model": "Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.",
-            "explore_interventions": "Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.",
-            "involve_actors": "Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).",
-            "reduce_dropout": "Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus."
-          }
-        },
-        "purpose": {
-          "title": "PROPÓSITO",
-          "description": "Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo."
-        }
       }
     }
   },
@@ -525,7 +540,7 @@
     "category": "NOTICIAS",
     "filters": {
       "all": "Todos",
-      "articles": "ARTÍCULOS",
+      "articles": "Artículos",
       "news": "Noticias"
     },
     "read_more": "Leer más",
@@ -748,18 +763,6 @@
           "title": "PARTICIPACIÓN EN EL XI CONGRESO LATINOAMERICANO SOBRE ABANDONO EN EDUCACIÓN SUPERIOR",
           "content": [
             "El artículo \"Fundación Antivirus para la Deserción: De lo psicopedagógico a lo sociopedagógico\" escrito y presentado por los colaboradores Víctor Valencia, Jhisel Holguín y Gabriel Castellanos fue la apuesta que desarrollaron con éxito para la ponencia en el XI Congreso Latinoamericano del Abandono en la Educación Superior, llevado a cabo en Brasilia, el pasado 16 de noviembre del 2022. Esto representó un logro, puesto que permitió trazar nuevos horizontes, presentar el modelo de intervención actualmente desarrollado en los proyectos y compartir experiencias con asistentes de varios países de América Latina."
-          ]
-        }
-      },
-      "tikso": {
-        "alt": "Participación de la Fundación Antivirus para la Deserción en el Tikso 2025, un espacio de aprendizaje.",
-        "title": "PARTICIPACIÓN DE LA FATV EN EL TIKSO 2025",
-        "detail": {
-          "title": "PARTICIPACIÓN DE LA FATV EN EL TIKSO 2025",
-          "content": [
-            "Gracias a MAKAIA por hacer posible un Tikso 2025 tan inspirador. Fueron dos días de aprendizaje, conexiones y nuevas perspectivas para fortalecer el impacto de las organizaciones sociales.",
-            "Nos llevamos valiosos aprendizajes sobre estrategias de sostenibilidad, innovación y consecución de recursos, además de conocer experiencias que demuestran que la colaboración es clave para transformar realidades. También participamos en la rueda de negocios, un espacio que nos permitió presentar el trabajo de la Fundación Antivirus para la Deserción, compartir nuestra misión y conversar con posibles aliados con quienes esperamos construir asociaciones que generen un impacto duradero.",
-            "Este encuentro nos recordó la importancia de seguir innovando, aprender de otras organizaciones y fortalecer las redes de colaboración para responder a los desafíos sociales con soluciones más sostenibles y de mayor alcance. ¡Gracias a todas las personas que hicieron parte de esta experiencia! Ya esperamos con ilusión el Tikso 2026."
           ]
         }
       }
@@ -1177,10 +1180,11 @@
       "description": "Gracias por comunicarte con nosotros."
     },
     "information": {
-      "button_whatsapp": "Lo quiero",
+      "button_whatsapp": "¡Lo quiero!",
       "cards": {
         "one": {
-          "title": "DIRIGIDO A :",
+          "title": "Dirigido a:",
+          "description": "Jóvenes que están construyendo su proyecto de vida.",
           "questionOne": "¿A quién está dirigido?",
           "answerOne": "Jóvenes que están próximos a tomar decisiones importantes sobre su vida especialmente en relación con su proyecto de vida. Estudiantes de últimos años escolares, egresados del bachillerato o jóvenes en transición.",
           "questionTwo": "¿En qué momento?",
@@ -1189,22 +1193,23 @@
           "answerThree": "Sentimientos de desorientación, confusión o inseguridad frente al futuro."
         },
         "two": {
-          "title": "CAPACIDADES INSTALADAS",
+          "title": "Capacidades instaladas",
           "description": "Promovemos el desarrollo de habilidades personales y emocionales que permiten a los jóvenes conocerse, valorarse y proyectarse.",
           "titleTwo": "ENFOQUE EN LOS AUTOS",
           "studentFocus": {
-            "autoperception": "🧠 Autopercepción: Reconocer quién soy y cómo me veo.",
-            "autobservacion": "👁️ Autobservación: Identificar mis emociones y comportamientos.",
-            "autoestima": "❤️ Autoestima: Valorarme y reconocer mi propio valor.",
-            "autoconcepto": "🔍 Autoconcepto: Comprender cómo me defino.",
-            "autonomia": "🧭 Autonomía: Tomar decisiones conscientes y responsables.",
-            "autoconfianza": "💪 Autoconfianza: Creer en mis habilidades y potencial.",
-            "automotivacion": "🔥 Automotivación: Impulsarme desde adentro.",
-            "autoevaluacion": "📊 Autoevaluación: Aprender de mis acciones y experiencias."
+            "autoperception": "Autopercepción: Reconocer quién soy y cómo me veo.",
+            "autobservacion": "Autobservación: Identificar mis emociones y comportamientos.",
+            "autoestima": "Autoestima: Valorarme y reconocer mi propio valor.",
+            "autoconcepto": "Autoconcepto: Comprender cómo me defino.",
+            "autonomia": "Autonomía: Tomar decisiones conscientes y responsables.",
+            "autoconfianza": "Autoconfianza: Creer en mis habilidades y potencial.",
+            "automotivacion": "Automotivación: Impulsarme desde adentro.",
+            "autoevaluacion": "Autoevaluación: Aprender de mis acciones y experiencias."
           }
         },
         "three": {
-          "title": "¿QUÉ INCLUYE EL SERVICIO?",
+          "title": "¿Qué incluye el servicio?",
+          "description": "Un espacio para aprender, conectar y avanzar.",
           "listServices": {
             "one": "5 sesiones grupales y/o individuales",
             "two": "1 asesoría sociovocacional individual (a demanda)",
@@ -1264,20 +1269,46 @@
       "br": "Tutorías Académicas",
       "alt": "Tutores académicos de ATVConecta sonrientes y preparados para acompañar tu proceso de aprendizaje."
     },
-    "description_one": "ATVConecta es más que repaso académico. Te acompañamos en tu proceso, impulsamos tu transformación y te conectamos con tutores",
-    "description_span": " para fortalecer tu camino educativo y alcanzar tus metas.",
-    "span_title": "NUESTRO IMPACTO",
-    "title": "CIFRAS QUE HABLAN",
+    "description": {
+      "h2": "MÁS QUE APRENDER.",
+      "br_h2": "ES CONECTAR.",
+      "paragraph": "Te acompañamos en tu proceso, impulsamos tu formación y te conectamos con tutores",
+      "span": " para fortalecer tu camino educativo y alcanzar tus metas.",
+      "goals": {
+        "one": {
+          "title": "Acompañamos",
+          "description": "tu proceso"
+        },
+        "two": {
+          "title": "Conectamos",
+          "description": "con tutores"
+        },
+        "three": {
+          "title": "Impulsamos",
+          "description": "tu formación"
+        },
+        "four": {
+          "title": "Alcanzas",
+          "description": "tus metas"
+        }
+      },
+      "alt_img_one": "Estudiante Roberth Castillo sosteniendo su certificado del curso {ódigo/C13} junto a una colaboradora de la fundación Antivirus para la Deserción.",
+      "alt_img_two": "Estudiante Juliana Hoyos sosteniendo su certificado del curso {ódigo/C13} junto a una colaboradora de la fundación Antivirus para la Deserción."
+    },
     "figures_impact": {
+      "span_title": "NUESTRO IMPACTO",
+      "title": "CIFRAS QUE HABLAN",
       "figure_one": "Estudiantes activos",
-      "figure_two": "Aprobaron sus materias",
-      "figure_three": "Sesiones completadas",
-      "figure_four": "Satisfacción"
+      "figure_two": "de estudiantes aprobó la materia con 2 tutorías",
+      "figure_three": "Tutorías completadas ",
+      "figure_four": "Valoración promedio de las tutorías",
+      "figure_five": "Tutores históricos"
     },
     "list": {
-      "item_one": "⭐ 4.9/5 Calificación promedio",
-      "item_two": "📅 Año de lanzamiento 2024",
-      "item_three": "✨ Respuesta en 24h"
+      "item_one": "👤 +800 Estudiantes activos en la plataforma",
+      "item_two": "⭐ 4.9/5 Calificación promedio",
+      "item_three": "📅 Año de lanzamiento 2024",
+      "item_four": "✨ Respuesta en 24h"
     },
     "services": {
       "span": "SERVICIOS",
@@ -1322,8 +1353,8 @@
       }
     },
     "subjects": {
-      "span": "MATERIAS",
-      "title": "TODAS LAS ÁREAS",
+      "span": "MATERIAS DISPONIBLES",
+      "title": "ÁREAS BASES",
       "alt_image_subjects": "Javi de FATV, analizando datos y gráficos estadísticos en una estación de trabajo digital.",
       "subject_list": {
         "calculus": "Cálculo",
@@ -1358,30 +1389,57 @@
         "university": "Universidad de Antioquia"
       },
       "testimony_three": {
-        "description": "“Me parece una buena idea la implementación de una plataforma, gracias”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
+        "description": "“Para mí, la plataforma es muy fácil de usar. Tiene un diseño limpio y ordenado que se entiende a simple vista, y agendar las tutorías no es nada complicado: es intuitivo, rápido y sencillo de realizar. Además, me gusta que las notificaciones lleguen por Gmail, porque son fáciles de ver y no se pierden tan fácil.”",
+        "role": "Dahiana Noreña Gómez",
+        "university": "Estudiante"
       },
       "testimony_four": {
         "description": "“Los felicito por esta web, de verdad uno no saben lo útil que es hasta que lo prueba y queda con la boca abierta sobre lo fácil que es tener contacto con compas como nosotros dispuestos a ayudar”",
         "role": "Estudiante",
         "university": "Becario Aurelio Llano"
       },
-      "testimony_five": {
-        "description": "“Me parece una alternativa muy innovadora y útil”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
-      },
       "testimony_six": {
         "description": "“En general me gustó mucho, muchas gracias por siempre pensar en nuestro bienestar”",
         "role": "Estudiante",
         "university": "Becario Aurelio Llano"
       },
-      "testimony_seven": {
-        "description": "“Excelente herramienta”",
-        "role": "Estudiante",
-        "university": "Universidad de Antioquia"
-      }
+      "testimony_eight": {
+        "description": "“Entré con muchos nervios al semestre y siempre estaba a la expectativa, ya que mis bases en las áreas matemáticas no estaban tan estructuradas como yo pensaba. Fue así como, en vez de seguir quejándome, decidí buscar soluciones para continuar de manera óptima con mi proceso académico. \n\n Afortunadamente, cuento con el apoyo de FATV, quienes desde la primera semana me colaboraron con la gestión para agendar tutorías. Empecé con Cálculo y recuerdo que toda esa semana me la pasé en clases con los tutores de la fundación.\n\n Me gusta mucho porque puedo recibir las tutorías desde la comodidad de mi casa y, además, puedo elegir el horario que más me convenga, dependiendo de la disponibilidad del tutor. Por otra parte, los profesores son personas que saben del tema. Lo más increíble es que son estudiantes que conocen cuáles son nuestras necesidades y, por supuesto, cuentan con las herramientas digitales necesarias para desarrollar las clases de manera efectiva.\n\n Al finalizar el semestre, hice un montón de tutorías, pero me di cuenta de que salí como una Gisela totalmente diferente a la que entró con mucho miedo a las novedades. Las tutorías brindadas por FATV me ayudaron a crear cimientos que, al comenzar el semestre, no tenía.\n\n No solo hablo de la parte académica. También me ayudaron a sentirme mucho más segura de mi proceso.”",
+        "role": "Gisela Patiño Bedoya",
+        "university": "Estudiante de Ingeniería de Sistemas",
+        "photoAlt": "Fotografía de Gisela Patiño Bedoya, Estudiante de Ingeniería de Sistemas"
+      },
+      "testimony_nine": {
+        "description": "“He tenido la oportunidad de conocer la estrategia de ATV desde sus inicios y también de ver cómo ha ido evolucionando con la implementación de la plataforma ATVconecta. Ha sido una estrategia bastante significativa, especialmente porque ha facilitado que el proceso de las tutorías sea más organizado y centralizado.\n\n Actualmente, el proceso es mucho más sencillo. Desde la plataforma podemos ver los horarios y la disponibilidad de los tutores y encontrar fácilmente una tutoría que se ajuste a nuestras necesidades. Además, es muy intuitiva y fácil de usar.\n\n Para mí ha sido muy valioso poder ver ese antes y después y notar cómo una estrategia que ya era de gran ayuda se ha fortalecido mucho más con la plataforma.💙 ”",
+        "role": "Isabella Sánchez Mejía",
+        "university": "Estudiante",
+        "photoAlt": "Fotografía de Isabella Sánchez Mejía, Estudiante"
+      },
+      "testimony_ten": {
+        "description": "“Las tutorías de la Fundación Antivirus fueron clave para llegar muy bien preparado a mis clases. Solicitar las tutorías antes de empezar el semestre en álgebra, cálculo, física y programación hizo que el ritmo de la universidad fuera mucho más fácil de asimilar. No solo reforcé lo que ya sabía, sino que logré adaptarme rápidamente sin sentirme abrumado. Al combinar este gran apoyo con una buena organización de mi tiempo, todo fluyó muchísimo mejor. Todo este proceso me ayudó a entender realmente los temas y a destacar con un promedio excelente.”",
+        "role": "Juan Camilo Tovar",
+        "university": "Estudiante de Ingeniería de Sistemas",
+        "photoAlt": "Fotografía de Juan Camilo Tovar, Estudiante de Ingeniería de Sistemas"
+      },
+      "testimony_eleven": {
+        "description": "“En esta experiencia como monitor he aprendido bastante y me he podido nutrir de distintos aprendizajes, tanto recibiendo como dando tutorias. Seguir estos procesos en simultáneo me ha permitido entender la perspectiva y los problemas mas comunes al recibir estas tutorías de esta modalidad, así mismo, he aprendido de las distintas maneras de enseñar y compartir el conocimiento respecto a cada persona. Ha sido un proceso muy gratificante y valioso para mi crecimiento personal y académico.”",
+        "role": "Matías Zapata Rojas",
+        "university": "Estudiante y tutor - Ingeniería de Sistemas",
+        "photoAlt": "Fotografía de Matías Zapata Rojas, Estudiante y tutor de Ingeniería de Sistemas"
+      },
+      "testimony_twelve": {
+        "description": "“Mi experiencia con Atvconecta ha sido muy buena, ya que es una plataforma muy fácil e intuitiva. Agendar tutorías es sencillo y rápido, y no he tenido dificultades para utilizarla.”",
+        "role": "Ángel Parra Arrieta",
+        "university": "Estudiante",
+        "photoAlt": "Fotografía de Ángel Parra Arrieta, Estudiante"
+      },
+      "testimony_thirteen": {
+        "description": "“Aprovechar las tutorías me sirvió muchísimo para resolver las dudas que tenía y entender mejor los temas difíciles. Ese apoyo me dio más seguridad al estudiar y me ha ayudado progresivamente a sacar mejores notas en materias complicadas para aumentar mi promedio.”",
+        "role": "Isabella Navarro",
+        "university": "Estudiante de Ingeniería de Sistemas",
+        "photoAlt": "Fotografía de Isabella Navarro, Estudiante de Ingeniería de Sistemas"
+      },
+      "readMore": "Leer testimonio completo"
     },
     "pricing": {
       "title": "UN PROPÓSITO, CUATRO FORMAS DE ACOMPAÑAR",
@@ -1404,7 +1462,7 @@
         "subtitle": "Personas",
         "description": "Conectamos estudiantes con nuestra red de tutores para sesiones de repaso individual en diferentes áreas del conocimiento, a su ritmo y desde cualquier lugar.",
         "target": "Estudiantes que buscan apoyo personalizado para mejorar su rendimiento académico.",
-        "price_label": "Costo: $60.000",
+        "price_label": "Costo: $58.000 COP + IVA",
         "price_sub": "Por sesión",
         "subtitle_two": "Entregamos",
         "check_one": "Tutorías uno a uno",
@@ -1416,7 +1474,7 @@
         "description": "Llevamos nuestras tutorías y plataforma a instituciones que requieren fortalecer el acompañamiento académico de sus estudiantes.",
         "target": "Universidades y programas de becarios.",
         "price_label": "Costo: A convenir",
-        "price_sub": "de acuerdo a volumen",
+        "price_sub": "De acuerdo a volumen",
         "subtitle_two": "Entregamos",
         "check_one": "Servicio + plataforma",
         "check_two": "Red de tutores",
@@ -1428,21 +1486,19 @@
         "description": "Nuestra plataforma al servicio de quienes necesitan una solución tecnológica para gestionar tutorías de forma ágil, segura y efectiva.",
         "target": "Instituciones que ya tienen tutores y necesitan una solución tecnológica.",
         "price_label": "Costo: A convenir",
-        "price_sub": "de acuerdo a volumen",
+        "price_sub": "De acuerdo a volumen",
         "subtitle_two": "Entregamos",
         "check_one": "Servicio + plataforma",
         "check_two": "Red de tutores",
         "check_three": "Acompañamiento y reportes de impacto",
         "check_four": "Soporte técnico"
-      },
-      "span": "MODALIDADES"
+      }
     },
     "goAtv": {
       "start_now": "¿Listo para empezar?",
       "paragraph_start": "Únete a la comunidad de estudiantes que están transformando su rendimiento académico.",
       "btn_start_free": "Comenzar"
-    },
-    "description_two": " "
+    }
   },
   "contactUs": {
     "metaDescription": "Contáctanos por WhatsApp, correo o visítanos en La Estrella, Antioquia. Resolvemos tus preguntas sobre la Fundación Antivirus para la Deserción.",
@@ -1490,16 +1546,14 @@
       "thankYou": "Gracias por comunicarte con nosotros.",
       "termsAccepted": "Acepto",
       "termsNotAccepted": "No acepto"
-    },
-    "spanDescription": "En la Fundación Antivirus para la Deserción, estamos listos para escucharte.",
-    "image_alt": "imagen de la ciudad La Estrella, Medellín - Antioquia - Colombia donde se encuentra la sede de la Fundación Antivirus para la Deserción"
+    }
   },
   "common": {
     "close": "Cerrar"
   },
   "footer": {
     "visitUs": "Visítanos",
-    "address1": "Calle 79 sur # 50-165",
+    "address1": "Cl. 79 Sur #50-69",
     "address2": "Oficinas 301 y 401 La Estrella",
     "address3": "Antioquia - Colombia",
     "contact": "Llámanos o escríbenos",

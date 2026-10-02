@@ -1,6 +1,6 @@
 import {
   MANUELA_CORREA_IMG as ManuelaC,
-  SANTIAGO_QUINTERO_IMG as SantiagoQ,
+  ALEJANDRA_LONDONO_IMG as AlejandraL,
   MAYERLIN_GIRALDO_IMG as MayerlinG,
   ESTEFANIA_GOMEZ_IMG as EstefaniaG,
   DALIA_BEDOYA_IMG as DaliaB,
@@ -32,9 +32,9 @@ const projectsData = [
     ],
     cardAreaLead: [
       {
-        photo: SantiagoQ,
+        photo: AlejandraL,
         alt: "communications.team.members.member_one.alt",
-        name: "Santiago Quintero",
+        name: "Alejandra Londoño",
         areaLeader:"communications.team.members.member_one.position",
         description:
           "communications.team.members.member_one.description",

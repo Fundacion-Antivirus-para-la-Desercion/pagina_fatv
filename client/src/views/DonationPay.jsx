@@ -1,6 +1,6 @@
+import SeoHead from "../components/seo/SeoHead";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -161,10 +161,11 @@ function DonationPay() {
 
   return (
     <div className="flex justify-center px-4 pb-10 pt-12 lg:px-6 lg:pb-14 lg:pt-[145px]">
-      <Helmet>
-        <title>{t("donation.foundation_name")} | Fundación Antivirus para la Deserción</title>
-        <meta name="description" content={t("donation.metaDescription")} />
-      </Helmet>
+      <SeoHead
+        routeKey="donation"
+        titleKey="donation.foundation_name"
+        descriptionKey="donation.metaDescription"
+      />
       <div className="flex w-full max-w-5xl flex-col items-center gap-5">
         <div className="grid w-full grid-cols-1 overflow-hidden rounded-3xl bg-white shadow-2xl lg:min-h-[760px] lg:grid-cols-2">
           <div className="flex flex-col gap-6 bg-[#EDEFF8] p-6 text-center md:text-left lg:justify-center lg:p-10 lg:border-r">

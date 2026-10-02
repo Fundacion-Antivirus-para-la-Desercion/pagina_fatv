@@ -77,7 +77,7 @@ const ContextData = () => {
               loading="lazy"
             />
             <p className="statistic-number text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={7211} />
+              <CounterNumeric countNumber={8355 } />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic4.description")}
@@ -91,7 +91,7 @@ const ContextData = () => {
               loading="lazy"
             />
             <p className="statistic-number2 text-3xl md:text-5xl font-impact mb-3">
-              <CounterNumeric countNumber={441} />
+              <CounterNumeric countNumber={599} />
             </p>
             <p className="text-blue-base text-lg text-center font-bold">
               {t("home.contextData.statistic5.description")}
