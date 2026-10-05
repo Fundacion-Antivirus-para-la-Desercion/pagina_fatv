@@ -7,7 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { useTranslation } from "react-i18next";
-import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 function SchoolSubjectsAtvConnect() {
   const [init, setInit] = useState(false);

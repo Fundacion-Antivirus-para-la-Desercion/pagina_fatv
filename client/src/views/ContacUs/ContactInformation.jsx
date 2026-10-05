@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { JAVI_ESQUINA_IMG as JaviSenala } from "../../assets/cloudinaryImages";
 import { FaLocationDot, FaEnvelope, FaWhatsapp } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { floatSnake } from "../../components/motion/constants/Animations.js";
-import WhatsAppRedirect from "../../components/whatsAppRedirect/WhatsAppRedirect.js";
+import { floatSnake } from "@/constants/animations.js";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 function ContactInformation() {
   const { t } = useTranslation();

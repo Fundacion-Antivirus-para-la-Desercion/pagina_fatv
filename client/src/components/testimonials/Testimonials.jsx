@@ -8,7 +8,7 @@ import {
   FOCUS_SVG as Focus,
 } from "../../assets/cloudinaryImages";
 import { FaQuoteLeft } from "react-icons/fa6";
-import WhatsAppRedirect from "../../components/whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";

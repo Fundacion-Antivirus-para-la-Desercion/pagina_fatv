@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 import {
   floatSnake,
   slideFromRight,
-} from "../../../components/motion/constants/Animations.js";
+} from "@/constants/animations.js";
 
 function Description() {
   const { t } = useTranslation();

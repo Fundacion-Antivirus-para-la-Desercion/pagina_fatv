@@ -7,7 +7,7 @@ import {
   slideFromLeft,
   createFlipInVariant,
   expandableTransition,
-} from "../../components/motion/constants/Animations.js";
+} from "@/constants/animations.js";
 
 const SERVICES_DATA = [
   {

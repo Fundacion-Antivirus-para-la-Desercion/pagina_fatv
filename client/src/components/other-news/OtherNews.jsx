@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import buildNewsArray from "../News/newsArray.js";
+import buildNewsArray from "@/data/news/newsArray.js";
 import { useNavigate } from "react-router-dom";
 import { useRoute } from "../../hooks/useRoute.js";
 import { useTranslation } from "react-i18next";

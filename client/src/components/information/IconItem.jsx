@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
-import { cardItemReveal } from "../motion/constants/Animations.js";
+import { cardItemReveal } from "@/constants/animations.js";
 
 // Círculo amarillo que envuelve un ícono (o un emoji). El tamaño lo agrega quien lo usa.
 export const iconCircleClass =

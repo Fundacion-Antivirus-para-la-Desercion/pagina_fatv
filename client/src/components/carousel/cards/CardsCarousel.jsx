@@ -9,7 +9,7 @@ import {
   floatSnake,
   cardContainerVariants,
   cardItemReveal,
-} from "../../motion/constants/Animations.js";
+} from "@/constants/animations.js";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";

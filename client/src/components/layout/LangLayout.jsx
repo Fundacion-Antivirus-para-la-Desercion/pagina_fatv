@@ -13,7 +13,7 @@ import Layout from "./Layout";
  * mostraría una URL en inglés con contenido en español.
  *
  * En la carga inicial el idioma ya viene resuelto por el detector `path` de
- * i18next (ver components/i18n/i18n.js); este efecto cubre la navegación
+ * i18next (ver i18n/i18n.js); este efecto cubre la navegación
  * cliente posterior, por ejemplo al usar el selector de idioma.
  */
 const LangLayout = ({ lang }) => {

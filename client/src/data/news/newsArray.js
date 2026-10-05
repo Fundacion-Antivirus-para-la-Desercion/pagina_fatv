@@ -25,7 +25,7 @@ import {
   JHISEL_HOLGUIN_IMG as JhiselH,
   MANUELA_CORREA_IMG as ManuelaC,
   KAREN_GONZALEZ_IMG as KarenG,
-} from "../../assets/cloudinaryImages.js";
+} from "@/assets/cloudinaryImages.js";
 
 import { NEWS_META } from "./newsSlugs.js";
 

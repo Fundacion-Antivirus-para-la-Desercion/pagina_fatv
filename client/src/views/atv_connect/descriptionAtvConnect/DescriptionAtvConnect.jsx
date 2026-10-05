@@ -3,7 +3,7 @@ import {
   ESTUDIANTE_DOS_IMG as EstudianteDos,
   LOGO_ATV_CONECTA_IMG as LogoAtvConecta,
 } from "../../../assets/cloudinaryImages";
-import { floatSnake } from "../../../components/motion/constants/Animations.js";
+import { floatSnake } from "@/constants/animations.js";
 import { DotsPattern } from "../../../assets/images/svg/Svg.jsx";
 import { GoPeople } from "react-icons/go";
 import { LuLink } from "react-icons/lu";

@@ -2,7 +2,7 @@ import { SitemapStream, streamToPromise } from "sitemap";
 import fs from "node:fs";
 import { buildPath } from "../src/routes/routeHelpers.js";
 import { LANGUAGES, ORIGIN, SLUGS_PAGES } from "../src/routes/routes.config.js";
-import { NEWS_SLUGS } from "../src/components/News/newsSlugs.js";
+import { NEWS_SLUGS } from "../src/data/news/newsSlugs.js";
 
 /**
  * Genera sitemap.xml y robots.txt.

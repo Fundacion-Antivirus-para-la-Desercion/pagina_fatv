@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoWalletOutline } from "react-icons/io5";
 import { AiOutlineBank } from "react-icons/ai";
 
-import WhatsAppRedirect from "../whatsAppRedirect/WhatsAppRedirect.js";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 const base = "provocacion.information.cards.four";
 

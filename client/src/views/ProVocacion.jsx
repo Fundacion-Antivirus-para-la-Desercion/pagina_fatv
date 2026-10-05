@@ -20,7 +20,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "../components/modal/Modal";
 import emailjs from "@emailjs/browser";
-import WhatsAppRedirect from "../components/whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 function ProVocacion() {
   const { t, i18n } = useTranslation();

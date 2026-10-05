@@ -10,7 +10,7 @@ import { FaQuoteLeft } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { floatSnake } from "../../../components/motion/constants/Animations.js";
+import { floatSnake } from "@/constants/animations.js";
 import { getTestimonials } from "./testimonialsData";
 
 function StarRating() {

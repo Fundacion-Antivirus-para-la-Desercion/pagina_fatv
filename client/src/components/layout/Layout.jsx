@@ -4,7 +4,7 @@ import Btns from "../btns-wompi-and-donation/Btns";
 import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { slideFromTopBody } from "../motion/constants/Animations.js";
+import { slideFromTopBody } from "@/constants/animations.js";
 import { useRoute } from "../../hooks/useRoute";
 
 function Layout() {

@@ -6,7 +6,7 @@ import { RiMedal2Fill } from "react-icons/ri";
 import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { slideFromTop } from "../../../components/motion/constants/Animations.js";
+import { slideFromTop } from "@/constants/animations.js";
 
 function Metrics() {
   const { t } = useTranslation();

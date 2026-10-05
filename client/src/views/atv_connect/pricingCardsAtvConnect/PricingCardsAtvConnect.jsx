@@ -4,7 +4,7 @@ import { LuUser } from "react-icons/lu";
 import { RiBuilding4Line } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaDisplay } from "react-icons/fa6";
-import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 const CARDS = [
   {

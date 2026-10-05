@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import "./MainCarousel.css";
-import WhatsAppRedirect from "../../whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 import {
   CAROUSEL_COLABORADORES_IMG as banner1,

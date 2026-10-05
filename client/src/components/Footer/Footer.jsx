@@ -5,7 +5,7 @@ import { FaTiktok } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 import "./Footer.css";
 import logo from "../../../public/logo.png";
-import WhatsAppRedirect from "../whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 function Footer() {
   const { t } = useTranslation("translation");

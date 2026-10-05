@@ -14,7 +14,7 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import { LuSprout } from "react-icons/lu";
 import { LiaGraduationCapSolid } from "react-icons/lia";
 import { HiOutlineGlobe } from "react-icons/hi";
-import { expandableTransition } from "../../../components/motion/constants/Animations";
+import { expandableTransition } from "@/constants/animations.js";
 
 const IMG_SHAPE = "60% 20% 60% 30% / 30% 30% 40% 70%";
 

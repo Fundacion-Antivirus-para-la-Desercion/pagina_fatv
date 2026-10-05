@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useTranslation } from "react-i18next";
-import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 function goAtvConnect() {
   const { t } = useTranslation();

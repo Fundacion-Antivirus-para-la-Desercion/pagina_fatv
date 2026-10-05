@@ -3,7 +3,7 @@ import { RiBarChartGroupedLine } from "react-icons/ri";
 import { FiGlobe } from "react-icons/fi";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import { expandableTransition } from "../../../components/motion/constants/Animations.js";
+import { expandableTransition } from "@/constants/animations.js";
 import { useTranslation } from "react-i18next";
 import WriteEffect from "../../../components/writeEffect/WriteEffect.jsx";
 import SyntaxTypewriter from "../../../components/writeEffect/SyntaxTypewriter.jsx";

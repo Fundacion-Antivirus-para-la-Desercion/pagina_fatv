@@ -5,7 +5,7 @@ import {
   ICON_DONATION_IMG as IconDonation,
   JAVI_CORTO_IMG as JaviCorto,
 } from "../../assets/cloudinaryImages";
-import { floatSnake } from "../motion/constants/Animations.js";
+import { floatSnake } from "@/constants/animations.js";
 import { IoHeart } from "react-icons/io5";
 import { useTranslation, Trans } from "react-i18next";
 

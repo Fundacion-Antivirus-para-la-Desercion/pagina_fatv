@@ -6,7 +6,7 @@ import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
 import { useTranslation } from "react-i18next";
 import { DotsPattern } from "../../../assets/images/svg/Svg.jsx";
 import { motion } from "framer-motion";
-import { floatSnake } from "../../../components/motion/constants/Animations.js";
+import { floatSnake } from "@/constants/animations.js";
 
 const figuresData = [
   {

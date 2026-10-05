@@ -5,9 +5,9 @@ import { AiOutlineLaptop } from "react-icons/ai";
 import { MdQueryStats } from "react-icons/md";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { GoTable } from "react-icons/go";
-import { expandableTransition } from "../../../components/motion/constants/Animations.js";
+import { expandableTransition } from "@/constants/animations.js";
 import { highlightCards } from "./data.js";
-import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect.js";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 
 const iconMap = {
   database: <AiOutlineLaptop />,

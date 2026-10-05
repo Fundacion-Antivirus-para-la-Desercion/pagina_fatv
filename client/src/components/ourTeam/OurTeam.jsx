@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { floatSnake } from "../motion/constants/Animations.js";
+import { floatSnake } from "@/constants/animations.js";
 import { useRef, useEffect } from "react";
 // Import Swiper styles
 import "swiper/css";

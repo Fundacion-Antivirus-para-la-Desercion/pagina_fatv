@@ -8,7 +8,7 @@ import { JAVI_CON_PORTATIL_IMG as Javi } from "../../../assets/cloudinaryImages"
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from "react";
-import { slideFromRight } from "../../../components/motion/constants/Animations.js";
+import { slideFromRight } from "@/constants/animations.js";
 const SERVICE_ITEMS = [
   {
     Icon: FaUserFriends,

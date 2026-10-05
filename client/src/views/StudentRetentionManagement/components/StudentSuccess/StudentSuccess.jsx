@@ -6,12 +6,12 @@ import {
   GRADUADO_IMG as Graduado,
 } from "../../../../assets/cloudinaryImages";
 import styles from "../../../StudentRetentionManagement.module.css";
-import WhatsAppRedirect from "../../../../components/whatsAppRedirect/WhatsAppRedirect.js";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 import {
   slideFromLeft,
   slideFromRight,
   floatSnake,
-} from "../../../../components/motion/constants/Animations.js";
+} from "@/constants/animations.js";
 
 function StudentSuccess() {
   const { t } = useTranslation();

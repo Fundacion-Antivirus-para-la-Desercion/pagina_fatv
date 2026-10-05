@@ -49,12 +49,15 @@ npm run deploy
   - `layout/LangLayout` — Syncs the i18next language with the URL prefix (`/es`, `/en`)
   - `routing/LocalizedLink` — Link by logical route key instead of literal path
   - `News` — News listing; the detail page lives in `/src/views/NewsDetail` (book-style carousel in `components/BookCarousel.jsx`, built with `framer-motion`)
-  - `modal`, `carousel`, `motion` — UI utilities with animations
-  - `i18n` — i18next configuration and setup
+  - `modal`, `carousel` — UI utilities with animations
   - `ContextData` (statistics section with animated counters), `writeEffect` (typewriter effects)
   - `seo/SeoHead` — Per-page `<head>` tags via `react-helmet-async`
 - **`/src/routes`** — Route configuration (see Routing)
-- **`/src/hooks`** — Custom React hooks (`useRoute`, `useImageByLanguage`)
+- **`/src/hooks`** — Custom React hooks (`useRoute`, `useImageByLanguage`, `WhatsAppRedirect`)
+- **`/src/i18n`** — i18next configuration and setup
+- **`/src/constants`** — Shared constants (`animations.js`: `framer-motion` presets)
+- **`/src/data/news`** — News content (`newsArray.js`) and slugs/dates (`newsSlugs.js`, import-free because `scripts/generateSEO.js` reads it in plain Node)
+- **Imports:** `@/` resolves to `/src` (`vite.config.js` + `jsconfig.json`). Node scripts in `/scripts` can't use it; they import with relative paths.
 - **`/src/locales`** — Source translation JSON files (Spanish and English)
 - **`/public/locales`** — Generated translation files (committed to the repo)
 - **`/src/assets`** — Images, custom fonts (impact, renogare, myriad-pro)
@@ -62,7 +65,7 @@ npm run deploy
 
 ## Internationalization (i18n)
 
-The app uses **i18next** with lazy-loaded JSON translation files. Configuration: `/src/components/i18n/i18n.js`.
+The app uses **i18next** with lazy-loaded JSON translation files. Configuration: `/src/i18n/i18n.js`.
 
 **Supported languages:** Spanish (es, default) and English (en). The URL is the source of truth: language detection order is path (`/es/...`, `/en/...`) → localStorage → querystring → cookie. localStorage is only used to decide where `/` redirects.
 

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
   floatSnake,
   slideFromLeft,
-} from "../../../../components/motion/constants/Animations.js";
+} from "@/constants/animations.js";
 
 function PermanenceObjectives() {
   const { t } = useTranslation();

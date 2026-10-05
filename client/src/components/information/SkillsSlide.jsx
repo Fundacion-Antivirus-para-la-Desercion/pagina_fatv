@@ -15,7 +15,7 @@ import {
 import {
   cardContainerVariants,
   cardItemReveal,
-} from "../motion/constants/Animations.js";
+} from "@/constants/animations.js";
 import { iconCircleClass } from "./IconItem.jsx";
 
 const SKILL_CONFIGS = [

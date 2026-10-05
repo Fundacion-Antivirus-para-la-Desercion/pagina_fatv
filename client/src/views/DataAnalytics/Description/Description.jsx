@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import {
   floatSnake,
   expandableTransition,
-} from "../../../components/motion/constants/Animations.js";
+} from "@/constants/animations.js";
 import { useTranslation, Trans } from "react-i18next";
 
 function Description() {

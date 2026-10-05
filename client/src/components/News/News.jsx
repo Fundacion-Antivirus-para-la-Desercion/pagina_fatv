@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import { useNavigate } from "react-router-dom";
 import { useRoute } from "../../hooks/useRoute";
-import buildNewsArray, { filters } from "./newsArray";
+import buildNewsArray, { filters } from "@/data/news/newsArray.js";
 import { useTranslation } from "react-i18next";
 import BannerView from "../Banner-views/BannerView";
 import { FaArrowRight } from "react-icons/fa";
@@ -13,7 +13,7 @@ import { FaRegCalendarMinus } from "react-icons/fa6";
 import {
   newsContainerVariants,
   newsCardVariants,
-} from "../motion/constants/Animations";
+} from "@/constants/animations.js";
 
 function News() {
   const navigate = useNavigate();

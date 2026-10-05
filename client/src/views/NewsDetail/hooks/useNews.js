@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import buildNewsArray from "../../../components/News/newsArray";
+import buildNewsArray from "@/data/news/newsArray.js";
 
 /**
  * Hook para obtener la noticia actual basada en la noticia inicial y la traducción.

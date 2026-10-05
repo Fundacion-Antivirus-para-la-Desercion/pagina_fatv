@@ -5,7 +5,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { MdShare } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { slideFromTop } from "../../../components/motion/constants/Animations.js";
+import { slideFromTop } from "@/constants/animations.js";
 
 function Services() {
   const { t } = useTranslation();
