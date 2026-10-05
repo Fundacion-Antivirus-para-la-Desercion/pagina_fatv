@@ -32,7 +32,7 @@ const BookPage = forwardRef(
     return (
       <div
         ref={ref}
-        className={`bg-white h-full ${className}`.trim()}
+        className={`bg-white h-full overflow-hidden ${className}`.trim()}
         style={{ ...shadingStyle, ...style }}
         {...props}
       >
