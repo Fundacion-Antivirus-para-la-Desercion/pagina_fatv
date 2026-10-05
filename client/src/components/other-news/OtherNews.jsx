@@ -34,7 +34,11 @@ function OtherNews({ newSlug }) {
               <button
                 type="button"
                 className="w-full text-left cursor-pointer"
-                onClick={() => navigate(to("newsDetail"), { state: { news } })}
+                onClick={() =>
+                  navigate(`${to("newsDetail")}?slug=${news.slug}`, {
+                    state: { news },
+                  })
+                }
               >
                 <div className="grid grid-cols-[4fr_6fr] gap-4 items-center">
                   <div>

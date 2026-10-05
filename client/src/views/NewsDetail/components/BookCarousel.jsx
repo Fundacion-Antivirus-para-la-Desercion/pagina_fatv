@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
 import BookPage from "./BookPage";
@@ -82,6 +82,14 @@ const BookCarousel = ({ content, title, newsLabel, date, dimensions }) => {
 
   const current = Math.min(index, total - 1);
   const isFlipping = flip !== null;
+  const rootRef = useRef(null);
+
+  // En mobile la página nueva puede quedar debajo del scroll actual: subimos al inicio
+  // del libro. Solo se llama desde goTo, o sea por botones o arrastre del usuario.
+  const scrollToBookOnMobile = () => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    rootRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   // Al re-paginar (resize / idioma) el total puede achicarse: clampar, no resetear.
   useEffect(() => {
@@ -111,6 +119,7 @@ const BookCarousel = ({ content, title, newsLabel, date, dimensions }) => {
       } else {
         setDirection(dir);
         setIndex(next);
+        scrollToBookOnMobile();
       }
     },
     [total, current, isFlipping, isTwoPage],
@@ -235,7 +244,11 @@ const BookCarousel = ({ content, title, newsLabel, date, dimensions }) => {
   }
 
   return (
-    <div id="book-carousel" className="relative flex flex-col items-center">
+    <div
+      ref={rootRef}
+      id="book-carousel"
+      className="relative flex flex-col items-center"
+    >
       {isTwoPage && (
         <div
           className="bg-white px-9 pt-8 pb-2 mx-auto rounded-t-2xl"
