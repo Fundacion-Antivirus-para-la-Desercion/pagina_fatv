@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import {
@@ -131,23 +131,33 @@ CarouselNav.propTypes = {
 // todo lo que se ve sale de `slides[activeIndex]` y de `aside`.
 function CardsCarousel({ slides = [], aside = null }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRef = useRef(null);
 
   if (slides.length === 0) return null;
 
   const activeSlide = slides[activeIndex];
   const lastIndex = slides.length - 1;
 
+  // En mobile el slide nuevo puede quedar debajo del scroll actual: subimos al inicio
+  // del carrusel. Solo se llama desde los botones, nunca al cambiar de slide solo.
+  const scrollToCarouselOnMobile = () => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   // Al llegar a un extremo da la vuelta: del primero se pasa al último y viceversa.
   const goToPrevious = () => {
     setActiveIndex((current) => (current === 0 ? lastIndex : current - 1));
+    scrollToCarouselOnMobile();
   };
 
   const goToNext = () => {
     setActiveIndex((current) => (current === lastIndex ? 0 : current + 1));
+    scrollToCarouselOnMobile();
   };
 
   return (
-    <section className="bg-white py-10 md:py-12">
+    <section ref={sectionRef} className="bg-white py-10 md:py-12">
       {/* 3 columnas en xl: título (34.28%) | contenido (resto) | aside (19.1%) */}
       <div
         id="slide-content"
