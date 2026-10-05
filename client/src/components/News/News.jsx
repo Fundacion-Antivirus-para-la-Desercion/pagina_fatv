@@ -97,7 +97,9 @@ function News() {
                   <button
                     className="group flex items-center gap-2 text-xl md:text-2xl text-primary-purple cursor-pointer w-fit"
                     onClick={() =>
-                      navigate(to("newsDetail"), { state: { news } })
+                      navigate(`${to("newsDetail")}?slug=${news.slug}`, {
+                        state: { news },
+                      })
                     }
                   >
                     {t("news.read_more")}
