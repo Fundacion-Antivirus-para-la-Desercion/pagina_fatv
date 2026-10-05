@@ -1,16 +1,16 @@
-import AtvConnect from "../views/atv_connect/AtvConnect.jsx";
+import AtvConnect from "@/views/AtvConnect/AtvConnect.jsx";
 import Communications from "../views/Communications/Communications.jsx";
-import Consultorias from "../views/Consulting/Consultorias.jsx";
-import ContacUs from "../views/ContacUs/ContacUs";
+import Consulting from "@/views/Consulting/Consulting.jsx";
+import ContactUs from "@/views/ContactUs/ContactUs.jsx";
 import DataAnalytics from "../views/DataAnalytics/DataAnalytics.jsx";
-import DonationPay from "../views/DonationPay";
+import DonationPay from "@/views/DonationPay/DonationPay.jsx";
 import Foundation from "../views/Foundation/Foundation.jsx";
-import Home from "../views/Home";
-import News from "../components/News/News";
+import Home from "@/views/Home/Home.jsx";
+import News from "@/views/News/News.jsx";
 import NewsDetail from "../views/NewsDetail/NewsDetail.jsx";
-import ProVocacion from "../views/ProVocacion";
+import ProVocacion from "@/views/ProVocacion/ProVocacion.jsx";
 import SocialIntervention from "../views/SocialIntervention/SocialIntervention.jsx";
-import StudentRetentionManagement from "../views/StudentRetentionManagement.jsx";
+import StudentRetentionManagement from "@/views/StudentRetentionManagement/StudentRetentionManagement.jsx";
 
 /**
  * key lógica -> componente de página.
@@ -25,11 +25,11 @@ export const PAGES = {
   socialIntervention: <SocialIntervention />,
   communications: <Communications />,
   retention: <StudentRetentionManagement />,
-  consulting: <Consultorias />,
+  consulting: <Consulting />,
   provocacion: <ProVocacion />,
   atvConnect: <AtvConnect />,
   news: <News />,
   newsDetail: <NewsDetail />,
-  contact: <ContacUs />,
+  contact: <ContactUs />,
   donation: <DonationPay />,
 };

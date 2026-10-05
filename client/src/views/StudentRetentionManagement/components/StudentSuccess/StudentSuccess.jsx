@@ -5,7 +5,7 @@ import {
   MANOS_IMG as Grupo,
   GRADUADO_IMG as Graduado,
 } from "../../../../assets/cloudinaryImages";
-import styles from "../../../StudentRetentionManagement.module.css";
+import styles from "../../StudentRetentionManagement.module.css";
 import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 import {
   slideFromLeft,

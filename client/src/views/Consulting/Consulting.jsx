@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 import Description from "./Description/Description.jsx";
 import { motion } from "framer-motion";
 
-function Consultorias() {
+function Consulting() {
   const { t } = useTranslation();
 
   const pillarsData = [
@@ -145,4 +145,4 @@ function Consultorias() {
   );
 }
 
-export default Consultorias;
+export default Consulting;

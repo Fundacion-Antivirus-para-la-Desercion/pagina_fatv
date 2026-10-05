@@ -1,7 +1,7 @@
 import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import "./NotFound.css";
 import { useTranslation } from "react-i18next";
-import { JAVI_SENALA_IMG as Javi, BACKGROUND_NOT_FOUND_IMG } from "../assets/cloudinaryImages";
+import { JAVI_SENALA_IMG as Javi, BACKGROUND_NOT_FOUND_IMG } from "@/assets/cloudinaryImages.js";
 
 function NotFound() {
   const { t } = useTranslation();

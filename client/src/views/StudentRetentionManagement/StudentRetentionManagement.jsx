@@ -1,9 +1,9 @@
 import SeoHead from "@/components/SeoHead/SeoHead.jsx";
-import { BANNER_RETENTION_IMG as BannerRetention } from "../assets/cloudinaryImages";
-import StudentRetentionService from "../components/studentRetentionManagement/StudentRetentionService.jsx";
+import { BANNER_RETENTION_IMG as BannerRetention } from "@/assets/cloudinaryImages.js";
+import StudentRetentionService from "@/components/studentRetentionManagement/StudentRetentionService.jsx";
 import BannerView from "@/components/BannerView/BannerView.jsx";
-import PermanenceObjectives from "./StudentRetentionManagement/components/PermanenceObjectives/PermanenceObjectives";
-import StudentSuccess from "./StudentRetentionManagement/components/StudentSuccess/StudentSuccess";
+import PermanenceObjectives from "./components/PermanenceObjectives/PermanenceObjectives.jsx";
+import StudentSuccess from "./components/StudentSuccess/StudentSuccess.jsx";
 
 function StudentRetentionManagement() {
 

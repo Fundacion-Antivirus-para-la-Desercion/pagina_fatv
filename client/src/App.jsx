@@ -4,7 +4,7 @@ import LangLayout from "@/layout/LangLayout.jsx";
 import { getDefaultLanguage } from "./routes/routeHelpers";
 import { LANGUAGES, SLUGS_PAGES } from "./routes/routes.config";
 import { PAGES } from "./routes/routes.pages.jsx";
-import NotFound from "./views/NotFound";
+import NotFound from "@/views/NotFound/NotFound.jsx";
 
 /**
  * Un subárbol de rutas por idioma, cada uno registrando SOLO sus propios slugs.

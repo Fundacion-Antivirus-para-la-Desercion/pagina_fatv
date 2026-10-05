@@ -12,7 +12,7 @@ import {
   ACOMPANAMIENTO_3_IMG as Acompañamiento3,
   ACOMPANAMIENTO_4_IMG as Acompañamiento4,
   BANNER_6C_IMG as Acompañamiento5,
-} from "../assets/cloudinaryImages";
+} from "@/assets/cloudinaryImages.js";
 import { MdOutlineAttachMoney } from "react-icons/md";
 
 const DONATION_STEP = 1000;
