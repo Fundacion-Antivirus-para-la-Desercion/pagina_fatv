@@ -1,5 +1,5 @@
-import LocalizedLink from "../routing/LocalizedLink";
-import styles from "./Btns.module.css";
+import LocalizedLink from "@/components/routing/LocalizedLink.jsx";
+import styles from "./DonationButtons.module.css";
 import { ICON_DONATION_IMG as IconDonation } from "../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
 import { useRoute } from "../../hooks/useRoute";
@@ -8,7 +8,7 @@ import { useRoute } from "../../hooks/useRoute";
 // pantalla, así que el botón flotante de donación se oculta ahí.
 const HIDDEN_ON = ["provocacion", "atvConnect"];
 
-function Btns() {
+function DonationButtons() {
   const { t } = useTranslation();
   const { routeKey } = useRoute();
   const showDonationPay = !HIDDEN_ON.includes(routeKey);
@@ -35,4 +35,4 @@ function Btns() {
   );
 }
 
-export default Btns;
+export default DonationButtons;

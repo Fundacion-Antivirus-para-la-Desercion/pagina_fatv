@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { LANGUAGES } from "../../routes/routes.config";
+import { LANGUAGES } from "@/routes/routes.config.js";
 import Layout from "./Layout";
 
 /**

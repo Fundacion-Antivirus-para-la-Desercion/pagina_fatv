@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import LangLayout from "./components/layout/LangLayout";
+import LangLayout from "@/layout/LangLayout.jsx";
 import { getDefaultLanguage } from "./routes/routeHelpers";
 import { LANGUAGES, SLUGS_PAGES } from "./routes/routes.config";
 import { PAGES } from "./routes/routes.pages.jsx";

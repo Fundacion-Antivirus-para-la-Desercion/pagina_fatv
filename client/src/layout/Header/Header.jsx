@@ -1,4 +1,4 @@
-import LocalizedLink from "../routing/LocalizedLink";
+import LocalizedLink from "@/components/routing/LocalizedLink.jsx";
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Header/Header.css";

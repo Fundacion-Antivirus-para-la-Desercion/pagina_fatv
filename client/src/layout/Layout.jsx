@@ -1,11 +1,11 @@
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import Btns from "../btns-wompi-and-donation/Btns";
+import Header from "@/layout/Header/Header.jsx";
+import Footer from "@/layout/Footer/Footer.jsx";
+import DonationButtons from "@/layout/DonationButtons/DonationButtons.jsx";
 import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { slideFromTopBody } from "@/constants/animations.js";
-import { useRoute } from "../../hooks/useRoute";
+import { useRoute } from "@/hooks/useRoute.js";
 
 function Layout() {
   // Se depende de `routeKey` y no del pathname: la key lógica es la misma en
@@ -29,7 +29,7 @@ function Layout() {
         </motion.section>
       </div>
       <Footer />
-      <Btns />
+      <DonationButtons />
     </>
   );
 }

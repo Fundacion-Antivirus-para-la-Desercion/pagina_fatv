@@ -99,7 +99,7 @@ export const SEBASTIAN_HERRERA_IMG= getImageUrl("https://res.cloudinary.com/bgmd
 export const SEBASTIAN_LOPEZ_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658567/sebastian-lopez_qswhmh.webp");
 export const VICTOR_VALENCIA_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784658568/victor-valencia_b6axwi.webp");
 
-// ── donation (DonationPay + DonationWelcomePopUp + Btns) ─────────────────────
+// ── donation (DonationPay + DonationWelcomePopUp + DonationButtons) ─────────────────────
 export const ICON_DONATION_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671660/coin_f00rpk.png");
 export const ACOMPANAMIENTO_1_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671668/acompan%CC%83amiento1_fqftyx.jpg");
 export const ACOMPANAMIENTO_2_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784671676/acompan%CC%83amiento2_zzz3j1.jpg");

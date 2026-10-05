@@ -44,9 +44,10 @@ npm run deploy
 ## Project Structure
 
 - **`/src/views`** — Top-level page components (one per route). Most significant work happens here.
-- **`/src/components`** — Reusable UI components and layout infrastructure:
-  - `Header`, `Footer`, `Layout` — Main layout components
-  - `layout/LangLayout` — Syncs the i18next language with the URL prefix (`/es`, `/en`)
+- **`/src/layout`** — App shell rendered on every page (used once, but wraps the whole site):
+  - `Layout` — Header + page content + Footer + `DonationButtons` (floating donation/Wompi buttons)
+  - `LangLayout` — Syncs the i18next language with the URL prefix (`/es`, `/en`)
+- **`/src/components`** — Reusable UI components:
   - `routing/LocalizedLink` — Link by logical route key instead of literal path
   - `News` — News listing; the detail page lives in `/src/views/NewsDetail` (book-style carousel in `components/BookCarousel.jsx`, built with `framer-motion`)
   - `modal`, `carousel` — UI utilities with animations
