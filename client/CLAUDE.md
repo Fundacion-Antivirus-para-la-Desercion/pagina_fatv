@@ -43,23 +43,39 @@ npm run deploy
 
 ## Project Structure
 
-- **`/src/views`** — Top-level page components (one per route). Most significant work happens here.
-- **`/src/layout`** — App shell rendered on every page (used once, but wraps the whole site):
-  - `Layout` — Header + page content + Footer + `DonationButtons` (floating donation/Wompi buttons)
-  - `LangLayout` — Syncs the i18next language with the URL prefix (`/es`, `/en`)
-- **`/src/components`** — Reusable UI components:
-  - Shared (used by 2+ views), one `Name/Name.jsx` folder each: `BannerView` (page banner), `CounterNumeric` (animated counter), `LocalizedLink` (link by logical route key instead of literal path), `Modal`, `SeoHead` (per-page `<head>` tags via `react-helmet-async`), `Teams`
-  - Still pending relocation to their views: `News` (listing page; detail lives in `/src/views/NewsDetail`), `ContextData`, `carousel`, `writeEffect` and other single-use sections
-- **`/src/routes`** — Route configuration (see Routing)
-- **`/src/hooks`** — Custom React hooks (`useRoute`, `useImageByLanguage`, `WhatsAppRedirect`)
-- **`/src/i18n`** — i18next configuration and setup
-- **`/src/constants`** — Shared constants (`animations.js`: `framer-motion` presets)
-- **`/src/data/news`** — News content (`newsArray.js`) and slugs/dates (`newsSlugs.js`, import-free because `scripts/generateSEO.js` reads it in plain Node)
-- **Imports:** `@/` resolves to `/src` (`vite.config.js` + `jsconfig.json`). Node scripts in `/scripts` can't use it; they import with relative paths.
-- **`/src/locales`** — Source translation JSON files (Spanish and English)
+```
+src/
+├── views/<View>/            one folder per route (and NotFound)
+│   ├── <View>.jsx           the page component; folder, file and component share the name
+│   ├── components/          sections used ONLY by this view
+│   ├── hooks/               hooks used only by this view (e.g. NewsDetail)
+│   └── data.js              view-level content
+├── components/<Name>/       ONLY components reused by 2+ views, one <Name>/<Name>.jsx each
+├── layout/                  app shell rendered on every page (Layout, LangLayout, Header, Footer, DonationButtons)
+├── hooks/                   shared hooks (useRoute, useImageByLanguage, WhatsAppRedirect)
+├── constants/               shared constants (animations.js: framer-motion presets)
+├── data/news/               news content (newsArray.js) + slugs/dates (newsSlugs.js)
+├── i18n/                    i18next setup
+├── routes/                  route config (see Routing)
+├── utils/                   plain helpers (cloudinary.js)
+├── assets/                  cloudinaryImages.js (Cloudinary URL registry)
+├── fonts/                   custom fonts referenced from index.css
+└── locales/                 source translation JSON (es, en)
+```
+
+**Placement rules** (folder boundaries are enforced by ESLint, see `.eslintrc.cjs` → `overrides`):
+- **New page** → `views/<View>/<View>.jsx`. Its sections go in `views/<View>/components/`.
+- **Inside `components/`** (of a view or shared): a flat `Name.jsx` by default; a `Name/` folder only when it has its own files (CSS, `data.js`, sub-components).
+- **Shared vs. local is decided by usage, not by how generic it looks.** A component used by one view lives in that view, even if it's used from several files inside it. When a second view needs it, move it to `src/components/<Name>/`; when it drops back to one view, move it back.
+- **`layout/` is the exception:** used once, but it wraps every page, so it doesn't belong to any view.
+- **Non-components** (hooks, constants, data, config) never go in `components/`, even if shared.
+- **Imports:** inside a view use relative paths (`./components/...`); everything else uses `@/` (resolves to `/src` via `vite.config.js` + `jsconfig.json`). A view must not import another view, and shared code must not import from `views/` — ESLint fails on both. Node scripts in `/scripts` can't use `@/`; `data/news/newsSlugs.js` must stay import-free because `scripts/generateSEO.js` reads it in plain Node.
+- **Case-sensitive names:** macOS is case-insensitive but Linux isn't. For a case-only rename (`modal` → `Modal`) use `git mv` through a temporary name, and check `git ls-files` shows the new casing.
+
+Other folders:
 - **`/public/locales`** — Generated translation files (committed to the repo)
-- **`/src/assets`** — Images, custom fonts (impact, renogare, myriad-pro)
 - **`/scripts`** — Build-time Node scripts: `mergeTranslations.cjs`, `generateSEO.js`
+- `components/Banner/Banner.css` is not imported anywhere; it's kept intentionally.
 
 ## Internationalization (i18n)
 
@@ -184,7 +200,7 @@ Navigation in components:
 ## Common Tasks
 
 **Add a new page:**
-1. Create component in `/src/views`
+1. Create `/src/views/<View>/<View>.jsx` (sections in `/src/views/<View>/components/`)
 2. Add its slugs to `SLUGS_PAGES` in `/src/routes/routes.config.js` (one per language)
 3. Map the key to the component in `PAGES` in `/src/routes/routes.pages.jsx`
 4. Link to it with `<LocalizedLink routeKey="...">`; the sitemap picks it up automatically on the next build

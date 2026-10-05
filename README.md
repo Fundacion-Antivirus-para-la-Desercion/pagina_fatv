@@ -148,14 +148,17 @@ npm run preview
 npm run deploy
 ```
 
-### Descripción de secciones principales:
+### Descripción de secciones principales (`client/src`):
 
-- **`/components`** → Bloques de construcción reutilizables (Header, Footer, Cards, etc)
-- **`/views`** → Páginas completas que usan múltiples componentes
-- **`/hooks`** → Lógica customizada de React (useImageByLanguage, etc)
-- **`/assets`** → Recursos estáticos (imágenes, iconos)
-- **`/locales`** → Traducciones centralizadas (i18n)
-- **`/Services`** → Módulos de servicios/consultorías específicas
+- **`/views/<Vista>`** → Una carpeta por página (`<Vista>.jsx`), con sus secciones propias en `components/`
+- **`/components`** → Solo componentes reutilizados en 2 o más vistas (`BannerView`, `SeoHead`, `Modal`, etc.)
+- **`/layout`** → Estructura común a todas las páginas (Header, Footer, botones de donación)
+- **`/hooks`** → Lógica de React compartida (`useRoute`, `useImageByLanguage`, etc.)
+- **`/constants`**, **`/data`**, **`/utils`** → Constantes, contenido (noticias) y utilidades
+- **`/i18n`** + **`/locales`** → Configuración y traducciones (ES/EN)
+- **`/routes`** → Configuración de rutas por idioma
+
+El detalle de las reglas de organización está en `client/CLAUDE.md` → *Project Structure*.
 
 ---
 
