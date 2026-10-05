@@ -207,10 +207,14 @@ const usePaginatedContent = ({
     recompute();
 
     // Re-medir cuando carguen imágenes (offsetHeight sin cargar es ~0).
+    // La capa de medición está fuera de pantalla: con loading="lazy" el navegador
+    // nunca carga esas imágenes y la altura medida queda subestimada. Por eso
+    // forzamos carga eager aquí.
     const cleanups = [];
     const root = measureRef.current;
     if (root) {
       root.querySelectorAll("img").forEach((img) => {
+        img.loading = "eager";
         if (!img.complete) {
           const onDone = () => recompute();
           img.addEventListener("load", onDone);
