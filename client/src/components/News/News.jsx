@@ -1,4 +1,4 @@
-import SeoHead from "../seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import "./News.css";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useRoute } from "../../hooks/useRoute";
 import buildNewsArray, { filters } from "@/data/news/newsArray.js";
 import { useTranslation } from "react-i18next";
-import BannerView from "../Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCalendarMinus } from "react-icons/fa6";
 import {

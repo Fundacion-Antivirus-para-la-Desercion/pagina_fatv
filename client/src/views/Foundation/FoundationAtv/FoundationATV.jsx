@@ -10,7 +10,7 @@ import {
 import FoundationIdentity from "./FoundationIdentity";
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
-import BannerView from "../../../components/Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 
 function FoundationATV() {
   const { t } = useTranslation();

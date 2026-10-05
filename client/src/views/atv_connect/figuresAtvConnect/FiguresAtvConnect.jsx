@@ -2,7 +2,7 @@ import { LuGraduationCap, LuBookOpen } from "react-icons/lu";
 import { HiBadgeCheck } from "react-icons/hi";
 import { FaRegHeart } from "react-icons/fa";
 import { PiChalkboardTeacher } from "react-icons/pi";
-import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
+import CounterNumeric from "@/components/CounterNumeric/CounterNumeric.jsx";
 import { useTranslation } from "react-i18next";
 import { DotsPattern } from "../../../assets/images/svg/Svg.jsx";
 import { motion } from "framer-motion";

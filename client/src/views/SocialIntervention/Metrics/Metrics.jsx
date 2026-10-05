@@ -3,7 +3,7 @@ import { GoPeople } from "react-icons/go";
 import { LuCompass, LuGraduationCap } from "react-icons/lu";
 import { PiHeartStraight, PiPuzzlePieceBold } from "react-icons/pi";
 import { RiMedal2Fill } from "react-icons/ri";
-import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
+import CounterNumeric from "@/components/CounterNumeric/CounterNumeric.jsx";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { slideFromTop } from "@/constants/animations.js";

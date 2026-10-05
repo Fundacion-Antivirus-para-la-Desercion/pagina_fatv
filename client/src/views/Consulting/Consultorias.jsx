@@ -1,10 +1,10 @@
-import SeoHead from "../../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import {
   BANNER_CONSULTING_IMG as BannerConsulting,
   CARD_CONSULTING_IMG as card,
   ESTUDIANTES_AULA_IMG as EstudiantesAula,
 } from "../../assets/cloudinaryImages";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import { PiShootingStarFill} from "react-icons/pi";
 import { RiFocus2Line } from "react-icons/ri";
 import { FaLightbulb, FaStar,FaGraduationCap, FaUserFriends} from "react-icons/fa";

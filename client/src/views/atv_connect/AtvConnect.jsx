@@ -1,6 +1,6 @@
-import SeoHead from "../../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { BANNER_ATV_CONNECT_IMG as BannerAtvConnect } from "../../assets/cloudinaryImages";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import { useTranslation } from "react-i18next";
 import TestimonialsAtvConnect from "../../views/atv_connect/testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
 import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";

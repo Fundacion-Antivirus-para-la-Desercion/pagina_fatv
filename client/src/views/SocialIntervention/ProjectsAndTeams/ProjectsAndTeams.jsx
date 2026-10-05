@@ -14,7 +14,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import data from "./data";
 import { getPosition } from "@tsparticles/engine";
-import Teams from "../../../components/teamsArea/Teams";
+import Teams from "@/components/Teams/Teams.jsx";
 
 function ProjectsAndTeams() {
   const { t } = useTranslation();

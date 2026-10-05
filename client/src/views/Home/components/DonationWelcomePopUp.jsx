@@ -1,10 +1,10 @@
-import LocalizedLink from "../routing/LocalizedLink";
+import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
   ICON_DONATION_IMG as IconDonation,
   JAVI_CORTO_IMG as JaviCorto,
-} from "../../assets/cloudinaryImages";
+} from "@/assets/cloudinaryImages.js";
 import { floatSnake } from "@/constants/animations.js";
 import { IoHeart } from "react-icons/io5";
 import { useTranslation, Trans } from "react-i18next";

@@ -1,6 +1,6 @@
-import SeoHead from "../../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { BANNER_SOCIAL_IMG as BannerSocial } from "../../assets/cloudinaryImages";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import Description from "./Description/Description";
 import Metrics from "./Metrics/Metrics";
 import ProjectsAndTeams from "./ProjectsAndTeams/ProjectsAndTeams";

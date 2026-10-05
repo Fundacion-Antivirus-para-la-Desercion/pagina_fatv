@@ -48,11 +48,8 @@ npm run deploy
   - `Layout` — Header + page content + Footer + `DonationButtons` (floating donation/Wompi buttons)
   - `LangLayout` — Syncs the i18next language with the URL prefix (`/es`, `/en`)
 - **`/src/components`** — Reusable UI components:
-  - `routing/LocalizedLink` — Link by logical route key instead of literal path
-  - `News` — News listing; the detail page lives in `/src/views/NewsDetail` (book-style carousel in `components/BookCarousel.jsx`, built with `framer-motion`)
-  - `modal`, `carousel` — UI utilities with animations
-  - `ContextData` (statistics section with animated counters), `writeEffect` (typewriter effects)
-  - `seo/SeoHead` — Per-page `<head>` tags via `react-helmet-async`
+  - Shared (used by 2+ views), one `Name/Name.jsx` folder each: `BannerView` (page banner), `CounterNumeric` (animated counter), `LocalizedLink` (link by logical route key instead of literal path), `Modal`, `SeoHead` (per-page `<head>` tags via `react-helmet-async`), `Teams`
+  - Still pending relocation to their views: `News` (listing page; detail lives in `/src/views/NewsDetail`), `ContextData`, `carousel`, `writeEffect` and other single-use sections
 - **`/src/routes`** — Route configuration (see Routing)
 - **`/src/hooks`** — Custom React hooks (`useRoute`, `useImageByLanguage`, `WhatsAppRedirect`)
 - **`/src/i18n`** — i18next configuration and setup

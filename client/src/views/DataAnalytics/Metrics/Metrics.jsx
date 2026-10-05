@@ -2,7 +2,7 @@ import { LuHistory } from "react-icons/lu";
 import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { BsDatabaseCheck } from "react-icons/bs";
 import { FaRegStar } from "react-icons/fa";
-import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
+import CounterNumeric from "@/components/CounterNumeric/CounterNumeric.jsx";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

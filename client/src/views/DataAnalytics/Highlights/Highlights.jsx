@@ -1,4 +1,4 @@
-import LocalizedLink from "../../../components/routing/LocalizedLink";
+import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { AiOutlineLaptop } from "react-icons/ai";

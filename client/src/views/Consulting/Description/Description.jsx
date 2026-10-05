@@ -1,4 +1,4 @@
-import LocalizedLink from "../../../components/routing/LocalizedLink";
+import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import {
   ACOMPANAMIENTO_COLEGIO_IMG as AcompanamientoColegio,
   ACOMPANAMIENTO_UDEA_IMG as AcompanamientoUdea,

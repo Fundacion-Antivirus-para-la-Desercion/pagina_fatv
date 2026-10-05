@@ -2,7 +2,7 @@ import { VscDeviceCameraVideo } from "react-icons/vsc";
 import { BiSolidUserPin } from "react-icons/bi";
 import { MdCampaign } from "react-icons/md";
 import { LuPalette } from "react-icons/lu";
-import CounterNumeric from "../../../components/ContextData/CounterNumer.jsx";
+import CounterNumeric from "@/components/CounterNumeric/CounterNumeric.jsx";
 import { useTranslation } from "react-i18next";
 
 const metricsData = [

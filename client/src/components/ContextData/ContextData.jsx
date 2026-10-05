@@ -1,6 +1,6 @@
 import "./ContextData.css";
 import { useTranslation } from "react-i18next";
-import CounterNumeric from "./CounterNumer.jsx";
+import CounterNumeric from "@/components/CounterNumeric/CounterNumeric.jsx";
 import {
   ACOMPANAR_IMG as AcompanarImage,
   ORIENTACION_IMG as OrientacionImage,

@@ -1,4 +1,4 @@
-import LocalizedLink from "../routing/LocalizedLink";
+import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";

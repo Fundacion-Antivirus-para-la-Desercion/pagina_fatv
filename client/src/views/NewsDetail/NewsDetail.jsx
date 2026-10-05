@@ -1,10 +1,10 @@
-import SeoHead from "../../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { useEffect, useMemo, useRef } from "react";
 import { BANNER_NEWS_IMG as BannerNews } from "../../assets/cloudinaryImages";
 import OtherNews from "../../components/other-news/OtherNews";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import BannerView from "../../components/Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import useNews from "./hooks/useNews";
 import useBookDimensions from "./hooks/useBookDimensions";
 import BackButton from "./components/BackButton";

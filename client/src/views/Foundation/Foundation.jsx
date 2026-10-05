@@ -1,4 +1,4 @@
-import SeoHead from "../../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import FoundationATV from "./FoundationAtv/FoundationATV";
 import OrganizationalStructure from "./OrganizationalStructure/OrganizationalStructure";
 import EthicsTransparency from "./EthicsTransparency/EthicsTransparency";

@@ -1,10 +1,10 @@
-import SeoHead from "../../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { JAVI_FELIZ_SVG as Javi, BANNER_CONTACT_US_IMG as BannerContacUs } from "../../assets/cloudinaryImages";
 import emailjs from "@emailjs/browser";
-import Modal from "../../components/modal/Modal";
-import BannerView from "../../components/Banner-views/BannerView";
+import Modal from "@/components/Modal/Modal.jsx";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import ContactInformation from "./ContactInformation";
 
 function ContactUs() {

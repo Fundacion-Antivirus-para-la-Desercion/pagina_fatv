@@ -1,4 +1,4 @@
-import LocalizedLink from "../../../components/routing/LocalizedLink";
+import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import { FaArrowLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
 

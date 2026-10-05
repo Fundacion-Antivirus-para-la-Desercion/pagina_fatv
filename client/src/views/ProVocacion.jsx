@@ -1,4 +1,4 @@
-import SeoHead from "../components/seo/SeoHead";
+import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import styles from "./ProVocacion.module.css";
 import {
   BANNER_PROVOCACION_IMG as BannerProvocacion,
@@ -13,12 +13,12 @@ import {
 import Testimonials from "../components/testimonials/Testimonials";
 import Information from "../components/information/Information";
 import { FOCUS_SVG as Focus } from "../assets/cloudinaryImages";
-import BannerView from "../components/Banner-views/BannerView";
+import BannerView from "@/components/BannerView/BannerView.jsx";
 import Description from "./StudentProvocation/Description";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Modal from "../components/modal/Modal";
+import Modal from "@/components/Modal/Modal.jsx";
 import emailjs from "@emailjs/browser";
 import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
 

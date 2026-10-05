@@ -1,4 +1,4 @@
-import LocalizedLink from "@/components/routing/LocalizedLink.jsx";
+import LocalizedLink from "@/components/LocalizedLink/LocalizedLink.jsx";
 import styles from "./DonationButtons.module.css";
 import { ICON_DONATION_IMG as IconDonation } from "../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
