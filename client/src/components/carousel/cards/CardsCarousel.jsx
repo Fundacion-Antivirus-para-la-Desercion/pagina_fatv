@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import {
@@ -129,9 +129,21 @@ CarouselNav.propTypes = {
 
 // Carrusel de 3 columnas. Solo guarda qué slide está activo (`activeIndex`);
 // todo lo que se ve sale de `slides[activeIndex]` y de `aside`.
+const SWIPE_THRESHOLD = 50; // px de arrastre para cambiar de slide en mobile
+const MOBILE_QUERY = "(max-width: 767px)";
+
 function CardsCarousel({ slides = [], aside = null }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(MOBILE_QUERY);
+    const update = () => setIsMobile(mediaQuery.matches);
+    update();
+    mediaQuery.addEventListener("change", update);
+    return () => mediaQuery.removeEventListener("change", update);
+  }, []);
 
   if (slides.length === 0) return null;
 
@@ -139,9 +151,9 @@ function CardsCarousel({ slides = [], aside = null }) {
   const lastIndex = slides.length - 1;
 
   // En mobile el slide nuevo puede quedar debajo del scroll actual: subimos al inicio
-  // del carrusel. Solo se llama desde los botones, nunca al cambiar de slide solo.
+  // del carrusel. Solo se llama desde los botones o el gesto, nunca al cambiar de slide solo.
   const scrollToCarouselOnMobile = () => {
-    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    if (!window.matchMedia(MOBILE_QUERY).matches) return;
     sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -156,11 +168,22 @@ function CardsCarousel({ slides = [], aside = null }) {
     scrollToCarouselOnMobile();
   };
 
+  const handleDragEnd = (_event, info) => {
+    if (info.offset.x < -SWIPE_THRESHOLD) goToNext();
+    else if (info.offset.x > SWIPE_THRESHOLD) goToPrevious();
+  };
+
   return (
     <section ref={sectionRef} className="bg-white py-10 md:py-12">
       {/* 3 columnas en xl: título (34.28%) | contenido (resto) | aside (19.1%) */}
-      <div
+      {/* En mobile se puede deslizar para cambiar de slide; touch-action pan-y deja el scroll vertical. */}
+      <motion.div
         id="slide-content"
+        drag={isMobile ? "x" : false}
+        dragConstraints={{ left: 0, right: 0 }}
+        dragElastic={0.15}
+        onDragEnd={handleDragEnd}
+        style={{ touchAction: "pan-y" }}
         className="mx-auto grid w-[92%] max-w-[1500px] grid-cols-1 xl:grid-cols-[34.28%_1fr_19.1%] overflow-hidden rounded-3xl bg-[#FCFDFE] text-dark-blue shadow-[0_10px_30px_-12px_rgba(7,60,114,0.18)] xl:min-h-[300px]"
       >
         {/* 1. Panel izquierdo: Javi + título del slide */}
@@ -207,7 +230,7 @@ function CardsCarousel({ slides = [], aside = null }) {
         <aside className="flex flex-col bg-white px-4 pt-4 xl:pl-[12px] xl:pr-[14px] xl:pt-[7px]">
           {aside}
         </aside>
-      </div>
+      </motion.div>
 
       <CarouselNav
         position={activeIndex + 1}
