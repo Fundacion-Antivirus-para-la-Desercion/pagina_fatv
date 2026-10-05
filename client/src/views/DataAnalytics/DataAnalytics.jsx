@@ -2,13 +2,13 @@ import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import "boxicons";
 import BannerView from "@/components/BannerView/BannerView.jsx";
 import { BANNER_DATA_ANALYTICS_IMG as BannerDataAnalytics } from "../../assets/cloudinaryImages";
-import Description from "../DataAnalytics/Description/Description.jsx";
+import Description from "./components/Description.jsx";
 import Teams from "@/components/Teams/Teams.jsx";
 import data from "./data.js"
-import Metrics from "./Metrics/Metrics.jsx";
-import Mission from "./Mission/Mission.jsx";
-import Highlights from "./Highlights/Highlights.jsx";
-import TechStack from "./TechStack/TechStack.jsx";
+import Metrics from "./components/Metrics.jsx";
+import Mission from "./components/Mission.jsx";
+import Highlights from "./components/Highlights/Highlights.jsx";
+import TechStack from "./components/TechStack/TechStack.jsx";
 
 
 function DataAnalytics() {

@@ -1,11 +1,11 @@
 import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { BANNER_COMMUNICATIONS_IMG as BannerCommun } from "../../assets/cloudinaryImages";
 import BannerView from "@/components/BannerView/BannerView.jsx";
-import Description from "../Communications/Description/Description.jsx";
-import CommunicationSkills from "../Communications/CommunicationSkills/CommunicationSkills.jsx";
-import Services from "../Communications/Services/Services.jsx";
-import Metrics from "../Communications/Metrics/Metrics.jsx";
-import Portfolio from "../Communications/Portfolio/Portfolio.jsx";
+import Description from "./components/Description.jsx";
+import CommunicationSkills from "./components/CommunicationSkills.jsx";
+import Services from "./components/Services.jsx";
+import Metrics from "./components/Metrics.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import data from "./data.js";
 import Teams from "@/components/Teams/Teams.jsx";
 

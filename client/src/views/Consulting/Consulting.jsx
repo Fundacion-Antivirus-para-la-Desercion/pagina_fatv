@@ -10,7 +10,7 @@ import { RiFocus2Line } from "react-icons/ri";
 import { FaLightbulb, FaStar,FaGraduationCap, FaUserFriends} from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
-import Description from "./Description/Description.jsx";
+import Description from "./components/Description.jsx";
 import { motion } from "framer-motion";
 
 function Consulting() {

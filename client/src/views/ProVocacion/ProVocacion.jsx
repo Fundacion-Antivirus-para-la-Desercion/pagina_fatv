@@ -10,11 +10,11 @@ import {
   EN_AUTOCONOCIMIENTO_IMG as EnAutoconocimiento,
   EN_MUNDO_LABORAL_IMG as EnMundoLaboral,
 } from "@/assets/cloudinaryImages.js";
-import Testimonials from "@/components/testimonials/Testimonials.jsx";
-import Information from "@/components/information/Information.jsx";
+import Testimonials from "./components/Testimonials/Testimonials.jsx";
+import Information from "./components/Information/Information.jsx";
 import { FOCUS_SVG as Focus } from "@/assets/cloudinaryImages.js";
 import BannerView from "@/components/BannerView/BannerView.jsx";
-import Description from "@/views/StudentProvocation/Description.jsx";
+import Description from "./components/Description.jsx";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

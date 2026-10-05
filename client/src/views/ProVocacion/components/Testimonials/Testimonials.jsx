@@ -1,0 +1,125 @@
+import styles from "./Testimonials.module.css";
+import {
+  TESTIMONIAL_1_IMG as Testimonial1,
+  TESTIMONIAL_2_IMG as Testimonial2,
+  TESTIMONIAL_3_IMG as Testimonial3,
+  TESTIMONIAL_4_IMG as Testimonial4,
+  TESTIMONIAL_5_IMG as Testimonial5,
+  FOCUS_SVG as Focus,
+} from "@/assets/cloudinaryImages.js";
+import { FaQuoteLeft } from "react-icons/fa6";
+import WhatsAppRedirect from "@/hooks/WhatsAppRedirect.js";
+
+import { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay, Thumbs } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/thumbs";
+import { useTranslation } from "react-i18next";
+
+function Testimonials() {
+  const { t } = useTranslation();
+
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const mainSwiperRef = useRef(null);
+  const thumbsSwiperRef = useRef(null);
+
+  const testimonialsImages = [
+    Testimonial1,
+    Testimonial2,
+    Testimonial3,
+    Testimonial4,
+    Testimonial5,
+  ];
+
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.realIndex);
+  };
+
+  const contentTestimonials = t(
+    "provocacion.testimonials.testimonials_content",
+    {
+      returnObjects: true,
+    },
+  );
+
+  return (
+    <section className="relative px-6 py-10 mb-2 shadow-lg bg-[#222D56]">
+      <h1 className="p-3 text-5xl text-center font-impact text-white max-md:text-3xl">
+        {t("provocacion.testimonials.title")}
+      </h1>
+
+      <Swiper
+        ref={mainSwiperRef}
+        spaceBetween={30}
+        speed={3000}
+        autoplay={{
+          delay: 26000,
+          disableOnInteraction: false,
+        }}
+        navigation={{
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        }}
+        loop={true}
+        modules={[Autoplay, Navigation, Thumbs]}
+        className="mySwiper"
+        thumbs={{ swiper: thumbsSwiper }}
+        onSlideChange={handleSlideChange}
+      >
+        {contentTestimonials.map((testimonial, index) => (
+          <SwiperSlide key={`main-${index}`}>
+            <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-6xl mx-auto">
+              <div className="flex-shrink-0">
+                <img
+                  className={`rounded-full w-52 h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 object-cover shadow-sm border-[8px] md:border-[12px] border-primary-yellow ${styles.borderImage}`}
+                  src={testimonialsImages[index]}
+                  alt={`${t(
+                    "provocacion.testimonials.alt_testimonial_img",
+                  )} ${index + 1}`}
+                  loading="lazy"
+                />
+              </div>
+              <div className=" text-base md:text-lg space-y-4 text-justify max-w-xl">
+                <FaQuoteLeft className="w-8 h-8 mx-auto text-[#F6A623]" />
+                <p className="text-white"> {testimonial.description}</p>
+                <p className="font-semibold text-right text-base md:text-xl text-[#F6A623]">
+                  {testimonial.author}
+                </p>
+              </div>
+            </section>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <div className="flex gap-4 flex-wrap justify-center md:justify-end mt-10">
+        <a
+          className="flex px-4 py-1 bg-white text-[#222D56] border-2 font-bold text-lg rounded-xl items-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          href={WhatsAppRedirect(t("whatsappMessage.provocation"))}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("provocacion.testimonials.button1")}
+          <img
+            src={Focus}
+            alt={t("provocacion.testimonials.alt_focus")}
+            className="w-10 h-10"
+            loading="lazy"
+          />
+        </a>
+        <a
+          className="px-4 py-2 bg-[#222D56] text-white border-2 font-bold rounded-xl text-lg mr-5 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          href="#form-contac-us"
+        >
+          {t("provocacion.testimonials.button2")}
+        </a>
+      </div>
+    </section>
+  );
+}
+
+export default Testimonials;

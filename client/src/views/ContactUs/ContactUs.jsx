@@ -5,7 +5,7 @@ import { JAVI_FELIZ_SVG as Javi, BANNER_CONTACT_US_IMG as BannerContacUs } from 
 import emailjs from "@emailjs/browser";
 import Modal from "@/components/Modal/Modal.jsx";
 import BannerView from "@/components/BannerView/BannerView.jsx";
-import ContactInformation from "./ContactInformation";
+import ContactInformation from "./components/ContactInformation.jsx";
 
 function ContactUs() {
   const { t } = useTranslation();

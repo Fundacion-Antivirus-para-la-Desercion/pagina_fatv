@@ -1,9 +1,9 @@
 import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { BANNER_SOCIAL_IMG as BannerSocial } from "../../assets/cloudinaryImages";
 import BannerView from "@/components/BannerView/BannerView.jsx";
-import Description from "./Description/Description";
-import Metrics from "./Metrics/Metrics";
-import ProjectsAndTeams from "./ProjectsAndTeams/ProjectsAndTeams";
+import Description from "./components/Description.jsx";
+import Metrics from "./components/Metrics.jsx";
+import ProjectsAndTeams from "./components/ProjectsAndTeams/ProjectsAndTeams.jsx";
 
 function SocialIntervention() {
 

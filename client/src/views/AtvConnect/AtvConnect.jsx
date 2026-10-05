@@ -2,15 +2,15 @@ import SeoHead from "@/components/SeoHead/SeoHead.jsx";
 import { BANNER_ATV_CONNECT_IMG as BannerAtvConnect } from "../../assets/cloudinaryImages";
 import BannerView from "@/components/BannerView/BannerView.jsx";
 import { useTranslation } from "react-i18next";
-import TestimonialsAtvConnect from "./testimonialsAtvConnect/TestimonialsAtvConnect.jsx";
-import BtnAtv from "./btnAtvConnect/BtnAtvConnect.jsx";
-import DescriptionAtvConnect from "./descriptionAtvConnect/DescriptionAtvConnect.jsx";
-import FiguresAtvConnect from "./figuresAtvConnect/FiguresAtvConnect.jsx";
-import ServicesAtvConnect from "./servicesAtvConnect/ServicesAtvConnect.jsx";
-import StepsAtvConnect from "./stepsAtvConnect/StepsAtvConnect.jsx";
-import SchoolSubjectsAtvConnect from "./schoolSubjects/SchoolSubjectsAtvConnect.jsx";
-import GoAtvConnect from "./goAtvConnet/GoAtvConnect.jsx";
-import PricingCardsAtvConnect from "./pricingCardsAtvConnect/PricingCardsAtvConnect.jsx";
+import TestimonialsAtvConnect from "./components/TestimonialsAtvConnect/TestimonialsAtvConnect.jsx";
+import BtnAtv from "./components/BtnAtvConnect/BtnAtvConnect.jsx";
+import DescriptionAtvConnect from "./components/DescriptionAtvConnect.jsx";
+import FiguresAtvConnect from "./components/FiguresAtvConnect.jsx";
+import ServicesAtvConnect from "./components/ServicesAtvConnect.jsx";
+import StepsAtvConnect from "./components/StepsAtvConnect.jsx";
+import SchoolSubjectsAtvConnect from "./components/SchoolSubjectsAtvConnect.jsx";
+import GoAtvConnect from "./components/GoAtvConnect.jsx";
+import PricingCardsAtvConnect from "./components/PricingCardsAtvConnect.jsx";
 
 
 const LIST_KEYS = [
