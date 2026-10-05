@@ -44,21 +44,48 @@ function ServicesAtvConnect() {
 
   const particleOptions = useMemo(
     () => ({
-      fullScreen: { enable: false, zIndex: 0 },
+      fullScreen: {
+        enable: false, // <--- ESTO ES LO MÁS IMPORTANTE
+        zIndex: 0, // Asegura un z-index bajo si es necesario
+      },
       fpsLimit: 120,
       particles: {
-        number: { value: 200, density: { enable: true } },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.7, random: true },
-        size: { value: { min: 1, max: 3 }, random: true },
+        number: {
+          value: 150,
+          density: {
+            enable: true,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        links: {
+          color: "#ffffff",
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
+          width: 1.5,
+        },
+        shape: {
+          type: "circle",
+        },
+        opacity: {
+          value: 0.7,
+          random: true,
+        },
+        size: {
+          value: { min: 2, max: 4 },
+          random: true,
+        },
         move: {
           enable: true,
-          speed: 2,
-          direction: "bottom",
+          speed: 1.5,
+          direction: "none",
           random: true,
           straight: false,
-          outModes: { default: "out" },
+          outModes: {
+            default: "bounce",
+          },
         },
       },
       detectRetina: true,
@@ -83,7 +110,7 @@ function ServicesAtvConnect() {
         <img
           src={Javi}
           alt="Character Art"
-          className="relative z-10 w-56 md:w-80 object-contain drop-shadow-xl"
+          className="relative z-10 w-56 md:w-80 object-contain drop-shadow-xl select-none pointer-events-none"
         />
       </div>
 
