@@ -94,6 +94,8 @@ function DonationPay() {
     const form = document.createElement("form");
     form.action = "https://checkout.wompi.co/p/";
     form.method = "GET";
+    form.target = "_blank";
+    form.rel = "noopener noreferrer";
     document.body.appendChild(form);
 
     const publicKey = document.createElement("input");
