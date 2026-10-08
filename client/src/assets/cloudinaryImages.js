@@ -206,7 +206,7 @@ export const GRADUADO_IMG         = getImageUrl("https://res.cloudinary.com/bgmd
 // ── provocacion ───────────────────────────────────────────────────────────────
 export const BANNER_PROVOCACION_IMG  = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672055/banner-pro-vocacion_pa1eve.webp");
 export const BANNER_PERSUASIVO_IMG   = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672030/banner-persuasivo_t9vr5r.webp");
-export const COLLAGE_PROVOCACION_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672021/collage-provocacion_bkpstf.webp");
+export const ESTUDIANTES_PROVOCACION_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1791398470/estudiantes-pro-vocacion_bgludn.webp");
 
 export const AUTOCONOCIMIENTO_IMG    = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672084/autoconocimiento_unrwct.webp");
 export const MUNDO_FORMATIVO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784672126/mundo-formativo_fbncug.webp");
