@@ -144,7 +144,6 @@
     "studentRetention": "Hello, I would like to request more information about the Student Retention Management service.",
     "contactPage": "Hello, I came from the website and I would like to chat with you.",
     "atvConnect": "Hello, I saw the website and I would like to know more about ATVConecta academic tutoring",
-    "atvConnect_social": "Hello, I saw the website and I would like to know more about ATVConecta Social",
     "atvConnect_persons": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
     "atvConnect_institutional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
     "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
@@ -1456,17 +1455,6 @@
       "label_applies": "APPLIES TO",
       "label_ideal": "IDEAL FOR",
       "btn_cta": "I want more information",
-      "social": {
-        "subtitle": "Social",
-        "description": "We offer free academic tutoring for students in academic vulnerability, as part of our social support processes.",
-        "target": "FATV's CSR support processes.",
-        "price_label": "Part of our CSR",
-        "price_sub": "No cost",
-        "subtitle_two": "We deliver",
-        "check_one": "Socially meaningful support",
-        "check_two": "Real and measurable impact",
-        "check_three": "Technical support"
-      },
       "personas": {
         "subtitle": "Persons",
         "description": "We connect students with our tutor network for individual review sessions in different subject areas, at their own pace and from anywhere.",

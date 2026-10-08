@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { FaRegHeart, FaCheck } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import { LuUser } from "react-icons/lu";
 import { RiBuilding4Line } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
@@ -7,19 +7,6 @@ import { FaDisplay } from "react-icons/fa6";
 import WhatsAppRedirect from "../../../components/whatsAppRedirect/WhatsAppRedirect";
 
 const CARDS = [
-  {
-    key: "social",
-    whatsappMessageKey: "atvConnect_social",
-    icon: FaRegHeart,
-    labelKey: "label_applies",
-    checks: ["check_one", "check_two" , "check_three"],
-    bar: "bg-brand-teal-300",
-    iconBg: "bg-brand-teal-50",
-    iconColor: "text-brand-teal-400",
-    subtitleColor: "text-brand-teal-400",
-    checkColor: "text-brand-teal-400",
-    btnBg: "bg-brand-teal-300 hover:bg-brand-teal-400",
-  },
   {
     key: "personas",
     whatsappMessageKey: "atvConnect_persons",
@@ -66,18 +53,20 @@ function PricingCardsAtvConnect() {
 
   return (
     <section className="py-16 px-4">
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-12">
           <h3 className="text-blue-base font-impact text-3xl md:text-5xl mt-2">
             {t("atvConnect.pricing.title")}
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {CARDS.map((card) => {
             const Icon = card.icon;
             const base = `atvConnect.pricing.${card.key}`;
-            const whatsappHref = WhatsAppRedirect(t(`whatsappMessage.${card.whatsappMessageKey}`));
+            const whatsappHref = WhatsAppRedirect(
+              t(`whatsappMessage.${card.whatsappMessageKey}`),
+            );
             return (
               <div
                 key={card.key}
@@ -93,7 +82,9 @@ function PricingCardsAtvConnect() {
                   </div>
 
                   <div>
-                    <h3 className="text-blue-base font-bold text-3xl">ATVConecta</h3>
+                    <h3 className="text-blue-base font-bold text-3xl">
+                      ATVConecta
+                    </h3>
                     <p className={`font-bold text-2xl ${card.subtitleColor}`}>
                       {t(`${base}.subtitle`)}
                     </p>
@@ -118,16 +109,22 @@ function PricingCardsAtvConnect() {
                     <p className="text-blue-base font-bold text-2xl leading-tight">
                       {t(`${base}.price_label`)}
                     </p>
-                    <p className="text-gray-400 text-sm">{t(`${base}.price_sub`)}</p>
+                    <p className="text-gray-400 text-sm">
+                      {t(`${base}.price_sub`)}
+                    </p>
                   </div>
-                  <p className="text-blue-base font-bold text-lg">{t(`${base}.subtitle_two`)}</p>
+                  <p className="text-blue-base font-bold text-lg">
+                    {t(`${base}.subtitle_two`)}
+                  </p>
                   <ul className="flex flex-col gap-2 flex-1">
                     {card.checks.map((ck) => (
                       <li
                         key={ck}
                         className="flex items-start gap-2 text-sm text-gray-600"
                       >
-                        <FaCheck className={`mt-0.5 shrink-0 ${card.checkColor}`} />
+                        <FaCheck
+                          className={`mt-0.5 shrink-0 ${card.checkColor}`}
+                        />
                         {t(`${base}.${ck}`)}
                       </li>
                     ))}
