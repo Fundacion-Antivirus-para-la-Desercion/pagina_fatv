@@ -1142,8 +1142,19 @@
       "h1": "ProVocación",
       "alt": "High school students receiving guidance to define their life project and academic future."
     },
-    "title_initial": "SUPPORT OBJECTIVE",
-    "description": "Empower young people's life projects through self-knowledge processes, approach to higher education and the working world that allow them to have tools to build their authentic life project.",
+    "description": {
+      "span": "OBJECTIVE OF THE ACCOMPANIMENT",
+      "title_initial": "ACCOMPANYING THE PRESENT TO BUILD",
+      "span_title": " THE FUTURE",
+      "paragraph_description": "Empower young people's life projects through self-knowledge processes, approach to higher education and the working world that allow them to have tools to build their authentic life project.",
+      "alt": "High school students receiving guidance from a FATV collaborator to define their life project and academic future.",
+      "guidanceAreas": {
+        "one": "Self-awareness",
+        "two": "Higher Education",
+        "three": "Labor World"
+      }
+    },
+
     "title_future": "YOUR FUTURE, STEP BY STEP: KNOW EACH STAGE",
     "let_yourself_be_provoked": "Let yourself be provoked",
     "title": "WRITE TO US HERE",

@@ -1146,8 +1146,18 @@
       "h1": "ProVocación",
       "alt": "Estudiantes de colegio recibiendo orientación para definir su proyecto de vida y futuro académico."
     },
-    "title_initial": "OBJETIVO DEL ACOMPAÑAMIENTO",
-    "description": "Potenciar el proyecto de vida de los jóvenes a través de procesos de autoconocimiento, acercamiento a la educación superior y al mundo laboral que les permitan tener herramientas para construir su proyecto de vida auténtico.",
+    "description": {
+      "span": "OBJETIVO DEL ACOMPAÑAMIENTO",
+      "title_initial": "ACOMPAÑAMOS EL PRESENTE, PARA CONSTRUIR ",
+      "span_title": "EL FUTURO",
+      "paragraph_description": "Potenciar el proyecto de vida de los jóvenes a través de procesos de autoconocimiento, acercamiento a la educación superior y al mundo laboral que les permitan tener herramientas para construir su proyecto de vida auténtico.",
+      "alt": "Estudiantes de colegio recibiendo orientación de un colavorador FATV para definir su proyecto de vida y futuro académico.",
+      "guidanceAreas": {
+        "one": "Autoconocimiento",
+        "two": "Educación Superior",
+        "three": "Mundo Laboral"
+      }
+    },
     "title_future": "TU FUTURO, PASO A PASO: CONOCE CADA ETAPA",
     "let_yourself_be_provoked": "Déjate provocar",
     "title": "ESCRÍBENOS AQUÍ",
@@ -1260,6 +1270,20 @@
           "author": "- Matías González"
         }
       ]
+    },
+    "goals": {
+      "one": {
+        "title": "Descubrir",
+        "description": "Tus fortalezas"
+      },
+      "two": {
+        "title": "Explorar",
+        "description": "Estudios y trabajo"
+      },
+      "three": {
+        "title": "Proyectar",
+        "description": "Tu proyecto de vida"
+      }
     }
   },
   "atvConnect": {
@@ -1295,7 +1319,6 @@
       "alt_img_one": "Estudiante Roberth Castillo sosteniendo su certificado del curso {ódigo/C13} junto a una colaboradora de la fundación Antivirus para la Deserción.",
       "alt_img_two": "Estudiante Juliana Hoyos sosteniendo su certificado del curso {ódigo/C13} junto a una colaboradora de la fundación Antivirus para la Deserción."
     },
-
     "figures_impact": {
       "span_title": "NUESTRO IMPACTO",
       "title": "CIFRAS QUE HABLAN",
