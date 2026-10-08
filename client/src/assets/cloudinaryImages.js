@@ -232,6 +232,7 @@ export const BANNER_ATV_CONNECT_IMG = getImageUrl("https://res.cloudinary.com/bg
 export const ESTUDIANTE_UNO_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669970/estudiante-certificado_oj3uk0.webp");
 export const ESTUDIANTE_DOS_IMG     = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669953/estudiante-certificado-dos_atqewb.webp");
 export const JAVI_CARA_ATV_CONECTA_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1784669973/javiAtvConecta_l9eowa.webp");
+export const ESTUDIANTE_ATV_CONECTA_IMG = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1791468675/estudiante_a1fthk.webp");
 // - testimonials AtvConnect ────────────────────────────────────────────────────────────────
 export const TESTIMONIAL_ANGEL_PARRA_ARRETA = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/angel-parra-arrieta_d8zvgl.webp");
 export const TESTIMONIAL_JUAN_CAMILO_TOVAR = getImageUrl("https://res.cloudinary.com/bgmdn0h8/image/upload/v1788358427/juan-camilo-tovar_brazen.webp");
