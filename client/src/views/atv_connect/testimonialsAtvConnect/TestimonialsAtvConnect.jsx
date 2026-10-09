@@ -207,6 +207,61 @@ SmallTestimonialCard.propTypes = {
   testimonial: testimonialShape.isRequired,
 };
 
+function FloatingVideoCard() {
+  const { t } = useTranslation();
+  const [playing, setPlaying] = useState(false);
+  const videoId = "0ADvDklMcEU";
+
+  return (
+    <motion.div
+      {...(playing
+        ? {}
+        : floatSnake({ transition: { delay: 0.5, duration: 3.5 } }))}
+      className="w-full max-w-lg mx-auto rounded-3xl overflow-hidden shadow-2xl border border-brand-teal-300/40"
+    >
+      {playing ? (
+        <div className="aspect-video">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`}
+            title={t("atvConnect.testimonialsAtvConnect.videoTitle")}
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      ) : (
+        <button
+          onClick={() => setPlaying(true)}
+          aria-label={t("atvConnect.testimonialsAtvConnect.playVideo")}
+          className="relative w-full group block"
+        >
+          <img
+            src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+            alt={t("atvConnect.testimonialsAtvConnect.videoTitle")}
+            className="w-full h-auto"
+            loading="lazy"
+            onError={(e) => {
+              e.target.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+            }}
+          />
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white transition-all flex items-center justify-center shadow-lg">
+              <svg
+                className="w-8 h-8 text-brand-teal-400 ml-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </button>
+      )}
+    </motion.div>
+  );
+}
+
 function TestimonialsAtvConnect() {
   const { t } = useTranslation();
   const [activeTestimonial, setActiveTestimonial] = useState(null);
@@ -259,6 +314,10 @@ function TestimonialsAtvConnect() {
         <h1 className="text-4xl md:text-5xl text-dark-blue font-impact">
           {t("atvConnect.testimonialsAtvConnect.title")}
         </h1>
+      </div>
+
+      <div className="max-w-6xl mx-auto w-full relative z-10 mb-10">
+        <FloatingVideoCard />
       </div>
 
       <div className="max-w-6xl mx-auto w-full flex flex-col gap-8 relative z-10">

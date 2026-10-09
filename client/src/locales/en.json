@@ -1386,6 +1386,8 @@
     "testimonialsAtvConnect": {
       "span": "TESTIMONIALS",
       "title": "REAL STORIES",
+      "playVideo": "Play ATVConecta video",
+      "videoTitle": "ATVConecta Video",
       "testimony_one": {
         "description": "“I'm really happy with this platform—it's the perfect support for my career goals”",
         "role": "Student",

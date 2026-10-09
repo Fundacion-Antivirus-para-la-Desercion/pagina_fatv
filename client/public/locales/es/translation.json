@@ -1401,6 +1401,8 @@
     "testimonialsAtvConnect": {
       "span": "TESTIMONIOS",
       "title": "HISTORIAS REALES",
+      "playVideo": "Reproducir video ATVConecta",
+      "videoTitle": "Video ATVConecta",
       "testimony_one": {
         "description": "“Estoy feliz con esta plataforma, ya que es un apoyo para seguir preparándome en mi carrera”",
         "role": "Estudiante",
