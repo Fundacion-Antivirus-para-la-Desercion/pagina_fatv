@@ -150,52 +150,52 @@ function PricingCardsAtvConnect() {
         </div>
       </div>
 
-      <div className="mt-16 overflow-hidden rounded-3xl flex flex-col xl:flex-row mx-auto max-w-screen-2xl">
+      <section className="mt-16 overflow-hidden rounded-3xl flex flex-col xl:flex-row mx-auto max-w-screen-2xl">
         <div className="relative overflow-hidden flex-1 min-h-[280px] bg-brand-teal-400 flex flex-col md:flex-row">
-          <div className="flex flex-col gap-4 p-8 md:p-10 flex-1 items-center md:items-start text-center md:text-left">
+          <section className="flex flex-col gap-4 p-8 md:p-10 flex-1 items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-2">
               <FaHandHoldingHeart className="text-3xl md:text-4xl text-white  " />
               <span className="bg-white/95 text-sm md:text-base text-dark-blue font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap">
-                {t("atvConnect.pricing.impact_label")}
+                {t("atvConnect.pricing.impactBanner.impact_label")}
               </span>
             </div>
             <h4 className="text-2xl md:text-3xl font-renogare text-white leading-tight">
-              {t("atvConnect.pricing.impact_badge")}
+              {t("atvConnect.pricing.impactBanner.impact_badge")}
             </h4>
             <p className="text-lg md:text-xl text-white/90">
-              {t("atvConnect.pricing.impact_sub")}
+              {t("atvConnect.pricing.impactBanner.impact_sub")}
             </p>
-          </div>
-          <div className="flex items-end overflow-hidden justify-center md:justify-start">
+          </section>
+          <section className="flex items-end overflow-hidden justify-center md:justify-start">
             <img
               src={Estudiante}
-              alt={t("atvConnect.pricing.impact_badge")}
+              alt={t("atvConnect.pricing.impactBanner.alt_img_impact")}
               className="h-full w-auto object-cover object-top max-h-[200px] md:max-h-[250px]"
             />
-          </div>
+          </section>
         </div>
 
         <div className="relative overflow-hidden flex-1 p-8 md:p-12 bg-dark-blue flex flex-col text-left gap-4">
-          <motion.div {...floatSnake(0)}>
+          <motion.section {...floatSnake(0)}>
             {" "}
             <LiaGraduationCapSolid className="hidden xl:block absolute -top-5 right-1 text-[8rem] rotate-12 text-white opacity-30 pointer-events-none" />
-          </motion.div>
+          </motion.section>
 
-          <div className="max-w-xl">
+          <section className="max-w-xl">
             {" "}
             <h4 className="text-2xl md:text-4xl font-renogare text-white leading-tight max-w-sm mb-3">
-              {t("atvConnect.pricing.impact_headline_main")}
+              {t("atvConnect.pricing.impactBanner.impact_headline_main")}
               <br />
               <span className="text-primary-yellow">
-                {t("atvConnect.pricing.impact_headline_highlight")}
+                {t("atvConnect.pricing.impactBanner.impact_headline_highlight")}
               </span>
             </h4>
             <p className="text-white/80 text-base md:text-lg leading-relaxed">
-              {t("atvConnect.pricing.impact_body")}
+              {t("atvConnect.pricing.impactBanner.impact_body")}
             </p>
-          </div>
+          </section>
         </div>
-      </div>
+      </section>
     </section>
   );
 }

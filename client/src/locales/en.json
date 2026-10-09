@@ -1454,13 +1454,16 @@
       "badge_featured": "MOST POPULAR",
       "label_applies": "APPLIES TO",
       "label_ideal": "IDEAL FOR",
-      "impact_label": "Your impact",
-      "impact_badge": "Every purchase matters",
-      "impact_headline": "Study, learn, and help fulfill another dream.",
-      "impact_body": "With every purchase on ATVConecta, you make it possible for more students to access academic support, strengthen their knowledge, and continue building their path to university and their professional future.",
-      "impact_sub": "Your support helps a student keep going.",
-      "impact_headline_main": "Study, learn, and help fulfill",
-      "impact_headline_highlight": "another dream.",
+      "impactBanner": {
+        "impact_label": "Your impact",
+        "impact_badge": "Every purchase matters",
+        "impact_headline": "Study, learn, and help fulfill another dream.",
+        "impact_body": "With every purchase on ATVConecta, you make it possible for more students to access academic support, strengthen their knowledge, and continue building their path to university and their professional future.",
+        "impact_sub": "Your support helps a student keep going.",
+        "impact_headline_main": "Study, learn, and help fulfill",
+        "impact_headline_highlight": "another dream.",
+        "alt_img_impact": "Smiling high school student at a meeting of the Antivirus para la Deserción Foundation."
+      },
       "btn_cta": "I want more information",
       "personas": {
         "subtitle": "Persons",

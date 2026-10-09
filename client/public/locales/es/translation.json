@@ -1462,9 +1462,7 @@
         "university": "Estudiante de Ingeniería de Sistemas",
         "photoAlt": "Fotografía de Isabella Navarro, Estudiante de Ingeniería de Sistemas"
       },
-      "readMore": "Leer testimonio completo",
-      "playVideo": "Reproducir video ATVConecta",
-      "videoTitle": "Video ATVConecta"
+      "readMore": "Leer testimonio completo"
     },
     "pricing": {
       "title": "UN PROPÓSITO, CUATRO FORMAS DE ACOMPAÑAR",
@@ -1472,13 +1470,16 @@
       "label_applies": "APLICA PARA",
       "label_ideal": "IDEAL PARA",
       "btn_cta": "Quiero más información",
-      "impact_label": "Tu impacto",
-      "impact_badge": "Cada compra importa",
-      "impact_headline": "Estudia, aprende y ayuda a cumplir otro sueño.",
-      "impact_body": "Con cada compra en ATVConecta, haces posible que más estudiantes accedan a apoyo académico, refuercen sus conocimientos y continúen construyendo su camino hacia la universidad y su futuro profesional.",
-      "impact_sub": "Tu apoyo ayuda a que un estudiante siga adelante.",
-      "impact_headline_main": "Estudia, aprende y ayuda a cumplir",
-      "impact_headline_highlight": "otro sueño.",
+      "impactBanner": {
+        "impact_label": "Tu impacto",
+        "impact_badge": "Cada compra importa",
+        "impact_headline": "Estudia, aprende y ayuda a cumplir otro sueño.",
+        "impact_body": "Con cada compra en ATVConecta, haces posible que más estudiantes accedan a apoyo académico, refuercen sus conocimientos y continúen construyendo su camino hacia la universidad y su futuro profesional.",
+        "impact_sub": "Tu apoyo ayuda a que un estudiante siga adelante.",
+        "impact_headline_main": "Estudia, aprende y ayuda a cumplir",
+        "impact_headline_highlight": "otro sueño.",
+        "alt_img_impact": "Estudiante de colegio sonriente en un encuentro de la Fundación Antivirus para la Deserción."
+      },
       "personas": {
         "subtitle": "Personas",
         "description": "Conectamos estudiantes con nuestra red de tutores para sesiones de repaso individual en diferentes áreas del conocimiento, a su ritmo y desde cualquier lugar.",
