@@ -144,7 +144,6 @@
     "studentRetention": "Hello, I would like to request more information about the Student Retention Management service.",
     "contactPage": "Hello, I came from the website and I would like to chat with you.",
     "atvConnect": "Hello, I saw the website and I would like to know more about ATVConecta academic tutoring",
-    "atvConnect_social": "Hello, I saw the website and I would like to know more about ATVConecta Social",
     "atvConnect_persons": "Hello, I saw the website and I would like to know more about ATVConecta Persons",
     "atvConnect_institutional": "Hello, I saw the website and I would like to know more about ATVConecta Institutional",
     "atvConnect_platform": "Hello, I saw the website and I would like to know more about ATVConecta Platform"
@@ -1385,6 +1384,8 @@
     "testimonialsAtvConnect": {
       "span": "TESTIMONIALS",
       "title": "REAL STORIES",
+      "playVideo": "Play ATVConecta video",
+      "videoTitle": "ATVConecta Video",
       "testimony_one": {
         "description": "“I'm really happy with this platform—it's the perfect support for my career goals”",
         "role": "Student",
@@ -1453,24 +1454,24 @@
       "badge_featured": "MOST POPULAR",
       "label_applies": "APPLIES TO",
       "label_ideal": "IDEAL FOR",
-      "btn_cta": "I want more information",
-      "social": {
-        "subtitle": "Social",
-        "description": "We offer free academic tutoring for students in academic vulnerability, as part of our social support processes.",
-        "target": "FATV's CSR support processes.",
-        "price_label": "Part of our CSR",
-        "price_sub": "No cost",
-        "subtitle_two": "We deliver",
-        "check_one": "Socially meaningful support",
-        "check_two": "Real and measurable impact",
-        "check_three": "Technical support"
+      "impactBanner": {
+        "impact_label": "Your impact",
+        "impact_badge": "Every purchase matters",
+        "impact_headline": "Study, learn, and help fulfill another dream.",
+        "impact_body": "With every purchase on ATVConecta, you make it possible for more students to access academic support, strengthen their knowledge, and continue building their path to university and their professional future.",
+        "impact_sub": "Your support helps a student keep going.",
+        "impact_headline_main": "Study, learn, and help fulfill",
+        "impact_headline_highlight": "another dream.",
+        "alt_img_impact": "Smiling high school student at a meeting of the Antivirus para la Deserción Foundation."
       },
+      "btn_cta": "I want more information",
       "personas": {
         "subtitle": "Persons",
         "description": "We connect students with our tutor network for individual review sessions in different subject areas, at their own pace and from anywhere.",
         "target": "Students seeking personalized support to improve their academic performance.",
-        "price_label": "Price: 58,000 COP + VAT",
+        "price_label": "Price: 69,020 COP",
         "price_sub": "Per session",
+        "iva_total": "58,000 COP + VAT",
         "subtitle_two": "We deliver",
         "check_one": "One-on-one tutoring",
         "check_two": "Full schedule flexibility",
