@@ -23,6 +23,7 @@ const CARDS = [
     subtitleColor: "text-brand-blue-100",
     checkColor: "text-brand-blue-100",
     btnBg: "bg-brand-blue-100 hover:bg-brand-blue-200",
+    iva: true,
   },
   {
     key: "institucional",
@@ -113,6 +114,11 @@ function PricingCardsAtvConnect() {
                     <p className="text-blue-base font-bold text-2xl leading-tight">
                       {t(`${base}.price_label`)}
                     </p>
+                    {card.iva && (
+                      <p className="text-blue-base text-xl mt-0.5">
+                        {t(`${base}.iva_total`)}
+                      </p>
+                    )}
                     <p className="text-gray-400 text-sm">
                       {t(`${base}.price_sub`)}
                     </p>
