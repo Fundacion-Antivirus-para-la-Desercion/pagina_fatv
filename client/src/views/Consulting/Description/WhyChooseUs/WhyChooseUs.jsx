@@ -4,6 +4,8 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdRocketLaunch } from "react-icons/md";
 import { JAVI_ESQUINA_IMG as JaviEsquina } from "../../../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { fadeUpContainer, fadeUpItem } from "../../../../components/motion/constants/Animations.js";
 
 const cards = [
   {
@@ -73,25 +75,34 @@ function WhyChooseUs() {
           <div className="relative flex items-center justify-center px-4">
             {/* Text content — centered, leaves room for Javi on the right */}
             <div className="text-center max-w-4xl mb-5">
-              <h2 className="text-5xl md:text-5xl text-blue-base font-impact leading-none">
+              <h2 className="text-3xl md:text-5xl text-blue-base font-impact leading-none">
                 {t("consultorias.whyChooseUs.title")}
               </h2>
-              <span className="text-primary-yellow text-5xl font-impact">
+              <span className="text-primary-yellow text-3xl md:text-5xl font-impact">
                 {t("consultorias.whyChooseUs.title_span")}
               </span>
 
-              <p className="text-blue-base text-base md:text-lg">
+              <p className="text-blue-base text-base md:text-lg mt-5">
                 {t("consultorias.whyChooseUs.description")}
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-5 md:px-10 pt-8 pb-5 md:pb-10 gap-6 md:gap-8">
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-5 md:px-10 pt-8 pb-5 md:pb-10 gap-6 md:gap-8"
+            variants={fadeUpContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+          >
             {cards.map(
               ({ icon, titleKey, descKey, iconBg, accentBg, underlineBg }) => (
-                <div
+                <motion.div
                   key={titleKey}
-                  className="relative bg-white min-h-[230px] w-full p-6 shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out"
+                  variants={fadeUpItem}
+                  whileHover={{ scale: 1.05, transition: { duration: 0.3, ease: "easeInOut" } }}
+                  whileTap={{ scale: 1.03, transition: { duration: 0.15 } }}
+                  className="relative bg-white min-h-[230px] w-full p-6 shadow-md rounded-2xl overflow-hidden"
                 >
                   <div className="flex items-center space-x-4 mb-2">
                     <div
@@ -114,10 +125,10 @@ function WhyChooseUs() {
                   <div
                     className={`absolute bottom-0 right-0 w-16 h-16 rounded-tl-full ${accentBg} opacity-80`}
                   />
-                </div>
+                </motion.div>
               ),
             )}
-          </div>
+          </motion.div>
         </section>
       </div>
     </section>
