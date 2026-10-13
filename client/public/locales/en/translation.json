@@ -1008,8 +1008,7 @@
     },
     "whyChooseUs": {
       "title": "WHY CHOOSE US TO TRANSFORM",
-      "title_span_primary": "YOUR",
-      "title_span": "INSTITUTION?",
+      "title_span": "YOUR INSTITUTION?",
       "description": "We implement proven strategies that generate measurable results in student retention and graduation.",
       "cards": {
         "methodology_title": "Tested Methodology",
@@ -1025,6 +1024,7 @@
         "innovation_title": "Continuous Innovation",
         "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront."
       },
+      "title_span_primary": "YOUR",
       "titlle_span": "YOUR INSTITUTION?"
     },
     "pillars": {

@@ -1012,8 +1012,7 @@
     },
     "whyChooseUs": {
       "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
-      "title_span_primary": "TU",
-      "title_span": "INSTITUCIÓN?",
+      "title_span": "TU INSTITUCIÓN?",
       "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil.",
       "cards": {
         "methodology_title": "Metodología Comprobada",
@@ -1029,6 +1028,7 @@
         "innovation_title": "Innovación Continua",
         "innovation_description": "Incorporamos las últimas tendencias en educación y tecnología para mantener tus programas a la vanguardia."
       },
+      "title_span_primary": "TU",
       "titlle_span": " TU INSTITUCIÓN?"
     },
     "pillars": {

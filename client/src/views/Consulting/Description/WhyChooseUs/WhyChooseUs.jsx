@@ -61,43 +61,25 @@ function WhyChooseUs() {
 
   return (
     <section className="relative mt-10 md:mt-20 mx-auto">
-      <div className="hidden xl:block absolute right-0 top-0 pointer-events-none">
+      <div className="hidden xl:block absolute right-0 -top-16 pointer-events-none">
         <img
           src={JaviEsquina}
           className="max-h-[320px] lg:max-h-[400px]"
           alt="Javi Feliz"
         />
       </div>
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto mb-10 md:mb-20">
         <section>
           <div className="relative flex items-center justify-center px-4">
             {/* Text content — centered, leaves room for Javi on the right */}
-            <div className="text-center max-w-2xl mb-5">
-              <span className="inline-block mb-5 text-dark-blue text-xs md:text-base tracking-widest md:tracking-nm bg-brand-blue-50 rounded-3xl p-1 md:py-2 md:px-5 font-semibold">
+            <div className="text-center max-w-4xl mb-5">
+              <h2 className="text-5xl md:text-5xl text-blue-base font-impact leading-none">
                 {t("consultorias.whyChooseUs.title")}
-              </span>
-              <h2 className="text-5xl md:text-7xl font-impact leading-none">
-                <span className="text-dark-blue mr-3">
-                  {t("consultorias.whyChooseUs.title_span_primary")}
-                </span>
-                <span className="text-primary-yellow">
-                  {t("consultorias.whyChooseUs.title_span")}
-                </span>
               </h2>
-              <div className="flex justify-center -mt-1 mb-6">
-                <svg
-                  viewBox="0 0 460 22"
-                  className="w-[280px] md:w-[460px]"
-                  fill="none"
-                >
-                  <path
-                    d="M 8 14 Q 120 22 230 12 Q 340 2 452 14"
-                    stroke="#FFBA08"
-                    strokeWidth="5"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </div>
+              <span className="text-primary-yellow text-5xl font-impact">
+                {t("consultorias.whyChooseUs.title_span")}
+              </span>
+
               <p className="text-blue-base text-base md:text-lg">
                 {t("consultorias.whyChooseUs.description")}
               </p>
