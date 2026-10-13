@@ -1012,7 +1012,8 @@
     },
     "whyChooseUs": {
       "title": "¿POR QUÉ ELEGIRNOS PARA TRANSFORMAR",
-      "titlle_span": " TU INSTITUCIÓN?",
+      "title_span_primary": "TU",
+      "title_span": "INSTITUCIÓN?",
       "description": "Implementamos estrategias comprobadas que generan resultados medibles en permanencia y graduación estudiantil.",
       "cards": {
         "methodology_title": "Metodología Comprobada",

@@ -1,43 +1,58 @@
-import { RiFocus2Line } from "react-icons/ri";
-import {
-  FaLightbulb,
-  FaStar,
-  FaGraduationCap,
-  FaUserFriends,
-} from "react-icons/fa";
-import { BsStars } from "react-icons/bs";
+import { FaMedal, FaChartLine, FaGraduationCap } from "react-icons/fa";
+import { GiThreeFriends } from "react-icons/gi";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { MdRocketLaunch } from "react-icons/md";
+import { JAVI_ESQUINA_IMG as JaviEsquina } from "../../../../assets/cloudinaryImages";
 import { useTranslation } from "react-i18next";
 
 const cards = [
   {
-    icon: <FaStar />,
+    icon: <FaMedal />,
     titleKey: "consultorias.whyChooseUs.cards.methodology_title",
     descKey: "consultorias.whyChooseUs.cards.methodology_description",
+    iconBg: "bg-primary-purple",
+    accentBg: "bg-primary-purple",
+    underlineBg: "bg-primary-purple",
   },
   {
-    icon: <RiFocus2Line />,
+    icon: <FaChartLine />,
     titleKey: "consultorias.whyChooseUs.cards.focus_title",
     descKey: "consultorias.whyChooseUs.cards.focus_description",
+    iconBg: "bg-brand-teal-300",
+    accentBg: "bg-brand-teal-300",
+    underlineBg: "bg-brand-teal-300",
   },
   {
-    icon: <FaUserFriends />,
+    icon: <GiThreeFriends />,
     titleKey: "consultorias.whyChooseUs.cards.accompaniment_title",
     descKey: "consultorias.whyChooseUs.cards.accompaniment_description",
+    iconBg: "bg-brand-blue-200",
+    accentBg: "bg-brand-blue-200",
+    underlineBg: "bg-brand-blue-200",
   },
   {
     icon: <FaGraduationCap />,
     titleKey: "consultorias.whyChooseUs.cards.experience_title",
     descKey: "consultorias.whyChooseUs.cards.experience_description",
+    iconBg: "bg-primary-purple",
+    accentBg: "bg-primary-purple",
+    underlineBg: "bg-primary-purple",
   },
   {
-    icon: <BsStars />,
+    icon: <HiOutlineLightBulb />,
     titleKey: "consultorias.whyChooseUs.cards.solutions_title",
     descKey: "consultorias.whyChooseUs.cards.solutions_description",
+    iconBg: "bg-brand-teal-300",
+    accentBg: "bg-brand-teal-300",
+    underlineBg: "bg-brand-teal-300",
   },
   {
-    icon: <FaLightbulb />,
+    icon: <MdRocketLaunch />,
     titleKey: "consultorias.whyChooseUs.cards.innovation_title",
     descKey: "consultorias.whyChooseUs.cards.innovation_description",
+    iconBg: "bg-brand-blue-200",
+    accentBg: "bg-brand-blue-200",
+    underlineBg: "bg-brand-blue-200",
   },
 ];
 
@@ -45,42 +60,84 @@ function WhyChooseUs() {
   const { t } = useTranslation();
 
   return (
-    <section className="mt-10 md:mt-20 max-w-screen-2xl mx-auto">
-      <div className="text-center">
-        <div>
-          <h2 className="text-4xl md:text-5xl text-blue-base font-impact m-5">
-            {t("consultorias.whyChooseUs.title")}
-            <br />
-            <span className="text-primary-yellow">
-              {t("consultorias.whyChooseUs.titlle_span")}
-            </span>
-          </h2>
-        </div>
-        <p className="text-blue-base text-base md:text-lg mt-10">
-          {t("consultorias.whyChooseUs.description")}
-        </p>
+    <section className="relative mt-10 md:mt-20 mx-auto">
+      <div className="hidden xl:block absolute right-0 top-0 pointer-events-none">
+        <img
+          src={JaviEsquina}
+          className="max-h-[320px] lg:max-h-[400px]"
+          alt="Javi Feliz"
+        />
       </div>
-
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 m-2 p-5 md:p-10 gap-8 md:gap-10">
-        {cards.map(({ icon, titleKey, descKey }) => (
-          <div
-            key={titleKey}
-            className="group bg-white min-h-[230px] w-full p-5 shadow-2xl rounded-2xl hover:border-primary-yellow border-2 hover:scale-105 transition-all duration-500 ease-in-out"
-          >
-            <div className="flex items-start space-x-4">
-              <div className="flex justify-center w-14 h-14 rounded-full bg-white">
-                <span className="text-3xl text-primary-yellow">{icon}</span>
-              </div>
-              <h2 className="text-lg md:text-xl font-extrabold text-blue-base mt-1">
-                {t(titleKey)}
+      <div className="max-w-screen-2xl mx-auto">
+        <section>
+          <div className="relative flex items-center justify-center px-4">
+            {/* Text content — centered, leaves room for Javi on the right */}
+            <div className="text-center max-w-2xl mb-5">
+              <span className="inline-block mb-5 text-dark-blue text-xs md:text-base tracking-widest md:tracking-nm bg-brand-blue-50 rounded-3xl p-1 md:py-2 md:px-5 font-semibold">
+                {t("consultorias.whyChooseUs.title")}
+              </span>
+              <h2 className="text-5xl md:text-7xl font-impact leading-none">
+                <span className="text-dark-blue mr-3">
+                  {t("consultorias.whyChooseUs.title_span_primary")}
+                </span>
+                <span className="text-primary-yellow">
+                  {t("consultorias.whyChooseUs.title_span")}
+                </span>
               </h2>
+              <div className="flex justify-center -mt-1 mb-6">
+                <svg
+                  viewBox="0 0 460 22"
+                  className="w-[280px] md:w-[460px]"
+                  fill="none"
+                >
+                  <path
+                    d="M 8 14 Q 120 22 230 12 Q 340 2 452 14"
+                    stroke="#FFBA08"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
+              <p className="text-blue-base text-base md:text-lg">
+                {t("consultorias.whyChooseUs.description")}
+              </p>
             </div>
-            <p className="text-base md:text-lg p-5 text-blue-base text-justify ">
-              {t(descKey)}
-            </p>
           </div>
-        ))}
-      </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-5 md:px-10 pt-8 pb-5 md:pb-10 gap-6 md:gap-8">
+            {cards.map(
+              ({ icon, titleKey, descKey, iconBg, accentBg, underlineBg }) => (
+                <div
+                  key={titleKey}
+                  className="relative bg-white min-h-[230px] w-full p-6 shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out"
+                >
+                  <div className="flex items-center space-x-4 mb-2">
+                    <div
+                      className={`flex items-center justify-center w-14 h-14 rounded-full ${iconBg} shrink-0`}
+                    >
+                      <span className="text-3xl text-white">{icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="text-base md:text-lg font-extrabold text-dark-blue leading-tight">
+                        {t(titleKey)}
+                      </h3>
+                      <div
+                        className={`w-12 h-1 rounded-full mt-1 ${underlineBg}`}
+                      />
+                    </div>
+                  </div>
+                  <p className="text-sm md:text-base text-blue-base mt-3 pr-4 leading-relaxed">
+                    {t(descKey)}
+                  </p>
+                  <div
+                    className={`absolute bottom-0 right-0 w-16 h-16 rounded-tl-full ${accentBg} opacity-80`}
+                  />
+                </div>
+              ),
+            )}
+          </div>
+        </section>
+      </div>
     </section>
   );
 }
