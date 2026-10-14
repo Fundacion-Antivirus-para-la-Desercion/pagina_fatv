@@ -7,27 +7,27 @@ function AboutUs() {
 
   return (
     <div className="text-blue-base m-8 md:p-12 lg:p-20">
-      <div className="flex flex-col items-end md:flex-row md:flex-wrap md:justify-between lg:gap-x-10">
-        <div className="w-full md:w-[calc(50%-50px)] mb-5 md:mb-0">
+      <div className="grid grid-cols-1 xl:grid-cols-[55%_45%] items-center gap-5 md:justify-between lg:gap-x-12">
+        <div className="mb-5">
           <span className="text-base md:text-lg text-primary-purple font-impact uppercase text-center md:text-left mt-4">
             {t("home.aboutUs.title")}
           </span>
-          <h2 className="lineSubtitle text-center md:text-start font-impact text-4xl md:text-5xl leading-[.92] uppercase mb-8 md:mb-1">
+          <h2 className="lineSubtitle text-center md:text-start font-impact text-3xl md:text-5xl leading-[.92] uppercase mb-8 md:mb-1">
             {t("home.aboutUs.subtitle")}
           </h2>
-          <p className="text-lg text-justify max-w-2xl mt-4">
+          <p className="text-lg md:text-xl text-justify max-w-2xl mt-4">
             {t("home.aboutUs.paragraph1")}
           </p>
         </div>
-        <div className="w-full text-center mt-4 text-base sm:px-0 md:w-2/5 md:text-start md:mt-0">
-          <p className="text-center md:text-start text-xl">
+        <div className="">
+          <p className="text-lg md:text-xl text-justify md:text-start">
             {t("home.aboutUs.paragraph2_start")}
             <strong className="text-blue-base">
               {t("home.aboutUs.paragraph2_strong")}
             </strong>
           </p>
           <LocalizedLink
-            className="group flex mt-5 md:mt-2 justify-center md:justify-start font-bold items-center text-base text-primary-purple cursor-pointer"
+            className="text-base md:text-lg group flex mt-5 md:mt-2 justify-center md:justify-start font-bold items-center text-primary-purple cursor-pointer"
             routeKey="foundation"
           >
             {t("home.aboutUs.button")}

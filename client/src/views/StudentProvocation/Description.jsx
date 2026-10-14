@@ -56,9 +56,9 @@ function Description() {
               className="flex flex-col items-center justify-center group"
             >
               <div className="p-5 bg-white rounded-3xl mb-2 shadow-lg transition-all duration-300 group-hover:translate-y-[-8px] group-hover:bg-primary-yellow">
-                <area.icon className="text-dark-blue text-3xl" />
+                <area.icon className="text-dark-blue text-xl md:text-3xl" />
               </div>
-              <h4 className="text-dark-blue font-semibold text-lg">
+              <h4 className="text-dark-blue font-semibold text-sm  md:text-lg">
                 {area.title}
               </h4>
             </div>
