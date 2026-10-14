@@ -58,8 +58,8 @@
       "title": "about us",
       "subtitle": "We seek to reduce student dropout rates in Colombia",
       "paragraph1": "This is our way of contributing to a country with more education and consequently more development.",
-      "paragraph2_start": "Identify students with vulnerabilities and provide them with comprehensive support, through ",
-      "paragraph2_strong": "an ecosystem of strategies",
+      "paragraph2_start": "We identify vulnerable students to provide them with comprehensive support,",
+      "paragraph2_strong": " through an ecosystem of strategies.",
       "button": "Learn more here",
       "alt_arrow": "See more"
     },
@@ -1023,9 +1023,7 @@
         "solutions_description": "Every institution is unique. We design strategies tailored to your reality, organizational culture, and specific goals.",
         "innovation_title": "Continuous Innovation",
         "innovation_description": "We incorporate the latest trends in education and technology to keep your programs at the forefront."
-      },
-      "title_span_primary": "YOUR",
-      "titlle_span": "YOUR INSTITUTION?"
+      }
     },
     "pillars": {
       "title": "PILLARS OF OUR",
