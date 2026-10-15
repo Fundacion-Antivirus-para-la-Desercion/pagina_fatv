@@ -56,7 +56,7 @@ function OurTeam() {
       name: "Víctor Manuel Valencia Martínez",
       role: t("ourTeam.roles.deputy_director"),
       image: VICTOR_VALENCIA_IMG,
-      backgroundColor: "#2C9Bc7",
+      backgroundColor: "#2C9BC7",
     },
     {
       name: "Felipe Arango Franco",
